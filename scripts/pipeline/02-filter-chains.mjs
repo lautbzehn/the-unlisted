@@ -34,7 +34,7 @@ for (const p of places) freq[key(p.t.name)] = (freq[key(p.t.name)] || 0) + 1;
 const steps = [['Named food & drink places', () => true],
   ['Not tagged as a brand', (p) => !p.t.brand && !p.t['brand:wikidata'] && !p.t['operator:wikidata']],
   ['Name appears fewer than 4 times', (p) => freq[key(p.t.name)] < 4],
-  ['Not a famous landmark (no Wikipedia/Wikidata)', (p) => !p.t.wikidata && !p.t.wikipedia]];
+];  // famous places (Wikidata) are kept but flagged: legends like Swan Oyster Depot belong here
 
 let pool = places;
 const log = [];
@@ -44,7 +44,7 @@ const out = pool.map(({ e, t, lat, lng }) => ({
   osm: `${e.type}/${e.id}`, name: t.name, amenity: t.amenity, cuisine: t.cuisine || null,
   lat: +lat.toFixed(5), lng: +lng.toFixed(5), area: nearestArea([lat, lng]),
   city: t['addr:city'] || null, website: t.website || t['contact:website'] || null, phone: t.phone || null,
-  hours: t.opening_hours || null, smallChain: freq[key(t.name)] >= 2, cashOnly: t['payment:cash'] === 'only' || undefined,
+  hours: t.opening_hours || null, smallChain: freq[key(t.name)] >= 2, famous: !!(t.wikidata || t.wikipedia) || undefined, cashOnly: t['payment:cash'] === 'only' || undefined,
 }));
 writeFileSync(new URL('../../data/pipeline/independents.json', import.meta.url), JSON.stringify(out));
 
