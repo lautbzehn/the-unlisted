@@ -2,19 +2,15 @@
 interface Props {
   place: {
     id: string; name: string; area: string; kind: string; verified: string; score: number; sample?: boolean;
-    breakdown: { uniqueness: number; atmosphere: number; story: number; signature: number };
+    breakdown: { uniqueness: number; atmosphere: number; story: number; signature: number; radar?: number };
     story: string; order: string; draft?: boolean; reviewFlags?: string[]; fame?: string; when?: string[]; practical?: string[]; hours?: string | null; city?: string;
   };
   detail?: boolean; // true on the place's own page (no "open" link)
 }
 import { FAME, WHEN } from '../lib/places.js';
+import { MARKS } from '../lib/scoring.js';
 const { place, detail = false } = Astro.props;
-const bars = [
-  ['Uniqueness', place.breakdown.uniqueness],
-  ['Atmosphere', place.breakdown.atmosphere],
-  ['Story', place.breakdown.story],
-  ['Signature', place.breakdown.signature],
-];
+const bars = MARKS.map((m) => [m.short, place.breakdown[m.key]]);
 const href = `/place/${place.id}/`;
 const Heading = detail ? 'h1' : 'h3';
 ---

@@ -332,3 +332,8 @@ footer p + p { margin-top: 6px; }
   .whenbar { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; scrollbar-width: thin; }
   .whenbar .tab { flex: 0 0 auto; }
 }
+fieldset.slider { border: 0; padding: 0; margin: 0 0 14px; min-width: 0; }
+fieldset.slider legend { font: 12px var(--font-type); letter-spacing: 0.1em; text-transform: uppercase; padding: 0; margin-bottom: 6px; }
+.radar-opts { display: flex; flex-wrap: wrap; gap: 6px 16px; grid-column: 1 / -1; }
+.radar-opts label { display: flex; align-items: center; gap: 6px; font-size: 0.92rem; min-height: 32px; cursor: pointer; }
+.radar-opts input { accent-color: var(--oxblood); width: 18px; height: 18px; }
