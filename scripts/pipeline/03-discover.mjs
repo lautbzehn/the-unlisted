@@ -34,6 +34,9 @@ character, a story, and one thing worth ordering. Not a popularity list. Rules:
 - Skip upscale, reservation-driven or hype-driven restaurants. Counters, windows, family rooms and old-timers are the target.
 - Mix well-known institutions with places that have barely been written about. Deep cuts are especially valuable.
 - Never use Google Maps or Yelp as a source. Local press, neighborhood blogs, the place's own site and interviews are fine.
+- Search Reddit too (site:reddit.com, e.g. r/AskSF, r/bayarea, r/oakland, r/eastbay, r/SanJose): "what's your favorite
+  hole in the wall in <area>" threads are the best source of deep cuts. Reddit is a lead, not proof it's open: confirm
+  with a recent comment or another source. Never quote or name Reddit users.
 - Write the "why" in your own words. Do not copy sentences.
 Return ONLY a JSON array in a \`\`\`json fence, no other text.`;
 

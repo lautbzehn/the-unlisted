@@ -7,7 +7,10 @@ Work in small batches and save after each one, so hitting a usage limit never lo
 - Work on the branch `research/places-200`. Never commit to `main`. Don't touch anything under `src/`.
 - Follow `prompts/enrich-place.md` exactly (no invented facts, own words, sources, flags). Read it first.
 - Never use Google Maps or Yelp as a source.
-- Keep it lean: at most 3 web searches and 1 page fetch per place. If a place needs more, flag it and move on.
+- Keep it lean: at most 3 web searches and 1 page fetch per place, and make one of the searches a Reddit search
+  (`site:reddit.com "<name>" <neighborhood>`). If a place needs more, flag it and move on.
+- Reddit rules are in `prompts/enrich-place.md` (rule 5): use it for what regulars order, the feel of the room and
+  "still open?" signals; facts like founding years need a non-Reddit source or a flag. Never quote or name Reddit users.
 - Nothing is approved here. Every place stays `"status": "draft"`; Dan reviews them in the app.
 
 ## Setup (free, once)
@@ -20,6 +23,8 @@ node scripts/pipeline/02-filter-chains.mjs
 ## Step 1: discovery (about 250 names)
 Use the 16 areas and the day/night focus in `scripts/pipeline/03-discover.mjs` (the `AREAS` and `SHIFTS` lists and the
 `SYSTEM` rules). For each area and shift, search for up to 10 candidates not already in `src/data/places.json`.
+Start each area with a Reddit search (for example `site:reddit.com hole in the wall <area>` or `site:reddit.com best
+breakfast counter <area>`): that's where the deep cuts are. Aim for at least a third of the picks to be deep cuts.
 Append them to `data/review/discovered.json` in the same shape the script describes:
 `{name, neighborhood, city, address, kind, when, fame, why, source_url, open_evidence, from}`, with `from` = `disc-<area index>-<day|night>`.
 Commit and push after every 4 areas.

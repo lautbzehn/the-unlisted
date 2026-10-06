@@ -6,6 +6,9 @@ It matches the public "How the score works" page. If one changes, change the oth
 ## Inputs
 - Place name, neighborhood, OpenStreetMap record (address, hours if present, cuisine tags).
 - Public web sources found by search: the place's own site/menu, local press, neighborhood blogs, interviews.
+- Community discussion on Reddit (r/AskSF, r/sanfrancisco, r/bayarea, r/oakland, r/eastbay, r/SanJose, r/berkeley):
+  the regulars' view. Search with `site:reddit.com <name> <neighborhood>`. If a thread won't load, try the
+  old.reddit.com address or work from the search snippet.
 - Never Google Maps or Yelp data (their terms forbid storing and reusing it). Reading a Yelp page to
   confirm a place exists is not a source we cite or copy from.
 
@@ -15,6 +18,12 @@ It matches the public "How the score works" page. If one changes, change the oth
 2. **Our own words.** Read sources, then write fresh. No copied or lightly reworded sentences. No quotes.
 3. **Check it's still open.** Look for recent evidence (dated within ~12 months). If unclear, set `flags` to say so.
 4. **Uncertainty goes in `flags`**, written for the human reviewer: "hours unconfirmed", "price from 2024 article".
+5. **How to use Reddit.** Good for: what regulars order, what the room feels like, whether it's still open (recent
+   comments), and leads to places press hasn't covered. Not enough on its own for: history, founding dates, owner
+   names, awards. Those need a non-Reddit source, or a flag such as "founding year from a Reddit comment only".
+   Posts can be old, mistaken, or written by people connected to the business, so weigh several comments over one.
+   Never quote, paraphrase closely, or name a Reddit user. If every source for a place is Reddit, add the flag
+   "Community sources only".
 5. **Voice:** a friend who knows the city. Specific, warm, a little dry. No "nestled", "hidden gem", "culinary journey",
    "must-try", "vibrant", "delectable". No exclamation marks. Short sentences are fine.
 
