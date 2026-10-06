@@ -133,5 +133,30 @@
     "id": "chez-maman-east",
     "name": "Chez Maman East",
     "reason": "Generic neighborhood French bistro with only a 2018 unrated Infatuation blurb; one of two Chez Maman locations, no story"
+  },
+  {
+    "id": "luen-fat-bakery",
+    "name": "Luen Fat Bakery",
+    "reason": "Listing sources only (cash-only Vietnamese-Chinese bakery, listed as Pho Luen Fat); nothing to build a story on"
+  },
+  {
+    "id": "scolari-s-good-eats",
+    "name": "Scolari's Good Eats",
+    "reason": "Listing and hotel-blog sources only; a 2010 burger counter whose main distinction is a Diners, Drive-Ins and Dives spot"
+  },
+  {
+    "id": "paik-s-noodle",
+    "name": "Paik's Noodle",
+    "reason": "Chain: one of a Korean celebrity chef's franchise brands, which together run over 1,200 stores"
+  },
+  {
+    "id": "hukilau",
+    "name": "Hukilau",
+    "reason": "Only a visitor-bureau listing written by the business; no history or editorial source found"
+  },
+  {
+    "id": "burma-taste",
+    "name": "Burma Taste",
+    "reason": "Recent opening with only own-site copy and listings; nothing distinctive beyond the cuisine"
   }
 ]
