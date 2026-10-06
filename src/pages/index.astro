@@ -1,90 +1,84 @@
 ---
 import Base from '../layouts/Base.astro';
 import Footer from '../components/Footer.astro';
-import PlaceCard from '../components/PlaceCard.astro';
-import { places } from '../lib/places.js';
+import BrowseRow from '../components/BrowseRow.astro';
+import SurpriseDialog from '../components/SurpriseDialog.astro';
+import { places, slim, TYPES, topHoods } from '../lib/places.js';
+
+const MIN = 3; // a row needs at least this many places to be worth showing
+const by = (f) => places.filter(f);
+const NOW_ROWS = [
+  { bucket: 'morning', title: 'Morning doors', sub: 'Coffee, pastries and breakfast counters that open early.' },
+  { bucket: 'midday', title: 'Lunch doors', sub: 'Counters and kitchens worth the detour at lunch.' },
+  { bucket: 'evening', title: 'Dinner doors', sub: 'Where to eat tonight.' },
+  { bucket: 'late', title: 'Late-night doors', sub: 'Usually open past 10. Check before you go.' },
+].map((r) => ({ ...r, list: by((p) => p.when?.includes(r.bucket)) })).filter((r) => r.list.length >= MIN);
+const deep = by((p) => p.fame === 'deep-cut');
+const legends = by((p) => p.fame === 'local-legend');
+const TYPE_NOTES = {
+  breakfast: 'Counter stools and bottomless coffee.',
+  coffee: 'Espresso, donuts, pan dulce, ice cream.',
+  counter: 'Order at the window. Eat on the curb.',
+  sitdown: 'Family rooms with a story.',
+  bar: 'Dives and back rooms.',
+};
+const types = Object.entries(TYPES).map(([key, label]) => ({ key, label, n: by((p) => p.type === key).length })).filter((t) => t.n);
+const hoods = topHoods(places, 12);
 ---
 <Base title="The Unlisted — Bay Area hole-in-the-wall guide">
-  <main id="main">
+  <main id="main" class="home">
     <header class="bill">
       <div class="crest" aria-hidden="true">U</div>
       <h1 class="logo">The Unlisted</h1>
       <p class="sub">Passport · Bay Area · All hours</p>
       <p class="fine">Places you only hear about from <span class="redact" aria-hidden="true">the cousin who</span><span class="sr-only">someone who</span> knows a guy.</p>
+      <div class="cover-cta">
+        <button id="surprise-btn" class="btn-primary big" type="button">Surprise me</button>
+        <a class="btn-ghost big" href="/explore/">Explore all {places.length}</a>
+      </div>
+      <p class="cover-note">Surprise me picks one door for you. Your location stays on your device.</p>
     </header>
 
-    <form class="search" role="search" onsubmit="return false">
-      <label for="vibe">Describe what you’re in the mood for</label>
-      <div class="field">
-        <input id="vibe" type="search" placeholder="A counter-seat diner that does breakfast right…" disabled />
-        <button class="btn-primary" type="button" disabled aria-label="Find it"><span class="long">Find it</span><span class="short" aria-hidden="true">→</span></button>
-      </div>
-      <p class="soon">Vibe search: coming in the next build</p>
-    </form>
+    <SurpriseDialog />
 
-    <div class="surprise-row">
-      <button id="surprise-btn" class="btn-primary big" type="button">Surprise me</button>
-      <p>One door, picked for you, any hour. Your location stays on your device.</p>
-    </div>
+    <p class="passport-strip" id="passport-strip" hidden>
+      <span class="ps-label">Your passport</span>
+      <a href="/explore/?list=knock"><b data-n="knock">0</b> on your Bucket List</a>
+      <a href="/explore/?list=ledger"><b data-n="ledger">0</b> stamped</a>
+    </p>
 
-    <dialog id="surprise" aria-labelledby="sp-title">
-      <div class="sp-card">
-        <button class="sp-x" data-sp="close" aria-label="Close">×</button>
-        <div class="sp-kicker">TODAY'S DOOR</div>
-        <div class="sp-slot" data-sp="slot" aria-hidden="true"></div>
-        <div class="sp-body">
-          <div class="stamp" aria-hidden="true"><small>GEM</small><b data-sp="score"></b><i>VISA</i></div>
-          <span class="sample-flag" data-sp="sample">SAMPLE — NOT A REAL PLACE</span>
-          <h2 id="sp-title"></h2>
-          <div class="meta" data-sp="meta"></div>
-          <p data-sp="story"></p>
-          <p class="order"><em>Order</em><span data-sp="order"></span></p>
-          <p class="sp-where" data-sp="where"></p>
-          <div class="sp-actions">
-            <a class="btn-primary" data-sp="open" href="#">Open the file →</a>
-            <a class="btn-ghost" data-sp="directions" href="#" target="_blank" rel="noopener">Directions</a>
-            <button class="btn-ghost" data-sp="knock" aria-pressed="false">+ Bucket List</button>
-            <button class="btn-ghost" data-sp="map">Show on map</button>
-            <button class="btn-ghost" data-sp="again">Another one</button>
-          </div>
-        </div>
-      </div>
-    </dialog>
+    {NOW_ROWS.map((r) => (
+      <BrowseRow id={`now-${r.bucket}`} bucket={r.bucket} kicker="Right now" title={r.title} sub={r.sub}
+        places={r.list} total={r.list.length} seeAll={`/explore/?time=${r.bucket}`} hidden />
+    ))}
+    <noscript><style>.browse[data-bucket='midday'] { display: block !important; }</style></noscript>
 
-    <div class="toolbar" id="places">
-      <div class="tabs" role="group" aria-label="Show">
-        <button class="tab" data-filter="all" aria-pressed="true">All<span class="long"> doors</span> <span class="n">(0)</span></button>
-        <button class="tab" data-filter="knock" aria-pressed="false" data-tip="Places you want to go.">Bucket<span class="long"> List</span> <span class="n">(0)</span></button>
-        <button class="tab" data-filter="ledger" aria-pressed="false" data-tip="Places you’ve been and stamped.">Stamped <span class="n">(0)</span></button>
-      </div>
-      <div class="views" role="group" aria-label="View">
-        <button class="tab" data-view="cards" aria-pressed="true">Cards</button>
-        <button class="tab" data-view="map" aria-pressed="false">Map</button>
-      </div>
-    </div>
+    {deep.length >= MIN && (
+      <BrowseRow id="deep" title="Deep cuts" sub="Barely written about anywhere. You heard it from someone, not a website."
+        places={deep} total={deep.length} seeAll="/explore/?fame=deep-cut" />
+    )}
+    {legends.length >= MIN && (
+      <BrowseRow id="legends" title="Local legends" sub="Decades in, on every list, probably a line. Still the real thing."
+        places={legends} total={legends.length} seeAll="/explore/?fame=local-legend" />
+    )}
 
-    <div class="whenbar" role="group" aria-label="Time of day">
-      <span class="whenlabel" aria-hidden="true">WHEN</span>
-      <button class="tab" data-time="any" aria-pressed="true">Any time <span class="n"></span></button>
-      <button class="tab" data-time="now" aria-pressed="false">Right now: <span class="now-label"></span> <span class="n"></span></button>
-      <button class="tab" data-time="morning" aria-pressed="false">Morning <span class="n"></span></button>
-      <button class="tab" data-time="midday" aria-pressed="false">Midday <span class="n"></span></button>
-      <button class="tab" data-time="evening" aria-pressed="false">Evening <span class="n"></span></button>
-      <button class="tab" data-time="late" aria-pressed="false">Late <span class="n"></span></button>
-    </div>
-
-    <p class="empty" id="empty" role="status"></p>
-    <div id="map-wrap" hidden>
-      <div id="map" role="region" aria-label="Map of places. Use the pins, or switch to Cards for a list."></div>
-      <ul class="legend" aria-hidden="true">
-        <li><span class="swatch" data-status="none"></span>Not on your lists</li>
-        <li><span class="swatch" data-status="knock"></span>Bucket List</li>
-        <li><span class="swatch" data-status="ledger"></span>Stamped</li>
+    <section class="jump" aria-labelledby="by-type">
+      <h2 id="by-type">By kind of place</h2>
+      <ul class="type-tiles" role="list">
+        {types.map((t) => (
+          <li><a href={`/explore/?type=${t.key}`}><b>{t.label}</b><span>{TYPE_NOTES[t.key]}</span><small>{t.n} {t.n === 1 ? 'place' : 'places'}</small></a></li>
+        ))}
       </ul>
-    </div>
-    <script type="application/json" id="places-data" set:html={JSON.stringify(places)} />
-    <section class="grid" aria-label="Places">
-      {places.map((p) => <PlaceCard place={p} />)}
+    </section>
+
+    <section class="jump" aria-labelledby="by-hood">
+      <h2 id="by-hood">By neighborhood</h2>
+      <ul class="hood-chips" role="list">
+        {hoods.map((h) => (
+          <li><a href={`/explore/?where=${h.where}`}>{h.label}{h.city !== 'San Francisco' && <small>{h.city}</small>}<span class="n">{h.n}</span></a></li>
+        ))}
+      </ul>
+      <a class="see-all" href="/explore/">Every neighborhood on Explore →</a>
     </section>
 
     <section class="undercard" aria-labelledby="next-on-card">
@@ -98,10 +92,11 @@ import { places } from '../lib/places.js';
       <a class="more" href="/cities/">Vote for the city after that →</a>
     </section>
 
+    <script type="application/json" id="places-data" set:html={JSON.stringify(slim(places))} />
     <Footer sample={places.some((p) => p.sample)} />
   </main>
 
   <script>
-    import '../scripts/shelves.js';
+    import '../scripts/home.js';
   </script>
 </Base>

@@ -1,10 +1,10 @@
 // The site map: one definition drives the header menus, the phone menu and the footer.
 export const NAV = [
   { id: 'explore', label: 'Explore', items: [
-    { href: '/#places', label: 'All places', hint: 'Every door, with filters' },
-    { href: '/?view=map#places', label: 'Map', hint: 'See them on a map' },
+    { href: '/explore/', label: 'All places', hint: 'Every door, with filters' },
+    { href: '/explore/?view=map', label: 'Map', hint: 'See them on a map' },
     { href: '/#surprise', label: 'Surprise me', hint: 'One place, picked for you' },
-    { href: '/?time=now#places', label: 'Right now', hint: 'Good for this hour' },
+    { href: '/explore/?time=now', label: 'Right now', hint: 'Good for this hour' },
   ] },
   { id: 'cities', label: 'Cities', items: [
     { href: '/', label: 'Bay Area', hint: 'Open now' },
@@ -13,8 +13,8 @@ export const NAV = [
     { href: '/cities/#add', label: 'Request a city', hint: 'Pick from the list' },
   ] },
   { id: 'passport', label: 'My Passport', items: [
-    { href: '/?list=knock#places', label: 'Bucket List', hint: 'Places you want to go' },
-    { href: '/?list=ledger#places', label: 'Stamped', hint: 'Places you’ve been' },
+    { href: '/explore/?list=knock', label: 'Bucket List', hint: 'Places you want to go' },
+    { href: '/explore/?list=ledger', label: 'Stamped', hint: 'Places you’ve been' },
   ] },
   { id: 'suggest', label: 'Suggest', items: [
     { href: '/suggest/', label: 'Suggest a place', hint: 'Know a door we should knock on?' },
@@ -30,7 +30,8 @@ export const NAV = [
 
 // Which menu a page belongs to, for the header's "you are here" underline.
 export const sectionFor = (path) =>
-  path.startsWith('/cities') ? 'cities'
+  path === '/' ? null
+  : path.startsWith('/cities') ? 'cities'
   : path.startsWith('/suggest') ? 'suggest'
   : /^\/(story|help|contact|how-the-score-works)/.test(path) ? 'about'
   : 'explore';

@@ -1,0 +1,102 @@
+---
+import Base from '../layouts/Base.astro';
+import Footer from '../components/Footer.astro';
+import PlaceCard from '../components/PlaceCard.astro';
+import MapSheet from '../components/MapSheet.astro';
+import { places, slim, TYPES, FAME, whereGroups } from '../lib/places.js';
+import { LISTS, PIN_TIPS } from '../lib/glossary.js';
+const FAME_PLURAL = { 'deep-cut': 'Deep cuts', 'open-secret': 'Open secrets', 'local-legend': 'Local legends' };
+---
+<Base title="Explore — The Unlisted" description="Every door in the Bay Area passport. Search, filter by time of day, kind of place and neighborhood, or see them all on a map." path="/explore/">
+  <main id="main" class="explore" data-view="cards">
+    <p class="label">Explore · Bay Area</p>
+    <h1 class="doc-title">Every door</h1>
+
+    <div class="finder" id="places">
+      <div class="find-row">
+        <label class="sr-only" for="q">Search places</label>
+        <input id="q" type="search" placeholder="Search dishes, places…" autocomplete="off" enterkeyhint="search" />
+        <button class="btn-ghost filters-toggle" type="button" aria-expanded="false" aria-controls="filters">Filters<span class="fcount" data-fcount hidden></span></button>
+      </div>
+      <div class="tabs" role="group" aria-label="Show">
+        <button class="tab" data-filter="all" aria-pressed="true">All<span class="long"> doors</span> <span class="n"></span></button>
+        <button class="tab" data-filter="knock" aria-pressed="false" data-tip={LISTS.bucket.tip}>Bucket<span class="long"> List</span> <span class="n"></span></button>
+        <button class="tab" data-filter="ledger" aria-pressed="false" data-tip={LISTS.stamped.tip}>Stamped <span class="n"></span></button>
+      </div>
+      <div class="filters" id="filters">
+        <div class="whenbar" role="group" aria-label="Time of day">
+          <span class="whenlabel" aria-hidden="true">When</span>
+          <button class="tab" data-time="any" aria-pressed="true">Any time <span class="n"></span></button>
+          <button class="tab" data-time="now" aria-pressed="false">Right now: <span class="now-label"></span> <span class="n"></span></button>
+          <button class="tab" data-time="morning" aria-pressed="false">Morning <span class="n"></span></button>
+          <button class="tab" data-time="midday" aria-pressed="false">Midday <span class="n"></span></button>
+          <button class="tab" data-time="evening" aria-pressed="false">Evening <span class="n"></span></button>
+          <button class="tab" data-time="late" aria-pressed="false">Late <span class="n"></span></button>
+        </div>
+        <div class="selects">
+          <label>Kind of place
+            <select data-f="type">
+              <option value="" data-label="Any kind">Any kind</option>
+              {Object.entries(TYPES).map(([v, l]) => <option value={v} data-label={l}>{l}</option>)}
+            </select>
+          </label>
+          <label>Where
+            <select data-f="where">
+              <option value="" data-label="Anywhere">Anywhere</option>
+              {whereGroups(places).map((g) => (
+                <optgroup label={g.label}>
+                  {g.options.map((o) => <option value={o.value} data-label={o.label}>{o.label}</option>)}
+                </optgroup>
+              ))}
+            </select>
+          </label>
+          <label>How well-known
+            <select data-f="fame">
+              <option value="" data-label="Any">Any</option>
+              {Object.keys(FAME).map((v) => <option value={v} data-label={FAME_PLURAL[v]}>{FAME_PLURAL[v]}</option>)}
+            </select>
+          </label>
+          <label>Sort by
+            <select data-f="sort">
+              <option value="score">Top Gem score</option>
+              <option value="name">Name, A to Z</option>
+              <option value="near">Nearest to me</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <p class="result-line"><span data-result role="status"></span><button class="linkish" type="button" data-clear hidden>Clear filters</button></p>
+    </div>
+
+    <div class="explore-split">
+      <div class="list-col">
+        <p class="empty" id="empty"></p>
+        <div class="entries" id="entries">
+          {places.map((p) => <PlaceCard place={p} />)}
+        </div>
+        <button class="btn-ghost more-btn" type="button" data-more hidden>Show more</button>
+      </div>
+      <div class="map-col">
+        <div id="map" role="region" aria-label="Map of the places in the list. Use the pins, or the list for the same places."></div>
+        <ul class="legend" aria-hidden="true">
+          <li><span class="swatch" data-status="none"></span>{PIN_TIPS.none}</li>
+          <li><span class="swatch" data-status="knock"></span>{LISTS.bucket.name}</li>
+          <li><span class="swatch" data-status="ledger"></span>{LISTS.stamped.name}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="views" role="group" aria-label="View">
+      <button class="tab" data-view="cards" aria-pressed="true">List</button>
+      <button class="tab" data-view="map" aria-pressed="false">Map</button>
+    </div>
+
+    <MapSheet />
+    <script type="application/json" id="places-data" set:html={JSON.stringify(slim(places))} />
+    <Footer sample={places.some((p) => p.sample)} />
+  </main>
+
+  <script>
+    import '../scripts/explore.js';
+  </script>
+</Base>

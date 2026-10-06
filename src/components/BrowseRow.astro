@@ -1,0 +1,39 @@
+---
+// A front-page row: a heading, a sideways strip of small tickets, and a link to see the rest on Explore.
+import { FAME, TYPES } from '../lib/places.js';
+interface Props {
+  id: string; title: string; kicker?: string; sub?: string; places: any[]; total: number; seeAll: string;
+  max?: number; hidden?: boolean; bucket?: string;
+}
+// A few extra are sent so the page can skip places another row already shows and still fill the strip.
+const { id, title, kicker, sub, places, total, seeAll, max = 18, hidden = false, bucket } = Astro.props;
+const shown = places.slice(0, max);
+---
+<section class="browse" aria-labelledby={`${id}-h`} hidden={hidden} data-bucket={bucket}>
+  <div class="browse-head">
+    <div>
+      {kicker && <p class="browse-kicker" data-kicker>{kicker}</p>}
+      <h2 id={`${id}-h`}>{title}</h2>
+      {sub && <p class="browse-sub">{sub}</p>}
+    </div>
+    <a class="see-all" href={seeAll}>See all {total}<span class="sr-only"> {title.toLowerCase()}</span> →</a>
+  </div>
+  <div class="strip-wrap">
+    <button class="strip-nav prev" type="button" aria-label="Scroll back" tabindex="-1" hidden>‹</button>
+    <ul class="strip" role="list">
+      {shown.map((p) => (
+        <li>
+          <a class="ticket" href={`/place/${p.id}/`} data-id={p.id} data-status="none">
+            <span class="t-meta">{p.city === 'San Francisco' ? p.area : p.city} · {TYPES[p.type]}</span>
+            <span class="t-name">{p.name}</span>
+            <span class="t-score"><span class="sr-only">Gem score </span>{p.score}</span>
+            {p.fame && <span class:list={['chip fame', p.fame]}>{FAME[p.fame]}</span>}
+            <span class="t-order"><em>Order</em> {p.order}</span>
+            {p.draft && <span class="t-draft">Draft</span>}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <button class="strip-nav next" type="button" aria-label="Scroll forward" tabindex="-1" hidden>›</button>
+  </div>
+</section>

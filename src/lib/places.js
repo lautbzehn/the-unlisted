@@ -6,14 +6,87 @@ import { gemScore, withRadar } from './scoring.js';
 const draftFiles = import.meta.env.DEV ? import.meta.glob('../../data/review/batch-*.json', { eager: true, import: 'default' }) : {};
 const drafts = Object.values(draftFiles).flat().map((d) => ({ ...d, draft: true }));
 
-// Sources and review notes stay internal: they never ship to visitors.
-export const places = [...raw.filter((p) => p.status === 'approved' || p.sample), ...drafts]
-  .map(({ sources, flags, status, approved, seed, osm, ...pub }) => ({
-    ...pub,
-    breakdown: withRadar(pub.breakdown, pub.fame),
-    score: gemScore(withRadar(pub.breakdown, pub.fame)),
-    ...(pub.draft ? { reviewFlags: flags ?? [] } : {}),
-  }));
-
 export const FAME = { 'deep-cut': 'Deep cut', 'open-secret': 'Open secret', 'local-legend': 'Local legend' };
 export const WHEN = { morning: 'Morning', midday: 'Midday', evening: 'Evening', late: 'Late' };
+
+// Broad kinds of place, for browsing. Worked out from each place's free-text description ("Donut shop, since 1960"),
+// checked in this order so a "donut shop turned diner" counts as a diner.
+export const TYPES = {
+  breakfast: 'Breakfast & diners',
+  coffee: 'Coffee & sweets',
+  counter: 'Counters & trucks',
+  sitdown: 'Sit-down meals',
+  bar: 'Bars',
+};
+const TYPE_RULES = [
+  ['bar', /\b(bar|pub|saloon|drinking)\b/],
+  ['breakfast', /\b(diner|breakfast|brunch|waffle|silog)\b/],
+  ['counter', /dim sum|b[aá]nh m[iì]|\btorta|sandwich/],
+  ['coffee', /\b(coffee|coffeehouse|espresso|bakery|donut|pastry|panader[ií]a|pandesal|manju|cake|ice cream|crepe)\b/],
+  ['counter', /\b(counter|window|truck|trailer|stand|takeout|deli|slice|taqueria|shack|turo-turo|canteen|market)\b/],
+  ['sitdown', /\b(noodle|pho|hong kong-style cafe|pork chop house)\b/],
+  ['coffee', /\bcafe\b/],
+];
+export const typeOf = (kind = '') => TYPE_RULES.find(([, re]) => re.test(kind.toLowerCase()))?.[0] ?? 'sitdown';
+
+export const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+// "Mission District (south)" and "Mission District" are the same neighborhood for browsing.
+export const hoodOf = (area) => area.replace(/\s*\(.*\)\s*$/, '');
+
+// Sources and review notes stay internal: they never ship to visitors.
+export const places = [...raw.filter((p) => p.status === 'approved' || p.sample), ...drafts]
+  .map(({ sources, flags, status, approved, seed, osm, ...pub }) => {
+    const city = pub.city ?? 'San Francisco';
+    const hood = hoodOf(pub.area);
+    return {
+      ...pub,
+      city,
+      type: typeOf(pub.kind),
+      where: `${slug(city)}/${slug(hood)}`,
+      breakdown: withRadar(pub.breakdown, pub.fame),
+      score: gemScore(withRadar(pub.breakdown, pub.fame)),
+      ...(pub.draft ? { reviewFlags: flags ?? [] } : {}),
+    };
+  })
+  .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+
+// What the browser scripts need (Surprise me, the map), without the long fields.
+export const slim = (list) => list.map(({ id, name, area, city, kind, score, story, order, lat, lng, when, sample }) => (
+  { id, name, area, city, kind, score, story, order, lat, lng, when, sample }
+));
+
+// The "Where" choices: big cities get their neighborhoods, small ones are grouped together.
+export function whereGroups(list = places) {
+  const byCity = new Map();
+  for (const p of list) {
+    const c = byCity.get(p.city) ?? { city: p.city, n: 0, hoods: new Map() };
+    c.n++;
+    const h = hoodOf(p.area);
+    c.hoods.set(h, (c.hoods.get(h) ?? 0) + 1);
+    byCity.set(p.city, c);
+  }
+  const cities = [...byCity.values()].sort((a, b) => b.n - a.n);
+  const big = cities.filter((c) => c.n >= 4 && c.hoods.size > 1).map((c) => ({
+    label: c.city,
+    options: [
+      { value: slug(c.city), label: `All of ${c.city}`, n: c.n },
+      ...[...c.hoods].sort(([a], [b]) => a.localeCompare(b)).map(([h, n]) => ({ value: `${slug(c.city)}/${slug(h)}`, label: h, n })),
+    ],
+  }));
+  const small = cities.filter((c) => !(c.n >= 4 && c.hoods.size > 1))
+    .sort((a, b) => a.city.localeCompare(b.city))
+    .map((c) => ({ value: slug(c.city), label: c.city, n: c.n }));
+  return small.length ? [...big, { label: 'More of the Bay', options: small }] : big;
+}
+
+// The busiest neighborhoods, for the front page.
+export function topHoods(list = places, max = 12) {
+  const m = new Map();
+  for (const p of list) {
+    const key = p.where;
+    const e = m.get(key) ?? { where: key, label: hoodOf(p.area), city: p.city, n: 0 };
+    e.n++;
+    m.set(key, e);
+  }
+  return [...m.values()].sort((a, b) => b.n - a.n || a.label.localeCompare(b.label)).slice(0, max);
+}

@@ -1,0 +1,17 @@
+<!-- The slide-up map for one place, so you can see where it is without losing your spot. Filled in by src/scripts/mapsheet.js. -->
+<dialog id="map-sheet" class="sheet" aria-labelledby="ms-title">
+  <div class="sheet-card">
+    <div class="sheet-head">
+      <div>
+        <p class="meta" data-ms="meta"></p>
+        <h2 id="ms-title"></h2>
+      </div>
+      <button class="sp-x" type="button" data-ms="close" aria-label="Close map">×</button>
+    </div>
+    <div class="sheet-map" id="sheet-map" role="region" aria-label="Map showing this place"></div>
+    <div class="sheet-actions">
+      <a class="btn-primary" data-ms="directions" href="#" target="_blank" rel="noopener">Directions ↗</a>
+      <button class="btn-ghost" type="button" data-ms="close">Close map</button>
+    </div>
+  </div>
+</dialog>

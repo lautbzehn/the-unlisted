@@ -1,28 +1,9 @@
 // "Surprise Me": a weighted dice roll over places you haven't been to, nudged toward nearby ones.
 // Your location is only requested when you press the button, and it never leaves your device.
-const KM_TO_MI = 0.621371;
-const TOO_FAR_KM = 80; // beyond this we say so honestly instead of pretending it's "near you"
-
-const toRad = (d) => (d * Math.PI) / 180;
-function distanceKm(a, b) {
-  const dLat = toRad(b.lat - a.lat);
-  const dLng = toRad(b.lng - a.lng);
-  const h = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(a.lat)) * Math.cos(toRad(b.lat)) * Math.sin(dLng / 2) ** 2;
-  return 12742 * Math.asin(Math.sqrt(h));
-}
-
-function getPosition() {
-  return new Promise((resolve) => {
-    if (!navigator.geolocation) return resolve(null);
-    navigator.geolocation.getCurrentPosition(
-      (p) => resolve({ lat: p.coords.latitude, lng: p.coords.longitude }),
-      () => resolve(null),
-      { timeout: 8000, maximumAge: 300000 },
-    );
-  });
-}
-
+import { KM_TO_MI, distanceKm, getPosition } from './geo.js';
 import { TIME_LABEL } from './time.js';
+
+const TOO_FAR_KM = 80; // beyond this we say so honestly instead of pretending it's "near you"
 
 export function initSurprise({ getState, getTime, update, showOnMap, toast }) {
   const dataEl = document.getElementById('places-data');

@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Footer from '../../components/Footer.astro';
 import PlaceCard from '../../components/PlaceCard.astro';
+import MapSheet from '../../components/MapSheet.astro';
 import { places } from '../../lib/places.js';
 
 export function getStaticPaths() {
@@ -17,11 +18,17 @@ const description = `${place.kind} in ${place.area}. ${place.story}`;
   path={`/place/${place.id}/`}
 >
   <main id="main" class="place-page">
-    <a class="back" href="/">← All doors</a>
-    <PlaceCard place={place} detail />
+    <a class="back" href="/explore/">← All doors</a>
+    <PlaceCard place={place} variant="detail" />
+    <MapSheet />
     <Footer sample={place.sample} />
   </main>
   <script>
-    import '../../scripts/shelves.js';
+    import '../../scripts/passport.js';
+    import { openSheet } from '../../scripts/mapsheet.js';
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('[data-action=map]')) return;
+      openSheet(e.target.closest('.card'));
+    });
   </script>
 </Base>
