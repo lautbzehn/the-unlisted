@@ -6,9 +6,15 @@
     "kind": "Noodle bar",
     "verified": "2026-10",
     "score": 92,
-    "breakdown": { "uniqueness": 90, "atmosphere": 85, "story": 95, "signature": 92 },
+    "breakdown": {
+      "uniqueness": 90,
+      "atmosphere": 85,
+      "story": 95,
+      "signature": 92
+    },
     "story": "Eleven stools, one cook, and a handwritten menu that changes when he runs out of broth. Locals line up by six. Nobody posted about it.",
-    "order": "The oxtail noodle soup. Ask for it extra peppery."
+    "order": "The oxtail noodle soup. Ask for it extra peppery.",
+    "sample": true
   },
   {
     "id": "sample-the-lamplighter",
@@ -17,9 +23,15 @@
     "kind": "Bar",
     "verified": "2026-09",
     "score": 88,
-    "breakdown": { "uniqueness": 86, "atmosphere": 95, "story": 82, "signature": 88 },
+    "breakdown": {
+      "uniqueness": 86,
+      "atmosphere": 95,
+      "story": 82,
+      "signature": 88
+    },
     "story": "Behind an unmarked green door, lit entirely by oil lamps. The bartender invents drinks from whatever mood you walk in with.",
-    "order": "Whatever she hands you. Tell her one word about your day."
+    "order": "Whatever she hands you. Tell her one word about your day.",
+    "sample": true
   },
   {
     "id": "sample-coal-and-crumb",
@@ -28,9 +40,15 @@
     "kind": "Coffee & bakery",
     "verified": "2026-10",
     "score": 81,
-    "breakdown": { "uniqueness": 78, "atmosphere": 80, "story": 85, "signature": 80 },
+    "breakdown": {
+      "uniqueness": 78,
+      "atmosphere": 80,
+      "story": 85,
+      "signature": 80
+    },
     "story": "A former coal-yard office turned two-table bakery. Twelve loaves a morning, gone by nine, baked by a retired shipwright.",
-    "order": "The burnt-honey rye, still warm. Arrive before eight."
+    "order": "The burnt-honey rye, still warm. Arrive before eight.",
+    "sample": true
   },
   {
     "id": "sample-no-name-tacos",
@@ -39,8 +57,14 @@
     "kind": "Taqueria",
     "verified": "2026-08",
     "score": 90,
-    "breakdown": { "uniqueness": 88, "atmosphere": 87, "story": 91, "signature": 94 },
+    "breakdown": {
+      "uniqueness": 88,
+      "atmosphere": 87,
+      "story": 91,
+      "signature": 94
+    },
     "story": "Parked behind a tire shop, no sign, cash only. The al pastor spit has been turning since before the neighborhood changed.",
-    "order": "Three al pastor, extra pineapple, salsa verde."
+    "order": "Three al pastor, extra pineapple, salsa verde.",
+    "sample": true
   }
 ]

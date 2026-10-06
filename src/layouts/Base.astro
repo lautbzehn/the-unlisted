@@ -1,7 +1,11 @@
 ---
 import '../styles/global.css';
-interface Props { title: string; description?: string }
-const { title, description = 'Bay Area hole-in-the-wall guide. No chains, no algorithm.' } = Astro.props;
+interface Props { title: string; description?: string; image?: string; path?: string }
+const { title, description = 'Bay Area hole-in-the-wall guide. No chains, no algorithm.', image, path = '/' } = Astro.props;
+// Absolute URLs are needed for share previews. Set `site` in astro.config.mjs once the domain is known.
+const origin = Astro.site?.origin ?? Astro.url.origin;
+const pageUrl = new URL(path, origin).href;
+const imageUrl = image ? new URL(image, origin).href : undefined;
 ---
 <!doctype html>
 <html lang="en">
@@ -10,6 +14,17 @@ const { title, description = 'Bay Area hole-in-the-wall guide. No chains, no alg
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#17120f" />
+    <link rel="canonical" href={pageUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="The Unlisted" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    {imageUrl && <meta property="og:image:width" content="1200" />}
+    {imageUrl && <meta property="og:image:height" content="630" />}
+    <meta name="twitter:card" content={imageUrl ? 'summary_large_image' : 'summary'} />
+    {imageUrl && <meta name="twitter:image" content={imageUrl} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +32,7 @@ const { title, description = 'Bay Area hole-in-the-wall guide. No chains, no alg
     <title>{title}</title>
   </head>
   <body>
-    <a class="skip" href="#main">Skip to places</a>
+    <a class="skip" href="#main">Skip to content</a>
     <slot />
     <div class="toast" role="status" aria-live="polite" id="toast"></div>
   </body>

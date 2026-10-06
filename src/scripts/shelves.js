@@ -53,6 +53,7 @@ function render() {
     t.setAttribute('aria-pressed', t.dataset.filter === filter);
     t.querySelector('.n').textContent = `(${counts[t.dataset.filter]})`;
   });
+  if (!empty) return; // place pages have no tabs
   const visible = cards.some((c) => !c.hidden);
   empty.classList.toggle('show', !visible);
   empty.textContent =
@@ -71,7 +72,7 @@ function update(id, patch) {
 async function share(card) {
   const id = card.dataset.id;
   const name = card.querySelector('h3').textContent;
-  const url = `${location.origin}${location.pathname}#${id}`;
+  const url = new URL(card.dataset.url, location.origin).href; // the place's own page, so the link shows a preview card
   const data = { title: `${name} — The Unlisted`, text: `You have to check out ${name}. Found it on The Unlisted.`, url };
   try {
     if (navigator.share) { await navigator.share(data); return; }
@@ -119,8 +120,5 @@ const io = new IntersectionObserver((entries) => {
   for (const en of entries) if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
 }, { threshold: 0.12 });
 cards.forEach((c) => io.observe(c));
-
-// jump to a shared card (#id)
-if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView({ block: 'center' });
 
 render();

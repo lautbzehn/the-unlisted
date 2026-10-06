@@ -1,23 +1,26 @@
 ---
 interface Props {
   place: {
-    id: string; name: string; area: string; kind: string; verified: string; score: number;
+    id: string; name: string; area: string; kind: string; verified: string; score: number; sample?: boolean;
     breakdown: { uniqueness: number; atmosphere: number; story: number; signature: number };
     story: string; order: string;
   };
+  detail?: boolean; // true on the place's own page (no "open" link)
 }
-const { place } = Astro.props;
+const { place, detail = false } = Astro.props;
 const bars = [
   ['Uniqueness', place.breakdown.uniqueness],
   ['Atmosphere', place.breakdown.atmosphere],
   ['Story', place.breakdown.story],
   ['Signature', place.breakdown.signature],
 ];
+const href = `/place/${place.id}/`;
+const Heading = detail ? 'h1' : 'h3';
 ---
-<article class="card reveal" id={place.id} data-id={place.id} data-status="none">
+<article class:list={['card reveal', { detail }]} id={place.id} data-id={place.id} data-status="none" data-url={href}>
   <div class="stamp" aria-label={`Hidden Gem Score ${place.score} out of 100`}><div>GEM<br /><b>{place.score}</b></div></div>
-  <span class="sample-flag" data-sample-flag>SAMPLE — NOT A REAL PLACE</span>
-  <h3>{place.name}</h3>
+  {place.sample && <span class="sample-flag">SAMPLE — NOT A REAL PLACE</span>}
+  <Heading>{detail ? place.name : <a href={href}>{place.name}</a>}</Heading>
   <div class="meta">{place.area} · {place.kind} · Verified {place.verified}</div>
   <p>{place.story}</p>
   <div class="bars" aria-hidden="true">
@@ -43,7 +46,7 @@ const bars = [
         </button>
       ))}
     </div>
-    <label class="sr-only" for={`note-${place.id}`} style="position:absolute;left:-999px">Private note</label>
+    <label class="sr-only" for={`note-${place.id}`}>Private note</label>
     <textarea id={`note-${place.id}`} data-note placeholder="Private note: what you ordered, who to ask for…" maxlength="400"></textarea>
   </div>
 </article>

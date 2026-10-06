@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import PlaceCard from '../../components/PlaceCard.astro';
+import places from '../../data/places.json';
+
+export function getStaticPaths() {
+  return places.map((place) => ({ params: { id: place.id }, props: { place } }));
+}
+const { place } = Astro.props;
+const description = `${place.kind} in ${place.area}. ${place.story}`;
+---
+<Base
+  title={`${place.name} — The Unlisted`}
+  description={description}
+  image={`/og/${place.id}.png`}
+  path={`/place/${place.id}/`}
+>
+  <main id="main" class="place-page">
+    <a class="back" href="/">← All doors</a>
+    <PlaceCard place={place} detail />
+    <footer>
+      <p>HUMAN CURATED · AI ENRICHED{place.sample ? ' · SAMPLE DATA' : ''}</p>
+    </footer>
+  </main>
+  <script>
+    import '../../scripts/shelves.js';
+  </script>
+</Base>
