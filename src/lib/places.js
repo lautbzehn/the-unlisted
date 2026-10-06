@@ -1,5 +1,10 @@
 import raw from '../data/places.json';
 import { gemScore } from './scoring.js';
 
-// Scores are never typed in by hand: they're computed from the four marks.
-export const places = raw.map((p) => ({ ...p, score: gemScore(p.breakdown) }));
+// Only approved places reach the site. Sources and review flags stay internal: they never ship to visitors.
+export const places = raw
+  .filter((p) => p.status === 'approved' || p.sample)
+  .map(({ sources, flags, status, approved, seed, osm, ...pub }) => ({ ...pub, score: gemScore(pub.breakdown) }));
+
+export const FAME = { 'deep-cut': 'Deep cut', 'open-secret': 'Open secret', 'local-legend': 'Local legend' };
+export const WHEN = { morning: 'Morning', midday: 'Midday', evening: 'Evening', late: 'Late' };

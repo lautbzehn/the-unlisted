@@ -3,10 +3,11 @@ interface Props {
   place: {
     id: string; name: string; area: string; kind: string; verified: string; score: number; sample?: boolean;
     breakdown: { uniqueness: number; atmosphere: number; story: number; signature: number };
-    story: string; order: string;
+    story: string; order: string; fame?: string; when?: string[]; practical?: string[]; hours?: string | null; city?: string;
   };
   detail?: boolean; // true on the place's own page (no "open" link)
 }
+import { FAME, WHEN } from '../lib/places.js';
 const { place, detail = false } = Astro.props;
 const bars = [
   ['Uniqueness', place.breakdown.uniqueness],
@@ -21,12 +22,23 @@ const Heading = detail ? 'h1' : 'h3';
   <div class="stamp" aria-label={`Hidden Gem Score ${place.score} out of 100`}><div>GEM<br /><b>{place.score}</b></div></div>
   {place.sample && <span class="sample-flag">SAMPLE — NOT A REAL PLACE</span>}
   <Heading>{detail ? place.name : <a href={href}>{place.name}</a>}</Heading>
-  <div class="meta">{place.area} · {place.kind} · Verified {place.verified}</div>
+  <div class="meta">{place.area}{place.city && place.city !== 'San Francisco' ? `, ${place.city}` : ''} · {place.kind}</div>
+  <div class="chips">
+    {place.fame && <span class:list={['chip fame', place.fame]}>{FAME[place.fame]}</span>}
+    {place.when?.map((w) => <span class="chip when">{WHEN[w]}</span>)}
+  </div>
   <p>{place.story}</p>
   <div class="bars" aria-hidden="true">
     {bars.map(([label, v]) => <div class="bar">{label}<div style={`--w:${v}%`}></div></div>)}
   </div>
   <div class="order"><span>ORDER THIS</span>{place.order}</div>
+  {detail && (place.practical?.length || place.hours) && (
+    <ul class="practical">
+      {place.practical?.map((x) => <li>{x}</li>)}
+      {place.hours && <li>Hours: {place.hours}</li>}
+    </ul>
+  )}
+  {detail && <p class="verified">Last verified {place.verified}. Hours change; check before you go.</p>}
   {detail && <a class="howlink" href="/how-the-score-works/">How is this scored?</a>}
 
   <div class="actions">

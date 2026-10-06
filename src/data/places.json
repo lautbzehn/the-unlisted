@@ -1,74 +1,833 @@
 [
   {
-    "id": "sample-stool-eleven",
-    "name": "Stool Eleven",
-    "area": "Outer Sunset, SF",
-    "kind": "Noodle bar",
-    "verified": "2026-10",
+    "id": "yamo",
+    "seed": true,
+    "status": "approved",
+    "name": "Yamo",
+    "area": "Mission District",
+    "city": "San Francisco",
+    "kind": "Burmese noodle counter",
+    "lat": 37.76192,
+    "lng": -122.4197,
+    "osm": "node/4151902171",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
     "breakdown": {
-      "uniqueness": 90,
-      "atmosphere": 85,
-      "story": 95,
-      "signature": 92
+      "uniqueness": 85,
+      "atmosphere": 82,
+      "story": 62,
+      "signature": 85
     },
-    "story": "Eleven stools, one cook, and a handwritten menu that changes when he runs out of broth. Locals line up by six. Nobody posted about it.",
-    "order": "The oxtail noodle soup. Ask for it extra peppery.",
-    "sample": true,
-    "lat": 37.7527,
-    "lng": -122.494
+    "why": "The room does most of the work: nine stools and a wait on the sidewalk. Story is modest because we found little about who runs it.",
+    "story": "Nine stools, one counter, and hooks on the wall for your coat. When the seats are full you wait on the sidewalk with a menu. The Burmese-Chinese cooking happens an arm's length away, at prices low enough that the Chronicle ran a story on how they manage it.",
+    "order": "The house noodles.",
+    "practical": [
+      "Cash only",
+      "Nine counter seats, no tables"
+    ],
+    "hours": "Dinner, roughly 5:30 to 9:30 pm (days unconfirmed)",
+    "sources": [
+      "https://missionlocal.org/2015/11/yamo-hole-in-the-wall-love/",
+      "https://www.sfchronicle.com/food/restaurants/article/yamo-noodles-burmese-menu-18168451.php"
+    ],
+    "flags": [
+      "Hours conflict: OpenStreetMap says Mon-Fri 5:30-9 pm, another listing says Mon-Sat 5:30-9:30 pm.",
+      "'Everything under $8' came from a non-press site, so it's left out. Confirm prices before adding.",
+      "Cash-only comes from older sources. Confirm."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
   },
   {
-    "id": "sample-the-lamplighter",
-    "name": "The Lamplighter Room",
-    "area": "Tenderloin, SF",
-    "kind": "Bar",
-    "verified": "2026-09",
+    "id": "swan-oyster-depot",
+    "seed": true,
+    "status": "approved",
+    "name": "Swan Oyster Depot",
+    "area": "Polk Gulch",
+    "city": "San Francisco",
+    "kind": "Seafood counter, est. 1912",
+    "lat": 37.79097,
+    "lng": -122.42092,
+    "osm": "node/825967002",
+    "when": [
+      "midday"
+    ],
+    "fame": "local-legend",
     "breakdown": {
-      "uniqueness": 86,
-      "atmosphere": 95,
-      "story": 82,
+      "uniqueness": 95,
+      "atmosphere": 93,
+      "story": 92,
       "signature": 88
     },
-    "story": "Behind an unmarked green door, lit entirely by oil lamps. The bartender invents drinks from whatever mood you walk in with.",
-    "order": "Whatever she hands you. Tell her one word about your day.",
-    "sample": true,
-    "lat": 37.7843,
-    "lng": -122.4136
+    "why": "Close to unmatched on room and history. Not hidden at all, which is exactly what the 'local legend' label is for.",
+    "story": "On this block of Polk since 1912 and run by the Sancimino family since 1946. Eighteen wooden stools face a long marble counter that has outlasted nearly everything around it. Anthony Bourdain counted it among his happy places.",
+    "order": "Oysters from the counter, and ask what came in today.",
+    "practical": [
+      "18 stools, no tables"
+    ],
+    "hours": "Mon-Sat, daytime (confirm exact hours)",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Swan_Oyster_Depot",
+      "https://www.sfgate.com/food/article/swan-oyster-depot-sf-review-18182977.php",
+      "https://projects.sfchronicle.com/2018/top-100-restaurants/swan-oyster-depot/",
+      "https://hoodline.com/2025/10/iconic-swan-oyster-depot-building-in-san-francisco-sold-for-8-million-new-owner-to-preserve-century-old-seafood-legacy/"
+    ],
+    "flags": [
+      "Hours: OpenStreetMap says Mon-Sat 8 am-2:30 pm. Unconfirmed elsewhere.",
+      "Signature dish not confirmed by a source we read (often cited: Sicilian sashimi, crab back). Confirm before naming one.",
+      "Cash-only status unknown.",
+      "The building sold in Oct 2025; the new owner says the business stays. Worth re-checking."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
   },
   {
-    "id": "sample-coal-and-crumb",
-    "name": "Coal & Crumb",
-    "area": "West Oakland",
-    "kind": "Coffee & bakery",
-    "verified": "2026-10",
+    "id": "saigon-sandwich",
+    "seed": true,
+    "status": "approved",
+    "name": "Saigon Sandwich",
+    "area": "Tenderloin (Little Saigon)",
+    "city": "San Francisco",
+    "kind": "Bánh mì counter",
+    "lat": 37.78311,
+    "lng": -122.41736,
+    "osm": "node/2623903547",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 72,
+      "atmosphere": 70,
+      "story": 78,
+      "signature": 92
+    },
+    "why": "The sandwich earns its mark. Uniqueness is lower because Little Saigon has other good bánh mì counters within a block.",
+    "story": "One of the first Vietnamese shops on this stretch of Larkin, opening around 1981 as the blocks became Little Saigon. It's a narrow room built around an assembly line, and the line moves fast. The New York Times once suggested these might be the best bánh mì in America.",
+    "order": "A bánh mì with everything: pâté, pickled carrots, cilantro and jalapeños.",
+    "practical": [
+      "Takeout, tiny room"
+    ],
+    "hours": "Daily, 7 am to about 6 pm",
+    "sources": [
+      "https://www.7x7.com/banh-mi-in-san-francisco-a-brief-history-1781331963.html",
+      "https://www.vice.com/en/article/a-guide-to-the-amazing-banh-mi-in-sfs-sketchiest-neighborhood/",
+      "https://sfstandard.com/2024/02/08/little-saigon-tenderloin-restaurants/"
+    ],
+    "flags": [
+      "The NYT line comes via a secondary source. Confirm the original before keeping it.",
+      "Old articles cite $5 sandwiches. Price left out on purpose.",
+      "Hours from OpenStreetMap only."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "golden-boy-pizza",
+    "seed": true,
+    "status": "approved",
+    "name": "Golden Boy Pizza",
+    "area": "North Beach",
+    "city": "San Francisco",
+    "kind": "Square-slice pizza counter",
+    "lat": 37.79973,
+    "lng": -122.40808,
+    "osm": "node/4614040548",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 82,
+      "atmosphere": 72,
+      "story": 78,
+      "signature": 90
+    },
+    "why": "A North Beach original whose focaccia squares predate the current square-pizza craze by decades. Atmosphere is mid because it's a slice counter, not a room you linger in.",
+    "story": "Peter Sodini opened Golden Boy on Green Street in 1978 with an idea of pizza as focaccia first and toppings second. The result is thick, airy squares, sold to a late crowd until 11 on weekend nights. His sons run it now.",
+    "order": "A clam and garlic square.",
+    "practical": [
+      "Slices to go",
+      "Open late on weekends"
+    ],
+    "hours": "Daily from 11:30 am, until 11 pm Fri-Sat",
+    "sources": [
+      "https://www.goldenboypizza.com/history",
+      "https://www.kqed.org/arts/13959808/golden-boy-pizza-north-beach-sf-late-night",
+      "https://www.theinfatuation.com/san-francisco/reviews/golden-boy-pizza"
+    ],
+    "flags": [
+      "A newer second location has been reported. This card is the original Green Street shop.",
+      "OpenStreetMap lists 540 Green St; sources say 542. Confirm the address."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "arts-cafe",
+    "seed": true,
+    "status": "approved",
+    "name": "Art's Cafe",
+    "area": "Inner Sunset",
+    "city": "San Francisco",
+    "kind": "Korean-American diner counter",
+    "lat": 37.76393,
+    "lng": -122.46602,
+    "osm": "node/1976983015",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 84,
+      "atmosphere": 76,
+      "story": 80,
+      "signature": 88
+    },
+    "why": "A diner with a genuinely odd signature dish and a second-chance story. Atmosphere is a classic counter, warm rather than remarkable.",
+    "story": "A narrow counter off Ninth and Irving that served American breakfasts with a Korean streak for thirty years. When the original owners retired in 2020 it closed, and that could have been the end. A new family took it over in 2021 and kept the menu, Samurai omelet included.",
+    "order": "The bulgogi hash brown sandwich: crisp potatoes, melted cheese, beef and an egg.",
+    "practical": [
+      "Counter seating",
+      "Breakfast and lunch only"
+    ],
+    "hours": "Tue-Sun, 7:30 am to 3 pm",
+    "sources": [
+      "https://www.chron.com/food/article/Art-s-Cafe-closes-after-30-years-in-San-Francisco-15420925.php",
+      "https://www.sfchronicle.com/food/article/Art-s-Cafe-and-its-Samurai-omelet-live-on-as-15928111.php"
+    ],
+    "flags": [
+      "Hours from OpenStreetMap only.",
+      "The current owners are named in a 2021 article (Chol and Young Lee). The story leaves names out until confirmed."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "old-mandarin-islamic",
+    "seed": true,
+    "status": "approved",
+    "name": "Old Mandarin Islamic Restaurant",
+    "area": "Outer Sunset",
+    "city": "San Francisco",
+    "kind": "Halal Uyghur & Beijing kitchen",
+    "lat": 37.73833,
+    "lng": -122.5007,
+    "osm": "node/3250339047",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 90,
+      "atmosphere": 66,
+      "story": 82,
+      "signature": 84
+    },
+    "why": "High on uniqueness and story. Atmosphere is a middle mark because we couldn't find a good description of the room, so we didn't guess.",
+    "story": "Xuqun Yang and Feng Wang left Beijing in 1987 and opened this place out by the beach ten years later, working it with their teenage son. The cooking is mostly Uyghur with Beijing dishes alongside, all halal, with no pork or alcohol. Not long ago it was the city's only Chinese Muslim restaurant.",
+    "order": "Lamb skewers to start, then the hot pot if you've brought friends.",
+    "practical": [
+      "Halal, no alcohol",
+      "Tue and Thu: dinner only"
+    ],
+    "hours": "11:30 am-9 pm most days; Tue and Thu 5-9 pm",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Old_Mandarin_Islamic_Restaurant",
+      "https://www.foodnut.com/864/old-mandarin-islamic-restaurant-review-san-francisco/"
+    ],
+    "flags": [
+      "Hours from OpenStreetMap, matched by one other listing.",
+      "'Only Chinese Muslim restaurant in SF' was true as of 2015, so the story says 'not long ago'. Confirm or cut."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "binis-kitchen",
+    "seed": true,
+    "status": "approved",
+    "name": "Bini's Kitchen",
+    "area": "SoMa",
+    "city": "San Francisco",
+    "kind": "Nepali momo counter",
+    "lat": 37.77953,
+    "lng": -122.4072,
+    "osm": "node/11817396093",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 80,
+      "atmosphere": 55,
+      "story": 86,
+      "signature": 90
+    },
+    "why": "Momos people cross town for and a family story worth telling. Atmosphere is low: it's a weekday lunch counter in an office district.",
+    "story": "Binita Pradhan grew up in Kathmandu and moved to San Francisco in 2004. She and her sister Sumita Giri make the momos here: thin wrappers, spiced turkey or lamb, and a roasted tomato and cilantro sauce people come back for. It's a weekday lunch spot in a part of SoMa that's had a hard few years, and they're still at it.",
+    "order": "Turkey momos, with extra tomato-cilantro sauce.",
+    "practical": [
+      "Weekday lunch only"
+    ],
+    "hours": "Weekdays, about 11 am to 3 pm (days vary by source)",
+    "sources": [
+      "https://www.theinfatuation.com/san-francisco/reviews/binis-kitchen",
+      "https://missionlocal.org/2026/02/sf-binis-kitchen-restaurant-south-of-market/",
+      "https://www.sfchronicle.com/food/article/Bini-s-Kitchen-is-now-serving-its-highly-touted-13786121.php",
+      "https://foodwise.org/sellers/binis-kitchen/"
+    ],
+    "flags": [
+      "Hours conflict: OpenStreetMap says Mon-Fri, another listing says Wed-Fri.",
+      "There's also a Ferry Plaza Farmers Market stall. Confirm it's still active before mentioning it.",
+      "OpenStreetMap has three Bini's records (two without addresses). Clean up duplicates."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "the-codmother",
+    "seed": true,
+    "status": "approved",
+    "name": "The Codmother Fish & Chips",
+    "area": "Fisherman's Wharf",
+    "city": "San Francisco",
+    "kind": "Fish & chips window",
+    "lat": 37.80727,
+    "lng": -122.41708,
+    "osm": "node/4259747290",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 68,
+      "atmosphere": 62,
+      "story": 74,
+      "signature": 84
+    },
+    "why": "An honest stop in the most touristy part of town. It scores lower because it's a well-made version of a familiar thing.",
+    "story": "A British expat, Suzanne Acevedo, started it in 2011 as a walk-up window for proper fish and chips. It has changed hands twice since. Ilana Teles and her son Gabriel took over in 2020, when the Wharf was empty, and locals helped keep it going.",
+    "order": "Fish and chips.",
+    "practical": [
+      "Walk-up window"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.codmother.com/about",
+      "https://www.sfgate.com/food/article/sf-the-codmother-fish-and-chips-food-truck-deal-20805771.php"
+    ],
+    "flags": [
+      "No hours found anywhere reliable.",
+      "The fish isn't named in our sources (cod is assumed from the name, so we didn't say it).",
+      "Signature mark is high on reputation; the 'order' line is thin. Add a specific if you know one."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "taqueria-can-cun-mission",
+    "seed": true,
+    "status": "approved",
+    "name": "Taqueria Can-Cún",
+    "area": "Mission District",
+    "city": "San Francisco",
+    "kind": "Late-night taqueria",
+    "lat": 37.76046,
+    "lng": -122.4194,
+    "osm": "node/2485515167",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 58,
+      "atmosphere": 74,
+      "story": 66,
+      "signature": 82
+    },
+    "why": "Proof the score isn't a quality rating: the burritos are excellent, but taquerias are the Mission's most common thing, so uniqueness is modest.",
+    "story": "Opened in 1991 at Market and Sixth, then spread to the Mission, where this spot on Mission at 19th is the one people know. Paper banners overhead, long tables up front, and hours that run well past midnight, so the crowd changes shape as the night goes on.",
+    "order": "The burrito mojado, smothered in sauce. Budget twenty minutes.",
+    "practical": [
+      "Open late"
+    ],
+    "hours": "Late, reportedly until about 2:45 am (confirm)",
+    "sources": [
+      "https://www.taqueriacancunsf.net/who.html",
+      "https://www.foodnut.com/283/taqueria-cancun-restaurant-review-san-francisco/"
+    ],
+    "flags": [
+      "OpenStreetMap has no hours for 2288 Mission. The late hours come from another listing.",
+      "Payment: older sources say cash only; the website suggests cards now.",
+      "Three locations (Market, 2288 Mission, 3211 Mission). This card is 2288 Mission, per your list."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "tommys-joynt",
+    "seed": true,
+    "status": "approved",
+    "name": "Tommy's Joynt",
+    "area": "Cathedral Hill",
+    "city": "San Francisco",
+    "kind": "Hofbrau, since 1947",
+    "lat": 37.78555,
+    "lng": -122.42162,
+    "osm": "node/393134624",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 88,
+      "atmosphere": 92,
+      "story": 90,
+      "signature": 70
+    },
+    "why": "Here for the room and the history, which are the real thing. Even its admirers call the food just okay, so the signature mark is modest.",
+    "story": "It opened in 1947 as the Almond Blossom, at Van Ness and Geary, and became Tommy's Joynt in 1951, after Tommy Harris, a radio singer and the owner's cousin. Harris pitched it as carving-station theater: the hofbrau, brought uptown. The buffalo stew arrived after a chat with a diner who ran a bison ranch in Wyoming.",
+    "order": "The buffalo stew.",
+    "practical": [
+      "Cafeteria-style carving line"
+    ],
+    "hours": "Daily from noon; until midnight Thu-Sat",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hofbrau",
+      "https://sf.gazetteer.co/an-ode-to-tommys-joynt",
+      "https://www.sfgate.com/food/article/Tommy-s-Joynt-buyer-has-no-appetite-for-change-6317277.php"
+    ],
+    "flags": [
+      "Atmosphere mark relies on secondary descriptions. The room itself isn't described in our sources, so the story leaves it out.",
+      "Hours from OpenStreetMap only."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "bobs-donuts",
+    "seed": false,
+    "status": "approved",
+    "name": "Bob's Donuts",
+    "area": "Polk Gulch",
+    "city": "San Francisco",
+    "kind": "Donut shop, since 1960",
+    "lat": 37.79275,
+    "lng": -122.42098,
+    "osm": "node/13551029435",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 80,
+      "atmosphere": 78,
+      "story": 82,
+      "signature": 85
+    },
+    "why": "An all-hours institution with a real family story. A donut shop is a familiar format, which keeps uniqueness from going higher.",
+    "story": "Making donuts on Polk since 1960, run by the Ahn family since the 1970s. After losing its lease it moved about 300 feet up the block. Everything is still made from scratch, and at 3 am the counter still draws night-shift workers, people heading home, and people just getting up.",
+    "order": "Whatever just came out of the fryer. Ask.",
+    "practical": [
+      "Open 24 hours (confirm)"
+    ],
+    "hours": "24 hours, reportedly",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bob%27s_Donuts",
+      "https://sfist.com/2025/02/18/new-bobs-donuts-on-polk-street-opens-friday-just-300-feet-from-the-old-bobs-donuts-on-polk-street/",
+      "https://www.tastingtable.com/2204128/san-francisco-best-donuts-24-hours-bobs/",
+      "https://www.sfgate.com/food/article/sf-doughnut-shop-ready-to-re-open-20173881.php"
+    ],
+    "flags": [
+      "Sources disagree on when the new shop opened (Feb 2025 vs 2026) and whether it's 24 hours. OpenStreetMap says 24/7. Confirm both.",
+      "Original shop's last day reported as Nov 23, 2025. Confirm."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "molinari-delicatessen",
+    "seed": false,
+    "status": "approved",
+    "name": "Molinari Delicatessen",
+    "area": "North Beach",
+    "city": "San Francisco",
+    "kind": "Italian deli, since 1896",
+    "lat": 37.79836,
+    "lng": -122.40783,
+    "osm": null,
+    "when": [
+      "midday"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 86,
+      "atmosphere": 85,
+      "story": 84,
+      "signature": 88
+    },
+    "why": "Over a century on the same street, and the ritual of ordering is part of the experience. Plenty of people know it, which the fame label reflects.",
+    "story": "Selling cured meats and cheese on Columbus since 1896, which makes it a contender for the oldest deli in the West. It's small and almost always crowded. You pull a number, study the shelves while you wait, and order when they call you.",
+    "order": "The Luciano Special: prosciutto, coppa, fresh mozzarella and sun-dried tomatoes on grilled focaccia.",
+    "practical": [
+      "Take a number"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.theinfatuation.com/san-francisco/guides/old-school-italian-restaurants-sf-from-oldest-to-newest",
+      "https://secretsanfrancisco.com/molinari-delicatessen-sf/",
+      "https://www.sfgate.com/bayarea/nativeson/article/These-3-classic-S-F-delis-still-going-strong-3199672.php"
+    ],
+    "flags": [
+      "Not in our OpenStreetMap download (it's mapped as a shop, not a restaurant). Located by address lookup at 373 Columbus. Confirm.",
+      "Hours not found.",
+      "'Oldest deli west of the Rockies' is the deli's own claim, so the story says 'contender'."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "good-mong-kok-bakery",
+    "seed": false,
+    "status": "approved",
+    "name": "Good Mong Kok Bakery",
+    "area": "Chinatown",
+    "city": "San Francisco",
+    "kind": "Takeout dim sum counter",
+    "lat": 37.79544,
+    "lng": -122.40833,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 78,
       "atmosphere": 80,
-      "story": 85,
-      "signature": 80
+      "story": 55,
+      "signature": 88
     },
-    "story": "A former coal-yard office turned two-table bakery. Twelve loaves a morning, gone by nine, baked by a retired shipwright.",
-    "order": "The burnt-honey rye, still warm. Arrive before eight.",
-    "sample": true,
-    "lat": 37.8044,
-    "lng": -122.2995
+    "why": "Fast, cheap and excellent, with real character at the counter. Story is low: we found almost nothing about its history.",
+    "story": "No tables, just a window full of dumplings and buns and a line that moves faster than you'd guess. Know your order before you reach the front; the women behind the counter don't wait around. Almost everything costs a few dollars.",
+    "order": "Steamed barbecue pork buns and shrimp dumplings, plus an egg tart for the walk.",
+    "practical": [
+      "Takeout only",
+      "Cash only (confirm)"
+    ],
+    "hours": "Daily, about 7 am to 6 pm (confirm)",
+    "sources": [
+      "https://sfstandard.com/2022/11/21/get-your-dumplings-to-go-at-chinatowns-good-mong-kok-bakery/",
+      "https://www.theinfatuation.com/san-francisco/guides/best-chinese-bakeries-san-francisco"
+    ],
+    "flags": [
+      "Mapped as a bakery in OpenStreetMap, so our restaurant-only download missed it.",
+      "Prices and cash-only are from 2022."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
   },
   {
-    "id": "sample-no-name-tacos",
-    "name": "The Truck Behind the Truck",
-    "area": "Mission, SF",
-    "kind": "Taqueria",
-    "verified": "2026-08",
+    "id": "reds-java-house",
+    "seed": false,
+    "status": "approved",
+    "name": "Red's Java House",
+    "area": "Embarcadero (Pier 30)",
+    "city": "San Francisco",
+    "kind": "Waterfront burger shack",
+    "lat": 37.78721,
+    "lng": -122.38732,
+    "osm": "way/124659443",
+    "when": [
+      "midday"
+    ],
+    "fame": "local-legend",
     "breakdown": {
       "uniqueness": 88,
-      "atmosphere": 87,
-      "story": 91,
-      "signature": 94
+      "atmosphere": 88,
+      "story": 90,
+      "signature": 80
     },
-    "story": "Parked behind a tire shop, no sign, cash only. The al pastor spit has been turning since before the neighborhood changed.",
-    "order": "Three al pastor, extra pineapple, salsa verde.",
-    "sample": true,
-    "lat": 37.7599,
-    "lng": -122.4148
+    "why": "A working-waterfront survivor with one of the best stories in the city. The burger is good and deliberately simple.",
+    "story": "It started in the 1930s as Franco's Lunch, feeding longshoremen on Pier 30. Two redheaded brothers, Tom and Mike McGarvey, bought it in 1955 and put their nickname on the door. When fire took the rest of the pier in 1984, a city fireboat saved the shack. The menu has barely changed since.",
+    "order": "A double cheeseburger on sourdough with onions, pickles and mustard. The patties are thin, so get two.",
+    "practical": [
+      "No lettuce or tomato, by design",
+      "Full bar"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.redsjavahouse.com/history",
+      "https://www.redsjavahouse.com/",
+      "https://www.theinfatuation.com/san-francisco/reviews/reds-java-house",
+      "https://www.sfgate.com/food/article/San-Franciscans-keep-legendary-Red-s-Java-House-15567087.php"
+    ],
+    "flags": [
+      "Hours aren't on their website. Confirm before launch."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "caffe-trieste",
+    "seed": false,
+    "status": "approved",
+    "name": "Caffe Trieste",
+    "area": "North Beach",
+    "city": "San Francisco",
+    "kind": "Espresso house, since 1956",
+    "lat": 37.79867,
+    "lng": -122.4073,
+    "osm": "node/331389010",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 84,
+      "atmosphere": 88,
+      "story": 92,
+      "signature": 74
+    },
+    "why": "History you can sit inside. The coffee is the point but not the reason it's remarkable, so the signature mark is lower.",
+    "story": "Giovanni Giotta, known as Papa Gianni, came from Trieste, missed its coffeehouses, and opened his own at Vallejo and Grant in 1956. It's widely credited as the first espresso house on the West Coast. The Giottas were also a singing family, and music has been part of the café for decades.",
+    "order": "An espresso, the thing it was built for.",
+    "practical": [
+      "The original location; there are others"
+    ],
+    "hours": "Daily, 7 am to 10 pm",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Caffe_Trieste",
+      "https://caffetrieste.com/in-memoriam-papa-gianni",
+      "https://www.sfgate.com/bayarea/article/Caffe-Trieste-popular-North-Beach-landmark-11824883.php"
+    ],
+    "flags": [
+      "Caffe Trieste has other locations and franchises. We list only the original. Decide whether it still counts as independent.",
+      "A family dispute and lawsuit were reported in 2017. Not in the story; check current ownership.",
+      "Hours from OpenStreetMap only."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "mitchells-ice-cream",
+    "seed": false,
+    "status": "approved",
+    "name": "Mitchell's Ice Cream",
+    "area": "Mission District (south)",
+    "city": "San Francisco",
+    "kind": "Ice cream parlor, since 1953",
+    "lat": 37.74416,
+    "lng": -122.42283,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 82,
+      "atmosphere": 70,
+      "story": 86,
+      "signature": 88
+    },
+    "why": "Same family, same corner, seventy-plus years. Atmosphere is a middle mark: it's a scoop shop, and we didn't find good descriptions of the room.",
+    "story": "Brothers Larry and Jack Mitchell opened this parlor at 29th and San Jose in June 1953 with nineteen flavors. It's still in the family and still on the same corner. The case now holds more than forty flavors, from grasshopper pie to ube and macapuno.",
+    "order": "A scoop of ube.",
+    "practical": [
+      "A San Francisco Legacy Business"
+    ],
+    "hours": null,
+    "sources": [
+      "https://mitchellsicecream.com/mitchells-history/",
+      "https://www.nbcbayarea.com/news/local/stories-by-joe-rosato-jr/mitchells-ice-cream-san-francisco/3275612/",
+      "https://www.sfgate.com/bayarea/article/Larry-Mitchell-co-founder-of-famed-ice-cream-7940986.php"
+    ],
+    "flags": [
+      "Not in our OpenStreetMap download (mapped as an ice cream shop). Located by address lookup at 688 San Jose Ave.",
+      "Hours not found.",
+      "Is an ice cream parlor a 'hole in the wall'? It fits the all-hours pivot but stretches the definition. Your call."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "lucky-three-seven",
+    "seed": false,
+    "status": "approved",
+    "name": "Lucky Three Seven",
+    "area": "Fruitvale",
+    "city": "Oakland",
+    "kind": "Filipino takeout window",
+    "lat": 37.79313,
+    "lng": -122.21887,
+    "osm": "node/12495151801",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 78,
+      "atmosphere": 84,
+      "story": 52,
+      "signature": 88
+    },
+    "why": "Big personality and huge lumpia. Story is low because we couldn't find who runs it or how it started.",
+    "story": "You order at a window on Fruitvale, grab a stool on the patio, and the speakers play '90s hip-hop loud. It's a family operation turning out adobo, tocino with a fried egg over rice, and lumpia several times the usual size.",
+    "order": "The XL lumpia and the G-fire wings, which taste like adobo with a crunch.",
+    "practical": [
+      "Cash only",
+      "Walk-up window, patio stools"
+    ],
+    "hours": "Tue-Sun, 11 am to 9 pm",
+    "sources": [
+      "https://www.theinfatuation.com/san-francisco/reviews/lucky-three-seven"
+    ],
+    "flags": [
+      "Only one solid source. Owners and history not found. Worth asking them directly.",
+      "Cash-only claim is from an undated review.",
+      "Hours from OpenStreetMap only."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "shewhat",
+    "seed": false,
+    "status": "approved",
+    "name": "Shewhat",
+    "area": "North Oakland (Berkeley border)",
+    "city": "Oakland",
+    "kind": "Eritrean family kitchen",
+    "lat": 37.8467,
+    "lng": -122.2656,
+    "osm": "node/9078253244",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 76,
+      "atmosphere": 72,
+      "story": 88,
+      "signature": 80
+    },
+    "why": "A mother's recipes, cooked by her daughters. That's what carries it. Uniqueness is moderate: the East Bay has several good Eritrean and Ethiopian kitchens.",
+    "story": "Abby Dair learned to cook from her mother in Eritrea, starting at fourteen. She opened this place in 2018 and named it after her. Abby and her sister Selam still cook from their mother's recipes.",
+    "order": "Shewhat zigni, the house beef stewed in sauce and butter, with lentil sambusas to start.",
+    "practical": [
+      "Dinner only",
+      "Covered patio"
+    ],
+    "hours": "Mon and Wed-Fri 5-9 pm; Sat-Sun 4-9 pm",
+    "sources": [
+      "https://www.berkeleyside.org/2019/05/13/an-eritrean-chef-finds-community-and-support-at-her-restaurant-shewhat-in-berkeley",
+      "https://www.shewhatcafe.com/about/",
+      "https://eastbayexpress.com/eritrean-food-with-homestyle-vibes-2-1/"
+    ],
+    "flags": [
+      "Hours from OpenStreetMap only.",
+      "Sources say Berkeley and Oakland; the address is on Shattuck at the border. Pick the area label."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "el-quetzal-grill",
+    "seed": false,
+    "status": "approved",
+    "name": "El Quetzal Grill",
+    "area": "Excelsior",
+    "city": "San Francisco",
+    "kind": "Guatemalan grill",
+    "lat": 37.72704,
+    "lng": -122.43277,
+    "osm": null,
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 80,
+      "atmosphere": 60,
+      "story": 72,
+      "signature": 74
+    },
+    "why": "A true deep cut: brand new and barely written about. Everything here rests on one article, so the marks are less certain than they look.",
+    "story": "Juan Castañon came from Guatemala and spent fifteen years in San Francisco before opening his first business, this grill on Mission Street, in July 2026. He runs it with his wife, Claudia. Weekends are busiest, when people come in for handmade tortillas, churrasco and chicken soup.",
+    "order": "Churrasco with handmade tortillas.",
+    "practical": [
+      "New in 2026"
+    ],
+    "hours": null,
+    "sources": [
+      "https://missionlocal.org/2026/08/excelsior-buzz-big-art-loop-night-market/"
+    ],
+    "flags": [
+      "Opened July 2026, one source, not in OpenStreetMap. High risk of change. Consider waiting until it's been open a while.",
+      "Address (4441 Mission St) via address lookup.",
+      "No hours found."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
+  },
+  {
+    "id": "homemade-cafe",
+    "seed": false,
+    "status": "approved",
+    "name": "Homemade Cafe",
+    "area": "South Berkeley",
+    "city": "Berkeley",
+    "kind": "Breakfast diner, since 1979",
+    "lat": 37.86226,
+    "lng": -122.28136,
+    "osm": "node/308447576",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 70,
+      "atmosphere": 72,
+      "story": 88,
+      "signature": 66
+    },
+    "why": "The story is the reason to go: a neighborhood diner that feeds people who can't pay. We couldn't confirm a signature dish, so that mark is low.",
+    "story": "A Berkeley breakfast place since 1979. It became known well beyond the neighborhood for Everybody Eats, a program that gives free meals to people who can't afford them. Rising costs closed it on New Year's Day 2024, and it came back in February 2025 with a smaller menu.",
+    "order": "Breakfast. We couldn't confirm one signature dish, so ask what the regulars get.",
+    "practical": [
+      "Breakfast and lunch"
+    ],
+    "hours": "Mon-Fri 7 am-2 pm; Sat-Sun 8 am-3 pm",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Homemade_Cafe",
+      "https://www.berkeleyside.org/2026/04/21/homemade-cafe-dinner-causa-jiams-qargo-open"
+    ],
+    "flags": [
+      "An April 2026 headline says it now serves dinner. We couldn't open the article to confirm.",
+      "No signature dish found. Add one if you know it.",
+      "Hours from OpenStreetMap only."
+    ],
+    "approved": "2026-10-05",
+    "verified": "2026-10"
   }
 ]

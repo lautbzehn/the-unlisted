@@ -17,7 +17,7 @@ import { places } from '../lib/places.js';
     <form class="search" role="search" onsubmit="return false">
       <label for="vibe">DESCRIBE THE NIGHT YOU WANT</label>
       <div class="field">
-        <input id="vibe" type="search" placeholder="A dim, candlelit bar where the bartender makes up drinks…" disabled />
+        <input id="vibe" type="search" placeholder="A counter-seat diner that does breakfast right…" disabled />
         <button class="btn-primary" type="button" disabled>Find it</button>
       </div>
       <p class="soon">VIBE SEARCH: COMING IN THE NEXT BUILD</p>
@@ -25,13 +25,13 @@ import { places } from '../lib/places.js';
 
     <div class="surprise-row">
       <button id="surprise-btn" class="btn-primary big" type="button">Surprise me</button>
-      <p>One door you'd never find, picked for you. Your location stays on your device.</p>
+      <p>One door, picked for you, any hour. Your location stays on your device.</p>
     </div>
 
     <dialog id="surprise" aria-labelledby="sp-title">
       <div class="sp-card">
         <button class="sp-x" data-sp="close" aria-label="Close">×</button>
-        <div class="sp-kicker">TONIGHT'S DOOR</div>
+        <div class="sp-kicker">TODAY'S DOOR</div>
         <div class="sp-slot" data-sp="slot" aria-hidden="true"></div>
         <div class="sp-body">
           <div class="stamp" aria-hidden="true"><div>GEM<br /><b data-sp="score"></b></div></div>
@@ -78,7 +78,7 @@ import { places } from '../lib/places.js';
       {places.map((p) => <PlaceCard place={p} />)}
     </section>
 
-    <Footer sample />
+    <Footer sample={places.some((p) => p.sample)} />
   </main>
 
   <script>

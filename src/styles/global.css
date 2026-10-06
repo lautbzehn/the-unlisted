@@ -308,3 +308,12 @@ footer p + p { margin-top: 6px; }
 .two { margin-top: 44px; }
 .sample-note { margin-top: 32px; font: 12px var(--font-type); letter-spacing: 0.06em; color: var(--mute); border-top: 1px dashed #b8893a55; padding-top: 16px; }
 .howlink { display: inline-block; margin-top: 12px; font: 12px var(--font-type); letter-spacing: 0.1em; color: var(--oxblood); }
+
+/* ---------- Labels: fame + time of day ---------- */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: -6px 0 12px; }
+.chip { font: 10.5px var(--font-type); letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; border: 1.5px solid var(--ink-mute); color: var(--ink-mute); }
+.chip.fame.deep-cut { background: var(--oxblood); border-color: var(--oxblood); color: var(--paper); }
+.chip.fame.open-secret { border-color: var(--oxblood); color: var(--oxblood); }
+.chip.fame.local-legend { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.practical { margin: 14px 0 0; padding-left: 18px; font-size: 0.92rem; }
+.verified { font: 11px var(--font-type); color: var(--ink-mute); margin-top: 12px; letter-spacing: 0.04em; }
