@@ -158,5 +158,20 @@
     "id": "burma-taste",
     "name": "Burma Taste",
     "reason": "Recent opening with only own-site copy and listings; nothing distinctive beyond the cuisine"
+  },
+  {
+    "id": "la-colonia",
+    "name": "La Colonia",
+    "reason": "New 24-hour takeout window (opened around early 2026) with a single news paragraph; no story yet"
+  },
+  {
+    "id": "cosecha",
+    "name": "Cosecha",
+    "reason": "Closed in 2021; chef Dominica Rice-Cisneros now runs Bombera in the Dimond, a possible substitute"
+  },
+  {
+    "id": "panaderia-sevilla",
+    "name": "Panadería Sevilla",
+    "reason": "Listing sources only; second shop of a San Leandro bakery, and the one detailed write-up (Oaklandside) disallows fetching"
   }
 ]
