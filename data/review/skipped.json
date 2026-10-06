@@ -43,5 +43,30 @@
     "id": "that-luang-kitchen",
     "name": "That Luang Kitchen",
     "reason": "Closed: listings show it permanently closed as of late December 2025."
+  },
+  {
+    "id": "roger-s-deli-and-donuts",
+    "name": "Roger's Deli & Donuts",
+    "reason": "Poor fit: a deli and donut counter with no press, story or standout item beyond listing sites; address also conflicts (209 vs 295 E Middlefield)."
+  },
+  {
+    "id": "star-chaat-cuisine",
+    "name": "Star Chaat Cuisine",
+    "reason": "Poor fit: a general North/South Indian restaurant with no story or press; only listing sites. The South Bay has stronger chaat options."
+  },
+  {
+    "id": "rice-roll-express",
+    "name": "Rice Roll Express",
+    "reason": "Poor fit: opened June 2024 and went viral on TikTok (25-minute lines). Hype-driven rather than a hole-in-the-wall; revisit later."
+  },
+  {
+    "id": "brickhouse-cafe",
+    "name": "Brickhouse Cafe",
+    "reason": "Poor fit: a ballpark-area bar and grill from 2000 with a gastropub menu (Wagyu burgers, craft cocktails). No hole-in-the-wall character in any source."
+  },
+  {
+    "id": "udon-mugizo",
+    "name": "Udon Mugizo",
+    "reason": "Poor fit: a Japan Center mall udon shop with 1-2 hour waits; popular rather than a hole-in-the-wall, and no story found."
   }
 ]
