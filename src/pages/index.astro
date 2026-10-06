@@ -6,21 +6,20 @@ import { places } from '../lib/places.js';
 ---
 <Base title="The Unlisted — Bay Area hole-in-the-wall guide">
   <main id="main">
-    <header class="door">
-      <small>— EST. NOWHERE —</small>
-      <h1 class="logo">The <i>Unlisted</i></h1>
-      <div class="rule"></div>
-      <p class="tag">Bay Area hole-in-the-wall guide. Knock twice.</p>
-      <div class="fine">NO CHAINS · NO ALGORITHM · NO KIDDING</div>
+    <header class="bill">
+      <div class="stars" aria-hidden="true">★ ★ ★ &nbsp;BAY AREA&nbsp; ★ ★ ★</div>
+      <h1><span class="the">the</span><span class="logo" style="display:block">Unlisted</span></h1>
+      <p class="sub">Hole-in-the-wall guide · All hours</p>
+      <p class="fine">NO CHAINS · NO ALGORITHM · NO KIDDING</p>
     </header>
 
     <form class="search" role="search" onsubmit="return false">
-      <label for="vibe">DESCRIBE THE NIGHT YOU WANT</label>
+      <label for="vibe">Describe what you’re in the mood for</label>
       <div class="field">
         <input id="vibe" type="search" placeholder="A counter-seat diner that does breakfast right…" disabled />
         <button class="btn-primary" type="button" disabled>Find it</button>
       </div>
-      <p class="soon">VIBE SEARCH: COMING IN THE NEXT BUILD</p>
+      <p class="soon">Vibe search: coming in the next build</p>
     </form>
 
     <div class="surprise-row">
@@ -34,12 +33,12 @@ import { places } from '../lib/places.js';
         <div class="sp-kicker">TODAY'S DOOR</div>
         <div class="sp-slot" data-sp="slot" aria-hidden="true"></div>
         <div class="sp-body">
-          <div class="stamp" aria-hidden="true"><div>GEM<br /><b data-sp="score"></b></div></div>
+          <div class="stamp" aria-hidden="true"><small>GEM</small><b data-sp="score"></b><i>ADMIT ONE</i></div>
           <span class="sample-flag" data-sp="sample">SAMPLE — NOT A REAL PLACE</span>
           <h2 id="sp-title"></h2>
           <div class="meta" data-sp="meta"></div>
           <p data-sp="story"></p>
-          <div class="order"><span>ORDER THIS</span><div data-sp="order"></div></div>
+          <p class="order"><em>Order this</em><span data-sp="order"></span></p>
           <p class="sp-where" data-sp="where"></p>
           <div class="sp-actions">
             <a class="btn-primary" data-sp="open" href="#">Open the file →</a>
@@ -86,6 +85,16 @@ import { places } from '../lib/places.js';
     <script type="application/json" id="places-data" set:html={JSON.stringify(places)} />
     <section class="grid" aria-label="Places">
       {places.map((p) => <PlaceCard place={p} />)}
+    </section>
+
+    <section class="undercard" aria-labelledby="next-on-card">
+      <h2 id="next-on-card">★ Next on the card ★</h2>
+      <div class="cities">
+        <span class="city">San Diego</span><span class="vs" aria-hidden="true">&amp;</span>
+        <span class="city">Austin</span><span class="vs" aria-hidden="true">&amp;</span>
+        <span class="city">New York</span>
+      </div>
+      <p>Bay Area only for now. These three are next. Suggestions and voting for other cities open when the site goes live.</p>
     </section>
 
     <Footer sample={places.some((p) => p.sample)} />

@@ -7,6 +7,8 @@ maplibregl.setWorkerUrl('/maplibre/maplibre-gl-worker.mjs'); // copied by script
 
 const places = JSON.parse(document.getElementById('places-data').textContent);
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const darkMode = matchMedia('(prefers-color-scheme: dark)');
+const theme = () => (darkMode.matches ? 'ink' : 'paper');
 const STATUS_TEXT = { none: '', knock: ' On your Knock List.', ledger: ' In your Ledger.' };
 
 let map;
@@ -31,12 +33,13 @@ function popupContent(p) {
 function build() {
   map = new maplibregl.Map({
     container: 'map',
-    style: mapStyle,
+    style: mapStyle(theme()),
     center: [-122.35, 37.78],
     zoom: 9.5,
     attributionControl: { compact: true },
   });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+  darkMode.addEventListener('change', () => map.setStyle(mapStyle(theme()))); // follow light/dark switches live
   map.addControl(new maplibregl.GeolocateControl({ trackUserLocation: false }), 'top-right');
 
   for (const p of places) {
