@@ -1,7 +1,7 @@
 // Turns a batch of AI drafts into a readable review sheet for the human editor.
 // Usage: node scripts/pipeline/render-review.mjs data/review/trial-01.json
 import { readFileSync, writeFileSync } from 'node:fs';
-import { gemScore, MARKS } from '../../src/lib/scoring.js';
+import { gemScore, MARKS, withRadar } from '../../src/lib/scoring.js';
 
 const file = process.argv[2];
 const drafts = JSON.parse(readFileSync(file, 'utf8'));
@@ -15,8 +15,9 @@ md += `**Flags to check:** ${drafts.reduce((s, d) => s + d.flags.length, 0)} · 
 md += `For each place, reply with **approve**, **edit:** (what to change) or **drop**.\n\n---\n`;
 
 for (const d of drafts) {
-  const marks = MARKS.map((m) => `${m.label} ${d.breakdown[m.key]}`).join(' · ');
-  md += `\n## ${d.name} — Gem ${gemScore(d.breakdown)}${d.seed ? ' · *your pick*' : ''}\n`;
+  const b = withRadar(d.breakdown, d.fame);
+  const marks = MARKS.map((m) => `${m.label} ${b[m.key]}`).join(' · ');
+  md += `\n## ${d.name} — Gem ${gemScore(b)}${d.seed ? ' · *your pick*' : ''}\n`;
   md += `*${d.kind} · ${d.area}, ${d.city} · ${FAME[d.fame]} · ${d.when.join(', ')}*\n\n`;
   md += `**Story.** ${d.story}\n\n**Order this.** ${d.order}\n\n**Why this score.** ${d.why}  \n${marks}\n\n`;
   md += `**Practical.** ${d.practical.join(' · ') || '—'}  \n**Hours.** ${d.hours ?? 'not found'}\n\n`;

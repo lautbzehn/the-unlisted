@@ -7,6 +7,8 @@ maplibregl.setWorkerUrl('/maplibre/maplibre-gl-worker.mjs'); // copied by script
 
 const places = JSON.parse(document.getElementById('places-data').textContent);
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const darkMode = matchMedia('(prefers-color-scheme: dark)');
+const theme = () => (darkMode.matches ? 'ink' : 'paper');
 const STATUS_TEXT = { none: '', knock: ' On your Knock List.', ledger: ' In your Ledger.' };
 
 let map;
@@ -31,12 +33,13 @@ function popupContent(p) {
 function build() {
   map = new maplibregl.Map({
     container: 'map',
-    style: mapStyle,
+    style: mapStyle(theme()),
     center: [-122.35, 37.78],
     zoom: 9.5,
     attributionControl: { compact: true },
   });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+  darkMode.addEventListener('change', () => map.setStyle(mapStyle(theme()))); // follow light/dark switches live
   map.addControl(new maplibregl.GeolocateControl({ trackUserLocation: false }), 'top-right');
 
   for (const p of places) {
@@ -51,11 +54,11 @@ function build() {
 }
 
 function sync(fit = true) {
-  const { state, filter } = last;
+  const { state, filter, time } = last;
   const shown = [];
   for (const [id, { el, p }] of markers) {
     const status = state[id]?.status || 'none';
-    const visible = filter === 'all' || status === filter;
+    const visible = (filter === 'all' || status === filter) && (!time || (p.when ?? []).includes(time));
     el.dataset.status = status;
     el.style.display = visible ? '' : 'none';
     el.setAttribute('aria-label', `${p.name}, ${p.area}, Gem score ${p.score}.${STATUS_TEXT[status]}`);
@@ -74,7 +77,7 @@ export function showMap(detail) {
 }
 
 export function updateMap(detail) {
-  const filterChanged = detail.filter !== last.filter;
+  const filterChanged = detail.filter !== last.filter || detail.time !== last.time;
   last = detail;
   if (map) sync(filterChanged); // don't re-center the map when you just mark a place
 }

@@ -1,5 +1,5 @@
 import raw from '../data/places.json';
-import { gemScore } from './scoring.js';
+import { gemScore, withRadar } from './scoring.js';
 
 // While developing locally, unreviewed drafts from the research batches show up too (marked DRAFT, flags visible),
 // so they can be reviewed in the real app. The public build only ever contains approved places.
@@ -10,7 +10,8 @@ const drafts = Object.values(draftFiles).flat().map((d) => ({ ...d, draft: true 
 export const places = [...raw.filter((p) => p.status === 'approved' || p.sample), ...drafts]
   .map(({ sources, flags, status, approved, seed, osm, ...pub }) => ({
     ...pub,
-    score: gemScore(pub.breakdown),
+    breakdown: withRadar(pub.breakdown, pub.fame),
+    score: gemScore(withRadar(pub.breakdown, pub.fame)),
     ...(pub.draft ? { reviewFlags: flags ?? [] } : {}),
   }));
 

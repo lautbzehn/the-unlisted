@@ -3,5 +3,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  // Once the domain is known: site: 'https://yourdomain.com' (share previews need absolute URLs)
+  // The live address. Share previews need absolute URLs, so they're built from this.
+  site: 'https://unlisted.icarianforge.com',
 });

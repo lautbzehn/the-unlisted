@@ -33,7 +33,7 @@ It matches the public "How the score works" page. If one changes, change the oth
 | `kind` | 2-4 words, specific: "Burmese noodle counter", not "Restaurant" |
 | `when` | any of `morning` (open before 10am), `midday` (11-3), `evening` (5-9), `late` (open past 10pm). From hours. |
 | `fame` | `deep-cut` (barely written about), `open-secret` (locals and some press know it), `local-legend` (on every list, decades old, lines) |
-| `breakdown` | four marks 0-100: uniqueness, atmosphere, story, signature. Use the full range. 90+ is rare. A famous place is not automatically high. |
+| `breakdown` | four marks 0-100: uniqueness, atmosphere, story, signature. Use the full range. 90+ is rare. A famous place is not automatically high. (A fifth mark, "Under the radar", is computed from `fame` by the site. Don't output it.) |
 | `why` | 1-2 sentences explaining the marks, honest about weak spots |
 | `story` | 2-3 sentences, max ~55 words. What makes it itself. |
 | `order` | the one thing to get, plus a practical tip if sourced |

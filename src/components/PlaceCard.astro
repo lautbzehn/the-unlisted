@@ -2,24 +2,20 @@
 interface Props {
   place: {
     id: string; name: string; area: string; kind: string; verified: string; score: number; sample?: boolean;
-    breakdown: { uniqueness: number; atmosphere: number; story: number; signature: number };
+    breakdown: { uniqueness: number; atmosphere: number; story: number; signature: number; radar?: number };
     story: string; order: string; draft?: boolean; reviewFlags?: string[]; fame?: string; when?: string[]; practical?: string[]; hours?: string | null; city?: string;
   };
   detail?: boolean; // true on the place's own page (no "open" link)
 }
 import { FAME, WHEN } from '../lib/places.js';
+import { MARKS } from '../lib/scoring.js';
 const { place, detail = false } = Astro.props;
-const bars = [
-  ['Uniqueness', place.breakdown.uniqueness],
-  ['Atmosphere', place.breakdown.atmosphere],
-  ['Story', place.breakdown.story],
-  ['Signature', place.breakdown.signature],
-];
+const bars = MARKS.map((m) => [m.short, place.breakdown[m.key], m.key]);
 const href = `/place/${place.id}/`;
 const Heading = detail ? 'h1' : 'h3';
 ---
-<article class:list={['card reveal', { detail }]} id={place.id} data-id={place.id} data-status="none" data-url={href}>
-  <div class="stamp" aria-label={`Hidden Gem Score ${place.score} out of 100`}><div>GEM<br /><b>{place.score}</b></div></div>
+<article class:list={['card reveal', { detail }]} id={place.id} data-id={place.id} data-status="none" data-url={href} data-when={place.when?.join(' ') ?? ''}>
+  <div class="stamp" role="img" aria-label={`Hidden Gem Score ${place.score} out of 100`}><small aria-hidden="true">GEM</small><b aria-hidden="true">{place.score}</b><i aria-hidden="true">ADMIT ONE</i></div>
   {place.sample && <span class="sample-flag">SAMPLE — NOT A REAL PLACE</span>}
   {place.draft && <span class="sample-flag draft-flag">DRAFT — NOT YET REVIEWED</span>}
   <Heading>{detail ? place.name : <a href={href}>{place.name}</a>}</Heading>
@@ -29,10 +25,13 @@ const Heading = detail ? 'h1' : 'h3';
     {place.when?.map((w) => <span class="chip when">{WHEN[w]}</span>)}
   </div>
   <p>{place.story}</p>
-  <div class="bars" aria-hidden="true">
-    {bars.map(([label, v]) => <div class="bar">{label}<div style={`--w:${v}%`}></div></div>)}
+  <div class="tape">
+    <div class="t" aria-hidden="true">— TALE OF THE TAPE —</div>
+    {bars.map(([label, v, key]) => (
+      <div class:list={['row', key]}><span>{label}</span><div class="bar" style={`--w:${v}%`} aria-hidden="true"></div><b>{v}</b></div>
+    ))}
   </div>
-  <div class="order"><span>ORDER THIS</span>{place.order}</div>
+  <p class="order"><em>Order this</em>{place.order}</p>
   {detail && (place.practical?.length || place.hours) && (
     <ul class="practical">
       {place.practical?.map((x) => <li>{x}</li>)}

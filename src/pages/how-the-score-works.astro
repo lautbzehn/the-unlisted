@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Footer from '../components/Footer.astro';
-import { MARKS } from '../lib/scoring.js';
+import { MARKS, RADAR } from '../lib/scoring.js';
 import { places } from '../lib/places.js';
 const hasSamples = places.some((p) => p.sample);
 
@@ -12,26 +12,28 @@ const why = {
   atmosphere: ['What does it feel like to be in the room?', 'Light, sound, the people, the clutter. Dim, strange and lived-in beats shiny and new.'],
   story: ['Is there a real reason this place exists?', 'A founder, a building, a recipe, a neighborhood. If we can’t find a story we can stand behind, it earns no points here.'],
   signature: ['Is there one thing you should order?', 'It’s the “Order this” line on every card. A place can be wonderful and still have no single dish worth a detour.'],
+  radar: ['How few people already know about it?', `Set by the label on every card: a deep cut gets ${RADAR['deep-cut']}, an open secret ${RADAR['open-secret']}, a local legend ${RADAR['local-legend']}. Legends can still score well. They just don’t win by default.`],
 };
-const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92 };
+const FAME_OPTS = [['deep-cut', 'Deep cut'], ['open-secret', 'Open secret'], ['local-legend', 'Local legend']];
+const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92, radar: RADAR['open-secret'] };
 ---
-<Base title="How the score works — The Unlisted" description="The Hidden Gem Score is an opinion with its work shown: four marks, a visible formula, and honest limits." path="/how-the-score-works/">
+<Base title="How the score works — The Unlisted" description="The Hidden Gem Score is an opinion with its work shown: five marks, a visible formula, and honest limits." path="/how-the-score-works/">
   <main id="main" class="doc">
     <a class="back" href="/">← All doors</a>
     <p class="label">THE FINE PRINT</p>
     <h1 class="doc-title">How the score works</h1>
-    <p class="lede">The Hidden Gem Score is an opinion with its work shown. It’s a number from 0 to 100 for how much a place feels like a secret worth keeping, built from four marks you can see on every card.</p>
+    <p class="lede">The Hidden Gem Score is an opinion with its work shown. It’s a number from 0 to 100 for how much a place feels like a secret worth keeping, built from five marks you can see on every card.</p>
 
     <section class="panel" aria-labelledby="short">
       <h2 id="short">The short version</h2>
       <ul class="plain">
-        <li><b>It isn’t a popularity score.</b> Star ratings reward places a lot of people already know. This tries to reward the opposite.</li>
+        <li><b>It isn’t a popularity score.</b> Star ratings reward places a lot of people already know. This tries to reward the opposite, and one of the five marks counts how hidden a place really is.</li>
         <li><b>It’s an AI’s read, checked by a person.</b> An AI model drafts the marks and the story. A human reads each one before it goes live.</li>
         <li><b>It can be wrong,</b> and the section on limits below says how.</li>
       </ul>
     </section>
 
-    <h2 class="sect">The four marks</h2>
+    <h2 class="sect">The five marks</h2>
     <p class="sub">Each mark is 0 to 100. The score is a weighted average, so the weights say what we care about most.</p>
     <ol class="marks">
       {MARKS.map((m) => (
@@ -46,14 +48,24 @@ const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92 };
         </li>
       ))}
     </ol>
-    <p class="sub">Why these weights? Uniqueness leads because it’s the whole point of the site. The signature item counts least because a great dish is the one thing every other guide already finds. These weights are a judgment call, not science, and you can see them in the calculator below.</p>
+    <p class="sub">Why these weights? Uniqueness leads because it’s the whole point of the site. “Under the radar” was added after our first test batch, when the most famous places kept landing on top simply because more had been written about them. The signature item counts least because a great dish is the one thing every other guide already finds. These weights are a judgment call, not science, and you can see them in the calculator below.</p>
 
     <h2 class="sect">Try the math</h2>
-    <p class="sub">Move the sliders. This is the exact calculation the site uses: each mark times its weight, added up, rounded to a whole number.</p>
+    <p class="sub">Move the sliders and pick how well-known the place is. This is the exact calculation the site uses: each mark times its weight, added up, rounded to a whole number.</p>
     <div class="panel calc" id="calc" data-start={JSON.stringify(start)}>
       <div class="calc-grid">
         <div class="calc-inputs">
-          {MARKS.map((m) => (
+          {MARKS.map((m) => m.key === 'radar' ? (
+            <fieldset class="slider radar">
+              <legend>{m.label} <span class="wt">× {Math.round(m.weight * 100)}%</span></legend>
+              <div class="radar-opts">
+                {FAME_OPTS.map(([k, l]) => (
+                  <label><input type="radio" name="radar" value={RADAR[k]} checked={RADAR[k] === start.radar} /> {l} <span class="wt">({RADAR[k]})</span></label>
+                ))}
+              </div>
+              <span class="pts" data-pts="radar"></span>
+            </fieldset>
+          ) : (
             <div class="slider">
               <label for={`r-${m.key}`}>{m.label} <span class="wt">× {Math.round(m.weight * 100)}%</span></label>
               <input id={`r-${m.key}`} type="range" min="0" max="100" value={start[m.key]} data-key={m.key} data-weight={m.weight} />
@@ -63,7 +75,7 @@ const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92 };
           ))}
         </div>
         <div class="calc-result" aria-live="polite">
-          <div class="stamp big-stamp"><div>GEM<br /><b id="calc-score">0</b></div></div>
+          <div class="stamp big-stamp"><small>GEM</small><b id="calc-score">0</b><i>ADMIT ONE</i></div>
           <p class="calc-note">Hypothetical place. Not a real score.</p>
         </div>
       </div>
@@ -72,7 +84,7 @@ const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92 };
     <h2 class="sect">Where the numbers come from</h2>
     <ol class="steps">
       <li><b>Find.</b> Candidates come from OpenStreetMap, a free, community-built map, and from places locals recommend to each other in Bay Area Reddit threads. Chains are filtered out. We don’t use Google or Yelp data.</li>
-      <li><b>Research.</b> An AI model reads what’s publicly written about each place, from local press to Reddit threads where regulars compare notes, and drafts the four marks, a short explanation, the story and the “Order this” line. It runs once per place and the results are saved. Nothing is computed per visitor.</li>
+      <li><b>Research.</b> An AI model reads what’s publicly written about each place, from local press to Reddit threads where regulars compare notes, and drafts four of the marks, a short explanation, the story and the “Order this” line. It runs once per place and the results are saved. Nothing is computed per visitor.</li>
       <li><b>Review.</b> A person reads every draft, checks what they can, and approves, edits or drops it. Only approved places go live.</li>
       <li><b>Stamp.</b> Every place carries a “last verified” date. An old date means old information, so treat it that way.</li>
     </ol>
@@ -108,6 +120,9 @@ const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92 };
         calc.querySelector(`[data-val=${i.dataset.key}]`).textContent = i.value;
         calc.querySelector(`[data-pts=${i.dataset.key}]`).textContent = `= ${(i.value * Number(i.dataset.weight)).toFixed(1)} pts`;
       }
+      const radar = calc.querySelector('input[name=radar]:checked');
+      marks.radar = Number(radar.value);
+      calc.querySelector('[data-pts=radar]').textContent = `= ${(marks.radar * MARKS.find((m) => m.key === "radar").weight).toFixed(1)} pts`;
       document.getElementById('calc-score').textContent = gemScore(marks);
     };
     calc.addEventListener('input', render);

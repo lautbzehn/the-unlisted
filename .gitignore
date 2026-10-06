@@ -28,3 +28,7 @@ public/maplibre/
 
 # pipeline working data (large; regenerate with scripts/pipeline)
 data/pipeline/
+
+# Cloudflare local state
+.wrangler/
+.dev.vars

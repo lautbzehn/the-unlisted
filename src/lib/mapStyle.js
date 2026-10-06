@@ -1,6 +1,12 @@
-// Vintage "back-room chart" map style, drawn from free OpenStreetMap-based vector tiles (OpenFreeMap).
+// Map styles drawn from free OpenStreetMap-based vector tiles (OpenFreeMap):
+// "paper" (ink streets on newsprint) for light mode, "ink" (bone streets on ink) for dark mode.
 const TILES = 'https://tiles.openfreemap.org/planet';
 const GLYPHS = 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf';
+
+const THEMES = {
+  paper: { bg: '#ece3d0', land: '#e2d9c3', park: '#d9d5bd', water: '#c6cdc8', building: '#ddd3bd', minor: '#cfc3a9', mid: '#b5a789', major: '#8c7d63', label: '#3b332a', city: '#1b1712', halo: '#ece3d0', waterLabel: '#5f7179' },
+  ink:   { bg: '#14110e', land: '#191511', park: '#1c1d16', water: '#101a1e', building: '#1f1a15', minor: '#2b251e', mid: '#3d352b', major: '#5a5043', label: '#a89c88', city: '#ece3d0', halo: '#14110e', waterLabel: '#5c7480' },
+};
 
 const label = ['coalesce', ['get', 'name:latin'], ['get', 'name']];
 const width = (a, b, c) => ['interpolate', ['exponential', 1.4], ['zoom'], 10, a, 14, b, 18, c];
@@ -11,32 +17,34 @@ const road = (id, classes, color, w) => ({
   paint: { 'line-color': color, 'line-width': width(...w) },
 });
 
-export const mapStyle = {
-  version: 8,
-  glyphs: GLYPHS,
-  sources: { omt: { type: 'vector', url: TILES } },
-  layers: [
-    { id: 'bg', type: 'background', paint: { 'background-color': '#1d1611' } },
-    { id: 'landcover', type: 'fill', source: 'omt', 'source-layer': 'landcover',
-      filter: ['in', ['get', 'class'], ['literal', ['grass', 'wood', 'farmland']]], paint: { 'fill-color': '#222015' } },
-    { id: 'park', type: 'fill', source: 'omt', 'source-layer': 'park', paint: { 'fill-color': '#27241a' } },
-    { id: 'water', type: 'fill', source: 'omt', 'source-layer': 'water', paint: { 'fill-color': '#0f1a20' } },
-    { id: 'building', type: 'fill', source: 'omt', 'source-layer': 'building', minzoom: 14,
-      paint: { 'fill-color': '#2a2019', 'fill-opacity': 0.8 } },
-    road('road-minor', ['minor', 'service', 'track', 'path'], '#33271e', [0.4, 1.2, 5]),
-    road('road-mid', ['tertiary', 'secondary'], '#4a392a', [0.8, 2, 9]),
-    road('road-major', ['primary', 'trunk', 'motorway'], '#6b5236', [1.2, 3, 12]),
-    { id: 'water-label', type: 'symbol', source: 'omt', 'source-layer': 'water_name', minzoom: 9,
-      layout: { 'text-field': label, 'text-font': ['Noto Sans Regular'], 'text-size': 12, 'text-letter-spacing': 0.2 },
-      paint: { 'text-color': '#5f7a85', 'text-halo-color': '#0f1a20', 'text-halo-width': 1 } },
-    { id: 'place-city', type: 'symbol', source: 'omt', 'source-layer': 'place', maxzoom: 13,
-      filter: ['in', ['get', 'class'], ['literal', ['city', 'town']]],
-      layout: { 'text-field': label, 'text-font': ['Noto Sans Bold'], 'text-size': ['interpolate', ['linear'], ['zoom'], 8, 13, 12, 20],
-        'text-transform': 'uppercase', 'text-letter-spacing': 0.18 },
-      paint: { 'text-color': '#b8893a', 'text-halo-color': '#17120f', 'text-halo-width': 1.6 } },
-    { id: 'place-hood', type: 'symbol', source: 'omt', 'source-layer': 'place', minzoom: 11,
-      filter: ['in', ['get', 'class'], ['literal', ['suburb', 'neighbourhood', 'quarter']]],
-      layout: { 'text-field': label, 'text-font': ['Noto Sans Regular'], 'text-size': 12, 'text-transform': 'uppercase', 'text-letter-spacing': 0.12 },
-      paint: { 'text-color': '#a8977c', 'text-halo-color': '#17120f', 'text-halo-width': 1.4 } },
-  ],
-};
+export function mapStyle(themeName = 'paper') {
+  const t = THEMES[themeName];
+  return {
+    version: 8,
+    glyphs: GLYPHS,
+    sources: { omt: { type: 'vector', url: TILES } },
+    layers: [
+      { id: 'bg', type: 'background', paint: { 'background-color': t.bg } },
+      { id: 'landcover', type: 'fill', source: 'omt', 'source-layer': 'landcover',
+        filter: ['in', ['get', 'class'], ['literal', ['grass', 'wood', 'farmland']]], paint: { 'fill-color': t.land } },
+      { id: 'park', type: 'fill', source: 'omt', 'source-layer': 'park', paint: { 'fill-color': t.park } },
+      { id: 'water', type: 'fill', source: 'omt', 'source-layer': 'water', paint: { 'fill-color': t.water } },
+      { id: 'building', type: 'fill', source: 'omt', 'source-layer': 'building', minzoom: 14, paint: { 'fill-color': t.building } },
+      road('road-minor', ['minor', 'service', 'track', 'path'], t.minor, [0.3, 1, 4]),
+      road('road-mid', ['tertiary', 'secondary'], t.mid, [0.6, 1.6, 7]),
+      road('road-major', ['primary', 'trunk', 'motorway'], t.major, [0.9, 2.4, 10]),
+      { id: 'water-label', type: 'symbol', source: 'omt', 'source-layer': 'water_name', minzoom: 9,
+        layout: { 'text-field': label, 'text-font': ['Noto Sans Regular'], 'text-size': 12, 'text-letter-spacing': 0.2 },
+        paint: { 'text-color': t.waterLabel, 'text-halo-color': t.water, 'text-halo-width': 1 } },
+      { id: 'place-city', type: 'symbol', source: 'omt', 'source-layer': 'place', maxzoom: 13,
+        filter: ['in', ['get', 'class'], ['literal', ['city', 'town']]],
+        layout: { 'text-field': label, 'text-font': ['Noto Sans Bold'], 'text-size': ['interpolate', ['linear'], ['zoom'], 8, 13, 12, 20],
+          'text-transform': 'uppercase', 'text-letter-spacing': 0.2 },
+        paint: { 'text-color': t.city, 'text-halo-color': t.halo, 'text-halo-width': 1.6 } },
+      { id: 'place-hood', type: 'symbol', source: 'omt', 'source-layer': 'place', minzoom: 11,
+        filter: ['in', ['get', 'class'], ['literal', ['suburb', 'neighbourhood', 'quarter']]],
+        layout: { 'text-field': label, 'text-font': ['Noto Sans Regular'], 'text-size': 11.5, 'text-transform': 'uppercase', 'text-letter-spacing': 0.14 },
+        paint: { 'text-color': t.label, 'text-halo-color': t.halo, 'text-halo-width': 1.4 } },
+    ],
+  };
+}

@@ -1,4 +1,5 @@
 import { initSurprise } from './surprise.js';
+import { TIME_LABEL, currentBucket, resolveTime } from './time.js';
 
 // Knock List / Ledger / personal rating / share.
 // Everything is stored in this browser only (localStorage). No accounts, no server.
@@ -17,6 +18,8 @@ const cards = [...document.querySelectorAll('.card')];
 const tabs = [...document.querySelectorAll('.tab[data-filter]')];
 const empty = document.getElementById('empty');
 let filter = 'all';
+let time = 'any'; // 'any' | 'now' | 'morning' | 'midday' | 'evening' | 'late'
+const timeBtns = [...document.querySelectorAll('[data-time]')];
 let view = 'cards';
 const grid = document.querySelector('.grid');
 const mapWrap = document.getElementById('map-wrap');
@@ -31,7 +34,7 @@ async function setView(v) {
   if (v === 'map') {
     try {
       mapMod ??= await import('./map.js');
-      mapMod.showMap({ state, filter });
+      mapMod.showMap({ state, filter, time: resolveTime(time) });
     } catch (e) {
       toast('The map could not load. Check your connection.');
       setView('cards');
@@ -47,7 +50,10 @@ function toast(msg) {
   toast.timer = setTimeout(() => t.classList.remove('show'), 2200);
 }
 
+const fitsTime = (card, bucket) => !bucket || (card.dataset.when || '').split(' ').includes(bucket);
+
 function render() {
+  const bucket = resolveTime(time);
   let counts = { all: cards.length, knock: 0, ledger: 0 };
   for (const card of cards) {
     const id = card.dataset.id;
@@ -70,19 +76,31 @@ function render() {
     const note = card.querySelector('[data-note]');
     if (document.activeElement !== note) note.value = s.note || '';
 
-    card.hidden = !(filter === 'all' || status === filter);
+    card.hidden = !((filter === 'all' || status === filter) && fitsTime(card, bucket));
   }
   tabs.forEach((t) => {
     t.setAttribute('aria-pressed', t.dataset.filter === filter);
     t.querySelector('.n').textContent = `(${counts[t.dataset.filter]})`;
   });
-  mapMod?.updateMap({ state, filter });
+  // time buttons: how many places each would show, given the current list filter
+  const inList = cards.filter((c) => filter === 'all' || c.dataset.status === filter);
+  const now = currentBucket();
+  timeBtns.forEach((b) => {
+    const t = b.dataset.time;
+    b.setAttribute('aria-pressed', t === time);
+    const n = inList.filter((c) => fitsTime(c, resolveTime(t))).length;
+    b.querySelector('.n').textContent = `(${n})`;
+    if (t === 'now') b.querySelector('.now-label').textContent = TIME_LABEL[now].toLowerCase();
+  });
+  mapMod?.updateMap({ state, filter, time: bucket });
   if (!empty) return; // place pages have no tabs
   const visible = cards.some((c) => !c.hidden);
   empty.classList.toggle('show', !visible);
-  empty.textContent =
-    filter === 'knock' ? 'Your Knock List is empty. Find a door worth knocking on.'
-    : filter === 'ledger' ? 'Your Ledger is blank. Go somewhere, then write it down.' : '';
+  const listEmpty = filter !== 'all' && inList.length === 0;
+  empty.textContent = visible ? ''
+    : listEmpty && filter === 'knock' ? 'Your Knock List is empty. Find a door worth knocking on.'
+    : listEmpty && filter === 'ledger' ? 'Your Ledger is blank. Go somewhere, then write it down.'
+    : bucket ? `Nothing here for ${TIME_LABEL[bucket].toLowerCase()} yet. Try "Any time".` : '';
 }
 
 function update(id, patch) {
@@ -110,6 +128,8 @@ async function share(card) {
 document.addEventListener('click', (e) => {
   const vb = e.target.closest('[data-view]');
   if (vb) { setView(vb.dataset.view); return; }
+  const tb = e.target.closest('[data-time]');
+  if (tb) { time = tb.dataset.time; render(); return; }
   const tab = e.target.closest('.tab[data-filter]');
   if (tab) { filter = tab.dataset.filter; render(); return; }
 
@@ -151,10 +171,12 @@ render();
 
 initSurprise({
   getState: () => state,
+  getTime: () => ({ chosen: resolveTime(time), now: currentBucket() }),
   update,
   toast,
   showOnMap: async (id) => {
     filter = 'all'; // the pick might be hidden by a filter
+    time = 'any';
     render();
     await setView('map');
     mapMod?.focusPlace(id);

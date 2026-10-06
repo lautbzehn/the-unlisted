@@ -22,7 +22,9 @@ function getPosition() {
   });
 }
 
-export function initSurprise({ getState, update, showOnMap, toast }) {
+import { TIME_LABEL } from './time.js';
+
+export function initSurprise({ getState, getTime, update, showOnMap, toast }) {
   const dataEl = document.getElementById('places-data');
   const btn = document.getElementById('surprise-btn');
   const dlg = document.getElementById('surprise');
@@ -37,7 +39,10 @@ export function initSurprise({ getState, update, showOnMap, toast }) {
 
   function pick() {
     const state = getState();
+    const { chosen, now } = getTime();
     let pool = places.filter((p) => state[p.id]?.status !== 'ledger'); // never somewhere you've been
+    if (chosen) pool = pool.filter((p) => (p.when ?? []).includes(chosen)); // respect the time filter
+    if (!pool.length) return { empty: chosen };
     const undiscovered = pool.filter((p) => !state[p.id]?.status);
     if (undiscovered.length) pool = undiscovered;
     if (pool.length > 1) pool = pool.filter((p) => p.id !== lastId); // never the same twice in a row
@@ -46,7 +51,8 @@ export function initSurprise({ getState, update, showOnMap, toast }) {
     const scored = pool.map((p) => {
       const km = pos ? distanceKm(pos, p) : null;
       const nearness = km === null ? 1 : 1 / (1 + (km / 8) ** 2); // gentle pull toward close places
-      return { p, km, w: nearness * (0.5 + p.score / 100) };
+      const rightNow = !chosen && (p.when ?? []).includes(now) ? 2.5 : 1; // on "Any time", lean toward places that fit this hour
+      return { p, km, w: nearness * rightNow * (0.5 + p.score / 100) };
     });
     let r = Math.random() * scored.reduce((s, x) => s + x.w, 0);
     for (const x of scored) if ((r -= x.w) <= 0) return x;
@@ -62,7 +68,7 @@ export function initSurprise({ getState, update, showOnMap, toast }) {
     $('[data-sp=order]').textContent = p.order;
     let where;
     if (km === null) where = pos === null ? 'Location is off, so this one is picked from across the Bay.' : '';
-    else if (km > TOO_FAR_KM) where = `You're about ${Math.round(km * KM_TO_MI)} mi away. We're Bay Area only for now, so call this one a daydream.`;
+    else if (km > TOO_FAR_KM) where = `You're about ${Math.round(km * KM_TO_MI)} mi away. We're Bay Area only for now (San Diego, Austin and New York are next), so call this one a daydream.`;
     else where = `About ${(km * KM_TO_MI).toFixed(1)} mi from you.`;
     $('[data-sp=where]').textContent = where;
     $('[data-sp=sample]').hidden = !p.sample;
@@ -100,7 +106,12 @@ export function initSurprise({ getState, update, showOnMap, toast }) {
 
   async function roll(fromButton) {
     const choice = pick();
-    if (!choice) { toast("You've been through every door. Time to open a new city."); return false; }
+    if (!choice || choice.empty !== undefined) {
+      toast(choice?.empty
+        ? `No new doors for ${TIME_LABEL[choice.empty].toLowerCase()} yet. Try "Any time".`
+        : "You've been through every door. Time to open a new city.");
+      return false;
+    }
     lastId = choice.p.id;
     if (!dlg.open) dlg.showModal();
     await shuffleThenReveal(choice);
