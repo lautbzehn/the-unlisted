@@ -1,0 +1,801 @@
+[
+  {
+    "id": "pacific-shores-cocktail-lounge",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Pacific Shores Cocktail Lounge",
+    "area": "Ocean Beach",
+    "city": "San Diego",
+    "kind": "Blacklit OB dive, est. 1941",
+    "lat": 32.74603,
+    "lng": -117.24997,
+    "osm": "node/365317334",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 86,
+      "atmosphere": 92,
+      "story": 80,
+      "signature": 52
+    },
+    "why": "The room is the reason to go: glowing undersea murals you won't find anywhere else in town. Signature is low because it's a drinks-and-jukebox bar with no dish or house drink you'd cross town for.",
+    "story": "Pac Shores opened on Newport Avenue the day before Pearl Harbor, and a Medina still owns it. Inside it's dark and cool, lit mostly by blacklight on painted underwater scenes that glow along the walls. Booths, a pool table and a jukebox do the rest.",
+    "order": "Something cheap and strong, and a few songs on the jukebox. Around the holidays, ask about the Death Nog, the house eggnog with whiskey and brandy.",
+    "practical": [
+      "Open until 2 am",
+      "Pool table and jukebox"
+    ],
+    "hours": "Daily, noon to 2 am (local blog, confirm)",
+    "sources": [
+      "https://obrag.org/2016/12/pacific-shores-celebrates-its-75th-anniversary/",
+      "https://obrag.org/2017/08/a-few-changes-at-pacific-shores/",
+      "https://www.sandiegoreader.com/news/2025/may/07/tom-arnolds-old-places-pacific-shores-cocktail-lounge/",
+      "https://theresandiego.com/11-must-try-san-diego-hole-in-the-wall-bars/"
+    ],
+    "flags": [
+      "Dan's lead says windowless. A 2016 OB Rag piece says the owners were planning to put in a window, and a 2017 piece covers 'a few changes'. Check before calling it windowless; the story leaves it out.",
+      "'Medina family since 1952' comes from a search summary of local blogs. The 2016 OB Rag piece names Kariann Medina as owner but also mentions a 1950s owner, Lynn Church. Confirm the ownership history.",
+      "The glow-in-the-dark murals are described in blog sources; the often-repeated 1970s remodel date is unconfirmed and left out.",
+      "Most recent dated coverage is a May 2025 San Diego Reader piece (it wouldn't load). No 2026 confirmation found.",
+      "Death Nog detail is from 2016. Confirm it is still made.",
+      "Hours from a local blog only."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "aero-club-bar",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Aero Club Bar",
+    "area": "Middletown",
+    "city": "San Diego",
+    "kind": "Whiskey dive bar, est. 1947",
+    "lat": 32.73809,
+    "lng": -117.17648,
+    "osm": "node/365317668",
+    "when": [
+      "evening"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 84,
+      "atmosphere": 84,
+      "story": 86,
+      "signature": 80
+    },
+    "why": "One of the deepest whiskey lists anywhere, in a room that still looks like a 1940s pilots' bar. Signature is the wall of bottles, not a dish; we found nothing about food.",
+    "story": "A pilot opened it in 1947 near the airport so flyers and aircraft workers had somewhere to drink. Model planes still hang from the ceiling and photos cover the walls. The whiskey wall now runs past 1,200 bottles, and the family behind the Waterfront in Little Italy has owned it since 2018.",
+    "order": "A pour from the whiskey wall, which runs past 1,200 labels.",
+    "practical": [],
+    "hours": null,
+    "sources": [
+      "https://aeroclubbar.com/about",
+      "https://www.sandiegoville.com/2025/11/san-diegos-historic-aero-club.html",
+      "https://www.10news.com/lifestyle/exploring-san-diego/exploring-san-diego-aero-club-or-that-bar-by-the-airport"
+    ],
+    "flags": [
+      "Founder's name differs between sources: 'Marianne Profit' (bar's site) and 'Mariam Profit' (SanDiegoVille). Left out of the story.",
+      "Closed briefly in Nov 2025 for renovations; the bar said it would reopen Nov 26, and 2026 event listings suggest it did. Confirm.",
+      "Hours not found. 'Evening' is assumed for a bar; confirm and add 'late' if it's open past 10.",
+      "The 2004 owner who built up the whiskey list (Bill Lutzius) comes from a search summary; confirm with the 10News piece before naming him.",
+      "No food found in sources."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "azucar",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Azúcar",
+    "area": "Ocean Beach",
+    "city": "San Diego",
+    "kind": "Cuban-style pastry shop",
+    "lat": 32.74509,
+    "lng": -117.24787,
+    "osm": "node/5745809000",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 80,
+      "atmosphere": 58,
+      "story": 76,
+      "signature": 76
+    },
+    "why": "Rare for San Diego: Cuban family baking put through French pastry training. Atmosphere is a middle mark because we found no good description of the room, so we did not guess.",
+    "story": "Vivian Hernandez-Jackson, the daughter of Cuban immigrants, trained in French pastry at Le Cordon Bleu in London and opened Azúcar on Newport Avenue in 2008. She calls it a Cuban-style pâtisserie. The case runs from croquetas and pastelitos to finer French work.",
+    "order": "Croquetas and a pastelito, or a meat pie if you want lunch.",
+    "practical": [
+      "Daytime only",
+      "Gluten-free options"
+    ],
+    "hours": "Mon-Fri 7 am-4 pm, Sat-Sun 8 am-4 pm (OpenStreetMap, confirm)",
+    "sources": [
+      "https://www.sandiego.org/articles/restaurants/azucar.aspx",
+      "https://iloveazucar.com/",
+      "https://www.sandiegofood.net/2011/01/azucar-a-cuban-pastry-shop-in-san-diego.html",
+      "https://directory.oceanbeachsandiego.com/go/azucar"
+    ],
+    "flags": [
+      "Hours from OpenStreetMap only.",
+      "No dated article within 12 months; listings updated in Sep 2026 suggest it is open.",
+      "Dan's lead mentions espresso; coffee isn't confirmed in what we read.",
+      "Croquetas and pastelitos named via a search summary of the OB directory and the bakery site. Confirm on the current menu."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "newbreak-coffee-and-cafe",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Newbreak Coffee & Cafe",
+    "area": "Ocean Beach",
+    "city": "San Diego",
+    "kind": "Beachfront breakfast cafe",
+    "lat": 32.74896,
+    "lng": -117.25175,
+    "osm": "node/5744897620",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 50,
+      "atmosphere": 66,
+      "story": 36,
+      "signature": 70
+    },
+    "why": "A long-running beach cafe with one sandwich worth the trip. Story is thin: beyond 'since 1993' we found nothing about who runs it.",
+    "story": "A coffee house on Abbott Street, across from the beach, that's been feeding Ocean Beach since 1993. It does full breakfasts and lunches, with seats inside and out. The sandwich to know is fried prosciutto with a fried egg, spinach and garlic-basil aioli on brioche.",
+    "order": "The fried prosciutto sandwich.",
+    "practical": [
+      "Breakfast and lunch only",
+      "Indoor and outdoor seats"
+    ],
+    "hours": "Daily 7 am-2 pm (cafe site)",
+    "sources": [
+      "https://www.newbreakcafe.com/",
+      "https://oceanbeachsandiego.com/resources/local-news/newbreak-cafe-new-items-specials",
+      "https://directory.oceanbeachsandiego.com/go/newbreak-coffee-and-cafe"
+    ],
+    "flags": [
+      "No press found; sources are the cafe's site and the OB business directory.",
+      "'Across from the beach' rests on the cafe's own 'beach front view' line. Confirm.",
+      "OpenStreetMap lists 1961 Abbott St; the cafe site says 1959. Confirm the address.",
+      "Owner unknown. No dated item within 12 months."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "litickers-liquor-and-mexican-grill",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Liticker's Liquor & Mexican Grill",
+    "area": "Ocean Beach",
+    "city": "San Diego",
+    "kind": "Corner-store taco and vegan grill",
+    "lat": 32.75146,
+    "lng": -117.24597,
+    "osm": "node/5753317994",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 42,
+      "story": 28,
+      "signature": 58
+    },
+    "why": "The fun is the format: a liquor store with a full kitchen and a long vegan menu, open late. Story is low because we found nothing about its history or owners, and the room is a store with sidewalk tables.",
+    "story": "A corner store on Voltaire that's also a deli and a Mexican grill. The kitchen covers breakfast burritos, tortas and tacos, and a big vegan section built on tofu, seitan and tempeh. It stays open until midnight, a few blocks up from the beach.",
+    "order": "A breakfast burrito in the morning, tacos later. Vegans get real choices here.",
+    "practical": [
+      "Open until midnight",
+      "Sidewalk tables",
+      "Large vegan menu"
+    ],
+    "hours": "Daily 8 am to midnight (business site)",
+    "sources": [
+      "https://www.litickersmexicangrill.com/",
+      "https://directory.oceanbeachsandiego.com/go/litickers-liquor-and-fresh-mexican-grill",
+      "https://www.sandiegoreader.com/places/litickers-liquor-and-deli/",
+      "https://www.happycow.net/reviews/liticker-san-diego-25289"
+    ],
+    "flags": [
+      "No history, founding year or owner found.",
+      "The business site lists one location (4955 Voltaire St). A second domain, litickersmexican.com, has 'location' pages; check it isn't a multi-location brand.",
+      "Deli sandwiches from Dan's lead aren't confirmed on the menu we saw.",
+      "No dated article within 12 months."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "chris-liquor-and-deli",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Chris' Liquor & Deli",
+    "area": "Ocean Beach",
+    "city": "San Diego",
+    "kind": "Liquor store sandwich counter",
+    "lat": 32.75074,
+    "lng": -117.24207,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 60,
+      "atmosphere": 42,
+      "story": 40,
+      "signature": 72
+    },
+    "why": "A big sandwich menu inside a liquor store, and the Harpoon has fans. Story stays low because the history we found is only the shop describing itself.",
+    "story": "A liquor store on Sunset Cliffs Boulevard with a sandwich menu long enough to need categories, from breakfast sandwiches to 'the regulars'. The Harpoon is hot pastrami with melted provolone on an onion roll. The beer cooler is a big part of the draw too.",
+    "order": "The Harpoon: hot pastrami, melted provolone, onion roll.",
+    "practical": [],
+    "hours": "Daily 7 am-7 pm (menu listing, confirm)",
+    "sources": [
+      "https://sagemenu.com/san-diego/chris-liquor-and-deli-san-diego/",
+      "https://www.restaurantji.com/ca/san-diego/chris-liquor-and-deli-/",
+      "https://foursquare.com/v/chris-liquor-and-deli/4b9013d9f964a520307433e3"
+    ],
+    "flags": [
+      "AREA CHECK: Dan listed this as North Park. The only Chris' Liquor & Deli we found is at 2275 Sunset Cliffs Blvd, Ocean Beach. Confirm it's the place he meant.",
+      "'Since 1956' and 'the Stavros family' appear only in the shop's own blurb reposted on listing sites. Left out of the story until confirmed.",
+      "'300+ beers' is from the same blurb; the story just says the beer selection is big. Confirm.",
+      "'Walk-up deli counter in the back' (Dan's lead) not confirmed.",
+      "Coordinates from an OpenStreetMap address search (Photon); no OSM place match.",
+      "Listing-site sources only. An older '$6 sandwiches after 6 pm' deal is left out."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "mona-lisa-italian-foods",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Mona Lisa Italian Foods",
+    "area": "Little Italy",
+    "city": "San Diego",
+    "kind": "Italian deli, market and red-sauce room",
+    "lat": 32.72614,
+    "lng": -117.16906,
+    "osm": "node/530764069",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 70,
+      "atmosphere": 72,
+      "story": 84,
+      "signature": 68
+    },
+    "why": "A real piece of Little Italy history, from the years it supplied the tuna fleet. The sandwiches are solid rather than singular, so signature sits in the middle.",
+    "story": "The Brunetto family opened their first Mona Lisa downtown in 1956 and took over this India Street spot in 1973. In the early years it also ran a wholesale import business, supplying Italian provisions to San Diego's tuna boats. Now it's a deli and market with a sit-down restaurant attached, run by the third generation.",
+    "order": "A sub from the deli counter, made to order.",
+    "practical": [
+      "Deli, market and sit-down restaurant",
+      "Full bar"
+    ],
+    "hours": null,
+    "sources": [
+      "https://sdvoyager.com/interview/meet-stefano-brunetto-mona-lisa-italian-foods-little-italy/",
+      "https://monalisaitalianfoods.com/",
+      "https://thesandiegosun.com/mona-lisa-italian-food-san-diego/"
+    ],
+    "flags": [
+      "Hours not found. 'Midday' and 'evening' are assumed from it being a deli plus dinner restaurant; confirm.",
+      "The 1956 downtown opening and the third generation come from a search summary of the family site; the 2017 SD Voyager interview confirms 1973, the import business and the tuna fleet.",
+      "Prices in the 2017 interview are out of date and left out.",
+      "No dated article within 12 months; listings updated Sep 2026 suggest it is open."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "avian-sandwiches",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Avian Sandwiches",
+    "area": "Linda Vista",
+    "city": "San Diego",
+    "kind": "Water-store bánh mì counter",
+    "lat": 32.7849,
+    "lng": -117.16984,
+    "osm": "node/13687255607",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 38,
+      "story": 34,
+      "signature": 66
+    },
+    "why": "A good sandwich in an unlikely shop. Atmosphere and story are low: it is a water store with little seating, and we found almost nothing about who runs it.",
+    "story": "A drinking-water refill shop on Linda Vista Road that added bánh mì around 2011, back when it shared space with a frozen yogurt counter. The sandwiches come big on toasted rolls, and the pâté is what people bring up. Milk tea and boba are on the menu too.",
+    "order": "The dac biet, the house special with the pâté.",
+    "practical": [],
+    "hours": "Daily 8 am-7 pm (OpenStreetMap)",
+    "sources": [
+      "https://mmm-yoso.com/2011/08/13/banh-mi-from-flavaful-yogurtavian-water/",
+      "https://lindavistatowncouncil.org/new-page-1"
+    ],
+    "flags": [
+      "Community and blog sources only; no press found.",
+      "Goes by several names: Avian Sandwiches, Avian Fresh Drinking Water, and (Dan's version) Avian Water and Banh Mi Sandwich. Pick one for the card.",
+      "The only detailed write-up is a 2011 food blog. Still-open evidence is OpenStreetMap and current delivery listings; confirm.",
+      "Owner unknown."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "mothership",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Mothership",
+    "area": "South Park",
+    "city": "San Diego",
+    "kind": "Vegan space-tiki bar",
+    "lat": 32.73001,
+    "lng": -117.12972,
+    "osm": null,
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 84,
+      "atmosphere": 90,
+      "story": 56,
+      "signature": 66
+    },
+    "why": "The room is the draw: a crash-landed spaceship built by a custom-car shop, with its own soundtrack. Story is modest; it is a 2022 concept from an established bar team, not an old institution.",
+    "story": "The team behind Bar Kindred opened Mothership on 30th Street in 2022, growing it out of a tiki night they'd been running at Kindred. The room plays a crashed ship, with the bar as its console, odd tree-like columns and hours of original space rock. The food is all plant-based and the drinks lean on rum.",
+    "order": "A rum drink from the rotating list. With a group, look for the Time Capsule punch bowl.",
+    "practical": [
+      "All-vegan menu",
+      "Reservations recommended"
+    ],
+    "hours": "Mon-Fri 4:30 pm to midnight, Sat-Sun from 2:30 pm (listing, confirm)",
+    "sources": [
+      "https://www.sandiegoville.com/2022/07/space-themed-mothership-vegan-restaurant-bar-south-park-san-diego.html",
+      "https://www.sandiegoville.com/2021/04/kindred-owner-to-bring-plant-based-mothership-to-san-diego.html",
+      "https://sandiegomagazine.com/food-drink/first-look-mothership/",
+      "https://ultimatemaitai.com/2024/08/11/san-diegos-mothership-is-a-tiki-bar-turned-sci-fi/",
+      "https://www.sandiegoreader.com/places/mothership/"
+    ],
+    "flags": [
+      "Hours from a listing site; confirm.",
+      "The Time Capsule punch bowl is from 2022 opening coverage and the menu rotates. Confirm it is still offered.",
+      "'Reservations fill up' comes from a search summary; confirm.",
+      "OpenStreetMap still lists Del Sur Mexican Cuisine at 2310 30th St; coordinates are from that address.",
+      "Same owners (Arsalun Tafazoli) as Noble Experiment, another of your picks."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "noble-experiment",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Noble Experiment",
+    "area": "East Village",
+    "city": "San Diego",
+    "kind": "Speakeasy behind a keg wall",
+    "lat": 32.71242,
+    "lng": -117.15754,
+    "osm": null,
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 76,
+      "atmosphere": 90,
+      "story": 74,
+      "signature": 66
+    },
+    "why": "The entrance and the room are the show. Uniqueness is held back because San Diego now has plenty of hidden bars, several from the same group; this is the one usually credited with starting it.",
+    "story": "You get in by pushing on a wall of fake kegs near the bathrooms at Neighborhood, a restaurant on G Street. Behind it is a small, dim room with a wall of skulls, painted ceilings and chandeliers. It opened around 2011, is often credited with kicking off San Diego's craft cocktail scene, and was redone in 2021.",
+    "order": "One of the house cocktails.",
+    "practical": [
+      "Walk-ins first come, first served; groups of 4+ can book by email",
+      "Closed Mondays"
+    ],
+    "hours": "Tue-Sun, 7 pm to 2 am (listing, confirm)",
+    "sources": [
+      "https://sandiegomagazine.com/food-drink/first-look-neighborhood-noble-experiment-youngblood/",
+      "https://www.kpbs.org/news/evening-edition/2011/11/25/noble-experiment",
+      "https://tableagent.com/article/hidden-san-diego-local-speakeasies/",
+      "https://www.diffordsguide.com/bars/780jP7/noble-experiment"
+    ],
+    "flags": [
+      "OpenStreetMap has no node for the bar; coordinates are Neighborhood's (node/1914627883), the restaurant it hides inside.",
+      "Opening year (about 2011) inferred from 2011 KPBS and blog coverage. Confirm the exact date.",
+      "Hours, walk-in policy and the email booking rule are from a listing article; confirm.",
+      "No signature drink identified, and Dan's 'custom cocktails' lead isn't confirmed in what we read.",
+      "A 2026 'best bars' mention showed up only in a search summary."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "starlite",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Starlite",
+    "area": "Middletown",
+    "city": "San Diego",
+    "kind": "Sunken-bar cocktail lounge",
+    "lat": 32.7363,
+    "lng": -117.17503,
+    "osm": null,
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 78,
+      "atmosphere": 90,
+      "story": 70,
+      "signature": 70
+    },
+    "why": "The room carries it: a sunken hexagonal bar, rock walls and a hexagon doorway. Story and signature are middling; it's a 2006 bar that a big hospitality group rebuilt in 2025.",
+    "story": "Three veterans of the local music and arts scene opened Starlite on India Street in 2006, and its copper-mug mule helped put those mugs on bars all over town. The CH Projects group bought it in 2022, closed it for over a year, and reopened it in 2025 with the sunken bar rebuilt as a hexagon.",
+    "order": "The Starlite Mule, the drink that made copper mugs a San Diego habit.",
+    "practical": [
+      "Upstairs patio with fire pits"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.sandiegoville.com/2025/03/san-diegos-beloved-starlite-bar.html",
+      "https://sandiegomagazine.com/food-drink/first-look-starlite-in-middletown-reopens/",
+      "https://starlite-sandiego.squarespace.com/about"
+    ],
+    "flags": [
+      "Hours not found. 'Evening' is assumed; add 'late' if it's open past 10.",
+      "Dan's lead says gastropub food. After the 2025 reopening the menu kept the Jidori chicken and Starlite Burger and added steaks and seafood (SanDiegoVille, Mar 2025). Check the current format.",
+      "Most recent dated coverage is March 2025.",
+      "Same group (CH Projects, Arsalun Tafazoli) as Noble Experiment and Mothership. Three of your 20 picks share an owner.",
+      "Coordinates from a US Census address lookup; OpenStreetMap had no match."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "werewolf",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Werewolf",
+    "area": "Gaslamp Quarter",
+    "city": "San Diego",
+    "kind": "Brunch-and-karaoke pub",
+    "lat": 32.71194,
+    "lng": -117.16076,
+    "osm": "way/31842628",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 56,
+      "atmosphere": 64,
+      "story": 28,
+      "signature": 78
+    },
+    "why": "The pork belly Benedict is the reason to go, and brunch-by-day, karaoke-by-night is a fun double act. Story is low because we found nothing about who opened it or when.",
+    "story": "A Gaslamp pub on Fourth Avenue that works two shifts: brunch from 8 every morning, karaoke from 9 every night. The dish people come for is the pork belly Benedict, with a potato cake under the poached eggs and a maple glaze over the top.",
+    "order": "The Pork Belly Benny.",
+    "practical": [
+      "Brunch daily 8 am-3 pm",
+      "Karaoke nightly from 9 pm",
+      "Open until 2 am"
+    ],
+    "hours": "Daily 8 am to 2 am (pub site)",
+    "sources": [
+      "https://thewerewolf.net/",
+      "https://www.gosandiego.com/restaurant/werewolf-american-pub-gaslamp-downtown/",
+      "https://sdfoodiefan.com/gaslamp-quarter-brunch-seven-days-a-week-at-werewolf/"
+    ],
+    "flags": [
+      "No history, owner or opening year found.",
+      "Dan's lead calls it dive-style; the pub's own site doesn't describe the room, so the story doesn't either.",
+      "Benedict build (potato cake, cherry tomatoes, maple glaze, cilantro) comes from a search summary of a guide site. Confirm on the menu.",
+      "Little press, but thousands of listing-site reviews. Labeled open secret, not deep cut."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "secret-sister",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Secret Sister",
+    "area": "South Park",
+    "city": "San Diego",
+    "kind": "Sourdough bakery and tea house",
+    "lat": 32.7288,
+    "lng": -117.1301,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 72,
+      "atmosphere": 58,
+      "story": 38,
+      "signature": 76
+    },
+    "why": "Nearly everything runs on sourdough, donuts included, which is rarer than it sounds. Story is thin because the one feature on it wouldn't load and the bakery's site names no one.",
+    "story": "A sourdough bakery and tea house on 30th Street where nearly everything starts from the same culture: country loaves, baguettes, scones, morning buns, cookies, even the donuts. Bagels show up Friday to Sunday, sticky buns on weekends, and brioche sandwiches from 11.",
+    "order": "A glazed sourdough donut and a morning bun.",
+    "practical": [
+      "Limited batches, first come first served",
+      "Bagels Fri-Sun only"
+    ],
+    "hours": "Daily 8 am-2 pm (bakery site)",
+    "sources": [
+      "https://www.secretsistersouthpark.com/",
+      "https://www.sandiegoreader.com/news/2022/dec/04/discreet-charms-secret-sister/",
+      "https://www.sandiegoreader.com/places/secret-sister/"
+    ],
+    "flags": [
+      "The 2022 San Diego Reader feature wouldn't load (403). Owners and opening date unknown.",
+      "Seating unconfirmed; listing sites say it is small and busy.",
+      "Coordinates from a US Census address lookup; OpenStreetMap had no match."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "acento-coffee-roasters",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Acento Coffee Roasters",
+    "area": "Point Loma",
+    "city": "San Diego",
+    "kind": "Roastery and espresso bar",
+    "lat": 32.74595,
+    "lng": -117.2104,
+    "osm": "node/12117297901",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 62,
+      "atmosphere": 66,
+      "story": 58,
+      "signature": 62
+    },
+    "why": "A working roastery with an owner's story behind it. Marks stay middling because the best write-up describes its earlier location, and we couldn't confirm the current room.",
+    "story": "Luis Sanchez grew up in Mexico, fell for coffee in Australia, and built Acento as a roaster and espresso bar under one roof. Other local roasters rent time on the machine, so most days something is roasting. The house drink is the Freddo: espresso with local honey and a dusting of chocolate.",
+    "order": "The Freddo.",
+    "practical": [],
+    "hours": "Mon-Fri 7 am-2 pm, Sat 8 am-2 pm, closed Sun (older article, previous location; confirm)",
+    "sources": [
+      "https://www.coffeepeoplepodcast.com/acento-coffee-roasters-5fd/",
+      "https://coffeetalk.com/daily-dose/for-roasters-retailers/07-2022/92779/",
+      "https://thecoastnews.com/acento-coffee-roasters/"
+    ],
+    "flags": [
+      "The best write-up (Roast! West Coast) describes the old Morena District shop at 5334 Banks St. It's now at 3145 Rosecrans St, Suite E. Confirm the roaster is in the current room; Dan's lead says it sits in the middle.",
+      "A search summary also gave the owner's name as Luis Lizardi, probably a mix-up with a different Morena business owner. Confirm before publishing the name.",
+      "Hours and the Freddo come from the older article. Confirm both."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "sourpuss-donuts",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Sourpuss Donuts",
+    "area": "Mission Beach",
+    "city": "San Diego",
+    "kind": "Sourdough brioche donut cafe",
+    "lat": 32.77275,
+    "lng": -117.25123,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 74,
+      "atmosphere": 58,
+      "story": 64,
+      "signature": 76
+    },
+    "why": "A chef's donut with a clear point of view: sourdough brioche, organic, no seed oils. The shop is new, so the story is the chef's, not the room's.",
+    "story": "Renee Fox ran two farm-to-table restaurants in Santa Fe before moving to San Diego and selling donuts at the Del Mar farmers market for three years. In 2026 she opened a shop on Mission Boulevard, between the beach and the bay. The donuts are sourdough brioche, organic, fried without seed oils.",
+    "order": "Whatever donut is up that day. Flavors rotate and sell out, so go early.",
+    "practical": [
+      "Thu-Mon mornings only",
+      "Donuts can sell out; call ahead",
+      "Patio"
+    ],
+    "hours": "Thu-Mon, 7:30 am-12:30 pm (Times of San Diego, Sep 2026)",
+    "sources": [
+      "https://timesofsandiego.com/business/2026/09/12/no-seed-oils-and-only-organic-ingredients-at-sourpuss-donuts/",
+      "https://hoodline.com/2026/09/sourpuss-donuts-opens-mission-beach-cafe-after-market-run/",
+      "https://www.sourpussdonuts.com/"
+    ],
+    "flags": [
+      "Brand new: the shop opened in spring 2026. Worth a recheck in a few months.",
+      "Dan's lead says walk-up; sources describe a cafe with a patio, so the card says cafe.",
+      "'Fried without seed oils' rests on the shop's 'no seed oils' line; the frying fat isn't named.",
+      "Coordinates from a US Census address lookup; OpenStreetMap had no match."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "doh-doh-coffee",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Doh Doh Coffee",
+    "area": "City Heights",
+    "city": "San Diego",
+    "kind": "Karen-run community cafe",
+    "lat": 32.74755,
+    "lng": -117.0756,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 74,
+      "atmosphere": 66,
+      "story": 80,
+      "signature": 56
+    },
+    "why": "The story is the strongest part: a refugee-run cafe that doubles as a community base. The drinks are good neighborhood coffee rather than a destination, so signature sits in the middle.",
+    "story": "Keh Keh Bay grew up in Burma and spent years in a refugee camp in Thailand before reaching the U.S. in 2007. Her cafe on University Avenue, named for the Karen words for 'older sister', shares its building with the Karen Organization and works as a gathering spot for the community.",
+    "order": "A Vietnamese iced coffee, or the Biscoff latte.",
+    "practical": [
+      "Kids' play corner",
+      "Picnic tables outside"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.lisc.org/san-diego/regional-stories/few-minutes-keh-keh-bay/",
+      "https://www.atly.com/location/DohDohCoffee",
+      "https://www.restaurantji.com/ca/san-diego/doh-doh-coffee-/"
+    ],
+    "flags": [
+      "The LISC profile now returns 404. Keh Keh Bay's background, the name's meaning and the Karen Organization link come from its search snippet. Confirm before publishing.",
+      "A search summary mentioned the old liquor-store fridges turned into an art gallery, but we couldn't trace it to a page we read, so it's left out. Worth confirming; it's a great detail.",
+      "Hours not found; 'morning' and 'midday' are assumed for a cafe.",
+      "Only still-open evidence is a listing updated June 2026.",
+      "Drinks and the play corner come from review sites. Dan's lead says Biscoff matcha; reviews mention a Biscoff latte and a matcha latte separately."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "muri-coffee-and-dessert",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Murî Coffee & Dessert",
+    "area": "North Park",
+    "city": "San Diego",
+    "kind": "Kurdish cafe and dessert bar",
+    "lat": 32.74871,
+    "lng": -117.13684,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 82,
+      "atmosphere": 66,
+      "story": 64,
+      "signature": 72
+    },
+    "why": "A Kurdish cafe is rare here, and that carries uniqueness. Story is middling: two grad students and a heritage to share, but we couldn't load their own account.",
+    "story": "Two UCSD PhD students opened Murî on University Avenue to share Kurdish food and culture. Beside the usual espresso there is Kurdish coffee, hazelnut and spiced teas, and qezwan, a caffeine-free drink made from roasted wild pistachio. The case runs from börek and fruit pies to pistachio cheesecake.",
+    "order": "Kurdish coffee and a slice of the pistachio cheesecake.",
+    "practical": [
+      "Open into the evening"
+    ],
+    "hours": "Daily 8 am-7 pm (Locale Magazine, June 2026)",
+    "sources": [
+      "https://localemagazine.com/kurdish-inspired-cafe-in-north-park/",
+      "https://wheninsandiego.com/muri-cafe-san-diego/",
+      "https://muricafe.com/our-story"
+    ],
+    "flags": [
+      "Founders aren't named in what we read; their 'our story' page wouldn't load (503).",
+      "Qezwan, börek and fruit pies come from a local blog via search summary. Confirm on the menu.",
+      "Coordinates from an OpenStreetMap address search (Photon); no place match."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "garden-coffee",
+    "seed": true,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Garden Coffee",
+    "area": "Old Town",
+    "city": "San Diego",
+    "kind": "Open-air garden coffee bar",
+    "lat": 32.75262,
+    "lng": -117.19703,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 70,
+      "atmosphere": 84,
+      "story": 32,
+      "signature": 50
+    },
+    "why": "The setting is the point: an open-air garden with odd, thrifted seating. Story and signature are low because we found no owners, no founding date and no particular drink.",
+    "story": "An open-air coffee bar tucked into a garden off Congress Street. The seating is thrift-store improvisation, down to ironing-board tables and a piano planted with succulents. Order to stay and you pick your own mug, many made by local potters. Some nights bring live music, and a book club meets monthly.",
+    "order": "A coffee in a mug you choose yourself, or a coffee flight if you can't decide.",
+    "practical": [
+      "Dog-friendly",
+      "Outdoor seating"
+    ],
+    "hours": "Tue-Sat 9 am-3 pm (listing, confirm)",
+    "sources": [
+      "https://www.oldtownsandiego.org/escape-to-garden-coffee-old-towns-lush-outdoor-coffee-spot/",
+      "https://www.sprudgemaps.com/listing/garden-coffee-old-town/",
+      "https://localemagazine.com/old-town-san-diego/"
+    ],
+    "flags": [
+      "The Old Town San Diego article wouldn't load (403). Seating, mugs, book club and dog policy come from its search snippet plus the Sprudge listing.",
+      "'Some nights' is our reading of 'live shows'; timing unknown.",
+      "Owners and opening year unknown. Hours from a search summary.",
+      "Dan's lead mentions local art; not confirmed. Books fit the book club.",
+      "Coordinates from an OpenStreetMap address search (Photon); no place match."
+    ],
+    "verified": "2026-10"
+  }
+]
