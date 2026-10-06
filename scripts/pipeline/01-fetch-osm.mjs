@@ -1,4 +1,5 @@
-// Step 1: download every named restaurant, bar, pub, cafe and fast-food place in the nine Bay Area counties
+// Step 1: download every named restaurant, bar, pub, cafe, fast-food counter, ice cream shop,
+// bakery, deli, coffee roaster and sweet shop in the nine Bay Area counties
 // from OpenStreetMap (via the public Overpass API). Output: data/pipeline/osm-raw.json (not committed).
 // Data © OpenStreetMap contributors, ODbL. Run once; be gentle with the public server.
 import { writeFileSync, mkdirSync } from 'node:fs';
@@ -6,7 +7,10 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 const COUNTIES = 'San Francisco|Alameda County|Contra Costa County|Marin County|San Mateo County|Santa Clara County|Napa County|Sonoma County|Solano County';
 const query = `[out:json][timeout:180];
 area["boundary"="administrative"]["admin_level"="6"]["name"~"^(${COUNTIES})$"]->.a;
-nwr(area.a)["amenity"~"^(restaurant|bar|pub|cafe|fast_food)$"]["name"];
+(
+  nwr(area.a)["amenity"~"^(restaurant|bar|pub|cafe|fast_food|ice_cream)$"]["name"];
+  nwr(area.a)["shop"~"^(bakery|deli|pastry|coffee|confectionery|butcher)$"]["name"];
+);
 out center tags;`;
 
 const res = await fetch('https://overpass-api.de/api/interpreter', {

@@ -41,7 +41,7 @@ const log = [];
 for (const [label, keep] of steps) { pool = pool.filter(keep); log.push([label, pool.length]); }
 
 const out = pool.map(({ e, t, lat, lng }) => ({
-  osm: `${e.type}/${e.id}`, name: t.name, amenity: t.amenity, cuisine: t.cuisine || null,
+  osm: `${e.type}/${e.id}`, name: t.name, amenity: t.amenity || t.shop, cuisine: t.cuisine || null,
   lat: +lat.toFixed(5), lng: +lng.toFixed(5), area: nearestArea([lat, lng]),
   city: t['addr:city'] || null, website: t.website || t['contact:website'] || null, phone: t.phone || null,
   hours: t.opening_hours || null, smallChain: freq[key(t.name)] >= 2, famous: !!(t.wikidata || t.wikipedia) || undefined, cashOnly: t['payment:cash'] === 'only' || undefined,
