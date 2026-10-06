@@ -855,5 +855,614 @@
     "source_url": "https://www.sf.gov/perfect-day-central-richmond",
     "open_evidence": "Named on SF.gov Perfect Day in Central Richmond page; confirm in research",
     "from": "disc-03-night"
+  },
+  {
+    "name": "Tennessee Grill",
+    "neighborhood": "Parkside",
+    "city": "San Francisco",
+    "address": "1128 Taraval St",
+    "kind": "1950s two-room diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "On Taraval since 1952: booths, an open kitchen and peach-and-lime walls. Neighborhood paper coverage only.",
+    "source_url": "https://richmondsunsetnews.com/2024/08/05/classic-parkside-diner-harkens-back-to-the-1950s/",
+    "open_evidence": "Richmond Review/Sunset Beacon profile, Aug 2024",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Cheung Hing",
+    "neighborhood": "Outer Sunset",
+    "city": "San Francisco",
+    "address": "2339 Noriega St",
+    "kind": "Hong Kong barbecue takeout",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Cash-only roast duck and char siu counter, takeout only since Covid; some of the cheapest HK barbecue in the city.",
+    "source_url": "https://www.cheunghingsfca.com/",
+    "open_evidence": "Own site live; guides describe takeout-only setup post-Covid",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Sunrise Deli",
+    "neighborhood": "Inner Sunset",
+    "city": "San Francisco",
+    "address": "2115 Irving St",
+    "kind": "Middle Eastern deli",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Small Irving Street deli for falafel, shawarma and dolmas at low prices. Barely written about.",
+    "source_url": "https://www.tripadvisor.com/Restaurant_Review-g60713-d1026810-Reviews-Sunrise_Deli-San_Francisco_California.html",
+    "open_evidence": "Listings active, no dated evidence found; confirm in research",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "House of Pancakes",
+    "neighborhood": "Parkside",
+    "city": "San Francisco",
+    "address": "937 Taraval St",
+    "kind": "Northern Chinese pancake house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Part of Taraval's quiet dumpling row: Beijing-style stuffed pancakes, dumplings and noodles.",
+    "source_url": "https://www.sfgate.com/food/article/how-an-unassuming-san-francisco-neighborhood-16269711.php",
+    "open_evidence": "SFGate dumpling-row story (2021). Street number from memory; confirm open and address",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Polly Ann Ice Cream",
+    "neighborhood": "Outer Sunset",
+    "city": "San Francisco",
+    "address": "3138 Noriega St",
+    "kind": "Old-school ice cream shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Outer Sunset scoop shop since the 1970s, known for odd flavors and a wheel that picks one for you.",
+    "source_url": "https://onetripwonder.com/where-to-eat-irving-street-san-francisco/",
+    "open_evidence": "Listed in current Sunset guides; founding year and wheel need a source",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Devil's Teeth Baking Company",
+    "neighborhood": "Outer Sunset",
+    "city": "San Francisco",
+    "address": "3876 Noriega St",
+    "kind": "Biscuit breakfast-sandwich bakery",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Near Ocean Beach; known for the egg, bacon and avocado biscuit sandwich with lemon-garlic aioli.",
+    "source_url": "https://onetripwonder.com/where-to-eat-irving-street-san-francisco/",
+    "open_evidence": "Listed in current Sunset guides; confirm in research",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Toyose",
+    "neighborhood": "Outer Sunset",
+    "city": "San Francisco",
+    "address": "3814 Noriega St",
+    "kind": "Korean late-night garage",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Korean drinking food served in a converted garage on Noriega, open until 1am every night.",
+    "source_url": "https://sfbiketours.com/blog/food-drink-guide-san-francisco-sunset-neighborhood/",
+    "open_evidence": "Current Sunset guide lists 1am hours; confirm in research",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "Gold Mirror",
+    "neighborhood": "Parkside",
+    "city": "San Francisco",
+    "address": "800 Taraval St",
+    "kind": "Old-school Italian dining room",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Rare old-school Italian room outside North Beach, reopened after a two-year renovation; cannelloni and veal parm.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-parkside",
+    "open_evidence": "Infatuation Parkside guide notes reopening after renovation (current)",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "Kingdom of Dumpling",
+    "neighborhood": "Parkside",
+    "city": "San Francisco",
+    "address": "1713 Taraval St",
+    "kind": "Northern Chinese dumpling house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Opened 2007 and anchors Taraval's dumpling row; pork and cabbage, chicken and corn, plus a frozen-dumpling shop.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/reviews/kingdom-of-dumpling",
+    "open_evidence": "Listing updated May 2026; Infatuation review",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "San Tung",
+    "neighborhood": "Inner Sunset",
+    "city": "San Francisco",
+    "address": "1031 Irving St",
+    "kind": "Chinese wing and noodle house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "Lines out the door for dry-fried chicken wings and handmade noodles; a famous order in a plain room.",
+    "source_url": "https://onetripwonder.com/where-to-eat-irving-street-san-francisco/",
+    "open_evidence": "Listed in current Irving Street guide",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "Yummy Yummy",
+    "neighborhood": "Inner Sunset",
+    "city": "San Francisco",
+    "address": "1015 Irving St",
+    "kind": "Vietnamese pho house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Neighborhood pho house next to San Tung: five-spice chicken, imperial rolls and rice plates.",
+    "source_url": "https://onetripwonder.com/where-to-eat-irving-street-san-francisco/",
+    "open_evidence": "Listed in current Irving Street guide",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "Tú Lan",
+    "neighborhood": "SoMa",
+    "city": "San Francisco",
+    "address": "8 6th St",
+    "kind": "Vietnamese lunch counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "On Sixth Street since 1978, unchanged and no-frills: imperial rolls, big pho, grilled meats over rice.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/reviews/tu-lan",
+    "open_evidence": "Listing updated July 2026; Infatuation review (current)",
+    "from": "disc-05-day"
+  },
+  {
+    "name": "Just For You Cafe",
+    "neighborhood": "Dogpatch",
+    "city": "San Francisco",
+    "address": "732 22nd St",
+    "kind": "Cajun-leaning breakfast diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Started 1990 on Potrero Hill, in Dogpatch since 2002; house-baked bread, beignets and catfish creole.",
+    "source_url": "https://www.justforyoucafe.com/about.html",
+    "open_evidence": "Own site and current Infatuation review (as Giuliana's Just For You Cafe)",
+    "from": "disc-05-day"
+  },
+  {
+    "name": "Deli Board",
+    "neighborhood": "SoMa",
+    "city": "San Francisco",
+    "address": "1058 Folsom St",
+    "kind": "Takeout sandwich counter",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Takeout-only counter stacking two or three meats per roll. Pricey at about $18-23, which matters here.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/reviews/deli-board",
+    "open_evidence": "Infatuation review and sandwich guide (current)",
+    "from": "disc-05-day"
+  },
+  {
+    "name": "Bayside Market Deli",
+    "neighborhood": "South Beach",
+    "city": "San Francisco",
+    "address": "120 Brannan St",
+    "kind": "Corner-store deli counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Corner market deli praised for the biggest, cheapest sandwiches near South Park. Almost no press.",
+    "source_url": "https://yumhacker.com/lists/my-favorite-cheap-eats-near-south-park-soma",
+    "open_evidence": "Undated list; no recent evidence found. Confirm open in research",
+    "from": "disc-05-day"
+  },
+  {
+    "name": "Goat Hill Pizza",
+    "neighborhood": "Potrero Hill",
+    "city": "San Francisco",
+    "address": "300 Connecticut St",
+    "kind": "Sourdough-crust pizzeria",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Potrero Hill hangout since 1975 with crisp sourdough-crust pies.",
+    "source_url": "https://www.potreroview.net/neighborhood-pizza-joints-deliver/",
+    "open_evidence": "Potrero View neighborhood pizza piece and current guides",
+    "from": "disc-05-night"
+  },
+  {
+    "name": "The Connecticut Yankee",
+    "neighborhood": "Potrero Hill",
+    "city": "San Francisco",
+    "address": "100 Connecticut St",
+    "kind": "1907 saloon with kitchen",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Saloon in a 1907 building that has poured through Prohibition and beyond; cheap pub lunch and dinner.",
+    "source_url": "https://www.modernluxury.com/potrero-hill-neighborhood-guide/",
+    "open_evidence": "Modern Luxury Potrero Hill guide (current)",
+    "from": "disc-05-night"
+  },
+  {
+    "name": "Chez Maman East",
+    "neighborhood": "Potrero Hill",
+    "city": "San Francisco",
+    "address": "1401 18th St",
+    "kind": "Small French bistro",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Tiny Potrero bistro since 2002, home-style French cooking and burgers at a counter.",
+    "source_url": "https://www.modernluxury.com/potrero-hill-neighborhood-guide/",
+    "open_evidence": "Modern Luxury Potrero Hill guide (current)",
+    "from": "disc-05-night"
+  },
+  {
+    "name": "Long Bridge Pizza",
+    "neighborhood": "Dogpatch",
+    "city": "San Francisco",
+    "address": "2347 3rd St",
+    "kind": "Neighborhood pizzeria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Dogpatch pizzeria opened 2014, named for a 19th-century wooden causeway along Third Street.",
+    "source_url": "https://www.potreroview.net/neighborhood-pizza-joints-deliver/",
+    "open_evidence": "Potrero View piece; confirm 2025-26 activity in research",
+    "from": "disc-05-night"
+  },
+  {
+    "name": "Brickhouse Cafe",
+    "neighborhood": "SoMa",
+    "city": "San Francisco",
+    "address": "426 Brannan St",
+    "kind": "Bar and grill",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Old brick SoMa bar doing burgers, sandwiches and weekend brunch near the ballpark.",
+    "source_url": "https://foursquare.com/brickhou8021598",
+    "open_evidence": "No dated evidence found; confirm open in research",
+    "from": "disc-05-night"
+  },
+  {
+    "name": "Super Star Restaurant",
+    "neighborhood": "Excelsior",
+    "city": "San Francisco",
+    "address": "4919 Mission St",
+    "kind": "Filipino breakfast-plate counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Cash-only Filipino takeout counter: tocino, longganisa and pork chops over garlic rice, a full meal under $10.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/best-excelsior-restaurants",
+    "open_evidence": "Infatuation Excelsior guide (current); confirm hours in research",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "Baby's Eatery & Palabok",
+    "neighborhood": "Excelsior",
+    "city": "San Francisco",
+    "address": "4609 Mission St",
+    "kind": "Filipino turo-turo counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Point-and-pick Filipino steam table; under $15 buys a takeout box that lasts two meals.",
+    "source_url": "https://www.sfstation.com/babys-eatery-and-palabok-b1674991",
+    "open_evidence": "Infatuation Filipino guide (current); menu page updated 2025",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "Pupusería Metapán",
+    "neighborhood": "Excelsior",
+    "city": "San Francisco",
+    "address": "4769 Mission St",
+    "kind": "Salvadoran pupusa house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-run since 2012 by a cook from Metapán, El Salvador; low-key room, excellent pupusas.",
+    "source_url": "https://pupuseria-metapan.square.site/",
+    "open_evidence": "Own ordering site live; Infatuation Excelsior guide (current)",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "G & L Bakery & Restaurant",
+    "neighborhood": "Visitacion Valley",
+    "city": "San Francisco",
+    "address": "198 Leland Ave",
+    "kind": "Cantonese bakery-cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Leland Avenue bakery-restaurant in a corridor of unchanged Cantonese working-class cooking. Almost no press.",
+    "source_url": "https://missionbluesf.com/2020/03/31/gl-bakery-and-restaurant/",
+    "open_evidence": "Listing updated July 2026; confirm in research",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "Luen Fat Bakery",
+    "neighborhood": "Visitacion Valley",
+    "city": "San Francisco",
+    "address": "110 Leland Ave",
+    "kind": "Chinese-Vietnamese bakery",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Small Leland Avenue bakery for egg tarts, buns and bánh mì. Neighborhood-only following.",
+    "source_url": "https://www.menupix.com/sf/restaurants/158274/Luen-Fat-Bakery-San-Francisco-CA",
+    "open_evidence": "No dated evidence found; confirm open in research",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "La Colonia",
+    "neighborhood": "Bayview",
+    "city": "San Francisco",
+    "address": "6273 3rd St",
+    "kind": "24-hour takeout window",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Round-the-clock window at Ingerson: corned beef sandwiches, tortas and waffles, ordered online and picked up.",
+    "source_url": "https://missionlocal.org/2026/01/bayview-third-street-corridor-business/",
+    "open_evidence": "Mission Local Bayview Buzz, Jan 2026",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "Restaurante San Vicente",
+    "neighborhood": "Excelsior",
+    "city": "San Francisco",
+    "address": "4423 Mission St",
+    "kind": "Salvadoran pupuseria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Excelsior Salvadoran room with loroco and pollo-con-frijoles pupusas worth the trip.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/reviews/san-vicente",
+    "open_evidence": "Infatuation review (current); own site live",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Smoke Soul Kitchen",
+    "neighborhood": "Bayview",
+    "city": "San Francisco",
+    "address": "4618 3rd St",
+    "kind": "Soul food and fried chicken",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Black- and woman-owned spot that took over Auntie April's space in 2025: fried chicken, waffles, shrimp and grits.",
+    "source_url": "https://sfstandard.com/2025/04/09/smoke-soul-kitchen-best-fried-chicken/",
+    "open_evidence": "SF Standard feature, Apr 2025",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Gumbo Social",
+    "neighborhood": "Bayview",
+    "city": "San Francisco",
+    "address": "5176 3rd St",
+    "kind": "Gumbo kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Third Street kitchen built around gumbo and Louisiana-style soul food.",
+    "source_url": "https://www.sftravel.com/article/excellent-black-owned-restaurants-san-francisco",
+    "open_evidence": "SF Travel Black-owned restaurants guide (current); confirm hours in research",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Pork Store Cafe",
+    "neighborhood": "Haight-Ashbury",
+    "city": "San Francisco",
+    "address": "1451 Haight St",
+    "kind": "Tiny breakfast diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Haight diner since the 1970s with room for about 20; breakfast burritos, biscuits and gravy.",
+    "source_url": "https://crawlsf.com/guides/haight-ashbury/",
+    "open_evidence": "CrawlSF and SF Travel Haight guides (current)",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Yasukochi's Sweet Stop",
+    "neighborhood": "Japantown",
+    "city": "San Francisco",
+    "address": "1790 Sutter St",
+    "kind": "Coffee crunch cake counter",
+    "when": [
+      "morning"
+    ],
+    "fame": "deep-cut",
+    "why": "Bakery counter inside a Japanese market making coffee crunch cake for over 40 years; sells out by late morning.",
+    "source_url": "https://www.7x7.com/japantown-san-francisco-guide-1787127496/where-to-eat-drink-in-sf-s-japantown",
+    "open_evidence": "Undated 7x7 guide; host market's status unclear. Confirm open in research",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Sophie's Crepes",
+    "neighborhood": "Japantown",
+    "city": "San Francisco",
+    "address": "1581 Webster St",
+    "kind": "Japanese-style crepe stand",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Japantown mall crepe stand since 2000, same owner for over 20 years; fruit, gelato and savory crepes.",
+    "source_url": "https://www.sfjapantown.org/directory-jpndirectory/listing/sophies-crepes/",
+    "open_evidence": "Japantown merchants directory (current)",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Cafe International",
+    "neighborhood": "Lower Haight",
+    "city": "San Francisco",
+    "address": "508 Haight St",
+    "kind": "Bohemian corner cafe",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Mural-covered Lower Haight corner cafe with open mics and cheap plates. Thin press.",
+    "source_url": "https://www.tripadvisor.com/Restaurants-g60713-c8-zfn7222620-San_Francisco_California.html",
+    "open_evidence": "Appears in current cafe listings; no dated evidence. Confirm in research",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Kezar Bar & Restaurant",
+    "neighborhood": "Cole Valley",
+    "city": "San Francisco",
+    "address": "770 Stanyan St",
+    "kind": "Neighborhood sports bar and grill",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Neighborhood pub by Golden Gate Park doing burgers and weekend brunch.",
+    "source_url": "https://www.tripadvisor.com/Restaurants-g60713-zfn7222620-zfp10606-San_Francisco_California.html",
+    "open_evidence": "In current Haight brunch listings; confirm in research",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Grubstake Diner",
+    "neighborhood": "Lower Nob Hill",
+    "city": "San Francisco",
+    "address": "1525 Pine St",
+    "kind": "Railcar diner open late",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "why": "Diner in an old streetcar-style car serving Portuguese dishes and burgers until 3 or 4am; survived demolition plans.",
+    "source_url": "https://www.grubstakesf.com/",
+    "open_evidence": "Own site lists current hours (6:30pm-3/4am)",
+    "from": "disc-07-night"
+  },
+  {
+    "name": "Udon Mugizo",
+    "neighborhood": "Japantown",
+    "city": "San Francisco",
+    "address": "1581 Webster St",
+    "kind": "Handmade udon shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Opened 2014 and one of the few spots making its own noodles in house; udon, soba and ramen.",
+    "source_url": "https://www.7x7.com/japantown-san-francisco-guide-1787127496/where-to-eat-drink-in-sf-s-japantown",
+    "open_evidence": "7x7 Japantown guide (current)",
+    "from": "disc-07-night"
+  },
+  {
+    "name": "Suzu Noodle House",
+    "neighborhood": "Japantown",
+    "city": "San Francisco",
+    "address": "1825 Post St",
+    "kind": "Ramen and soba counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Spare, comfortable Japantown noodle room, best known for a fried chicken ramen.",
+    "source_url": "https://www.7x7.com/japantown-san-francisco-guide-1787127496/where-to-eat-drink-in-sf-s-japantown",
+    "open_evidence": "7x7 Japantown guide (current)",
+    "from": "disc-07-night"
+  },
+  {
+    "name": "Chong Qing Xiao Mian",
+    "neighborhood": "Chinatown",
+    "city": "San Francisco",
+    "address": "915 Kearny St",
+    "kind": "Sichuan noodle counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Counter-service Chongqing noodle shop: numbing chili noodles, red-oil wontons and beef noodle soup.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/reviews/chong-qing-xiao-mian",
+    "open_evidence": "Own site and Infatuation review (current)",
+    "from": "disc-02-night"
   }
 ]
