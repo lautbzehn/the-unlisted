@@ -120,8 +120,8 @@ h2.sect { margin: 48px 0 10px; font: 400 1.75rem/1.15 var(--font-head); }
 /* ---------- Front page ---------- */
 .cover { text-align: center; padding: 40px 0 8px; }
 .logo { font: 400 clamp(3.2rem, 12vw, 5.8rem)/0.95 var(--font-title); letter-spacing: 0.01em; }
-.tagline { margin: 16px auto 0; max-width: 34ch; font: italic 1.25rem/1.5 var(--font-read); color: var(--mute); }
-.redact { background: var(--ink); color: transparent; border-radius: 2px; user-select: none; padding: 0 0.15em; white-space: nowrap; }
+.tagline { margin: 16px auto 0; max-width: 46ch; font: italic 1.25rem/1.5 var(--font-read); color: var(--mute); }
+.tagline strong { display: block; margin-top: 4px; color: var(--ink); font-style: normal; font-weight: 600; }
 .cover-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 28px; }
 
 /* browse rows */
