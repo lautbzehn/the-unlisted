@@ -8,5 +8,10 @@
     "id": "the-tin-scoop",
     "name": "The Tin Scoop",
     "reason": "Closed: its listing (The Tin Scoop Cafe, 639 Kettner Blvd, Downtown) is marked closed as of May 2026, and we found no new location. It was a cafe on Kettner rather than a Marina District kiosk; if you know a separate kiosk, tell me where."
+  },
+  {
+    "id": "la-fachada",
+    "name": "La Fachada",
+    "reason": "Closed or closing: SanDiegoVille (Feb 11, 2026) reported the 1992 Logan Heights taqueria would close over a lease dispute, a lawsuit and a split between the owner brothers. No sign it survived; skip unless you know it is open."
   }
 ]

@@ -1,0 +1,811 @@
+[
+  {
+    "id": "ob-deli",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "OB Deli",
+    "area": "Ocean Beach",
+    "city": "San Diego",
+    "kind": "Street-named sandwich deli",
+    "lat": 32.75212,
+    "lng": -117.2461,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 48,
+      "atmosphere": 45,
+      "story": 34,
+      "signature": 64
+    },
+    "why": "A good neighborhood deli with a fun naming habit, not much more. Story is thin because the origin tale we found is unsourced.",
+    "story": "A small deli on Voltaire where every sandwich is named for an Ocean Beach street. The namesake Voltaire stacks turkey, ham, two cheeses and avocado on sourdough. There's a dog-friendly patio out front.",
+    "order": "The Voltaire, on sourdough.",
+    "practical": [
+      "Dog-friendly patio"
+    ],
+    "hours": "Daily 9 am-7 pm (deli site)",
+    "sources": [
+      "https://ob-deli.com/",
+      "https://directory.oceanbeachsandiego.com/go/ob-quik-stop-liquor"
+    ],
+    "flags": [
+      "Origin story (opened Aug 2015 in place of a Subway, by the owner of OB Quik Stop Liquor) comes from a search summary of listing pages, not the deli's site. Left out.",
+      "The Voltaire's build comes from a search summary; the site confirms the street names and the meats. Confirm.",
+      "No press found."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "arizona-cafe",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Arizona Cafe",
+    "area": "Ocean Beach",
+    "city": "San Diego",
+    "kind": "1942 OB bar and grill",
+    "lat": 32.74731,
+    "lng": -117.25053,
+    "osm": "node/365317348",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 58,
+      "atmosphere": 66,
+      "story": 74,
+      "signature": 55
+    },
+    "why": "A real 1940s backstory in an OB brick building. Today it is a sports bar with burgers, so uniqueness and signature stay in the middle.",
+    "story": "George Radovich turned a place called the Dog House into the Arizona Cafe and Bar in 1942, naming it for his family's cafe in Ajo, Arizona, where he and his brother learned the trade. The brick building on Bacon Street now holds pool tables, a jukebox and a grill.",
+    "order": "The GTO burger: gorgonzola, tomato and onion.",
+    "practical": [
+      "Pool tables",
+      "Late-night food"
+    ],
+    "hours": null,
+    "sources": [
+      "https://classicsandiego.com/restaurants/arizona-cafe/",
+      "https://www.theazcafeob.com/",
+      "https://www.themenupage.com/restaurant/Arizona-Cafe/1440/0"
+    ],
+    "flags": [
+      "Hours not found. 'Late' rests on a menu site's late-night food tag.",
+      "Current owners unknown.",
+      "Still-open evidence: Classic San Diego survivors list, updated Sep 2026."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "olive-cafe",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Olive Cafe",
+    "area": "Mission Beach",
+    "city": "San Diego",
+    "kind": "Family breakfast cafe and bakery",
+    "lat": 32.78251,
+    "lng": -117.25224,
+    "osm": "node/735982620",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 50,
+      "atmosphere": 58,
+      "story": 50,
+      "signature": 48
+    },
+    "why": "A warm, owner-run breakfast room with its own bakery behind it. No signature dish came up in what we read, so that mark stays low.",
+    "story": "A breakfast-and-lunch cafe on a Mission Beach side street, opened by its owner in 2005. Ten years in, after a trip to Italy, she started Olive Baking Company so the cafe would have fresh bread every day.",
+    "order": "Anything that comes on the house bread.",
+    "practical": [
+      "Breakfast and lunch only"
+    ],
+    "hours": "Daily 7:30 am-3 pm (search summary, confirm)",
+    "sources": [
+      "https://www.sandiegoreader.com/weblogs/feast/2012/jun/12/breakfast-at-olive-cafe/",
+      "https://www.brigeeski.com/olive-baking-company-cafe-in-mission-beach/",
+      "https://driftvh.com/local-area-guide/dining/olive-cafe/"
+    ],
+    "flags": [
+      "The 2012 San Diego Reader piece wouldn't load (403).",
+      "Owner's first name appears only on a blog; left out.",
+      "No signature dish found.",
+      "No dated item within 12 months."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "the-pennant",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "The Pennant",
+    "area": "Mission Beach",
+    "city": "San Diego",
+    "kind": "1962 beach dive with a roof deck",
+    "lat": 32.76556,
+    "lng": -117.25107,
+    "osm": "node/13571588429",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 64,
+      "atmosphere": 80,
+      "story": 72,
+      "signature": 48
+    },
+    "why": "The upstairs deck and six decades of beach regulars carry it. Signature is low: the food is a side act and we could not pin down a dish.",
+    "story": "Open since 1962 on Mission Boulevard, across Gabriel Place from the Beachcomber. A former tuna fisherman bought it and in 1980 added the open-air upstairs deck that turned it into the sunny-day bar of choice. Mexican food comes from a small kitchen in back.",
+    "order": "A cold beer on the upstairs deck.",
+    "practical": [
+      "Rooftop deck",
+      "Opens 8 am on weekends"
+    ],
+    "hours": "Mon-Fri noon-2 am, Sat-Sun 8 am-2 am (OpenStreetMap)",
+    "sources": [
+      "https://www.sandiegoreader.com/news/2025/may/22/tom-arnolds-old-places-the-beachcomber-and-the-pennant-bar-in-mission-beach/",
+      "https://sandiegan.com/the-pennant-bar-mission-beach/",
+      "https://www.thepennantbar.com/about-us"
+    ],
+    "flags": [
+      "Hours from OpenStreetMap only.",
+      "The kitchen's name and chef come from a search summary; left out.",
+      "Owner history is from 1980; current owner unknown."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "ranchos-cocina",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Ranchos Cocina",
+    "area": "North Park",
+    "city": "San Diego",
+    "kind": "Vegetarian-minded family Mexican",
+    "lat": 32.74876,
+    "lng": -117.13031,
+    "osm": "node/5814011757",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 52,
+      "story": 64,
+      "signature": 58
+    },
+    "why": "Meat-free Mexican basics since 1994 was early and still matters. Atmosphere and signature are middling; no single dish stood out in our sources.",
+    "story": "A family restaurant on 30th Street that opened in 1994 so people curious about vegetarian eating could still have traditional Mexican food. No lard or animal products go into the rice, beans, sauces or tortillas. The recipes passed from the founding mother to her sons.",
+    "order": "A breakfast burrito.",
+    "practical": [
+      "Lard-free beans, rice and tortillas"
+    ],
+    "hours": null,
+    "sources": [
+      "https://ranchoscocinanorthpark.com/history/",
+      "https://localemagazine.com/breakfast-burritos-san-diego/",
+      "https://www.sandiegoreader.com/places/ranchos/",
+      "https://www.happycow.net/reviews/ranchos-north-park-san-diego-3375"
+    ],
+    "flags": [
+      "Hours not found.",
+      "Signature dish thin: only a 2026 breakfast-burrito list mention.",
+      "Check whether there is a second Ranchos location."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "el-comal",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "El Comal",
+    "area": "North Park",
+    "city": "San Diego",
+    "kind": "Family Mexican kitchen",
+    "lat": 32.74936,
+    "lng": -117.12798,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 54,
+      "atmosphere": 55,
+      "story": 34,
+      "signature": 58
+    },
+    "why": "A steady family kitchen with mole and pozole on the menu. Story is low: beyond \"family-run for 20-plus years\" we found nothing.",
+    "story": "A family-run Mexican restaurant on a North Park side street for more than 20 years, with a covered patio. The cooking is traditional and home-style, and the menu runs from marlin tacos and tacos dorados to red mole enchiladas and green pozole.",
+    "order": "Red mole enchiladas, or the marlin tacos.",
+    "practical": [
+      "Covered patio",
+      "Closed 3-5 pm Mon-Thu"
+    ],
+    "hours": "Mon-Thu 10 am-3 pm and 5-9 pm, Fri 10 am-9 pm, Sat 9 am-9 pm, Sun 9 am-8 pm (restaurant site)",
+    "sources": [
+      "https://elcomalsd.com/"
+    ],
+    "flags": [
+      "Dishes are quoted on the restaurant's own site from customer reviews; no press found.",
+      "Years open: the site says 21+, an older blurb says 18+.",
+      "Single source."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "los-reyes",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Los Reyes",
+    "area": "Golden Hill",
+    "city": "San Diego",
+    "kind": "Family Mexican in an old drive-thru",
+    "lat": 32.71587,
+    "lng": -117.14039,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 56,
+      "atmosphere": 44,
+      "story": 50,
+      "signature": 60
+    },
+    "why": "An honest family place feeding workers and neighbors for 30 years. The room is plain, still shaped like the drive-thru it used to be.",
+    "story": "Family-owned on Broadway since 1993, in a building that still shows its past as a fast-food drive-thru. A 2013 write-up found families and shipyard workers stopping in on the way home, for garlic shrimp, fish tacos, pollo asado and carnitas.",
+    "order": "Camarones al mojo de ajo.",
+    "practical": [
+      "Closed Sundays"
+    ],
+    "hours": "Mon-Sat 8 am-9 pm (listing, confirm)",
+    "sources": [
+      "https://sandiegofreepress.org/2013/05/eating-25th-street-in-golden-hill-part-ii-lunch/",
+      "https://www.sandiegoreader.com/places/los-reyes/",
+      "https://www.restaurantji.com/ca/san-diego/los-reyes-mexican-food-2/"
+    ],
+    "flags": [
+      "The only detailed write-up is from 2013.",
+      "Hours from a listing site.",
+      "Fresh juices are mentioned on listing sites only."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "station-tavern",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Station Tavern",
+    "area": "South Park",
+    "city": "San Diego",
+    "kind": "Burger tavern in a 1929 trolley stop",
+    "lat": 32.72876,
+    "lng": -117.12973,
+    "osm": "node/766274764",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 74,
+      "story": 78,
+      "signature": 56
+    },
+    "why": "The building tells the story: trolley stop, old tavern, award-winning rebuild. The burgers are good, not the reason to cross town.",
+    "story": "The building was a trolley stop from 1929 to 1948, then Snippy's Tavern for half a century. When Station Tavern opened in 2009, the bar top, stools and tables were milled from Snippy's century-old wood, and the rebuild won an Orchid award. Now it's burgers and a big patio, kids and dogs welcome.",
+    "order": "A burger on the patio.",
+    "practical": [
+      "Kid and dog friendly",
+      "Big patio"
+    ],
+    "hours": null,
+    "sources": [
+      "https://sandiegomagazine.com/things-to-do/south-park-neighborhood-guide/",
+      "https://stationtavern.com/location",
+      "https://www.619area.com/california/san-diego/nightlife/station-tavern-and-burgers.html"
+    ],
+    "flags": [
+      "Hours not found.",
+      "No specific burger named in sources.",
+      "History details come from a search summary of the venue listing; confirm on the tavern site."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "the-huddle",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "The Huddle",
+    "area": "Mission Hills",
+    "city": "San Diego",
+    "kind": "Family-run corner diner",
+    "lat": 32.75036,
+    "lng": -117.17121,
+    "osm": "node/12222599046",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 52,
+      "atmosphere": 66,
+      "story": 48,
+      "signature": 46
+    },
+    "why": "A survivor: a small family diner in a neighborhood that lost most of its kind. We found no signature dish, so that mark is low.",
+    "story": "A small, family-run breakfast diner on Goldfinch that has been a Mission Hills fixture since the early 1970s and looks like a throwback to an even earlier decade.",
+    "order": "A plain diner breakfast.",
+    "practical": [
+      "Breakfast and lunch"
+    ],
+    "hours": null,
+    "sources": [
+      "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+      "https://food.theplainjane.com/2016/02/17/revisit-the-huddle/",
+      "http://averageguyfoodie.blogspot.com/2015/03/the-huddle-mission-hills-san-diego.html"
+    ],
+    "flags": [
+      "Opening year (1972) from the Classic San Diego list only.",
+      "Owners named on a 2015 blog; left out.",
+      "No signature dish found. Hours unknown.",
+      "Blog sources only besides Classic San Diego."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "ichiban",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Ichiban",
+    "area": "Hillcrest",
+    "city": "San Diego",
+    "kind": "Japanese-run budget sushi room",
+    "lat": 32.74828,
+    "lng": -117.15008,
+    "osm": "node/10000491125",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 56,
+      "atmosphere": 50,
+      "story": 58,
+      "signature": 58
+    },
+    "why": "Four decades of cheap, honest Japanese food from a Japanese crew. Nothing about the room or the menu is unusual beyond that.",
+    "story": "Japanese-owned and on University Avenue since 1981, Ichiban has kept its prices low for four decades. Lunch is the deal: bento combos and big bowls of thick udon loaded with vegetables. Happy-hour sushi runs every day.",
+    "order": "A lunch bento, or a bowl of udon.",
+    "practical": [
+      "Daily happy-hour sushi"
+    ],
+    "hours": "Daily 11 am-9 pm (listing)",
+    "sources": [
+      "https://www.sandiegoreader.com/places/ichiban/",
+      "https://ichibansushisandiego.com/sample-page/ichiban-sushi-restaurant/",
+      "https://www.fabuloushillcrest.com/eat"
+    ],
+    "flags": [
+      "Hours from a listing site.",
+      "'All-Japanese crew' and the lunch details come from an older Reader blurb via search summary. Confirm."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "cafe-222",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Café 222",
+    "area": "Downtown",
+    "city": "San Diego",
+    "kind": "Tiny downtown waffle cafe",
+    "lat": 32.71056,
+    "lng": -117.16267,
+    "osm": "node/297819169",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 62,
+      "atmosphere": 60,
+      "story": 62,
+      "signature": 74
+    },
+    "why": "A chef-owner with a sense of humor and a waffle people come back for. The room is small and plain, so atmosphere sits in the middle.",
+    "story": "Terryl Gavre opened this 750-square-foot breakfast room on Island Avenue in the early 1990s, and on busy weekends it has turned out hundreds of breakfasts. The menu plays with the classics: pumpkin waffles, green eggs and Spam, French toast stuffed with peanut butter and banana.",
+    "order": "The pumpkin waffle.",
+    "practical": [
+      "Breakfast and lunch only",
+      "Small room plus a street-side patio"
+    ],
+    "hours": "Mon-Fri 6:30 am-1:30 pm per a 2026 listing; weekend hours unclear (confirm)",
+    "sources": [
+      "https://downtowncondoguys.com/restaurateur-terryl-gavre/",
+      "https://www.foodnetwork.com/restaurants/ca/san-diego/cafe-222-restaurant",
+      "https://therealsandiego.com/san-diego-spotlight-cafe-222/"
+    ],
+    "flags": [
+      "Hours conflict: one listing says weekdays only, an older profile says breakfast daily. Confirm.",
+      "Still-open evidence is an Aug 2026 listing review.",
+      "Opening year given only as \"early 90s\"."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "tivoli-bar-and-grill",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Tivoli Bar and Grill",
+    "area": "Gaslamp Quarter",
+    "city": "San Diego",
+    "kind": "Saloon since 1885",
+    "lat": 32.71057,
+    "lng": -117.15892,
+    "osm": "way/377357190",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 80,
+      "atmosphere": 82,
+      "story": 90,
+      "signature": 46
+    },
+    "why": "The oldest bar in the city, with its original back bar, is the whole draw. Food is basic burgers and pizza, so signature is low.",
+    "story": "A saloon since 1885, in a building that had already been a boarding house, a feed store and a blacksmith shop; the rooms upstairs were once a brothel. The original wooden bar was built in Boston and shipped around Cape Horn. The grill does burgers and pizza until late.",
+    "order": "A cold beer at the old bar, and a burger.",
+    "practical": [
+      "Open until 2 am"
+    ],
+    "hours": "Daily from about noon until 2 am (OpenStreetMap)",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tivoli_Bar_and_Grill",
+      "https://gaslamp.org/listing/tivoli-bar/",
+      "https://www.onlyinyourstate.com/southern-california/tivoli-bar-and-grill-so-cal/"
+    ],
+    "flags": [
+      "The Wyatt Earp regular claim and the 1864 building date (credited to Alonzo Horton, who arrived in 1867) are shaky; left out.",
+      "Hours from OpenStreetMap only.",
+      "Classic San Diego survivors list (Sep 2026) confirms it is still open."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "el-carrito",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "El Carrito",
+    "area": "Barrio Logan",
+    "city": "San Diego",
+    "kind": "Breakfast diner in a 1930s rail car",
+    "lat": 32.69861,
+    "lng": -117.14001,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 90,
+      "atmosphere": 84,
+      "story": 86,
+      "signature": 66
+    },
+    "why": "One of a kind: a retired electric railway car serving chilaquiles since 1947. The food is solid rather than the main event.",
+    "story": "A 1930s San Diego electric railway car, retired in 1940, was hauled to Logan Avenue in February 1947 and has been a restaurant ever since, under several owners. It sits a block from Chicano Park and long served as a meeting room for neighborhood politicians, business owners and artists. The plates are big and the chilaquiles are the thing.",
+    "order": "Chilaquiles.",
+    "practical": [
+      "Breakfast and lunch only"
+    ],
+    "hours": null,
+    "sources": [
+      "https://voiceofsandiego.org/2018/05/29/culture-report-barrio-logans-cable-car-restaurant-ready-to-roll-again/",
+      "https://sandiegomagazine.com/archive/el-carrito-in-barrio-logan-preserves-a-little-history/",
+      "https://chicanoparkmuseum.org/logan-heights-archival-project/el-carrito/",
+      "https://www.theinfatuation.com/san-diego/reviews/el-carrito"
+    ],
+    "flags": [
+      "Discovery labeled it deep cut; several outlets cover it, so it is open secret here.",
+      "Sources call it both a 'cable car' and an electric railway car. The story says rail car.",
+      "Hours not found. Reopened in 2018 after a closure; listings updated Sep 2026."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "mariscos-mi-gusto-es",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Mariscos Mi Gusto Es",
+    "area": "City Heights",
+    "city": "San Diego",
+    "kind": "Sinaloa-style mariscos truck",
+    "lat": 32.729,
+    "lng": -117.09865,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 64,
+      "atmosphere": 45,
+      "story": 36,
+      "signature": 70
+    },
+    "why": "The gobernador taco earns a citywide-list mention. Story is thin, and the name may tie it to a Mexico City chain.",
+    "story": "A seafood truck on Home Avenue, out by Chollas Creek, serving since around 2013. The taco people come for is the gobernador: shrimp with sautéed peppers and melted cheese, the Sinaloa classic.",
+    "order": "The gobernador taco.",
+    "practical": [],
+    "hours": null,
+    "sources": [
+      "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/"
+    ],
+    "flags": [
+      "CHAIN CHECK: a Mexico City seafood chain with 15 branches uses the same name. Confirm this truck is independent before approving.",
+      "'Since 2013' comes from a listing summary.",
+      "Single press source; hours unknown."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "red-sea-ethiopian-restaurant",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Red Sea Ethiopian Restaurant",
+    "area": "City Heights",
+    "city": "San Diego",
+    "kind": "Ethiopian kitchen, city's oldest",
+    "lat": 32.74932,
+    "lng": -117.09292,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 72,
+      "atmosphere": 50,
+      "story": 76,
+      "signature": 64
+    },
+    "why": "A family that has held on through decades and a pandemic, cooking the basics well. The room is no-frills.",
+    "story": "Shimeles Kibret left Ethiopia amid political persecution and in 1996 bought this University Avenue restaurant, which calls itself the oldest Ethiopian restaurant in San Diego. He runs it with his wife and relatives. Expect tibs, kitfo and siga wot, eaten with your hands and injera.",
+    "order": "Tibs or kitfo, with injera.",
+    "practical": [
+      "No-frills room"
+    ],
+    "hours": "Tue-Thu noon-10 pm, later Fri-Sat (listing, confirm)",
+    "sources": [
+      "https://www.kpbs.org/news/2021/apr/30/city-heights-bites-red-sea-ethiopian/",
+      "https://sdvoice.info/red-seas-ethiopian-restaurant-surviving-the-rough-waters-of-covid-19/",
+      "https://www.redseasandiego.com/",
+      "https://intentionalist.com/b/red-sea-ethiopian-restaurant/"
+    ],
+    "flags": [
+      "Founding year conflicts: one source says the family has run it since 1986, another that Kibret bought it in 1996. The 'oldest Ethiopian restaurant' line is the restaurant's own claim.",
+      "The East County Magazine review wouldn't load.",
+      "Hours from a listing."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "pho-hoa-linda-vista",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Pho Hoa Linda Vista",
+    "area": "Linda Vista",
+    "city": "San Diego",
+    "kind": "Cash-only pho shop",
+    "lat": 32.78464,
+    "lng": -117.17103,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 50,
+      "atmosphere": 42,
+      "story": 40,
+      "signature": 62
+    },
+    "why": "A long-running, low-priced pho room loyal families keep coming back to. Little is written about it, and the name is shared with a national chain.",
+    "story": "A cash-only pho shop on Linda Vista Road said to have been open for close to 40 years, with prices a few dollars under most of its neighbors. Whole families come in groups, and the pho and egg rolls get the praise.",
+    "order": "A bowl of pho and an order of egg rolls.",
+    "practical": [
+      "Cash only (ATM inside)"
+    ],
+    "hours": null,
+    "sources": [
+      "https://nextdoor.com/pages/pho-hoa-linda-vista-san-diego-ca/",
+      "https://foursquare.com/v/pho-hoa/4b4a2acef964a5201d7d26e3",
+      "https://oh-soyummy.com/reviews/pho-hoa"
+    ],
+    "flags": [
+      "Community and listing sources only.",
+      "CHAIN CHECK: 'Pho Hoa' is also a national franchise name. Confirm this shop is independent.",
+      "'Nearly 40 years' comes from a review-site summary.",
+      "Hours unknown."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "sushi-yorimichi",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Sushi Yorimichi",
+    "area": "Linda Vista",
+    "city": "San Diego",
+    "kind": "Strip-mall neighborhood sushi bar",
+    "lat": 32.78692,
+    "lng": -117.17074,
+    "osm": "node/2753180331",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 48,
+      "atmosphere": 50,
+      "story": 50,
+      "signature": 56
+    },
+    "why": "Fair-priced, fresh neighborhood sushi from a Yokohama-born owner. It is a good local spot more than a distinctive one.",
+    "story": "Opened in June 2021 on Ulric Street by Sera, who grew up in Yokohama, and her partner Fernando, both long in the restaurant trade. The menu goes well past rolls into ramen, yakitori, curry and bento, and the happy hour is the local favorite. A second Linda Vista shop followed in 2025.",
+    "order": "Sashimi or a chef’s roll at happy hour.",
+    "practical": [
+      "Happy hour"
+    ],
+    "hours": "Sun-Mon 11 am-9 pm, Tue-Thu 11-3 and 4:30-9, Fri-Sat 11 am-10 pm (OpenStreetMap)",
+    "sources": [
+      "https://mmm-yoso.com/2025/09/28/sushi-yorimichi-2-opens-linda-vista/",
+      "https://lindavistaupdate.substack.com/p/sushi-yorimichi-clones-itself",
+      "https://www.sodiego.com/blog/hole-in-the-wall-restaurants-in-san-diego/"
+    ],
+    "flags": [
+      "Weak fit: good neighborhood sushi, not much that sets it apart. Consider dropping.",
+      "Owner details from a local opening post via search summary.",
+      "Hours from OpenStreetMap."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "kikos-place-seafood",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Kiko's Place Seafood",
+    "area": "Mission Valley",
+    "city": "San Diego",
+    "kind": "San Felipe seafood truck",
+    "lat": 32.77116,
+    "lng": -117.15595,
+    "osm": null,
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 70,
+      "atmosphere": 62,
+      "story": 70,
+      "signature": 82
+    },
+    "why": "Some of the best Baja fish tacos in town from a family truck with a 1983 backstory. It is a parking-lot setup, which is part of the charm.",
+    "story": "A family seafood truck parked on Hazard Center Drive, cooking recipes first served on the beach in San Felipe in 1983. The fish tacos are lightly battered with a hint of mustard, and a cup of fish-and-carrot consommé comes free. Landscapers on lunch break fill the communal tables, set with tablecloths and flowers.",
+    "order": "Two Baja fish tacos; the 2-5 pm happy hour adds a drink.",
+    "practical": [
+      "Communal outdoor tables",
+      "Daily happy hour 2-5 pm"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.theinfatuation.com/san-diego/reviews/kikos-place-seafood",
+      "https://www.sandiegoreader.com/news/2022/may/05/tin-fork-kikos-place-food-truck-lunch-rushes/"
+    ],
+    "flags": [
+      "Hours not found.",
+      "San Diego Magazine lists a second Kiko’s location downtown. Check it is the same family and that this stays under 3 locations."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "joses-courtroom",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Jose's Courtroom",
+    "area": "La Jolla",
+    "city": "San Diego",
+    "kind": "Old La Jolla Mexican bar",
+    "lat": 32.84777,
+    "lng": -117.2739,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 62,
+      "atmosphere": 70,
+      "story": 80,
+      "signature": 52
+    },
+    "why": "A colorful backstory and a rare unpretentious bar on Prospect. Food is standard Mexican-American, so signature stays middling.",
+    "story": "It started in the 1950s as The Courtroom, run by a man everyone called the Judge, who skipped town within a year. The next owner turned it Mexican and named it for his cook, Jose Arreola. It moved to Prospect Street in the 1970s, and three partners have kept it going for close to 40 years.",
+    "order": "A margarita and tacos at the bar.",
+    "practical": [
+      "Bar with a long liquor license history"
+    ],
+    "hours": null,
+    "sources": [
+      "https://timesofsandiego.com/business/2025/12/03/three-amigos-have-kept-joses-courtroom-cooking-for-nearly-40-years/",
+      "https://www.sandiegoreader.com/places/joses-la-jolla/",
+      "https://lajolla.com/article/joses-la-jolla-mexican-restaurant/"
+    ],
+    "flags": [
+      "Dates vary by source: opened 1954 or 1956; moved to Prospect in 1973 or the early 80s. The story keeps it to decades.",
+      "Hours not found.",
+      "'Ocean views' appear in one guide; not used."
+    ],
+    "verified": "2026-10"
+  }
+]
