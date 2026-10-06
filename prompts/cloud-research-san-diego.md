@@ -1,5 +1,12 @@
 # Cloud research run: San Diego, first 100 places
 
+> **How to start (for Dan):** in the Claude desktop app, start a new session, choose **cloud**, pick the
+> **the-unlisted** repository and **Opus 5.5**, then paste this one line:
+>
+> `Follow prompts/cloud-research-san-diego.md. Start with Setup, then Step 1.`
+>
+> Everything below is the cloud session's own instructions. You don't need to paste it.
+
 Brief for a Claude Code **cloud session** on this repo. It runs on Dan's cloud credit, then his plan.
 Goal: **about 100 San Diego places** = Dan's 20 picks + about 80 found by research. Built so a later round can take
 San Diego to 200 with the same steps. Work in small batches and save after each one.
