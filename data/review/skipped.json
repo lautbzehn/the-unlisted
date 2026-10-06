@@ -78,5 +78,30 @@
     "id": "koryo-sushi",
     "name": "Koryo Sushi",
     "reason": "Poor fit: a strip-mall late-night sushi/Korean BBQ/poke spot with no story or standout dish in reliable sources."
+  },
+  {
+    "id": "hing-lung-company",
+    "name": "Hing Lung Company",
+    "reason": "Closed: left 1261 Stockton St in April 2024 after rent talks failed; the Cheung family now runs Quack House (Tenderloin) and Go Duck Yourself (Bernal Heights)"
+  },
+  {
+    "id": "tropical-hut",
+    "name": "Tropical Hut",
+    "reason": "Could not confirm a Tropical Hut at 1021 Geneva Ave; searches only return the Philippine fast-food chain and a New Jersey group"
+  },
+  {
+    "id": "kezar-bar-and-restaurant",
+    "name": "Kezar Bar & Restaurant",
+    "reason": "Closed during COVID; Bacon Bacon's Jim Angelus reopened the space as Cole Valley Tavern in April 2022"
+  },
+  {
+    "id": "cam-huong-cafe",
+    "name": "Cam Huong Cafe",
+    "reason": "Closed: the 920 Webster St original shut in 2018 after 33 years; the family's Eastlake shop (702 International Blvd) may be a substitute"
+  },
+  {
+    "id": "tamarindo-antojeria",
+    "name": "Tamarindo Antojeria",
+    "reason": "Closed at the end of 2019; the Dominguez family has since opened Amado in Burlingame"
   }
 ]
