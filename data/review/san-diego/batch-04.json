@@ -1,0 +1,798 @@
+[
+  {
+    "id": "pho-hiep-and-grill",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Pho Hiep & Grill",
+    "area": "Linda Vista",
+    "city": "San Diego",
+    "kind": "Family pho house since 1991",
+    "lat": 32.78507,
+    "lng": -117.17033,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 50,
+      "atmosphere": 48,
+      "story": 58,
+      "signature": 60
+    },
+    "why": "A family business that has outlasted most of the strip. It now has three locations, so it is less of a find than it once was.",
+    "story": "Chef Hiep Phan opened the first Pho Hiep as a small Linda Vista restaurant in 1991. It is still a family operation: Phan, his wife Hong, their daughter Emily and her husband Kevin. This Linda Vista Road shop is the original; the house beef pho, bún and broken-rice plates are the core.",
+    "order": "The house beef pho.",
+    "practical": [
+      "Opens 8 am"
+    ],
+    "hours": "Sun-Thu 8 am-8 pm, Fri-Sat 8:30 am-8:30 pm (restaurant site)",
+    "sources": [
+      "https://www.phohiepgrill.com/"
+    ],
+    "flags": [
+      "Three locations (Linda Vista, Chula Vista, Eastlake): at the edge of the 3-location rule.",
+      "Single source: the restaurant site."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "shabu-shabu-house",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Shabu Shabu House",
+    "area": "Kearny Mesa",
+    "city": "San Diego",
+    "kind": "Horseshoe-bar hot pot counter",
+    "lat": 32.82477,
+    "lng": -117.15589,
+    "osm": "node/14113768951",
+    "when": [
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 66,
+      "story": 40,
+      "signature": 62
+    },
+    "why": "An old-format hot pot counter from before Convoy got famous. We found almost nothing about who runs it or since when.",
+    "story": "A Japanese hot pot room on Convoy built around a horseshoe-shaped bar, where every seat has its own electric burner and pot of broth. You cook thin-sliced meat and vegetables yourself, shabu-shabu or sukiyaki style. It has been on the street for close to 30 years.",
+    "order": "Shabu-shabu at the bar.",
+    "practical": [
+      "Dinner only",
+      "No reservations",
+      "Beer and wine"
+    ],
+    "hours": "Daily 5:30-10 pm, Fri to 11 pm (listing)",
+    "sources": [
+      "https://www.sandiegoreader.com/places/shabu/",
+      "https://shabushabuhouse1.netwaiter.com/san-diego/about/",
+      "https://exploreclairemont.com/how-convoy-became-san-diego-asian-food-capital/"
+    ],
+    "flags": [
+      "'Nearly 30 years' comes from a search summary of a Convoy history piece.",
+      "Owners unknown.",
+      "Hours from an ordering page."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "el-pescador-fish-market",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "El Pescador Fish Market",
+    "area": "La Jolla",
+    "city": "San Diego",
+    "kind": "Fish market with a grill counter",
+    "lat": 32.83979,
+    "lng": -117.27641,
+    "osm": "node/448043310",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 60,
+      "story": 74,
+      "signature": 78
+    },
+    "why": "A real fish market where the sandwich is the draw, with a nice surfer-kid founding story. In La Jolla terms it is casual; prices are not.",
+    "story": "Two teenagers, a 19-year-old surfer and his 16-year-old helper, hand-built a fish case and opened El Pescador in Del Mar in 1974. A later 'clean-up kid' opened this Pearl Street shop in the mid-1980s. It is a fish market with a deli counter, known for char-grilled fish sandwiches and ceviche.",
+    "order": "A char-grilled fish sandwich.",
+    "practical": [
+      "Patio seating",
+      "Fish market to take home"
+    ],
+    "hours": "Daily 11 am-9 pm (2018 guide, confirm)",
+    "sources": [
+      "https://www.timeout.com/san-diego/restaurants/el-pescador-fish-market",
+      "https://lajolla.ca/explore/restaurants/el-pescador-fish-market-restaurant/",
+      "https://www.corp-edge.com/elpescador.shtml"
+    ],
+    "flags": [
+      "Address differs: 634 Pearl St (listings) vs 627 Pearl St (one history page). Confirm.",
+      "Hours from a 2018 guide.",
+      "Check whether the Del Mar original still operates under the same name (location count)."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "high-dive",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "High Dive",
+    "area": "Bay Park",
+    "city": "San Diego",
+    "kind": "Bay Park dive with a kitchen",
+    "lat": 32.77913,
+    "lng": -117.20726,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 50,
+      "atmosphere": 58,
+      "story": 34,
+      "signature": 54
+    },
+    "why": "A friendly neighborhood bar with themed food nights. Nothing much sets it apart, and we found little history.",
+    "story": "A Bay Park bar on Morena Boulevard since 2006, with a kitchen that runs the week by theme: birria on Wednesdays with tequila specials, steak on Thursdays, fried chicken on Fridays.",
+    "order": "Birria on a Wednesday.",
+    "practical": [
+      "Themed food nights"
+    ],
+    "hours": null,
+    "sources": [
+      "https://theresandiego.com/must-try-san-diego-hole-in-the-wall-bars/"
+    ],
+    "flags": [
+      "Weak fit: thin story, single source. Consider dropping.",
+      "Hours not found."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "silver-dollar",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Silver Dollar",
+    "area": "Chula Vista",
+    "city": "Chula Vista",
+    "kind": "Chula Vista's oldest bar",
+    "lat": 32.63986,
+    "lng": -117.07916,
+    "osm": "node/5870510980",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 68,
+      "atmosphere": 66,
+      "story": 82,
+      "signature": 40
+    },
+    "why": "Ninety years of Third Avenue history, and the South Bay Historical Society keeps a file on it. Today it reads as a dive bar, and we could not confirm a kitchen.",
+    "story": "It opened in 1934 as the Owl Buffet, a hunters' bar known for Virginia-baked ham dinners. In 1943 new owners renamed it the Silver Dollar, and it became known for charcoal-broiled steaks, a secret-recipe house salad and March of Dimes fundraisers. The Tegardine family runs it now.",
+    "order": "A drink at the oldest bar in Chula Vista.",
+    "practical": [],
+    "hours": null,
+    "sources": [
+      "http://sunnycv.com/history/exhibits/silverdollar.html",
+      "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+      "https://www.619area.com/california/chula-vista/nightlife/silver-dollar.htm"
+    ],
+    "flags": [
+      "FOOD CHECK: listings call it a dive bar now. Confirm it still serves food before approving, or drop.",
+      "Steaks and salad are historical, not confirmed current.",
+      "Hours not found."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "aunt-emmas-pancakes",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Aunt Emma's Pancakes",
+    "area": "Chula Vista",
+    "city": "Chula Vista",
+    "kind": "1960s pancake house",
+    "lat": 32.63994,
+    "lng": -117.09765,
+    "osm": "node/597133666",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 62,
+      "atmosphere": 62,
+      "story": 70,
+      "signature": 66
+    },
+    "why": "The last of a 1950s San Diego pancake chain, now a declared South Bay historic site. A family breakfast room, nothing fancy.",
+    "story": "Aunt Emma's started in 1959 on El Cajon Boulevard as a small San Diego pancake franchise; this Chula Vista house opened in 1965. After the founder died in 1969 the others were sold off, and only this one and a National City sibling, both owned by Niko Gelastopoulos, remain. The menu lists 24 kinds of pancakes plus cajeta crepes.",
+    "order": "Pancakes, or the cajeta crepes.",
+    "practical": [
+      "Breakfast and lunch"
+    ],
+    "hours": null,
+    "sources": [
+      "https://auntemmaspancakes.com/chula-vista-chula-vista-aunt-emma-s-pancakes-about",
+      "http://sunnycv.com/history/exhibits/auntemmas.html",
+      "https://www.sandiegoreader.com/places/aunt-emmas-pancakes/"
+    ],
+    "flags": [
+      "Two locations (Chula Vista, National City).",
+      "Hours not found."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "pernicanos-family-ristorante",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Pernicano's Family Ristorante",
+    "area": "El Cajon",
+    "city": "El Cajon",
+    "kind": "Last family Pernicano restaurant",
+    "lat": 32.80738,
+    "lng": -116.92288,
+    "osm": null,
+    "when": [
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 68,
+      "atmosphere": 62,
+      "story": 86,
+      "signature": 56
+    },
+    "why": "The last working piece of the family that brought pizza to San Diego. The food is classic red-sauce; the story is the reason.",
+    "story": "Vennero and Maria Pernicano opened a Hillcrest deli in 1946, and their son George went on to run what was reportedly the first pizza house in San Diego, handing out free slices to introduce the idea. The El Cajon branch, opened in 1953 by other family members, is the one still cooking.",
+    "order": "A pizza, or Chicken Francesca if it is on.",
+    "practical": [
+      "Opens at 3 pm"
+    ],
+    "hours": "Mon-Thu 3-8:30 pm, Fri-Sat 3-9 pm, Sun 3-8:30 pm (search summary, confirm)",
+    "sources": [
+      "https://classicsandiego.com/restaurants/pernicanos-casa-di-baffi/",
+      "http://pernicanoselcajon.com/",
+      "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/"
+    ],
+    "flags": [
+      "Classic San Diego lists the El Cajon address as 890 Highway 80 (historical); current listings say 1588 E Main St. Confirm.",
+      "Chicken Francesca is a historic house dish; confirm it is on the current menu.",
+      "Who runs it now is unclear."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "carnitas-uruapan",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Carnitas Uruapan",
+    "area": "Rolando",
+    "city": "Lemon Grove",
+    "kind": "Michoacán carnitas counter",
+    "lat": 32.7687,
+    "lng": -117.04377,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 62,
+      "atmosphere": 45,
+      "story": 58,
+      "signature": 74
+    },
+    "why": "Four decades of carnitas from one family. A plain counter room, so atmosphere is low.",
+    "story": "A family carnitas shop named for the Michoacán city famous for the dish, open for close to 40 years on El Cajon Boulevard in Rolando. Carnitas by the pound, crispy rolled tacos and big combo plates are the core. A La Mesa branch closed in 2025 and reopened in Lemon Grove with the same family and kitchen.",
+    "order": "Carnitas by the pound, with tortillas.",
+    "practical": [
+      "Carnitas sold by the pound"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.sandiegoville.com/2025/05/carnitas-uruapan-opening-new-location.html"
+    ],
+    "flags": [
+      "This card is the Rolando flagship (7149 El Cajon Blvd), not the Lemon Grove branch from discovery. Coordinates from a US Census address lookup.",
+      "Two locations now (Rolando, Lemon Grove).",
+      "Single press source; hours unknown."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "little-lion-cafe",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Little Lion Cafe",
+    "area": "Sunset Cliffs",
+    "city": "San Diego",
+    "kind": "Belgian-rooted cottage cafe",
+    "lat": 32.73675,
+    "lng": -117.25463,
+    "osm": "node/3347071477",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 78,
+      "story": 70,
+      "signature": 66
+    },
+    "why": "A cottage-sized cafe carrying on a family name from Ocean Beach dining history. Prices run higher than most places here.",
+    "story": "Three granddaughters of the couple behind the Belgian Lion, a long-running Ocean Beach restaurant, run this beach-cottage cafe a block from the ocean. The Belgian roots show in the waffles. Extra seats spill into an unpaved alley under tasseled umbrellas and wicker chairs.",
+    "order": "A Belgian waffle, or the sun-dried tomato frittata.",
+    "practical": [
+      "Alley patio seating",
+      "Daytime only"
+    ],
+    "hours": "Tue-Sun 8 am-3 pm (OpenStreetMap)",
+    "sources": [
+      "https://www.theinfatuation.com/san-diego/reviews/little-lion-cafe"
+    ],
+    "flags": [
+      "Single source (The Infatuation, June 2025).",
+      "Hours from OpenStreetMap.",
+      "The Infatuation tags it as expensive; check fit."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "ob-noodle-house-bar-1502",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "OB Noodle House Bar 1502",
+    "area": "Ocean Beach",
+    "city": "San Diego",
+    "kind": "Pho house with a whiskey bar",
+    "lat": 32.7458,
+    "lng": -117.25172,
+    "osm": "node/5733214993",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 62,
+      "atmosphere": 64,
+      "story": 40,
+      "signature": 66
+    },
+    "why": "A beach-town pho house that is also a serious whiskey and craft-beer bar. Story is thin.",
+    "story": "Two blocks from the sand on Niagara Avenue, a Vietnamese noodle house with a Korean streak that doubles as a bar: a long scotch and whiskey list, 40-plus taps and house-infused sake. The OB Special Pho loads brisket, flank, tendon, tripe and rare steak into one bowl.",
+    "order": "The OB Special Pho.",
+    "practical": [
+      "Open until 11 pm"
+    ],
+    "hours": "Sun 11 am-11 pm, Mon-Sat noon-11 pm (listing)",
+    "sources": [
+      "https://www.sandiegoreader.com/places/ob-noodle-house-bar-1502/",
+      "https://roadfood.com/restaurants/ob-noodle-house-sake-bar",
+      "https://www.gosandiego.com/restaurant/ob-noodle-house-ocean-beach/"
+    ],
+    "flags": [
+      "Sister to the original OB Noodle House nearby (2 locations).",
+      "Hours and drink counts from listings via search summary.",
+      "Owner history not found."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "taco-surf",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Taco Surf",
+    "area": "Pacific Beach",
+    "city": "San Diego",
+    "kind": "Surfboard-lined taco shop",
+    "lat": 32.79885,
+    "lng": -117.25611,
+    "osm": "node/7234409185",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 58,
+      "atmosphere": 68,
+      "story": 62,
+      "signature": 70
+    },
+    "why": "A beach taco shop with the same owners for 35 years and a wall of surfboards. Good, not singular.",
+    "story": "Sam and Cindy McLarty took over a Mission Boulevard taco shop in 1989 and renamed it Taco Surf; the couple had been in the taco business since a Chula Vista shop in 1979. The walls are hung with surfboards, and San Diego Magazine once named its rolled tacos the best in town.",
+    "order": "Rolled tacos, or a breakfast burrito in the morning.",
+    "practical": [
+      "Breakfast burritos all day"
+    ],
+    "hours": null,
+    "sources": [
+      "https://tacosurftacoshop.com/",
+      "https://localemagazine.com/breakfast-burritos-san-diego/",
+      "https://sandiegolineup.com/roster/best-of-san-diego/best-taco-shops-pacific-beach-mission-beach-92109-taco-trail"
+    ],
+    "flags": [
+      "History and the rolled-taco award come from the shop site via search summary; year of award unknown.",
+      "Hours not found."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "sunnyboy-biscuit",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Sunnyboy Biscuit",
+    "area": "Hillcrest",
+    "city": "San Diego",
+    "kind": "Biscuit sandwich cottage",
+    "lat": 32.74613,
+    "lng": -117.14637,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 68,
+      "story": 62,
+      "signature": 76
+    },
+    "why": "A tiny cottage doing one Southern thing well. Newer than most places here, so the story is the chef’s rather than the building’s.",
+    "story": "Chef Gabriel Ferguson, who grew up across the road from his grandmother's scratch-cooking restaurant in rural Washington, opened this fun-size cottage in January 2020 on the little triangle where Park Boulevard meets Robinson. Buttermilk biscuits carry the breakfast sandwiches, with eggs, gravy or fried chicken, and there is a takeout window.",
+    "order": "The Motherclucker, a Nashville-hot chicken biscuit.",
+    "practical": [
+      "Takeout window"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.theinfatuation.com/san-diego/reviews/sunnyboy-biscuit",
+      "https://www.sandiegoreader.com/news/2020/aug/14/feast-discovering-sunnyboy-biscuit-company/",
+      "https://www.sandiegoville.com/2019/08/sunny-boy-biscuit-company-san-diego.html"
+    ],
+    "flags": [
+      "Area: discovery said North Park; the address (3749 Park Blvd at Robinson) is Hillcrest.",
+      "Hours not found.",
+      "A June 2025 SanDiegoVille item about the owner (a viral driving video) exists; not relevant to the card."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "big-kitchen-cafe",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Big Kitchen Cafe",
+    "area": "South Park",
+    "city": "San Diego",
+    "kind": "Community breakfast counter",
+    "lat": 32.72636,
+    "lng": -117.12989,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 80,
+      "atmosphere": 86,
+      "story": 92,
+      "signature": 52
+    },
+    "why": "One of the great San Diego rooms and stories, held together by one woman for 46 years. It is struggling, which you should know before sending people.",
+    "story": "Judy 'the Beauty on Duty' Forman took over this tiny South Park counter in 1980 and made it a haven for activists, artists, drag queens, nuns, musicians and misfits. A young Whoopi Goldberg washed dishes here before Broadway. In 2026 the staff started asking regulars for help keeping it open.",
+    "order": "Breakfast at the counter, and a tip on the generous side.",
+    "practical": [
+      "Breakfast 8 am-2 pm",
+      "At risk of closing (Sep 2026)"
+    ],
+    "hours": "Daily 8 am-2 pm (Sep 2026 reports)",
+    "sources": [
+      "https://hoodline.com/2026/09/south-park-s-big-kitchen-cafe-seeks-support-as-staff-ask-diners-to-help/",
+      "https://www.sandiegoville.com/2026/09/san-diegos-legendary-big-kitchen-cafe.html",
+      "https://www.sandiegoreader.com/news/2024/feb/29/tin-fork-south-parks-big-kitchen-offers-food-love-and-politics/"
+    ],
+    "flags": [
+      "STATUS WATCH: staff GoFundMe in Aug-Sep 2026 over payroll and repairs. Recheck before publishing.",
+      "No signature dish found.",
+      "'Daily' hours: reports say 8 am-2 pm without naming days."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "el-indio",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "El Indio",
+    "area": "Middletown",
+    "city": "San Diego",
+    "kind": "Tortilla factory turned taco shop",
+    "lat": 32.74232,
+    "lng": -117.18016,
+    "osm": "way/772811950",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 84,
+      "atmosphere": 62,
+      "story": 92,
+      "signature": 80
+    },
+    "why": "A family business that claims to have named the taquito. The room is a busy counter, not a destination in itself.",
+    "story": "Ralph Pesqueira Sr. started El Indio in 1940 as a hand-made tortilla factory at India and Grape, built San Diego's first tortilla machine in his basement, and moved to this spot in 1947. When wartime aircraft workers wanted lunch to go, he rolled tortillas around meat and called them taquitos.",
+    "order": "Taquitos.",
+    "practical": [
+      "Counter service"
+    ],
+    "hours": null,
+    "sources": [
+      "https://elindiosandiego.com/san-diego-middletown-el-indio-mexican-restaurant-about",
+      "https://sandiegomagazine.com/food-drink/el-indio-restaurant-revieiw/",
+      "https://roadfood.com/restaurants/el-indio/"
+    ],
+    "flags": [
+      "'Invented the taquito' is the family's own claim; the story says he named them.",
+      "Hours not found.",
+      "Classic San Diego lists 1940 and 1947 dates; consistent."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "shakespeare-pub-and-grille",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Shakespeare Pub & Grille",
+    "area": "Mission Hills",
+    "city": "San Diego",
+    "kind": "Expat-run British pub",
+    "lat": 32.74273,
+    "lng": -117.1804,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 62,
+      "atmosphere": 70,
+      "story": 46,
+      "signature": 68
+    },
+    "why": "A real British pub run by British expats, with fish and chips to match. We found little history, so story is middling.",
+    "story": "British expats own and run this India Street pub, and the kitchen cooks British comfort food from scratch. The fish and chips are the house flag and have picked up local awards over the years.",
+    "order": "Fish and chips.",
+    "practical": [
+      "Full bar"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.shakespearepub.com/directions-and-parking",
+      "https://chefmarian.com/shakespeare-pub-grille-india-street-san-diego-review-chef-marian/",
+      "https://www.restaurantji.com/ca/san-diego/shakespeare-pub-/"
+    ],
+    "flags": [
+      "Hours not found; it may open early for UK football, unconfirmed.",
+      "Opening year and owners not found."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "kansas-city-barbeque",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Kansas City Barbeque",
+    "area": "Marina District",
+    "city": "San Diego",
+    "kind": "Top Gun barbecue bar",
+    "lat": 32.71165,
+    "lng": -117.16869,
+    "osm": "node/1041765094",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 70,
+      "atmosphere": 74,
+      "story": 80,
+      "signature": 58
+    },
+    "why": "Famous for a movie more than for its ribs. The room is fun and the history is real; the barbecue is decent rather than destination.",
+    "story": "Kansas City natives Martin and Cindy Blair opened it by the railroad tracks in 1983, back when downtown was still rough. Three years later it played the flyers' bar in Top Gun, piano and all, and it has been the Top Gun bar ever since.",
+    "order": "A beer at the bar where the Top Gun piano scene was shot.",
+    "practical": [
+      "Bar open late"
+    ],
+    "hours": null,
+    "sources": [
+      "https://kcbbq.net/san-diego-marina-kansas-city-barbeque-about",
+      "https://sandiegan.com/kansas-city-bbq/",
+      "https://movie-locations.com/movies/t/Top-Gun.php"
+    ],
+    "flags": [
+      "Address listed as 600 W Harbor Dr and 610 W Market St in different places; same corner.",
+      "Hours not found.",
+      "Touristy; check fit."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "las-cuatro-milpas",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Las Cuatro Milpas",
+    "area": "Barrio Logan",
+    "city": "San Diego",
+    "kind": "Tortilla-and-chorizo lunch counter",
+    "lat": 32.69963,
+    "lng": -117.14509,
+    "osm": "node/13826139998",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 82,
+      "atmosphere": 66,
+      "story": 90,
+      "signature": 84
+    },
+    "why": "A 1933 institution that nearly died and came back in 2026. The new room inside a market is less storied than the old one.",
+    "story": "The Estudillo family ran this Logan Avenue lunch counter from 1933 until 2025, when health closures, tax debt and a property sale ended it. In May 2026 it reopened a few blocks away inside Mercado del Barrio, with the same crew and menu, and long lines on day one. The house-made tortillas are the point.",
+    "order": "Crispy chicken tacos on house-made tortillas.",
+    "practical": [
+      "Lunch counter hours",
+      "Expect a line"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.kpbs.org/news/arts-culture/2026/05/12/long-lines-welcome-reopening-of-iconic-las-cuatro-milpas-in-barrio-logan",
+      "https://timesofsandiego.com/things-to-do/2026/05/11/las-cuatro-milpas-restaurants-reopen-barrio-logan/",
+      "https://www.sandiegoville.com/2026/05/san-diegos-historic-las-cuatro-milpas.html",
+      "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/"
+    ],
+    "flags": [
+      "Who owns the new location was not clear in what we read; confirm before naming anyone.",
+      "Hours not found for the new space.",
+      "Menu items from a pre-closure taco list; confirm on the new menu."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "ferchaladas-birria-and-mariscos",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Ferchaladas Birria & Mariscos",
+    "area": "Logan Heights",
+    "city": "San Diego",
+    "kind": "Family birria and mariscos spot",
+    "lat": 32.70629,
+    "lng": -117.13573,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 62,
+      "atmosphere": 62,
+      "story": 40,
+      "signature": 70
+    },
+    "why": "A cheerful, mural-filled family spot with birria in everything. We found nothing about its history.",
+    "story": "A family-run, woman-owned mariscos and birria spot on Imperial Avenue, with murals on the walls and families at the tables. Shrimp and octopus tacos come with consommé for dipping, and birria turns up everywhere, grilled cheese included. The tamarind ceviche is the other order.",
+    "order": "Octopus tacos with consommé.",
+    "practical": [
+      "Family-friendly"
+    ],
+    "hours": null,
+    "sources": [
+      "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/",
+      "https://www.restaurantji.com/ca/san-diego/ferchaladas-birria-y-mariscos-/",
+      "https://www.corner.inc/place/puna9XGWL6gh"
+    ],
+    "flags": [
+      "Owner and opening year unknown.",
+      "Room and menu details from listing sites via search summary.",
+      "Hours not found."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "pho-hoa",
+    "seed": false,
+    "status": "draft",
+    "metro": "san-diego",
+    "name": "Pho Hoa",
+    "area": "City Heights",
+    "city": "San Diego",
+    "kind": "Little Saigon pho hall since 1984",
+    "lat": 32.7557,
+    "lng": -117.09285,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 52,
+      "story": 72,
+      "signature": 80
+    },
+    "why": "A family pho house anchoring Little Saigon for 40 years, with a 4 am broth routine. The room is a big plain hall.",
+    "story": "The Cao family has run this pho house at Euclid and El Cajon Boulevard since 1984, in the stretch that became San Diego's Little Saigon. Father and son have started the broth at 4 every morning. Pho is nearly the whole menu.",
+    "order": "A bowl of pho.",
+    "practical": [
+      "Opens 7 am"
+    ],
+    "hours": "Sun-Thu 7 am-8 pm, Fri-Sat 7 am-9 pm (listing, confirm)",
+    "sources": [
+      "https://www.sandiegoreader.com/news/2021/apr/16/feast-fine-time-ph-hoa/",
+      "https://www.nbcsandiego.com/news/local/off-the-eaten-path-vietnamese-food-in-san-diego-candice-nguyen/1996325/",
+      "https://www.lovingpho.com/pho-west-coast/pho-hoa-vietnamese-restaurant-el-cajon-blvd-serving-great-pho/"
+    ],
+    "flags": [
+      "CHAIN CHECK: 'Pho Hoa' is also a national franchise; sources describe this one as the Cao family's own. Confirm.",
+      "Hours from a listing."
+    ],
+    "verified": "2026-10"
+  }
+]

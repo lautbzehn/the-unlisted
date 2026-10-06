@@ -33,5 +33,10 @@
     "id": "tacaliente-mexican-grill",
     "name": "Tacaliente Mexican Grill",
     "reason": "Poor fit: a modern Hillcrest taqueria; no history or standout dish found beyond one breakfast-burrito list mention."
+  },
+  {
+    "id": "papasotes",
+    "name": "Papasotes",
+    "reason": "Poor fit: a taco stand operating in front of the Belching Beaver brewery on 30th St; no history found, and reviews mostly mention long waits."
   }
 ]
