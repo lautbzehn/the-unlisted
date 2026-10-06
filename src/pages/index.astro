@@ -17,7 +17,7 @@ import { places } from '../lib/places.js';
       <label for="vibe">Describe what you’re in the mood for</label>
       <div class="field">
         <input id="vibe" type="search" placeholder="A counter-seat diner that does breakfast right…" disabled />
-        <button class="btn-primary" type="button" disabled>Find it</button>
+        <button class="btn-primary" type="button" disabled aria-label="Find it"><span class="long">Find it</span><span class="short" aria-hidden="true">→</span></button>
       </div>
       <p class="soon">Vibe search: coming in the next build</p>
     </form>
@@ -53,9 +53,9 @@ import { places } from '../lib/places.js';
 
     <div class="toolbar">
       <div class="tabs" role="group" aria-label="Show">
-        <button class="tab" data-filter="all" aria-pressed="true">All doors <span class="n">(0)</span></button>
-        <button class="tab" data-filter="knock" aria-pressed="false">Knock List <span class="n">(0)</span></button>
-        <button class="tab" data-filter="ledger" aria-pressed="false">The Ledger <span class="n">(0)</span></button>
+        <button class="tab" data-filter="all" aria-pressed="true">All<span class="long"> doors</span> <span class="n">(0)</span></button>
+        <button class="tab" data-filter="knock" aria-pressed="false">Knock<span class="long"> List</span> <span class="n">(0)</span></button>
+        <button class="tab" data-filter="ledger" aria-pressed="false"><span class="long">The </span>Ledger <span class="n">(0)</span></button>
       </div>
       <div class="views" role="group" aria-label="View">
         <button class="tab" data-view="cards" aria-pressed="true">Cards</button>

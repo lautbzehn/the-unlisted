@@ -1,9 +1,12 @@
 // The Unlisted: tiny API for the city board. Everything that isn't /api/* is the static site.
 //   GET  /api/cities           -> { coming: [...], board: [...] }
 //   POST /api/cities/vote      { slug, token }          one vote per city per person
-//   POST /api/cities/suggest   { name, region, token }  held for review before it appears
+//   POST /api/cities/suggest   { slug, token }          a city from the fixed list (src/data/city-options.json)
 // Spam protection: every POST needs a Cloudflare Turnstile token. People are identified only by a keyed
 // hash of their IP address (the address itself is never stored).
+
+import CITY_OPTIONS from '../src/data/city-options.json';
+const OPTIONS = new Map(CITY_OPTIONS.map((c) => [c.slug, c]));
 
 const json = (data, status = 200) =>
   new Response(JSON.stringify(data), {
@@ -11,10 +14,6 @@ const json = (data, status = 200) =>
     headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
   });
 
-const slugify = (s) =>
-  s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const tidy = (s) => String(s ?? '').replace(/\s+/g, ' ').trim();
-const VALID = /^[\p{L}][\p{L} .'’-]{1,58}$/u; // letters, spaces and a little punctuation, 2-60 chars
 
 async function voterId(request, env) {
   const ip = request.headers.get('cf-connecting-ip') ?? 'unknown';
@@ -67,27 +66,22 @@ async function api(request, env, path) {
   }
 
   if (path === '/api/cities/suggest') {
-    const name = tidy(body.name);
-    const region = tidy(body.region);
-    if (!VALID.test(name) || (region && !VALID.test(region))) return json({ error: 'Please enter a real city name (letters only).' }, 400);
+    const pick = OPTIONS.get(String(body.slug ?? ''));
+    if (!pick) return json({ error: 'Please pick a city from the list.' }, 400);
 
     const recent = await env.DB.prepare("SELECT COUNT(*) AS n FROM suggestion_log WHERE voter = ? AND created_at > datetime('now', '-1 day')").bind(voter).first();
     if (recent.n >= 5) return json({ error: 'That’s plenty of suggestions for today. Thank you!' }, 429);
     await env.DB.prepare('INSERT INTO suggestion_log (voter) VALUES (?)').bind(voter).run();
 
-    const slug = slugify(region ? `${name} ${region}` : name);
-    const existing = await env.DB.prepare('SELECT id, status FROM cities WHERE slug = ?').bind(slug).first();
-    if (existing) {
-      await castVote(env, existing.id, voter);
-      const msg = existing.status === 'pending' ? 'Someone suggested that one too. It’s waiting for review, and your vote is counted.'
-        : existing.status === 'rejected' ? 'Thanks. That one isn’t on the board right now.'
-        : 'Already on the board. We counted your vote.';
-      return json({ message: msg });
-    }
-    const created = await env.DB.prepare('INSERT INTO cities (slug, name, region, status) VALUES (?, ?, ?, ?) RETURNING id')
-      .bind(slug, name, region || null, 'pending').first();
-    await castVote(env, created.id, voter);
-    return json({ message: `Thanks. ${name} will appear on the board after a quick human check.` });
+    const existing = await env.DB.prepare('SELECT id, status FROM cities WHERE slug = ?').bind(pick.slug).first();
+    if (existing?.status === 'rejected') return json({ message: `Thanks. ${pick.name} isn’t on the board right now.` });
+    if (existing?.status === 'coming') return json({ message: `${pick.name} is already booked. It’s coming soon.` });
+    // Cities come from a fixed list, so they can go straight onto the board: no free text to review.
+    const city = existing ?? await env.DB.prepare("INSERT INTO cities (slug, name, region, status) VALUES (?, ?, ?, 'approved') RETURNING id")
+      .bind(pick.slug, pick.name, pick.region).first();
+    const counted = await castVote(env, city.id, voter);
+    const where = `${pick.name}, ${pick.region}`;
+    return json({ message: existing ? (counted ? `${where} is already on the board. Your vote is counted.` : `You already voted for ${where}.`) : `${where} is on the board with your vote.` });
   }
 
   return json({ error: 'Not found' }, 404);
