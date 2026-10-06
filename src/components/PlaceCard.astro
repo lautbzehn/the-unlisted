@@ -3,7 +3,7 @@ interface Props {
   place: {
     id: string; name: string; area: string; kind: string; verified: string; score: number; sample?: boolean;
     breakdown: { uniqueness: number; atmosphere: number; story: number; signature: number };
-    story: string; order: string; fame?: string; when?: string[]; practical?: string[]; hours?: string | null; city?: string;
+    story: string; order: string; draft?: boolean; reviewFlags?: string[]; fame?: string; when?: string[]; practical?: string[]; hours?: string | null; city?: string;
   };
   detail?: boolean; // true on the place's own page (no "open" link)
 }
@@ -21,6 +21,7 @@ const Heading = detail ? 'h1' : 'h3';
 <article class:list={['card reveal', { detail }]} id={place.id} data-id={place.id} data-status="none" data-url={href}>
   <div class="stamp" aria-label={`Hidden Gem Score ${place.score} out of 100`}><div>GEM<br /><b>{place.score}</b></div></div>
   {place.sample && <span class="sample-flag">SAMPLE — NOT A REAL PLACE</span>}
+  {place.draft && <span class="sample-flag draft-flag">DRAFT — NOT YET REVIEWED</span>}
   <Heading>{detail ? place.name : <a href={href}>{place.name}</a>}</Heading>
   <div class="meta">{place.area}{place.city && place.city !== 'San Francisco' ? `, ${place.city}` : ''} · {place.kind}</div>
   <div class="chips">
@@ -40,6 +41,9 @@ const Heading = detail ? 'h1' : 'h3';
   )}
   {detail && <p class="verified">Last verified {place.verified}. Hours change; check before you go.</p>}
   {detail && <a class="howlink" href="/how-the-score-works/">How is this scored?</a>}
+  {detail && place.reviewFlags?.length > 0 && (
+    <div class="review-flags"><strong>Check before approving</strong><ul>{place.reviewFlags.map((f) => <li>{f}</li>)}</ul></div>
+  )}
 
   <div class="actions">
     <button class="btn-ghost" data-action="knock" aria-pressed="false">Knock Later</button>

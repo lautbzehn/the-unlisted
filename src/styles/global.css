@@ -317,3 +317,7 @@ footer p + p { margin-top: 6px; }
 .chip.fame.local-legend { background: var(--ink); border-color: var(--ink); color: var(--paper); }
 .practical { margin: 14px 0 0; padding-left: 18px; font-size: 0.92rem; }
 .verified { font: 11px var(--font-type); color: var(--ink-mute); margin-top: 12px; letter-spacing: 0.04em; }
+.draft-flag { border-color: var(--oxblood); color: var(--oxblood); }
+.review-flags { margin-top: 16px; padding: 12px 14px; border: 2px dashed var(--oxblood); border-radius: 4px; font-size: 0.88rem; }
+.review-flags strong { font: 11px var(--font-type); letter-spacing: 0.15em; text-transform: uppercase; color: var(--oxblood); }
+.review-flags ul { margin: 6px 0 0; padding-left: 18px; }
