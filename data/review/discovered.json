@@ -2702,5 +2702,343 @@
     "source_url": "https://www.paloaltoonline.com/ae/2026/02/19/downtown-sunnyvale-developments-where-to-play-dine-and-unwind-in-a-transforming-silicon-valley-corridor/",
     "open_evidence": "Palo Alto Online, Feb 2026; renovated 2025",
     "from": "disc-15-night"
+  },
+  {
+    "name": "Taqueria Guadalajara",
+    "neighborhood": "Excelsior",
+    "city": "San Francisco",
+    "address": "4798 Mission St",
+    "kind": "Late-night taqueria",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Excelsior taqueria open until 1am weekdays and 2:30am weekends; carne asada super burritos.",
+    "source_url": "https://outermissionsanfrancisconeighborhood.org/flavors-beyond-mission-street-your-guide-to-eating-out-in-san-francisco-s-outer-mission/",
+    "open_evidence": "Neighborhood guide lists late hours (undated); confirm in research",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Restaurante Familiar",
+    "neighborhood": "Excelsior",
+    "city": "San Francisco",
+    "address": "4499 Mission St",
+    "kind": "Salvadoran-Mexican family room",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Salvadoran and Mexican plates and pupusas in a plain family room on lower Mission Street.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/best-excelsior-restaurants",
+    "open_evidence": "Infatuation Excelsior guide (current)",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Tropical Hut",
+    "neighborhood": "Outer Mission",
+    "city": "San Francisco",
+    "address": "1021 Geneva Ave",
+    "kind": "Filipino family kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-run Filipino spot on Geneva for silog plates, lumpia and homemade halo-halo, mains under $15.",
+    "source_url": "https://outermissionsanfrancisconeighborhood.org/flavors-beyond-mission-street-your-guide-to-eating-out-in-san-francisco-s-outer-mission/",
+    "open_evidence": "Neighborhood guide (undated); confirm in research",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "La Laguna",
+    "neighborhood": "Bayview",
+    "city": "San Francisco",
+    "address": "3906 3rd St",
+    "kind": "Bayview taqueria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Third Street taqueria the Infatuation singles out for its carnitas burrito.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-bayview",
+    "open_evidence": "Infatuation Bayview guide (current)",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Constanso's",
+    "neighborhood": "Bayview",
+    "city": "San Francisco",
+    "address": "4120 3rd St",
+    "kind": "Six-dollar sandwich counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Third Street counter making enormous sandwiches for about $6 each.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-bayview",
+    "open_evidence": "Infatuation Bayview guide (current)",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "La Méditerranée",
+    "neighborhood": "Fillmore",
+    "city": "San Francisco",
+    "address": "2210 Fillmore St",
+    "kind": "Old Fillmore meze house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Decades-old Fillmore standby for cheap meze and Armenian-Lebanese plates.",
+    "source_url": "https://www.thebolditalic.com/the-san-francisco-dinner-map-for-under-50/",
+    "open_evidence": "Bold Italic dinner map (undated); confirm in research",
+    "from": "disc-07-night"
+  },
+  {
+    "name": "Za Pizza",
+    "neighborhood": "Russian Hill",
+    "city": "San Francisco",
+    "address": "1919 Hyde St",
+    "kind": "Neighborhood slice shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Russian Hill slice shop with daily specials under $5 and cheap pints.",
+    "source_url": "https://www.sfgate.com/food/article/russian-hill-restaurants-17685982.php",
+    "open_evidence": "SFGate Russian Hill cheap eats (2023); confirm in research",
+    "from": "disc-07-night"
+  },
+  {
+    "name": "The Boys' Deli",
+    "neighborhood": "Polk Gulch",
+    "city": "San Francisco",
+    "address": "2222 Polk St",
+    "kind": "Back-of-market deli counter",
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Sandwich counter hidden in the back of Polk Street Market; often called the best sandwich in the neighborhood.",
+    "source_url": "https://www.sfgate.com/food/article/russian-hill-restaurants-17685982.php",
+    "open_evidence": "SFGate Russian Hill guide (2023). Street number from memory, verify",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Tselogs",
+    "neighborhood": "Serramonte",
+    "city": "Daly City",
+    "address": "11 San Pedro Rd",
+    "kind": "Filipino silog house",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Thirteen kinds of silog, from Spam to Filipino fried chicken, served until midnight Thu-Sat.",
+    "source_url": "https://www.sfchronicle.com/food/restaurants/article/filipino-silog-breakfast-tselogs-18287538.php",
+    "open_evidence": "SF Chronicle feature (2023); listings show current hours. Two locations",
+    "from": "disc-13-night"
+  },
+  {
+    "name": "El Zocalo",
+    "neighborhood": "El Camino",
+    "city": "South San Francisco",
+    "address": "1633 El Camino Real",
+    "kind": "Salvadoran pupuseria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "South City Salvadoran room claiming pupusas since 1965; pupusas, burritos and steamed fish.",
+    "source_url": "https://www.zmenu.com/el-zocalo-restaurant-south-san-francisco-online-menu/",
+    "open_evidence": "Delivery listing active; claims need sources. Confirm in research",
+    "from": "disc-13-night"
+  },
+  {
+    "name": "Queen House",
+    "neighborhood": "Downtown",
+    "city": "Mountain View",
+    "address": "273 Castro St",
+    "kind": "Taiwanese comfort-food room",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Small room off the Castro Street crowd serving cheap Mandarin and Taiwanese comfort food.",
+    "source_url": "https://queenhousemv.com/",
+    "open_evidence": "Own site and ordering live; confirm hours in research",
+    "from": "disc-15-night"
+  },
+  {
+    "name": "Burma Taste",
+    "neighborhood": "Murphy Avenue",
+    "city": "Sunnyvale",
+    "address": "124 S Murphy Ave",
+    "kind": "Burmese family restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Burmese cooking on historic Murphy Avenue; tea leaf salad and curries without the SF lines.",
+    "source_url": "https://familydestinationsguide.com/best-restaurants-in-sunnyvale-ca/",
+    "open_evidence": "2026 Sunnyvale guide lists it; confirm in research",
+    "from": "disc-15-night"
+  },
+  {
+    "name": "Orale Taco Truck",
+    "neighborhood": "Alum Rock",
+    "city": "San Jose",
+    "address": "2240 Alum Rock Ave",
+    "kind": "Late-night taco truck",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Eastside truck busy until 3am on weekends, known for tiny pancakes alongside the tacos.",
+    "source_url": "https://www.kqed.org/arts/13954112/orale-taco-truck-san-jose-late-night-pancakes-midnight-diners",
+    "open_evidence": "KQED feature with current hours (date to confirm)",
+    "from": "disc-14-night"
+  },
+  {
+    "name": "Dan Sung Sa",
+    "neighborhood": "Uptown",
+    "city": "Oakland",
+    "address": "2775 Telegraph Ave",
+    "kind": "Late-night Korean pub",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Wood-paneled Korean drinking den on Telegraph, open until 1am with corn cheese and spicy fried chicken.",
+    "source_url": "http://www.dan-sung-sa.com/",
+    "open_evidence": "Listing updated Oct 2025; own site live",
+    "from": "disc-08-night"
+  },
+  {
+    "name": "Koryo Sushi",
+    "neighborhood": "Temescal",
+    "city": "Oakland",
+    "address": "4390 Telegraph Ave",
+    "kind": "Late-night Korean-run sushi bar",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Strip-mall sushi and udon on Telegraph, open until 1:30am most nights and later on weekends.",
+    "source_url": "https://www.visitoakland.com/listing/koryo-sushi/622/",
+    "open_evidence": "Visit Oakland listing and own site (current)",
+    "from": "disc-10-night"
+  },
+  {
+    "name": "Peña's Bakery",
+    "neighborhood": "Fruitvale",
+    "city": "Oakland",
+    "address": "3912 International Blvd",
+    "kind": "Mexican panadería",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Family panadería on International Boulevard since the 1990s, with a second shop on Foothill.",
+    "source_url": "https://oaklandside.org/2021/01/05/looking-for-something-sweet-heres-where-to-get-pan-dulce-in-oakland/",
+    "open_evidence": "Oaklandside pan dulce guide (2021); confirm open in research",
+    "from": "disc-09-day"
+  },
+  {
+    "name": "Los Mexicanos Bakery",
+    "neighborhood": "Fruitvale",
+    "city": "Oakland",
+    "address": "1522 Fruitvale Ave",
+    "kind": "Cash-only panadería",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Tiny Fruitvale bakery since the 1980s; conchas and a case that turns over all day. Cash only.",
+    "source_url": "https://oaklandside.org/2021/01/05/looking-for-something-sweet-heres-where-to-get-pan-dulce-in-oakland/",
+    "open_evidence": "Listing updated Nov 2025",
+    "from": "disc-09-day"
+  },
+  {
+    "name": "Panadería Sevilla",
+    "neighborhood": "Fruitvale",
+    "city": "Oakland",
+    "address": "1414 Fruitvale Ave",
+    "kind": "Central American bakery",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Sells Guatemalan and Salvadoran pastries next to Mexican pan dulce; less sweet, made for dunking.",
+    "source_url": "https://www.visitoakland.com/listing/panaderia-sevilla/5479/",
+    "open_evidence": "Visit Oakland listing (current); two locations",
+    "from": "disc-09-day"
+  },
+  {
+    "name": "Rocco's Cafe",
+    "neighborhood": "SoMa",
+    "city": "San Francisco",
+    "address": "1131 Folsom St",
+    "kind": "Old SoMa breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "SoMa classic for big breakfasts and weekend benedicts with bottomless coffee in an old-SF room.",
+    "source_url": "https://sfbiketours.com/blog/essential-soma-food-and-drink-guide/",
+    "open_evidence": "Current SoMa guide; confirm hours in research",
+    "from": "disc-05-day"
+  },
+  {
+    "name": "SoMa Inn Cafe",
+    "neighborhood": "SoMa",
+    "city": "San Francisco",
+    "address": "1082 Folsom St",
+    "kind": "Diner breakfast counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Plain American breakfast cafe on Folsom; good for groups and almost unwritten-about.",
+    "source_url": "https://www.sfstation.com/soma-inn-cafe-b24424552",
+    "open_evidence": "Listing only; confirm open in research",
+    "from": "disc-05-day"
+  },
+  {
+    "name": "Han Il Kwan",
+    "neighborhood": "Outer Richmond",
+    "city": "San Francisco",
+    "address": "1802 Balboa St",
+    "kind": "Korean barbecue house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "The Richmond's go-to for Korean barbecue and banchan, family-style.",
+    "source_url": "https://www.amysuto.com/desk-of-amy-suto/richmond-district-restaurants",
+    "open_evidence": "Current Richmond guide. Street number from memory, verify",
+    "from": "disc-03-night"
   }
 ]
