@@ -149,6 +149,39 @@
     "from": "disc-00-day"
   },
   {
+    "city": "San Diego",
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Old Townhouse Restaurant",
+    "neighborhood": "Ocean Beach",
+    "address": "4941 Newport Ave",
+    "kind": "1970s OB breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "An Ocean Beach breakfast-and-lunch room on Newport since 1973, open from 6 am, with almost no press to its name.",
+    "from": "disc-00-day"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Arizona Cafe",
+    "neighborhood": "Ocean Beach",
+    "address": "1925 Bacon St",
+    "kind": "1940s OB bar and grill",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Serving Ocean Beach since 1942; now a sports bar with a kitchen, one of the neighborhood's oldest rooms.",
+    "from": "disc-00-night"
+  },
+  {
     "name": "Kono's Cafe",
     "neighborhood": "Pacific Beach",
     "city": "San Diego",
@@ -317,6 +350,22 @@
     "from": "disc-02-night"
   },
   {
+    "city": "San Diego",
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "San Diego Chicken Pie Shop",
+    "neighborhood": "North Park",
+    "address": "2633 El Cajon Blvd",
+    "kind": "Chicken pot pie diner, est. 1938",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "Chicken pot pies and pie for dessert, served cheaply on the Boulevard since 1938 to a crowd of regulars.",
+    "from": "disc-02-day"
+  },
+  {
     "name": "Big Kitchen Cafe",
     "neighborhood": "South Park",
     "city": "San Diego",
@@ -380,6 +429,22 @@
     "source_url": "https://mctrealestategroup.com/the-best-restaurants-in-south-park-san-diego-a-locals-guide/",
     "open_evidence": "Listed in a 2026 South Park dining guide",
     "from": "disc-03-night"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Tobey's 19th Hole Cafe",
+    "neighborhood": "Golden Hill",
+    "address": "2600 Golf Course Dr",
+    "kind": "Golf course breakfast counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "A cafe at the Golden Hill public golf course, open since 1934, with a view over downtown and breakfast at counter prices.",
+    "from": "disc-03-day"
   },
   {
     "name": "El Indio",
@@ -450,6 +515,22 @@
     "from": "disc-04-night"
   },
   {
+    "city": "San Diego",
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "The Huddle",
+    "neighborhood": "Mission Hills",
+    "address": "4023 Goldfinch St",
+    "kind": "1970s neighborhood diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "A Mission Hills diner since 1972, the kind of corner breakfast place most neighborhoods lost decades ago.",
+    "from": "disc-04-day"
+  },
+  {
     "name": "Café 222",
     "neighborhood": "Downtown",
     "city": "San Diego",
@@ -518,6 +599,23 @@
     "from": "disc-05-night"
   },
   {
+    "city": "San Diego",
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Tivoli Bar and Grill",
+    "neighborhood": "Gaslamp Quarter",
+    "address": "505 6th Ave",
+    "kind": "1885 saloon with a grill",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Traces its saloon back to 1885, among the city's oldest; a Gaslamp bar that still runs a grill until late.",
+    "from": "disc-05-night"
+  },
+  {
     "name": "Las Cuatro Milpas",
     "neighborhood": "Barrio Logan",
     "city": "San Diego",
@@ -581,6 +679,22 @@
     "source_url": "https://www.openstreetmap.org/search?query=La%20Fachada%2020%2025th%20Street%20San%20Diego",
     "open_evidence": "Listing search results updated 2026; OSM hours to 3 am Fri-Sat. Needs a non-listing source",
     "from": "disc-06-night"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "El Carrito",
+    "neighborhood": "Barrio Logan",
+    "address": "2154 Logan Ave",
+    "kind": "Diner in an old cable car",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Started in 1947 when the first owner bought a 1930s cable car and turned it into a diner; still on Logan Avenue.",
+    "from": "disc-06-day"
   },
   {
     "name": "Super Cocina",
@@ -664,5 +778,426 @@
     "source_url": "https://rosieogradyssd.com/san-diego-normal-heights-rosie-o-gradys-food-menu",
     "open_evidence": "Own site live with current menu; confirm 2026",
     "from": "disc-07-night"
+  },
+  {
+    "name": "Pho Hoa Linda Vista",
+    "neighborhood": "Linda Vista",
+    "city": "San Diego",
+    "address": "6921 Linda Vista Rd",
+    "kind": "Cash-only pho shop",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "A cash-only pho room in the Linda Vista Vietnamese strip that locals point to over the bigger names.",
+    "source_url": "https://nextdoor.com/pages/pho-hoa-linda-vista-san-diego-ca/",
+    "open_evidence": "Listings updated July 2026; needs a non-listing source",
+    "from": "disc-08-day"
+  },
+  {
+    "name": "Pho Hiep & Grill",
+    "neighborhood": "Linda Vista",
+    "city": "San Diego",
+    "address": "6947 Linda Vista Rd",
+    "kind": "Family Vietnamese noodle house",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-run since 1991, when it opened as a small Linda Vista restaurant; still on the same road.",
+    "source_url": "https://www.phohiepgrill.com/",
+    "open_evidence": "Own site live; confirm 2026 and how many locations",
+    "from": "disc-08-day"
+  },
+  {
+    "name": "Sushi Yorimichi",
+    "neighborhood": "Linda Vista",
+    "city": "San Diego",
+    "address": "2405 Ulric St",
+    "kind": "Strip-mall neighborhood sushi bar",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "A small sushi bar tucked into a Linda Vista strip that diners call a true hole in the wall.",
+    "source_url": "https://www.sodiego.com/blog/hole-in-the-wall-restaurants-in-san-diego/",
+    "open_evidence": "OSM hours current; listings 2026; confirm",
+    "from": "disc-08-night"
+  },
+  {
+    "name": "Dumpling Inn",
+    "neighborhood": "Kearny Mesa",
+    "city": "San Diego",
+    "address": "4625 Convoy St",
+    "kind": "Family dumpling house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Started in 1994 as an eight-table dumpling hole two doors up; the family still hand-makes potstickers and xiao long bao.",
+    "source_url": "https://exploreclairemont.com/how-convoy-became-san-diego-asian-food-capital/",
+    "open_evidence": "Listed in 2026 Convoy guides; listings updated Sep 2026",
+    "from": "disc-08-day"
+  },
+  {
+    "name": "Phuong Trang",
+    "neighborhood": "Kearny Mesa",
+    "city": "San Diego",
+    "address": "4170 Convoy St",
+    "kind": "Old-guard Vietnamese dining room",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Opened in Linda Vista in 1988 and on Convoy since 1992, one of the street's first Asian restaurants.",
+    "source_url": "https://phuongtrangrestaurant.com/",
+    "open_evidence": "Own site live; OSM hours Wed-Sun",
+    "from": "disc-08-night"
+  },
+  {
+    "name": "Shan Xi Magic Kitchen",
+    "neighborhood": "Kearny Mesa",
+    "city": "San Diego",
+    "address": "4344 Convoy St",
+    "kind": "Hand-pulled noodle kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Shaanxi-style hand-pulled and knife-cut noodles in a plain Convoy room; on The Infatuation's cheap-eats list.",
+    "source_url": "https://www.theinfatuation.com/san-diego/perfect-for/cheap-eats",
+    "open_evidence": "Infatuation guide updated July 2026",
+    "from": "disc-08-night"
+  },
+  {
+    "name": "Shabu Shabu House",
+    "neighborhood": "Kearny Mesa",
+    "city": "San Diego",
+    "address": "4646 Convoy St",
+    "kind": "Old-school hot pot counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Japanese hot pot on Convoy for nearly 30 years, from before the street became a food destination.",
+    "source_url": "https://www.10news.com/lifestyle/exploring-san-diego/10-must-eat-restaurants-on-san-diego-s-convoy-street",
+    "open_evidence": "Named as still operating in a 2026 Convoy history piece; confirm",
+    "from": "disc-08-night"
+  },
+  {
+    "name": "Mongolian Hot Pot",
+    "neighborhood": "Clairemont",
+    "city": "San Diego",
+    "address": "4718 Clairemont Mesa Blvd",
+    "kind": "Family Mongolian hot pot",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-owned hot pot with six broths, two of them vegetarian; the weekday lunch special is the deal.",
+    "source_url": "https://sandiegomagazine.com/everything-sd/living-design/neighborhoods/neighborhood-guide-clairemont/",
+    "open_evidence": "OSM hours current; confirm 2026",
+    "from": "disc-08-night"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "The Godfather",
+    "neighborhood": "Kearny Mesa",
+    "address": "7878 Clairemont Mesa Blvd",
+    "kind": "1970s red-sauce Italian room",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "An old-school Italian dining room in Kearny Mesa since 1974, surrounded by the Convoy boom but unchanged by it.",
+    "from": "disc-08-night"
+  },
+  {
+    "name": "Kiko's Place Seafood",
+    "neighborhood": "Mission Valley",
+    "city": "San Diego",
+    "address": "7710 Hazard Center Dr",
+    "kind": "San Felipe seafood truck",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "A family truck in a Mission Valley parking lot cooking seafood recipes first served on the beach in San Felipe in 1983.",
+    "source_url": "https://www.theinfatuation.com/san-diego/reviews/kikos-place-seafood",
+    "open_evidence": "Infatuation cheap-eats guide updated July 2026; listings Sep 2026",
+    "from": "disc-09-day"
+  },
+  {
+    "name": "El Pescador Fish Market",
+    "neighborhood": "La Jolla",
+    "city": "San Diego",
+    "address": "634 Pearl St",
+    "kind": "Fish market with a kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Founded by a local fisherman in 1974; fresh fish sold over the counter and cooked into sandwiches and tacos.",
+    "source_url": "https://www.timeout.com/san-diego/restaurants/el-pescador-fish-market",
+    "open_evidence": "Own site live; 2026 La Jolla guides list it",
+    "from": "disc-09-day"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Harry's Coffee Shop",
+    "neighborhood": "La Jolla",
+    "address": "7545 Girard Ave",
+    "kind": "1960 La Jolla counter diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "Since 1960, the counter where La Jolla old-timers eat eggs and argue politics, a block from the boutiques.",
+    "from": "disc-09-day"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Jose's Courtroom",
+    "neighborhood": "La Jolla",
+    "address": "1037 Prospect St",
+    "kind": "Old La Jolla Mexican bar",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "A Mexican bar-restaurant on Prospect for decades (sources say 1954 or 1972), cheap by La Jolla standards and full of locals.",
+    "from": "disc-09-night"
+  },
+  {
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Cafe La Maze",
+    "neighborhood": "National City",
+    "city": "National City",
+    "address": "1441 Highland Ave",
+    "kind": "1940 steakhouse and lounge",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "A National City steakhouse since 1940 with a golden-era Hollywood room, on the old Highway 101 strip.",
+    "from": "disc-10-night"
+  },
+  {
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Napoleone's Pizza House",
+    "neighborhood": "National City",
+    "city": "National City",
+    "address": "619 National City Blvd",
+    "kind": "1950s family pizza house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Making pizza on National City Boulevard since 1958, one of the South Bay rooms that never changed hands to a chain.",
+    "from": "disc-10-night"
+  },
+  {
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Niederfrank's Ice Cream",
+    "neighborhood": "National City",
+    "city": "National City",
+    "address": "726 A Ave",
+    "kind": "Ice cream made on site since 1948",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "A small National City shop churning its own ice cream since 1948, on a residential street most people never drive down.",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Tita's Kitchenette",
+    "neighborhood": "National City",
+    "city": "National City",
+    "address": "2720 E Plaza Blvd",
+    "kind": "Filipino turo-turo counter",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Point-at-the-tray Filipino home cooking: sinigang, dinuguan, barbecue skewers, halo-halo, at prices that feel like a family table.",
+    "source_url": "https://www.theinfatuation.com/san-diego/perfect-for/cheap-eats",
+    "open_evidence": "Infatuation cheap-eats guide updated July 2026",
+    "from": "disc-10-day"
+  },
+  {
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Aunt Emma's Pancakes",
+    "neighborhood": "Chula Vista",
+    "city": "Chula Vista",
+    "address": "700 E St",
+    "kind": "1960s pancake house",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "A Chula Vista pancake house since 1965, still a breakfast-only family room.",
+    "from": "disc-10-day"
+  },
+  {
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Silver Dollar Cocktail Lounge",
+    "neighborhood": "Chula Vista",
+    "city": "Chula Vista",
+    "address": "341 3rd Ave",
+    "kind": "1940s Third Avenue bar and grill",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "On Third Avenue since 1943, a restaurant-bar from downtown Chula Vista before the strip malls.",
+    "from": "disc-10-night"
+  },
+  {
+    "name": "Aqui Es Texcoco",
+    "neighborhood": "Chula Vista",
+    "city": "Chula Vista",
+    "address": "520 Broadway",
+    "kind": "Lamb barbacoa house",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Texcoco-style lamb barbacoa, slow-cooked in maguey leaves, with the consommé on the side.",
+    "source_url": "https://www.theinfatuation.com/san-diego/perfect-for/cheap-eats",
+    "open_evidence": "Infatuation cheap-eats guide updated July 2026; OSM hours daily 9-9",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Ali Baba Family Restaurant",
+    "neighborhood": "El Cajon",
+    "city": "El Cajon",
+    "address": "421 E Main St",
+    "kind": "Iraqi family kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-owned since 2002 on El Cajon's Main Street, cooking halal Iraqi dishes in big portions for the city's Chaldean community.",
+    "source_url": "https://sandiegomagazine.com/neighborhoods/east-county/neighborhood-guide-el-cajon/article_1505fbca-0527-11ec-99b5-33c737dea2e0.html",
+    "open_evidence": "Listing pages active 2026; confirm",
+    "from": "disc-11-night"
+  },
+  {
+    "name": "The Barbecue Pit",
+    "neighborhood": "Fletcher Hills",
+    "city": "El Cajon",
+    "address": "2388 Fletcher Pkwy",
+    "kind": "Family barbecue since 1947",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Two couples, a pair of sisters and their husbands, opened the first Barbecue Pit downtown in 1947; this Fletcher Hills room carries on.",
+    "source_url": "https://barbecuepitrestaurant.com/about",
+    "open_evidence": "Own site live; mmm-yoso revisit May 2024; listings 2026",
+    "from": "disc-11-day"
+  },
+  {
+    "name": "Pernicano's Family Ristorante",
+    "neighborhood": "El Cajon",
+    "city": "El Cajon",
+    "address": "1588 E Main St",
+    "kind": "Last family Pernicano pizzeria",
+    "when": [
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "The last Pernicano family restaurant still running, from a pizza dynasty that started in San Diego in 1946.",
+    "source_url": "https://classicsandiego.com/restaurants/pernicanos-casa-di-baffi/",
+    "open_evidence": "Own site live; listings updated Sep 2026",
+    "from": "disc-11-night"
+  },
+  {
+    "name": "The Riviera Supper Club & Turquoise Room",
+    "neighborhood": "La Mesa",
+    "city": "La Mesa",
+    "address": "7777 University Ave",
+    "kind": "Grill-your-own supper club",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "A 1962 mid-century building, once the Jamar, kept with its original furnishings; steaks you grill yourself and live music in the lounge.",
+    "source_url": "https://www.aaa.com/tripcanvas/restaurant/the-riviera-supper-club-and-turquoise-room-AA59832",
+    "open_evidence": "Listings updated Sep 2026; Wed-Sun 4-11 pm",
+    "from": "disc-11-night"
+  },
+  {
+    "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
+    "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
+    "name": "Wong's Golden Palace",
+    "neighborhood": "La Mesa",
+    "city": "La Mesa",
+    "address": "7126 University Ave",
+    "kind": "1960s Chinese-American palace",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Cantonese-American dining since 1966, with a Dragon Room bar next door; one of the last of its kind in the county.",
+    "from": "disc-11-night"
+  },
+  {
+    "name": "Carnitas Uruapan",
+    "neighborhood": "Lemon Grove",
+    "city": "Lemon Grove",
+    "address": "7941 Broadway",
+    "kind": "Michoacán carnitas counter",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "A family carnitas shop that moved down Broadway after its La Mesa closure, keeping the same owners, kitchen and recipes.",
+    "source_url": "https://www.sandiegoville.com/2025/05/carnitas-uruapan-opening-new-location.html",
+    "open_evidence": "SanDiegoVille May 2025; listings updated July 2026",
+    "from": "disc-11-day"
   }
 ]
