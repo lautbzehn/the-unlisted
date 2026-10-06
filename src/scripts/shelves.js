@@ -12,9 +12,30 @@ const save = (s) => {
 let state = load(); // { [placeId]: { status: 'knock'|'ledger', strike: 0-5, note: '', date: 'YYYY-MM-DD' } }
 
 const cards = [...document.querySelectorAll('.card')];
-const tabs = [...document.querySelectorAll('.tab')];
+const tabs = [...document.querySelectorAll('.tab[data-filter]')];
 const empty = document.getElementById('empty');
 let filter = 'all';
+let view = 'cards';
+const grid = document.querySelector('.grid');
+const mapWrap = document.getElementById('map-wrap');
+const viewBtns = [...document.querySelectorAll('[data-view]')];
+let mapMod = null;
+
+async function setView(v) {
+  view = v;
+  viewBtns.forEach((b) => b.setAttribute('aria-pressed', b.dataset.view === v));
+  grid.hidden = v === 'map';
+  mapWrap.hidden = v !== 'map';
+  if (v === 'map') {
+    try {
+      mapMod ??= await import('./map.js');
+      mapMod.showMap({ state, filter });
+    } catch (e) {
+      toast('The map could not load. Check your connection.');
+      setView('cards');
+    }
+  }
+}
 
 function toast(msg) {
   const t = document.getElementById('toast');
@@ -53,6 +74,7 @@ function render() {
     t.setAttribute('aria-pressed', t.dataset.filter === filter);
     t.querySelector('.n').textContent = `(${counts[t.dataset.filter]})`;
   });
+  mapMod?.updateMap({ state, filter });
   if (!empty) return; // place pages have no tabs
   const visible = cards.some((c) => !c.hidden);
   empty.classList.toggle('show', !visible);
@@ -84,7 +106,9 @@ async function share(card) {
 }
 
 document.addEventListener('click', (e) => {
-  const tab = e.target.closest('.tab');
+  const vb = e.target.closest('[data-view]');
+  if (vb) { setView(vb.dataset.view); return; }
+  const tab = e.target.closest('.tab[data-filter]');
   if (tab) { filter = tab.dataset.filter; render(); return; }
 
   const card = e.target.closest('.card');

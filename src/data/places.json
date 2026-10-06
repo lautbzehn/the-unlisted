@@ -14,7 +14,9 @@
     },
     "story": "Eleven stools, one cook, and a handwritten menu that changes when he runs out of broth. Locals line up by six. Nobody posted about it.",
     "order": "The oxtail noodle soup. Ask for it extra peppery.",
-    "sample": true
+    "sample": true,
+    "lat": 37.7527,
+    "lng": -122.494
   },
   {
     "id": "sample-the-lamplighter",
@@ -31,7 +33,9 @@
     },
     "story": "Behind an unmarked green door, lit entirely by oil lamps. The bartender invents drinks from whatever mood you walk in with.",
     "order": "Whatever she hands you. Tell her one word about your day.",
-    "sample": true
+    "sample": true,
+    "lat": 37.7843,
+    "lng": -122.4136
   },
   {
     "id": "sample-coal-and-crumb",
@@ -48,7 +52,9 @@
     },
     "story": "A former coal-yard office turned two-table bakery. Twelve loaves a morning, gone by nine, baked by a retired shipwright.",
     "order": "The burnt-honey rye, still warm. Arrive before eight.",
-    "sample": true
+    "sample": true,
+    "lat": 37.8044,
+    "lng": -122.2995
   },
   {
     "id": "sample-no-name-tacos",
@@ -65,6 +71,8 @@
     },
     "story": "Parked behind a tire shop, no sign, cash only. The al pastor spit has been turning since before the neighborhood changed.",
     "order": "Three al pastor, extra pineapple, salsa verde.",
-    "sample": true
+    "sample": true,
+    "lat": 37.7599,
+    "lng": -122.4148
   }
 ]

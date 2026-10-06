@@ -22,13 +22,28 @@ import places from '../data/places.json';
       <p class="soon">VIBE SEARCH: COMING IN THE NEXT BUILD</p>
     </form>
 
-    <div class="tabs" role="group" aria-label="Show">
-      <button class="tab" data-filter="all" aria-pressed="true">All doors <span class="n">(0)</span></button>
-      <button class="tab" data-filter="knock" aria-pressed="false">Knock List <span class="n">(0)</span></button>
-      <button class="tab" data-filter="ledger" aria-pressed="false">The Ledger <span class="n">(0)</span></button>
+    <div class="toolbar">
+      <div class="tabs" role="group" aria-label="Show">
+        <button class="tab" data-filter="all" aria-pressed="true">All doors <span class="n">(0)</span></button>
+        <button class="tab" data-filter="knock" aria-pressed="false">Knock List <span class="n">(0)</span></button>
+        <button class="tab" data-filter="ledger" aria-pressed="false">The Ledger <span class="n">(0)</span></button>
+      </div>
+      <div class="views" role="group" aria-label="View">
+        <button class="tab" data-view="cards" aria-pressed="true">Cards</button>
+        <button class="tab" data-view="map" aria-pressed="false">Map</button>
+      </div>
     </div>
 
     <p class="empty" id="empty" role="status"></p>
+    <div id="map-wrap" hidden>
+      <div id="map" role="region" aria-label="Map of places. Use the pins, or switch to Cards for a list."></div>
+      <ul class="legend" aria-hidden="true">
+        <li><span class="swatch" data-status="none"></span>Undiscovered</li>
+        <li><span class="swatch" data-status="knock"></span>Knock List</li>
+        <li><span class="swatch" data-status="ledger"></span>In your Ledger</li>
+      </ul>
+    </div>
+    <script type="application/json" id="places-data" set:html={JSON.stringify(places)} />
     <section class="grid" aria-label="Places">
       {places.map((p) => <PlaceCard place={p} />)}
     </section>
