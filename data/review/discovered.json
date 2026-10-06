@@ -2126,5 +2126,581 @@
     "source_url": "https://www.berkeleyside.org/2025/01/01/favorite-berkeley-restaurants",
     "open_evidence": "Berkeleyside must-know list, Jan 2025",
     "from": "disc-11-night"
+  },
+  {
+    "name": "Ole's Waffle Shop",
+    "neighborhood": "Park Street",
+    "city": "Alameda",
+    "address": "1507 Park St",
+    "kind": "1920s waffle diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "Waffles and pancakes on Park Street since 1927; lines still form on the sidewalk for the thin pressed waffles.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-alameda",
+    "open_evidence": "Infatuation Alameda guide (current)",
+    "from": "disc-12-day"
+  },
+  {
+    "name": "Tucker's Ice Cream",
+    "neighborhood": "Park Street",
+    "city": "Alameda",
+    "address": "1349 Park St",
+    "kind": "1940s ice cream shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Alameda's scoop shop since 1941, churning its own super-creamed ice cream; floats and three-scoop shakes.",
+    "source_url": "https://www.corner.inc/place/p8V8k5qy4u7h",
+    "open_evidence": "Current Alameda guides and listings",
+    "from": "disc-12-day"
+  },
+  {
+    "name": "Otaez",
+    "neighborhood": "West End",
+    "city": "Alameda",
+    "address": "1619 Webster St",
+    "kind": "Family Mexican restaurant",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-run Mexican cooking from a patriarch who started at Mexicali Rose; chiles rellenos and pozole from 7am.",
+    "source_url": "https://www.sfgate.com/restaurants/article/DINING-OUT-New-Otaez-brings-down-home-Mexican-2300656.php",
+    "open_evidence": "OpenTable listing updated 2026; daily 7am-10pm",
+    "from": "disc-12-day"
+  },
+  {
+    "name": "Los Mexicanos Deli",
+    "neighborhood": "23rd Street",
+    "city": "Richmond",
+    "address": "779 23rd St",
+    "kind": "Deli taqueria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Part of Richmond's 23rd Street taco corridor, known for well-charred al pastor.",
+    "source_url": "https://eastbayexpress.com/a-richmond-taco-crawl-2-1/",
+    "open_evidence": "East Bay Express taco crawl (date to confirm); confirm open in research",
+    "from": "disc-12-day"
+  },
+  {
+    "name": "H&J's Restaurant",
+    "neighborhood": "San Pablo Avenue",
+    "city": "El Cerrito",
+    "address": "10841 San Pablo Ave",
+    "kind": "Sibling-run family diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Family restaurant run by four siblings who grew up in El Cerrito schools. Neighborhood-only following.",
+    "source_url": "https://www.hjsrestaurant.com/",
+    "open_evidence": "Own site live; confirm hours in research",
+    "from": "disc-12-day"
+  },
+  {
+    "name": "La Selva Taqueria",
+    "neighborhood": "23rd Street",
+    "city": "Richmond",
+    "address": "1049 23rd St",
+    "kind": "Charcoal chicken taqueria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Jungle-themed taqueria grilling whole spatchcocked chickens over charcoal in the garage next door; strong salsas.",
+    "source_url": "https://www.grandviewindependent.com/on-the-richmond-burrito-trail-smoky-chicken-serious-salsas-and-jungle-karaoke-at-la-selva-taqueria/",
+    "open_evidence": "Listing updated Nov 2025; Grandview Independent feature",
+    "from": "disc-12-night"
+  },
+  {
+    "name": "Tacos El Chino",
+    "neighborhood": "23rd Street",
+    "city": "Richmond",
+    "address": "23rd St & Humphrey Ave",
+    "kind": "Mariscos and taco stand",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Corner seafood-and-taco spot on the 23rd Street corridor, open daily 11 to 8.",
+    "source_url": "https://www.tacoselchino.com/",
+    "open_evidence": "Own site lists daily hours. Exact street number needed for mapping",
+    "from": "disc-12-night"
+  },
+  {
+    "name": "That Luang Kitchen",
+    "neighborhood": "San Pablo",
+    "city": "San Pablo",
+    "address": "1614 23rd St",
+    "kind": "Lao grocery-turned-restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family Lao kitchen that grew out of a grocery on demand for its papaya salad; dried beef, ribs, barbecue chicken.",
+    "source_url": "https://www.kqed.org/bayareabites/79446/5-bites-enticing-lao-cuisine-in-the-east-bay",
+    "open_evidence": "Conflicting: one listing says permanently closed, another updated Nov 2025 shows hours. Must confirm",
+    "from": "disc-12-night"
+  },
+  {
+    "name": "Red Onion",
+    "neighborhood": "San Pablo Avenue",
+    "city": "El Cerrito",
+    "address": "11950 San Pablo Ave",
+    "kind": "1960s drive-in burger stand",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Classic drive-in flipping burgers on San Pablo Avenue since 1963.",
+    "source_url": "https://plazaelcerritoneighborhood.org/savor-the-flavor-a-food-lover-s-guide-to-the-best-eats-in-el-cerrito-plaza/",
+    "open_evidence": "Neighborhood guide (undated); confirm open in research",
+    "from": "disc-12-night"
+  },
+  {
+    "name": "El Mono",
+    "neighborhood": "San Pablo Avenue",
+    "city": "El Cerrito",
+    "address": "10264 San Pablo Ave",
+    "kind": "Peruvian family kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-owned Peruvian spot cooking heirloom recipes on San Pablo Avenue.",
+    "source_url": "https://plazaelcerritoneighborhood.org/savor-the-flavor-a-food-lover-s-guide-to-the-best-eats-in-el-cerrito-plaza/",
+    "open_evidence": "Neighborhood guide (undated); confirm open in research",
+    "from": "disc-12-night"
+  },
+  {
+    "name": "The Original Kadok's Restaurant",
+    "neighborhood": "Top of the Hill",
+    "city": "Daly City",
+    "address": "6899 Mission St",
+    "kind": "Filipino silog house",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Little Manila's silog standby since 1995: tocino, longganisa, tapa, sisig and crisp smoked bangus.",
+    "source_url": "https://kadoks.com/",
+    "open_evidence": "Own site and online ordering live; listing dated 2026",
+    "from": "disc-13-day"
+  },
+  {
+    "name": "Mekeni Restaurant",
+    "neighborhood": "Top of the Hill",
+    "city": "Daly City",
+    "address": "6339 Mission St",
+    "kind": "Kapampangan turo-turo and karaoke",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Cash-only Filipino steam table that opens early for breakfast; karaoke bar side at night.",
+    "source_url": "https://jontotheworld.com/best-filipino-restaurants-in-daly-city/",
+    "open_evidence": "Listing updated May 2026",
+    "from": "disc-13-day"
+  },
+  {
+    "name": "La Tapatia Mexicatessen",
+    "neighborhood": "Downtown",
+    "city": "South San Francisco",
+    "address": "411 Grand Ave",
+    "kind": "Tortilleria, market and taqueria",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Started as a tortilla factory in the 1970s; Grand Avenue market-taqueria for carnitas and chicharrones.",
+    "source_url": "https://everythingsouthcity.com/2022/08/the-best-of-mexico-in-one-place-at-la-tapatia-mexicatessen-on-grand-avenue-south-san-francisco/",
+    "open_evidence": "Reviews dated 2025 on listing sites",
+    "from": "disc-13-day"
+  },
+  {
+    "name": "Darby Dan's Sandwiches",
+    "neighborhood": "Downtown",
+    "city": "South San Francisco",
+    "address": "733 Airport Blvd",
+    "kind": "Dutch crunch sandwich shop",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "South City sandwich counter since the 1970s; Dutch crunch rolls and crab salad on Wednesdays and Fridays.",
+    "source_url": "https://www.paloaltoonline.com/food/2023/09/20/the-grand-tour-exploring-south-san-franciscos-downtown-corridor-where-history-is-etched-in-the-sidewalks/",
+    "open_evidence": "Palo Alto Online Grand Ave feature, Sep 2023; current listings",
+    "from": "disc-13-day"
+  },
+  {
+    "name": "Takahashi Market",
+    "neighborhood": "Downtown",
+    "city": "San Mateo",
+    "address": "221 S Claremont St",
+    "kind": "Hawaiian-Japanese market lunch",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Family market since 1906 selling oversized Spam musubi and Hawaiian plate lunches for about $6-10.",
+    "source_url": "https://www.sfgate.com/food/article/bay-area-takahashi-market-musubis-17837701.php",
+    "open_evidence": "SFGate feature (2023); own site live; Wed-Sun 11-4",
+    "from": "disc-13-day"
+  },
+  {
+    "name": "Taqueria La Morena",
+    "neighborhood": "Downtown",
+    "city": "South San Francisco",
+    "address": "307 Baden Ave",
+    "kind": "Family taqueria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-owned taqueria in downtown South City since 1986.",
+    "source_url": "https://taquerialamorena.com/",
+    "open_evidence": "Own site live; confirm hours in research",
+    "from": "disc-13-day"
+  },
+  {
+    "name": "Ramen Dojo",
+    "neighborhood": "Downtown",
+    "city": "San Mateo",
+    "address": "805 S B St",
+    "kind": "Spicy garlic ramen shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "From the cook behind San Mateo's ramen row; known for spicy garlic broth and a long wait.",
+    "source_url": "https://www.smdailyjournal.com/news/local/the-art-of-ramen-san-mateo-noodle-houses-serve-up-popular-bowls-of-broth/article_cea14a6b-fdb2-5e83-8f3b-51d433de08d1.html",
+    "open_evidence": "San Mateo Daily Journal ramen feature; confirm 2025-26 status",
+    "from": "disc-13-night"
+  },
+  {
+    "name": "Ramen Parlor",
+    "neighborhood": "Downtown",
+    "city": "San Mateo",
+    "address": "901 S B St",
+    "kind": "Ramen counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Same owner as Ramen Dojo and the late Santa Ramen; the quieter bowl down the block.",
+    "source_url": "https://ramenparlorca.com/",
+    "open_evidence": "Own site live; confirm in research",
+    "from": "disc-13-night"
+  },
+  {
+    "name": "Shuei-Do Manju Shop",
+    "neighborhood": "Japantown",
+    "city": "San Jose",
+    "address": "217 Jackson St",
+    "kind": "Handmade manju shop",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Same family making manju by hand since the early 1950s; red bean, peanut butter and seasonal fillings.",
+    "source_url": "https://www.7x7.com/two-historic-japantowns-bay-area-2675035841.html",
+    "open_evidence": "Tripadvisor page with 2026 reviews; 7x7 Japantown feature",
+    "from": "disc-14-day"
+  },
+  {
+    "name": "Santo Market",
+    "neighborhood": "Japantown",
+    "city": "San Jose",
+    "address": "245 E Taylor St",
+    "kind": "Japanese-Hawaiian market deli",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-run since 1946; poke, bento and house-label foods from a Japantown corner market.",
+    "source_url": "https://www.stephenhusted.com/san-jose-gems/guide-to-japantown-san-jose-food-culture-and-community-8ar3k-f463s-ghc3l-tg68r-t7wtj-9jnnb-8p7sw-kr7pk-at7kg",
+    "open_evidence": "Local Japantown guide (current). Street number from memory, verify",
+    "from": "disc-14-day"
+  },
+  {
+    "name": "Duc Huong Sandwiches",
+    "neighborhood": "East San Jose",
+    "city": "San Jose",
+    "address": "1020 Story Rd",
+    "kind": "Bánh mì shop",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Story Road bánh mì shop praised as some of the best outside Vietnam. Two locations.",
+    "source_url": "https://www.7x7.com/best-restaurants-san-jose-2667862476/other-mexican-vietnamese-standouts-in-san-jose",
+    "open_evidence": "7x7 San Jose guide (current)",
+    "from": "disc-14-day"
+  },
+  {
+    "name": "Falafel's Drive-In",
+    "neighborhood": "West San Jose",
+    "city": "San Jose",
+    "address": "2301 Stevens Creek Blvd",
+    "kind": "1960s falafel walk-up",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "Walk-up stand opened in 1966 by the Nijmeh family; falafel with a banana milkshake is the order.",
+    "source_url": "https://falafels-drive-in.com/",
+    "open_evidence": "Own site updated Oct 2026",
+    "from": "disc-14-day"
+  },
+  {
+    "name": "Pho Ga Nha",
+    "neighborhood": "East San Jose",
+    "city": "San Jose",
+    "address": "930 Story Rd",
+    "kind": "Chicken pho shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Story Road shop devoted to chicken pho and Hainan chicken rice, at low prices.",
+    "source_url": "https://www.7x7.com/best-restaurants-san-jose-2667862476/other-mexican-vietnamese-standouts-in-san-jose",
+    "open_evidence": "7x7 San Jose guide (current)",
+    "from": "disc-14-day"
+  },
+  {
+    "name": "Minato",
+    "neighborhood": "Japantown",
+    "city": "San Jose",
+    "address": "617 N 6th St",
+    "kind": "Japanese-American family restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Japantown's oldest restaurant, serving Japanese-American comfort food since 1957: bento combos, steamers, ribs.",
+    "source_url": "https://www.stephenhusted.com/san-jose-gems/guide-to-japantown-san-jose-food-culture-and-community-8ar3k-f463s-ghc3l-tg68r-t7wtj-9jnnb-8p7sw-kr7pk-at7kg",
+    "open_evidence": "Japantown business directory and local guide (current)",
+    "from": "disc-14-night"
+  },
+  {
+    "name": "Hukilau",
+    "neighborhood": "Japantown",
+    "city": "San Jose",
+    "address": "230 Jackson St",
+    "kind": "Hawaiian plate-lunch bar",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Small-town Hawaii plate lunches with live Hawaiian music and tropical drinks on Jackson Street.",
+    "source_url": "https://www.japantownsanjose.org/businesses",
+    "open_evidence": "Japantown Business Association directory (current)",
+    "from": "disc-14-night"
+  },
+  {
+    "name": "Henry's World Famous Hi-Life",
+    "neighborhood": "Downtown",
+    "city": "San Jose",
+    "address": "301 W St John St",
+    "kind": "Live-fire barbecue house",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Barbecue and steaks over live fire since 1960, in a building moved here after the 1906 quake.",
+    "source_url": "https://www.sanjose.org/listings/henrys-world-famous-hi-life",
+    "open_evidence": "San Jose visitor listing and 2026 Best Eats list",
+    "from": "disc-14-night"
+  },
+  {
+    "name": "Nem Nuong Nha Trang",
+    "neighborhood": "East San Jose",
+    "city": "San Jose",
+    "address": "919 Story Rd",
+    "kind": "Nha Trang grilled pork rolls",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Story Road specialist in Nha Trang-style grilled pork sausage rolls.",
+    "source_url": "https://www.7x7.com/best-restaurants-san-jose-2667862476/other-mexican-vietnamese-standouts-in-san-jose",
+    "open_evidence": "7x7 San Jose guide (current)",
+    "from": "disc-14-night"
+  },
+  {
+    "name": "Donut Basket",
+    "neighborhood": "North Bayshore",
+    "city": "Mountain View",
+    "address": "2105 Old Middlefield Way",
+    "kind": "Donut shop with breakfast counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Strip-mall donut shop that eats like a diner: early breakfast sandwiches, cronuts and classic donuts.",
+    "source_url": "https://donutbasketmv.com/contact/",
+    "open_evidence": "Own site live; named in 2025 breakfast roundups",
+    "from": "disc-15-day"
+  },
+  {
+    "name": "Roger's Deli & Donuts",
+    "neighborhood": "Whisman",
+    "city": "Mountain View",
+    "address": "209 E Middlefield Rd",
+    "kind": "Donut shop and deli",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Old-fashioned donuts and classic American breakfasts in a Middlefield Road strip.",
+    "source_url": "https://wanderboat.ai/restaurants/united-states/mountain-view/rogers-deli-and-donuts/oWMz5rqiQUOaH_41v1SgKg",
+    "open_evidence": "Listings live; address conflict (209 vs 295 E Middlefield Rd), verify",
+    "from": "disc-15-day"
+  },
+  {
+    "name": "Achilles",
+    "neighborhood": "Old Quad",
+    "city": "Santa Clara",
+    "address": "2521 Newhall St",
+    "kind": "Mediterranean counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Small Santa Clara Mediterranean spot locals call a great hole in the wall; shawarma and plates.",
+    "source_url": "https://www.gotodestinations.com/3-special-hole-in-the-wall-restaurants-in-santa-clara-ca/",
+    "open_evidence": "Listing dated 2026; confirm in research",
+    "from": "disc-15-day"
+  },
+  {
+    "name": "Lee's Kitchen",
+    "neighborhood": "El Camino Real",
+    "city": "Santa Clara",
+    "address": "2767 El Camino Real",
+    "kind": "Chinese takeout kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Chinese kitchen on El Camino for over 30 years, described by regulars as a true hole in the wall.",
+    "source_url": "https://www.gotodestinations.com/3-special-hole-in-the-wall-restaurants-in-santa-clara-ca/",
+    "open_evidence": "Undated guide; confirm open in research",
+    "from": "disc-15-day"
+  },
+  {
+    "name": "Paik's Noodle",
+    "neighborhood": "Kiely",
+    "city": "Santa Clara",
+    "address": "1520 Kiely Blvd",
+    "kind": "Korean black-bean noodle shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Korean-Chinese jjajangmyeon in big portions at low prices. Check whether it is part of a larger chain.",
+    "source_url": "https://wanderlog.com/list/geoCategory/203702/where-to-eat-best-restaurants-in-santa-clara",
+    "open_evidence": "Current listing; chain status unchecked",
+    "from": "disc-15-day"
+  },
+  {
+    "name": "Rice Junky",
+    "neighborhood": "El Camino Real",
+    "city": "Santa Clara",
+    "address": "2089 El Camino Real",
+    "kind": "Korean pocha",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Tapas-style Korean drinking spot on El Camino's Koreatown strip, big plates, open until midnight.",
+    "source_url": "https://wanderlog.com/list/geoCategory/203702/where-to-eat-best-restaurants-in-santa-clara",
+    "open_evidence": "Current listing; confirm hours in research",
+    "from": "disc-15-night"
+  },
+  {
+    "name": "Star Chaat Cuisine",
+    "neighborhood": "El Camino Real",
+    "city": "Santa Clara",
+    "address": "3590 El Camino Real",
+    "kind": "Indian chaat counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Chaat counter on El Camino with strong value; one of the South Bay's many, so it needs a standout dish.",
+    "source_url": "https://wanderlog.com/list/geoCategory/203702/where-to-eat-best-restaurants-in-santa-clara",
+    "open_evidence": "Current listing; confirm in research",
+    "from": "disc-15-night"
+  },
+  {
+    "name": "Tay Ho",
+    "neighborhood": "El Camino Real",
+    "city": "Santa Clara",
+    "address": "2047 El Camino Real",
+    "kind": "Vietnamese rice-roll shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Vietnamese spot on El Camino; name suggests a bánh cuốn specialist. Needs confirming.",
+    "source_url": "https://wanderlog.com/list/geoCategory/203702/where-to-eat-best-restaurants-in-santa-clara",
+    "open_evidence": "Current listing; specialty and status to confirm",
+    "from": "disc-15-night"
+  },
+  {
+    "name": "Gumba's Italian Restaurant",
+    "neighborhood": "Murphy Avenue",
+    "city": "Sunnyvale",
+    "address": "176 S Murphy Ave",
+    "kind": "Old-school Italian family room",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Long-running red-sauce Italian on historic Murphy Avenue, renovated in 2025.",
+    "source_url": "https://www.paloaltoonline.com/ae/2026/02/19/downtown-sunnyvale-developments-where-to-play-dine-and-unwind-in-a-transforming-silicon-valley-corridor/",
+    "open_evidence": "Palo Alto Online, Feb 2026; renovated 2025",
+    "from": "disc-15-night"
   }
 ]
