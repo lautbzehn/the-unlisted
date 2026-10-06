@@ -182,6 +182,23 @@
     "from": "disc-00-night"
   },
   {
+    "city": "San Diego",
+    "source_url": "https://localemagazine.com/breakfast-burritos-san-diego/",
+    "open_evidence": "Locale Magazine breakfast-burrito guide, July 11, 2026",
+    "name": "Los Panchitos",
+    "neighborhood": "Midway",
+    "address": "3602 Midway Dr",
+    "kind": "Midway breakfast burrito shop",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "A plain Midway District taco shop whose steak-and-egg breakfast burrito made a 2026 citywide list.",
+    "from": "disc-00-day"
+  },
+  {
     "name": "Kono's Cafe",
     "neighborhood": "Pacific Beach",
     "city": "San Diego",
@@ -192,9 +209,9 @@
       "midday"
     ],
     "fame": "local-legend",
-    "why": "Cash-only, paper-plate breakfast steps from Crystal Pier; the oversized breakfast burrito draws lines of locals and visitors.",
-    "source_url": "https://www.nbcsandiego.com/news/local/in-your-neighborhood-a-guide-to-pacific-beach-bars-boardwalk-and-beaches/3247796/",
-    "open_evidence": "2026 listing reviews describe current lines; confirm hours",
+    "why": "Cash-only, paper-plate breakfast steps from Crystal Pier since 1991; the egg burritos still come in under $10.",
+    "source_url": "https://localemagazine.com/breakfast-burritos-san-diego/",
+    "open_evidence": "Locale Magazine breakfast-burrito guide, July 11, 2026; NBC San Diego PB guide",
     "from": "disc-01-day"
   },
   {
@@ -248,6 +265,38 @@
     "source_url": "https://www.thepennantbar.com/visit",
     "open_evidence": "Own site live; restaurantji listing active 2026",
     "from": "disc-01-night"
+  },
+  {
+    "name": "Olive Cafe",
+    "neighborhood": "Mission Beach",
+    "city": "San Diego",
+    "address": "805 Santa Clara Pl",
+    "kind": "Family breakfast cafe and bakery",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "A woman-owned Mission Beach breakfast room since 2005 that later opened its own bakery so the bread could be fresh daily.",
+    "source_url": "https://www.sandiegoreader.com/weblogs/feast/2012/jun/12/breakfast-at-olive-cafe/",
+    "open_evidence": "Listing pages active 2026; confirm",
+    "from": "disc-01-day"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://localemagazine.com/breakfast-burritos-san-diego/",
+    "open_evidence": "Locale Magazine breakfast-burrito guide, July 11, 2026",
+    "name": "Earlybird",
+    "neighborhood": "Pacific Beach",
+    "address": "4505 Mission Blvd",
+    "kind": "Breakfast burrito window",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "A small PB shop built around breakfast burritos, with a soyrizo version for the vegetarians.",
+    "from": "disc-01-day"
   },
   {
     "name": "Mama's Mediterranean Kitchen",
@@ -363,6 +412,39 @@
     ],
     "fame": "local-legend",
     "why": "Chicken pot pies and pie for dessert, served cheaply on the Boulevard since 1938 to a crowd of regulars.",
+    "from": "disc-02-day"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/",
+    "open_evidence": "San Diego Magazine 40 best tacos, Oct 28, 2025; listings 2026",
+    "name": "Papasotes",
+    "neighborhood": "North Park",
+    "address": "4223 30th St",
+    "kind": "Carne asada taco shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "A small North Park taco shop near the breweries, singled out for its carne asada.",
+    "from": "disc-02-night"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://localemagazine.com/breakfast-burritos-san-diego/",
+    "open_evidence": "Locale Magazine breakfast-burrito guide, July 11, 2026",
+    "name": "Ranchos Cocina",
+    "neighborhood": "North Park",
+    "address": "3910 30th St",
+    "kind": "Vegetarian-friendly Mexican since 1994",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Serving plant-based and traditional Mexican on 30th Street since 1994, long before vegan tacos were a trend.",
     "from": "disc-02-day"
   },
   {
@@ -531,6 +613,23 @@
     "from": "disc-04-day"
   },
   {
+    "city": "San Diego",
+    "source_url": "https://localemagazine.com/breakfast-burritos-san-diego/",
+    "open_evidence": "Locale Magazine breakfast-burrito guide, July 11, 2026",
+    "name": "Tacaliente Mexican Grill",
+    "neighborhood": "Hillcrest",
+    "address": "1266 University Ave",
+    "kind": "Hillcrest taqueria",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "A Hillcrest taqueria with house-made salsas and breakfast burritos good enough to make a citywide list.",
+    "from": "disc-04-night"
+  },
+  {
     "name": "Café 222",
     "neighborhood": "Downtown",
     "city": "San Diego",
@@ -697,6 +796,38 @@
     "from": "disc-06-day"
   },
   {
+    "city": "San Diego",
+    "source_url": "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/",
+    "open_evidence": "San Diego Magazine 40 best tacos, Oct 28, 2025; listings 2026",
+    "name": "Wet Tacos",
+    "neighborhood": "Logan Heights",
+    "address": "2995 Commercial St",
+    "kind": "Halibut birria taco stand",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Grass-fed halibut birria and garlic shrimp tacos from a small Logan Heights operation that started as a truck.",
+    "from": "disc-06-night"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/",
+    "open_evidence": "San Diego Magazine 40 best tacos, Oct 28, 2025; listings 2026",
+    "name": "Ferchaladas Birria & Mariscos",
+    "neighborhood": "Logan Heights",
+    "address": "2709 Imperial Ave",
+    "kind": "Birria and mariscos counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Shrimp and octopus tacos with consommé for dipping, on Imperial Avenue.",
+    "from": "disc-06-night"
+  },
+  {
     "name": "Super Cocina",
     "neighborhood": "City Heights",
     "city": "San Diego",
@@ -777,6 +908,56 @@
     "why": "A Normal Heights watering hole since 1983 with a fuller kitchen than you'd expect: Cubanos, jerk chicken, burgers.",
     "source_url": "https://rosieogradyssd.com/san-diego-normal-heights-rosie-o-gradys-food-menu",
     "open_evidence": "Own site live with current menu; confirm 2026",
+    "from": "disc-07-night"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/",
+    "open_evidence": "San Diego Magazine 40 best tacos, Oct 28, 2025; listings 2026",
+    "name": "Tacos El Panson",
+    "neighborhood": "City Heights",
+    "address": "4443 El Cajon Blvd",
+    "kind": "Tripe taco specialist",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Crispy tripe tacos on handmade tortillas, on the Boulevard until 10 pm.",
+    "from": "disc-07-night"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/",
+    "open_evidence": "San Diego Magazine 40 best tacos, Oct 28, 2025; listings 2026",
+    "name": "Mariscos Mi Gusto Es",
+    "neighborhood": "City Heights",
+    "address": "4425 Home Ave",
+    "kind": "Sinaloa-style mariscos",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "A mariscos spot by Chollas Creek known for the gobernador, a shrimp taco with sautéed peppers and cheese.",
+    "from": "disc-07-day"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/",
+    "open_evidence": "San Diego Magazine 40 best tacos, Oct 28, 2025; listings 2026",
+    "name": "Cantina Mayahuel",
+    "neighborhood": "Normal Heights",
+    "address": "2934 Adams Ave",
+    "kind": "Mezcal cantina with kitchen",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "A long-running Adams Avenue cantina with a deep agave list and carnitas that chefs name as a favorite.",
     "from": "disc-07-night"
   },
   {
@@ -990,6 +1171,23 @@
     "from": "disc-09-night"
   },
   {
+    "name": "High Dive",
+    "neighborhood": "Bay Park",
+    "city": "San Diego",
+    "address": "1801 Morena Blvd",
+    "kind": "Bay Park dive with a kitchen",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "A Bay Park staple since 2006 with themed food nights: birria Wednesdays, steak Thursdays, fried chicken Fridays.",
+    "source_url": "https://theresandiego.com/must-try-san-diego-hole-in-the-wall-bars/",
+    "open_evidence": "theresandiego hole-in-the-wall bars, Apr 7, 2026",
+    "from": "disc-09-night"
+  },
+  {
     "source_url": "https://classicsandiego.com/san-diegos-oldest-restaurants-and-bars/",
     "open_evidence": "On Classic San Diego oldest-survivors list, updated Sep 29, 2026",
     "name": "Cafe La Maze",
@@ -1105,6 +1303,38 @@
     "from": "disc-10-day"
   },
   {
+    "city": "Chula Vista",
+    "source_url": "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/",
+    "open_evidence": "San Diego Magazine 40 best tacos, Oct 28, 2025; listings 2026",
+    "name": "De Cabeza El Único",
+    "neighborhood": "Chula Vista",
+    "kind": "Cow-head taco specialist",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Tacos de cabeza done tip to tail: cheek, tongue, eye and the rest, for those who want the real thing.",
+    "from": "disc-10-day"
+  },
+  {
+    "city": "Bonita",
+    "source_url": "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/",
+    "open_evidence": "San Diego Magazine 40 best tacos, Oct 28, 2025; listings 2026",
+    "name": "TJ Oyster Bar",
+    "neighborhood": "Bonita",
+    "address": "4410 Bonita Rd",
+    "kind": "Baja seafood bar",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "A South Bay seafood counter with Tijuana roots, known for pulpo tacos and Baja-style fish.",
+    "from": "disc-10-night"
+  },
+  {
     "name": "Ali Baba Family Restaurant",
     "neighborhood": "El Cajon",
     "city": "El Cajon",
@@ -1198,6 +1428,40 @@
     "why": "A family carnitas shop that moved down Broadway after its La Mesa closure, keeping the same owners, kitchen and recipes.",
     "source_url": "https://www.sandiegoville.com/2025/05/carnitas-uruapan-opening-new-location.html",
     "open_evidence": "SanDiegoVille May 2025; listings updated July 2026",
+    "from": "disc-11-day"
+  },
+  {
+    "city": "San Diego",
+    "source_url": "https://sandiegomagazine.com/food-drink/best-san-diego-tacos-restaurants/",
+    "open_evidence": "San Diego Magazine 40 best tacos, Oct 28, 2025; listings 2026",
+    "name": "Carnitas Las Michoacanas",
+    "neighborhood": "Rolando",
+    "address": "6513 University Ave",
+    "kind": "Carnitas counter",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Michoacán carnitas by the pound and in tacos, and a free taco handed over while you wait.",
+    "from": "disc-11-day"
+  },
+  {
+    "city": "La Mesa",
+    "source_url": "https://localemagazine.com/breakfast-burritos-san-diego/",
+    "open_evidence": "Locale Magazine breakfast-burrito guide, July 11, 2026",
+    "name": "Señor Burro",
+    "neighborhood": "La Mesa",
+    "address": "8960 Fletcher Pkwy",
+    "kind": "Fresh-tortilla burrito shop",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "An East County burrito shop opened in 2019 that presses fresh tortillas for its breakfast burritos.",
     "from": "disc-11-day"
   }
 ]
