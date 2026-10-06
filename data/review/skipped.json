@@ -33,5 +33,15 @@
     "id": "rice-junky",
     "name": "Rice Junky",
     "reason": "Poor fit: a trendy, youth-oriented Korean pocha with tablet ordering and robot servers. No story, not a hole-in-the-wall."
+  },
+  {
+    "id": "soma-inn-cafe",
+    "name": "SoMa Inn Cafe",
+    "reason": "Poor fit: a generic breakfast-and-lunch cafe with no press, story or standout dish beyond listing sites."
+  },
+  {
+    "id": "that-luang-kitchen",
+    "name": "That Luang Kitchen",
+    "reason": "Closed: listings show it permanently closed as of late December 2025."
   }
 ]
