@@ -3,6 +3,7 @@
 // falls back to OSM's address search (Nominatim), then picks a balanced shortlist.
 //   node scripts/pipeline/04-select.mjs 180
 import { readJson, writeJson, slug } from './lib/claude.mjs';
+import { M } from './metros.mjs';
 
 const target = Number(process.argv[2] ?? 180);
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/^the\s+/, '').replace(/[^a-z0-9]/g, '');
@@ -11,14 +12,15 @@ const km = (a, b) => {
   return 12742 * Math.asin(Math.sqrt(h));
 };
 
-const existing = new Set(readJson('src/data/places.json', []).map((p) => norm(p.name)));
-const osm = readJson('data/pipeline/independents.json', []);
+// skip what's already in the guide, this city's seed list (researched separately) and earlier batches
+const existing = new Set([...readJson('src/data/places.json', []), ...readJson(M.seeds, [])].map((p) => norm(p.name)));
+const osm = readJson(`${M.pipelineDir}/independents.json`, []);
 const osmByName = new Map();
 for (const p of osm) (osmByName.get(norm(p.name)) ?? osmByName.set(norm(p.name), []).get(norm(p.name))).push(p);
 
 // 1. dedupe + drop existing
 const seen = new Set();
-const unique = readJson('data/review/discovered.json', []).filter((c) => {
+const unique = readJson(`${M.reviewDir}/discovered.json`, []).filter((c) => {
   const k = norm(c.name) + '|' + norm(c.city ?? '');
   if (!c.name || existing.has(norm(c.name)) || seen.has(k)) return false;
   seen.add(k);
@@ -34,7 +36,7 @@ async function geocode(address) {
   return hit ? [+hit.lat, +hit.lon] : null;
 }
 
-const cache = readJson('data/pipeline/geocode-cache.json', {});
+const cache = readJson(`${M.pipelineDir}/geocode-cache.json`, {});
 const placed = [];
 for (const c of unique) {
   const matches = osmByName.get(norm(c.name)) ?? [];
@@ -47,7 +49,7 @@ for (const c of unique) {
   if (lat == null) continue; // can't place it on the map, skip
   placed.push({ ...c, id: slug(c.name), lat: +(+lat).toFixed(5), lng: +(+lng).toFixed(5), osm: osmId });
 }
-writeJson('data/pipeline/geocode-cache.json', cache);
+writeJson(`${M.pipelineDir}/geocode-cache.json`, cache);
 
 // 3. balanced pick: round-robin across discovery requests (area × day/night), deep cuts first within each
 const rank = { 'deep-cut': 0, 'open-secret': 1, 'local-legend': 2 };
@@ -55,9 +57,15 @@ const groups = Object.values(Object.groupBy(placed, (c) => c.from)).map((g) => g
 const picked = [];
 while (picked.length < target && groups.some((g) => g.length)) for (const g of groups) if (g.length && picked.length < target) picked.push(g.shift());
 
-const ids = new Set();
+// ids become web addresses (/place/<id>/), so they must be unique across every city and batch
+import { readdirSync, existsSync } from 'node:fs';
+const ids = new Set(readJson('src/data/places.json', []).map((p) => p.id));
+for (const dir of ['data/review', 'data/review/san-diego']) {
+  if (!existsSync(dir)) continue;
+  for (const f of readdirSync(dir).filter((n) => /^batch-\d+\.json$/.test(n))) for (const d of readJson(`${dir}/${f}`, [])) ids.add(d.id);
+}
 for (const p of picked) { let id = p.id, n = 2; while (ids.has(id)) id = `${p.id}-${n++}`; p.id = id; ids.add(id); }
-writeJson('data/review/candidates.json', picked);
+writeJson(`${M.reviewDir}/candidates.json`, picked);
 
 const tally = (f) => Object.entries(Object.groupBy(picked, f)).map(([k, v]) => `${k} ${v.length}`).join(' · ');
 console.log(`${unique.length} unique candidates, ${placed.length} placed on the map, ${picked.length} selected.`);

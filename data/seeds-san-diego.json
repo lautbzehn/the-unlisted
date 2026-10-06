@@ -1,0 +1,22 @@
+[
+  { "name": "Pacific Shores Cocktail Lounge", "area": "Ocean Beach", "lead": "Windowless OB dive bar with vintage underwater velvet murals and a preserved mid-century look." },
+  { "name": "Aero Club Bar", "area": "Middletown", "lead": "Historic neighborhood bar near the airport, known for a huge wall of whiskeys." },
+  { "name": "Azucar", "area": "Ocean Beach", "lead": "Bakery making Cuban-style pastries, meat pies and espresso." },
+  { "name": "Newbreak Coffee Co.", "area": "Ocean Beach", "lead": "Coastal coffee spot with breakfast; a fried prosciutto sandwich is the signature." },
+  { "name": "Liticker's Liquor & Mexican Grill", "area": "Ocean Beach", "lead": "Full kitchen behind a convenience-store front: deli sandwiches, street tacos, vegan options." },
+  { "name": "Chris' Liquor & Deli", "area": "North Park", "lead": "Bottle shop with a walk-up deli counter in the back." },
+  { "name": "Mona Lisa Italian Foods", "area": "Little Italy", "lead": "Old-school Italian market with a deli counter making submarine sandwiches." },
+  { "name": "Gourmet Bagel Deli", "area": "Point Loma", "lead": "Strip-mall bagel shop known for NY-style bagels and breakfast sandwiches." },
+  { "name": "Avian Water and Banh Mi Sandwiches", "area": "Linda Vista", "lead": "Plain storefront making banh mi." },
+  { "name": "Mothership", "area": "South Park", "lead": "Spaceship-themed tiki bar with plant-based small plates." },
+  { "name": "Noble Experiment", "area": "East Village", "lead": "Speakeasy behind a hidden door inside The Neighborhood restaurant; custom cocktails." },
+  { "name": "Starlite", "area": "Middletown", "lead": "Low-lit bar with a sunken hexagonal bar and gastropub food." },
+  { "name": "Werewolf", "area": "Gaslamp Quarter", "lead": "Downtown dive-style bar known for pork belly benedicts and nightly karaoke." },
+  { "name": "Secret Sister", "area": "South Park", "lead": "Sourdough bakery with country loaves and sourdough donuts." },
+  { "name": "Acento Coffee Roasters", "area": "Point Loma", "lead": "Neighborhood roaster with the roasting machine in the middle of the room." },
+  { "name": "Sourpuss Donuts", "area": "Mission Beach", "lead": "Small-batch beachside walk-up making sourdough donuts." },
+  { "name": "Doh Doh Coffee", "area": "City Heights", "lead": "Minimalist cafe with Vietnamese cold brew and Biscoff matcha." },
+  { "name": "The Tin Scoop", "area": "Marina District", "lead": "Tiny downtown kiosk with gelato affogatos and espresso." },
+  { "name": "Muri Coffee & Dessert", "area": "North Park", "lead": "Kurdish-influenced cafe with handmade pastries." },
+  { "name": "Garden Coffee", "area": "Old Town", "lead": "Tucked-away courtyard coffee spot with plants, local art and books." }
+]

@@ -6,10 +6,11 @@ It matches the public "How the score works" page. If one changes, change the oth
 ## Inputs
 - Place name, neighborhood, OpenStreetMap record (address, hours if present, cuisine tags).
 - Public web sources found by search: the place's own site/menu, local press, neighborhood blogs, interviews.
-- Community discussion on Reddit (r/AskSF, r/sanfrancisco, r/bayarea, r/oakland, r/eastbay, r/SanJose, r/berkeley):
-  the regulars' view. Search with `site:reddit.com <name> <neighborhood>`. If a thread won't load, try the
+- Community discussion on Reddit, using the city's subreddits (listed per city in `scripts/pipeline/metros.mjs`, e.g.
+  r/AskSF and r/bayarea for the Bay Area, r/sandiego for San Diego): the regulars' view. Search with `site:reddit.com <name> <neighborhood>`. If a thread won't load, try the
   old.reddit.com address or work from the search snippet.
-- Never Google Maps or Yelp data (their terms forbid storing and reusing it). Reading a Yelp page to
+- Never Google Maps or Yelp data (their terms forbid storing and reusing it). Reservation and delivery pages
+  (OpenTable, DoorDash and the like) aren't sources either. Reading a Yelp page to
   confirm a place exists is not a source we cite or copy from.
 
 ## Hard rules
@@ -32,7 +33,7 @@ It matches the public "How the score works" page. If one changes, change the oth
 |---|---|
 | `kind` | 2-4 words, specific: "Burmese noodle counter", not "Restaurant" |
 | `when` | any of `morning` (open before 10am), `midday` (11-3), `evening` (5-9), `late` (open past 10pm). From hours. |
-| `fame` | `deep-cut` (barely written about), `open-secret` (locals and some press know it), `local-legend` (on every list, decades old, lines) |
+| `fame` | `deep-cut` (barely written about: at most 1 press outlet), `open-secret` (locals and some press know it: 2+ outlets), `local-legend` (on every list, decades old, lines) |
 | `breakdown` | four marks 0-100: uniqueness, atmosphere, story, signature. Use the full range. 90+ is rare. A famous place is not automatically high. (A fifth mark, "Under the radar", is computed from `fame` by the site. Don't output it.) |
 | `why` | 1-2 sentences explaining the marks, honest about weak spots |
 | `story` | 2-3 sentences, max ~55 words. What makes it itself. |

@@ -1,40 +1,21 @@
 // Step 3: discovery. Ask Claude (with web search) to propose candidate places, one area and time of day at a time.
 //   node --env-file=.env scripts/pipeline/03-discover.mjs --estimate   (free: shows the plan and worst-case cost)
 //   node --env-file=.env scripts/pipeline/03-discover.mjs --submit     (sends one batch)
-//   node --env-file=.env scripts/pipeline/03-discover.mjs --collect    (waits, then saves data/review/discovered.json)
+//   node --env-file=.env scripts/pipeline/03-discover.mjs --collect    (waits, then saves ${M.reviewDir}/discovered.json)
+import { M } from './metros.mjs';
 import { MODEL, submitBatch, collectBatch, ledger, extractJson, readJson, writeJson, budgetReport } from './lib/claude.mjs';
 
-const AREAS = [
-  ['Mission District & Bernal Heights', 'San Francisco'],
-  ['Tenderloin, Little Saigon & Civic Center', 'San Francisco'],
-  ['Chinatown & North Beach', 'San Francisco'],
-  ['Richmond District', 'San Francisco'],
-  ['Sunset District & Parkside', 'San Francisco'],
-  ['SoMa, Dogpatch & Potrero Hill', 'San Francisco'],
-  ['Excelsior, Outer Mission, Visitacion Valley & Bayview', 'San Francisco'],
-  ['Haight, Western Addition, Japantown & Polk', 'San Francisco'],
-  ['Downtown Oakland, Oakland Chinatown & Uptown', 'Oakland'],
-  ['Fruitvale, East Oakland & San Leandro', 'Oakland'],
-  ['Temescal, Rockridge & North Oakland', 'Oakland'],
-  ['Berkeley & Albany', 'Berkeley'],
-  ['Alameda, Richmond & El Cerrito', 'East Bay'],
-  ['Daly City, South San Francisco & San Mateo', 'Peninsula'],
-  ['San Jose (Japantown, East San Jose, downtown)', 'San Jose'],
-  ['Santa Clara, Sunnyvale & Mountain View', 'South Bay'],
-];
-const SHIFTS = {
-  day: 'daytime places: breakfast counters, diners, bakeries, donut shops, coffee, delis, sandwich shops, lunch counters, dim sum, taquerias',
-  night: 'evening and late-night places: family dinner spots, noodle and dumpling houses, late-night counters, taquerias, dive bars that serve food',
-};
+const AREAS = M.areas;
+const SHIFTS = M.shifts;
 
-const SYSTEM = `You help curate "The Unlisted", a guide to Bay Area hole-in-the-wall food and drink: small, independent places with
+const SYSTEM = `You help curate "The Unlisted", a guide to ${M.label} hole-in-the-wall food and drink: small, independent places with
 character, a story, and one thing worth ordering. Not a popularity list. Rules:
 - Only places that are open now: look for evidence from the last 12 months. Skip anything closed or rumored closed.
 - Independent only: no chains, and no groups with more than 3 locations.
 - Skip upscale, reservation-driven or hype-driven restaurants. Counters, windows, family rooms and old-timers are the target.
 - Mix well-known institutions with places that have barely been written about. Deep cuts are especially valuable.
 - Never use Google Maps or Yelp as a source. Local press, neighborhood blogs, the place's own site and interviews are fine.
-- Search Reddit too (site:reddit.com, e.g. r/AskSF, r/bayarea, r/oakland, r/eastbay, r/SanJose): "what's your favorite
+- Search Reddit too (site:reddit.com, e.g. ${M.subreddits.join(', ')}): "what's your favorite
   hole in the wall in <area>" threads are the best source of deep cuts. Reddit is a lead, not proof it's open: confirm
   with a recent comment or another source. Never quote or name Reddit users.
 - Write the "why" in your own words. Do not copy sentences.
@@ -43,7 +24,8 @@ Return ONLY a JSON array in a \`\`\`json fence, no other text.`;
 const known = () => {
   const names = new Set();
   for (const p of readJson('src/data/places.json', [])) names.add(p.name);
-  for (const p of readJson('data/review/discovered.json', [])) names.add(p.name);
+  for (const p of readJson(M.seeds, [])) names.add(p.name); // this city's seed list is researched separately
+  for (const p of readJson(`${M.reviewDir}/discovered.json`, [])) names.add(p.name);
   return [...names];
 };
 
@@ -81,7 +63,7 @@ if (arg === '--estimate' || !arg) {
   await submitBatch('discovery', reqs, RESERVE);
 } else if (arg === '--collect') {
   const pending = ledger().batches.filter((b) => b.kind === 'discovery' && b.status === 'submitted');
-  const found = readJson('data/review/discovered.json', []);
+  const found = readJson(`${M.reviewDir}/discovered.json`, []);
   const failed = [];
   for (const b of pending) {
     await collectBatch(b.id, (id, msg, err) => {
@@ -90,6 +72,6 @@ if (arg === '--estimate' || !arg) {
       for (const c of list) found.push({ ...c, from: id });
     });
   }
-  writeJson('data/review/discovered.json', found);
-  console.log(`Saved ${found.length} candidates to data/review/discovered.json.${failed.length ? `\nFailed: ${failed.join(', ')}` : ''}`);
+  writeJson(`${M.reviewDir}/discovered.json`, found);
+  console.log(`Saved ${found.length} candidates to ${M.reviewDir}/discovered.json.${failed.length ? `\nFailed: ${failed.join(', ')}` : ''}`);
 }
