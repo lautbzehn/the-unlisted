@@ -8,6 +8,11 @@ const drafts = Object.values(draftFiles).flat().map((d) => ({ ...d, draft: true 
 
 export const FAME = { 'deep-cut': 'Deep cut', 'open-secret': 'Open secret', 'local-legend': 'Local legend' };
 export const WHEN = { morning: 'Morning', midday: 'Midday', evening: 'Evening', late: 'Late' };
+// ['morning', 'midday'] -> "Good for morning and midday"
+export const whenText = (when = []) => {
+  const w = when.map((k) => WHEN[k].toLowerCase());
+  return w.length ? `Good for ${w.length > 1 ? `${w.slice(0, -1).join(', ')} and ${w.at(-1)}` : w[0]}` : '';
+};
 
 // Broad kinds of place, for browsing. Worked out from each place's free-text description ("Donut shop, since 1960"),
 // checked in this order so a "donut shop turned diner" counts as a diner.

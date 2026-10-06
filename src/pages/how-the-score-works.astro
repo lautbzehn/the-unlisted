@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Footer from '../components/Footer.astro';
+import AboutNav from '../components/AboutNav.astro';
 import { MARKS, RADAR } from '../lib/scoring.js';
 import { places } from '../lib/places.js';
 const hasSamples = places.some((p) => p.sample);
@@ -11,18 +12,17 @@ const why = {
   uniqueness: ['Could this exist anywhere else?', 'The only place of its kind scores high. A great version of something common scores lower, however good it is.'],
   atmosphere: ['What does it feel like to be in the room?', 'Light, sound, the people, the clutter. Dim, strange and lived-in beats shiny and new.'],
   story: ['Is there a real reason this place exists?', 'A founder, a building, a recipe, a neighborhood. If we can’t find a story we can stand behind, it earns no points here.'],
-  signature: ['Is there one thing you should order?', 'It’s the “Order this” line on every card. A place can be wonderful and still have no single dish worth a detour.'],
-  radar: ['How few people already know about it?', `Set by the label on every card: a deep cut gets ${RADAR['deep-cut']}, an open secret ${RADAR['open-secret']}, a local legend ${RADAR['local-legend']}. Legends can still score well. They just don’t win by default.`],
+  signature: ['Is there one thing you should order?', 'It’s the “Order” line on every place. A place can be wonderful and still have no single dish worth a detour.'],
+  radar: ['How few people already know about it?', `Set by the label on every place: a deep cut gets ${RADAR['deep-cut']}, an open secret ${RADAR['open-secret']}, a local legend ${RADAR['local-legend']}. Legends can still score well. They just don’t win by default.`],
 };
 const FAME_OPTS = [['deep-cut', 'Deep cut'], ['open-secret', 'Open secret'], ['local-legend', 'Local legend']];
 const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92, radar: RADAR['open-secret'] };
 ---
 <Base title="How the score works — The Unlisted" description="The Hidden Gem Score is an opinion with its work shown: five marks, a visible formula, and honest limits." path="/how-the-score-works/">
   <main id="main" class="doc">
-    <a class="back" href="/explore/">← All doors</a>
-    <p class="label">THE FINE PRINT</p>
-    <h1 class="doc-title">How the score works</h1>
-    <p class="lede">The Hidden Gem Score is an opinion with its work shown. It’s a number from 0 to 100 for how much a place feels like a secret worth keeping, built from five marks you can see on every card.</p>
+    <AboutNav />
+    <h1 class="page-title">How the score works</h1>
+    <p class="lede">The Hidden Gem Score is an opinion with its work shown. It’s a number from 0 to 100 for how much a place feels like a secret worth keeping, built from five marks you can see on every place’s page.</p>
 
     <section class="panel" aria-labelledby="short">
       <h2 id="short">The short version</h2>
@@ -75,7 +75,7 @@ const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92, radar:
           ))}
         </div>
         <div class="calc-result" aria-live="polite">
-          <div class="stamp big-stamp"><small>GEM</small><b id="calc-score">0</b><i>ADMIT ONE</i></div>
+          <div class="stamp big-stamp"><small>Gem</small><b id="calc-score">0</b><i>Visa</i></div>
           <p class="calc-note">Hypothetical place. Not a real score.</p>
         </div>
       </div>
@@ -92,7 +92,7 @@ const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92, radar:
     <h2 class="sect">What the score gets wrong</h2>
     <p class="sub">Said plainly, so you can decide how much to trust it.</p>
     <ul class="limits">
-      <li><b>AI drafts can invent or misremember details.</b> Review catches a lot, not everything. If a card disagrees with the sign on the door, believe the door.</li>
+      <li><b>AI drafts can invent or misremember details.</b> Review catches a lot, not everything. If a page disagrees with the sign on the door, believe the door.</li>
       <li><b>It’s taste, not measurement.</b> Two sensible people would score the same place differently. The aim is to be consistent and open about the rules, not to be objective.</li>
       <li><b>Truly hidden places are the hardest to research.</b> Almost nothing written means thin evidence, so those marks are less certain than the number suggests.</li>
       <li><b>It only knows what’s been written down.</b> Places that are barely online get missed, and those are often run by people and communities who are less online. That’s a real bias and we haven’t solved it.</li>
@@ -102,13 +102,13 @@ const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92, radar:
     </ul>
 
     <section class="panel two" aria-labelledby="strike">
-      <h2 id="strike">Gem Score vs. Your Strike</h2>
-      <p>The Gem Score is our read. <b>Your Strike</b> (one to five matches) is yours. It’s private, it lives on your device, and it never feeds into the Gem Score. Two different opinions, shown side by side on purpose.</p>
+      <h2 id="strike">Gem score vs. your rating</h2>
+      <p>The Gem score is our read. <b>Your rating</b> (one to five stamps, once you’ve stamped a place) is yours. It’s private, it lives on your device, and it never feeds into the Gem score. Two different opinions, shown side by side on purpose.</p>
     </section>
 
     {hasSamples && <p class="sample-note">Some places on the site right now are made-up samples, so their scores demonstrate the system and are not recommendations.</p>}
-    <Footer />
   </main>
+  <Footer />
   <script>
     import { MARKS, gemScore } from '../lib/scoring.js';
     const calc = document.getElementById('calc');

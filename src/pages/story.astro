@@ -1,11 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
 import Footer from '../components/Footer.astro';
+import AboutNav from '../components/AboutNav.astro';
 ---
 <Base title="Our story — The Unlisted" description="Every city keeps a second list. This is it, written down." path="/story/">
   <main id="main" class="doc">
-    <p class="label">Our story</p>
-    <h1 class="doc-title">Every city keeps a second list</h1>
+    <AboutNav />
+    <h1 class="page-title">Every city keeps a second list</h1>
     <div class="prose" style="margin-top:22px">
       <p>It isn’t on any app. It lives in the head of the weirdo you met at a dive bar last weekend, the line cook on a smoke break, and that one cousin who somehow always knows a guy who knows a place.</p>
       <p>That list is the good one. The nine-stool noodle counter where you wait on the sidewalk with a menu. The bakery that’s sold out by nine. The bar that was pouring long before anybody thought to review it.</p>
@@ -14,6 +15,6 @@ import Footer from '../components/Footer.astro';
       <p><strong>Not everything gets in. That’s the point.</strong></p>
       <p>We’re open in the Bay Area, with San Diego next. Know a door we should knock on? <a href="/suggest/">Tell us</a>.</p>
     </div>
-    <Footer />
   </main>
+  <Footer />
 </Base>

@@ -1,0 +1,21 @@
+{
+  "areas": [
+    ["sf", "San Francisco"],
+    ["east-bay", "East Bay"],
+    ["peninsula", "Peninsula"],
+    ["south-bay", "South Bay"],
+    ["north-bay", "North Bay"],
+    ["san-diego", "San Diego"],
+    ["elsewhere-us", "Somewhere else in the US"],
+    ["outside-us", "Outside the US"]
+  ],
+  "interests": [
+    ["breakfast", "Breakfast & diners"],
+    ["coffee", "Coffee & sweets"],
+    ["counter", "Cheap counters & trucks"],
+    ["sitdown", "Sit-down dinners"],
+    ["bar", "Bars"],
+    ["late", "Late night"]
+  ],
+  "sources": ["gate", "footer", "passport", "explore"]
+}

@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Header from '../components/Header.astro';
+import SignupDialog from '../components/SignupDialog.astro';
 interface Props { title: string; description?: string; image?: string; path?: string }
 const { title, description = 'Bay Area hole-in-the-wall guide. No chains, no algorithm.', image, path = '/' } = Astro.props;
 // Absolute URLs are needed for share previews. Set `site` in astro.config.mjs once the domain is known.
@@ -30,16 +31,29 @@ const imageUrl = image ? new URL(image, origin).href : undefined;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=IBM+Plex+Mono:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=IBM+Plex+Mono:wght@500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
     <title>{title}</title>
+    <script is:inline>
+      // Welcome gate: shown once, on a first visit to the front page (or with ?gate=1 to see it again).
+      // Arriving any other way, like a shared link to a place, counts as already in.
+      try {
+        if (location.pathname === '/' && /[?&]gate=1/.test(location.search)) document.documentElement.setAttribute('data-gate', '');
+        else if (!localStorage.getItem('unlisted:entered')) {
+          if (location.pathname === '/' && !location.hash) document.documentElement.setAttribute('data-gate', '');
+          else localStorage.setItem('unlisted:entered', 'link');
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <Header />
     <slot />
+    <SignupDialog />
     <div class="toast" role="status" aria-live="polite" id="toast"></div>
     <script>
       import '../scripts/tips.js';
+      import '../scripts/signup.js';
     </script>
   </body>
 </html>

@@ -3,7 +3,8 @@ import Base from '../layouts/Base.astro';
 import Footer from '../components/Footer.astro';
 import BrowseRow from '../components/BrowseRow.astro';
 import SurpriseDialog from '../components/SurpriseDialog.astro';
-import { places, slim, TYPES, topHoods } from '../lib/places.js';
+import Gate from '../components/Gate.astro';
+import { places, slim, topHoods } from '../lib/places.js';
 
 const MIN = 3; // a row needs at least this many places to be worth showing
 const by = (f) => places.filter(f);
@@ -13,39 +14,26 @@ const NOW_ROWS = [
   { bucket: 'evening', title: 'Dinner doors', sub: 'Where to eat tonight.' },
   { bucket: 'late', title: 'Late-night doors', sub: 'Usually open past 10. Check before you go.' },
 ].map((r) => ({ ...r, list: by((p) => p.when?.includes(r.bucket)) })).filter((r) => r.list.length >= MIN);
+// The second row: deep cuts once there are enough of them, local legends until then.
 const deep = by((p) => p.fame === 'deep-cut');
-const legends = by((p) => p.fame === 'local-legend');
-const TYPE_NOTES = {
-  breakfast: 'Counter stools and bottomless coffee.',
-  coffee: 'Espresso, donuts, pan dulce, ice cream.',
-  counter: 'Order at the window. Eat on the curb.',
-  sitdown: 'Family rooms with a story.',
-  bar: 'Dives and back rooms.',
-};
-const types = Object.entries(TYPES).map(([key, label]) => ({ key, label, n: by((p) => p.type === key).length })).filter((t) => t.n);
+const second = deep.length >= MIN
+  ? { id: 'deep', title: 'Deep cuts', sub: 'Barely written about anywhere. You heard it from someone, not a website.', list: deep, fame: 'deep-cut' }
+  : { id: 'legends', title: 'Local legends', sub: 'Decades in, still the real thing.', list: by((p) => p.fame === 'local-legend'), fame: 'local-legend' };
 const hoods = topHoods(places, 12);
 ---
 <Base title="The Unlisted — Bay Area hole-in-the-wall guide">
+  <Gate />
   <main id="main" class="home">
-    <header class="bill">
-      <div class="crest" aria-hidden="true">U</div>
+    <section class="cover">
       <h1 class="logo">The Unlisted</h1>
-      <p class="sub">Passport · Bay Area · All hours</p>
-      <p class="fine">Places you only hear about from <span class="redact" aria-hidden="true">the cousin who</span><span class="sr-only">someone who</span> knows a guy.</p>
+      <p class="tagline">Places you only hear about from <span class="redact" aria-hidden="true">the cousin who</span><span class="sr-only">someone who</span> knows a guy.</p>
       <div class="cover-cta">
-        <button id="surprise-btn" class="btn-primary big" type="button">Surprise me</button>
-        <a class="btn-ghost big" href="/explore/">Explore all {places.length}</a>
+        <button id="surprise-btn" class="btn btn-primary btn-lg" type="button">Surprise me</button>
+        <a class="btn btn-lg" href="/explore/">Explore all {places.length}</a>
       </div>
-      <p class="cover-note">Surprise me picks one door for you. Your location stays on your device.</p>
-    </header>
+    </section>
 
     <SurpriseDialog />
-
-    <p class="passport-strip" id="passport-strip" hidden>
-      <span class="ps-label">Your passport</span>
-      <a href="/explore/?list=knock"><b data-n="knock">0</b> on your Bucket List</a>
-      <a href="/explore/?list=ledger"><b data-n="ledger">0</b> stamped</a>
-    </p>
 
     {NOW_ROWS.map((r) => (
       <BrowseRow id={`now-${r.bucket}`} bucket={r.bucket} kicker="Right now" title={r.title} sub={r.sub}
@@ -53,50 +41,33 @@ const hoods = topHoods(places, 12);
     ))}
     <noscript><style>.browse[data-bucket='midday'] { display: block !important; }</style></noscript>
 
-    {deep.length >= MIN && (
-      <BrowseRow id="deep" title="Deep cuts" sub="Barely written about anywhere. You heard it from someone, not a website."
-        places={deep} total={deep.length} seeAll="/explore/?fame=deep-cut" />
-    )}
-    {legends.length >= MIN && (
-      <BrowseRow id="legends" title="Local legends" sub="Decades in, on every list, probably a line. Still the real thing."
-        places={legends} total={legends.length} seeAll="/explore/?fame=local-legend" />
+    {second.list.length >= MIN && (
+      <BrowseRow id={second.id} title={second.title} sub={second.sub} places={second.list} total={second.list.length} seeAll={`/explore/?fame=${second.fame}`} />
     )}
 
-    <section class="jump" aria-labelledby="by-type">
-      <h2 id="by-type">By kind of place</h2>
-      <ul class="type-tiles" role="list">
-        {types.map((t) => (
-          <li><a href={`/explore/?type=${t.key}`}><b>{t.label}</b><span>{TYPE_NOTES[t.key]}</span><small>{t.n} {t.n === 1 ? 'place' : 'places'}</small></a></li>
-        ))}
-      </ul>
-    </section>
-
-    <section class="jump" aria-labelledby="by-hood">
-      <h2 id="by-hood">By neighborhood</h2>
+    <section class="browse" aria-labelledby="by-hood">
+      <div class="browse-head">
+        <h2 id="by-hood">Pick a neighborhood</h2>
+        <a class="more-link" href="/explore/">All of them →</a>
+      </div>
       <ul class="hood-chips" role="list">
         {hoods.map((h) => (
-          <li><a href={`/explore/?where=${h.where}`}>{h.label}{h.city !== 'San Francisco' && <small>{h.city}</small>}<span class="n">{h.n}</span></a></li>
+          <li><a href={`/explore/?where=${h.where}`}>{h.label}{h.city !== 'San Francisco' && `, ${h.city}`}<span class="n">{h.n}</span></a></li>
         ))}
       </ul>
-      <a class="see-all" href="/explore/">Every neighborhood on Explore →</a>
     </section>
 
-    <section class="undercard" aria-labelledby="next-on-card">
-      <h2 id="next-on-card">Next stamps in the passport</h2>
-      <div class="cities">
-        <span class="city">San Diego</span><span class="vs" aria-hidden="true">·</span>
-        <span class="city">Austin</span><span class="vs" aria-hidden="true">·</span>
-        <span class="city">New York</span>
-      </div>
-      <p>Bay Area only for now. These three are next.</p>
-      <a class="more" href="/cities/">Vote for the city after that →</a>
+    <section class="next-cities" aria-label="Next cities">
+      <p><strong>Next stamps in the passport:</strong> San Diego, Austin and New York.</p>
+      <a class="more-link" href="/cities/">Vote for the one after →</a>
     </section>
 
     <script type="application/json" id="places-data" set:html={JSON.stringify(slim(places))} />
-    <Footer sample={places.some((p) => p.sample)} />
   </main>
+  <Footer sample={places.some((p) => p.sample)} />
 
   <script>
     import '../scripts/home.js';
+    import '../scripts/gate.js';
   </script>
 </Base>

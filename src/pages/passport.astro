@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import Footer from '../components/Footer.astro';
+import PlaceCard from '../components/PlaceCard.astro';
+import MapSheet from '../components/MapSheet.astro';
+import { places } from '../lib/places.js';
+import { LISTS } from '../lib/glossary.js';
+---
+<Base title="My Passport — The Unlisted" description="Your Bucket List and the places you've stamped. Saved on your device." path="/passport/">
+  <main id="main" class="passport-page">
+    <header class="page-head">
+      <h1 class="page-title">My Passport</h1>
+      <p class="page-sub">Places you want to go, and places you’ve been. Saved on this device only, never sent to us.</p>
+    </header>
+    <div class="seg" role="group" aria-label="Show">
+      <button type="button" data-tab="knock" aria-pressed="true" data-tip={LISTS.bucket.tip}>{LISTS.bucket.name}<span class="n"></span></button>
+      <button type="button" data-tab="ledger" aria-pressed="false" data-tip={LISTS.stamped.tip}>{LISTS.stamped.name}<span class="n"></span></button>
+    </div>
+    <p class="empty" id="empty"></p>
+    <div class="entries">
+      {places.map((p) => <PlaceCard place={p} />)}
+    </div>
+    <MapSheet />
+  </main>
+  <Footer />
+  <script>
+    import '../scripts/passport-page.js';
+  </script>
+</Base>

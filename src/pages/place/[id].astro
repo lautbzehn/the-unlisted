@@ -18,11 +18,11 @@ const description = `${place.kind} in ${place.area}. ${place.story}`;
   path={`/place/${place.id}/`}
 >
   <main id="main" class="place-page">
-    <a class="back" href="/explore/">← All doors</a>
+    <a class="back" href="/explore/">← Explore</a>
     <PlaceCard place={place} variant="detail" />
     <MapSheet />
-    <Footer sample={place.sample} />
   </main>
+  <Footer sample={place.sample} />
   <script>
     import '../../scripts/passport.js';
     import { openSheet } from '../../scripts/mapsheet.js';

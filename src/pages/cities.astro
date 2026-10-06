@@ -8,20 +8,23 @@ const groups = Object.entries(Object.groupBy(CITY_OPTIONS, (c) => c.group));
 ---
 <Base title="Next cities — The Unlisted" description="San Diego, Austin and New York are next. Vote for the city after that." path="/cities/">
   <main id="main" class="doc cities-page">
-    <a class="back" href="/explore/">← All doors</a>
+    <header class="page-head">
+      <h1 class="page-title">Cities</h1>
+      <p class="page-sub">The Bay Area is open. Here’s what comes next, and where you can vote for the city after that.</p>
+    </header>
 
-    <section class="undercard" aria-labelledby="coming" style="margin-top:8px">
-      <h2 id="coming">★ Next on the card ★</h2>
-      <div class="cities" data-coming>
-        <span class="city">San Diego</span><span class="vs" aria-hidden="true">&amp;</span>
-        <span class="city">Austin</span><span class="vs" aria-hidden="true">&amp;</span>
-        <span class="city">New York</span>
+    <section class="coming" aria-labelledby="coming">
+      <h2 id="coming" class="eyebrow">Opening next</h2>
+      <div class="cities">
+        <span>San Diego</span><span class="vs" aria-hidden="true">·</span>
+        <span>Austin</span><span class="vs" aria-hidden="true">·</span>
+        <span>New York</span>
       </div>
-      <p>Already booked. Help us pick the one after that.</p>
+      <p>Already booked. San Diego is in the works.</p>
     </section>
 
-    <h1 class="sect" style="margin-top:44px">The undercard</h1>
-    <p class="sub">Vote for the cities you want next. One vote per city.</p>
+    <h2 class="sect">Vote for the next city</h2>
+    <p class="sub">One vote per city. The most-wanted cities get researched first.</p>
 
     <p class="status" id="status" role="status" aria-live="polite"></p>
     <!-- Cloudflare's bot check. Invisible for most people; it only appears here if it needs a tap. -->
@@ -32,7 +35,7 @@ const groups = Object.entries(Object.groupBy(CITY_OPTIONS, (c) => c.group));
     </ol>
 
     <h2 class="sect">Add a city</h2>
-    <form class="suggest panel" id="suggest" novalidate>
+    <form class="suggest panel form" id="suggest" novalidate>
       <label for="city-pick">Pick a city</label>
       <div class="suggest-row">
         <select id="city-pick" name="slug" required>
@@ -43,13 +46,12 @@ const groups = Object.entries(Object.groupBy(CITY_OPTIONS, (c) => c.group));
             </optgroup>
           ))}
         </select>
-        <button class="btn-primary" type="submit">Add + vote</button>
+        <button class="btn btn-primary" type="submit">Add and vote</button>
       </div>
       <p class="privacy">Cities already on the board are voted on above. We never store your IP address; a scrambled fingerprint keeps it to one vote per city.</p>
     </form>
-
-    <Footer />
   </main>
+  <Footer />
   <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
   <script>
     import '../scripts/cities.js';

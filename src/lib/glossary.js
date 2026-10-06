@@ -19,7 +19,7 @@ export const WHEN_TIPS = {
   late: 'Late: usually open past 10 pm.',
 };
 
-export const SCORE_TIP = 'Gem score, 0 to 100: how much a place feels like a secret worth keeping. Five marks, weighted. Tap “How is this scored?” for the math.';
+export const SCORE_TIP = 'Gem score, 0 to 100: how much a place feels like a secret worth keeping. Five marks, weighted. See “How the score works” for the math.';
 
 export const MARK_TIPS = {
   uniqueness: 'Could this exist anywhere else?',

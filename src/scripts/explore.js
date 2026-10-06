@@ -5,6 +5,10 @@ import { openSheet } from './mapsheet.js';
 import { TIME_LABEL, currentBucket, resolveTime } from './time.js';
 import { KM_TO_MI, distanceKm, getPosition } from './geo.js';
 
+// Bucket List and Stamped moved to the My Passport page; old links still land there.
+const old = new URLSearchParams(location.search).get('list');
+if (['knock', 'ledger'].includes(old)) location.replace(old === 'ledger' ? '/passport/?tab=stamped' : '/passport/');
+
 const PAGE = 20;
 const main = document.querySelector('main.explore');
 const list = document.getElementById('entries');
@@ -22,7 +26,7 @@ const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 // Search looks at the name, neighborhood, kind, story and what to order, matching the start of words
 // ("pho" finds "phở" but not "phone"). Accents and punctuation don't matter.
 const fold = (s) => ` ${s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ')}`;
-const text = new Map(cards.map((c) => [c, fold([...c.querySelectorAll('.e-name, .e-meta, .meta, .story, .order')].map((e) => e.textContent).join(' '))]));
+const text = new Map(cards.map((c) => [c, fold([...c.querySelectorAll('.e-name, .e-meta, .facts, .story, .order')].map((e) => e.textContent).join(' '))]));
 
 // ---- Filter state (from the address bar) ----
 const params = new URLSearchParams(location.search);
@@ -30,8 +34,7 @@ const pick = (key, ok, fallback) => (ok(params.get(key)) ? params.get(key) : fal
 const hasOption = (sel) => (v) => v !== null && [...sel.options].some((o) => o.value === v);
 const f = {
   q: params.get('q') ?? '',
-  list: pick('list', (v) => ['knock', 'ledger'].includes(v), 'all'),
-  time: pick('time', (v) => ['now', 'morning', 'midday', 'evening', 'late'].includes(v), 'any'),
+  time: pick('time', hasOption(selects.time), 'any'),
   type: pick('type', hasOption(selects.type), ''),
   where: pick('where', hasOption(selects.where), ''),
   fame: pick('fame', hasOption(selects.fame), ''),
@@ -45,13 +48,14 @@ let words = []; // the search box, split into words
 
 const tests = {
   q: (c) => words.every((w) => text.get(c).includes(` ${w}`)),
-  list: (c) => f.list === 'all' || c.dataset.status === f.list,
   time: (c) => { const b = resolveTime(f.time); return !b || c.dataset.when.split(' ').includes(b); },
   type: (c) => !f.type || c.dataset.type === f.type,
   where: (c) => !f.where || c.dataset.where === f.where || c.dataset.where.startsWith(`${f.where}/`),
   fame: (c) => !f.fame || c.dataset.fame === f.fame,
 };
 const matches = (c) => Object.values(tests).every((t) => t(c));
+const ANY = { time: 'any', type: '', where: '', fame: '' }; // each filter's "no filter" choice
+const activeFilters = () => Object.keys(ANY).filter((k) => f[k] !== ANY[k]).length;
 // How many places a choice would show, keeping every other filter as it is.
 function countIf(key, value) {
   const keep = f[key];
@@ -89,40 +93,26 @@ function render({ refilter = true } = {}) {
   const rest = hits.length - visible;
   moreBtn.hidden = rest <= 0;
   moreBtn.textContent = `Show ${Math.min(PAGE, rest)} more`;
-  const active = ['type', 'where', 'fame'].filter((k) => f[k]).length + (f.time !== 'any') + !!f.q.trim() + (f.list !== 'all');
   const paged = rest > 0 && !(view === 'map' && !wide.matches) ? `, showing ${visible}` : ''; // the map shows them all
   $('[data-result]').textContent = hits.length === cards.length
     ? `${cards.length} places${paged}`
     : `${hits.length} of ${cards.length} places${paged}`;
-  $('[data-clear]').hidden = !active;
+  const active = activeFilters();
+  $('[data-clear]').hidden = !active && !f.q.trim();
   const fcount = $('[data-fcount]');
-  const panelActive = ['type', 'where', 'fame'].filter((k) => f[k]).length + (f.time !== 'any');
-  fcount.hidden = !panelActive;
-  fcount.textContent = panelActive;
+  fcount.hidden = !active;
+  fcount.textContent = active;
 
-  // empty states
   empty.classList.toggle('show', !hits.length);
-  const listEmpty = f.list !== 'all' && !cards.some((c) => c.dataset.status === f.list);
-  empty.textContent = hits.length ? ''
-    : listEmpty && f.list === 'knock' ? 'Your Bucket List is empty. Open any place and tap “+ Bucket List” to save it.'
-    : listEmpty && f.list === 'ledger' ? 'No stamps yet. Go somewhere, then tap “Stamp it”.'
-    : 'No doors match all of that. Try fewer filters.';
+  empty.textContent = hits.length ? '' : 'No doors match all of that. Try fewer filters.';
 
-  // live counts on every choice
-  $$('.tab[data-filter]').forEach((t) => {
-    t.setAttribute('aria-pressed', t.dataset.filter === f.list);
-    t.querySelector('.n').textContent = `(${countIf('list', t.dataset.filter)})`;
-  });
-  $$('[data-time]').forEach((b) => {
-    b.setAttribute('aria-pressed', b.dataset.time === f.time);
-    b.querySelector('.n').textContent = `(${countIf('time', b.dataset.time)})`;
-  });
-  $('.now-label').textContent = TIME_LABEL[currentBucket()].toLowerCase();
-  for (const key of ['type', 'where', 'fame']) {
+  // each choice in the dropdowns shows how many places it would leave
+  for (const key of Object.keys(ANY)) {
     for (const o of selects[key].options) {
-      if (!o.value) continue;
+      if (o.value === ANY[key]) continue;
       const n = countIf(key, o.value);
-      o.textContent = `${o.dataset.label} (${n})`;
+      const label = o.value === 'now' ? `Right now (${TIME_LABEL[currentBucket()].toLowerCase()})` : o.dataset.label;
+      o.textContent = `${label} (${n})`;
       o.disabled = !n && o.value !== f[key];
     }
     selects[key].value = f[key];
@@ -137,7 +127,6 @@ function render({ refilter = true } = {}) {
 function writeUrl() {
   const p = new URLSearchParams();
   if (f.q.trim()) p.set('q', f.q.trim());
-  if (f.list !== 'all') p.set('list', f.list);
   if (f.time !== 'any') p.set('time', f.time);
   for (const k of ['type', 'where', 'fame']) if (f[k]) p.set(k, f[k]);
   if (f.sort === 'name') p.set('sort', 'name');
@@ -217,14 +206,10 @@ for (const [key, sel] of Object.entries(selects)) {
 }
 
 main.addEventListener('click', (e) => {
-  const tab = e.target.closest('.tab[data-filter]');
-  if (tab) { f.list = tab.dataset.filter; refresh(); return; }
-  const tb = e.target.closest('[data-time]');
-  if (tb) { f.time = tb.dataset.time; refresh(); return; }
   const vb = e.target.closest('button[data-view]');
   if (vb) { setView(vb.dataset.view); return; }
   if (e.target.closest('[data-clear]')) {
-    Object.assign(f, { q: '', list: 'all', time: 'any', type: '', where: '', fame: '' });
+    Object.assign(f, { q: '' }, ANY);
     refresh();
     return;
   }

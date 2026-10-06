@@ -1,4 +1,4 @@
-import { getState, update, toast, onChange } from './passport.js';
+import { getState, update, toast } from './passport.js';
 import { initSurprise } from './surprise.js';
 import { currentBucket } from './time.js';
 
@@ -26,18 +26,6 @@ for (const row of document.querySelectorAll('.browse:not([hidden])')) {
     kept++;
   }
 }
-
-// Your passport at a glance, only once there's something in it.
-const strip = document.getElementById('passport-strip');
-function paintStrip(state) {
-  const n = { knock: 0, ledger: 0 };
-  for (const s of Object.values(state)) if (n[s.status] !== undefined) n[s.status]++;
-  strip.hidden = !n.knock && !n.ledger;
-  strip.querySelector('[data-n=knock]').textContent = n.knock;
-  strip.querySelector('[data-n=ledger]').textContent = n.ledger;
-}
-onChange(paintStrip);
-paintStrip(getState());
 
 // Arrow buttons on the sideways rows, for mouse users (touch and trackpads just swipe).
 if (matchMedia('(hover: hover) and (pointer: fine)').matches) {

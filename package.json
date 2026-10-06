@@ -14,12 +14,12 @@
     "prebuild": "node scripts/copy-maplibre-worker.mjs",
     "deploy": "npm run build && wrangler deploy",
     "cities": "node scripts/cities.mjs",
-    "inbox": "node scripts/inbox.mjs"
+    "inbox": "node scripts/inbox.mjs",
+    "subscribers": "node scripts/subscribers.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",
-    "@fontsource/big-shoulders-display": "^5.3.0",
-    "@fontsource/playfair-display": "^5.3.0",
+    "@fontsource/archivo": "^5.3.0",
     "@fontsource/source-serif-4": "^5.3.0",
     "@resvg/resvg-js": "^2.6.2",
     "astro": "^7.3.5",

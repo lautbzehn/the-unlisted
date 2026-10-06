@@ -6,12 +6,12 @@ interface Props {
     story: string; order: string; draft?: boolean; reviewFlags?: string[]; fame?: string; when?: string[];
     practical?: string[]; hours?: string | null; city: string; type: string; where: string; lat?: number; lng?: number;
   };
-  // 'entry': one line in the Explore list that opens in place. 'detail': the full page for one place.
+  // 'entry': one line in a list that opens in place. 'detail': the full page for one place.
   variant?: 'entry' | 'detail';
 }
 import PlaceBody from './PlaceBody.astro';
-import { FAME, TYPES } from '../lib/places.js';
-import { SCORE_TIP } from '../lib/glossary.js';
+import { FAME, TYPES, whenText } from '../lib/places.js';
+import { SCORE_TIP, FAME_TIPS } from '../lib/glossary.js';
 const { place, variant = 'entry' } = Astro.props;
 const where = place.city === 'San Francisco' ? place.area : `${place.area}, ${place.city}`;
 // A Google Maps search link: only a link out, no Google data is stored or shown here.
@@ -25,37 +25,38 @@ const data = {
   'data-area': where, 'data-when': place.when?.join(' ') ?? '', 'data-fame': place.fame ?? '', 'data-type': place.type,
   'data-where': place.where, 'data-score': place.score, 'data-lat': place.lat, 'data-lng': place.lng,
 };
+const when = whenText(place.when);
 ---
 {variant === 'entry' ? (
   <article class="card entry" {...data}>
     <details>
       <summary>
+        <span class="e-score"><span class="sr-only">Gem score </span>{place.score}<small aria-hidden="true">gem</small></span>
         <span class="e-name">{place.name}</span>
-        <span class="e-meta">{where} · {TYPES[place.type]}</span>
-        <span class="e-score"><span class="sr-only">Gem score </span>{place.score}</span>
-        <span class="e-tags">
-          {(place.draft || place.sample) && <span class="e-tag draft">{place.draft ? 'Draft' : 'Sample'}</span>}
-          <span class="e-tag status" data-status-tag></span>
-          <span class="e-dist" data-dist></span>
-          {place.fame && <span class:list={['chip fame', place.fame]}>{FAME[place.fame]}</span>}
+        <span class="e-meta">{[where, TYPES[place.type], FAME[place.fame]].filter(Boolean).join(' · ')}</span>
+        <span class="e-status">
+          <span data-status-tag></span><span data-dist></span>{(place.draft || place.sample) && <span>{place.draft ? 'Draft' : 'Sample'}</span>}
         </span>
         <span class="e-chev" aria-hidden="true"></span>
       </summary>
       <div class="e-body">
-        <p class="meta">{where} · {place.kind}</p>
         <PlaceBody place={place} google={google} mrz={mrz} />
       </div>
     </details>
   </article>
 ) : (
   <article class="card detail reveal" {...data}>
-    {place.sample && <span class="sample-flag">Sample — not a real place</span>}
-    {place.draft && <span class="sample-flag draft-flag">Draft — not yet reviewed</span>}
-    <div class="meta">{where} · {place.kind}</div>
+    {place.sample && <span class="sample-flag">Sample, not a real place</span>}
+    {place.draft && <span class="sample-flag">Draft, not yet reviewed</span>}
+    <p class="place-meta">{where} · {place.kind}</p>
     <h1>{place.name}</h1>
     <div class="stamp" tabindex="0" data-tip={SCORE_TIP} aria-label={`Gem score ${place.score} out of 100`}>
-      <small aria-hidden="true">GEM</small><b aria-hidden="true">{place.score}</b><i aria-hidden="true">VISA</i>
+      <small aria-hidden="true">Gem</small><b aria-hidden="true">{place.score}</b><i aria-hidden="true">Visa</i>
     </div>
+    <p class="labels">
+      {place.fame && <span tabindex="0" data-tip={FAME_TIPS[place.fame]}>{FAME[place.fame]}</span>}
+      {place.fame && when && ' · '}{when}
+    </p>
     <PlaceBody place={place} google={google} mrz={mrz} detail />
   </article>
 )}

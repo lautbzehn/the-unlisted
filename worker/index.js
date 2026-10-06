@@ -4,11 +4,16 @@
 //   POST /api/cities/suggest   { slug, token }          a city from the fixed list (src/data/city-options.json)
 //   POST /api/contact          { name?, email?, topic, message, token }      saved privately + emailed to Dan
 //   POST /api/places/suggest   { metro, name, area?, why, link?, token }   saved privately + emailed to Dan
+//   POST /api/subscribe        { email, name?, area?, interests?, source, token }   newsletter list (private)
 // Spam protection: every POST needs a Cloudflare Turnstile token. People are identified only by a keyed
 // hash of their IP address (the address itself is never stored).
 
 import CITY_OPTIONS from '../src/data/city-options.json';
+import SIGNUP from '../src/data/signup-options.json';
 const OPTIONS = new Map(CITY_OPTIONS.map((c) => [c.slug, c]));
+const AREAS = new Set(SIGNUP.areas.map(([k]) => k));
+const INTERESTS = new Set(SIGNUP.interests.map(([k]) => k));
+const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 
 const json = (data, status = 200) =>
   new Response(JSON.stringify(data), {
@@ -109,7 +114,7 @@ async function api(request, env, path) {
     const topics = ['hello', 'correction', 'closed', 'owner', 'other'];
     const msg = { name: clip(body.name, 80), email: clip(body.email, 120), topic: topics.includes(body.topic) ? body.topic : 'other', message: clipText(body.message, 2000) };
     if (msg.message.length < 2) return json({ error: 'Please write a message.' }, 400);
-    if (msg.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(msg.email)) return json({ error: 'That email address doesn’t look right.' }, 400);
+    if (msg.email && !EMAIL_RE.test(msg.email)) return json({ error: 'That email address doesn’t look right.' }, 400);
     if (await overCap(env, voter, 'contact', 3)) return json({ error: 'That’s a lot of messages for one day. Try again tomorrow.' }, 429);
     await env.DB.prepare('INSERT INTO messages (name, email, topic, message) VALUES (?, ?, ?, ?)').bind(msg.name || null, msg.email || null, msg.topic, msg.message).run();
     await notify(env, `The Unlisted: new message (${msg.topic})`, `From: ${msg.name || '(no name)'}\nReply to: ${msg.email || '(no email given)'}\nTopic: ${msg.topic}\n\n${msg.message}`);
@@ -127,6 +132,25 @@ async function api(request, env, path) {
     await env.DB.prepare('INSERT INTO place_suggestions (metro, name, area, why, link) VALUES (?, ?, ?, ?, ?)').bind(tip.metro, tip.name, tip.area || null, tip.why, tip.link || null).run();
     await notify(env, `The Unlisted: place tip for ${metros[tip.metro]}`, `${tip.name}${tip.area ? ` (${tip.area})` : ''}\n${metros[tip.metro]}\n\nWhy: ${tip.why}\n${tip.link ? `Link: ${tip.link}` : ''}`);
     return json({ message: 'Got it.' });
+  }
+
+  if (path === '/api/subscribe') {
+    const sub = {
+      email: clip(body.email, 254).toLowerCase(),
+      name: clip(body.name, 60),
+      area: AREAS.has(body.area) ? body.area : null,
+      interests: [...new Set([].concat(body.interests ?? []))].filter((k) => INTERESTS.has(k)).join(',') || null,
+      source: SIGNUP.sources.includes(body.source) ? body.source : 'footer',
+    };
+    if (!EMAIL_RE.test(sub.email)) return json({ error: 'That email address doesn’t look right.' }, 400);
+    if (await overCap(env, voter, 'subscribe', 5)) return json({ error: 'That’s a lot of sign-ups for one day. Try again tomorrow.' }, 429);
+    // Signing up again just updates the answers (and re-subscribes). The reply is the same either way,
+    // so the form can't be used to check whether someone is on the list.
+    await env.DB.prepare(`INSERT INTO subscribers (email, name, area, interests, source) VALUES (?, ?, ?, ?, ?)
+      ON CONFLICT (email) DO UPDATE SET name = coalesce(excluded.name, name), area = coalesce(excluded.area, area),
+        interests = coalesce(excluded.interests, interests), updated_at = datetime('now'), unsubscribed_at = NULL`)
+      .bind(sub.email, sub.name || null, sub.area, sub.interests, sub.source).run();
+    return json({ message: 'You’re on the list.' });
   }
 
   return json({ error: 'Not found' }, 404);

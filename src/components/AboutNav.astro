@@ -1,0 +1,8 @@
+---
+// The tab bar shared by the About pages, so it's always clear which one you're on.
+import { ABOUT } from '../lib/nav.js';
+const path = Astro.url.pathname;
+---
+<nav class="section-nav" aria-label="About">
+  {ABOUT.map((it) => <a href={it.href} aria-current={path === it.href ? 'page' : undefined}>{it.label}</a>)}
+</nav>

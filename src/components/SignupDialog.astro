@@ -1,0 +1,40 @@
+---
+// The optional email sign-up. Opens once after the welcome gate, and any time from "Get email updates".
+// Area and interests are optional and help decide which places and cities to cover next.
+import SIGNUP from '../data/signup-options.json';
+import { TURNSTILE_SITE_KEY } from '../lib/config.js';
+---
+<dialog id="signup" class="modal signup" aria-labelledby="su-title">
+  <div class="modal-card">
+    <button class="modal-x" type="button" data-close aria-label="Close">×</button>
+    <p class="eyebrow">Optional. Takes ten seconds.</p>
+    <h2 id="su-title">Get the next door first</h2>
+    <p class="modal-lede">New places, new cities, and the odd story from behind the counter. About once a month. Unsubscribe anytime.</p>
+    <form class="form" data-endpoint="/api/subscribe" novalidate>
+      <label>Email<input name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email" /></label>
+      <div class="row2">
+        <label>First name <span class="opt">(optional)</span><input name="name" maxlength="60" autocomplete="given-name" /></label>
+        <label>Where do you usually eat? <span class="opt">(optional)</span>
+          <select name="area">
+            <option value="">Choose one</option>
+            {SIGNUP.areas.map(([v, l]) => <option value={v}>{l}</option>)}
+          </select>
+        </label>
+      </div>
+      <fieldset class="checks">
+        <legend>What are you usually hunting for? <span class="opt">(optional, pick any)</span></legend>
+        <div class="check-grid">
+          {SIGNUP.interests.map(([v, l]) => <label class="check"><input type="checkbox" name="interests" value={v} />{l}</label>)}
+        </div>
+      </fieldset>
+      <input type="hidden" name="source" value="footer" />
+      <div class="bot-check" data-sitekey={TURNSTILE_SITE_KEY}></div>
+      <div class="actions-row">
+        <button class="btn btn-primary" type="submit">Count me in</button>
+        <button class="btn-text" type="button" data-close>No thanks</button>
+      </div>
+      <p class="status" role="status" aria-live="polite"></p>
+      <p class="privacy">Used only to email you and to learn what readers want more of. Never sold or shared. <a href="/privacy/">Privacy</a></p>
+    </form>
+  </div>
+</dialog>

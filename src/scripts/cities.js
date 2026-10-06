@@ -55,12 +55,12 @@ function render({ board: cities }) {
   board.replaceChildren(...cities.map((c, i) => {
     const li = document.createElement('li');
     li.className = 'board-row';
-    const rank = document.createElement('span'); rank.className = 'rank'; rank.textContent = String(i + 1).padStart(2, '0');
+    const rank = document.createElement('span'); rank.className = 'rank'; rank.textContent = String(i + 1);
     const name = document.createElement('span'); name.className = 'board-name'; name.textContent = c.name;
     const region = document.createElement('span'); region.className = 'board-region'; region.textContent = c.region ?? '';
     const votes = document.createElement('span'); votes.className = 'board-votes'; votes.textContent = `${c.votes} ${c.votes === 1 ? 'vote' : 'votes'}`;
     const btn = document.createElement('button');
-    btn.className = 'btn-ghost'; btn.type = 'button'; btn.dataset.slug = c.slug;
+    btn.className = 'btn'; btn.type = 'button'; btn.dataset.slug = c.slug;
     const done = mine.has(c.slug);
     btn.textContent = done ? 'Voted ✓' : 'Vote';
     btn.setAttribute('aria-label', done ? `You voted for ${c.name}` : `Vote for ${c.name}, ${c.region}`);

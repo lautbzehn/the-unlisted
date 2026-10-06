@@ -3,7 +3,7 @@
 // Any page that shows places loads this; it keeps every card and ticket on the page in sync.
 const KEY = 'unlisted:v1';
 const LABELS = ['Not rated', 'Meh', 'Fine', 'Good', 'Great', 'Legendary'];
-const STATUS_TAG = { knock: 'Bucket List', ledger: 'Stamped' };
+const STATUS_TAG = { knock: 'On your list', ledger: 'Stamped ✓' };
 
 const load = () => {
   try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
@@ -29,8 +29,12 @@ function paintCard(card) {
   const s = state[card.dataset.id] || {};
   const status = s.status || 'none';
   card.dataset.status = status;
-  card.querySelector('[data-action=knock]').setAttribute('aria-pressed', status === 'knock');
-  card.querySelector('[data-action=ledger]').setAttribute('aria-pressed', status === 'ledger');
+  const knock = card.querySelector('[data-action=knock]');
+  const ledger = card.querySelector('[data-action=ledger]');
+  knock.setAttribute('aria-pressed', status === 'knock');
+  knock.textContent = status === 'knock' ? '✓ On your Bucket List' : '+ Bucket List';
+  ledger.setAttribute('aria-pressed', status === 'ledger');
+  ledger.textContent = status === 'ledger' ? '✓ Stamped' : 'Stamp it';
   const tag = card.querySelector('[data-status-tag]');
   if (tag) tag.textContent = STATUS_TAG[status] ?? '';
   const strike = s.strike || 0;
@@ -48,6 +52,7 @@ function paint() {
   document.querySelectorAll('.card[data-id]').forEach(paintCard);
   document.querySelectorAll('.ticket[data-id]').forEach((t) => { t.dataset.status = state[t.dataset.id]?.status || 'none'; });
   listeners.forEach((fn) => fn(state));
+  dispatchEvent(new Event('passport:change')); // the header's My Passport count
 }
 
 export function update(id, patch) {

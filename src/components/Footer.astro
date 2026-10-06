@@ -1,14 +1,16 @@
 ---
-import { NAV } from '../lib/nav.js';
+import { NAV, ABOUT } from '../lib/nav.js';
 interface Props { sample?: boolean }
 const { sample = false } = Astro.props;
-const about = NAV.find((g) => g.id === 'about').items;
 ---
-<footer>
+<footer class="site-footer">
+  <div class="foot-signup">
+    <p>Get the next door first<span>New places and new cities, about once a month.</span></p>
+    <button class="btn" type="button" data-signup="footer">Get email updates</button>
+  </div>
   <nav aria-label="Footer">
-    {about.map((it) => <a href={it.href}>{it.label}</a>)}
-    <a href="/suggest/">Suggest a place</a>
+    {NAV.slice(0, 3).map((it) => <a href={it.href}>{it.label}</a>)}
+    {ABOUT.map((it) => <a href={it.href}>{it.label}</a>)}
   </nav>
-  <p>Human curated · AI enriched{sample ? ' · Sample data shown' : ''}</p>
-  <p>Place &amp; map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a></p>
+  <p>Human curated, AI enriched.{sample ? ' Some sample data shown.' : ''} Place and map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>.</p>
 </footer>

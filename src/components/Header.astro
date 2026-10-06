@@ -1,54 +1,36 @@
 ---
-import { NAV, sectionFor } from '../lib/nav.js';
+import { NAV, ABOUT, sectionFor } from '../lib/nav.js';
 const current = sectionFor(Astro.url.pathname);
+const here = (href) => (Astro.url.pathname === href ? 'page' : undefined);
 ---
 <header class="site-header">
   <div class="bar">
-    <a class="brand" href="/" aria-label="The Unlisted, home"><b>The Unlisted</b><small>No. 0001</small></a>
+    <a class="brand" href="/" aria-label="The Unlisted, home">The Unlisted</a>
     <nav class="nav" aria-label="Main">
-      {NAV.map((g) => (
-        <div class:list={['nav-group', { current: g.id === current }]}>
-          <button type="button" aria-expanded="false" aria-controls={`menu-${g.id}`}>{g.label}</button>
-          <ul class="menu" id={`menu-${g.id}`} hidden>
-            {g.items.map((it) => <li><a href={it.href}>{it.label}<small>{it.hint}</small></a></li>)}
-          </ul>
-        </div>
+      {NAV.map((it) => (
+        <a href={it.href} aria-current={it.id === current ? 'page' : undefined}>
+          {it.label}{it.id === 'passport' && <span class="count" data-passport-count hidden></span>}
+        </a>
       ))}
     </nav>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
   </div>
 </header>
 <!-- Outside the header on purpose: the header's blur would otherwise trap this full-screen menu inside it. -->
-<div class="mobile-menu" id="mobile-menu" hidden>
-  {NAV.map((g) => (
-    <section>
-      <h2>{g.label}</h2>
-      <ul>{g.items.map((it) => <li><a href={it.href}>{it.label}<small>{it.hint}</small></a></li>)}</ul>
-    </section>
-  ))}
-  </div>
+<nav class="mobile-menu" id="mobile-menu" aria-label="Menu" hidden>
+  <ul class="mm-main">
+    <li><a href="/" aria-current={here('/')}>Home</a></li>
+    {NAV.map((it) => (
+      <li><a href={it.href} aria-current={it.id === current ? 'page' : undefined}>{it.label}{it.id === 'passport' && <span class="count" data-passport-count hidden></span>}</a></li>
+    ))}
+  </ul>
+  <ul class="mm-more">
+    {ABOUT.slice(1).map((it) => <li><a href={it.href} aria-current={here(it.href)}>{it.label}</a></li>)}
+    <li><button type="button" data-signup="footer">Get email updates</button></li>
+  </ul>
+</nav>
 
 <script>
-  // Dropdowns: open on click or hover (desktop), close on outside click, Escape, or picking a link.
-  const groups = [...document.querySelectorAll('.nav-group')];
-  const close = (except) => groups.forEach((g) => {
-    if (g === except) return;
-    g.querySelector('button').setAttribute('aria-expanded', 'false');
-    g.querySelector('.menu').hidden = true;
-  });
-  const open = (g) => { close(g); g.querySelector('button').setAttribute('aria-expanded', 'true'); g.querySelector('.menu').hidden = false; };
-  const hoverable = matchMedia('(hover: hover)').matches;
-  for (const g of groups) {
-    const btn = g.querySelector('button');
-    btn.addEventListener('click', () => (btn.getAttribute('aria-expanded') === 'true' ? close() : open(g)));
-    if (hoverable) {
-      let t;
-      g.addEventListener('mouseenter', () => { clearTimeout(t); open(g); });
-      g.addEventListener('mouseleave', () => { t = setTimeout(() => close(), 180); });
-    }
-  }
-  document.addEventListener('click', (e) => { if (!e.target.closest('.nav-group')) close(); });
-
   // Phone menu
   const toggle = document.querySelector('.menu-toggle');
   const sheet = document.getElementById('mobile-menu');
@@ -59,11 +41,18 @@ const current = sectionFor(Astro.url.pathname);
     document.documentElement.style.overflow = on ? 'hidden' : '';
   };
   toggle.addEventListener('click', () => setSheet(sheet.hidden));
-  sheet.addEventListener('click', (e) => { if (e.target.closest('a')) setSheet(false); });
-
+  sheet.addEventListener('click', (e) => { if (e.target.closest('a, button')) setSheet(false); });
   document.addEventListener('keydown', (e) => {
-    if (e.key !== 'Escape') return;
-    close();
-    if (!sheet.hidden) { setSheet(false); toggle.focus(); }
+    if (e.key === 'Escape' && !sheet.hidden) { setSheet(false); toggle.focus(); }
   });
+
+  // How many places are in your passport, next to "My Passport". Read straight from this device's storage.
+  const paintCount = () => {
+    let n = 0;
+    try { n = Object.values(JSON.parse(localStorage.getItem('unlisted:v1')) || {}).filter((s) => s.status).length; } catch {}
+    document.querySelectorAll('[data-passport-count]').forEach((el) => { el.hidden = !n; el.textContent = n; });
+  };
+  paintCount();
+  addEventListener('storage', paintCount);
+  addEventListener('passport:change', paintCount);
 </script>
