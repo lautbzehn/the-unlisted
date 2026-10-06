@@ -1,0 +1,177 @@
+[
+  {
+    "id": "the-roost",
+    "name": "The Roost",
+    "reason": "Poor fit: mainly a catering company with a cafe, from the team behind fine-dining Merchant Roots (since 2017). Not a hole-in-the-wall with its own story."
+  },
+  {
+    "id": "bayside-market-deli",
+    "name": "Bayside Market Deli",
+    "reason": "Poor fit: a general corner market with a salad bar and made-to-order sandwiches; no story, no distinct dish, and no recent press."
+  },
+  {
+    "id": "tian-jin-dumplings",
+    "name": "Tian Jin Dumplings",
+    "reason": "Closed: The Infatuation marks it permanently closed."
+  },
+  {
+    "id": "suzu-noodle-house",
+    "name": "Suzu Noodle House",
+    "reason": "Poor fit: small mall ramen shop inside Japan Center with no story or standout dish in any source. Address in discovery (1825 Post St) was also wrong; it's at 1581 Webster St #105."
+  },
+  {
+    "id": "la-calaca-loca-taqueria",
+    "name": "La Calaca Loca Taqueria",
+    "reason": "Poor fit: a solid single-location taqueria with premium-sourced meats but no story or standout dish in any source; nothing sets it apart in Temescal."
+  },
+  {
+    "id": "nem-nuong-nha-trang",
+    "name": "Nem Nuong Nha Trang",
+    "reason": "Poor fit: opened in 2025 and already viral (hour-plus waits, 1,400 rolls a day per the Chronicle). Hype-driven rather than a hole-in-the-wall; revisit later."
+  },
+  {
+    "id": "rice-junky",
+    "name": "Rice Junky",
+    "reason": "Poor fit: a trendy, youth-oriented Korean pocha with tablet ordering and robot servers. No story, not a hole-in-the-wall."
+  },
+  {
+    "id": "soma-inn-cafe",
+    "name": "SoMa Inn Cafe",
+    "reason": "Poor fit: a generic breakfast-and-lunch cafe with no press, story or standout dish beyond listing sites."
+  },
+  {
+    "id": "that-luang-kitchen",
+    "name": "That Luang Kitchen",
+    "reason": "Closed: listings show it permanently closed as of late December 2025."
+  },
+  {
+    "id": "roger-s-deli-and-donuts",
+    "name": "Roger's Deli & Donuts",
+    "reason": "Poor fit: a deli and donut counter with no press, story or standout item beyond listing sites; address also conflicts (209 vs 295 E Middlefield)."
+  },
+  {
+    "id": "star-chaat-cuisine",
+    "name": "Star Chaat Cuisine",
+    "reason": "Poor fit: a general North/South Indian restaurant with no story or press; only listing sites. The South Bay has stronger chaat options."
+  },
+  {
+    "id": "rice-roll-express",
+    "name": "Rice Roll Express",
+    "reason": "Poor fit: opened June 2024 and went viral on TikTok (25-minute lines). Hype-driven rather than a hole-in-the-wall; revisit later."
+  },
+  {
+    "id": "brickhouse-cafe",
+    "name": "Brickhouse Cafe",
+    "reason": "Poor fit: a ballpark-area bar and grill from 2000 with a gastropub menu (Wagyu burgers, craft cocktails). No hole-in-the-wall character in any source."
+  },
+  {
+    "id": "udon-mugizo",
+    "name": "Udon Mugizo",
+    "reason": "Poor fit: a Japan Center mall udon shop with 1-2 hour waits; popular rather than a hole-in-the-wall, and no story found."
+  },
+  {
+    "id": "tao-yuen-pastry",
+    "name": "Tao Yuen Pastry",
+    "reason": "Thin sourcing: only directory listings and customer reviews; no press or own site. Takeout dim sum bakery; revisit with a visit."
+  },
+  {
+    "id": "koryo-sushi",
+    "name": "Koryo Sushi",
+    "reason": "Poor fit: a strip-mall late-night sushi/Korean BBQ/poke spot with no story or standout dish in reliable sources."
+  },
+  {
+    "id": "hing-lung-company",
+    "name": "Hing Lung Company",
+    "reason": "Closed: left 1261 Stockton St in April 2024 after rent talks failed; the Cheung family now runs Quack House (Tenderloin) and Go Duck Yourself (Bernal Heights)"
+  },
+  {
+    "id": "tropical-hut",
+    "name": "Tropical Hut",
+    "reason": "Could not confirm a Tropical Hut at 1021 Geneva Ave; searches only return the Philippine fast-food chain and a New Jersey group"
+  },
+  {
+    "id": "kezar-bar-and-restaurant",
+    "name": "Kezar Bar & Restaurant",
+    "reason": "Closed during COVID; Bacon Bacon's Jim Angelus reopened the space as Cole Valley Tavern in April 2022"
+  },
+  {
+    "id": "cam-huong-cafe",
+    "name": "Cam Huong Cafe",
+    "reason": "Closed: the 920 Webster St original shut in 2018 after 33 years; the family's Eastlake shop (702 International Blvd) may be a substitute"
+  },
+  {
+    "id": "tamarindo-antojeria",
+    "name": "Tamarindo Antojeria",
+    "reason": "Closed at the end of 2019; the Dominguez family has since opened Amado in Burlingame"
+  },
+  {
+    "id": "el-mono",
+    "name": "El Mono",
+    "reason": "Moved from 10264 to 11720 San Pablo Ave and now has a Berkeley branch; only listing and own-site sources, nothing distinctive to say"
+  },
+  {
+    "id": "tselogs",
+    "name": "Tselogs",
+    "reason": "Could not confirm current location or that it is open: listings show 11 San Pedro Rd, 6055, 6192 and 6860 Mission St and a Tenderloin branch, and one marks it closed"
+  },
+  {
+    "id": "lee-s-kitchen",
+    "name": "Lee's Kitchen",
+    "reason": "Listing sources only; the discovery source (a Santa Clara hole-in-the-wall roundup) does not mention it"
+  },
+  {
+    "id": "queen-house",
+    "name": "Queen House",
+    "reason": "Only own-site marketing copy and listings; no editorial source to build a story on"
+  },
+  {
+    "id": "cheung-hing",
+    "name": "Cheung Hing",
+    "reason": "Listing sources only; the candidate's own-site link is for a Cheung Hing at 6255 Geary Blvd, and its tie to the Noriega shop is unclear"
+  },
+  {
+    "id": "chez-maman-east",
+    "name": "Chez Maman East",
+    "reason": "Generic neighborhood French bistro with only a 2018 unrated Infatuation blurb; one of two Chez Maman locations, no story"
+  },
+  {
+    "id": "luen-fat-bakery",
+    "name": "Luen Fat Bakery",
+    "reason": "Listing sources only (cash-only Vietnamese-Chinese bakery, listed as Pho Luen Fat); nothing to build a story on"
+  },
+  {
+    "id": "scolari-s-good-eats",
+    "name": "Scolari's Good Eats",
+    "reason": "Listing and hotel-blog sources only; a 2010 burger counter whose main distinction is a Diners, Drive-Ins and Dives spot"
+  },
+  {
+    "id": "paik-s-noodle",
+    "name": "Paik's Noodle",
+    "reason": "Chain: one of a Korean celebrity chef's franchise brands, which together run over 1,200 stores"
+  },
+  {
+    "id": "hukilau",
+    "name": "Hukilau",
+    "reason": "Only a visitor-bureau listing written by the business; no history or editorial source found"
+  },
+  {
+    "id": "burma-taste",
+    "name": "Burma Taste",
+    "reason": "Recent opening with only own-site copy and listings; nothing distinctive beyond the cuisine"
+  },
+  {
+    "id": "la-colonia",
+    "name": "La Colonia",
+    "reason": "New 24-hour takeout window (opened around early 2026) with a single news paragraph; no story yet"
+  },
+  {
+    "id": "cosecha",
+    "name": "Cosecha",
+    "reason": "Closed in 2021; chef Dominica Rice-Cisneros now runs Bombera in the Dimond, a possible substitute"
+  },
+  {
+    "id": "panaderia-sevilla",
+    "name": "Panadería Sevilla",
+    "reason": "Listing sources only; second shop of a San Leandro bakery, and the one detailed write-up (Oaklandside) disallows fetching"
+  }
+]
