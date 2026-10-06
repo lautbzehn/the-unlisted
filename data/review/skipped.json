@@ -103,5 +103,35 @@
     "id": "tamarindo-antojeria",
     "name": "Tamarindo Antojeria",
     "reason": "Closed at the end of 2019; the Dominguez family has since opened Amado in Burlingame"
+  },
+  {
+    "id": "el-mono",
+    "name": "El Mono",
+    "reason": "Moved from 10264 to 11720 San Pablo Ave and now has a Berkeley branch; only listing and own-site sources, nothing distinctive to say"
+  },
+  {
+    "id": "tselogs",
+    "name": "Tselogs",
+    "reason": "Could not confirm current location or that it is open: listings show 11 San Pedro Rd, 6055, 6192 and 6860 Mission St and a Tenderloin branch, and one marks it closed"
+  },
+  {
+    "id": "lee-s-kitchen",
+    "name": "Lee's Kitchen",
+    "reason": "Listing sources only; the discovery source (a Santa Clara hole-in-the-wall roundup) does not mention it"
+  },
+  {
+    "id": "queen-house",
+    "name": "Queen House",
+    "reason": "Only own-site marketing copy and listings; no editorial source to build a story on"
+  },
+  {
+    "id": "cheung-hing",
+    "name": "Cheung Hing",
+    "reason": "Listing sources only; the candidate's own-site link is for a Cheung Hing at 6255 Geary Blvd, and its tie to the Noriega shop is unclear"
+  },
+  {
+    "id": "chez-maman-east",
+    "name": "Chez Maman East",
+    "reason": "Generic neighborhood French bistro with only a 2018 unrated Infatuation blurb; one of two Chez Maman locations, no story"
   }
 ]
