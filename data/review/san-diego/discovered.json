@@ -380,5 +380,289 @@
     "source_url": "https://mctrealestategroup.com/the-best-restaurants-in-south-park-san-diego-a-locals-guide/",
     "open_evidence": "Listed in a 2026 South Park dining guide",
     "from": "disc-03-night"
+  },
+  {
+    "name": "El Indio",
+    "neighborhood": "Middletown",
+    "city": "San Diego",
+    "address": "3695 India St",
+    "kind": "Tortilla factory taco shop",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "Started in 1940 as a hand-made tortilla factory; the founder coined 'taquito' for wartime aircraft workers. Still on India Street since 1947.",
+    "source_url": "https://elindiosandiego.com/san-diego-middletown-el-indio-mexican-restaurant-about",
+    "open_evidence": "Own site live; listings updated Sep 2026",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Crest Cafe",
+    "neighborhood": "Hillcrest",
+    "city": "San Diego",
+    "address": "425 Robinson Ave",
+    "kind": "Hillcrest neighborhood diner",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "A Hillcrest hangout for more than 40 years: breakfasts, burgers and a regular community-night calendar.",
+    "source_url": "https://crestcafe.com/",
+    "open_evidence": "Own site posts 2026 promotions (monthly burger night)",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Ichiban",
+    "neighborhood": "Hillcrest",
+    "city": "San Diego",
+    "address": "1449 University Ave",
+    "kind": "Cheap Japanese-owned sushi room",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Japanese-owned and serving cheap sushi, rice bowls and noodles in Hillcrest since 1981.",
+    "source_url": "https://www.sandiegoreader.com/places/ichiban/",
+    "open_evidence": "Listings updated July 2026",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "Shakespeare Pub & Grille",
+    "neighborhood": "Mission Hills",
+    "city": "San Diego",
+    "address": "3701 India St",
+    "kind": "Expat-run British pub",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "British expats run it and cook the pub food from scratch; the fish and chips are the house flag.",
+    "source_url": "https://www.shakespearepub.com/directions-and-parking",
+    "open_evidence": "Listings updated Sep 2026",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "Café 222",
+    "neighborhood": "Downtown",
+    "city": "San Diego",
+    "address": "222 Island Ave",
+    "kind": "Tiny downtown breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Terryl Gavre has run this 750-square-foot breakfast room since the early 1990s; weekends it turns out hundreds of breakfasts.",
+    "source_url": "https://downtowncondoguys.com/restaurateur-terryl-gavre/",
+    "open_evidence": "Listing pages active; confirm 2026 hours",
+    "from": "disc-05-day"
+  },
+  {
+    "name": "Pokez",
+    "neighborhood": "East Village",
+    "city": "San Diego",
+    "address": "947 E St",
+    "kind": "Punk-era Mexican diner",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "A long-running East Village Mexican counter with breakfast all day and a deep vegan bench: soy chorizo, vegan machaca, tofu.",
+    "source_url": "https://www.happycow.net/reviews/pokez-san-diego-3376",
+    "open_evidence": "Listings updated Sep 2026",
+    "from": "disc-05-day"
+  },
+  {
+    "name": "Waterfront Bar & Grill",
+    "neighborhood": "Little Italy",
+    "city": "San Diego",
+    "address": "2044 Kettner Blvd",
+    "kind": "Oldest bar, est. 1933",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "why": "Pouring since 1933 under one of the city's first post-Prohibition licenses; sliders and a full kitchen 8 am to 2 am.",
+    "source_url": "https://waterfrontbarandgrill.com/history",
+    "open_evidence": "Own site posts 2026 guides and World Cup schedule",
+    "from": "disc-05-night"
+  },
+  {
+    "name": "Kansas City Barbeque",
+    "neighborhood": "Marina District",
+    "city": "San Diego",
+    "address": "600 W Harbor Dr",
+    "kind": "Top Gun barbecue bar",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "why": "Kansas City natives opened it by the tracks in 1983; it became the Top Gun bar and kept smoking ribs.",
+    "source_url": "https://kcbbq.net/san-diego-marina-kansas-city-barbeque-about",
+    "open_evidence": "Listings updated Sep 2026",
+    "from": "disc-05-night"
+  },
+  {
+    "name": "Las Cuatro Milpas",
+    "neighborhood": "Barrio Logan",
+    "city": "San Diego",
+    "address": "1985 National Ave",
+    "kind": "Tortilla-and-chorizo lunch counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "On Logan Avenue from 1933 to 2025; after a rough year it reopened in May 2026 inside Mercado del Barrio with the same crew and menu.",
+    "source_url": "https://www.kpbs.org/news/arts-culture/2026/05/12/long-lines-welcome-reopening-of-iconic-las-cuatro-milpas-in-barrio-logan",
+    "open_evidence": "Reopened May 12, 2026 (KPBS, Times of San Diego, SanDiegoVille)",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "Fish Guts",
+    "neighborhood": "Barrio Logan",
+    "city": "San Diego",
+    "address": "2222 Logan Ave",
+    "kind": "Day-boat fish taco counter",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "A tiny corner counter where chef Pablo Becker fries fish caught off the coast that morning; lines form before noon.",
+    "source_url": "https://www.theinfatuation.com/san-diego/reviews/fish-guts",
+    "open_evidence": "SanDiegoVille, Aug 2026: founder expanding in Barrio Logan; 2026 critic's pick",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "Taquizas José",
+    "neighborhood": "Barrio Logan",
+    "city": "San Diego",
+    "address": "719 Cesar E Chavez Pkwy",
+    "kind": "Taco truck in a dirt lot",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "A truck in a fenced dirt lot under the Coronado Bridge, known for shrimp and adobada tacos.",
+    "source_url": "https://www.theinfatuation.com/san-diego/reviews/taquizas-jose",
+    "open_evidence": "On The Infatuation cheap-eats guide updated July 2026",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "La Fachada",
+    "neighborhood": "Logan Heights",
+    "city": "San Diego",
+    "address": "20 25th St",
+    "kind": "Late-night taco stand",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "A Logan Heights taco stand open from early morning until 2 or 3 am, a regular on neighborhood best-taco lists.",
+    "source_url": "https://www.openstreetmap.org/search?query=La%20Fachada%2020%2025th%20Street%20San%20Diego",
+    "open_evidence": "Listing search results updated 2026; OSM hours to 3 am Fri-Sat. Needs a non-listing source",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Super Cocina",
+    "neighborhood": "City Heights",
+    "city": "San Diego",
+    "address": "3627 University Ave",
+    "kind": "Mexican home-cooking steam table",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "A cafeteria-style room of Mexican home cooking, the kind of guisados, pozole and enchiladas you rarely see on taco-shop menus.",
+    "source_url": "https://www.theinfatuation.com/san-diego/perfect-for/cheap-eats",
+    "open_evidence": "On The Infatuation cheap-eats guide updated July 2026",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Pho Hoa",
+    "neighborhood": "City Heights",
+    "city": "San Diego",
+    "address": "4717 El Cajon Blvd",
+    "kind": "Pho-only noodle hall",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "A big, plain pho house on the Boulevard that opens at 7 am and does little else but beef noodle soup, very well.",
+    "source_url": "https://foursquare.com/v/pho-hoa/4a3c3e36f964a52051a11fe3",
+    "open_evidence": "Current hours on 2026 listing pages; needs a non-listing source",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Red Sea Ethiopian Restaurant",
+    "neighborhood": "City Heights",
+    "city": "San Diego",
+    "address": "4717 University Ave",
+    "kind": "City's oldest Ethiopian kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Billed as San Diego's oldest Ethiopian restaurant, in the stretch of City Heights where East African kitchens cluster.",
+    "source_url": "https://eastcountymagazine.org/red-sea-ethiopian-restaurant-city-heights-gives-east-county-eater-authentic-african-experience/",
+    "open_evidence": "Own site live; listings updated Sep 2026",
+    "from": "disc-07-night"
+  },
+  {
+    "name": "Ponce's Mexican Restaurant",
+    "neighborhood": "Kensington",
+    "city": "San Diego",
+    "address": "4050 Adams Ave",
+    "kind": "Family Mexican since 1969",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "The Meza family has run it since 1969 with a menu that has barely changed; cheap margaritas and neighbors at every table.",
+    "source_url": "https://sdvoyager.com/interview/meet-ponce-meza-ponces-mexican-restaurant-kensington/",
+    "open_evidence": "Listings updated Sep 2026",
+    "from": "disc-07-night"
+  },
+  {
+    "name": "Rosie O'Grady's",
+    "neighborhood": "Normal Heights",
+    "city": "San Diego",
+    "address": "3402 Adams Ave",
+    "kind": "Neighborhood pub with kitchen",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "A Normal Heights watering hole since 1983 with a fuller kitchen than you'd expect: Cubanos, jerk chicken, burgers.",
+    "source_url": "https://rosieogradyssd.com/san-diego-normal-heights-rosie-o-gradys-food-menu",
+    "open_evidence": "Own site live with current menu; confirm 2026",
+    "from": "disc-07-night"
   }
 ]
