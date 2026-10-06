@@ -13,5 +13,25 @@
     "id": "la-fachada",
     "name": "La Fachada",
     "reason": "Closed or closing: SanDiegoVille (Feb 11, 2026) reported the 1992 Logan Heights taqueria would close over a lease dispute, a lawsuit and a split between the owner brothers. No sign it survived; skip unless you know it is open."
+  },
+  {
+    "id": "ali-baba-family-restaurant",
+    "name": "Ali Baba Family Restaurant",
+    "reason": "Likely closed: its main listing (421 E Main St, El Cajon) is marked closed as of 2026. Delivery apps still show it, so worth a call if you want it back."
+  },
+  {
+    "id": "earlybird",
+    "name": "Earlybird",
+    "reason": "Poor fit: a breakfast-burrito stall inside the Mission + Garnet food hall in Pacific Beach, not a standalone place with its own story."
+  },
+  {
+    "id": "bahn-thai",
+    "name": "Bahn Thai",
+    "reason": "Poor fit: a well-liked 2011 neighborhood Thai restaurant with two locations and nothing distinctive found. It also moved to 4628 Park Blvd."
+  },
+  {
+    "id": "tacaliente-mexican-grill",
+    "name": "Tacaliente Mexican Grill",
+    "reason": "Poor fit: a modern Hillcrest taqueria; no history or standout dish found beyond one breakfast-burrito list mention."
   }
 ]

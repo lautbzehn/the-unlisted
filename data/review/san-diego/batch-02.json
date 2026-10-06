@@ -496,9 +496,9 @@
       "story": 90,
       "signature": 46
     },
-    "why": "The oldest bar in the city, with its original back bar, is the whole draw. Food is basic burgers and pizza, so signature is low.",
-    "story": "A saloon since 1885, in a building that had already been a boarding house, a feed store and a blacksmith shop; the rooms upstairs were once a brothel. The original wooden bar was built in Boston and shipped around Cape Horn. The grill does burgers and pizza until late.",
-    "order": "A cold beer at the old bar, and a burger.",
+    "why": "The oldest bar in the city, with its original back bar, is the whole draw. The food is a guest kitchen, so signature is low.",
+    "story": "A saloon since 1885, in a building that had already been a boarding house, a feed store and a blacksmith shop; the rooms upstairs were once a brothel. The original wooden bar was built in Boston and shipped around Cape Horn. Since 2023 the kitchen has been run by Pokéz, the East Village taco shop.",
+    "order": "A cold beer at the old back bar.",
     "practical": [
       "Open until 2 am"
     ],
@@ -506,12 +506,14 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Tivoli_Bar_and_Grill",
       "https://gaslamp.org/listing/tivoli-bar/",
-      "https://www.onlyinyourstate.com/southern-california/tivoli-bar-and-grill-so-cal/"
+      "https://www.onlyinyourstate.com/southern-california/tivoli-bar-and-grill-so-cal/",
+      "https://www.sandiegoville.com/2023/09/pokez-mexican-food-takes-over-kitchen.html"
     ],
     "flags": [
       "The Wyatt Earp regular claim and the 1864 building date (credited to Alonzo Horton, who arrived in 1867) are shaky; left out.",
       "Hours from OpenStreetMap only.",
-      "Classic San Diego survivors list (Sep 2026) confirms it is still open."
+      "Classic San Diego survivors list (Sep 2026) confirms it is still open.",
+      "Pokéz took over the kitchen in Sep 2023 (SanDiegoVille); confirm it still runs it. Older guides say burgers and pizza."
     ],
     "verified": "2026-10"
   },

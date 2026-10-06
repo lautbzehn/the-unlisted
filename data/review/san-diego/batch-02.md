@@ -4,7 +4,7 @@
 
 **Fame:** Deep cut 11 · Open secret 8  
 **Time of day:** morning+midday+evening 5 · midday+evening+late 3 · morning+midday 4 · morning+midday+evening+late 1 · midday+evening 5 · midday 1  
-**Flags to check:** 58 · **Sources:** 54 (internal only)
+**Flags to check:** 59 · **Sources:** 55 (internal only)
 
 For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
@@ -309,11 +309,11 @@ Uniqueness 62 · Atmosphere 60 · Story 62 · Signature item 74 · Under the rad
 ## Tivoli Bar and Grill — Gem 73
 *Saloon since 1885 · Gaslamp Quarter, San Diego · Open secret · midday, evening, late*
 
-**Story.** A saloon since 1885, in a building that had already been a boarding house, a feed store and a blacksmith shop; the rooms upstairs were once a brothel. The original wooden bar was built in Boston and shipped around Cape Horn. The grill does burgers and pizza until late.
+**Story.** A saloon since 1885, in a building that had already been a boarding house, a feed store and a blacksmith shop; the rooms upstairs were once a brothel. The original wooden bar was built in Boston and shipped around Cape Horn. Since 2023 the kitchen has been run by Pokéz, the East Village taco shop.
 
-**Order this.** A cold beer at the old bar, and a burger.
+**Order this.** A cold beer at the old back bar.
 
-**Why this score.** The oldest bar in the city, with its original back bar, is the whole draw. Food is basic burgers and pizza, so signature is low.  
+**Why this score.** The oldest bar in the city, with its original back bar, is the whole draw. The food is a guest kitchen, so signature is low.  
 Uniqueness 80 · Atmosphere 82 · Story 90 · Signature item 46 · Under the radar 60
 
 **Practical.** Open until 2 am  
@@ -323,12 +323,14 @@ Uniqueness 80 · Atmosphere 82 · Story 90 · Signature item 46 · Under the rad
 - [ ] The Wyatt Earp regular claim and the 1864 building date (credited to Alonzo Horton, who arrived in 1867) are shaky; left out.
 - [ ] Hours from OpenStreetMap only.
 - [ ] Classic San Diego survivors list (Sep 2026) confirms it is still open.
+- [ ] Pokéz took over the kitchen in Sep 2023 (SanDiegoVille); confirm it still runs it. Older guides say burgers and pizza.
 
-<details><summary>Sources (3)</summary>
+<details><summary>Sources (4)</summary>
 
 - https://en.wikipedia.org/wiki/Tivoli_Bar_and_Grill
 - https://gaslamp.org/listing/tivoli-bar/
 - https://www.onlyinyourstate.com/southern-california/tivoli-bar-and-grill-so-cal/
+- https://www.sandiegoville.com/2023/09/pokez-mexican-food-takes-over-kitchen.html
 </details>
 
 ---
