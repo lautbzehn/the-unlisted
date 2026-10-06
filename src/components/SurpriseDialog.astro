@@ -1,3 +1,6 @@
+---
+import GemDoor from './GemDoor.astro';
+---
 <!-- Surprise me: the pop-up that reveals one place. Filled in by src/scripts/surprise.js. -->
 <dialog id="surprise" class="modal" aria-labelledby="sp-title">
   <div class="modal-card sp-card">
@@ -5,10 +8,11 @@
     <p class="sp-kicker">Today’s door</p>
     <div class="sp-slot" data-sp="slot" aria-hidden="true"></div>
     <div class="sp-body">
-      <div class="stamp" aria-hidden="true"><small>Gem</small><b data-sp="score"></b><i>Visa</i></div>
+      <GemDoor score="" size="lg" />
       <span class="sample-flag" data-sp="sample">Sample, not a real place</span>
       <h2 id="sp-title"></h2>
       <p class="place-meta" data-sp="meta"></p>
+      <p class="place-tagline" data-sp="tagline"></p>
       <p class="story" data-sp="story"></p>
       <p class="order"><b>Order</b><span data-sp="order"></span></p>
       <p class="sp-where" data-sp="where"></p>

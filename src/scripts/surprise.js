@@ -44,7 +44,9 @@ export function initSurprise({ getState, getTime, update, showOnMap, toast }) {
     current = p;
     $('#sp-title').textContent = p.name;
     $('[data-sp=meta]').textContent = `${p.area} · ${p.kind}`;
-    $('[data-sp=score]').textContent = p.score;
+    $('.gem-door .num').textContent = p.score;
+    $('.gem-door').setAttribute('aria-label', `Gem score ${p.score} out of 100`);
+    $('[data-sp=tagline]').textContent = p.tagline ?? '';
     $('[data-sp=story]').textContent = p.story;
     $('[data-sp=order]').textContent = p.order;
     let where;

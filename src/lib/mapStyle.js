@@ -1,11 +1,11 @@
 // Map styles drawn from free OpenStreetMap-based vector tiles (OpenFreeMap):
-// "paper" (ink streets on newsprint) for light mode, "ink" (bone streets on ink) for dark mode.
+// "paper" (ink streets on newsprint) and "sepia" (aged-paper streets on dark brown, the site's look).
 const TILES = 'https://tiles.openfreemap.org/planet';
 const GLYPHS = 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf';
 
 const THEMES = {
   paper: { bg: '#ece3d0', land: '#e2d9c3', park: '#d9d5bd', water: '#c6cdc8', building: '#ddd3bd', minor: '#cfc3a9', mid: '#b5a789', major: '#8c7d63', label: '#3b332a', city: '#1b1712', halo: '#ece3d0', waterLabel: '#5f7179' },
-  ink:   { bg: '#0e1322', land: '#111828', park: '#12201f', water: '#081019', building: '#151c2e', minor: '#1d2538', mid: '#2a3450', major: '#3d4a6c', label: '#9aa3b8', city: '#ebe5d6', halo: '#0b0f19', waterLabel: '#4f6f80' },
+  sepia: { bg: '#1a140e', land: '#1d1710', park: '#1f1c11', water: '#0f0b07', building: '#231b13', minor: '#2d241a', mid: '#433526', major: '#634e36', label: '#b5a68a', city: '#eee2c8', halo: '#15110c', waterLabel: '#7d6c55' },
 };
 
 const label = ['coalesce', ['get', 'name:latin'], ['get', 'name']];

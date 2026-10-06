@@ -37,6 +37,7 @@ It matches the public "How the score works" page. If one changes, change the oth
 | `breakdown` | four marks 0-100: uniqueness, atmosphere, story, signature. Use the full range. 90+ is rare. A famous place is not automatically high. (A fifth mark, "Under the radar", is computed from `fame` by the site. Don't output it.) |
 | `why` | 1-2 sentences explaining the marks, honest about weak spots |
 | `story` | 2-3 sentences, max ~55 words. What makes it itself. |
+| `tagline` | one line, max 50 characters, no period: why it's unique, drawn only from facts in the story ("Eighteen stools at a marble counter since 1912"). Shown on the front-page tiles. |
 | `order` | the one thing to get, plus a practical tip if sourced |
 | `practical` | short facts a visitor needs: "Cash only", "Counter seats only", "Closed Sundays" (sourced) |
 | `hours` | human-readable, sourced, or null |

@@ -1,4 +1,5 @@
 import raw from '../data/places.json';
+import TAGLINES from '../data/taglines.json'; // one line per place: why it's unique (written from each story)
 import { gemScore, withRadar } from './scoring.js';
 
 // While developing locally, unreviewed drafts from the research batches show up too (marked DRAFT, flags visible),
@@ -46,6 +47,7 @@ export const places = [...raw.filter((p) => p.status === 'approved' || p.sample)
     return {
       ...pub,
       city,
+      tagline: pub.tagline ?? TAGLINES[pub.id] ?? '',
       type: typeOf(pub.kind),
       where: `${slug(city)}/${slug(hood)}`,
       breakdown: withRadar(pub.breakdown, pub.fame),
@@ -56,8 +58,8 @@ export const places = [...raw.filter((p) => p.status === 'approved' || p.sample)
   .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
 
 // What the browser scripts need (Surprise me, the map), without the long fields.
-export const slim = (list) => list.map(({ id, name, area, city, kind, score, story, order, lat, lng, when, sample }) => (
-  { id, name, area, city, kind, score, story, order, lat, lng, when, sample }
+export const slim = (list) => list.map(({ id, name, area, city, kind, tagline, score, story, order, lat, lng, when, sample }) => (
+  { id, name, area, city, kind, tagline, score, story, order, lat, lng, when, sample }
 ));
 
 // The "Where" choices: big cities get their neighborhoods, small ones are grouped together.

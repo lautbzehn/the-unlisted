@@ -1,0 +1,16 @@
+---
+// The Gem door: a place's Gem score on a little arched door with a keyhole.
+// Small in lists and tiles, large on a place's own page. numId lets a script change the number (score calculator).
+interface Props { score: number | string; size?: 'sm' | 'lg'; numId?: string; tip?: string }
+const { score, size = 'sm', numId, tip } = Astro.props;
+---
+<span class:list={['gem-door', size]} role="img" aria-label={`Gem score ${score} out of 100`} tabindex={tip ? 0 : undefined} data-tip={tip}>
+  <svg viewBox="0 0 40 52" aria-hidden="true">
+    <path class="frame" d="M5 50V20a15 15 0 0 1 30 0v30Z" />
+    <path class="step" d="M1 50.5h38" />
+    {size === 'lg' && <text class="cap" x="20" y="16.5">GEM</text>}
+    <text class="num" x="20" y="32" id={numId}>{score}</text>
+    <circle class="keyhole" cx="20" cy="39" r="2" />
+    <path class="keyhole" d="M19 40.5h2l.8 4.2h-3.6Z" />
+  </svg>
+</span>

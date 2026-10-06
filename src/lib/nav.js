@@ -12,7 +12,7 @@ export const ABOUT = [
   { href: '/how-the-score-works/', label: 'How the score works' },
   { href: '/help/', label: 'Help' },
   { href: '/suggest/', label: 'Suggest a place' },
-  { href: '/contact/', label: 'Contact' },
+  { href: '/contact/', label: 'Contact & feedback' },
   { href: '/privacy/', label: 'Privacy' },
 ];
 

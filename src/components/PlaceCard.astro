@@ -10,6 +10,7 @@ interface Props {
   variant?: 'entry' | 'detail';
 }
 import PlaceBody from './PlaceBody.astro';
+import GemDoor from './GemDoor.astro';
 import { FAME, TYPES, whenText } from '../lib/places.js';
 import { SCORE_TIP, FAME_TIPS } from '../lib/glossary.js';
 const { place, variant = 'entry' } = Astro.props;
@@ -31,7 +32,7 @@ const when = whenText(place.when);
   <article class="card entry" {...data}>
     <details>
       <summary>
-        <span class="e-score"><span class="sr-only">Gem score </span>{place.score}<small aria-hidden="true">gem</small></span>
+        <span class="e-score"><GemDoor score={place.score} /></span>
         <span class="e-name">{place.name}</span>
         <span class="e-meta">{[where, TYPES[place.type], FAME[place.fame]].filter(Boolean).join(' · ')}</span>
         <span class="e-status">
@@ -50,9 +51,8 @@ const when = whenText(place.when);
     {place.draft && <span class="sample-flag">Draft, not yet reviewed</span>}
     <p class="place-meta">{where} · {place.kind}</p>
     <h1>{place.name}</h1>
-    <div class="stamp" tabindex="0" data-tip={SCORE_TIP} aria-label={`Gem score ${place.score} out of 100`}>
-      <small aria-hidden="true">Gem</small><b aria-hidden="true">{place.score}</b><i aria-hidden="true">Visa</i>
-    </div>
+    <GemDoor score={place.score} size="lg" tip={SCORE_TIP} />
+    {place.tagline && <p class="place-tagline">{place.tagline}</p>}
     <p class="labels">
       {place.fame && <span tabindex="0" data-tip={FAME_TIPS[place.fame]}>{FAME[place.fame]}</span>}
       {place.fame && when && ' · '}{when}

@@ -11,10 +11,10 @@ import { TURNSTILE_SITE_KEY } from '../lib/config.js';
     <h2 id="su-title">Get the next door first</h2>
     <p class="modal-lede">New places, new cities, and the odd story from behind the counter. About once a month. Unsubscribe anytime.</p>
     <form class="form" data-endpoint="/api/subscribe" novalidate>
-      <label>Email<input name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email" /></label>
+      <label><span class="field-label">Email</span><input name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email" placeholder="you@example.com" /></label>
       <div class="row2">
-        <label>First name <span class="opt">(optional)</span><input name="name" maxlength="60" autocomplete="given-name" /></label>
-        <label>Where do you usually eat? <span class="opt">(optional)</span>
+        <label><span class="field-label">First name <em>Optional</em></span><input name="name" maxlength="60" autocomplete="given-name" /></label>
+        <label><span class="field-label">Where you usually eat <em>Optional</em></span>
           <select name="area">
             <option value="">Choose one</option>
             {SIGNUP.areas.map(([v, l]) => <option value={v}>{l}</option>)}
@@ -22,7 +22,7 @@ import { TURNSTILE_SITE_KEY } from '../lib/config.js';
         </label>
       </div>
       <fieldset class="checks">
-        <legend>What are you usually hunting for? <span class="opt">(optional, pick any)</span></legend>
+        <legend class="field-label">What you’re hunting for <em>Optional, pick any</em></legend>
         <div class="check-grid">
           {SIGNUP.interests.map(([v, l]) => <label class="check"><input type="checkbox" name="interests" value={v} />{l}</label>)}
         </div>

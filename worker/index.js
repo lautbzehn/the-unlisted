@@ -111,7 +111,7 @@ async function api(request, env, path) {
   }
 
   if (path === '/api/contact') {
-    const topics = ['hello', 'correction', 'closed', 'owner', 'other'];
+    const topics = ['feedback', 'hello', 'correction', 'closed', 'owner', 'other'];
     const msg = { name: clip(body.name, 80), email: clip(body.email, 120), topic: topics.includes(body.topic) ? body.topic : 'other', message: clipText(body.message, 2000) };
     if (msg.message.length < 2) return json({ error: 'Please write a message.' }, 400);
     if (msg.email && !EMAIL_RE.test(msg.email)) return json({ error: 'That email address doesn’t look right.' }, 400);

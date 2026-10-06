@@ -10,7 +10,7 @@ const STATUS_TEXT = { none: '', knock: ' On your Bucket List.', ledger: ' Stampe
 const BAY = { center: [-122.35, 37.78], zoom: 9.5 };
 
 function baseMap(container, view = BAY) {
-  const map = new maplibregl.Map({ container, style: mapStyle('ink'), ...view, attributionControl: { compact: true } });
+  const map = new maplibregl.Map({ container, style: mapStyle('sepia'), ...view, attributionControl: { compact: true } });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
   return map;
 }
