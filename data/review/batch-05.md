@@ -10,7 +10,7 @@ For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
 ---
 
-## Santo Market — Gem 73
+## Santo Market — Gem 76
 *Japantown market with a poke counter · Japantown, San Jose · Deep cut · morning, midday*
 
 **Story.** Family-run since 1946, when it opened on Jackson Street; it moved to this Taylor Street corner in 1957 and has passed from the founder down through the Santo family. It's a full grocery for Japanese, Chinese and Hawaiian staples, but people come for the poke, house pickles and mochi that sells out on Saturday mornings.
@@ -18,7 +18,7 @@ For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 **Order this.** A poke bowl. On Saturday, get there early for mochi.
 
 **Why this score.** A family grocery that has outlasted almost everything around it, with poke regulars call the region's best. It's a market, not a dining room, which keeps atmosphere moderate.  
-Uniqueness 72 · Atmosphere 64 · Story 78 · Signature item 80
+Uniqueness 72 · Atmosphere 64 · Story 78 · Signature item 80 · Under the radar 90
 
 **Practical.** Tue-Sat 9 am to 3 pm · Service in English, Spanish and Japanese  
 **Hours.** Tue-Sat 9 am to 3 pm (own site)
@@ -37,7 +37,7 @@ Uniqueness 72 · Atmosphere 64 · Story 78 · Signature item 80
 
 ---
 
-## Orale — Gem 69
+## Orale — Gem 73
 *Late-night taco truck with mini pancakes · Alum Rock, San Jose · Deep cut · evening, late*
 
 **Story.** A taco truck in a tire shop's parking lot on Alum Rock, with a tented, string-lit seating area and a line that grows as the night goes on. The menu covers every street-food trend, yet the tacos are built sensibly. Next to the truck, mini pancakes are cooked to order and flipped with toothpicks like takoyaki.
@@ -45,7 +45,7 @@ Uniqueness 72 · Atmosphere 64 · Story 78 · Signature item 80
 **Order this.** A tripas taco with the spicy orange salsa, then a round of mini pancakes from the toppings bar.
 
 **Why this score.** A tire-shop parking lot turned backyard party until 3 am, with tripas done right and takoyaki-style pancakes for dessert. Story is thin: we found nothing on who runs it.  
-Uniqueness 76 · Atmosphere 82 · Story 40 · Signature item 80
+Uniqueness 76 · Atmosphere 82 · Story 40 · Signature item 80 · Under the radar 90
 
 **Practical.** Open until 3 am Fri-Sat · Tented outdoor seating  
 **Hours.** Mon-Thu 5:30 pm to 1 am, Fri-Sat to 3 am, Sun 1 pm to 1 am (KQED, Mar 2024)
@@ -62,7 +62,7 @@ Uniqueness 76 · Atmosphere 82 · Story 40 · Signature item 80
 
 ---
 
-## La Santaneca de la Mission — Gem 64
+## La Santaneca de la Mission — Gem 69
 *All-day Salvadoran diner · Mission District, San Francisco · Deep cut · morning, midday, evening*
 
 **Story.** An all-day Salvadoran cafe on Mission Street where families fill big booths on their days off, under a faux tiled roof hung with a lasso and a cowboy hat. The menu warns you to expect a 25-minute wait, the coffee keeps coming, and breakfast platters run until 11:30.
@@ -70,7 +70,7 @@ Uniqueness 76 · Atmosphere 82 · Story 40 · Signature item 80
 **Order this.** A revuelta con frijol pupusa; before 11:30, the eggs-and-beans breakfast platter.
 
 **Why this score.** A kitschy Salvadoran diner (lasso, cowboy hat, fake indoor roof) where families settle into booths, with standout pupusas. Story is thin: no founding date or owners found.  
-Uniqueness 66 · Atmosphere 78 · Story 36 · Signature item 80
+Uniqueness 66 · Atmosphere 78 · Story 36 · Signature item 80 · Under the radar 90
 
 **Practical.** Breakfast until 11:30 am · Expect a wait for food  
 **Hours.** not found
@@ -88,7 +88,7 @@ Uniqueness 66 · Atmosphere 78 · Story 36 · Signature item 80
 
 ---
 
-## Old Jerusalem — Gem 70
+## Old Jerusalem — Gem 68
 *Palestinian family restaurant, since 2005 · Mission District, San Francisco · Open secret · midday, evening*
 
 **Story.** Ahmad Nasser, from the West Bank, opened Old Jerusalem in 2005 to bring the food of home to Mission Street, later partnering with his friend Hajem Almukdad from Syria. Murals on the walls, pickles and two house sauces on every table, and kunafa made in-house on an enormous cast-iron griddle.
@@ -96,7 +96,7 @@ Uniqueness 66 · Atmosphere 78 · Story 36 · Signature item 80
 **Order this.** Musakhan (sumac chicken over taboon bread with sweet onions and pine nuts), then the kunafa.
 
 **Why this score.** One of few places in the city cooking Palestinian dishes like musakhan, with kunafa made on a giant iron griddle. Recent reviews are mixed on consistency, and the story is solid rather than deep.  
-Uniqueness 72 · Atmosphere 66 · Story 64 · Signature item 80
+Uniqueness 72 · Atmosphere 66 · Story 64 · Signature item 80 · Under the radar 60
 
 **Practical.** Halal meat · Outdoor seating  
 **Hours.** not found
@@ -115,7 +115,7 @@ Uniqueness 72 · Atmosphere 66 · Story 64 · Signature item 80
 
 ---
 
-## Mộng Thu Cafe — Gem 80
+## Mộng Thu Cafe — Gem 76
 *Vietnamese noodle-soup cafe · Tenderloin, San Francisco · Open secret · morning, midday*
 
 **Story.** Kim Lien Nguyen brought three young daughters to the US by boat in 1983 and took over this tiny Hyde Street cafe around 1989, naming it for one daughter. For years the soups were cooked elsewhere because the kitchen lacked ventilation; in 2017 the city stopped it, and her daughters rebuilt the kitchen. One of them now paints the signs.
@@ -123,7 +123,7 @@ Uniqueness 72 · Atmosphere 66 · Story 64 · Signature item 80
 **Order this.** Bún bò Huế, or bún mắm if you like a funky fish broth.
 
 **Why this score.** A mother-and-daughters story of grit, from a boat crossing to a two-decade fight over a kitchen, plus soups worth crossing town for. A shoebox room keeps atmosphere from going higher.  
-Uniqueness 76 · Atmosphere 70 · Story 92 · Signature item 84
+Uniqueness 76 · Atmosphere 70 · Story 92 · Signature item 84 · Under the radar 60
 
 **Practical.** Tiny room; takeout friendly · Closed Mondays  
 **Hours.** Tue-Sun 7 am to 4 pm (listing, confirm)
@@ -142,7 +142,7 @@ Uniqueness 76 · Atmosphere 70 · Story 92 · Signature item 84
 
 ---
 
-## Sai Jai Thai — Gem 48
+## Sai Jai Thai — Gem 56
 *Small Thai kitchen · Tenderloin, San Francisco · Deep cut · midday, evening*
 
 **Story.** A small O'Farrell Street Thai kitchen with very little seating and a long list of the usual curries and noodles. The reason to come is the BBQ pork shoulder fried rice: thin slices that are soft and crisp at once, with a tart, tangy house barbecue sauce poured over at the table.
@@ -150,7 +150,7 @@ Uniqueness 76 · Atmosphere 70 · Story 92 · Signature item 84
 **Order this.** BBQ pork shoulder fried rice. If you ask for spicy, mean it.
 
 **Why this score.** Worth it for one dish, the BBQ pork shoulder fried rice. Little seating, no story found, and the rest of the menu is serviceable Thai classics.  
-Uniqueness 50 · Atmosphere 44 · Story 24 · Signature item 78
+Uniqueness 50 · Atmosphere 44 · Story 24 · Signature item 78 · Under the radar 90
 
 **Practical.** Little seating  
 **Hours.** not found
@@ -167,7 +167,7 @@ Uniqueness 50 · Atmosphere 44 · Story 24 · Signature item 78
 
 ---
 
-## Sodini's Green Valley — Gem 72
+## Sodini's Green Valley — Gem 69
 *Old-school Italian trattoria · North Beach, San Francisco · Open secret · evening*
 
 **Story.** The old Green Valley Restaurant sign still hangs over the corner of Bannam and Green, where a restaurant has stood since 1906. Brothers Mark and Peter Sodini bought it in the early 1990s; Mark, who grew up in his father's Cuneo bakery and his grandparents' Venetian Cafe, now runs it alone.
@@ -175,7 +175,7 @@ Uniqueness 50 · Atmosphere 44 · Story 24 · Signature item 78
 **Order this.** A plate of pasta from the old-school red-sauce menu.
 
 **Why this score.** A corner room that has fed North Beach since 1906 under an older sign, now run by a son of a local baker. The red-sauce menu is comforting rather than singular.  
-Uniqueness 66 · Atmosphere 78 · Story 80 · Signature item 62
+Uniqueness 66 · Atmosphere 78 · Story 80 · Signature item 62 · Under the radar 60
 
 **Practical.** Dinner  
 **Hours.** not found
@@ -194,7 +194,7 @@ Uniqueness 66 · Atmosphere 78 · Story 80 · Signature item 62
 
 ---
 
-## Cherry Blossom Bakery — Gem 49
+## Cherry Blossom Bakery — Gem 57
 *Hong Kong-style bakery · Inner Richmond, San Francisco · Deep cut · morning, midday*
 
 **Story.** A busy Inner Richmond bakery whose cases stay full of egg tarts, savory buns and dense mooncakes sold year-round, not just at the festival. Hong Kong milk tea to go with them.
@@ -202,7 +202,7 @@ Uniqueness 66 · Atmosphere 78 · Story 80 · Signature item 62
 **Order this.** A char siu bao and an egg tart.
 
 **Why this score.** A solid Clement Street bakery with a full case all day, but one of several nearby and with no story we could find.  
-Uniqueness 50 · Atmosphere 50 · Story 28 · Signature item 70
+Uniqueness 50 · Atmosphere 50 · Story 28 · Signature item 70 · Under the radar 90
 
 **Practical.** Mooncakes year-round  
 **Hours.** not found
@@ -220,7 +220,7 @@ Uniqueness 50 · Atmosphere 50 · Story 28 · Signature item 70
 
 ---
 
-## Pizzetta 211 — Gem 72
+## Pizzetta 211 — Gem 69
 *Tiny thin-crust pizzeria, since 1999 · Outer Richmond, San Francisco · Open secret · midday, evening*
 
 **Story.** Opened in 1999 by two non-chefs with a thing for local, seasonal ingredients, and owned since 2008 by Jack Murphy. It has never grown past a handful of seats and a closet of a kitchen on a quiet residential block of 23rd Avenue, so there is always a wait for the thin, blistered pies.
@@ -228,7 +228,7 @@ Uniqueness 50 · Atmosphere 50 · Story 28 · Signature item 70
 **Order this.** Whatever seasonal pie is on the board.
 
 **Why this score.** A handful of seats, a closet-sized kitchen and seasonal pies that keep a line on a residential block. The story is decent (founders, then a longtime owner) but not deep.  
-Uniqueness 70 · Atmosphere 80 · Story 58 · Signature item 80
+Uniqueness 70 · Atmosphere 80 · Story 58 · Signature item 80 · Under the radar 60
 
 **Practical.** Walk-in only · Very few seats; expect a wait  
 **Hours.** not found
@@ -246,7 +246,7 @@ Uniqueness 70 · Atmosphere 80 · Story 58 · Signature item 80
 
 ---
 
-## House of Pancakes — Gem 60
+## House of Pancakes — Gem 66
 *Northern Chinese pancake house · Parkside, San Francisco · Deep cut · midday, evening*
 
 **Story.** Not the international chain: a Parkside Chinese restaurant on Taraval's quiet dumpling row with 11 kinds of pancake on the menu. The beef roll wraps a squishy, crisp-edged scallion pancake around hoisin and thick-cut beef, and nothing on the menu tops about $13.
@@ -254,7 +254,7 @@ Uniqueness 70 · Atmosphere 80 · Story 58 · Signature item 80
 **Order this.** The beef roll pancake, plus pork and chive dumplings or a few grilled skewers.
 
 **Why this score.** Eleven kinds of Chinese pancake on Taraval's dumpling row, with a beef roll worth the trip, all under $13. Story is short (since about 2010) and the room is plain.  
-Uniqueness 72 · Atmosphere 50 · Story 36 · Signature item 84
+Uniqueness 72 · Atmosphere 50 · Story 36 · Signature item 84 · Under the radar 90
 
 **Practical.** Cash only (listings) · Everything about $13 or less (Dec 2023)  
 **Hours.** not found
@@ -271,7 +271,7 @@ Uniqueness 72 · Atmosphere 50 · Story 36 · Signature item 84
 
 ---
 
-## Gold Mirror — Gem 74
+## Gold Mirror — Gem 72
 *Old-school Italian dining room · Parkside, San Francisco · Open secret · evening*
 
 **Story.** The Gold Mirror began as a 1940s cocktail lounge in the Fillmore and landed on Taraval in the 1950s. Giuseppe DiGrande, who immigrated in the late 1950s, bought it in 1969 and made it a family Italian restaurant; his sons Domenico and Roberto run it now. After nearly two years of rebuilding it reopened in late 2025.
@@ -279,7 +279,7 @@ Uniqueness 72 · Atmosphere 50 · Story 36 · Signature item 84
 **Order this.** Housemade pasta, and the tiramisu.
 
 **Why this score.** A 1940s jazz-lounge name turned into a family Italian room in 1969, now fully rebuilt by the founder's sons. Newly renovated, so the room trades some old patina for polish.  
-Uniqueness 68 · Atmosphere 76 · Story 84 · Signature item 70
+Uniqueness 68 · Atmosphere 76 · Story 84 · Signature item 70 · Under the radar 60
 
 **Practical.** Reopened Oct 2025 after a full remodel  
 **Hours.** not found
@@ -298,7 +298,7 @@ Uniqueness 68 · Atmosphere 76 · Story 84 · Signature item 70
 
 ---
 
-## Tú Lan — Gem 78
+## Tú Lan — Gem 74
 *Vietnamese counter, since 1976 · SoMa, San Francisco · Open secret · midday, evening*
 
 **Story.** Thao Nguyen and his sister Thu Hang opened Tú Lan in 1976 as one of San Francisco's first Vietnamese restaurants, and it's still in the family. In 1985 Julia Child ate here; asked about it years later, she recalled very good food in a very dirty place, with no ill effects. It's on the city's Legacy Business Registry.
@@ -306,7 +306,7 @@ Uniqueness 68 · Atmosphere 76 · Story 84 · Signature item 70
 **Order this.** Imperial rolls and lemon beef salad, roughly what Julia Child ordered.
 
 **Why this score.** One of SF's first Vietnamese restaurants, still family-run, with a Julia Child story to dine out on. The food is classic and cheap rather than a single famous dish.  
-Uniqueness 76 · Atmosphere 70 · Story 88 · Signature item 76
+Uniqueness 76 · Atmosphere 70 · Story 88 · Signature item 76 · Under the radar 60
 
 **Practical.** San Francisco Legacy Business · Weekdays 11 am to 8 pm (listing)  
 **Hours.** Mon-Fri 11 am to 8 pm (listing, confirm)
@@ -325,7 +325,7 @@ Uniqueness 76 · Atmosphere 70 · Story 88 · Signature item 76
 
 ---
 
-## Pupusería Metapán — Gem 65
+## Pupusería Metapán — Gem 70
 *Salvadoran pupusa house · Excelsior, San Francisco · Deep cut · midday, evening, late*
 
 **Story.** Lilian Flores Pimentel came to San Francisco from Metapán, El Salvador, in 1982 and worked as a caregiver, a restaurant cook and in chocolate factories before opening her own place on Mission Street in 2012. Golden, cheese-oozing pupusas with a big bowl of sharp curtido, and a sopa de res that's a meal on its own.
@@ -333,7 +333,7 @@ Uniqueness 76 · Atmosphere 70 · Story 88 · Signature item 76
 **Order this.** A revuelta pupusa, and the sopa de res on a cold night.
 
 **Why this score.** Excellent pupusas and a beef soup worth knowing, from a cook who waited 30 years for her own place. The room is low-key and plain.  
-Uniqueness 62 · Atmosphere 52 · Story 68 · Signature item 82
+Uniqueness 62 · Atmosphere 52 · Story 68 · Signature item 82 · Under the radar 90
 
 **Practical.** Open until 10:30 pm daily (Feb 2025)  
 **Hours.** Daily until 10:30 pm (Infatuation, Feb 2025; opening time not stated)
@@ -350,7 +350,7 @@ Uniqueness 62 · Atmosphere 52 · Story 68 · Signature item 82
 
 ---
 
-## Restaurante Familiar — Gem 52
+## Restaurante Familiar — Gem 59
 *Salvadoran-Mexican family room · Excelsior, San Francisco · Deep cut · midday, evening*
 
 **Story.** A low-key Excelsior dining room with free chips on the table and big platters of Salvadoran and Mexican food. The plate to know is the milanesa de res: beef pounded thin, fried crisp, buried in fries and served with deeply savory beans.
@@ -358,7 +358,7 @@ Uniqueness 62 · Atmosphere 52 · Story 68 · Signature item 82
 **Order this.** Milanesa de res, with ketchup for the fries. A revuelta pupusa on the side.
 
 **Why this score.** Big, cheap platters and a milanesa de res the Infatuation rates highly (8.4). We found no history, and the room is a simple, walk-in dining room.  
-Uniqueness 52 · Atmosphere 54 · Story 26 · Signature item 80
+Uniqueness 52 · Atmosphere 54 · Story 26 · Signature item 80 · Under the radar 90
 
 **Practical.** Free chips · Walk-ins  
 **Hours.** not found
@@ -374,7 +374,7 @@ Uniqueness 52 · Atmosphere 54 · Story 26 · Signature item 80
 
 ---
 
-## Café International — Gem 68
+## Café International — Gem 73
 *Lower Haight cafe and music room · Lower Haight, San Francisco · Deep cut · morning, midday, evening*
 
 **Story.** Zahra Saleh has run this corner cafe at Haight and Fillmore since 1987. It's a Legacy Business, known for blues on Thursday afternoons, open mic on Friday nights and jazz on Sundays, with art all over the walls. In 2019 she closed for a seismic retrofit and came back with a new ten-year lease.
@@ -382,7 +382,7 @@ Uniqueness 52 · Atmosphere 54 · Story 26 · Signature item 80
 **Order this.** A coffee on an open-mic Friday night.
 
 **Why this score.** A Legacy Business cafe that has hosted open mics and jazz for decades, under the same owner since 1987. Atmosphere and story carry it; we couldn't source a signature food item.  
-Uniqueness 70 · Atmosphere 84 · Story 72 · Signature item 40
+Uniqueness 70 · Atmosphere 84 · Story 72 · Signature item 40 · Under the radar 90
 
 **Practical.** Open mic Fridays · Live jazz Sundays · San Francisco Legacy Business  
 **Hours.** not found

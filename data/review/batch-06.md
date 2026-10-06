@@ -10,7 +10,7 @@ For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
 ---
 
-## Tacos Mi Rancho — Gem 65
+## Tacos Mi Rancho — Gem 64
 *Late-night taco truck by the lake · Lake Merritt, Oakland · Open secret · midday, evening, late*
 
 **Story.** Known to most of Oakland simply as the taco truck by Lake Merritt. It's permanently parked on the lake's southeast corner, cash only, and open until 2:30 or 3 am, which makes it the town's late-night default for al pastor tacos and 15-inch super burritos.
@@ -18,7 +18,7 @@ For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 **Order this.** Al pastor tacos or a super burrito, with both the red and the green salsa.
 
 **Why this score.** Oakland's default answer to midnight hunger, parked by Lake Merritt for years with sauces people talk about. Story is thin in reliable sources.  
-Uniqueness 64 · Atmosphere 74 · Story 44 · Signature item 80
+Uniqueness 64 · Atmosphere 74 · Story 44 · Signature item 80 · Under the radar 60
 
 **Practical.** Cash only · Open until about 2:30-3 am  
 **Hours.** Nightly until about 2:30 to 3 am (Infatuation, 2020; confirm)
@@ -35,7 +35,7 @@ Uniqueness 64 · Atmosphere 74 · Story 44 · Signature item 80
 
 ---
 
-## Estudillo Produce & Deli — Gem 62
+## Estudillo Produce & Deli — Gem 68
 *Produce market with a sandwich counter · Estudillo Estates, San Leandro · Deep cut · midday*
 
 **Story.** A modest produce and specialty shop in San Leandro's Estudillo Estates, family-owned since the late 1970s. The deli counter is the secret: sandwiches made to order on Semifreddi's breads and rolls, five to ten minutes each, while you browse the shelves for a craft soda.
@@ -43,7 +43,7 @@ Uniqueness 64 · Atmosphere 74 · Story 44 · Signature item 80
 **Order this.** The prosciutto on sliced wheat with mustard and mayo, or chicken salad on Dutch crunch.
 
 **Why this score.** A small-town produce market whose deli counter quietly builds some of the area's best sandwiches. Story is a solid two-generation family business, sourced lightly.  
-Uniqueness 60 · Atmosphere 58 · Story 62 · Signature item 70
+Uniqueness 60 · Atmosphere 58 · Story 62 · Signature item 70 · Under the radar 90
 
 **Practical.** Call ahead to skip the wait  
 **Hours.** not found
@@ -60,7 +60,7 @@ Uniqueness 60 · Atmosphere 58 · Story 62 · Signature item 70
 
 ---
 
-## El Pipirín — Gem 73
+## El Pipirín — Gem 77
 *Guadalajara-style torta truck · Fruitvale, Oakland · Deep cut · midday, evening*
 
 **Story.** Jorge Ayllon started this truck around 1990 to bring Guadalajara's food to Fruitvale. The star is the torta ahogada: a sturdy bolillo stacked with beans and barbacoa, drowned in fiery chile de árbol or milder tomato salsa. The barbacoa is beef and tongue cooked in a special oven to mimic the 20-hour underground original.
@@ -68,7 +68,7 @@ Uniqueness 60 · Atmosphere 58 · Story 62 · Signature item 70
 **Order this.** The torta ahogada with the hot salsa, plus a cup of consomé.
 
 **Why this score.** A Guadalajara torta ahogada as close to the original as the Bay gets, plus slow-cooked barbacoa. It's a truck, so atmosphere is modest.  
-Uniqueness 84 · Atmosphere 58 · Story 66 · Signature item 86
+Uniqueness 84 · Atmosphere 58 · Story 66 · Signature item 86 · Under the radar 90
 
 **Practical.** Food truck · Best in the afternoon and early evening  
 **Hours.** not found
@@ -85,7 +85,7 @@ Uniqueness 84 · Atmosphere 58 · Story 66 · Signature item 86
 
 ---
 
-## Mama's Royal Cafe — Gem 76
+## Mama's Royal Cafe — Gem 73
 *1970s breakfast institution · Mosswood, Oakland · Open secret · morning, midday*
 
 **Story.** On Broadway since 1974, in a former Chinese restaurant whose pagoda-style overhangs are still there. When longtime owner George Marino sold in 2017, he chose buyers who promised to keep the menu, staff and decor. The booths still carry carved initials, and the walls hold winners of the annual napkin-art contest.
@@ -93,7 +93,7 @@ Uniqueness 84 · Atmosphere 58 · Story 66 · Signature item 86
 **Order this.** Huevos rancheros or corned beef hash, and check the whiteboard specials.
 
 **Why this score.** A funky 1974 breakfast room whose carved booths, napkin art and veteran staff survived a sale intact. The menu is long and solid rather than famous for one plate.  
-Uniqueness 72 · Atmosphere 86 · Story 82 · Signature item 62
+Uniqueness 72 · Atmosphere 86 · Story 82 · Signature item 62 · Under the radar 60
 
 **Practical.** Breakfast and lunch only · Napkin art contest yearly  
 **Hours.** not found
@@ -112,7 +112,7 @@ Uniqueness 72 · Atmosphere 86 · Story 82 · Signature item 62
 
 ---
 
-## Imm Thai Street Food — Gem 51
+## Imm Thai Street Food — Gem 59
 *Small Thai street-food counter · Downtown Berkeley, Berkeley · Deep cut · midday, evening*
 
 **Story.** A small, crowded Thai counter in downtown Berkeley where the line often reaches the sidewalk at mealtimes. Portions are big enough to plan on leftovers, and the menu leans on family recipes, from drunken noodles to crispy pumpkin and duck noodle soup.
@@ -120,7 +120,7 @@ Uniqueness 72 · Atmosphere 86 · Story 82 · Signature item 62
 **Order this.** Pad see ew, or the duck noodle soup.
 
 **Why this score.** A tiny, always-busy Thai counter that Berkeleyside counts among the city's must-knows. Sourcing is thin and there's no story beyond family recipes.  
-Uniqueness 56 · Atmosphere 50 · Story 30 · Signature item 70
+Uniqueness 56 · Atmosphere 50 · Story 30 · Signature item 70 · Under the radar 90
 
 **Practical.** Small room; expect a line  
 **Hours.** not found
@@ -138,7 +138,7 @@ Uniqueness 56 · Atmosphere 50 · Story 30 · Signature item 70
 
 ---
 
-## Gypsy's Trattoria Italiana — Gem 51
+## Gypsy's Trattoria Italiana — Gem 59
 *Cheap student pasta counter · Southside, Berkeley · Deep cut · morning, midday, evening, late*
 
 **Story.** A counter-service Italian spot next to campus that has fed Cal students for more than 30 years. Calzones the size of your head, pastas big enough to split, a line at the door and a communal patio outside, open until midnight every night.
@@ -146,7 +146,7 @@ Uniqueness 56 · Atmosphere 50 · Story 30 · Signature item 70
 **Order this.** A pasta to split, or a calzone if you're very hungry.
 
 **Why this score.** A three-decade Southside staple where one pasta feeds two and the kitchen runs till midnight. The food is good for the price rather than a destination.  
-Uniqueness 50 · Atmosphere 56 · Story 42 · Signature item 58
+Uniqueness 50 · Atmosphere 56 · Story 42 · Signature item 58 · Under the radar 90
 
 **Practical.** Counter service · Open until midnight daily  
 **Hours.** Daily 10 am to midnight (own site, confirm)
@@ -164,7 +164,7 @@ Uniqueness 50 · Atmosphere 56 · Story 42 · Signature item 58
 
 ---
 
-## H&J's Restaurant — Gem 56
+## H&J's Restaurant — Gem 63
 *Sibling-run breakfast cafe · San Pablo Avenue, El Cerrito · Deep cut · morning, midday*
 
 **Story.** Four siblings who went to El Cerrito High opened this cafe around 2017, modeled on the Inn Kensington Restaurant their parents have run since 1993. Homestyle omelets, scratch waffles and biscuits, and a place to linger over coffee and a book.
@@ -172,7 +172,7 @@ Uniqueness 50 · Atmosphere 56 · Story 42 · Signature item 58
 **Order this.** An omelet and a scratch biscuit.
 
 **Why this score.** Four El Cerrito-raised siblings carrying on their parents' Kensington diner tradition. The food is homestyle breakfast with no famous dish, and coverage is thin.  
-Uniqueness 48 · Atmosphere 58 · Story 62 · Signature item 58
+Uniqueness 48 · Atmosphere 58 · Story 62 · Signature item 58 · Under the radar 90
 
 **Practical.** Wed-Sun only · Breakfast and lunch  
 **Hours.** Wed-Sun 8:30 am to 2 pm (own site, confirm)
@@ -189,7 +189,7 @@ Uniqueness 48 · Atmosphere 58 · Story 62 · Signature item 58
 
 ---
 
-## The Red Onion — Gem 63
+## The Red Onion — Gem 69
 *Old-school burger stand · San Pablo Avenue, El Cerrito · Deep cut · midday, evening*
 
 **Story.** A small red-roofed burger stand under the BART tracks on San Pablo Avenue, across from a Home Depot, that feels like 1973 inside: checkered floor, Coca-Cola wallpaper, and a grill cook who takes your order and makes your burger in front of you. Burgers, fries and shakes, no artisanal anything.
@@ -197,7 +197,7 @@ Uniqueness 48 · Atmosphere 58 · Story 62 · Signature item 58
 **Order this.** A cheeseburger, fries and a shake.
 
 **Why this score.** A red-roofed burger stand under the BART tracks that feels frozen in the 1970s. Story is thin and dates are unconfirmed.  
-Uniqueness 64 · Atmosphere 76 · Story 46 · Signature item 68
+Uniqueness 64 · Atmosphere 76 · Story 46 · Signature item 68 · Under the radar 90
 
 **Practical.** Order at the counter  
 **Hours.** not found
@@ -215,7 +215,7 @@ Uniqueness 64 · Atmosphere 76 · Story 46 · Signature item 68
 
 ---
 
-## La Tapatía Mexicatessen — Gem 68
+## La Tapatía Mexicatessen — Gem 72
 *Tortilla factory turned taqueria · Downtown, South San Francisco · Deep cut · morning, midday*
 
 **Story.** Eduardo 'Lalo' Haro and Humberto Campos started La Tapatía on Grand Avenue in 1976 as a tortilla factory supplying restaurants and stores. In 1987 it stopped mass-producing and turned its energy to the taqueria up front. Haro's daughter Barbara now keeps the family business going, still making fresh corn tortillas.
@@ -223,7 +223,7 @@ Uniqueness 64 · Atmosphere 76 · Story 46 · Signature item 68
 **Order this.** Carnitas tacos on the house corn tortillas.
 
 **Why this score.** Fifty years on Grand Avenue, from a tortilla factory for other restaurants to a family taqueria still pressing its own. The room is a deli-market counter.  
-Uniqueness 64 · Atmosphere 60 · Story 78 · Signature item 70
+Uniqueness 64 · Atmosphere 60 · Story 78 · Signature item 70 · Under the radar 90
 
 **Practical.** Market and taqueria counter · Fresh corn tortillas to take home  
 **Hours.** not found
@@ -241,7 +241,7 @@ Uniqueness 64 · Atmosphere 60 · Story 78 · Signature item 70
 
 ---
 
-## Ramen Dojo — Gem 65
+## Ramen Dojo — Gem 64
 *Spicy garlic ramen shop · Downtown, San Mateo · Open secret · midday, evening*
 
 **Story.** A dim, 24-seat ramen shop on San Mateo's ramen row from Kazunori Kobayashi, who started nearby Santa Ramen in the late 1990s. People line up half an hour before it opens for pork ramen in a spicy garlic broth with whole roasted cloves, curly noodles and toppings from quail eggs to spicy cod roe.
@@ -249,7 +249,7 @@ Uniqueness 64 · Atmosphere 60 · Story 78 · Signature item 70
 **Order this.** Spicy garlic pork ramen, at whatever heat level you can handle.
 
 **Why this score.** A dim 24-seat room with a pre-opening line and a spicy garlic pork ramen many call the Bay's best. Popular enough to edge toward hype, and the story belongs more to its owner than the room.  
-Uniqueness 66 · Atmosphere 60 · Story 52 · Signature item 86
+Uniqueness 66 · Atmosphere 60 · Story 52 · Signature item 86 · Under the radar 60
 
 **Practical.** Line forms before opening · Closed between lunch and dinner  
 **Hours.** not found
@@ -267,7 +267,7 @@ Uniqueness 66 · Atmosphere 60 · Story 52 · Signature item 86
 
 ---
 
-## Phở Gà Nhà — Gem 58
+## Phở Gà Nhà — Gem 64
 *Chicken pho house · East San Jose, San Jose · Deep cut · midday, evening*
 
 **Story.** A no-frills Little Saigon restaurant run by the Tran family since 2014 that specializes in chicken. The phở gà uses free-range birds in a delicate broth, and the rotisserie chicken rice plate comes with tomato-tinted rice, a fried egg and chili sauce.
@@ -275,7 +275,7 @@ Uniqueness 66 · Atmosphere 60 · Story 52 · Signature item 86
 **Order this.** Phở gà, or the chicken rice plate.
 
 **Why this score.** A Little Saigon shop that does one thing, chicken, with free-range birds. The room is no-frills and the story is a modest family one.  
-Uniqueness 64 · Atmosphere 48 · Story 46 · Signature item 76
+Uniqueness 64 · Atmosphere 48 · Story 46 · Signature item 76 · Under the radar 90
 
 **Practical.** —  
 **Hours.** not found
@@ -293,7 +293,7 @@ Uniqueness 64 · Atmosphere 48 · Story 46 · Signature item 76
 
 ---
 
-## Thiên Long — Gem 62
+## Thiên Long — Gem 68
 *Vietnamese mom-and-pop restaurant · Evergreen, San Jose · Deep cut · midday, evening*
 
 **Story.** A cash-only strip-mall restaurant in Evergreen opened by the Quan family in 2006 and loved by local Vietnamese families. The menu reaches past pho to dishes rarely seen in the Bay, like chả cá Lã Vọng, turmeric fish with dill, and bánh bột chiên trứng.
@@ -301,7 +301,7 @@ Uniqueness 64 · Atmosphere 48 · Story 46 · Signature item 76
 **Order this.** Chả cá Lã Vọng.
 
 **Why this score.** A strip-mall family restaurant that Vietnamese families trust, with northern dishes rarely seen in the Bay. The room is plain and the story is short.  
-Uniqueness 72 · Atmosphere 50 · Story 50 · Signature item 78
+Uniqueness 72 · Atmosphere 50 · Story 50 · Signature item 78 · Under the radar 90
 
 **Practical.** Cash only (listings)  
 **Hours.** not found
@@ -319,7 +319,7 @@ Uniqueness 72 · Atmosphere 50 · Story 50 · Signature item 78
 
 ---
 
-## Achilles — Gem 51
+## Achilles — Gem 59
 *Mediterranean counter · Old Quad, Santa Clara · Deep cut · midday, evening*
 
 **Story.** A small Greek-leaning Mediterranean counter near Santa Clara University where the owner, Elias, chats with regulars and wants everyone treated kindly. Shawarma, gyros and plates in a plain room.
@@ -327,7 +327,7 @@ Uniqueness 72 · Atmosphere 50 · Story 50 · Signature item 78
 **Order this.** A chicken shawarma plate.
 
 **Why this score.** A friendly Old Quad counter that regulars call a true hole in the wall. Every source is a review or listing, so story and signature are low-confidence.  
-Uniqueness 52 · Atmosphere 56 · Story 36 · Signature item 62
+Uniqueness 52 · Atmosphere 56 · Story 36 · Signature item 62 · Under the radar 90
 
 **Practical.** —  
 **Hours.** not found
@@ -344,7 +344,7 @@ Uniqueness 52 · Atmosphere 56 · Story 36 · Signature item 62
 
 ---
 
-## Bánh Cuốn Tây Hồ — Gem 54
+## Bánh Cuốn Tây Hồ — Gem 61
 *Bánh cuốn specialist · El Camino Real, Santa Clara · Deep cut · midday, evening*
 
 **Story.** A casual Vietnamese spot on El Camino Real built around bánh cuốn, the steamed rice-sheet rolls made to order. The house special piles them with pork and wood-ear mushroom, shrimp, Vietnamese ham and a shrimp-and-sweet-potato fritter, with the dipping sauce on the side.
@@ -352,7 +352,7 @@ Uniqueness 52 · Atmosphere 56 · Story 36 · Signature item 62
 **Order this.** Bánh cuốn Tây Hồ đặc biệt, the house special plate.
 
 **Why this score.** A rare bánh cuốn specialist on El Camino, which earns uniqueness and signature. Every source is a listing or ordering page, so story is near zero.  
-Uniqueness 68 · Atmosphere 48 · Story 26 · Signature item 76
+Uniqueness 68 · Atmosphere 48 · Story 26 · Signature item 76 · Under the radar 90
 
 **Practical.** Daily 10:30 am to 8 pm (listing)  
 **Hours.** Daily 10:30 am to 8 pm (listing, confirm)
@@ -370,7 +370,7 @@ Uniqueness 68 · Atmosphere 48 · Story 26 · Signature item 76
 
 ---
 
-## La Torta Gorda — Gem 73
+## La Torta Gorda — Gem 70
 *Pueblan torta shop, since 2002 · Mission District, San Francisco · Open secret · morning, midday*
 
 **Story.** Armando Macuil, from Santa Ana Xalmimilulco in Puebla, opened La Torta Gorda with his wife Maira in 2002 to cook the food he grew up with. The pierna enchilada, stewed pork in a spicy chile blend on soft telera bread with beans, queso fresco and avocado, was ranked America's second-best sandwich by Food Network.
@@ -378,7 +378,7 @@ Uniqueness 68 · Atmosphere 48 · Story 26 · Signature item 76
 **Order this.** The pierna enchilada torta.
 
 **Why this score.** A torta Food Network ranked second-best sandwich in America, from a family cooking the food of their Puebla hometown. The room is a casual 24th Street storefront with a patio.  
-Uniqueness 74 · Atmosphere 62 · Story 70 · Signature item 90
+Uniqueness 74 · Atmosphere 62 · Story 70 · Signature item 90 · Under the radar 60
 
 **Practical.** Patio seating · Closes by 6 pm weekdays, 4 pm weekends  
 **Hours.** Mon-Fri 9 am to 6 pm, Sat-Sun 10 am to 4 pm (own site)
@@ -395,7 +395,7 @@ Uniqueness 74 · Atmosphere 62 · Story 70 · Signature item 90
 
 ---
 
-## Puerto Alegre — Gem 75
+## Puerto Alegre — Gem 72
 *Old-school Mexican family restaurant, since 1970 · Mission District, San Francisco · Open secret · midday, evening, late*
 
 **Story.** On Valencia since 1970 and still run by the founding family's siblings, Puerto Alegre is one of the street's oldest businesses. It's known for strong margaritas, pozole verde, a loud, happy room, weekend waits worth sitting through, and mariachis who may turn up at any moment.
@@ -403,7 +403,7 @@ Uniqueness 74 · Atmosphere 62 · Story 70 · Signature item 90
 **Order this.** A margarita and the pozole verde.
 
 **Why this score.** A 1970 Valencia Street family room famous for strong margaritas, weekend waits and the occasional mariachi. The food is classic Mexican-American more than a single destination dish.  
-Uniqueness 64 · Atmosphere 84 · Story 80 · Signature item 72
+Uniqueness 64 · Atmosphere 84 · Story 80 · Signature item 72 · Under the radar 60
 
 **Practical.** Expect a weekend wait  
 **Hours.** not found
@@ -421,7 +421,7 @@ Uniqueness 64 · Atmosphere 84 · Story 80 · Signature item 72
 
 ---
 
-## Pho 2000 — Gem 52
+## Pho 2000 — Gem 53
 *Family pho house · Little Saigon, San Francisco · Open secret · midday, evening*
 
 **Story.** A family-owned pho house on Larkin in Little Saigon, spread over more than one level, with richly spiced broth, grilled meats charred without drying out, and imperial rolls fried until bubbly.
@@ -429,7 +429,7 @@ Uniqueness 64 · Atmosphere 84 · Story 80 · Signature item 72
 **Order this.** Pho with the grilled meats on the side, plus imperial rolls.
 
 **Why this score.** A dependable family pho house on Little Saigon's main stretch with well-charred grilled meats. Story is thin and it competes with stronger pho on the same block.  
-Uniqueness 52 · Atmosphere 56 · Story 30 · Signature item 72
+Uniqueness 52 · Atmosphere 56 · Story 30 · Signature item 72 · Under the radar 60
 
 **Practical.** Catering platters  
 **Hours.** not found
@@ -447,7 +447,7 @@ Uniqueness 52 · Atmosphere 56 · Story 30 · Signature item 72
 
 ---
 
-## Yemen Kitchen — Gem 67
+## Yemen Kitchen — Gem 71
 *Yemeni counter · Tenderloin, San Francisco · Deep cut · midday, evening*
 
 **Story.** A small Jones Street restaurant that SFGate described as a taste of home for the city's Yemeni community. The saltah comes bubbling in a cast-iron bowl, lamb and potatoes under a froth of whipped fenugreek, and the lamb haneeth is slow-roasted until it falls apart.
@@ -455,7 +455,7 @@ Uniqueness 52 · Atmosphere 56 · Story 30 · Signature item 72
 **Order this.** Saltah, with lamb haneeth if you're two.
 
 **Why this score.** One of very few Yemeni kitchens in the city, cooking for homesick expats, with a saltah that arrives boiling. The block is rough and the room basic, so atmosphere is moderate.  
-Uniqueness 84 · Atmosphere 52 · Story 50 · Signature item 80
+Uniqueness 84 · Atmosphere 52 · Story 50 · Signature item 80 · Under the radar 90
 
 **Practical.** Halal (listings)  
 **Hours.** not found

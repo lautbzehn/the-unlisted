@@ -10,7 +10,7 @@ For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
 ---
 
-## Sunrise Deli — Gem 60
+## Sunrise Deli — Gem 66
 *Middle Eastern deli and bakery, since 1984 · Inner Sunset, San Francisco · Deep cut · midday, evening*
 
 **Story.** The family-run original, opened on Irving Street in 1984 when Middle Eastern counters were still rare in the Sunset. The Irving shop still runs the bakery: ring-shaped sesame bread, spinach pies, Armenian and thyme pizzas, and sweets every day, alongside the falafel and shawarma.
@@ -18,7 +18,7 @@ For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 **Order this.** A falafel sandwich, plus a round of sesame bread to take home.
 
 **Why this score.** The original of a small family group, still baking its own sesame bread on Irving, with falafel regulars swear by. The room is a plain deli and the group has grown, which keeps uniqueness and atmosphere moderate.  
-Uniqueness 62 · Atmosphere 50 · Story 56 · Signature item 76
+Uniqueness 62 · Atmosphere 50 · Story 56 · Signature item 76 · Under the radar 90
 
 **Practical.** Bakery on site at the Irving Street shop  
 **Hours.** not found
@@ -36,7 +36,7 @@ Uniqueness 62 · Atmosphere 50 · Story 56 · Signature item 76
 
 ---
 
-## Yummy Yummy — Gem 52
+## Yummy Yummy — Gem 60
 *Vietnamese noodle-soup house · Inner Sunset, San Francisco · Deep cut · morning, midday, evening*
 
 **Story.** An Irving Street noodle house with one of the biggest bowls in town: the pho xe lửa comes loaded with flank, tripe, tendon, meatballs and rare steak that keeps cooking in the broth. Ten other soups cover the non-beef side, including egg noodles with duck and black trumpet mushrooms.
@@ -44,7 +44,7 @@ Uniqueness 62 · Atmosphere 50 · Story 56 · Signature item 76
 **Order this.** The pho xe lửa, or mì vịt tiềm if you want duck.
 
 **Why this score.** Possibly the biggest bowl of pho in the city, plus a duck noodle soup worth knowing. Story is nearly empty and the room is a busy neighborhood noodle shop.  
-Uniqueness 58 · Atmosphere 48 · Story 28 · Signature item 80
+Uniqueness 58 · Atmosphere 48 · Story 28 · Signature item 80 · Under the radar 90
 
 **Practical.** Closes between lunch and dinner (2018 hours)  
 **Hours.** not found
@@ -61,7 +61,7 @@ Uniqueness 58 · Atmosphere 48 · Story 28 · Signature item 80
 
 ---
 
-## Long Bridge Pizza — Gem 61
+## Long Bridge Pizza — Gem 66
 *Sourdough pizza counter · Dogpatch, San Francisco · Deep cut · midday, evening*
 
 **Story.** Two childhood friends from the Bay Area who'd worked at Tony's, A16 and PizzaHacker opened this Dogpatch counter in 2014, naming it for a 19th-century wooden causeway on Third Street. Sourdough crust with a real snap, three dining rooms, games on TV and a lot of white boxes heading down the block.
@@ -69,7 +69,7 @@ Uniqueness 58 · Atmosphere 48 · Story 28 · Signature item 80
 **Order this.** A thin-crust sourdough pie. On Thursdays, the square Detroit-style pepperoni.
 
 **Why this score.** A strong neighborhood pizzeria with a sourdough crust and a Thursday Detroit-style night. It's a familiar format from trained pros rather than a one-of-a-kind place, so uniqueness and story are mid-range.  
-Uniqueness 56 · Atmosphere 62 · Story 52 · Signature item 76
+Uniqueness 56 · Atmosphere 62 · Story 52 · Signature item 76 · Under the radar 90
 
 **Practical.** Order at the counter · Detroit-style pizza on Thursdays  
 **Hours.** not found
@@ -87,7 +87,7 @@ Uniqueness 56 · Atmosphere 62 · Story 52 · Signature item 76
 
 ---
 
-## Baby's Eatery & Palabok — Gem 57
+## Baby's Eatery & Palabok — Gem 64
 *Filipino turo-turo counter · Excelsior, San Francisco · Deep cut · midday, evening*
 
 **Story.** A cash-only turo-turo counter on Excelsior's Mission Street: point at a dozen or so trays behind the plexiglass and watch them get piled onto rice and pancit with little regard for the lid. One combo makes two meals, and the lumpia and skewers are always there.
@@ -95,7 +95,7 @@ Uniqueness 56 · Atmosphere 62 · Story 52 · Signature item 76
 **Order this.** The two-entree combo with the adobo (ask if the other one is warming on the stove) and pork binagoongan. Add lumpia.
 
 **Why this score.** A true point-and-pick Filipino counter that piles a box past its limit. The room is takeout-only and we found little about who runs it, so atmosphere and story stay low.  
-Uniqueness 66 · Atmosphere 52 · Story 36 · Signature item 76
+Uniqueness 66 · Atmosphere 52 · Story 36 · Signature item 76 · Under the radar 90
 
 **Practical.** Cash only · Takeout; almost no seating  
 **Hours.** not found
@@ -112,7 +112,7 @@ Uniqueness 66 · Atmosphere 52 · Story 36 · Signature item 76
 
 ---
 
-## Smoke Soul Kitchen — Gem 71
+## Smoke Soul Kitchen — Gem 75
 *Bayview soul food brunch room · Bayview, San Francisco · Deep cut · morning, midday, evening*
 
 **Story.** Vanessa Lee grew up in the Bayview being told to hold on to her backpack on Third Street. After becoming a mother she wanted somewhere to sit with a coffee while her son napped, and found nothing. So when a local nonprofit asked the caterer to open a restaurant, she took over the old Auntie April's space in 2025.
@@ -120,7 +120,7 @@ Uniqueness 66 · Atmosphere 52 · Story 36 · Signature item 76
 **Order this.** Chicken and waffles, with a biscuit on the side.
 
 **Why this score.** Fried chicken and biscuits among the city's best, from a Bayview native who built the cafe she wished existed. It only opened in 2025, so the story is new rather than long.  
-Uniqueness 64 · Atmosphere 66 · Story 78 · Signature item 80
+Uniqueness 64 · Atmosphere 66 · Story 78 · Signature item 80 · Under the radar 90
 
 **Practical.** To-go window (added 2026)  
 **Hours.** not found
@@ -140,7 +140,7 @@ Uniqueness 64 · Atmosphere 66 · Story 78 · Signature item 80
 
 ---
 
-## Sophie's Crepes — Gem 53
+## Sophie's Crepes — Gem 60
 *Japanese-style crepe stand · Japantown, San Francisco · Deep cut · midday, evening*
 
 **Story.** On the second floor of Japantown's Kinokuniya Building since 2000, run by the same woman owner the whole time. The crepes are the crisp, rolled Japanese kind, made in front of you and filled with things like green tea gelato and red bean paste, or ham and cheese if you want lunch.
@@ -148,7 +148,7 @@ Uniqueness 64 · Atmosphere 66 · Story 78 · Signature item 80
 **Order this.** A green tea gelato and red bean crepe.
 
 **Why this score.** A 25-year Japantown fixture with Japan-specific flavors you won't find at a French creperie. It's a mall counter and the owner's story isn't public, so atmosphere and story stay low.  
-Uniqueness 56 · Atmosphere 50 · Story 40 · Signature item 66
+Uniqueness 56 · Atmosphere 50 · Story 40 · Signature item 66 · Under the radar 90
 
 **Practical.** Second floor, Kinokuniya Building  
 **Hours.** not found
@@ -166,7 +166,7 @@ Uniqueness 56 · Atmosphere 50 · Story 40 · Signature item 66
 
 ---
 
-## Za Pizza — Gem 50
+## Za Pizza — Gem 58
 *Russian Hill slice shop · Russian Hill, San Francisco · Deep cut · midday, evening*
 
 **Story.** A thin-crust slice shop at Hyde and Green with cheap daily specials, a pesto slice locals like, and walls covered in kids' drawings. Neighbors treat it as Russian Hill's informal community center.
@@ -174,7 +174,7 @@ Uniqueness 56 · Atmosphere 50 · Story 40 · Signature item 66
 **Order this.** The pesto slice, or whatever the daily special is.
 
 **Why this score.** A friendly New York-style slice counter that acts as the neighborhood's living room. Format is common and the history we found is muddled, so most marks stay low.  
-Uniqueness 46 · Atmosphere 58 · Story 38 · Signature item 62
+Uniqueness 46 · Atmosphere 58 · Story 38 · Signature item 62 · Under the radar 90
 
 **Practical.** Daily slice specials  
 **Hours.** not found
@@ -192,7 +192,7 @@ Uniqueness 46 · Atmosphere 58 · Story 38 · Signature item 62
 
 ---
 
-## Vien Huong — Gem 68
+## Vien Huong — Gem 72
 *Chiu Chow noodle house · Oakland Chinatown, Oakland · Deep cut · morning, midday*
 
 **Story.** A family noodle house on Franklin for nearly four decades, now run by the second generation, who keep their parents' recipes with only small tweaks. The house soup is a clear, light chicken broth you season yourself at long cafeteria tables, ideally with the funky, fishy house-made chili sauce.
@@ -200,7 +200,7 @@ Uniqueness 46 · Atmosphere 58 · Story 38 · Signature item 62
 **Order this.** The house Chiu Chow ho fun soup, with a spoonful of the house chili sauce.
 
 **Why this score.** A second-generation noodle house with one of Chinatown's best soups and a fiery house chili sauce. The room is cafeteria tables and the founding story is thin, which holds those marks in the 60s.  
-Uniqueness 68 · Atmosphere 60 · Story 64 · Signature item 82
+Uniqueness 68 · Atmosphere 60 · Story 64 · Signature item 82 · Under the radar 90
 
 **Practical.** Long shared tables · Quick lunch  
 **Hours.** not found
@@ -219,7 +219,7 @@ Uniqueness 68 · Atmosphere 60 · Story 64 · Signature item 82
 
 ---
 
-## New Gold Medal — Gem 69
+## New Gold Medal — Gem 67
 *Late-night Cantonese noodle house · Oakland Chinatown, Oakland · Open secret · morning, midday, evening, late*
 
 **Story.** The East Bay's 3 am bowl of wonton soup. New Gold Medal has served no-frills Cantonese food here since 2007, and before that Sun Hong Kong held the same 8th Street spot with the same late hours from the 1980s. Tall narrow windows, after-bar crews, night-shift workers and students mid-cram.
@@ -227,7 +227,7 @@ Uniqueness 68 · Atmosphere 60 · Story 64 · Signature item 82
 **Order this.** Beef chow fun or wonton noodle soup with roast duck.
 
 **Why this score.** For decades the one place in Oakland Chinatown serving chow fun at 3 am, in an old building with a predecessor that did the same. The food is classic Cantonese comfort rather than a famous dish.  
-Uniqueness 66 · Atmosphere 72 · Story 66 · Signature item 72
+Uniqueness 66 · Atmosphere 72 · Story 66 · Signature item 72 · Under the radar 60
 
 **Practical.** Open until 3 am  
 **Hours.** 9 am to 3 am, midnight on Tuesdays (KQED, Apr 2025)
@@ -251,7 +251,7 @@ Uniqueness 66 · Atmosphere 72 · Story 66 · Signature item 72
 **Order this.** A grilled pork bánh mì and an iced Vietnamese coffee. Try the roasted eel if you're curious.
 
 **Why this score.** The Infatuation rates its bánh mì a 9.0, among Oakland's best, which earns a near-top signature. Story is nearly blank and the shop is takeout only.  
-Uniqueness 70 · Atmosphere 58 · Story 30 · Signature item 92
+Uniqueness 70 · Atmosphere 58 · Story 30 · Signature item 92 · Under the radar 60
 
 **Practical.** Takeout only · Expect a line  
 **Hours.** not found
@@ -269,7 +269,7 @@ Uniqueness 70 · Atmosphere 58 · Story 30 · Signature item 92
 
 ---
 
-## Aguachiles El Tamarindo — Gem 68
+## Aguachiles El Tamarindo — Gem 72
 *Sinaloan mariscos truck · Fruitvale, Oakland · Deep cut · midday, evening*
 
 **Story.** A colorful family-run truck parked on a former used-car lot near Fruitvale BART, with a covered patio of plastic tables. The menu runs long: aguachiles, ceviches, towers of shrimp, fish and crab, plus birria tacos for the non-seafood crowd.
@@ -277,7 +277,7 @@ Uniqueness 70 · Atmosphere 58 · Story 30 · Signature item 92
 **Order this.** Aguachile, as spicy as you can take it, or a seafood tower if you're a group.
 
 **Why this score.** Sinaloa-style seafood that people cross the Bay for, served from a truck with its own lot and covered seating. Story is thin, and the family runs other trucks and a restaurant, which needs a chain check.  
-Uniqueness 78 · Atmosphere 66 · Story 44 · Signature item 84
+Uniqueness 78 · Atmosphere 66 · Story 44 · Signature item 84 · Under the radar 90
 
 **Practical.** Covered outdoor seating · Own parking lot  
 **Hours.** not found
@@ -295,7 +295,7 @@ Uniqueness 78 · Atmosphere 66 · Story 44 · Signature item 84
 
 ---
 
-## Piedmont Cafe & Bakery — Gem 49
+## Piedmont Cafe & Bakery — Gem 57
 *Donut shop turned diner · Piedmont Avenue, Oakland · Deep cut · morning, midday*
 
 **Story.** A small Piedmont Avenue diner with ceiling fans and black-and-white tile that started as a donut shop and grew into a breakfast place. Pancakes, omelets and croissants, with a case of fresh donuts by the register.
@@ -303,7 +303,7 @@ Uniqueness 78 · Atmosphere 66 · Story 44 · Signature item 84
 **Order this.** A diner breakfast, with a fresh donut on the side.
 
 **Why this score.** An old-school counter diner with black-and-white tiles and fresh donuts, run by a family. Nothing in reliable press backs it up, so story and signature stay low.  
-Uniqueness 48 · Atmosphere 62 · Story 30 · Signature item 58
+Uniqueness 48 · Atmosphere 62 · Story 30 · Signature item 58 · Under the radar 90
 
 **Practical.** —  
 **Hours.** not found
@@ -321,7 +321,7 @@ Uniqueness 48 · Atmosphere 62 · Story 30 · Signature item 58
 
 ---
 
-## The Kingfish Pub & Cafe — Gem 81
+## The Kingfish Pub & Cafe — Gem 83
 *1920s bait-shop dive bar · Temescal, Oakland · Deep cut · evening, late*
 
 **Story.** Built around 1922 as a bait shop, it started pouring beer when Prohibition ended. A cop ran it in the 1940s, then a minor-league ballplayer who covered the walls in sports memorabilia. In 2015, facing a condo project, the owners moved the whole shack 35 yards in three pieces to keep its low ceiling and crooked corners.
@@ -329,7 +329,7 @@ Uniqueness 48 · Atmosphere 62 · Story 30 · Signature item 58
 **Order this.** A beer at the bar. Food has been snacks, popcorn and a planned Spenger's-themed kitchen.
 
 **Why this score.** A bait shack turned bar that was literally rolled across the street to escape demolition: top marks for story and room. Food is the weak point, so signature is low.  
-Uniqueness 90 · Atmosphere 90 · Story 94 · Signature item 40
+Uniqueness 90 · Atmosphere 90 · Story 94 · Signature item 40 · Under the radar 90
 
 **Practical.** Back patio · Dive bar first  
 **Hours.** not found
@@ -348,7 +348,7 @@ Uniqueness 90 · Atmosphere 90 · Story 94 · Signature item 40
 
 ---
 
-## Cheese 'n Stuff — Gem 73
+## Cheese 'n Stuff — Gem 76
 *Alley sandwich deli, since 1986 · Southside, Berkeley · Deep cut · midday*
 
 **Story.** Sam Juha opened this deli in 1986 in an old wine-and-cheese shop, tucked in a dim alley under a Southside parking garage, and fed students for 39 years. He retired in September 2025, weeks after his grandson was born, and handed it to his nephew Chuck, who promised new floors and nothing else.
@@ -356,7 +356,7 @@ Uniqueness 90 · Atmosphere 90 · Story 94 · Signature item 40
 **Order this.** A hefty deli sandwich at student prices.
 
 **Why this score.** Generations of Cal students know the alley under the garage; the 2025 handoff to a nephew keeps it in the family. Sandwiches are hearty and cheap rather than a famous order.  
-Uniqueness 74 · Atmosphere 74 · Story 76 · Signature item 66
+Uniqueness 74 · Atmosphere 74 · Story 76 · Signature item 66 · Under the radar 90
 
 **Practical.** Hidden in the alley under the Telegraph-Channing garage  
 **Hours.** not found
@@ -375,7 +375,7 @@ Uniqueness 74 · Atmosphere 74 · Story 76 · Signature item 66
 
 ---
 
-## La Burrita — Gem 52
+## La Burrita — Gem 60
 *Late-night student taqueria · Southside, Berkeley · Deep cut · midday, evening, late*
 
 **Story.** A family-owned taqueria that opened on Northside in 1985 and added this Southside shop on Durant in 1991. It's the Cal student's old reliable: burritos and tacos with house-made salsas, cooked without lard, open until 1 am.
@@ -383,7 +383,7 @@ Uniqueness 74 · Atmosphere 74 · Story 76 · Signature item 66
 **Order this.** A burrito after midnight, with the house salsas.
 
 **Why this score.** Four decades as Cal's late-night burrito stop, family-run from the start. It's a standard taqueria format with no single famous dish, so uniqueness and signature stay middling.  
-Uniqueness 46 · Atmosphere 56 · Story 52 · Signature item 58
+Uniqueness 46 · Atmosphere 56 · Story 52 · Signature item 58 · Under the radar 90
 
 **Practical.** Open until 1 am (Southside) · No lard used  
 **Hours.** Daily 11 am to 1 am (Southside location, listing; confirm)
@@ -401,7 +401,7 @@ Uniqueness 46 · Atmosphere 56 · Story 52 · Signature item 58
 
 ---
 
-## El Mexicano Deli y Taqueria — Gem 57
+## El Mexicano Deli y Taqueria — Gem 63
 *Deli taqueria with al vapor tacos · 23rd Street, Richmond · Deep cut · midday, evening*
 
 **Story.** A deli-taqueria on Richmond's 23rd Street taco corridor, formerly called Los Mexicanos Deli. On a good day the saucy, blackened al pastor is as good as anyone's, and it's one of few places nearby doing Jalisco-style al vapor tacos on soft steamed tortillas. Free pickled carrots and onions come piled high.
@@ -409,7 +409,7 @@ Uniqueness 46 · Atmosphere 56 · Story 52 · Signature item 58
 **Order this.** Al pastor, plus a lengua taco al vapor with green salsa. A spinach-pineapple agua fresca if they have it.
 
 **Why this score.** Charred al pastor and rare Jalisco-style steamed tacos on Richmond's taco row, with a generous free veggie spread. Story is thin and the best source is from 2015.  
-Uniqueness 64 · Atmosphere 52 · Story 36 · Signature item 78
+Uniqueness 64 · Atmosphere 52 · Story 36 · Signature item 78 · Under the radar 90
 
 **Practical.** Free pickled vegetables bar  
 **Hours.** not found
@@ -425,7 +425,7 @@ Uniqueness 64 · Atmosphere 52 · Story 36 · Signature item 78
 
 ---
 
-## Mekeni Restaurant & Karaoke Bar — Gem 55
+## Mekeni Restaurant & Karaoke Bar — Gem 62
 *Kapampangan turo-turo and karaoke · Top of the Hill, Daly City · Deep cut · morning, midday, evening*
 
 **Story.** A Kapampangan restaurant on Daly City's Mission Street that works two ways: a turo-turo steam table where you point at an entree and it comes with rice, and a made-to-order silog breakfast menu all day. The karaoke bar side takes over later.
@@ -433,7 +433,7 @@ Uniqueness 64 · Atmosphere 52 · Story 36 · Signature item 78
 **Order this.** Kare-kare or pork sisig from the counter; tapsilog in the morning.
 
 **Why this score.** Kapampangan cooking (the Philippines' noted food province) at a point-and-pick counter with karaoke attached. Press is thin and we found no history, so story is low.  
-Uniqueness 64 · Atmosphere 58 · Story 30 · Signature item 68
+Uniqueness 64 · Atmosphere 58 · Story 30 · Signature item 68 · Under the radar 90
 
 **Practical.** Point-and-pick combos with rice · Karaoke bar  
 **Hours.** not found
@@ -451,7 +451,7 @@ Uniqueness 64 · Atmosphere 58 · Story 30 · Signature item 68
 
 ---
 
-## El Zocalo — Gem 47
+## El Zocalo — Gem 55
 *Salvadoran pupuseria · El Camino, South San Francisco · Deep cut · midday, evening*
 
 **Story.** A Salvadoran and Mexican restaurant on South San Francisco's El Camino Real where the pupusa is the house specialty: thick, cheese-filled, and served with citrusy curtido. Loroco, chicharrón and bean versions are on the menu.
@@ -459,7 +459,7 @@ Uniqueness 64 · Atmosphere 58 · Story 30 · Signature item 68
 **Order this.** A loroco pupusa and a chicharrón con frijoles, with plenty of curtido.
 
 **Why this score.** A neighborhood Salvadoran room with well-liked pupusas. Every source is a listing or review site, so story and atmosphere can't be scored with confidence.  
-Uniqueness 50 · Atmosphere 45 · Story 30 · Signature item 64
+Uniqueness 50 · Atmosphere 45 · Story 30 · Signature item 64 · Under the radar 90
 
 **Practical.** —  
 **Hours.** not found

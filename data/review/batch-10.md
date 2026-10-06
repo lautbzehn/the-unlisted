@@ -10,7 +10,7 @@ For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
 ---
 
-## Taqueria Vallarta — Gem 57
+## Taqueria Vallarta — Gem 58
 *Late-night taqueria, since 1997 · Mission District, San Francisco · Open secret · evening, late*
 
 **Story.** On 24th Street since 1997 and run by Mission restaurateur Juan Rosas Lopez, Vallarta is known for tacos al vapor, steamed until soft, and for staying open until 2 a.m. nightly and later on weekends. It closed for a full remodel in 2023 after failing a health inspection, then reopened.
@@ -18,7 +18,7 @@ For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 **Order this.** Carne asada tacos al vapor, late.
 
 **Why this score.** A 24th Street taqueria open until 2 a.m. nightly, known for steamed tacos al vapor. Decent rather than great, but it fills the late-night gap.  
-Uniqueness 56 · Atmosphere 58 · Story 50 · Signature item 66
+Uniqueness 56 · Atmosphere 58 · Story 50 · Signature item 66 · Under the radar 60
 
 **Practical.** Open until 2 am, 2:30 am on weekends · Lots of seating  
 **Hours.** Daily until 2 am; Fri and Sat until 2:30 am (Infatuation, June 2026)
@@ -36,7 +36,7 @@ Uniqueness 56 · Atmosphere 58 · Story 50 · Signature item 66
 
 ---
 
-## Pinecrest Diner — Gem 64
+## Pinecrest Diner — Gem 63
 *Late-night diner, since 1969 · Union Square, San Francisco · Open secret · morning, midday, evening, late*
 
 **Story.** Opened in 1969 and still run by the son of the founders, the Pinecrest sits on the edge of Union Square and the Tenderloin and feeds whoever walks in: tourists, theatergoers and the after-club crowd. All-day breakfast with hash browns is the usual order. It ran 24 hours for decades and still does on several nights.
@@ -44,7 +44,7 @@ Uniqueness 56 · Atmosphere 58 · Story 50 · Signature item 66
 **Order this.** All-day breakfast with hash browns, or a burger.
 
 **Why this score.** A 1969 family diner on Geary that still runs around the clock several nights a week, feeding theatergoers, tourists and the after-club crowd.  
-Uniqueness 62 · Atmosphere 72 · Story 64 · Signature item 56
+Uniqueness 62 · Atmosphere 72 · Story 64 · Signature item 56 · Under the radar 60
 
 **Practical.** 24 hours Wed to Sat (2024); 7 am to 11 pm other days  
 **Hours.** 24 hours Wed to Sat; 7 am to 11 pm Sun to Tue (search summary, 2024; confirm)
@@ -70,7 +70,7 @@ Uniqueness 62 · Atmosphere 72 · Story 64 · Signature item 56
 **Order this.** Chicken kebabs with naan.
 
 **Why this score.** A 1994 halal canteen opened to feed Pakistani cab drivers, and one of the originals of the Tenderloin's Jones Street tandoor strip. The story beats the food.  
-Uniqueness 58 · Atmosphere 50 · Story 72 · Signature item 48
+Uniqueness 58 · Atmosphere 50 · Story 72 · Signature item 48 · Under the radar 60
 
 **Practical.** Halal · Fast, under $20 (2022) · Few tables  
 **Hours.** not found
@@ -88,7 +88,7 @@ Uniqueness 58 · Atmosphere 50 · Story 72 · Signature item 48
 
 ---
 
-## Hon's Wun-Tun House — Gem 67
+## Hon's Wun-Tun House — Gem 65
 *Hong Kong-style wonton noodle shop, since 1972 · Chinatown, San Francisco · Open secret · morning, midday, evening*
 
 **Story.** Hon's has served Hong Kong-style wonton noodle soup on Kearny Street since 1972, at the seam of Chinatown and the Financial District, so office workers share tables with locals. The wontons are wrapped by hand each morning. Under owner Amanda Yan it has added a larger Washington Street shop and a third on Irving Street.
@@ -96,7 +96,7 @@ Uniqueness 58 · Atmosphere 50 · Story 72 · Signature item 48
 **Order this.** Wonton noodle soup.
 
 **Why this score.** A Kearny Street wonton house open since 1972, with wontons wrapped by hand every morning. Now three shops, but the small original is the one to visit.  
-Uniqueness 64 · Atmosphere 56 · Story 66 · Signature item 84
+Uniqueness 64 · Atmosphere 56 · Story 66 · Signature item 84 · Under the radar 60
 
 **Practical.** Original on Kearny; branches on Washington St and Irving St  
 **Hours.** not found
@@ -114,7 +114,7 @@ Uniqueness 64 · Atmosphere 56 · Story 66 · Signature item 84
 
 ---
 
-## Tommaso's — Gem 84
+## Tommaso's — Gem 72
 *Neapolitan pizzeria, since 1935 · North Beach, San Francisco · Local legend · evening*
 
 **Story.** Opened in 1935 as Lupo's, it was sold to head chef Tommy Chin, who renamed it Tommaso's, then in 1973 to the Crotti siblings from Lake Como. The wooden booths sit under Amalfi Coast murals said to have been paid for in spaghetti, beside North Beach's first wood-fired brick oven. The Crottis sold in 2024.
@@ -122,7 +122,7 @@ Uniqueness 64 · Atmosphere 56 · Story 66 · Signature item 84
 **Order this.** A pizza from the brick oven.
 
 **Why this score.** North Beach's oldest continuously operating restaurant, with 1930s Amalfi murals and the neighborhood's first wood-fired brick oven. New owner since 2024.  
-Uniqueness 76 · Atmosphere 88 · Story 94 · Signature item 76
+Uniqueness 76 · Atmosphere 88 · Story 94 · Signature item 76 · Under the radar 25
 
 **Practical.** Dinner · Booths under the original murals  
 **Hours.** not found
@@ -140,7 +140,7 @@ Uniqueness 76 · Atmosphere 88 · Story 94 · Signature item 76
 
 ---
 
-## Good Luck Dim Sum — Gem 50
+## Good Luck Dim Sum — Gem 52
 *Cash-only dim sum counter · Inner Richmond, San Francisco · Open secret · morning, midday*
 
 **Story.** A cash-only counter on Clement where the morning line moves fast and trays fill with shrimp har gow, turnip cakes and sesame balls. The baked barbecue pork bun, with an especially jammy filling, is the one not to skip. A full breakfast or lunch runs under $10, and it makes a good stop before a Golden Gate Park picnic.
@@ -148,7 +148,7 @@ Uniqueness 76 · Atmosphere 88 · Story 94 · Signature item 76
 **Order this.** Baked BBQ pork bun, shrimp har gow and a red bean sesame ball.
 
 **Why this score.** A cash-only Clement Street counter often called the Richmond's best dim sum, with a morning line and almost everything under $10. The baked pork bun is the reason.  
-Uniqueness 54 · Atmosphere 46 · Story 22 · Signature item 86
+Uniqueness 54 · Atmosphere 46 · Story 22 · Signature item 86 · Under the radar 60
 
 **Practical.** Cash only · Takeout; expect a morning line · Under $10 a meal (2023)  
 **Hours.** not found
@@ -173,7 +173,7 @@ Uniqueness 54 · Atmosphere 46 · Story 22 · Signature item 86
 **Order this.** Gal-bi from the weekday lunch menu.
 
 **Why this score.** A Balboa Street Korean barbecue house with a tired sign and a reputation going back 30 years. Weekday lunch specials under $20 come with a big spread of banchan.  
-Uniqueness 56 · Atmosphere 66 · Story 46 · Signature item 76
+Uniqueness 56 · Atmosphere 66 · Story 46 · Signature item 76 · Under the radar 60
 
 **Practical.** Lunch specials Mon to Fri 11 am to 4 pm · Tabletop grills · Fills by noon  
 **Hours.** Opens 11 am (SF Standard, 2024); closing time not confirmed
@@ -192,7 +192,7 @@ Uniqueness 56 · Atmosphere 66 · Story 46 · Signature item 76
 
 ---
 
-## Polly Ann Ice Cream — Gem 78
+## Polly Ann Ice Cream — Gem 75
 *Ice cream shop, since 1955 · Outer Sunset, San Francisco · Open secret · midday, evening*
 
 **Story.** Polly Ann has scooped near Noriega and 39th since 1955 under a string of owners. One couple added the big carnival wheel that picks a flavor for the undecided; a later owner built the recipe list into the hundreds. Alex Viafara bought it in 2021 and keeps about 50 flavors daily, from durian and taro to merlot.
@@ -200,7 +200,7 @@ Uniqueness 56 · Atmosphere 66 · Story 46 · Signature item 76
 **Order this.** Spin the wheel, or ask for durian or Thai tea.
 
 **Why this score.** A 1955 Outer Sunset scoop shop with a carnival wheel for choosing flavors and a case of oddities like durian and merlot. A Legacy Business since 2024.  
-Uniqueness 80 · Atmosphere 72 · Story 82 · Signature item 78
+Uniqueness 80 · Atmosphere 72 · Story 82 · Signature item 78 · Under the radar 60
 
 **Practical.** About 50 flavors daily · Legacy Business (2024) · FiDi pop-up opened 2026  
 **Hours.** not found
@@ -219,7 +219,7 @@ Uniqueness 80 · Atmosphere 72 · Story 82 · Signature item 78
 
 ---
 
-## San Tung — Gem 62
+## San Tung — Gem 54
 *Northern Chinese restaurant, since 1986 · Inner Sunset, San Francisco · Local legend · midday, evening*
 
 **Story.** Named for the northern Chinese province of Shandong, San Tung opened on Irving Street in 1986 and became an Inner Sunset fixture on the strength of one dish. The dry-fried chicken wings are battered, fried crisp and tossed in a sweet, sticky sauce with garlic, ginger and whole red chilies. Potstickers are the side order.
@@ -227,7 +227,7 @@ Uniqueness 80 · Atmosphere 72 · Story 82 · Signature item 78
 **Order this.** Original dry-fried chicken wings and potstickers.
 
 **Why this score.** An Irving Street restaurant open since 1986 whose dry-fried chicken wings draw lines out the door. One dish carries the whole reputation.  
-Uniqueness 62 · Atmosphere 50 · Story 50 · Signature item 92
+Uniqueness 62 · Atmosphere 50 · Story 50 · Signature item 92 · Under the radar 25
 
 **Practical.** Expect a line at peak times · Wings travel reasonably well  
 **Hours.** not found
@@ -245,7 +245,7 @@ Uniqueness 62 · Atmosphere 50 · Story 50 · Signature item 92
 
 ---
 
-## Rocco's Cafe — Gem 70
+## Rocco's Cafe — Gem 68
 *Italian-American cafe, since 1932 · SoMa, San Francisco · Open secret · morning, midday*
 
 **Story.** Rocco Coscarelli opened Rocco's Fine Food in the Excelsior in 1932. His grandson Don Dial brought the name to a run-down Folsom Street space around 1990, added breakfast and called it a cafe. Through the AIDS years and every tech boom it fed SoMa, until Dial retired at the end of 2023 and three partners took over.
@@ -253,7 +253,7 @@ Uniqueness 62 · Atmosphere 50 · Story 50 · Signature item 92
 **Order this.** A big breakfast plate, or one of the old Italian dishes at lunch.
 
 **Why this score.** A SoMa cafe carrying the name and recipes of a 1932 Excelsior Italian restaurant, run by the founder's grandson for 33 years. A Legacy Business with new owners since 2024.  
-Uniqueness 62 · Atmosphere 70 · Story 86 · Signature item 62
+Uniqueness 62 · Atmosphere 70 · Story 86 · Signature item 62 · Under the radar 60
 
 **Practical.** Breakfast and lunch · Legacy Business (2024)  
 **Hours.** not found
@@ -272,7 +272,7 @@ Uniqueness 62 · Atmosphere 70 · Story 86 · Signature item 62
 
 ---
 
-## Gumbo Social — Gem 73
+## Gumbo Social — Gem 70
 *Gumbo kitchen · Bayview, San Francisco · Open secret · midday, evening*
 
 **Story.** Dontaye Ball lost his restaurant job in the pandemic and started ladling gumbo at farmers markets around the city, where the lines grew long. In 2023 he opened Gumbo Social on a quiet stretch of Third Street between a hardware store and a parking lot. He still says it will never match his grandmother's.
@@ -280,7 +280,7 @@ Uniqueness 62 · Atmosphere 70 · Story 86 · Signature item 62
 **Order this.** A bowl of the house gumbo.
 
 **Why this score.** A Third Street gumbo shop that grew out of farmers-market lines after its chef was laid off in the pandemic. It also runs an annual gumbo week and a home-cook contest.  
-Uniqueness 76 · Atmosphere 58 · Story 76 · Signature item 84
+Uniqueness 76 · Atmosphere 58 · Story 76 · Signature item 84 · Under the radar 60
 
 **Practical.** Hosts a yearly block party and National Gumbo Week · Small room  
 **Hours.** not found
@@ -298,7 +298,7 @@ Uniqueness 76 · Atmosphere 58 · Story 76 · Signature item 84
 
 ---
 
-## Pork Store Cafe — Gem 72
+## Pork Store Cafe — Gem 69
 *Breakfast diner behind a 1916 sign · Haight-Ashbury, San Francisco · Open secret · morning, midday*
 
 **Story.** A Czech immigrant couple opened a pork butcher here in 1916 and hung a stained-glass sign in 1925. Later tenants boarded it over. When the boards came down around 1980, the glass was still there, and the Pork Store Cafe was born; the family behind the Blue Front Cafe has run it since 1983.
@@ -306,7 +306,7 @@ Uniqueness 76 · Atmosphere 58 · Story 76 · Signature item 84
 **Order this.** A big breakfast plate with eggs and hash browns.
 
 **Why this score.** A small Haight breakfast room under a 1925 stained-glass Pork Store sign, found intact behind boards decades after the butcher shop closed. Big, no-frills breakfasts.  
-Uniqueness 66 · Atmosphere 76 · Story 82 · Signature item 62
+Uniqueness 66 · Atmosphere 76 · Story 82 · Signature item 62 · Under the radar 60
 
 **Practical.** Breakfast and lunch · Small; expect a weekend wait  
 **Hours.** not found
@@ -325,7 +325,7 @@ Uniqueness 66 · Atmosphere 76 · Story 82 · Signature item 62
 
 ---
 
-## Cha Cha Cha — Gem 70
+## Cha Cha Cha — Gem 68
 *Caribbean tapas room, since 1984 · Haight-Ashbury, San Francisco · Open secret · midday, evening*
 
 **Story.** Phillip Belber, a Puerto Rican New Yorker, and his partner Leon Pak opened Cha Cha Cha on Haight Street in 1984, early in the city's tapas craze, after an earlier Cuban-Puerto Rican venture next door failed. The menu of Cajun shrimp, plantains and sangria has barely changed. Irfan Yalcin has owned it since 2017.
@@ -333,7 +333,7 @@ Uniqueness 66 · Atmosphere 76 · Story 82 · Signature item 62
 **Order this.** Cajun shrimp, plátanos maduros and a pitcher of sangria.
 
 **Why this score.** A 1984 Haight Street tapas room that helped bring Caribbean small plates and sangria to San Francisco. Loud, festive and still a party spot.  
-Uniqueness 64 · Atmosphere 80 · Story 66 · Signature item 72
+Uniqueness 64 · Atmosphere 80 · Story 66 · Signature item 72 · Under the radar 60
 
 **Practical.** Full bar · Takes reservations · Good for groups  
 **Hours.** not found
@@ -353,7 +353,7 @@ Uniqueness 64 · Atmosphere 80 · Story 66 · Signature item 72
 
 ---
 
-## Vientian Cafe — Gem 78
+## Vientian Cafe — Gem 74
 *Lao kitchen in a house · Allendale, Oakland · Open secret · midday, evening*
 
 **Story.** On a block of homes in East Oakland, one lime-green house is a restaurant: chef-owner Chan La and her husband bought it and live upstairs. The cooking is down-home Lao, layered with lemongrass, chilies and lime leaf, plus Thai and Vietnamese standards. The nam khao, crisp rice salad with fermented pork, is the dish people cross town for.
@@ -361,7 +361,7 @@ Uniqueness 64 · Atmosphere 80 · Story 66 · Signature item 72
 **Order this.** Nam khao (crispy rice salad with fermented pork) and papaya salad.
 
 **Why this score.** A lime-green house on a residential East Oakland street, the only business for blocks, cooking some of the area's best Lao food. Cheap lunch specials too.  
-Uniqueness 84 · Atmosphere 74 · Story 70 · Signature item 84
+Uniqueness 84 · Atmosphere 74 · Story 70 · Signature item 84 · Under the radar 60
 
 **Practical.** Lunch specials under $13 (2020) · Residential street; street parking  
 **Hours.** not found
@@ -379,7 +379,7 @@ Uniqueness 84 · Atmosphere 74 · Story 70 · Signature item 84
 
 ---
 
-## Bakesale Betty — Gem 74
+## Bakesale Betty — Gem 64
 *Fried chicken sandwich bakeshop · Temescal, Oakland · Local legend · midday*
 
 **Story.** Australian baker Alison Barakat and her husband Michael Camp run this Telegraph corner shop, where the menu is a few sheets of paper taped to the wall. The sandwich is a double-buttermilked, double-battered chicken cutlet under a sharp slaw of cabbage, jalapeño and parsley. The ironing-board sidewalk tables were a pandemic casualty; it is takeout now.
@@ -387,7 +387,7 @@ Uniqueness 84 · Atmosphere 74 · Story 70 · Signature item 84
 **Order this.** The buttermilk fried chicken sandwich and a slice of pie.
 
 **Why this score.** An Australian baker's Temescal corner shop whose buttermilk fried chicken sandwich with jalapeño slaw became an Oakland landmark. Open four days a week, mid-morning to 2 p.m.  
-Uniqueness 72 · Atmosphere 66 · Story 70 · Signature item 92
+Uniqueness 72 · Atmosphere 66 · Story 70 · Signature item 92 · Under the radar 25
 
 **Practical.** Thu to Sun, 10:30 am to 2 pm · Takeout only now · Cinnamon rolls Sundays only  
 **Hours.** Thu to Sun 10:30 am to 2 pm; closed Mon to Wed (own site)
@@ -406,7 +406,7 @@ Uniqueness 72 · Atmosphere 66 · Story 70 · Signature item 92
 
 ---
 
-## Cafe Colucci — Gem 75
+## Cafe Colucci — Gem 72
 *Ethiopian restaurant and spice shop, since 1991 · Golden Gate, Oakland · Open secret · midday, evening*
 
 **Story.** Fetlework Tefferi opened Cafe Colucci in 1991. After three decades on Telegraph it moved in 2022 to a larger space on San Pablo Avenue with a shop selling its Brundo spice blends, Ethiopian coffee and African spirits. Tefferi has spent recent years running the spice-processing plant in Modjo, Ethiopia that supplies the kitchen.
@@ -414,7 +414,7 @@ Uniqueness 72 · Atmosphere 66 · Story 70 · Signature item 92
 **Order this.** A spread of stews on injera, then a bag of Brundo spices to take home.
 
 **Why this score.** An Oakland Ethiopian institution since 1991 that moved to a bigger San Pablo Avenue home in 2022, with its own spice brand grown and blended in Ethiopia.  
-Uniqueness 74 · Atmosphere 68 · Story 82 · Signature item 74
+Uniqueness 74 · Atmosphere 68 · Story 82 · Signature item 74 · Under the radar 60
 
 **Practical.** Spice shop on site · Beer and wine · Michelin Guide recommended (per the restaurant)  
 **Hours.** not found
@@ -433,7 +433,7 @@ Uniqueness 74 · Atmosphere 68 · Story 82 · Signature item 74
 
 ---
 
-## FatApple's — Gem 65
+## FatApple's — Gem 64
 *Diner and bakery, since 1972 · North Berkeley, Berkeley · Open secret · morning, midday, evening*
 
 **Story.** FatApple's began baking pies and grilling burgers at a small spot in Jack London Square in 1969, then moved to what is now Martin Luther King Jr. Way in Berkeley in 1972. It is still a family restaurant with a bakery attached, best known for olallieberry pie and cheese puffs, with a second location in El Cerrito.
@@ -441,7 +441,7 @@ Uniqueness 74 · Atmosphere 68 · Story 82 · Signature item 74
 **Order this.** A burger, then a slice of olallieberry pie; cheese puffs to go.
 
 **Why this score.** A North Berkeley family diner and bakery since 1972, known for olallieberry pie and cheese puffs. Plain, steady and multi-generational.  
-Uniqueness 58 · Atmosphere 66 · Story 64 · Signature item 76
+Uniqueness 58 · Atmosphere 66 · Story 64 · Signature item 76 · Under the radar 60
 
 **Practical.** Second location in El Cerrito · Bakery counter for takeaway pies  
 **Hours.** not found

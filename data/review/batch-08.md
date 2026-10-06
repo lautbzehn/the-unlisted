@@ -10,7 +10,7 @@ For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
 ---
 
-## Tucker's Ice Cream — Gem 75
+## Tucker's Ice Cream — Gem 72
 *Ice cream parlor, since 1941 · Downtown Alameda, Alameda · Open secret · midday, evening*
 
 **Story.** Marshall and Verda Tucker were driving from Chico to open an ice cream shop in Santa Cruz in 1941, stopped in Alameda for lunch and stayed. Tucker's opened that June on Park Street using family recipes for super-creamed ice cream. It has changed hands several times, always to locals, and still runs flavor-naming contests.
@@ -18,7 +18,7 @@ For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 **Order this.** A Cho Cho, the chocolate malt on a stick, or a Tommy Tucker: a vanilla cone dipped in chocolate.
 
 **Why this score.** An 85-year-old Park Street parlor still making super-creamed ice cream from its founder's family recipes. Always owned by Alamedans, and still selling the Cho Cho.  
-Uniqueness 66 · Atmosphere 74 · Story 84 · Signature item 76
+Uniqueness 66 · Atmosphere 74 · Story 84 · Signature item 76 · Under the radar 60
 
 **Practical.** Ice cream cakes and fudge too · Hosts flavor-naming contests  
 **Hours.** not found
@@ -37,7 +37,7 @@ Uniqueness 66 · Atmosphere 74 · Story 84 · Signature item 76
 
 ---
 
-## Taqueria La Morena — Gem 45
+## Taqueria La Morena — Gem 54
 *Family taqueria, since 1986 · Downtown, South San Francisco · Deep cut · morning, midday, evening*
 
 **Story.** A family-owned taqueria on Baden Avenue in the old downtown of the Industrial City, open since 1986 and doing catering for the businesses east of the freeway. The menu is the classic taqueria run of tacos, quesadillas suizas and super burritos, and opens early on weekends.
@@ -45,7 +45,7 @@ Uniqueness 66 · Atmosphere 74 · Story 84 · Signature item 76
 **Order this.** Carne asada super burrito.
 
 **Why this score.** A family taqueria serving downtown South San Francisco since 1986, known locally for big carne asada super burritos. Few written sources beyond its own site.  
-Uniqueness 44 · Atmosphere 48 · Story 34 · Signature item 58
+Uniqueness 44 · Atmosphere 48 · Story 34 · Signature item 58 · Under the radar 90
 
 **Practical.** Opens 8 am on weekends · Catering available  
 **Hours.** Mon to Fri 9:30 am to 8:30 pm; Sat and Sun 8 am to 8:30 pm (own site)
@@ -62,7 +62,7 @@ Uniqueness 44 · Atmosphere 48 · Story 34 · Signature item 58
 
 ---
 
-## Manley's Donut Shop — Gem 57
+## Manley's Donut Shop — Gem 63
 *1950s neighborhood donut shop · Willow Glen, San Jose · Deep cut · morning, midday*
 
 **Story.** Clyde Manley opened a donut shop at 1126 Lincoln Avenue around 1953. After he retired in 1977, the business moved a few doors up to 1080 Lincoln, where it still makes donuts from early morning. Several South Bay shops now carry the Manley name, but this is the one on the original block.
@@ -70,7 +70,7 @@ Uniqueness 44 · Atmosphere 48 · Story 34 · Signature item 58
 **Order this.** A dozen mixed, early.
 
 **Why this score.** The Willow Glen donut shop that traces back to Clyde Manley's 1953 counter on Lincoln Avenue. Early-morning hours and a plain room.  
-Uniqueness 52 · Atmosphere 56 · Story 62 · Signature item 58
+Uniqueness 52 · Atmosphere 56 · Story 62 · Signature item 58 · Under the radar 90
 
 **Practical.** Early opening, closes around 2 pm (listing)  
 **Hours.** Daily 5 am to 2 pm (listing, confirm)
@@ -87,7 +87,7 @@ Uniqueness 52 · Atmosphere 56 · Story 62 · Signature item 58
 
 ---
 
-## Minato — Gem 75
+## Minato — Gem 72
 *Japanese-American family restaurant, since 1961 · Japantown, San Jose · Open secret · midday, evening*
 
 **Story.** Japantown's restaurants grew out of lunch counters for the farmworkers who arrived around 1900, and Minato keeps that home-style line going. It opened in 1961 and changed hands a few times before Gene and JoAnn Yoneda, who started there in 1980, bought it. The curry over rice and sukiyaki are original; the 1980s sushi bar is gone.
@@ -95,7 +95,7 @@ Uniqueness 52 · Atmosphere 56 · Story 62 · Signature item 58
 **Order this.** Curry over rice, or sukiyaki on a cold night.
 
 **Why this score.** San Jose's oldest operating Japanese restaurant, still serving the brown curry rice it opened with. Owned by a couple who started there as staff in 1980.  
-Uniqueness 70 · Atmosphere 74 · Story 84 · Signature item 70
+Uniqueness 70 · Atmosphere 74 · Story 84 · Signature item 70 · Under the radar 60
 
 **Practical.** Lunch Tue to Sat 11:15 am to 1:15 pm · Closed Sunday and Monday · Short lunch window; arrive early  
 **Hours.** Lunch Tue to Sat 11:15 am to 1:15 pm; dinner Tue to Thu 5 to 8 pm, Fri and Sat 5 to 8:30 pm (own site)
@@ -114,7 +114,7 @@ Uniqueness 70 · Atmosphere 74 · Story 84 · Signature item 70
 
 ---
 
-## Dianda's Italian American Pastry — Gem 75
+## Dianda's Italian American Pastry — Gem 72
 *Italian-American pastry shop, since 1962 · Mission District, San Francisco · Open secret · morning, midday*
 
 **Story.** Elio Dianda, a pastry chef from Lucca, bought a Mission Street bakery dating to 1906 and opened it under his name in 1962. His sons kept it going until 2003, when they sold to three longtime bakers, Sergio Flores, Luis Peña and Floyd Goldberg. Union bakers still start around 2 a.m. on the old recipes.
@@ -122,7 +122,7 @@ Uniqueness 70 · Atmosphere 74 · Story 84 · Signature item 70
 **Order this.** A slice of St. Honoré cake, or a mixed box of Italian cookies.
 
 **Why this score.** A Mission bakery in a building baking since 1906, run since 2003 by three of its own union bakers. Known for St. Honoré cakes and trays of Italian cookies.  
-Uniqueness 68 · Atmosphere 66 · Story 88 · Signature item 78
+Uniqueness 68 · Atmosphere 66 · Story 88 · Signature item 78 · Under the radar 60
 
 **Practical.** Union bakery (BCTGM Local 24) · Panettone at the holidays · Takes cake orders  
 **Hours.** not found
@@ -143,7 +143,7 @@ Uniqueness 68 · Atmosphere 66 · Story 88 · Signature item 78
 
 ---
 
-## Taqueria El Buen Sabor — Gem 51
+## Taqueria El Buen Sabor — Gem 52
 *Family taqueria, since 1995 · Mission District, San Francisco · Open secret · midday, evening*
 
 **Story.** Open since 1995 on Valencia, a few blocks from Dolores Park, with a brightly painted front that has stayed while the street turned trendy around it. Still family-run, with everything made in house: slow-cooked meats, bright salsas and big burritos, long a standby for students and evening crowds.
@@ -151,7 +151,7 @@ Uniqueness 68 · Atmosphere 66 · Story 88 · Signature item 78
 **Order this.** Al pastor burrito.
 
 **Why this score.** A family-run Valencia Street taqueria open since 1995, still plain and cheap on a strip that has gentrified around it. Solid al pastor burrito, little else to say.  
-Uniqueness 46 · Atmosphere 52 · Story 44 · Signature item 64
+Uniqueness 46 · Atmosphere 52 · Story 44 · Signature item 64 · Under the radar 60
 
 **Practical.** Near Dolores Park · Good for grab-and-go  
 **Hours.** Daily 11 am to 9:30 pm (search summary of own site, confirm)
@@ -169,7 +169,7 @@ Uniqueness 46 · Atmosphere 52 · Story 44 · Signature item 64
 
 ---
 
-## Brenda's French Soul Food — Gem 72
+## Brenda's French Soul Food — Gem 69
 *Creole soul food breakfast house · Tenderloin, San Francisco · Open secret · morning, midday*
 
 **Story.** Chef Brenda Buenviaje opened this Polk Street room in 2007 to cook what she calls French soul food: Southern and Creole dishes with French technique. Banks, coworkers and even her parents declined to back her; a nonprofit lender came through. The crawfish-stuffed beignet became the signature, and she has since opened two more restaurants.
@@ -177,7 +177,7 @@ Uniqueness 46 · Atmosphere 52 · Story 44 · Signature item 64
 **Order this.** Crawfish beignet, then fried chicken or the fried bologna sandwich.
 
 **Why this score.** Chef Brenda Buenviaje's own brand of Southern and Creole cooking with French touches, best known for the crawfish beignet. Popular enough that weekend lines are the norm.  
-Uniqueness 68 · Atmosphere 64 · Story 72 · Signature item 86
+Uniqueness 68 · Atmosphere 64 · Story 72 · Signature item 86 · Under the radar 60
 
 **Practical.** Breakfast and lunch focus · Expect a wait on weekends  
 **Hours.** not found
@@ -196,7 +196,7 @@ Uniqueness 68 · Atmosphere 64 · Story 72 · Signature item 86
 
 ---
 
-## Hai Ky Mi Gia — Gem 72
+## Hai Ky Mi Gia — Gem 69
 *Teochew egg-noodle house, since 1987 · Little Saigon, San Francisco · Open secret · morning, midday, evening*
 
 **Story.** Since 1987 the anchor noodle house of Little Saigon, specializing in Teochew Chinese cooking that is rare in a Cantonese-leaning city. The big room has archways and hanging orchids. The duck leg is braised for hours with orange peel and herbs, then set over thick or thin egg noodles in wonton soup.
@@ -204,7 +204,7 @@ Uniqueness 68 · Atmosphere 64 · Story 72 · Signature item 86
 **Order this.** Wonton noodle soup with braised duck leg, thick egg noodles, and a strong iced coffee.
 
 **Why this score.** Little Saigon's main noodle house since 1987, cooking Teochew dishes rare in Cantonese-leaning San Francisco. The duck leg wonton noodle soup is the draw.  
-Uniqueness 72 · Atmosphere 66 · Story 64 · Signature item 88
+Uniqueness 72 · Atmosphere 66 · Story 64 · Signature item 88 · Under the radar 60
 
 **Practical.** Walk-ins · About $14 a bowl (2024)  
 **Hours.** not found
@@ -221,7 +221,7 @@ Uniqueness 72 · Atmosphere 66 · Story 64 · Signature item 88
 
 ---
 
-## Eastern Bakery — Gem 75
+## Eastern Bakery — Gem 72
 *Chinatown bakery, since 1924 · Chinatown, San Francisco · Open secret · morning, midday*
 
 **Story.** Opened in 1924 as a bakery and diner, it is the oldest bakery in Chinatown, and the neon sign still reads Chinese and American food. The Kuan family bought it from the original owners in 1985. The cases still pair palmiers, lemon tarts and turnovers with pineapple buns and sesame balls; mooncakes use lotus paste made in house.
@@ -229,7 +229,7 @@ Uniqueness 72 · Atmosphere 66 · Story 64 · Signature item 88
 **Order this.** A slice of coffee crunch cake and a pineapple bun.
 
 **Why this score.** Chinatown's oldest bakery, opened in 1924 as a bakery and diner, still mixing American pastries with Chinese ones. Its coffee crunch cake is a city classic.  
-Uniqueness 70 · Atmosphere 72 · Story 86 · Signature item 74
+Uniqueness 70 · Atmosphere 72 · Story 86 · Signature item 74 · Under the radar 60
 
 **Practical.** Mooncakes around Mid-Autumn Festival · No longer serves diner food  
 **Hours.** not found
@@ -247,7 +247,7 @@ Uniqueness 70 · Atmosphere 72 · Story 86 · Signature item 74
 
 ---
 
-## Sam Wo — Gem 81
+## Sam Wo — Gem 70
 *Century-old jook and noodle house · Chinatown, San Francisco · Local legend · midday, evening*
 
 **Story.** Sam Wo traces back to around 1908 on Washington Street, where it stayed open until 3 a.m., hosted Beat poets and employed Edsel Ford Fung, a waiter famous for insulting customers. It closed in 2012, reopened on Clay Street in 2015, then shut again when chef-owner David Ho retired in 2025. Two Bay Area restaurateurs reopened it that September.
@@ -255,7 +255,7 @@ Uniqueness 70 · Atmosphere 72 · Story 86 · Signature item 74
 **Order this.** A bowl of jook.
 
 **Why this score.** A Chinatown jook house with roots around 1908, once famous for 3 a.m. closings, Beat poets and a notoriously rude waiter. Now on Clay Street, and revived in 2025 under new owners.  
-Uniqueness 82 · Atmosphere 70 · Story 96 · Signature item 72
+Uniqueness 82 · Atmosphere 70 · Story 96 · Signature item 72 · Under the radar 25
 
 **Practical.** Reopened September 2025 with a mostly unchanged menu · New owners aim for later weekend hours  
 **Hours.** Daily 11 am to 10 pm (Chronicle via search summary, Sept 2025)
@@ -274,7 +274,7 @@ Uniqueness 82 · Atmosphere 70 · Story 96 · Signature item 72
 
 ---
 
-## Wing Lee Bakery — Gem 50
+## Wing Lee Bakery — Gem 52
 *Takeout dim sum bakery · Inner Richmond, San Francisco · Open secret · morning, midday*
 
 **Story.** A small counter-service dim sum bakery on Clement, separate from Wing Lee BBQ next door. Metal trays and steamers hold barbecue pork buns the size of a saucer, extra-meaty siu mai and oversized fried sesame balls. Locals and nearby workers line up at lunch, and a full meal still comes in under $10.
@@ -282,7 +282,7 @@ Uniqueness 82 · Atmosphere 70 · Story 96 · Signature item 72
 **Order this.** Baked barbecue pork bun, pork siu mai and a sesame ball.
 
 **Why this score.** A cash-only Clement Street counter selling oversized dim sum, where a full meal costs under $10. The lunch line is mostly locals and nearby workers.  
-Uniqueness 54 · Atmosphere 46 · Story 24 · Signature item 82
+Uniqueness 54 · Atmosphere 46 · Story 24 · Signature item 82 · Under the radar 60
 
 **Practical.** Cash only · Busy at lunch · Takeout  
 **Hours.** not found
@@ -299,7 +299,7 @@ Uniqueness 54 · Atmosphere 46 · Story 24 · Signature item 82
 
 ---
 
-## Mandalay — Gem 80
+## Mandalay — Gem 69
 *Burmese restaurant, since 1984 · Inner Richmond, San Francisco · Local legend · midday, evening*
 
 **Story.** Opened in February 1984 and now run by the married couple Kevin Chen and Sherry Dung, Mandalay is the oldest Burmese restaurant still operating in the city. The yellow dining room is hung with paper hearts, garlands and upside-down umbrellas, and staff stop to sing happy birthday several times a night. James Beard named it an America's Classic in 2024.
@@ -307,7 +307,7 @@ Uniqueness 54 · Atmosphere 46 · Story 24 · Signature item 82
 **Order this.** Tea leaf salad, then mohinga or a noodle soup with paratha.
 
 **Why this score.** San Francisco's oldest running Burmese restaurant, in a yellow room that looks permanently decorated for a party. Named a James Beard America's Classic in 2024.  
-Uniqueness 72 · Atmosphere 88 · Story 78 · Signature item 84
+Uniqueness 72 · Atmosphere 88 · Story 78 · Signature item 84 · Under the radar 25
 
 **Practical.** Long waits on weekends · Good for birthdays and groups  
 **Hours.** not found
@@ -327,7 +327,7 @@ Uniqueness 72 · Atmosphere 88 · Story 78 · Signature item 84
 
 ---
 
-## Yuanbao Jiaozi — Gem 57
+## Yuanbao Jiaozi — Gem 58
 *Northeastern Chinese dumpling shop · Central Sunset, San Francisco · Open secret · midday, evening*
 
 **Story.** A small Irving Street shop with a few tables and a glass-walled station where staff fold dumplings in thick, chewy wrappers. The menu runs to a dozen boiled fillings, fourteen per order, from pork and napa cabbage to fish with shiitake. Bags of frozen dumplings sit in a freezer in the corner for later.
@@ -335,7 +335,7 @@ Uniqueness 72 · Atmosphere 88 · Story 78 · Signature item 84
 **Order this.** Pork and napa cabbage dumplings, plus the beef noodle soup if it is cold out.
 
 **Why this score.** A tiny Irving Street room making boiled dumplings with thick, chewy wrappers in a glass-walled station by the door. Fourteen to an order, and there is often a line.  
-Uniqueness 64 · Atmosphere 50 · Story 30 · Signature item 90
+Uniqueness 64 · Atmosphere 50 · Story 30 · Signature item 90 · Under the radar 60
 
 **Practical.** Few tables; expect a line · Frozen dumplings to take home  
 **Hours.** not found
@@ -362,7 +362,7 @@ Uniqueness 64 · Atmosphere 50 · Story 30 · Signature item 90
 **Order this.** The Allison, or anything built on the Romanian pastrami.
 
 **Why this score.** A takeout-only SoMa counter that stacks two or three meats per roll, with paper-thin pastrami as the anchor. Pricey at $18-23 a sandwich.  
-Uniqueness 66 · Atmosphere 36 · Story 52 · Signature item 88
+Uniqueness 66 · Atmosphere 36 · Story 52 · Signature item 88 · Under the radar 60
 
 **Practical.** Takeout only · Sandwiches about $18-23 (2024) · Lunch  
 **Hours.** not found
