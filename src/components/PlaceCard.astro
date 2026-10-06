@@ -1,0 +1,49 @@
+---
+interface Props {
+  place: {
+    id: string; name: string; area: string; kind: string; verified: string; score: number;
+    breakdown: { uniqueness: number; atmosphere: number; story: number; signature: number };
+    story: string; order: string;
+  };
+}
+const { place } = Astro.props;
+const bars = [
+  ['Uniqueness', place.breakdown.uniqueness],
+  ['Atmosphere', place.breakdown.atmosphere],
+  ['Story', place.breakdown.story],
+  ['Signature', place.breakdown.signature],
+];
+---
+<article class="card reveal" id={place.id} data-id={place.id} data-status="none">
+  <div class="stamp" aria-label={`Hidden Gem Score ${place.score} out of 100`}><div>GEM<br /><b>{place.score}</b></div></div>
+  <span class="sample-flag" data-sample-flag>SAMPLE — NOT A REAL PLACE</span>
+  <h3>{place.name}</h3>
+  <div class="meta">{place.area} · {place.kind} · Verified {place.verified}</div>
+  <p>{place.story}</p>
+  <div class="bars" aria-hidden="true">
+    {bars.map(([label, v]) => <div class="bar">{label}<div style={`--w:${v}%`}></div></div>)}
+  </div>
+  <div class="order"><span>ORDER THIS</span>{place.order}</div>
+
+  <div class="actions">
+    <button class="btn-ghost" data-action="knock" aria-pressed="false">Knock Later</button>
+    <button class="btn-primary" data-action="ledger" aria-pressed="false">Been Through the Door</button>
+    <button class="btn-ghost" data-action="share">Share</button>
+  </div>
+
+  <div class="ledger">
+    <div class="cap"><span>YOUR STRIKE</span><span data-strike-label>Not rated</span></div>
+    <div class="strikes" role="group" aria-label={`Your rating for ${place.name}`}>
+      {[1, 2, 3, 4, 5].map((n) => (
+        <button class="strike" data-strike={n} data-on="false" aria-label={`${n} of 5 matches`} aria-pressed="false">
+          <svg viewBox="0 0 20 60" aria-hidden="true">
+            <rect x="8" y="14" width="4" height="44" rx="1" fill="currentColor" />
+            <ellipse class="head" cx="10" cy="10" rx="6" ry="8" />
+          </svg>
+        </button>
+      ))}
+    </div>
+    <label class="sr-only" for={`note-${place.id}`} style="position:absolute;left:-999px">Private note</label>
+    <textarea id={`note-${place.id}`} data-note placeholder="Private note: what you ordered, who to ask for…" maxlength="400"></textarea>
+  </div>
+</article>
