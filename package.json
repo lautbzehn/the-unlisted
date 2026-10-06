@@ -12,7 +12,8 @@
     "astro": "astro",
     "predev": "node scripts/copy-maplibre-worker.mjs",
     "prebuild": "node scripts/copy-maplibre-worker.mjs",
-    "deploy": "npm run build && wrangler deploy"
+    "deploy": "npm run build && wrangler deploy",
+    "cities": "node scripts/cities.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",

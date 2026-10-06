@@ -3,10 +3,17 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "the-unlisted",
   "compatibility_date": "2026-10-01",
+  // Small server program for /api/* (city board: list, vote, suggest). Everything else is the static site.
+  "main": "worker/index.js",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
   },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "the-unlisted", "database_id": "7b436fed-18be-482e-9130-3f5aaadad833", "migrations_dir": "migrations" }
+  ],
   // Serves the site at this address and creates its DNS record on icarianforge.com automatically.
   "routes": [{ "pattern": "unlisted.icarianforge.com", "custom_domain": true }]
+  // Secret (not in this file): TURNSTILE_SECRET, set with `wrangler secret put`.
 }

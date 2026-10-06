@@ -366,3 +366,26 @@ footer a:hover { color: var(--red); }
   opacity: 0; pointer-events: none; z-index: 90; transition: opacity 0.25s, transform 0.25s;
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* ---------- City board ---------- */
+.undercard .more { display: inline-block; margin-top: 14px; font: 700 13px var(--font-label); letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); }
+.proof { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px; padding: 14px 18px; }
+.proof-label { font: italic 0.98rem var(--font-read); color: var(--mute); }
+#bot-check { min-height: 65px; }
+.status { min-height: 1.6em; margin: 14px 0 4px; font: 700 14px var(--font-label); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); }
+.status.bad { color: var(--red); }
+.board { list-style: none; padding: 0; margin: 10px 0 0; border-top: 3px double var(--line); }
+.board-row { display: grid; grid-template-columns: 36px 1fr auto auto; grid-template-areas: 'rank name votes btn' 'rank region votes btn'; align-items: center; gap: 0 14px; padding: 10px 2px; border-bottom: 1px solid var(--rule); }
+.rank { grid-area: rank; font: 900 1.4rem var(--font-display); color: var(--mute); }
+.board-name { grid-area: name; font: 900 1.7rem/1 var(--font-display); text-transform: uppercase; }
+.board-region { grid-area: region; font: 600 11px var(--font-label); letter-spacing: 0.16em; text-transform: uppercase; color: var(--mute); }
+.board-votes { grid-area: votes; font: 700 13px var(--font-label); letter-spacing: 0.1em; text-transform: uppercase; color: var(--mute); }
+.board-row .btn-ghost { grid-area: btn; min-width: 92px; font-size: 0.82rem; }
+.board-row .btn-ghost:disabled { opacity: 1; background: var(--ink); color: var(--bg); cursor: default; }
+.board-loading { padding: 18px 0; font: italic 1rem var(--font-read); color: var(--mute); }
+.suggest-fields { display: grid; gap: 12px; grid-template-columns: 2fr 1fr; margin-bottom: 14px; }
+@media (max-width: 560px) { .suggest-fields { grid-template-columns: 1fr; } .board-row { gap: 0 10px; } .board-votes { font-size: 12px; } }
+.suggest label { display: grid; gap: 6px; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; }
+.suggest .opt { color: var(--mute); font-weight: 500; }
+.suggest input { font: 1rem var(--font-read); padding: 10px 12px; min-height: 46px; border: 1px solid var(--line); background: var(--field); color: var(--ink); border-radius: 0; text-transform: none; letter-spacing: 0; }
+.privacy { margin-top: 12px; font: italic 0.92rem var(--font-read); color: var(--mute); }

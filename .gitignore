@@ -31,3 +31,4 @@ data/pipeline/
 
 # Cloudflare local state
 .wrangler/
+.dev.vars
