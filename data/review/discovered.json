@@ -509,7 +509,7 @@
     "name": "New Lun Ting Cafe",
     "neighborhood": "Chinatown",
     "city": "San Francisco",
-    "address": "1050 Kearny St",
+    "address": "670 Jackson St",
     "kind": "Chinese-American diner",
     "when": [
       "morning",
@@ -518,7 +518,7 @@
     "fame": "deep-cut",
     "why": "Diner-style room said to be about a century old, where regulars' usuals arrive before they order. Pork chop special.",
     "source_url": "https://www.theinfatuation.com/san-francisco/guides/old-school-chinese-restaurants-sf",
-    "open_evidence": "In Infatuation old-school Chinese guide (2025). Street number from memory, verify",
+    "open_evidence": "In Infatuation old-school Chinese and Chinatown lunch guides (2025)",
     "from": "disc-02-day"
   },
   {
@@ -3040,5 +3040,376 @@
     "source_url": "https://www.amysuto.com/desk-of-amy-suto/richmond-district-restaurants",
     "open_evidence": "Current Richmond guide. Street number from memory, verify",
     "from": "disc-03-night"
+  },
+  {
+    "name": "Rice Roll Express",
+    "neighborhood": "Chinatown",
+    "city": "San Francisco",
+    "address": "1131 Stockton St",
+    "kind": "Cheung fun counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Stockton Street counter steaming rice noodle rolls to order, a cheap Chinatown lunch.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/chinatown-lunch-restaurants-sf",
+    "open_evidence": "Infatuation Chinatown lunch guide (2025)",
+    "from": "disc-02-day"
+  },
+  {
+    "name": "Hing Lung Company",
+    "neighborhood": "Chinatown",
+    "city": "San Francisco",
+    "address": "1261 Stockton St",
+    "kind": "Cantonese barbecue shop",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Roast pork, duck and char siu hacked to order on Stockton Street.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/chinatown-lunch-restaurants-sf",
+    "open_evidence": "Infatuation Chinatown lunch guide (2025)",
+    "from": "disc-02-day"
+  },
+  {
+    "name": "Yuet Lee",
+    "neighborhood": "Chinatown",
+    "city": "San Francisco",
+    "address": "1300 Stockton St",
+    "kind": "Late Cantonese seafood house",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "why": "Bright green corner seafood house where cooks and night owls come for salt-and-pepper squid.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/chinatown-lunch-restaurants-sf",
+    "open_evidence": "Infatuation Chinatown lunch guide (2025); confirm late hours",
+    "from": "disc-02-night"
+  },
+  {
+    "name": "New Woey Loy Goey",
+    "neighborhood": "Chinatown",
+    "city": "San Francisco",
+    "address": "699 Jackson St",
+    "kind": "Basement Cantonese kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Old Cantonese dining room down a flight of stairs on Jackson; rice plates and claypots.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/chinatown-lunch-restaurants-sf",
+    "open_evidence": "Infatuation Chinatown lunch guide (2025)",
+    "from": "disc-02-night"
+  },
+  {
+    "name": "Wat Mongkolratanaram",
+    "neighborhood": "South Berkeley",
+    "city": "Berkeley",
+    "address": "1911 Russell St",
+    "kind": "Thai temple Sunday brunch",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "A Thai Buddhist temple's Sunday brunch, served by volunteers for tokens; a Berkeley ritual unlike anything else here.",
+    "source_url": "https://www.berkeleyside.org/2025/01/01/favorite-berkeley-restaurants",
+    "open_evidence": "Berkeleyside must-know list, Jan 2025; Sundays only",
+    "from": "disc-11-day"
+  },
+  {
+    "name": "Imm Thai Street Food",
+    "neighborhood": "Downtown Berkeley",
+    "city": "Berkeley",
+    "address": "2068 Center St",
+    "kind": "Thai street-food counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Downtown Berkeley Thai spot known for portions big enough for leftovers.",
+    "source_url": "https://www.berkeleyside.org/2025/01/01/favorite-berkeley-restaurants",
+    "open_evidence": "Berkeleyside list, Jan 2025. Street number from memory, verify",
+    "from": "disc-11-day"
+  },
+  {
+    "name": "Gypsy's Trattoria Italiana",
+    "neighborhood": "Southside",
+    "city": "Berkeley",
+    "address": "2519 Durant Ave",
+    "kind": "Cheap student pasta house",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Southside pasta house serving big, cheap plates until midnight every night.",
+    "source_url": "https://www.berkeleyside.org/2025/01/01/favorite-berkeley-restaurants",
+    "open_evidence": "Berkeleyside list Jan 2025; late hours in Oakland/Berkeley late-night guides. Street number from memory, verify",
+    "from": "disc-11-night"
+  },
+  {
+    "name": "Manley Donuts",
+    "neighborhood": "Willow Glen",
+    "city": "San Jose",
+    "address": "1592 Meridian Ave",
+    "kind": "1950s neighborhood donut shop",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Donut shop dating to about 1953, now family-run with breakfast sandwiches and Vietnamese coffee. Two locations.",
+    "source_url": "https://www.sjpl.org/blogs/post/looking-back-ye-olde-doughnut-shoppe/",
+    "open_evidence": "Own site live (manleydonuts.com); confirm in research",
+    "from": "disc-14-day"
+  },
+  {
+    "name": "Stan's Donut Shop",
+    "neighborhood": "Homestead",
+    "city": "Santa Clara",
+    "address": "2628 Homestead Rd",
+    "kind": "1950s donut and soda fountain",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Donut shop since 1959 known for its donuts and soda-fountain treats.",
+    "source_url": "https://sanjoseinsider.org/best-breakfast-in-sunnyvale-ca",
+    "open_evidence": "San Jose Insider 2025 guide. Street address from memory, verify",
+    "from": "disc-15-day"
+  },
+  {
+    "name": "The Bread Basket",
+    "neighborhood": "Top of the Hill",
+    "city": "Daly City",
+    "address": "7099 Mission St",
+    "kind": "Filipino pandesal bakery",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Corner bakery making pandesal, ensaymada and bibingka from family recipes since 1977; cousins bought it in 2026 to keep it in the family.",
+    "source_url": "https://www.thebreadbasket.us/",
+    "open_evidence": "Own site notes 2026 family purchase",
+    "from": "disc-13-day"
+  },
+  {
+    "name": "Scolari's Good Eats",
+    "neighborhood": "Park Street",
+    "city": "Alameda",
+    "address": "1303 Park St",
+    "kind": "Hole-in-the-wall burger joint",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Small Park Street burger counter that guides call a classic hole in the wall.",
+    "source_url": "https://www.admiralscovealameda.com/blog/explore-downtown-alameda",
+    "open_evidence": "Current downtown Alameda guide; confirm in research",
+    "from": "disc-12-night"
+  },
+  {
+    "name": "Lers Ros Thai",
+    "neighborhood": "Tenderloin",
+    "city": "San Francisco",
+    "address": "730 Larkin St",
+    "kind": "Isan Thai dining room",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Tenderloin Thai room known for a long, fiery menu that goes well past pad thai. Three locations, at the chain limit.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-tenderloin-san-francisco",
+    "open_evidence": "Infatuation Tenderloin guide (current)",
+    "from": "disc-01-night"
+  },
+  {
+    "name": "Sai Jai Thai",
+    "neighborhood": "Tenderloin",
+    "city": "San Francisco",
+    "address": "771 O'Farrell St",
+    "kind": "Small Thai kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Small O'Farrell Street Thai kitchen on the Infatuation's Tenderloin list, quieter than the famous ones.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-tenderloin-san-francisco",
+    "open_evidence": "Infatuation Tenderloin guide (current)",
+    "from": "disc-01-night"
+  },
+  {
+    "name": "Yemen Kitchen",
+    "neighborhood": "Tenderloin",
+    "city": "San Francisco",
+    "address": "219 Jones St",
+    "kind": "Yemeni counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Yemeni cooking on Jones Street: lamb haneeth, saltah and flatbread. Few places like it in the city.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-tenderloin-san-francisco",
+    "open_evidence": "Infatuation Tenderloin guide (current)",
+    "from": "disc-01-night"
+  },
+  {
+    "name": "Thai Nghiep Ky Mi Gia",
+    "neighborhood": "Inner Sunset",
+    "city": "San Francisco",
+    "address": "1427 Noriega St",
+    "kind": "Chiu Chow noodle shop",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Cheap Noriega noodle shop for egg noodles and wonton soups, a lunch the Infatuation flags for value.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-in-the-sunset",
+    "open_evidence": "Infatuation Sunset guide (current)",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Yuanbao Jiaozi",
+    "neighborhood": "Inner Sunset",
+    "city": "San Francisco",
+    "address": "2110 Irving St",
+    "kind": "Northern Chinese dumpling shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Family dumpling shop on Irving with handmade jiaozi, including a well-known clam dumpling.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-in-the-sunset",
+    "open_evidence": "Infatuation Sunset guide (current)",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "Daol Tofu & Korean BBQ",
+    "neighborhood": "Koreatown Northgate",
+    "city": "Oakland",
+    "address": "4301 Telegraph Ave",
+    "kind": "Family soondubu house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-oriented tofu-stew and barbecue room in Oakland's Koreatown, less known than the chain nearby.",
+    "source_url": "https://daoltofu.com/",
+    "open_evidence": "Own site live; confirm in research",
+    "from": "disc-10-night"
+  },
+  {
+    "name": "Thiên Long",
+    "neighborhood": "Evergreen",
+    "city": "San Jose",
+    "address": "3005 Silver Creek Rd",
+    "kind": "Vietnamese family restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Mom-and-pop Vietnamese restaurant opened by the Quan family in 2006, busy with traditional dishes.",
+    "source_url": "https://wanderlog.com/list/geoCategory/1494570/best-spots-for-vietnamese-cuisine-in-san-jose",
+    "open_evidence": "Current listing. Address from memory, verify",
+    "from": "disc-14-night"
+  },
+  {
+    "name": "Cherry Blossom Bakery",
+    "neighborhood": "Inner Richmond",
+    "city": "San Francisco",
+    "address": "844 Clement St",
+    "kind": "Hong Kong-style bakery",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Busy Clement bakery baking pineapple buns, durian rolls and egg tarts in rounds all day.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/reviews/cherry-blossom-bakery",
+    "open_evidence": "Infatuation review (current)",
+    "from": "disc-03-day"
+  },
+  {
+    "name": "Lung Fung Bakery",
+    "neighborhood": "Outer Richmond",
+    "city": "San Francisco",
+    "address": "1823 Clement St",
+    "kind": "No-frills Chinese bakery",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Outer Clement bakery with serious char siu buns and $2 egg tarts; nothing fancy about the room.",
+    "source_url": "https://www.corner.inc/place/pa1kEXcbjJYF",
+    "open_evidence": "Current listings; confirm in research",
+    "from": "disc-03-day"
+  },
+  {
+    "name": "Bakesale Betty",
+    "neighborhood": "Temescal",
+    "city": "Oakland",
+    "address": "5098 Telegraph Ave",
+    "kind": "Fried chicken sandwich bakeshop",
+    "when": [
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "Opened 2005 by a Chez Panisse alum; the fried chicken sandwich with slaw made it a Temescal institution.",
+    "source_url": "https://www.bakesalebetty.us/",
+    "open_evidence": "Own site lists 2026 hours (Thu-Sun 10:30-2)",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Escape From New York Pizza",
+    "neighborhood": "Haight-Ashbury",
+    "city": "San Francisco",
+    "address": "1737 Haight St",
+    "kind": "Late-night slice counter",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Haight Street slice nook since 1986, still with original owners, open until 2am.",
+    "source_url": "https://haightstreetvoice.com/we-all-gotta-eat-scrumptious-local-spots/",
+    "open_evidence": "Local Haight guide (current); confirm hours",
+    "from": "disc-07-night"
+  },
+  {
+    "name": "Cha Cha Cha",
+    "neighborhood": "Haight-Ashbury",
+    "city": "San Francisco",
+    "address": "1801 Haight St",
+    "kind": "Caribbean tapas room",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Long-running Upper Haight room for Caribbean and Cuban small plates and sangria.",
+    "source_url": "https://rodneysftours.com/haight",
+    "open_evidence": "Current Haight guides; confirm in research",
+    "from": "disc-07-night"
   }
 ]
