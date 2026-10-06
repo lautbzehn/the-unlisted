@@ -27,6 +27,7 @@ const Heading = detail ? 'h1' : 'h3';
     {bars.map(([label, v]) => <div class="bar">{label}<div style={`--w:${v}%`}></div></div>)}
   </div>
   <div class="order"><span>ORDER THIS</span>{place.order}</div>
+  {detail && <a class="howlink" href="/how-the-score-works/">How is this scored?</a>}
 
   <div class="actions">
     <button class="btn-ghost" data-action="knock" aria-pressed="false">Knock Later</button>

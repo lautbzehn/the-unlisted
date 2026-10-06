@@ -1,0 +1,113 @@
+---
+import Base from '../layouts/Base.astro';
+import Footer from '../components/Footer.astro';
+import { MARKS } from '../lib/scoring.js';
+
+// Copy here describes how the finished product is meant to work. Before launch, re-check every
+// claim against what the data pipeline actually does (see PLAN.md).
+const why = {
+  uniqueness: ['Could this exist anywhere else?', 'The only place of its kind scores high. A great version of something common scores lower, however good it is.'],
+  atmosphere: ['What does it feel like to be in the room?', 'Light, sound, the people, the clutter. Dim, strange and lived-in beats shiny and new.'],
+  story: ['Is there a real reason this place exists?', 'A founder, a building, a recipe, a neighborhood. If we can’t find a story we can stand behind, it earns no points here.'],
+  signature: ['Is there one thing you should order?', 'It’s the “Order this” line on every card. A place can be wonderful and still have no single dish worth a detour.'],
+};
+const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92 };
+---
+<Base title="How the score works — The Unlisted" description="The Hidden Gem Score is an opinion with its work shown: four marks, a visible formula, and honest limits." path="/how-the-score-works/">
+  <main id="main" class="doc">
+    <a class="back" href="/">← All doors</a>
+    <p class="label">THE FINE PRINT</p>
+    <h1 class="doc-title">How the score works</h1>
+    <p class="lede">The Hidden Gem Score is an opinion with its work shown. It’s a number from 0 to 100 for how much a place feels like a secret worth keeping, built from four marks you can see on every card.</p>
+
+    <section class="panel" aria-labelledby="short">
+      <h2 id="short">The short version</h2>
+      <ul class="plain">
+        <li><b>It isn’t a popularity score.</b> Star ratings reward places a lot of people already know. This tries to reward the opposite.</li>
+        <li><b>It’s an AI’s read, checked by a person.</b> An AI model drafts the marks and the story. A human reads each one before it goes live.</li>
+        <li><b>It can be wrong,</b> and the section on limits below says how.</li>
+      </ul>
+    </section>
+
+    <h2 class="sect">The four marks</h2>
+    <p class="sub">Each mark is 0 to 100. The score is a weighted average, so the weights say what we care about most.</p>
+    <ol class="marks">
+      {MARKS.map((m) => (
+        <li class="panel mark">
+          <div class="mark-head">
+            <h3>{m.label}</h3>
+            <span class="weight">{Math.round(m.weight * 100)}%</span>
+          </div>
+          <div class="wbar" aria-hidden="true"><div style={`--w:${m.weight * 100 * 2.5}%`}></div></div>
+          <p class="q">{why[m.key][0]}</p>
+          <p>{why[m.key][1]}</p>
+        </li>
+      ))}
+    </ol>
+    <p class="sub">Why these weights? Uniqueness leads because it’s the whole point of the site. The signature item counts least because a great dish is the one thing every other guide already finds. These weights are a judgment call, not science, and you can see them in the calculator below.</p>
+
+    <h2 class="sect">Try the math</h2>
+    <p class="sub">Move the sliders. This is the exact calculation the site uses: each mark times its weight, added up, rounded to a whole number.</p>
+    <div class="panel calc" id="calc" data-start={JSON.stringify(start)}>
+      <div class="calc-grid">
+        <div class="calc-inputs">
+          {MARKS.map((m) => (
+            <div class="slider">
+              <label for={`r-${m.key}`}>{m.label} <span class="wt">× {Math.round(m.weight * 100)}%</span></label>
+              <input id={`r-${m.key}`} type="range" min="0" max="100" value={start[m.key]} data-key={m.key} data-weight={m.weight} />
+              <output for={`r-${m.key}`} data-val={m.key}>{start[m.key]}</output>
+              <span class="pts" data-pts={m.key}></span>
+            </div>
+          ))}
+        </div>
+        <div class="calc-result" aria-live="polite">
+          <div class="stamp big-stamp"><div>GEM<br /><b id="calc-score">0</b></div></div>
+          <p class="calc-note">Hypothetical place. Not a real score.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="sect">Where the numbers come from</h2>
+    <ol class="steps">
+      <li><b>Find.</b> Candidates come from OpenStreetMap, a free, community-built map. Chains are filtered out. We don’t use Google or Yelp data.</li>
+      <li><b>Research.</b> An AI model reads what’s publicly written about each place and drafts the four marks, a short explanation, the story and the “Order this” line. It runs once per place and the results are saved. Nothing is computed per visitor.</li>
+      <li><b>Review.</b> A person reads every draft, checks what they can, and approves, edits or drops it. Only approved places go live.</li>
+      <li><b>Stamp.</b> Every place carries a “last verified” date. An old date means old information, so treat it that way.</li>
+    </ol>
+
+    <h2 class="sect">What the score gets wrong</h2>
+    <p class="sub">Said plainly, so you can decide how much to trust it.</p>
+    <ul class="limits">
+      <li><b>AI drafts can invent or misremember details.</b> Review catches a lot, not everything. If a card disagrees with the sign on the door, believe the door.</li>
+      <li><b>It’s taste, not measurement.</b> Two sensible people would score the same place differently. The aim is to be consistent and open about the rules, not to be objective.</li>
+      <li><b>Truly hidden places are the hardest to research.</b> Almost nothing written means thin evidence, so those marks are less certain than the number suggests.</li>
+      <li><b>It only knows what’s been written down.</b> Places that are barely online get missed, and those are often run by people and communities who are less online. That’s a real bias and we haven’t solved it.</li>
+      <li><b>It says nothing about cleanliness, food safety, price, accessibility or whether the place is open tonight.</b> Check before you go. Some of these places are cash only.</li>
+      <li><b>A secret doesn’t stay secret.</b> A score is a snapshot from its verified date. A place can stop being unlisted.</li>
+    </ul>
+
+    <section class="panel two" aria-labelledby="strike">
+      <h2 id="strike">Gem Score vs. Your Strike</h2>
+      <p>The Gem Score is our read. <b>Your Strike</b> (one to five matches) is yours. It’s private, it lives on your device, and it never feeds into the Gem Score. Two different opinions, shown side by side on purpose.</p>
+    </section>
+
+    <p class="sample-note">Every place on the site right now is a made-up sample, so every score is a demonstration of the system, not a recommendation.</p>
+    <Footer />
+  </main>
+  <script>
+    import { MARKS, gemScore } from '../lib/scoring.js';
+    const calc = document.getElementById('calc');
+    const inputs = [...calc.querySelectorAll('input[type=range]')];
+    const render = () => {
+      const marks = {};
+      for (const i of inputs) {
+        marks[i.dataset.key] = Number(i.value);
+        calc.querySelector(`[data-val=${i.dataset.key}]`).textContent = i.value;
+        calc.querySelector(`[data-pts=${i.dataset.key}]`).textContent = `= ${(i.value * Number(i.dataset.weight)).toFixed(1)} pts`;
+      }
+      document.getElementById('calc-score').textContent = gemScore(marks);
+    };
+    calc.addEventListener('input', render);
+    render();
+  </script>
+</Base>

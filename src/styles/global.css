@@ -262,3 +262,49 @@ dialog#surprise::backdrop { background: rgba(12, 8, 6, 0.86); }
   @keyframes rise { from { opacity: 0; transform: translateY(24px) rotate(-1deg); } }
   .sp-card.revealed .stamp { animation: thump 0.5s 0.1s cubic-bezier(0.3, 1.6, 0.5, 1) backwards; }
 }
+
+footer p + p { margin-top: 6px; }
+
+/* ---------- Doc pages (How the score works) ---------- */
+.doc { max-width: 720px; }
+.doc .label { margin: 8px 0 6px; }
+.doc-title { font: 900 clamp(2.2rem, 8vw, 3.4rem) var(--font-display); line-height: 1.05; }
+.lede { font-family: var(--font-display); font-style: italic; font-size: 1.25rem; color: #cdbf9f; margin-top: 14px; line-height: 1.45; }
+.sect { font: 800 1.7rem var(--font-display); margin: 52px 0 6px; color: var(--brass-hi); }
+.sub { color: #cdbf9f; margin: 8px 0 18px; }
+.panel {
+  background: var(--paper); color: var(--ink); border-radius: 4px; padding: 20px 22px; margin: 22px 0 0;
+  background-image: repeating-linear-gradient(transparent 0 27px, #24160e14 27px 28px); box-shadow: 0 2px 0 #00000055, 0 14px 30px -12px #000c;
+}
+.panel h2 { font: 800 1.4rem var(--font-display); margin-bottom: 8px; }
+.plain { padding-left: 20px; display: grid; gap: 8px; }
+.marks { list-style: none; padding: 0; display: grid; gap: 14px; margin: 0; }
+.marks .panel { margin: 0; }
+.mark-head { display: flex; justify-content: space-between; align-items: baseline; }
+.mark h3 { font: 800 1.3rem var(--font-display); }
+.weight { font: 900 1.6rem var(--font-display); color: var(--oxblood); }
+.wbar { height: 6px; background: #24160e22; border-radius: 2px; margin: 8px 0 12px; overflow: hidden; }
+.wbar div { height: 100%; width: var(--w); background: var(--oxblood); }
+.mark .q { font: 600 1rem var(--font-body); margin-bottom: 4px; }
+
+.calc-grid { display: grid; gap: 20px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .calc-grid { grid-template-columns: 1fr 170px; } }
+.slider { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; align-items: center; margin-bottom: 14px; }
+.slider label { grid-column: 1 / -1; font: 12px var(--font-type); letter-spacing: 0.1em; text-transform: uppercase; }
+.slider .wt { color: var(--ink-mute); }
+.slider input { width: 100%; accent-color: var(--oxblood); min-height: 32px; }
+.slider output { font: 800 1.1rem var(--font-display); min-width: 2ch; text-align: right; }
+.slider .pts { grid-column: 1 / -1; font: 11px var(--font-type); color: var(--ink-mute); }
+.calc-result { display: grid; place-items: center; align-content: center; gap: 10px; text-align: center; }
+.big-stamp { position: static; width: 120px; height: 120px; border-width: 3.5px; font-size: 13px; }
+.big-stamp b { font-size: 46px; }
+.calc-note { font: 11px var(--font-type); color: var(--ink-mute); }
+
+.steps, .limits { padding-left: 22px; display: grid; gap: 12px; color: #d9ccb4; }
+.steps li::marker { font-family: var(--font-display); font-weight: 900; color: var(--brass); }
+.limits { list-style: square; }
+.limits li::marker { color: var(--oxblood-hi); }
+.steps b, .limits b { color: var(--cream); }
+.two { margin-top: 44px; }
+.sample-note { margin-top: 32px; font: 12px var(--font-type); letter-spacing: 0.06em; color: var(--mute); border-top: 1px dashed #b8893a55; padding-top: 16px; }
+.howlink { display: inline-block; margin-top: 12px; font: 12px var(--font-type); letter-spacing: 0.1em; color: var(--oxblood); }

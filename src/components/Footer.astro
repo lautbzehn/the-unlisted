@@ -1,0 +1,8 @@
+---
+interface Props { sample?: boolean }
+const { sample = false } = Astro.props;
+---
+<footer>
+  <p>HUMAN CURATED · AI ENRICHED{sample ? ' · SAMPLE DATA SHOWN' : ''}</p>
+  <p><a href="/how-the-score-works/">HOW THE SCORE WORKS</a></p>
+</footer>

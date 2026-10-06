@@ -3,7 +3,7 @@ import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
 import { readFileSync } from 'node:fs';
 import type { APIRoute } from 'astro';
-import places from '../../data/places.json';
+import { places } from '../../lib/places.js';
 
 const font = (pkg: string, file: string) =>
   readFileSync(new URL(`../../../node_modules/@fontsource/${pkg}/files/${file}`, import.meta.url));
