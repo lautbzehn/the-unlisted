@@ -2,9 +2,9 @@
 
 17 drafts · your picks: 0 · found by research: 17
 
-**Fame:** Deep cut 15 · Open secret 2  
+**Fame:** Deep cut 11 · Open secret 6  
 **Time of day:** morning+midday 7 · midday+evening 6 · morning+midday+evening 3 · morning+midday+evening+late 1  
-**Flags to check:** 45 · **Sources:** 40 (internal only)
+**Flags to check:** 49 · **Sources:** 40 (internal only)
 
 For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
@@ -35,15 +35,15 @@ Uniqueness 52 · Atmosphere 62 · Story 48 · Signature item 62 · Under the rad
 
 ---
 
-## 900 Grayson — Gem 69
-*West Berkeley neighborhood diner · West Berkeley, Berkeley · Deep cut · morning, midday*
+## 900 Grayson — Gem 63
+*West Berkeley neighborhood diner · West Berkeley, Berkeley · Open secret · morning, midday*
 
 **Story.** A West Berkeley diner where staff tend to know your order. Brothers Chris and Anthony Saulnier have run it since it opened about 20 years ago, and even after a 2010 turn on Diners, Drive-Ins and Dives, they say most customers are neighbors. Plain dining room, sunny patio.
 
 **Order this.** The Demon Lover: chicken and waffles, with a spicy kick to the chicken. Or the Grayson burger.
 
 **Why this score.** A warehouse-district diner that regulars own in spirit, with a chicken-and-waffles plate that has a name and a kick. Story is solid but not deep: same two brothers for 20 years.  
-Uniqueness 60 · Atmosphere 64 · Story 58 · Signature item 76 · Under the radar 90
+Uniqueness 60 · Atmosphere 64 · Story 58 · Signature item 76 · Under the radar 60
 
 **Practical.** Sunny patio  
 **Hours.** not found
@@ -52,6 +52,7 @@ Uniqueness 60 · Atmosphere 64 · Story 58 · Signature item 76 · Under the rad
 - [ ] Anthony Saulnier's first name comes from search summaries; 7x7 names only Chris and 'the Saulnier brothers'. Confirm.
 - [ ] Hours not confirmed (7x7 Aug 2026 implies open).
 - [ ] The burger is on an Acme bun per 7x7; left out of the story.
+- [ ] Relabeled deep cut -> open secret: covered by 7x7.com and berkeleyside.org.
 
 <details><summary>Sources (2)</summary>
 
@@ -61,15 +62,15 @@ Uniqueness 60 · Atmosphere 64 · Story 58 · Signature item 76 · Under the rad
 
 ---
 
-## Juan's Place — Gem 64
-*Old-school Mexican family restaurant · West Berkeley, Berkeley · Deep cut · midday, evening*
+## Juan's Place — Gem 58
+*Old-school Mexican family restaurant · West Berkeley, Berkeley · Open secret · midday, evening*
 
 **Story.** A corner restaurant in West Berkeley's warehouse blocks, the place locals have long sent big, budget-minded groups. In 2001 the East Bay Express noted it kept winning the paper's Best Mexican readers' poll. Combination plates, enchiladas and burritos, nothing precious.
 
 **Order this.** Enchiladas, with the mole if it's on.
 
 **Why this score.** A long-running, big-table Mexican room on a West Berkeley corner, cheap enough for a crowd. Story and signature are moderate: the best source is old and the founding details are thin.  
-Uniqueness 56 · Atmosphere 64 · Story 50 · Signature item 60 · Under the radar 90
+Uniqueness 56 · Atmosphere 64 · Story 50 · Signature item 60 · Under the radar 60
 
 **Practical.** Good for big groups  
 **Hours.** not found
@@ -78,6 +79,7 @@ Uniqueness 56 · Atmosphere 64 · Story 50 · Signature item 60 · Under the rad
 - [ ] Founding year (1972) and the Mejia family name appear only on auto-generated listing sites; not used. Find a real source.
 - [ ] Newest independent coverage found is a 2015 Nosh mention. Confirm still open and current hours.
 - [ ] Mole enchiladas named only on menu aggregators; 'order' is soft.
+- [ ] Relabeled deep cut -> open secret: covered by eastbayexpress.com and berkeleyside.org.
 
 <details><summary>Sources (2)</summary>
 
@@ -321,15 +323,15 @@ Uniqueness 74 · Atmosphere 66 · Story 90 · Signature item 72 · Under the rad
 
 ---
 
-## L & G Vietnamese Sandwich — Gem 76
-*Family bánh mì shop · Little Saigon, San Francisco · Deep cut · morning, midday*
+## L & G Vietnamese Sandwich — Gem 70
+*Family bánh mì shop · Little Saigon, San Francisco · Open secret · morning, midday*
 
 **Story.** Ki Giang and Minh Lam met in Cambodia, survived Khmer Rouge work camps, and arrived in San Francisco as refugees. They raised three sons in the Tenderloin and named this little shop for their surnames. It has one standing table in the window, low prices and generous sandwiches, diagonally across from Saigon Sandwich.
 
 **Order this.** A roast pork bánh mì, and skip the line across the street.
 
 **Why this score.** A family story few places can match, and bánh mì some neighbors rate above the famous shop across the street. The room is one standing table in the window, so atmosphere stays modest.  
-Uniqueness 66 · Atmosphere 56 · Story 90 · Signature item 80 · Under the radar 90
+Uniqueness 66 · Atmosphere 56 · Story 90 · Signature item 80 · Under the radar 60
 
 **Practical.** One standing table; takeout · Corner of Eddy and Larkin  
 **Hours.** not found
@@ -338,6 +340,7 @@ Uniqueness 66 · Atmosphere 56 · Story 90 · Signature item 80 · Under the rad
 - [ ] Address corrected from discovery (401 Larkin St was wrong): it's 602 Eddy St, now matched to OSM node/9735505750.
 - [ ] Hours not found. Mission Local photo essay (Aug 2025) shows it operating.
 - [ ] 'Roast pork' is a soft order pick: sources list veggie, chicken, pork, meatball and fish cake but name no favorite.
+- [ ] Relabeled deep cut -> open secret: covered by sfchronicle.com and missionlocal.org.
 
 <details><summary>Sources (3)</summary>
 
@@ -348,15 +351,15 @@ Uniqueness 66 · Atmosphere 56 · Story 90 · Signature item 80 · Under the rad
 
 ---
 
-## New Lun Ting Cafe — Gem 86
-*Chinatown 'pork chop house' cafe, since 1970 · Chinatown, San Francisco · Deep cut · midday, evening*
+## New Lun Ting Cafe — Gem 80
+*Chinatown 'pork chop house' cafe, since 1970 · Chinatown, San Francisco · Open secret · midday, evening*
 
 **Story.** Chinatown calls it the pork chop house. It opened in 1970 as a bachelor's cafe for single men; when Frances Mah took over from her father in 1989 she pulled out most of the U-shaped bar and added booths for families, but kept a stretch of counter. The bachelors still sit there every day.
 
 **Order this.** Pork chop over rice with the brown sauce, a 1970s burnt orange. Ask about the free jello.
 
 **Why this score.** A living bachelor's cafe with a counter of regulars and a Hong Kong-meets-British menu you pick by formula. Signature is strong but the food is homestyle, not a destination dish.  
-Uniqueness 88 · Atmosphere 86 · Story 84 · Signature item 80 · Under the radar 90
+Uniqueness 88 · Atmosphere 86 · Story 84 · Signature item 80 · Under the radar 60
 
 **Practical.** Cash only · Open daily  
 **Hours.** Daily 10:30 am to 9:30 pm (Spotlight Chinatown, confirm)
@@ -364,6 +367,7 @@ Uniqueness 88 · Atmosphere 86 · Story 84 · Signature item 80 · Under the rad
 **Check before approving:**
 - [ ] Some sources claim roots back to 1909; Spotlight Chinatown says established 1970. Story uses 1970.
 - [ ] Spotlight profile is undated (likely 2020-21); confirm hours and cash-only.
+- [ ] Relabeled deep cut -> open secret: covered by theinfatuation.com and sfweekly.com.
 
 <details><summary>Sources (3)</summary>
 

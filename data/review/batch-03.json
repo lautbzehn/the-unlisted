@@ -54,7 +54,7 @@
       "morning",
       "midday"
     ],
-    "fame": "deep-cut",
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 60,
       "atmosphere": 64,
@@ -75,7 +75,8 @@
     "flags": [
       "Anthony Saulnier's first name comes from search summaries; 7x7 names only Chris and 'the Saulnier brothers'. Confirm.",
       "Hours not confirmed (7x7 Aug 2026 implies open).",
-      "The burger is on an Acme bun per 7x7; left out of the story."
+      "The burger is on an Acme bun per 7x7; left out of the story.",
+      "Relabeled deep cut -> open secret: covered by 7x7.com and berkeleyside.org."
     ],
     "verified": "2026-10"
   },
@@ -94,7 +95,7 @@
       "midday",
       "evening"
     ],
-    "fame": "deep-cut",
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 56,
       "atmosphere": 64,
@@ -115,7 +116,8 @@
     "flags": [
       "Founding year (1972) and the Mejia family name appear only on auto-generated listing sites; not used. Find a real source.",
       "Newest independent coverage found is a 2015 Nosh mention. Confirm still open and current hours.",
-      "Mole enchiladas named only on menu aggregators; 'order' is soft."
+      "Mole enchiladas named only on menu aggregators; 'order' is soft.",
+      "Relabeled deep cut -> open secret: covered by eastbayexpress.com and berkeleyside.org."
     ],
     "verified": "2026-10"
   },
@@ -504,7 +506,7 @@
       "morning",
       "midday"
     ],
-    "fame": "deep-cut",
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 66,
       "atmosphere": 56,
@@ -527,7 +529,8 @@
     "flags": [
       "Address corrected from discovery (401 Larkin St was wrong): it's 602 Eddy St, now matched to OSM node/9735505750.",
       "Hours not found. Mission Local photo essay (Aug 2025) shows it operating.",
-      "'Roast pork' is a soft order pick: sources list veggie, chicken, pork, meatball and fish cake but name no favorite."
+      "'Roast pork' is a soft order pick: sources list veggie, chicken, pork, meatball and fish cake but name no favorite.",
+      "Relabeled deep cut -> open secret: covered by sfchronicle.com and missionlocal.org."
     ],
     "verified": "2026-10"
   },
@@ -546,7 +549,7 @@
       "midday",
       "evening"
     ],
-    "fame": "deep-cut",
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 88,
       "atmosphere": 86,
@@ -568,7 +571,8 @@
     ],
     "flags": [
       "Some sources claim roots back to 1909; Spotlight Chinatown says established 1970. Story uses 1970.",
-      "Spotlight profile is undated (likely 2020-21); confirm hours and cash-only."
+      "Spotlight profile is undated (likely 2020-21); confirm hours and cash-only.",
+      "Relabeled deep cut -> open secret: covered by theinfatuation.com and sfweekly.com."
     ],
     "verified": "2026-10"
   },

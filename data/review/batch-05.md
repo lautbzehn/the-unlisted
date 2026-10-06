@@ -2,9 +2,9 @@
 
 15 drafts · your picks: 0 · found by research: 15
 
-**Fame:** Deep cut 9 · Open secret 6  
+**Fame:** Deep cut 7 · Open secret 8  
 **Time of day:** morning+midday 3 · evening+late 1 · morning+midday+evening 2 · midday+evening 6 · evening 2 · midday+evening+late 1  
-**Flags to check:** 41 · **Sources:** 35 (internal only)
+**Flags to check:** 43 · **Sources:** 35 (internal only)
 
 For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
@@ -246,15 +246,15 @@ Uniqueness 70 · Atmosphere 80 · Story 58 · Signature item 80 · Under the rad
 
 ---
 
-## House of Pancakes — Gem 66
-*Northern Chinese pancake house · Parkside, San Francisco · Deep cut · midday, evening*
+## House of Pancakes — Gem 60
+*Northern Chinese pancake house · Parkside, San Francisco · Open secret · midday, evening*
 
 **Story.** Not the international chain: a Parkside Chinese restaurant on Taraval's quiet dumpling row with 11 kinds of pancake on the menu. The beef roll wraps a squishy, crisp-edged scallion pancake around hoisin and thick-cut beef, and nothing on the menu tops about $13.
 
 **Order this.** The beef roll pancake, plus pork and chive dumplings or a few grilled skewers.
 
 **Why this score.** Eleven kinds of Chinese pancake on Taraval's dumpling row, with a beef roll worth the trip, all under $13. Story is short (since about 2010) and the room is plain.  
-Uniqueness 72 · Atmosphere 50 · Story 36 · Signature item 84 · Under the radar 90
+Uniqueness 72 · Atmosphere 50 · Story 36 · Signature item 84 · Under the radar 60
 
 **Practical.** Cash only (listings) · Everything about $13 or less (Dec 2023)  
 **Hours.** not found
@@ -262,6 +262,7 @@ Uniqueness 72 · Atmosphere 50 · Story 36 · Signature item 84 · Under the rad
 **Check before approving:**
 - [ ] Cash-only and 'since 2010' come from listing summaries; confirm.
 - [ ] Price cap from Dec 2023 review; may have changed.
+- [ ] Relabeled deep cut -> open secret: covered by theinfatuation.com and sfgate.com.
 
 <details><summary>Sources (2)</summary>
 
@@ -374,15 +375,15 @@ Uniqueness 52 · Atmosphere 54 · Story 26 · Signature item 80 · Under the rad
 
 ---
 
-## Café International — Gem 73
-*Lower Haight cafe and music room · Lower Haight, San Francisco · Deep cut · morning, midday, evening*
+## Café International — Gem 67
+*Lower Haight cafe and music room · Lower Haight, San Francisco · Open secret · morning, midday, evening*
 
 **Story.** Zahra Saleh has run this corner cafe at Haight and Fillmore since 1987. It's a Legacy Business, known for blues on Thursday afternoons, open mic on Friday nights and jazz on Sundays, with art all over the walls. In 2019 she closed for a seismic retrofit and came back with a new ten-year lease.
 
 **Order this.** A coffee on an open-mic Friday night.
 
 **Why this score.** A Legacy Business cafe that has hosted open mics and jazz for decades, under the same owner since 1987. Atmosphere and story carry it; we couldn't source a signature food item.  
-Uniqueness 70 · Atmosphere 84 · Story 72 · Signature item 40 · Under the radar 90
+Uniqueness 70 · Atmosphere 84 · Story 72 · Signature item 40 · Under the radar 60
 
 **Practical.** Open mic Fridays · Live jazz Sundays · San Francisco Legacy Business  
 **Hours.** not found
@@ -391,6 +392,7 @@ Uniqueness 70 · Atmosphere 84 · Story 72 · Signature item 40 · Under the rad
 - [ ] Food fit: no source names a dish. Check the menu before approving.
 - [ ] A 2023 Chronicle headline says property crimes made the owner 'hit pause'. Search summaries cite 2026 reviews saying it's open; confirm.
 - [ ] Music schedule from LocalWiki and reviews via search; confirm.
+- [ ] Relabeled deep cut -> open secret: covered by hoodline.com and sfchronicle.com.
 
 <details><summary>Sources (3)</summary>
 

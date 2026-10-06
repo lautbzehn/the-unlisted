@@ -90,7 +90,7 @@
       "midday",
       "evening"
     ],
-    "fame": "deep-cut",
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 58,
       "atmosphere": 42,
@@ -110,7 +110,8 @@
     "flags": [
       "Hours not found in a reliable source; listing aggregators say Mon-Sat 9 am to 8 pm, closed Sunday.",
       "Newest independent coverage is Feb 2024. Confirm it's still open.",
-      "A 2013 noodle blog post suggests it opened around then; not used in the story."
+      "A 2013 noodle blog post suggests it opened around then; not used in the story.",
+      "Relabeled deep cut -> open secret: covered by sfstandard.com and sfweekly.com."
     ],
     "verified": "2026-10"
   },
@@ -412,7 +413,7 @@
     "when": [
       "midday"
     ],
-    "fame": "deep-cut",
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 66,
       "atmosphere": 48,
@@ -434,7 +435,8 @@
     ],
     "flags": [
       "Prices ($6 boxes, $7.50 pork chop) are from a March 2025 review; left out of 'order'. Recheck before publishing any number.",
-      "Hours not found."
+      "Hours not found.",
+      "Relabeled deep cut -> open secret: covered by theinfatuation.com and sfgate.com."
     ],
     "verified": "2026-10"
   },
@@ -577,7 +579,7 @@
       "morning",
       "midday"
     ],
-    "fame": "deep-cut",
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 84,
       "atmosphere": 62,
@@ -599,7 +601,8 @@
     "flags": [
       "Newest real source is KQED, Dec 2019 (Berkeleyside profile 2017). Confirm the trailer is still at 4559 International Blvd and still run by Doña Tere.",
       "Hours conflict on listing sites (11-7 vs 6-3). Not used.",
-      "Renamed from 'Tamales Acapulco Doña Tere' to the name used in press; listings also say 'Tamales Doña Tere'."
+      "Renamed from 'Tamales Acapulco Doña Tere' to the name used in press; listings also say 'Tamales Doña Tere'.",
+      "Relabeled deep cut -> open secret: covered by kqed.org and berkeleyside.org."
     ],
     "verified": "2026-10"
   },

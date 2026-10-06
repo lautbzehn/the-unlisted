@@ -2,9 +2,9 @@
 
 18 drafts · your picks: 0 · found by research: 18
 
-**Fame:** Deep cut 16 · Open secret 2  
+**Fame:** Deep cut 14 · Open secret 4  
 **Time of day:** midday+evening 8 · morning+midday+evening 3 · morning+midday 3 · morning+midday+evening+late 1 · evening+late 1 · midday 1 · midday+evening+late 1  
-**Flags to check:** 50 · **Sources:** 39 (internal only)
+**Flags to check:** 52 · **Sources:** 39 (internal only)
 
 For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
@@ -112,15 +112,15 @@ Uniqueness 66 · Atmosphere 52 · Story 36 · Signature item 76 · Under the rad
 
 ---
 
-## Smoke Soul Kitchen — Gem 75
-*Bayview soul food brunch room · Bayview, San Francisco · Deep cut · morning, midday, evening*
+## Smoke Soul Kitchen — Gem 69
+*Bayview soul food brunch room · Bayview, San Francisco · Open secret · morning, midday, evening*
 
 **Story.** Vanessa Lee grew up in the Bayview being told to hold on to her backpack on Third Street. After becoming a mother she wanted somewhere to sit with a coffee while her son napped, and found nothing. So when a local nonprofit asked the caterer to open a restaurant, she took over the old Auntie April's space in 2025.
 
 **Order this.** Chicken and waffles, with a biscuit on the side.
 
 **Why this score.** Fried chicken and biscuits among the city's best, from a Bayview native who built the cafe she wished existed. It only opened in 2025, so the story is new rather than long.  
-Uniqueness 64 · Atmosphere 66 · Story 78 · Signature item 80 · Under the radar 90
+Uniqueness 64 · Atmosphere 66 · Story 78 · Signature item 80 · Under the radar 60
 
 **Practical.** To-go window (added 2026)  
 **Hours.** not found
@@ -130,6 +130,7 @@ Uniqueness 64 · Atmosphere 66 · Story 78 · Signature item 80 · Under the rad
 - [ ] Co-owner Fred Davis named only in search summaries; left out.
 - [ ] To-go window from an April 2026 Mission Local item seen in search; hours not confirmed.
 - [ ] One listing gives 5698 3rd St; we use 4618 3rd St from the SF Standard and Toast.
+- [ ] Relabeled deep cut -> open secret: covered by sfstandard.com and theinfatuation.com and missionlocal.org.
 
 <details><summary>Sources (3)</summary>
 
@@ -269,15 +270,15 @@ Uniqueness 70 · Atmosphere 58 · Story 30 · Signature item 92 · Under the rad
 
 ---
 
-## Aguachiles El Tamarindo — Gem 72
-*Sinaloan mariscos truck · Fruitvale, Oakland · Deep cut · midday, evening*
+## Aguachiles El Tamarindo — Gem 66
+*Sinaloan mariscos truck · Fruitvale, Oakland · Open secret · midday, evening*
 
 **Story.** A colorful family-run truck parked on a former used-car lot near Fruitvale BART, with a covered patio of plastic tables. The menu runs long: aguachiles, ceviches, towers of shrimp, fish and crab, plus birria tacos for the non-seafood crowd.
 
 **Order this.** Aguachile, as spicy as you can take it, or a seafood tower if you're a group.
 
 **Why this score.** Sinaloa-style seafood that people cross the Bay for, served from a truck with its own lot and covered seating. Story is thin, and the family runs other trucks and a restaurant, which needs a chain check.  
-Uniqueness 78 · Atmosphere 66 · Story 44 · Signature item 84 · Under the radar 90
+Uniqueness 78 · Atmosphere 66 · Story 44 · Signature item 84 · Under the radar 60
 
 **Practical.** Covered outdoor seating · Own parking lot  
 **Hours.** not found
@@ -286,6 +287,7 @@ Uniqueness 78 · Atmosphere 66 · Story 44 · Signature item 84 · Under the rad
 - [ ] Chain check: sources describe a sit-down restaurant plus other trucks under the same family. If four or more outlets, drop.
 - [ ] A 2025 Chronicle headline says the spicy mariscos now have a 'permanent home'; confirm whether the truck still operates at 3053 International.
 - [ ] Main review is from Jan 2021.
+- [ ] Relabeled deep cut -> open secret: covered by theinfatuation.com and kqed.org.
 
 <details><summary>Sources (2)</summary>
 

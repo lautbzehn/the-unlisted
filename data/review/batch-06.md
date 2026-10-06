@@ -2,9 +2,9 @@
 
 18 drafts · your picks: 0 · found by research: 18
 
-**Fame:** Open secret 6 · Deep cut 12  
+**Fame:** Open secret 8 · Deep cut 10  
 **Time of day:** midday+evening+late 2 · midday 1 · midday+evening 10 · morning+midday 4 · morning+midday+evening+late 1  
-**Flags to check:** 44 · **Sources:** 42 (internal only)
+**Flags to check:** 46 · **Sources:** 42 (internal only)
 
 For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
@@ -138,15 +138,15 @@ Uniqueness 56 · Atmosphere 50 · Story 30 · Signature item 70 · Under the rad
 
 ---
 
-## Gypsy's Trattoria Italiana — Gem 59
-*Cheap student pasta counter · Southside, Berkeley · Deep cut · morning, midday, evening, late*
+## Gypsy's Trattoria Italiana — Gem 53
+*Cheap student pasta counter · Southside, Berkeley · Open secret · morning, midday, evening, late*
 
 **Story.** A counter-service Italian spot next to campus that has fed Cal students for more than 30 years. Calzones the size of your head, pastas big enough to split, a line at the door and a communal patio outside, open until midnight every night.
 
 **Order this.** A pasta to split, or a calzone if you're very hungry.
 
 **Why this score.** A three-decade Southside staple where one pasta feeds two and the kitchen runs till midnight. The food is good for the price rather than a destination.  
-Uniqueness 50 · Atmosphere 56 · Story 42 · Signature item 58 · Under the radar 90
+Uniqueness 50 · Atmosphere 56 · Story 42 · Signature item 58 · Under the radar 60
 
 **Practical.** Counter service · Open until midnight daily  
 **Hours.** Daily 10 am to midnight (own site, confirm)
@@ -154,6 +154,7 @@ Uniqueness 50 · Atmosphere 56 · Story 42 · Signature item 58 · Under the rad
 **Check before approving:**
 - [ ] 'More than 30 years' and hours come from the business's own site via search summary.
 - [ ] Infatuation review is from Aug 2018.
+- [ ] Relabeled deep cut -> open secret: covered by theinfatuation.com and berkeleyside.org.
 
 <details><summary>Sources (3)</summary>
 
@@ -447,15 +448,15 @@ Uniqueness 52 · Atmosphere 56 · Story 30 · Signature item 72 · Under the rad
 
 ---
 
-## Yemen Kitchen — Gem 71
-*Yemeni counter · Tenderloin, San Francisco · Deep cut · midday, evening*
+## Yemen Kitchen — Gem 65
+*Yemeni counter · Tenderloin, San Francisco · Open secret · midday, evening*
 
 **Story.** A small Jones Street restaurant that SFGate described as a taste of home for the city's Yemeni community. The saltah comes bubbling in a cast-iron bowl, lamb and potatoes under a froth of whipped fenugreek, and the lamb haneeth is slow-roasted until it falls apart.
 
 **Order this.** Saltah, with lamb haneeth if you're two.
 
 **Why this score.** One of very few Yemeni kitchens in the city, cooking for homesick expats, with a saltah that arrives boiling. The block is rough and the room basic, so atmosphere is moderate.  
-Uniqueness 84 · Atmosphere 52 · Story 50 · Signature item 80 · Under the radar 90
+Uniqueness 84 · Atmosphere 52 · Story 50 · Signature item 80 · Under the radar 60
 
 **Practical.** Halal (listings)  
 **Hours.** not found
@@ -464,6 +465,7 @@ Uniqueness 84 · Atmosphere 52 · Story 50 · Signature item 80 · Under the rad
 - [ ] Dish descriptions come from forum and review posts via search; SFGate blocks our fetch.
 - [ ] Halal from listings; confirm.
 - [ ] Reviews from Jan 2025 suggest it's open; confirm hours.
+- [ ] Relabeled deep cut -> open secret: covered by sfgate.com and theinfatuation.com.
 
 <details><summary>Sources (3)</summary>
 

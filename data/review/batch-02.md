@@ -2,9 +2,9 @@
 
 16 drafts · your picks: 0 · found by research: 16
 
-**Fame:** Deep cut 15 · Open secret 1  
+**Fame:** Deep cut 12 · Open secret 4  
 **Time of day:** morning+midday 4 · midday+evening 5 · morning+midday+evening 3 · evening+late 1 · midday+evening+late 1 · midday 1 · morning+midday+evening+late 1  
-**Flags to check:** 45 · **Sources:** 31 (internal only)
+**Flags to check:** 48 · **Sources:** 31 (internal only)
 
 For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
@@ -60,15 +60,15 @@ Uniqueness 52 · Atmosphere 48 · Story 28 · Signature item 66 · Under the rad
 
 ---
 
-## Golden Lotus — Gem 60
-*Little Saigon pho shop · Little Saigon, San Francisco · Deep cut · midday, evening*
+## Golden Lotus — Gem 54
+*Little Saigon pho shop · Little Saigon, San Francisco · Open secret · midday, evening*
 
 **Story.** An easy-to-miss storefront on Larkin with what the SF Standard called the best pho in Little Saigon. The large bowl is heavy on chewy noodles and herbs, and the bún bò Huế has its own following. It has nothing to do with the Oakland vegan restaurant of the same name.
 
 **Order this.** The large pho, with bánh cuốn and lemongrass pork to start.
 
 **Why this score.** Here for the soup: the SF Standard named its pho the best in Little Saigon. The room is nondescript and we know almost nothing about who runs it, so atmosphere and story stay low.  
-Uniqueness 58 · Atmosphere 42 · Story 30 · Signature item 84 · Under the radar 90
+Uniqueness 58 · Atmosphere 42 · Story 30 · Signature item 84 · Under the radar 60
 
 **Practical.** —  
 **Hours.** not found
@@ -77,6 +77,7 @@ Uniqueness 58 · Atmosphere 42 · Story 30 · Signature item 84 · Under the rad
 - [ ] Hours not found in a reliable source; listing aggregators say Mon-Sat 9 am to 8 pm, closed Sunday.
 - [ ] Newest independent coverage is Feb 2024. Confirm it's still open.
 - [ ] A 2013 noodle blog post suggests it opened around then; not used in the story.
+- [ ] Relabeled deep cut -> open secret: covered by sfstandard.com and sfweekly.com.
 
 <details><summary>Sources (3)</summary>
 
@@ -268,15 +269,15 @@ Uniqueness 70 · Atmosphere 78 · Story 88 · Signature item 55 · Under the rad
 
 ---
 
-## Super Star Restaurant — Gem 65
-*Filipino-Chinese takeout counter · Excelsior, San Francisco · Deep cut · midday*
+## Super Star Restaurant — Gem 59
+*Filipino-Chinese takeout counter · Excelsior, San Francisco · Open secret · midday*
 
 **Story.** A Filipino and Chinese takeout counter on Excelsior's Mission Street whose prices have barely moved since it opened in the 1990s. Around $6 still buys a box that barely closes, with garlic rice taking up most of the room under the longganisa or a crisp Hong Kong-style pork chop.
 
 **Order this.** The Hong Kong-style pork chop plate, plus an order of lumpia Shanghai (eight small ones). Bring cash.
 
 **Why this score.** Prices that seem stuck in the 1990s and a pork chop plate worth crossing town for. The room is a takeout counter and the story is mostly about value.  
-Uniqueness 66 · Atmosphere 48 · Story 45 · Signature item 80 · Under the radar 90
+Uniqueness 66 · Atmosphere 48 · Story 45 · Signature item 80 · Under the radar 60
 
 **Practical.** Cash only · Takeout counter · Popular items can sell out  
 **Hours.** not found
@@ -284,6 +285,7 @@ Uniqueness 66 · Atmosphere 48 · Story 45 · Signature item 80 · Under the rad
 **Check before approving:**
 - [ ] Prices ($6 boxes, $7.50 pork chop) are from a March 2025 review; left out of 'order'. Recheck before publishing any number.
 - [ ] Hours not found.
+- [ ] Relabeled deep cut -> open secret: covered by theinfatuation.com and sfgate.com.
 
 <details><summary>Sources (2)</summary>
 
@@ -371,15 +373,15 @@ Uniqueness 62 · Atmosphere 66 · Story 38 · Signature item 64 · Under the rad
 
 ---
 
-## Tamales Acapulco — Gem 82
-*Guerrero-style tamale trailer · Fruitvale, Oakland · Deep cut · morning, midday*
+## Tamales Acapulco — Gem 76
+*Guerrero-style tamale trailer · Fruitvale, Oakland · Open secret · morning, midday*
 
 **Story.** Teresa Mondragon, known to everyone as Doña Tere, sells tamales from a trailer in a Fruitvale market parking lot. She was part of the group of immigrant vendors who pushed Oakland to change its street-food rules about two decades ago. Her red mole goes into the masa itself, Guerrero style, not just on top.
 
 **Order this.** A tamal de mole rojo and a couple of chicharrón tacos de canasta. On a cold day, ask for champurrado.
 
 **Why this score.** Regional Guerrero cooking from a vendor who helped change Oakland's street-food rules. The setting is a trailer in a market parking lot, which keeps atmosphere moderate.  
-Uniqueness 84 · Atmosphere 62 · Story 86 · Signature item 86 · Under the radar 90
+Uniqueness 84 · Atmosphere 62 · Story 86 · Signature item 86 · Under the radar 60
 
 **Practical.** Food trailer, parking-lot service · Late morning to early afternoon is the best time to go  
 **Hours.** not found
@@ -388,6 +390,7 @@ Uniqueness 84 · Atmosphere 62 · Story 86 · Signature item 86 · Under the rad
 - [ ] Newest real source is KQED, Dec 2019 (Berkeleyside profile 2017). Confirm the trailer is still at 4559 International Blvd and still run by Doña Tere.
 - [ ] Hours conflict on listing sites (11-7 vs 6-3). Not used.
 - [ ] Renamed from 'Tamales Acapulco Doña Tere' to the name used in press; listings also say 'Tamales Doña Tere'.
+- [ ] Relabeled deep cut -> open secret: covered by kqed.org and berkeleyside.org.
 
 <details><summary>Sources (2)</summary>
 

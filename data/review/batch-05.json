@@ -382,7 +382,7 @@
       "midday",
       "evening"
     ],
-    "fame": "deep-cut",
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 72,
       "atmosphere": 50,
@@ -403,7 +403,8 @@
     ],
     "flags": [
       "Cash-only and 'since 2010' come from listing summaries; confirm.",
-      "Price cap from Dec 2023 review; may have changed."
+      "Price cap from Dec 2023 review; may have changed.",
+      "Relabeled deep cut -> open secret: covered by theinfatuation.com and sfgate.com."
     ],
     "verified": "2026-10"
   },
@@ -584,7 +585,7 @@
       "midday",
       "evening"
     ],
-    "fame": "deep-cut",
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 70,
       "atmosphere": 84,
@@ -608,7 +609,8 @@
     "flags": [
       "Food fit: no source names a dish. Check the menu before approving.",
       "A 2023 Chronicle headline says property crimes made the owner 'hit pause'. Search summaries cite 2026 reviews saying it's open; confirm.",
-      "Music schedule from LocalWiki and reviews via search; confirm."
+      "Music schedule from LocalWiki and reviews via search; confirm.",
+      "Relabeled deep cut -> open secret: covered by hoodline.com and sfchronicle.com."
     ],
     "verified": "2026-10"
   }

@@ -217,7 +217,7 @@
       "evening",
       "late"
     ],
-    "fame": "deep-cut",
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 50,
       "atmosphere": 56,
@@ -239,7 +239,8 @@
     ],
     "flags": [
       "'More than 30 years' and hours come from the business's own site via search summary.",
-      "Infatuation review is from Aug 2018."
+      "Infatuation review is from Aug 2018.",
+      "Relabeled deep cut -> open secret: covered by theinfatuation.com and berkeleyside.org."
     ],
     "verified": "2026-10"
   },
@@ -696,7 +697,7 @@
       "midday",
       "evening"
     ],
-    "fame": "deep-cut",
+    "fame": "open-secret",
     "breakdown": {
       "uniqueness": 84,
       "atmosphere": 52,
@@ -718,7 +719,8 @@
     "flags": [
       "Dish descriptions come from forum and review posts via search; SFGate blocks our fetch.",
       "Halal from listings; confirm.",
-      "Reviews from Jan 2025 suggest it's open; confirm hours."
+      "Reviews from Jan 2025 suggest it's open; confirm hours.",
+      "Relabeled deep cut -> open secret: covered by sfgate.com and theinfatuation.com."
     ],
     "verified": "2026-10"
   }
