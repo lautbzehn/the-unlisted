@@ -1464,5 +1464,667 @@
     "source_url": "https://www.theinfatuation.com/san-francisco/reviews/chong-qing-xiao-mian",
     "open_evidence": "Own site and Infatuation review (current)",
     "from": "disc-02-night"
+  },
+  {
+    "name": "Tian Jin Dumplings",
+    "neighborhood": "Oakland Chinatown",
+    "city": "Oakland",
+    "address": "989 Franklin St",
+    "kind": "Jianbing breakfast window",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Despite the name, this tiny window now sells jianbing, tea eggs and fresh soy milk. A morning-only find.",
+    "source_url": "https://www.sfchronicle.com/food/restaurants/article/Savory-Chinese-crepes-await-at-this-petite-16432361.php",
+    "open_evidence": "Visit Oakland listing with daily 9:30-3:30 hours (current); Chronicle piece 2021",
+    "from": "disc-08-day"
+  },
+  {
+    "name": "Vien Huong",
+    "neighborhood": "Oakland Chinatown",
+    "city": "Oakland",
+    "address": "712 Franklin St",
+    "kind": "Chiu Chow noodle house",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Second-generation family noodle house, in Chinatown for over 35 years and named an Oakland legacy business.",
+    "source_url": "https://www.visitoakland.com/blog/post/oldest-family-run-businesses-in-chinatown/",
+    "open_evidence": "Visit Oakland family-business guide (current); confirm hours in research",
+    "from": "disc-08-day"
+  },
+  {
+    "name": "Cam Huong Cafe",
+    "neighborhood": "Oakland Chinatown",
+    "city": "Oakland",
+    "address": "920 Webster St",
+    "kind": "Bánh mì and bakery counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Often named Oakland Chinatown's best bánh mì; cheap pork buns and pastries too.",
+    "source_url": "https://umamimart.com/blogs/main/umami-map-oakland-chinatown",
+    "open_evidence": "Older Umami Mart map; no 2025 evidence found. Confirm open in research",
+    "from": "disc-08-day"
+  },
+  {
+    "name": "Tao Yuen Pastry",
+    "neighborhood": "Oakland Chinatown",
+    "city": "Oakland",
+    "address": "816 Franklin St",
+    "kind": "Chinese bakery",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Franklin Street bakery for baked char siu buns at very low prices.",
+    "source_url": "https://umamimart.com/blogs/main/umami-map-oakland-chinatown",
+    "open_evidence": "Older guide only; confirm open in research",
+    "from": "disc-08-day"
+  },
+  {
+    "name": "Shan Dong",
+    "neighborhood": "Oakland Chinatown",
+    "city": "Oakland",
+    "address": "328 10th St",
+    "kind": "Hand-pulled noodle and dumpling house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Second-generation family restaurant known for noodles and dumplings made by hand.",
+    "source_url": "https://www.visitoakland.com/blog/post/oldest-family-run-businesses-in-chinatown/",
+    "open_evidence": "Visit Oakland family-business guide (current). Street number from memory, verify",
+    "from": "disc-08-day"
+  },
+  {
+    "name": "Cosecha",
+    "neighborhood": "Old Oakland",
+    "city": "Oakland",
+    "address": "907 Washington St",
+    "kind": "Mexican cafe in Swan's Market",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Market-hall Mexican cafe with house-made tortillas; beer-battered fish tacos midweek.",
+    "source_url": "https://www.sfgate.com/food/eatup/article/Swan-s-Market-showcases-the-community-of-Old-9195580.php",
+    "open_evidence": "Swan's Market listings (2026 reviews); confirm stall still operating",
+    "from": "disc-08-day"
+  },
+  {
+    "name": "New Gold Medal",
+    "neighborhood": "Oakland Chinatown",
+    "city": "Oakland",
+    "address": "389 8th St",
+    "kind": "Late-night Cantonese noodle house",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Homey Cantonese room since 2007, open till 3am: wonton noodles with roast duck, char siu, rice plates.",
+    "source_url": "https://ww2.kqed.org/arts/2025/04/10/oakland-chinatown-new-gold-medal-late-night/",
+    "open_evidence": "KQED feature, Apr 2025: open 9am-3am",
+    "from": "disc-08-night"
+  },
+  {
+    "name": "Shooting Star Cafe",
+    "neighborhood": "Oakland Chinatown",
+    "city": "Oakland",
+    "address": "1022 Webster St",
+    "kind": "Hong Kong-style cafe",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "HK cafe that stays open into the small hours when the rest of Chinatown has shut.",
+    "source_url": "https://www.corner.inc/place/14631",
+    "open_evidence": "Listings suggest open, hours vary; confirm in research",
+    "from": "disc-08-night"
+  },
+  {
+    "name": "Tacos Mi Rancho",
+    "neighborhood": "Lake Merritt",
+    "city": "Oakland",
+    "address": "1434 1st Ave",
+    "kind": "Lakeside taco truck",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "The taco truck at Lake Merritt's southeast corner, open past midnight with long lines and big burritos.",
+    "source_url": "https://localwiki.org/oakland/Tacos_Mi_Rancho",
+    "open_evidence": "Current listings show hours to midnight or later; confirm in research",
+    "from": "disc-08-night"
+  },
+  {
+    "name": "Tamarindo Antojeria",
+    "neighborhood": "Old Oakland",
+    "city": "Oakland",
+    "address": "468 8th St",
+    "kind": "Mexican small-plates family spot",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Family-run Old Oakland room for antojitos, the Mexican snack-plate tradition, rather than combo plates.",
+    "source_url": "https://www.visitoakland.com/blog/post/top-things-to-do-in-old-oakland/",
+    "open_evidence": "Visit Oakland Old Oakland guide (current)",
+    "from": "disc-08-night"
+  },
+  {
+    "name": "Tamales Acapulco Doña Tere",
+    "neighborhood": "Fruitvale",
+    "city": "Oakland",
+    "address": "4559 International Blvd",
+    "kind": "Guerrero-style tamale truck",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Truck cooking Guerrero and south-central Mexican food, tamales first; picked by KQED for regional cooking.",
+    "source_url": "https://www.kqed.org/bayareabites/135813/5-food-trucks-that-put-regional-mexican-plates-on-the-map",
+    "open_evidence": "KQED Bay Area Bites feature (date to confirm); trucks move, confirm location in research",
+    "from": "disc-09-day"
+  },
+  {
+    "name": "Banh Mi Ba Le",
+    "neighborhood": "Fruitvale",
+    "city": "Oakland",
+    "address": "1909 International Blvd",
+    "kind": "Bánh mì counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Counter-service bánh mì shop on International Boulevard serving the Vietnamese stretch near San Antonio.",
+    "source_url": "https://www.find-around.com/california/oakland/restaurants/vietnamese/",
+    "open_evidence": "Directory listing only; confirm open in research",
+    "from": "disc-09-day"
+  },
+  {
+    "name": "Estudillo Produce & Deli",
+    "neighborhood": "Estudillo Estates",
+    "city": "San Leandro",
+    "address": "1305 MacArthur Blvd",
+    "kind": "Produce-market sandwich deli",
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Neighborhood produce market whose deli builds enormous, overstuffed sandwiches; Portuguese pastries on the counter.",
+    "source_url": "https://estudilloproduce.com/",
+    "open_evidence": "Own site and online ordering live (2026)",
+    "from": "disc-09-day"
+  },
+  {
+    "name": "As Kneaded Bakery",
+    "neighborhood": "Downtown San Leandro",
+    "city": "San Leandro",
+    "address": "585 Victoria Ct",
+    "kind": "Artisan bread bakery",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Small San Leandro bakery with weekend-morning lines for its bread and bánh mì.",
+    "source_url": "https://www.diablomag.com/food-drink/food-news/loaves-of-plenty-at-san-leandros-as-kneaded-bakery/article_6ebe43ee-4984-5c4b-8592-b28ff1119037.html",
+    "open_evidence": "Listing dated 2026 with Wed-Sun hours",
+    "from": "disc-09-day"
+  },
+  {
+    "name": "Champa Garden",
+    "neighborhood": "Ivy Hill",
+    "city": "Oakland",
+    "address": "2102 8th Ave",
+    "kind": "Lao family restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Lao, Thai and Vietnamese on a residential corner; the move is the Champa sampler with a group.",
+    "source_url": "https://www.theinfatuation.com/san-francisco/guides/the-best-oakland-restaurants-and-bars",
+    "open_evidence": "Infatuation Oakland guide (current)",
+    "from": "disc-09-night"
+  },
+  {
+    "name": "Vientian Cafe",
+    "neighborhood": "Allendale",
+    "city": "Oakland",
+    "address": "3801 Allendale Ave",
+    "kind": "Lao corner cafe",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Lao, Thai and Vietnamese in a converted corner house in East Oakland; long a local favorite.",
+    "source_url": "https://www.vientianecafe.com/",
+    "open_evidence": "Own site live; Infatuation names it (current)",
+    "from": "disc-09-night"
+  },
+  {
+    "name": "Sticky Rice Cafe",
+    "neighborhood": "Fruitvale",
+    "city": "Oakland",
+    "address": "2810 International Blvd",
+    "kind": "Lao and Isan bungalow",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Cozy bungalow-like room on International Boulevard cooking Lao, Thai and Isan food.",
+    "source_url": "https://stickyriceoakland.com/",
+    "open_evidence": "Own site with online menu live (2026)",
+    "from": "disc-09-night"
+  },
+  {
+    "name": "Aguachiles El Tamarindo",
+    "neighborhood": "Fruitvale",
+    "city": "Oakland",
+    "address": "3053 International Blvd",
+    "kind": "Sinaloa-style mariscos truck",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Mariscos truck doing aguachile, tostadas and towering seafood stacks from Sinaloa, Baja and Jalisco.",
+    "source_url": "https://www.kqed.org/bayareabites/135813/5-food-trucks-that-put-regional-mexican-plates-on-the-map",
+    "open_evidence": "KQED feature; Chronicle best-trucks pick. Dates to confirm",
+    "from": "disc-09-night"
+  },
+  {
+    "name": "El Pipirin",
+    "neighborhood": "Fruitvale",
+    "city": "Oakland",
+    "address": "3315 Farnam St",
+    "kind": "Guadalajara-style taco truck",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Truck cooking Guadalajara street food in Fruitvale; regional dishes rather than the standard menu.",
+    "source_url": "https://www.kqed.org/bayareabites/135813/5-food-trucks-that-put-regional-mexican-plates-on-the-map",
+    "open_evidence": "KQED feature (date to confirm); confirm truck still parks here",
+    "from": "disc-09-night"
+  },
+  {
+    "name": "La Grana Fish",
+    "neighborhood": "East Oakland",
+    "city": "Oakland",
+    "address": "865 50th Ave",
+    "kind": "Mariscos truck",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Seafood truck drawing on Jalisco, Baja, Michoacán and Sinaloa: cocteles, ceviche, fried fish.",
+    "source_url": "https://www.kqed.org/bayareabites/135813/5-food-trucks-that-put-regional-mexican-plates-on-the-map",
+    "open_evidence": "KQED feature (date to confirm); confirm truck still parks here",
+    "from": "disc-09-night"
+  },
+  {
+    "name": "Lois the Pie Queen",
+    "neighborhood": "Bushrod",
+    "city": "Oakland",
+    "address": "851 60th St",
+    "kind": "Soul food breakfast house",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "Southern breakfasts and pies at a North Oakland corner run since the 1950s; dinner on weekends.",
+    "source_url": "https://loisthepiequeen.com/",
+    "open_evidence": "Own site with current hours; reviews dated July 2025",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Rockridge Cafe",
+    "neighborhood": "Rockridge",
+    "city": "Oakland",
+    "address": "5492 College Ave",
+    "kind": "1970s breakfast diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Breakfast-and-lunch diner on College since 1973, full of regulars; migas and ricotta pancakes.",
+    "source_url": "https://wanderlog.com/place/details/450034/rockridge-cafe",
+    "open_evidence": "Listing updated May 2026. Street number from memory, verify",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Piedmont Cafe & Bakery",
+    "neighborhood": "Piedmont Avenue",
+    "city": "Oakland",
+    "address": "4054 Piedmont Ave",
+    "kind": "Donut-and-diner cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Piedmont Avenue cafe with fresh donuts and old-fashioned diner breakfasts; neighborhood-only following.",
+    "source_url": "https://piedmontcafeandbakeryoakland.mybistro.online/",
+    "open_evidence": "Reviews dated 2026 on listing sites",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Mama's Royal Cafe",
+    "neighborhood": "Mosswood",
+    "city": "Oakland",
+    "address": "4012 Broadway",
+    "kind": "1970s breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Breakfast institution since 1974, kept true to form by owners who took over around 2014.",
+    "source_url": "https://www.alamedamagazine.com/mamas-royal-caf-stays-true-to-its-roots-under-new-owners/",
+    "open_evidence": "Own site live; listing updated July 2026",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Fentons Creamery",
+    "neighborhood": "Piedmont Avenue",
+    "city": "Oakland",
+    "address": "4226 Piedmont Ave",
+    "kind": "Old ice cream parlor",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "why": "Ice cream parlor founded in 1894, with a cameo in Pixar's Up; famous sundaes, family crowds.",
+    "source_url": "https://www.visitoakland.com/things-to-do/neighborhoods/piedmont-ave/",
+    "open_evidence": "Visit Oakland Piedmont Ave guide (current)",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Asmara Restaurant",
+    "neighborhood": "Temescal",
+    "city": "Oakland",
+    "address": "5020 Telegraph Ave",
+    "kind": "Eritrean family restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Eritrean and Ethiopian cooking on Telegraph since 1985; injera with tibs and awaze, lamb in berbere.",
+    "source_url": "https://asmararestaurantoakland.com/about-us/",
+    "open_evidence": "Own site and Visit Oakland listing (current)",
+    "from": "disc-10-night"
+  },
+  {
+    "name": "Cafe Colucci",
+    "neighborhood": "Golden Gate",
+    "city": "Oakland",
+    "address": "5849 San Pablo Ave",
+    "kind": "Ethiopian restaurant and spice shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Over 30 years old; moved in 2022 to a bigger San Pablo Avenue home shared with its Brundo spice shop.",
+    "source_url": "https://www.sfchronicle.com/food/article/cafe-colucci-oakland-ethiopian-moving-17386895.php",
+    "open_evidence": "Moved Sep 2022; current listings show daily 11-10. Confirm in research",
+    "from": "disc-10-night"
+  },
+  {
+    "name": "La Calaca Loca Taqueria",
+    "neighborhood": "Temescal",
+    "city": "Oakland",
+    "address": "5199 Telegraph Ave",
+    "kind": "Small taqueria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Small Temescal taqueria and takeout window. Thin press; would need a reason beyond burritos.",
+    "source_url": "https://www.tripadvisor.com/ShowUserReviews-g32810-d1128963-r428556816-La_Calaca_Loca_Taqueria-Oakland_California.html",
+    "open_evidence": "Older review only; confirm open in research",
+    "from": "disc-10-night"
+  },
+  {
+    "name": "Kingfish Pub & Cafe",
+    "neighborhood": "Temescal",
+    "city": "Oakland",
+    "address": "5227 Telegraph Ave",
+    "kind": "Dive bar with back patio",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "No-frills Temescal dive with a covered back patio. Confirm whether it serves food before keeping it.",
+    "source_url": "https://www.tripadvisor.com/ShowUserReviews-g32810-d5834110-r908443378-Kingfish_Pub_Cafe-Oakland_California.html",
+    "open_evidence": "Recent review on listing site; food service unconfirmed",
+    "from": "disc-10-night"
+  },
+  {
+    "name": "Sam's Log Cabin",
+    "neighborhood": "Albany",
+    "city": "Albany",
+    "address": "945 San Pablo Ave",
+    "kind": "Log cabin breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "A 1930s Sears-kit log cabin, once a speakeasy and bookie den, now a breakfast-and-lunch standby with lines.",
+    "source_url": "https://www.berkeleyside.org/2025/01/01/favorite-berkeley-restaurants",
+    "open_evidence": "Berkeleyside must-know list, Jan 2025",
+    "from": "disc-11-day"
+  },
+  {
+    "name": "Oceanview Diner",
+    "neighborhood": "West Berkeley",
+    "city": "Berkeley",
+    "address": "1807 4th St",
+    "kind": "Worker-owned diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Successor to Bette's, reopened by its workers as an ownership partnership; carries on a 40-year diner tradition.",
+    "source_url": "https://www.7x7.com/west-berkeley-restaurants-2677599001.html",
+    "open_evidence": "7x7 West Berkeley guide (current). Address is Bette's former address, verify",
+    "from": "disc-11-day"
+  },
+  {
+    "name": "Fatapple's",
+    "neighborhood": "North Berkeley",
+    "city": "Berkeley",
+    "address": "1346 Martin Luther King Jr Way",
+    "kind": "Diner and bakery",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Long-running Berkeley diner and bakery for burgers, pie and breakfast. Story needs a source.",
+    "source_url": "https://www.tripadvisor.com/Restaurants-g32066-zfd10907-Berkeley_California-Hamburger.html",
+    "open_evidence": "Current listings; confirm in research",
+    "from": "disc-11-day"
+  },
+  {
+    "name": "900 Grayson",
+    "neighborhood": "West Berkeley",
+    "city": "Berkeley",
+    "address": "900 Grayson St",
+    "kind": "West Berkeley breakfast diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "West Berkeley diner, about 20 years old, feeding the warehouse district's early crowd.",
+    "source_url": "https://www.7x7.com/west-berkeley-restaurants-2677599001.html",
+    "open_evidence": "7x7 West Berkeley guide (current)",
+    "from": "disc-11-day"
+  },
+  {
+    "name": "Cheese 'N' Stuff",
+    "neighborhood": "Southside",
+    "city": "Berkeley",
+    "address": "2442 Durant Ave",
+    "kind": "Alley sandwich deli",
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Tiny deli in the dim alley under a Southside garage, feeding Cal students since 1986.",
+    "source_url": "https://www.berkeleyside.org/2026/09/02/where-to-eat-if-you-are-new-to-berkeley",
+    "open_evidence": "Berkeleyside freshman guide, Sep 2026; SFGate reports founder retired 2025, check new ownership",
+    "from": "disc-11-day"
+  },
+  {
+    "name": "Vik's Chaat",
+    "neighborhood": "West Berkeley",
+    "city": "Berkeley",
+    "address": "2390 4th St",
+    "kind": "Indian chaat hall",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Began in 1989 as a counter inside an Indian market; now a bright West Berkeley hall for chaat and dosa.",
+    "source_url": "https://www.berkeleyside.org/2025/11/10/viks-chaat-masala-dosa",
+    "open_evidence": "Berkeleyside Dish of the Week, Nov 2025",
+    "from": "disc-11-day"
+  },
+  {
+    "name": "Smokehouse",
+    "neighborhood": "Southside",
+    "city": "Berkeley",
+    "address": "3115 Telegraph Ave",
+    "kind": "1950s burger stand",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Old-school walk-up stand for burgers, hot dogs, shakes and fries. Founding date needs a source.",
+    "source_url": "https://www.tripadvisor.com/Restaurants-g32066-zfd10907-Berkeley_California-Hamburger.html",
+    "open_evidence": "Current listings; confirm in research",
+    "from": "disc-11-night"
+  },
+  {
+    "name": "Juan's Place",
+    "neighborhood": "West Berkeley",
+    "city": "Berkeley",
+    "address": "941 Carleton St",
+    "kind": "Old Mexican family restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Long-running Mexican family restaurant in West Berkeley's warehouse blocks, rarely written about.",
+    "source_url": "https://www.berkeleyside.org/2015/07/28/nosh-neighborhood-guide-berkeley-warehouse",
+    "open_evidence": "Only a 2015 Nosh mention found; confirm open in research",
+    "from": "disc-11-night"
+  },
+  {
+    "name": "La Burrita",
+    "neighborhood": "Southside",
+    "city": "Berkeley",
+    "address": "2530 Durant Ave",
+    "kind": "Student taqueria",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-owned since 1985 and the Cal student's old reliable for burritos.",
+    "source_url": "https://www.dailycal.org/2025-best-of-berkeley-food-edition/article_39fd173d-688c-4262-b429-d2051c998c98.html",
+    "open_evidence": "Daily Cal Best of Berkeley 2025",
+    "from": "disc-11-night"
+  },
+  {
+    "name": "Funky Elephant",
+    "neighborhood": "West Berkeley",
+    "city": "Berkeley",
+    "address": "1313 9th St",
+    "kind": "Tiny Thai counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Tiny Thai spot from 2018 with Michelin recognition for non-traditional Thai comfort food.",
+    "source_url": "https://www.7x7.com/west-berkeley-restaurants-2677599001.html",
+    "open_evidence": "7x7 West Berkeley guide (current)",
+    "from": "disc-11-night"
+  },
+  {
+    "name": "Walker's Restaurant & Pie Shop",
+    "neighborhood": "Albany",
+    "city": "Albany",
+    "address": "1491 Solano Ave",
+    "kind": "1960s pie shop and diner",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Old-fashioned Solano Avenue pie shop and restaurant since 1964.",
+    "source_url": "https://www.sfgate.com/neighborhoods/eb/albany/",
+    "open_evidence": "SFGate Albany guide (undated). Street number from memory, verify",
+    "from": "disc-11-night"
+  },
+  {
+    "name": "Cheese Board Pizza",
+    "neighborhood": "North Berkeley",
+    "city": "Berkeley",
+    "address": "1512 Shattuck Ave",
+    "kind": "Worker-owned pizza collective",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "One vegetarian pizza a day from a worker-owned collective, with live music and a sidewalk line.",
+    "source_url": "https://www.berkeleyside.org/2025/01/01/favorite-berkeley-restaurants",
+    "open_evidence": "Berkeleyside must-know list, Jan 2025",
+    "from": "disc-11-night"
   }
 ]
