@@ -3,35 +3,45 @@ interface Props {
   place: {
     id: string; name: string; area: string; kind: string; verified: string; score: number; sample?: boolean;
     breakdown: { uniqueness: number; atmosphere: number; story: number; signature: number; radar?: number };
-    story: string; order: string; draft?: boolean; reviewFlags?: string[]; fame?: string; when?: string[]; practical?: string[]; hours?: string | null; city?: string;
+    story: string; order: string; draft?: boolean; reviewFlags?: string[]; fame?: string; when?: string[];
+    practical?: string[]; hours?: string | null; city?: string; lat?: number; lng?: number;
   };
   detail?: boolean; // true on the place's own page (no "open" link)
 }
 import { FAME, WHEN } from '../lib/places.js';
 import { MARKS } from '../lib/scoring.js';
+import { FAME_TIPS, WHEN_TIPS, SCORE_TIP, MARK_TIPS, LISTS } from '../lib/glossary.js';
 const { place, detail = false } = Astro.props;
 const bars = MARKS.map((m) => [m.short, place.breakdown[m.key], m.key]);
 const href = `/place/${place.id}/`;
 const Heading = detail ? 'h1' : 'h3';
+const city = place.city ?? 'San Francisco';
+// A Google Maps search link: only a link out, no Google data is stored or shown here.
+const google = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name}, ${place.area}, ${city}`)}`;
+// The machine-readable line at the foot of every passport page.
+const mrzPart = (s) => s.toUpperCase().normalize('NFD').replace(/[^A-Z0-9]+/g, '<').replace(/^<|<$/g, '');
+const mrz = `P<UNL<<${mrzPart(place.name)}<<${mrzPart(place.area)}<<${String(place.score).padStart(3, '0')}`.padEnd(64, '<');
 ---
 <article class:list={['card reveal', { detail }]} id={place.id} data-id={place.id} data-status="none" data-url={href} data-when={place.when?.join(' ') ?? ''}>
-  <div class="stamp" role="img" aria-label={`Hidden Gem Score ${place.score} out of 100`}><small aria-hidden="true">GEM</small><b aria-hidden="true">{place.score}</b><i aria-hidden="true">ADMIT ONE</i></div>
-  {place.sample && <span class="sample-flag">SAMPLE — NOT A REAL PLACE</span>}
-  {place.draft && <span class="sample-flag draft-flag">DRAFT — NOT YET REVIEWED</span>}
+  {place.sample && <span class="sample-flag">Sample — not a real place</span>}
+  {place.draft && <span class="sample-flag draft-flag">Draft — not yet reviewed</span>}
+  <div class="meta">{place.area}{city !== 'San Francisco' ? `, ${city}` : ''} · {place.kind}</div>
   <Heading>{detail ? place.name : <a href={href}>{place.name}</a>}</Heading>
-  <div class="meta">{place.area}{place.city && place.city !== 'San Francisco' ? `, ${place.city}` : ''} · {place.kind}</div>
+  <div class="stamp" tabindex="0" data-tip={SCORE_TIP} aria-label={`Gem score ${place.score} out of 100`}>
+    <small aria-hidden="true">GEM</small><b aria-hidden="true">{place.score}</b><i aria-hidden="true">VISA</i>
+  </div>
   <div class="chips">
-    {place.fame && <span class:list={['chip fame', place.fame]}>{FAME[place.fame]}</span>}
-    {place.when?.map((w) => <span class="chip when">{WHEN[w]}</span>)}
+    {place.fame && <span class:list={['chip fame', place.fame]} tabindex="0" data-tip={FAME_TIPS[place.fame]}>{FAME[place.fame]}</span>}
+    {place.when?.map((w) => <span class="chip when" tabindex="0" data-tip={WHEN_TIPS[w]}>{WHEN[w]}</span>)}
   </div>
   <p>{place.story}</p>
   <div class="tape">
-    <div class="t" aria-hidden="true">— TALE OF THE TAPE —</div>
+    <div class="t" aria-hidden="true">Entry record</div>
     {bars.map(([label, v, key]) => (
-      <div class:list={['row', key]}><span>{label}</span><div class="bar" style={`--w:${v}%`} aria-hidden="true"></div><b>{v}</b></div>
+      <div class:list={['row', key]} data-tip={MARK_TIPS[key]}><span>{label}</span><div class="bar" style={`--w:${v}%`} aria-hidden="true"></div><b>{v}</b></div>
     ))}
   </div>
-  <p class="order"><em>Order this</em>{place.order}</p>
+  <p class="order"><em>Order</em>{place.order}</p>
   {detail && (place.practical?.length || place.hours) && (
     <ul class="practical">
       {place.practical?.map((x) => <li>{x}</li>)}
@@ -45,24 +55,23 @@ const Heading = detail ? 'h1' : 'h3';
   )}
 
   <div class="actions">
-    <button class="btn-ghost" data-action="knock" aria-pressed="false">Knock Later</button>
-    <button class="btn-primary" data-action="ledger" aria-pressed="false">Been Through the Door</button>
+    <button class="btn-ghost" data-action="knock" aria-pressed="false" data-tip={LISTS.bucket.tip}>+ Bucket List</button>
+    <button class="btn-primary" data-action="ledger" aria-pressed="false" data-tip={LISTS.stamped.tip}>Stamp it</button>
     <button class="btn-ghost" data-action="share">Share</button>
+    <a class="btn-ghost" href={google} target="_blank" rel="noopener" data-tip="Opens Google Maps in a new tab for directions, photos and hours.">Google Maps ↗</a>
   </div>
 
   <div class="ledger">
-    <div class="cap"><span>YOUR STRIKE</span><span data-strike-label>Not rated</span></div>
+    <div class="cap"><span data-tip={LISTS.rating.tip} tabindex="0">Your rating</span><span data-strike-label>Not rated</span></div>
     <div class="strikes" role="group" aria-label={`Your rating for ${place.name}`}>
       {[1, 2, 3, 4, 5].map((n) => (
-        <button class="strike" data-strike={n} data-on="false" aria-label={`${n} of 5 matches`} aria-pressed="false">
-          <svg viewBox="0 0 20 60" aria-hidden="true">
-            <rect x="8" y="14" width="4" height="44" rx="1" fill="currentColor" />
-            <ellipse class="head" cx="10" cy="10" rx="6" ry="8" />
-          </svg>
+        <button class="strike" data-strike={n} data-on="false" aria-label={`${n} of 5 stamps`} aria-pressed="false">
+          <svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="12" /></svg>
         </button>
       ))}
     </div>
     <label class="sr-only" for={`note-${place.id}`}>Private note</label>
     <textarea id={`note-${place.id}`} data-note placeholder="Private note: what you ordered, who to ask for…" maxlength="400"></textarea>
   </div>
+  <div class="mrz" aria-hidden="true">{mrz}</div>
 </article>

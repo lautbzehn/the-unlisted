@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import Footer from '../components/Footer.astro';
+import { TURNSTILE_SITE_KEY } from '../lib/config.js';
+---
+<Base title="Suggest a place — The Unlisted" description="Know a door we should knock on? Tell us about it." path="/suggest/">
+  <main id="main" class="doc">
+    <p class="label">Suggest a place</p>
+    <h1 class="doc-title">Know a door?</h1>
+    <p class="lede">The best tips come from regulars. Tell us about a small, independent spot with a story and one thing worth ordering. We check every one before it goes in.</p>
+
+    <form class="form panel" id="place-form" data-endpoint="/api/places/suggest" novalidate>
+      <div class="row2">
+        <label>City
+          <select name="metro" required>
+            <option value="bay-area">Bay Area</option>
+            <option value="san-diego">San Diego</option>
+          </select>
+        </label>
+        <label>Neighborhood <span class="opt">(optional)</span><input name="area" maxlength="80" /></label>
+      </div>
+      <label>Name of the place<input name="name" required maxlength="100" /></label>
+      <label>Why it’s special<textarea name="why" required maxlength="600" placeholder="What makes it itself? What should someone order?"></textarea></label>
+      <label>A link about it <span class="opt">(optional: its website, Instagram, an article)</span><input name="link" type="url" maxlength="300" inputmode="url" /></label>
+      <div id="bot-check" class="bot-check" data-sitekey={TURNSTILE_SITE_KEY}></div>
+      <div class="actions-row"><button class="btn-primary" type="submit">Send the tip</button><p class="status" id="status" role="status" aria-live="polite"></p></div>
+      <p class="privacy">Suggestions are read by a person and never posted as-is. No chains, please.</p>
+    </form>
+    <Footer />
+  </main>
+  <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+  <script>
+    import { wireForm } from '../scripts/forms.js';
+    wireForm(document.getElementById('place-form'), { done: 'Got it. If it checks out, it goes in the passport.' });
+  </script>
+</Base>

@@ -1,10 +1,11 @@
 import { initSurprise } from './surprise.js';
 import { TIME_LABEL, currentBucket, resolveTime } from './time.js';
 
-// Knock List / Ledger / personal rating / share.
+// Bucket List / Stamped / personal rating / share.
 // Everything is stored in this browser only (localStorage). No accounts, no server.
 const KEY = 'unlisted:v1';
 const LABELS = ['Not rated', 'Meh', 'Fine', 'Good', 'Great', 'Legendary'];
+const params = new URLSearchParams(location.search);
 
 const load = () => {
   try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
@@ -17,8 +18,8 @@ let state = load(); // { [placeId]: { status: 'knock'|'ledger', strike: 0-5, not
 const cards = [...document.querySelectorAll('.card')];
 const tabs = [...document.querySelectorAll('.tab[data-filter]')];
 const empty = document.getElementById('empty');
-let filter = 'all';
-let time = 'any'; // 'any' | 'now' | 'morning' | 'midday' | 'evening' | 'late'
+let filter = ['knock', 'ledger'].includes(params.get('list')) ? params.get('list') : 'all';
+let time = ['now', 'morning', 'midday', 'evening', 'late'].includes(params.get('time')) ? params.get('time') : 'any';
 const timeBtns = [...document.querySelectorAll('[data-time]')];
 let view = 'cards';
 const grid = document.querySelector('.grid');
@@ -98,8 +99,8 @@ function render() {
   empty.classList.toggle('show', !visible);
   const listEmpty = filter !== 'all' && inList.length === 0;
   empty.textContent = visible ? ''
-    : listEmpty && filter === 'knock' ? 'Your Knock List is empty. Find a door worth knocking on.'
-    : listEmpty && filter === 'ledger' ? 'Your Ledger is blank. Go somewhere, then write it down.'
+    : listEmpty && filter === 'knock' ? 'Your Bucket List is empty. Tap “+ Bucket List” on any place to save it.'
+    : listEmpty && filter === 'ledger' ? 'No stamps yet. Go somewhere, then tap “Stamp it”.'
     : bucket ? `Nothing here for ${TIME_LABEL[bucket].toLowerCase()} yet. Try "Any time".` : '';
 }
 
@@ -113,7 +114,7 @@ function update(id, patch) {
 
 async function share(card) {
   const id = card.dataset.id;
-  const name = card.querySelector('h3').textContent;
+  const name = card.querySelector('h3, h1').textContent;
   const url = new URL(card.dataset.url, location.origin).href; // the place's own page, so the link shows a preview card
   const data = { title: `${name} — The Unlisted`, text: `You have to check out ${name}. Found it on The Unlisted.`, url };
   try {
@@ -182,3 +183,7 @@ initSurprise({
     mapMod?.focusPlace(id);
   },
 });
+
+// Links from the header menus: ?view=map opens the map, #surprise rolls Surprise Me.
+if (grid && params.get('view') === 'map') setView('map');
+if (location.hash === '#surprise') document.getElementById('surprise-btn')?.click();

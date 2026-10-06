@@ -1,0 +1,57 @@
+---
+import Base from '../layouts/Base.astro';
+import Footer from '../components/Footer.astro';
+import { LISTS, FAME_TIPS, WHEN_TIPS, SCORE_TIP, MARK_TIPS, PIN_TIPS } from '../lib/glossary.js';
+import { MARKS } from '../lib/scoring.js';
+import { FAME, WHEN } from '../lib/places.js';
+const strip = (s) => { const t = s.replace(/^[^:]+:\s*/, ''); return t[0].toUpperCase() + t.slice(1); };
+---
+<Base title="Help & labels — The Unlisted" description="What every label, stamp and button on The Unlisted means." path="/help/">
+  <main id="main" class="doc">
+    <p class="label">Help &amp; labels</p>
+    <h1 class="doc-title">Reading your passport</h1>
+    <p class="lede">Everything on a place’s page, explained. Hover over or tap most labels on the site for the short version.</p>
+
+    <h2 class="sect">Your lists</h2>
+    <dl class="gloss">
+      <dt>{LISTS.bucket.name}</dt><dd>{LISTS.bucket.tip}</dd>
+      <dt>{LISTS.stamped.name}</dt><dd>{LISTS.stamped.tip}</dd>
+      <dt>{LISTS.rating.name}</dt><dd>{LISTS.rating.tip}</dd>
+    </dl>
+
+    <h2 class="sect">How well-known it is</h2>
+    <dl class="gloss">
+      {Object.entries(FAME_TIPS).map(([k, tip]) => (<><dt><span class:list={['chip fame', k]}>{FAME[k]}</span></dt><dd>{strip(tip)}</dd></>))}
+    </dl>
+
+    <h2 class="sect">When to go</h2>
+    <dl class="gloss">
+      {Object.entries(WHEN_TIPS).map(([k, tip]) => (<><dt><span class="chip">{WHEN[k]}</span></dt><dd>{strip(tip)} “Right now” picks whichever of these fits the current hour in the Bay Area.</dd></>))}
+    </dl>
+
+    <h2 class="sect">The Gem score</h2>
+    <p class="sub" style="color:var(--ink)">{SCORE_TIP.replace(' Tap “How is this scored?” for the math.', '')} The stamp on each place shows it; the entry record underneath shows the five marks.</p>
+    <dl class="gloss">
+      {MARKS.map((m) => (<><dt>{m.label}</dt><dd>{MARK_TIPS[m.key]}</dd></>))}
+    </dl>
+    <p style="margin-top:14px"><a class="howlink" href="/how-the-score-works/">The full math, and its limits →</a></p>
+
+    <h2 class="sect">On the map</h2>
+    <dl class="gloss">
+      <dt><span class="swatch" data-status="none"></span> Hollow ring</dt><dd>{PIN_TIPS.none}</dd>
+      <dt><span class="swatch" data-status="knock"></span> Filled teal</dt><dd>{PIN_TIPS.bucket}</dd>
+      <dt><span class="swatch" data-status="ledger"></span> Violet</dt><dd>{PIN_TIPS.stamped}</dd>
+    </dl>
+
+    <h2 class="sect">Questions</h2>
+    <div class="faq">
+      <details><summary>Is The Unlisted free?</summary><p>Yes. No accounts, no ads, and no place pays to be listed.</p></details>
+      <details><summary>Where are my lists saved?</summary><p>On this device, in your browser. Nothing is sent to us. Clearing your browser data clears your lists, and they don’t sync between your phone and laptop yet.</p></details>
+      <details><summary>How do places get in?</summary><p>Candidates come from OpenStreetMap, local press, neighborhood writing and suggestions. AI drafts each place from public sources and flags what it couldn’t confirm; a person checks it before it goes live. <a href="/how-the-score-works/">More on that here.</a></p></details>
+      <details><summary>Something’s wrong or a place closed.</summary><p>Tell us on the <a href="/contact/">contact page</a>. Every place shows the date it was last checked.</p></details>
+      <details><summary>Can I suggest a place?</summary><p>Please do. <a href="/suggest/">Suggest a place</a> for the Bay Area or San Diego, or <a href="/cities/">vote for the next city</a>.</p></details>
+      <details><summary>What does “Surprise me” do?</summary><p>Picks one place you haven’t stamped yet, leaning toward places near you and good for the current hour. It asks for your location only when you tap it, and your location never leaves your device.</p></details>
+    </div>
+    <Footer />
+  </main>
+</Base>

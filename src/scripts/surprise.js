@@ -81,7 +81,7 @@ export function initSurprise({ getState, getTime, update, showOnMap, toast }) {
     const on = getState()[current.id]?.status === 'knock';
     const b = $('[data-sp=knock]');
     b.setAttribute('aria-pressed', on);
-    b.textContent = on ? 'On your Knock List ✓' : 'Knock Later';
+    b.textContent = on ? 'On your Bucket List ✓' : '+ Bucket List';
   }
 
   async function shuffleThenReveal(choice) {

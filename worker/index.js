@@ -2,6 +2,8 @@
 //   GET  /api/cities           -> { coming: [...], board: [...] }
 //   POST /api/cities/vote      { slug, token }          one vote per city per person
 //   POST /api/cities/suggest   { slug, token }          a city from the fixed list (src/data/city-options.json)
+//   POST /api/contact          { name?, email?, topic, message, token }      saved privately + emailed to Dan
+//   POST /api/places/suggest   { metro, name, area?, why, link?, token }   saved privately + emailed to Dan
 // Spam protection: every POST needs a Cloudflare Turnstile token. People are identified only by a keyed
 // hash of their IP address (the address itself is never stored).
 
@@ -46,6 +48,25 @@ async function castVote(env, cityId, voter) {
   return ins.meta.changes > 0;
 }
 
+const clip = (v, n) => String(v ?? '').replace(/\s+/g, ' ').trim().slice(0, n);
+const clipText = (v, n) => String(v ?? '').replace(/\r/g, '').trim().slice(0, n);
+
+// Daily cap per person per form. Returns true when this person has hit it.
+async function overCap(env, voter, kind, max) {
+  const r = await env.DB.prepare("SELECT COUNT(*) AS n FROM form_log WHERE voter = ? AND kind = ? AND created_at > datetime('now', '-1 day')").bind(voter, kind).first();
+  if (r.n >= max) return true;
+  await env.DB.prepare('INSERT INTO form_log (voter, kind) VALUES (?, ?)').bind(voter, kind).run();
+  return false;
+}
+
+// Email Dan a copy. The binding can only send to his verified address, so the form can't be used to mail anyone else.
+// A failed email never loses the submission: it's already saved in the database.
+async function notify(env, subject, text) {
+  if (!env.EMAIL) return;
+  try { await env.EMAIL.send({ to: 'hello@icarianforge.com', from: 'noreply@icarianforge.com', subject, text }); }
+  catch (e) { console.error('email failed', e); }
+}
+
 async function readBody(request) {
   try { return await request.json(); } catch { return {}; }
 }
@@ -82,6 +103,30 @@ async function api(request, env, path) {
     const counted = await castVote(env, city.id, voter);
     const where = `${pick.name}, ${pick.region}`;
     return json({ message: existing ? (counted ? `${where} is already on the board. Your vote is counted.` : `You already voted for ${where}.`) : `${where} is on the board with your vote.` });
+  }
+
+  if (path === '/api/contact') {
+    const topics = ['hello', 'correction', 'closed', 'owner', 'other'];
+    const msg = { name: clip(body.name, 80), email: clip(body.email, 120), topic: topics.includes(body.topic) ? body.topic : 'other', message: clipText(body.message, 2000) };
+    if (msg.message.length < 2) return json({ error: 'Please write a message.' }, 400);
+    if (msg.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(msg.email)) return json({ error: 'That email address doesn’t look right.' }, 400);
+    if (await overCap(env, voter, 'contact', 3)) return json({ error: 'That’s a lot of messages for one day. Try again tomorrow.' }, 429);
+    await env.DB.prepare('INSERT INTO messages (name, email, topic, message) VALUES (?, ?, ?, ?)').bind(msg.name || null, msg.email || null, msg.topic, msg.message).run();
+    await notify(env, `The Unlisted: new message (${msg.topic})`, `From: ${msg.name || '(no name)'}\nReply to: ${msg.email || '(no email given)'}\nTopic: ${msg.topic}\n\n${msg.message}`);
+    return json({ message: 'Sent.' });
+  }
+
+  if (path === '/api/places/suggest') {
+    const metros = { 'bay-area': 'Bay Area', 'san-diego': 'San Diego' };
+    const tip = { metro: body.metro in metros ? body.metro : null, name: clip(body.name, 100), area: clip(body.area, 80), why: clipText(body.why, 600), link: clip(body.link, 300) };
+    if (!tip.metro) return json({ error: 'Please pick a city.' }, 400);
+    if (tip.name.length < 2) return json({ error: 'Please add the name of the place.' }, 400);
+    if (tip.why.length < 10) return json({ error: 'Tell us a little about why it’s special.' }, 400);
+    if (tip.link && !/^https?:\/\/\S+$/i.test(tip.link)) return json({ error: 'The link should start with http:// or https://.' }, 400);
+    if (await overCap(env, voter, 'place', 5)) return json({ error: 'That’s plenty of tips for today. Thank you!' }, 429);
+    await env.DB.prepare('INSERT INTO place_suggestions (metro, name, area, why, link) VALUES (?, ?, ?, ?, ?)').bind(tip.metro, tip.name, tip.area || null, tip.why, tip.link || null).run();
+    await notify(env, `The Unlisted: place tip for ${metros[tip.metro]}`, `${tip.name}${tip.area ? ` (${tip.area})` : ''}\n${metros[tip.metro]}\n\nWhy: ${tip.why}\n${tip.link ? `Link: ${tip.link}` : ''}`);
+    return json({ message: 'Got it.' });
   }
 
   return json({ error: 'Not found' }, 404);

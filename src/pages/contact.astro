@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import Footer from '../components/Footer.astro';
+import { TURNSTILE_SITE_KEY } from '../lib/config.js';
+---
+<Base title="Contact — The Unlisted" description="Say hello, report a closed place, or fix something we got wrong." path="/contact/">
+  <main id="main" class="doc">
+    <p class="label">Contact</p>
+    <h1 class="doc-title">Say hello</h1>
+    <p class="lede">A closed door, a wrong detail, or just a good tip. It all reaches a person.</p>
+    <p style="margin-top:14px">Email: <span class="email-line">hello@icarianforge.com</span></p>
+
+    <form class="form panel" id="contact-form" data-endpoint="/api/contact" novalidate>
+      <div class="row2">
+        <label>Your name <span class="opt">(optional)</span><input name="name" maxlength="80" autocomplete="name" /></label>
+        <label>Your email <span class="opt">(only if you want a reply)</span><input name="email" type="email" maxlength="120" autocomplete="email" /></label>
+      </div>
+      <label>About
+        <select name="topic">
+          <option value="hello">Just saying hello</option>
+          <option value="correction">Something’s wrong on a place</option>
+          <option value="closed">A place closed or moved</option>
+          <option value="owner">I own or work at a place</option>
+          <option value="other">Something else</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" required maxlength="2000"></textarea></label>
+      <div id="bot-check" class="bot-check" data-sitekey={TURNSTILE_SITE_KEY}></div>
+      <div class="actions-row"><button class="btn-primary" type="submit">Send</button><p class="status" id="status" role="status" aria-live="polite"></p></div>
+      <p class="privacy">We only use your email to reply. It’s never shown or shared.</p>
+    </form>
+    <Footer />
+  </main>
+  <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+  <script>
+    import { wireForm } from '../scripts/forms.js';
+    wireForm(document.getElementById('contact-form'), { done: 'Sent. Thanks for writing in.' });
+  </script>
+</Base>

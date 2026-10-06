@@ -1,9 +1,14 @@
 ---
+import { NAV } from '../lib/nav.js';
 interface Props { sample?: boolean }
 const { sample = false } = Astro.props;
+const about = NAV.find((g) => g.id === 'about').items;
 ---
 <footer>
-  <p>HUMAN CURATED · AI ENRICHED{sample ? ' · SAMPLE DATA SHOWN' : ''}</p>
-  <p><a href="/how-the-score-works/">How the score works</a></p>
+  <nav aria-label="Footer">
+    {about.map((it) => <a href={it.href}>{it.label}</a>)}
+    <a href="/suggest/">Suggest a place</a>
+  </nav>
+  <p>Human curated · AI enriched{sample ? ' · Sample data shown' : ''}</p>
   <p>Place &amp; map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a></p>
 </footer>
