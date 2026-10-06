@@ -1,0 +1,645 @@
+[
+  {
+    "id": "moonlight-cafe",
+    "seed": false,
+    "status": "draft",
+    "name": "Moonlight Cafe",
+    "area": "Bernal Heights",
+    "city": "San Francisco",
+    "kind": "Bernal breakfast and crepe cafe",
+    "lat": 37.73881,
+    "lng": -122.4153,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 48,
+      "atmosphere": 55,
+      "story": 35,
+      "signature": 55
+    },
+    "why": "A dependable neighborhood breakfast room with a Mediterranean lean, but nothing we found sets it apart from other brunch spots. Story is thin: longevity and loyal locals.",
+    "story": "A breakfast-and-lunch cafe on Cortland that neighborhood guides say has fed Bernal for more than 30 years. The menu runs from diner eggs and pancakes to savory crepes and omelets built with feta and olives.",
+    "order": "The Bernal Hill omelet, with feta, black olives, spinach and pine nuts.",
+    "practical": [
+      "Breakfast and lunch only"
+    ],
+    "hours": "Daily 8 am to 3 pm (neighborhood directory, confirm)",
+    "sources": [
+      "https://directory.bernalconnect.com/places/united-states/california/san-francisco/moonlight-cafe/",
+      "https://bernalheights.com/blog/best-breakfast-spots-in-bernal-heights-in-2025/"
+    ],
+    "flags": [
+      "'Over 30 years' comes from a 2025 neighborhood blog only; no founding year found.",
+      "An owner name shows up on listing sites but not in a reliable source, so it's left out.",
+      "Weak fit for the guide: nothing distinctive beyond longevity. Consider dropping."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "los-panchos",
+    "seed": false,
+    "status": "draft",
+    "name": "Los Panchos",
+    "area": "Bernal Heights",
+    "city": "San Francisco",
+    "kind": "Salvadoran-Mexican family room",
+    "lat": 37.74539,
+    "lng": -122.42031,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 52,
+      "atmosphere": 48,
+      "story": 28,
+      "signature": 66
+    },
+    "why": "Good pupusas, including loroco, in a plain sit-down room. Uniqueness and story are low: there are several strong Salvadoran spots within a few blocks, and we found nothing on its history.",
+    "story": "A sit-down room on lower Mission Street where Salvadoran and Mexican menus share the table: yuca plates next to burritos, pupusas next to huevos rancheros. The pupusas come generously filled, with loroco, plantain and jalapeño among the options.",
+    "order": "A loroco pupusa, or the combo of two pupusas with a half soup. The Infatuation says skip the menudo.",
+    "practical": [],
+    "hours": null,
+    "sources": [
+      "https://www.theinfatuation.com/san-francisco/reviews/los-panchos-restaurant"
+    ],
+    "flags": [
+      "Late hours (to about 2:30 am, later on weekends) appear only on listing aggregators. If confirmed, add 'late' and mention it: it would be the main reason to include this place.",
+      "No history found: no founding date or owners."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "golden-lotus",
+    "seed": false,
+    "status": "draft",
+    "name": "Golden Lotus",
+    "area": "Little Saigon",
+    "city": "San Francisco",
+    "kind": "Little Saigon pho shop",
+    "lat": 37.78385,
+    "lng": -122.41784,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 58,
+      "atmosphere": 42,
+      "story": 30,
+      "signature": 84
+    },
+    "why": "Here for the soup: the SF Standard named its pho the best in Little Saigon. The room is nondescript and we know almost nothing about who runs it, so atmosphere and story stay low.",
+    "story": "An easy-to-miss storefront on Larkin with what the SF Standard called the best pho in Little Saigon. The large bowl is heavy on chewy noodles and herbs, and the bún bò Huế has its own following. It has nothing to do with the Oakland vegan restaurant of the same name.",
+    "order": "The large pho, with bánh cuốn and lemongrass pork to start.",
+    "practical": [],
+    "hours": null,
+    "sources": [
+      "https://sfstandard.com/2024/02/08/little-saigon-tenderloin-restaurants/",
+      "https://www.sfweekly.com/dining/go-eat-this-now-banh-cuon-thit-nuong-at-golden-lotus/article_5d9e2cd0-f198-56d7-9413-13c324c8edd1.html",
+      "http://www.noodles.guru/2013/07/generic-name-generic-menu-but-golden.html"
+    ],
+    "flags": [
+      "Hours not found in a reliable source; listing aggregators say Mon-Sat 9 am to 8 pm, closed Sunday.",
+      "Newest independent coverage is Feb 2024. Confirm it's still open.",
+      "A 2013 noodle blog post suggests it opened around then; not used in the story."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "delicious-dim-sum",
+    "seed": false,
+    "status": "draft",
+    "name": "Delicious Dim Sum",
+    "area": "Chinatown",
+    "city": "San Francisco",
+    "kind": "Cash-only dim sum window",
+    "lat": 37.796,
+    "lng": -122.40755,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 55,
+      "atmosphere": 60,
+      "story": 22,
+      "signature": 72
+    },
+    "why": "A true grab-and-go counter with cheap, fresh dumplings, which is the whole appeal. Story is close to empty: no founding date, no owners, almost no press.",
+    "story": "A takeout-first dim sum shop on Jackson where locals point at trays and leave with warm paper bags. Har gow, char siu bao and lotus-leaf sticky rice are the usual haul, and it's cash only.",
+    "order": "Har gow and a lotus-leaf sticky rice.",
+    "practical": [
+      "Cash only",
+      "Takeout, almost no seating"
+    ],
+    "hours": null,
+    "sources": [
+      "https://crawlsf.com/guides/chinatown-restaurants-guide/"
+    ],
+    "flags": [
+      "Only source is an undated tourism guide. Confirm open and cash-only.",
+      "Hours on listing aggregators (about 7 am to 6 pm, closed Wednesday) are unconfirmed.",
+      "Low story score; may not earn a spot over Good Mong Kok, which is already in the guide."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "capital-restaurant",
+    "seed": false,
+    "status": "draft",
+    "name": "Capital Restaurant",
+    "area": "Chinatown",
+    "city": "San Francisco",
+    "kind": "Cantonese family restaurant, since about 1986",
+    "lat": 37.79409,
+    "lng": -122.40706,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 58,
+      "story": 70,
+      "signature": 86
+    },
+    "why": "The salt-and-pepper wings carry the score. A real family story (a server who became the owner) lifts it above a typical Chinatown menu house; the room itself is plain.",
+    "story": "Open since around 1986. Samantha Lo started here as a server in 1995 and took over from her mother-in-law in 2007, then rebuilt a menu of about 145 dishes around one: the fried wings, which now sit on the menu's cover. She still edits the menu every year, and photos of the best dishes line the walls.",
+    "order": "Fried chicken wings with salt and hot pepper. Egg tofu with spicy meat sauce if you're more than one.",
+    "practical": [
+      "Cash only",
+      "Closed Mondays"
+    ],
+    "hours": "Tue-Sun 11 am to 9 pm, closed Monday (Spotlight Chinatown, confirm)",
+    "sources": [
+      "https://www.spotlightchinatown.com/capital-restaurant",
+      "https://www.theinfatuation.com/san-francisco/guides/old-school-chinese-restaurants-sf"
+    ],
+    "flags": [
+      "Spotlight Chinatown profile is undated (likely 2020-21): confirm hours, cash-only and that Lo still runs it.",
+      "Founding year is 'around 1986' in the source; keep the hedge."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "moscow-and-tbilisi-bakery",
+    "seed": false,
+    "status": "draft",
+    "name": "Moscow & Tbilisi Bakery",
+    "area": "Outer Richmond",
+    "city": "San Francisco",
+    "kind": "Russian-Georgian bakery",
+    "lat": 37.78059,
+    "lng": -122.479,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 72,
+      "atmosphere": 55,
+      "story": 40,
+      "signature": 74
+    },
+    "why": "A real piece of the Richmond's Little Russia, with chebureki you can eat on the sidewalk. Story is thin beyond its age, and the room is a plain bakery counter.",
+    "story": "A Geary Boulevard bakery in the heart of the Richmond's Little Russia, open for more than 25 years. The cases run from cheese blintzes and poppy-seed rolls to khachapuri, but the regular move is a chebureki: a crisp, juicy fried turnover filled with ground beef.",
+    "order": "A beef chebureki, eaten right away.",
+    "practical": [
+      "Mostly takeout"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.theinfatuation.com/san-francisco/reviews/moscow-tbilisi-russian-bakery"
+    ],
+    "flags": [
+      "Main source is a March 2021 review; confirm still open and current hours (listings say about 7 am to 9 pm daily).",
+      "'25 years' was as of 2021; no founding year or owner found.",
+      "Khachapuri appears on menu listings, not in the review."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "giorgio-s-pizzeria",
+    "seed": false,
+    "status": "draft",
+    "name": "Giorgio's Pizzeria",
+    "area": "Inner Richmond",
+    "city": "San Francisco",
+    "kind": "Neighborhood pizzeria, since 1972",
+    "lat": 37.78298,
+    "lng": -122.46108,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 60,
+      "atmosphere": 62,
+      "story": 76,
+      "signature": 70
+    },
+    "why": "A strong, sourced family story and a Legacy Business listing. As pizza it's a good neighborhood pie rather than a destination, which caps uniqueness and signature.",
+    "story": "Giorgio Anastasio, born on Ischia, opened this corner pizzeria at Clement and Third in 1972. Six years in, worn out from running it alone, he handed it to childhood friends: the Contini brothers, whose family still runs it. The sauce is still his recipe, and the family likes to joke it's kept in a vault.",
+    "order": "A classic pie. The point is the original 1972 sauce.",
+    "practical": [
+      "San Francisco Legacy Business"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.giorgiospizza.com/about/",
+      "https://commissions.sfplanning.org/hpcpackets/2020-010197LBR.pdf"
+    ],
+    "flags": [
+      "Legacy Business status from a Dec 2020 SF Planning hearing packet (seen in search, not opened). Confirm it was granted.",
+      "Hours not confirmed.",
+      "Fame may be closer to open-secret: long-lived and well known on Clement, though rarely written up."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "tennessee-grill",
+    "seed": false,
+    "status": "draft",
+    "name": "Tennessee Grill",
+    "area": "Parkside",
+    "city": "San Francisco",
+    "kind": "1950s two-room diner",
+    "lat": 37.74323,
+    "lng": -122.47836,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 64,
+      "atmosphere": 80,
+      "story": 78,
+      "signature": 50
+    },
+    "why": "The room and the people carry it: 70-plus years on one corner, booths, an open kitchen, a Burmese immigrant owner who started as a cook. The food is classic diner fare with no single famous dish.",
+    "story": "On Taraval near 22nd Avenue since 1952, named for an original owner who came from Tennessee. Kyaw Soe arrived from Myanmar in 1998, cooked and waited tables here, and bought it in 2017. Peach walls, lime-green trim and diner booths; Lincoln High students and neighborhood regulars hold their meetings over breakfast.",
+    "order": "Breakfast in a booth. The menu mixes diner standards with Asian-inspired dishes.",
+    "practical": [
+      "Breakfast, lunch and dinner"
+    ],
+    "hours": null,
+    "sources": [
+      "https://richmondsunsetnews.com/2024/08/05/classic-parkside-diner-harkens-back-to-the-1950s/",
+      "https://www.sfheritage.org/news/breakfast-all-day-the-parksides-tennessee-grill/",
+      "https://www.tennesseegrilltaraval.com/about"
+    ],
+    "flags": [
+      "No signature dish named in any source; 'order' is generic. A visit or menu check would help.",
+      "Hours not confirmed; own site exists (tennesseegrilltaraval.com) but wasn't opened.",
+      "SF Heritage piece blocked our fetch (403); used only its headline."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "toyose",
+    "seed": false,
+    "status": "draft",
+    "name": "Toyose",
+    "area": "Outer Sunset",
+    "city": "San Francisco",
+    "kind": "Korean pub in a converted garage",
+    "lat": 37.75318,
+    "lng": -122.50469,
+    "osm": null,
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 86,
+      "atmosphere": 90,
+      "story": 62,
+      "signature": 80
+    },
+    "why": "You'd remember the room even with average food: a garage behind a house, dressed like a ship's hold, full at midnight. Story stays moderate because we found little about the owners.",
+    "story": "From the street it looks like a house a few blocks from Ocean Beach; only a lit-up angry cartoon chicken by the garage door gives it away. Inside, the converted garage is dim and cramped, with ropes on the wooden beams, and every table carries soju or a pitcher of Korean lager. It has been doing this since 2001.",
+    "order": "The tongdak, a whole bird cut up and fried bone-in, the old-school way. Kimchi fried rice and the seafood pancake have their own loyalists.",
+    "practical": [
+      "Open until 2 am on weekends"
+    ],
+    "hours": "Evenings, until 2 am Friday and Saturday (KQED, Sep 2025)",
+    "sources": [
+      "https://www.kqed.org/arts/13981034/toyose-korean-chicken-garage-late-night-san-francisco",
+      "https://www.theinfatuation.com/san-francisco/reviews/toyose"
+    ],
+    "flags": [
+      "Changed fame from deep-cut to open-secret: KQED calls it the neighborhood's most famous late-night spot.",
+      "Opening time and closed days not confirmed.",
+      "No owner names found."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "the-connecticut-yankee",
+    "seed": false,
+    "status": "draft",
+    "name": "The Connecticut Yankee",
+    "area": "Potrero Hill",
+    "city": "San Francisco",
+    "kind": "1907 saloon turned Boston sports bar",
+    "lat": 37.76494,
+    "lng": -122.39783,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 70,
+      "atmosphere": 78,
+      "story": 88,
+      "signature": 55
+    },
+    "why": "One of the best backstories on the list, from a hand-built saloon to a Prohibition bootleg cellar. The food is good bar food, which keeps the signature mark modest.",
+    "story": "Built in 1907 as Hilda's Saloon, reportedly from the lumber of a Red Cross earthquake shack. It was a boarding house, then a Prohibition bootlegging cellar, and in 1988 a man sold his baseball cards to buy it. Today it is Potrero Hill's home base for Boston fans.",
+    "order": "The CY burger or the fried chicken sandwich, with salt-and-vinegar fries.",
+    "practical": [
+      "Sports bar: busy on Patriots and Red Sox game days"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.sfheritage.org/legacy-businesses/sflegacybiz-spotlight-the-connecticut-yankee/",
+      "https://www.potreroview.net/the-pour-guys-to-take-over-the-connecticut-yankee/"
+    ],
+    "flags": [
+      "History comes from the SF Heritage Legacy Bars page as shown in search results; the page didn't render when fetched. Check the details (shack lumber, 25-cent meals, bootlegging) against it.",
+      "Menu items come from listing summaries, not a dated menu. Confirm.",
+      "Current owners since 2015 per Potrero View headline; hours not confirmed.",
+      "It's a bar first: confirm the kitchen still runs lunch and dinner."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "super-star-restaurant",
+    "seed": false,
+    "status": "draft",
+    "name": "Super Star Restaurant",
+    "area": "Excelsior",
+    "city": "San Francisco",
+    "kind": "Filipino-Chinese takeout counter",
+    "lat": 37.71957,
+    "lng": -122.43837,
+    "osm": null,
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 48,
+      "story": 45,
+      "signature": 80
+    },
+    "why": "Prices that seem stuck in the 1990s and a pork chop plate worth crossing town for. The room is a takeout counter and the story is mostly about value.",
+    "story": "A Filipino and Chinese takeout counter on Excelsior's Mission Street whose prices have barely moved since it opened in the 1990s. Around $6 still buys a box that barely closes, with garlic rice taking up most of the room under the longganisa or a crisp Hong Kong-style pork chop.",
+    "order": "The Hong Kong-style pork chop plate, plus an order of lumpia Shanghai (eight small ones). Bring cash.",
+    "practical": [
+      "Cash only",
+      "Takeout counter",
+      "Popular items can sell out"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.theinfatuation.com/san-francisco/reviews/super-star-restaurant",
+      "https://www.sfgate.com/food/article/san-francisco-super-star-restaurant-17535967.php"
+    ],
+    "flags": [
+      "Prices ($6 boxes, $7.50 pork chop) are from a March 2025 review; left out of 'order'. Recheck before publishing any number.",
+      "Hours not found."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "restaurante-san-vicente",
+    "seed": false,
+    "status": "draft",
+    "name": "Restaurante San Vicente",
+    "area": "Excelsior",
+    "city": "San Francisco",
+    "kind": "Salvadoran-Honduran pupuseria",
+    "lat": 37.72725,
+    "lng": -122.43264,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 56,
+      "atmosphere": 55,
+      "story": 30,
+      "signature": 82
+    },
+    "why": "Pupusas made nonstop by hand and stuffed to bursting, which earns the signature mark. The room is a TV-and-tables affair and we found nothing about its history.",
+    "story": "Walk in and the first thing you hear is masa being slapped into pupusas, which seem to be in constant production. They come crisp and overfilled, with a big jar of curtido on the table to cut the grease. The menu also covers Honduran plates like baleadas.",
+    "order": "A loroco pupusa and a pollo con frijoles, with plenty of curtido.",
+    "practical": [
+      "Pupusas cost under $5 (March 2025)"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.theinfatuation.com/san-francisco/reviews/san-vicente",
+      "https://www.restaurantesanvicenteca.com/restaurante-san-vicente/menu/4423-Mission-St/"
+    ],
+    "flags": [
+      "Price note is from a March 2025 review; confirm or drop.",
+      "Hours not confirmed; the Infatuation tags it for breakfast, lunch and dinner.",
+      "The same name appears on a Daly City pupuseria; confirm whether they're related (chain-size check)."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "yasukochi-s-sweet-stop",
+    "seed": false,
+    "status": "draft",
+    "name": "Yasukochi's Sweet Stop",
+    "area": "Japantown",
+    "city": "San Francisco",
+    "kind": "Coffee crunch cake counter, since 1974",
+    "lat": 37.78664,
+    "lng": -122.42987,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 92,
+      "atmosphere": 58,
+      "story": 90,
+      "signature": 94
+    },
+    "why": "The last keeper of a lost San Francisco dessert, still made by the founders' grandson. Atmosphere is just a glass case in the corner of a market, which holds that mark down.",
+    "story": "Thom Yasukochi learned the coffee crunch cake from Antoine, the candy maker at Blum's, the long-gone San Francisco chain that invented it. He opened this counter inside a Japantown market in 1974 to keep it alive, and a Blum's daughter later said it tasted exactly right. His grandson Kenji Yick now makes the temperamental candy topping.",
+    "order": "A slice of the coffee crunch cake. Go early.",
+    "practical": [
+      "Inside Super Mira market",
+      "San Francisco Legacy Business"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.ktvu.com/news/japantowns-benkyodo-and-yasukochis-sweet-stop-preserving-sweet-traditions",
+      "https://www.7x7.com/japantown-san-francisco-guide-1787127496/where-to-eat-drink-in-sf-s-japantown"
+    ],
+    "flags": [
+      "Main source is from Nov 2019. Confirm it's still open, that Super Mira market is still operating, and who bakes now.",
+      "A listing mentioned a temporary closure ('open back on June 30'); year unknown.",
+      "Sell-out time (about 11:30 am) is from an undated guide; left out."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "shooting-star-cafe",
+    "seed": false,
+    "status": "draft",
+    "name": "Shooting Star Cafe",
+    "area": "Oakland Chinatown",
+    "city": "Oakland",
+    "kind": "Hong Kong-style cafe, open late",
+    "lat": 37.80085,
+    "lng": -122.26999,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 62,
+      "atmosphere": 66,
+      "story": 38,
+      "signature": 64
+    },
+    "why": "A real cha chaan teng that keeps Chinatown fed after everything else closes. No single dish stands out in the sources, and we found nothing on who runs it.",
+    "story": "A cha chaan teng on Webster in the old Hong Kong mold: cheap, fast, and pairing European and Cantonese food the way the colonial-era cafes did. Scrambled egg sandwiches, macaroni soup and congee by day; egg puffs, shaved ice and sago pudding for the late crowd.",
+    "order": "Macaroni soup and a strong milk tea in the morning, or egg puffs late at night.",
+    "practical": [
+      "Open late, when most of Oakland Chinatown is closed"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.theinfatuation.com/san-francisco/reviews/shooting-star-cafe",
+      "https://www.corner.inc/place/14631"
+    ],
+    "flags": [
+      "Main review is from May 2021. Confirm open and current hours (aggregators say about 7 am to 12:30 am daily).",
+      "No owner or founding information found.",
+      "An address of 1068 Webster St also appears on one listing; we use 1022 Webster St from the Infatuation."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "tamales-acapulco-dona-tere",
+    "seed": false,
+    "status": "draft",
+    "name": "Tamales Acapulco",
+    "area": "Fruitvale",
+    "city": "Oakland",
+    "kind": "Guerrero-style tamale trailer",
+    "lat": 37.77093,
+    "lng": -122.21249,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 84,
+      "atmosphere": 62,
+      "story": 86,
+      "signature": 86
+    },
+    "why": "Regional Guerrero cooking from a vendor who helped change Oakland's street-food rules. The setting is a trailer in a market parking lot, which keeps atmosphere moderate.",
+    "story": "Teresa Mondragon, known to everyone as Doña Tere, sells tamales from a trailer in a Fruitvale market parking lot. She was part of the group of immigrant vendors who pushed Oakland to change its street-food rules about two decades ago. Her red mole goes into the masa itself, Guerrero style, not just on top.",
+    "order": "A tamal de mole rojo and a couple of chicharrón tacos de canasta. On a cold day, ask for champurrado.",
+    "practical": [
+      "Food trailer, parking-lot service",
+      "Late morning to early afternoon is the best time to go"
+    ],
+    "hours": null,
+    "sources": [
+      "https://www.kqed.org/bayareabites/135813/5-food-trucks-that-put-regional-mexican-plates-on-the-map",
+      "https://www.berkeleyside.org/2017/10/09/tamales-acapulco-oaklands-original-tamal-joint"
+    ],
+    "flags": [
+      "Newest real source is KQED, Dec 2019 (Berkeleyside profile 2017). Confirm the trailer is still at 4559 International Blvd and still run by Doña Tere.",
+      "Hours conflict on listing sites (11-7 vs 6-3). Not used.",
+      "Renamed from 'Tamales Acapulco Doña Tere' to the name used in press; listings also say 'Tamales Doña Tere'."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "sticky-rice-cafe",
+    "seed": false,
+    "status": "draft",
+    "name": "Sticky Rice Cafe",
+    "area": "Fruitvale",
+    "city": "Oakland",
+    "kind": "Lao and Isan bungalow restaurant",
+    "lat": 37.77972,
+    "lng": -122.22951,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 72,
+      "atmosphere": 66,
+      "story": 30,
+      "signature": 74
+    },
+    "why": "Lao cooking in a cozy converted bungalow on a busy stretch of International, which earns uniqueness and atmosphere. Story is thin: we found no owner or founding details.",
+    "story": "A small bungalow on a loud stretch of International Boulevard at the edge of Fruitvale, cooking Lao, Thai and Isan food. The menu leans on Lao sausage, duck larb and a noodle dish named for the morning after, with sticky rice served in its little bamboo basket.",
+    "order": "Lao pork sausage with sticky rice, then the larb ped (chopped duck salad).",
+    "practical": [
+      "Online ordering available"
+    ],
+    "hours": "Closes at 9 pm (own ordering site, Oct 2026; full hours not listed)",
+    "sources": [
+      "https://www.kqed.org/bayareabites/79446/5-bites-enticing-lao-cuisine-in-the-east-bay",
+      "https://stickyriceoakland.com/"
+    ],
+    "flags": [
+      "KQED piece is undated in what we saw; confirm dishes are still on the menu.",
+      "No founding year or owner found."
+    ],
+    "verified": "2026-10"
+  }
+]

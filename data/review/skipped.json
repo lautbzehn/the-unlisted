@@ -1,0 +1,22 @@
+[
+  {
+    "id": "the-roost",
+    "name": "The Roost",
+    "reason": "Poor fit: mainly a catering company with a cafe, from the team behind fine-dining Merchant Roots (since 2017). Not a hole-in-the-wall with its own story."
+  },
+  {
+    "id": "bayside-market-deli",
+    "name": "Bayside Market Deli",
+    "reason": "Poor fit: a general corner market with a salad bar and made-to-order sandwiches; no story, no distinct dish, and no recent press."
+  },
+  {
+    "id": "tian-jin-dumplings",
+    "name": "Tian Jin Dumplings",
+    "reason": "Closed: The Infatuation marks it permanently closed."
+  },
+  {
+    "id": "suzu-noodle-house",
+    "name": "Suzu Noodle House",
+    "reason": "Poor fit: small mall ramen shop inside Japan Center with no story or standout dish in any source. Address in discovery (1825 Post St) was also wrong; it's at 1581 Webster St #105."
+  }
+]
