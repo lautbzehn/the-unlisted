@@ -22,6 +22,35 @@ import places from '../data/places.json';
       <p class="soon">VIBE SEARCH: COMING IN THE NEXT BUILD</p>
     </form>
 
+    <div class="surprise-row">
+      <button id="surprise-btn" class="btn-primary big" type="button">Surprise me</button>
+      <p>One door you'd never find, picked for you. Your location stays on your device.</p>
+    </div>
+
+    <dialog id="surprise" aria-labelledby="sp-title">
+      <div class="sp-card">
+        <button class="sp-x" data-sp="close" aria-label="Close">×</button>
+        <div class="sp-kicker">TONIGHT'S DOOR</div>
+        <div class="sp-slot" data-sp="slot" aria-hidden="true"></div>
+        <div class="sp-body">
+          <div class="stamp" aria-hidden="true"><div>GEM<br /><b data-sp="score"></b></div></div>
+          <span class="sample-flag" data-sp="sample">SAMPLE — NOT A REAL PLACE</span>
+          <h2 id="sp-title"></h2>
+          <div class="meta" data-sp="meta"></div>
+          <p data-sp="story"></p>
+          <div class="order"><span>ORDER THIS</span><div data-sp="order"></div></div>
+          <p class="sp-where" data-sp="where"></p>
+          <div class="sp-actions">
+            <a class="btn-primary" data-sp="open" href="#">Open the file →</a>
+            <a class="btn-ghost" data-sp="directions" href="#" target="_blank" rel="noopener">Directions</a>
+            <button class="btn-ghost" data-sp="knock" aria-pressed="false">Knock Later</button>
+            <button class="btn-ghost" data-sp="map">Show on map</button>
+            <button class="btn-ghost" data-sp="again">Another one</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
     <div class="toolbar">
       <div class="tabs" role="group" aria-label="Show">
         <button class="tab" data-filter="all" aria-pressed="true">All doors <span class="n">(0)</span></button>

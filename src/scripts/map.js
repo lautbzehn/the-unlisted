@@ -78,3 +78,12 @@ export function updateMap(detail) {
   last = detail;
   if (map) sync(filterChanged); // don't re-center the map when you just mark a place
 }
+
+export function focusPlace(id) {
+  const m = markers.get(id);
+  if (!map || !m) return;
+  map.stop();
+  const to = { center: [m.p.lng, m.p.lat], zoom: 14 };
+  if (reduceMotion) map.jumpTo(to); else map.flyTo({ ...to, duration: 1200 });
+  if (!m.marker.getPopup().isOpen()) m.marker.togglePopup();
+}

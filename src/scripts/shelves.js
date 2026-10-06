@@ -1,3 +1,5 @@
+import { initSurprise } from './surprise.js';
+
 // Knock List / Ledger / personal rating / share.
 // Everything is stored in this browser only (localStorage). No accounts, no server.
 const KEY = 'unlisted:v1';
@@ -146,3 +148,15 @@ const io = new IntersectionObserver((entries) => {
 cards.forEach((c) => io.observe(c));
 
 render();
+
+initSurprise({
+  getState: () => state,
+  update,
+  toast,
+  showOnMap: async (id) => {
+    filter = 'all'; // the pick might be hidden by a filter
+    render();
+    await setView('map');
+    mapMod?.focusPlace(id);
+  },
+});
