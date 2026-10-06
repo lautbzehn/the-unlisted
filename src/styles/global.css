@@ -171,7 +171,7 @@ h2.sect { margin: 48px 0 10px; font: 400 1.75rem/1.15 var(--font-head); }
 /* ---------- The Gem door: the score on a little arched door ---------- */
 .gem-door { display: inline-block; flex: none; line-height: 0; color: var(--accent); }
 .gem-door svg { width: 100%; height: auto; overflow: visible; }
-.gem-door.sm { width: 32px; }
+.gem-door.sm { width: 38px; }
 .gem-door.lg { width: 78px; }
 .gem-door .frame { fill: var(--accent-soft); stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
 .gem-door .step { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
@@ -571,6 +571,6 @@ footer.site-footer p a { color: var(--ink); }
   .sheet { width: 100%; max-width: 100%; margin: auto 0 0; max-height: 90vh; }
   .sheet .modal-card { border-radius: 14px 14px 0 0; padding: 14px 16px calc(16px + env(safe-area-inset-bottom)); }
   .sheet-map { height: 48vh; }
-  .check-grid { grid-template-columns: 1fr; }
+  .form .check { gap: 8px; padding: 6px 10px; font-size: 0.92rem; line-height: 1.25; }
   .panel { padding: 18px 16px; }
 }
