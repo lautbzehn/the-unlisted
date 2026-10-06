@@ -1,0 +1,384 @@
+[
+  {
+    "name": "Point Loma Seafoods",
+    "neighborhood": "Point Loma",
+    "city": "San Diego",
+    "address": "2805 Emerson St",
+    "kind": "Fish market and sandwich counter",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "The Christianson family has sold fish here since 1963; the counter's breaded-fish sandwich on sourdough is a San Diego rite.",
+    "source_url": "https://pointlomaseafoods.com/our-history/",
+    "open_evidence": "Listing pages updated Sep 2026; own site live",
+    "from": "disc-00-day"
+  },
+  {
+    "name": "OB Deli",
+    "neighborhood": "Ocean Beach",
+    "city": "San Diego",
+    "address": "4984 Voltaire St",
+    "kind": "Neighborhood sandwich deli",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "A liquor-store owner swapped out a Subway for his own deli in 2015; sandwiches are named for OB streets.",
+    "source_url": "https://ob-deli.com/",
+    "open_evidence": "Own site live; listings updated Aug 2026",
+    "from": "disc-00-day"
+  },
+  {
+    "name": "Sea Trader Liquor & Deli",
+    "neighborhood": "Ocean Beach",
+    "city": "San Diego",
+    "address": "1403 Ebers St",
+    "kind": "Liquor store deli",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Corner liquor store at the south end of OB where locals grab a deli sandwich on the way to sunset at the cliffs.",
+    "source_url": "https://foursquare.com/v/sea-trader-liquor-and-deli/4bf1d8d7d39ad13a07beaa0e",
+    "open_evidence": "Listing pages active 2026; confirm (OB Rag local-markets rundown, Jan 2026, may cover it)",
+    "from": "disc-00-day"
+  },
+  {
+    "name": "Ortiz's Taco Shop",
+    "neighborhood": "Point Loma",
+    "city": "San Diego",
+    "address": "3704 Voltaire St",
+    "kind": "Family taco shop",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Family-run since 2004 in a strip mall, with marinades unchanged for 20 years and fries inside the carne asada burrito.",
+    "source_url": "https://www.theinfatuation.com/san-diego/reviews/ortizs-taco-shop",
+    "open_evidence": "Listings updated Sep 2026",
+    "from": "disc-00-day"
+  },
+  {
+    "name": "Fathom Bistro, Bait & Tackle",
+    "neighborhood": "Shelter Island",
+    "city": "San Diego",
+    "address": "1776 Shelter Island Dr",
+    "kind": "Pier sausage and beer shack",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "A bait shop and grill on the Shelter Island fishing pier, making its own sausages and grinding its own burger beef, with bay views.",
+    "source_url": "https://www.sandiegoreader.com/places/fathom-bistro-bait-tackle/",
+    "open_evidence": "Listings updated Aug 2026",
+    "from": "disc-00-day"
+  },
+  {
+    "name": "South Beach Bar & Grille",
+    "neighborhood": "Ocean Beach",
+    "city": "San Diego",
+    "address": "5059 Newport Ave",
+    "kind": "Beach-end fish taco bar",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "At the ocean end of Newport since 1992; the overnight-marinated mahi taco is the reason the bar is always full.",
+    "source_url": "https://southbeachob.com/",
+    "open_evidence": "Listings updated Aug 2026 with daily 11 am-10 pm hours",
+    "from": "disc-00-night"
+  },
+  {
+    "name": "OB Noodle House Bar 1502",
+    "neighborhood": "Ocean Beach",
+    "city": "San Diego",
+    "address": "4994 Niagara Ave",
+    "kind": "Pho and whiskey bar",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Vietnamese noodle house two blocks from the sand that doubles as a whiskey and craft-beer bar, open till 11.",
+    "source_url": "https://www.sandiegoreader.com/places/ob-noodle-house-bar-1502/",
+    "open_evidence": "Listing pages updated 2026 (wheree)",
+    "from": "disc-00-night"
+  },
+  {
+    "name": "Mitch's Seafood",
+    "neighborhood": "Point Loma",
+    "city": "San Diego",
+    "address": "1403 Scott St",
+    "kind": "Sportfishing-dock fish counter",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Order-at-the-counter seafood on the Point Loma Sportfishing dock, started by local fishing families in 2008.",
+    "source_url": "https://www.theinfatuation.com/san-diego/reviews/mitchs-seafood",
+    "open_evidence": "Listings updated Sep 2026",
+    "from": "disc-00-night"
+  },
+  {
+    "name": "Little Lion Cafe",
+    "neighborhood": "Sunset Cliffs",
+    "city": "San Diego",
+    "address": "1424 Sunset Cliffs Blvd",
+    "kind": "Family Belgian-Californian cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "A small family-run cafe near the cliffs cooking California food with a Belgian accent, waffles included.",
+    "source_url": "https://www.theinfatuation.com/san-diego/reviews/little-lion-cafe",
+    "open_evidence": "Listings updated Sep 2026; OSM hours Tue-Sun 8-3",
+    "from": "disc-00-day"
+  },
+  {
+    "name": "Kono's Cafe",
+    "neighborhood": "Pacific Beach",
+    "city": "San Diego",
+    "address": "704 Garnet Ave",
+    "kind": "Crystal Pier breakfast counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "Cash-only, paper-plate breakfast steps from Crystal Pier; the oversized breakfast burrito draws lines of locals and visitors.",
+    "source_url": "https://www.nbcsandiego.com/news/local/in-your-neighborhood-a-guide-to-pacific-beach-bars-boardwalk-and-beaches/3247796/",
+    "open_evidence": "2026 listing reviews describe current lines; confirm hours",
+    "from": "disc-01-day"
+  },
+  {
+    "name": "Taco Surf",
+    "neighborhood": "Pacific Beach",
+    "city": "San Diego",
+    "address": "4657 Mission Blvd",
+    "kind": "Surfboard-lined taco shop",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Same owners since 1989 in a shop hung with surfboards; San Diego Magazine once named its rolled tacos the city's best.",
+    "source_url": "https://tacosurftacoshop.com/",
+    "open_evidence": "Own site live; listings updated Sep 2026",
+    "from": "disc-01-day"
+  },
+  {
+    "name": "Rocky's Crown Pub",
+    "neighborhood": "Pacific Beach",
+    "city": "San Diego",
+    "address": "3786 Ingraham St",
+    "kind": "Burger-only dive pub",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "why": "Since 1977 the menu has been burgers, fries and beer, nothing else; 21+, wood-paneled, long cash-only.",
+    "source_url": "https://sandiegomagazine.com/food-drink/rockys-crown-pub-restaurant-review/",
+    "open_evidence": "Listing pages updated June 2026 (wheree); payment policy conflicting, confirm",
+    "from": "disc-01-night"
+  },
+  {
+    "name": "The Pennant",
+    "neighborhood": "Mission Beach",
+    "city": "San Diego",
+    "address": "2893 Mission Blvd",
+    "kind": "Beach dive with taco window",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "A two-level Mission Beach dive from another era, with a rooftop deck and a Mexican kitchen in the back that regulars rate.",
+    "source_url": "https://www.thepennantbar.com/visit",
+    "open_evidence": "Own site live; restaurantji listing active 2026",
+    "from": "disc-01-night"
+  },
+  {
+    "name": "Mama's Mediterranean Kitchen",
+    "neighborhood": "North Park",
+    "city": "San Diego",
+    "address": "2141 El Cajon Blvd",
+    "kind": "Lebanese saj bakery-deli",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Formerly Mama's Bakery & Lebanese Deli: saj flatbread rolled and baked to order, after 20-plus years in a tiny Craftsman cottage. Moved in 2025.",
+    "source_url": "https://sandiegomagazine.com/food-drink/mamas-bakery-north-park-new-location/",
+    "open_evidence": "Reopened at new address mid-2025 (San Diego Magazine, WhatNow)",
+    "from": "disc-02-day"
+  },
+  {
+    "name": "Rudford's Restaurant",
+    "neighborhood": "North Park",
+    "city": "San Diego",
+    "address": "2900 El Cajon Blvd",
+    "kind": "24-hour diner, est. 1949",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "why": "A diner on the Boulevard since 1949 that never closes, still running breakfast at 3 am.",
+    "source_url": "https://www.rudfords.com/",
+    "open_evidence": "Own site live; listings updated Sep 2026",
+    "from": "disc-02-night"
+  },
+  {
+    "name": "El Zarape",
+    "neighborhood": "University Heights",
+    "city": "San Diego",
+    "address": "4642 Park Blvd",
+    "kind": "Baja seafood taco shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Opened 1997; the lobster burrito and scallop tacos built its name. The founding family left in 2026; this original shop carries on under a new owner.",
+    "source_url": "https://www.sandiegoville.com/2026/07/original-family-behind-el-zarape-to.html",
+    "open_evidence": "SanDiegoVille, July 2026: Park Blvd location remains open",
+    "from": "disc-02-night"
+  },
+  {
+    "name": "El Comal",
+    "neighborhood": "North Park",
+    "city": "San Diego",
+    "address": "3946 Illinois St",
+    "kind": "Family Mexican kitchen",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-run for nearly two decades on a side street, cooking handmade Mexican food the traditional way.",
+    "source_url": "https://elcomalsd.com/",
+    "open_evidence": "Own site live; listings updated Aug 2026",
+    "from": "disc-02-night"
+  },
+  {
+    "name": "Sunnyboy Biscuit",
+    "neighborhood": "North Park",
+    "city": "San Diego",
+    "address": "3749 Park Blvd",
+    "kind": "Buttermilk biscuit sandwich counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Southern biscuit sandwiches, started as a pop-up before landing on Park Boulevard; on The Infatuation cheap-eats list.",
+    "source_url": "https://www.theinfatuation.com/san-diego/reviews/sunnyboy-biscuit",
+    "open_evidence": "Infatuation cheap-eats guide updated July 2026; listings Sep 2026",
+    "from": "disc-02-day"
+  },
+  {
+    "name": "Bahn Thai",
+    "neighborhood": "University Heights",
+    "city": "San Diego",
+    "address": "4646 Park Blvd",
+    "kind": "Hole-in-the-wall Thai kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "A small Thai room on Park Boulevard that diners keep calling the best hole-in-the-wall Thai in the city.",
+    "source_url": "https://www.sodiego.com/blog/hole-in-the-wall-restaurants-in-san-diego/",
+    "open_evidence": "Listing search results updated Aug 2026; confirm",
+    "from": "disc-02-night"
+  },
+  {
+    "name": "Big Kitchen Cafe",
+    "neighborhood": "South Park",
+    "city": "San Diego",
+    "address": "3003 Grape St",
+    "kind": "Community breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "Judy 'the Beauty' Forman has run this tiny breakfast room for more than four decades; in Sep 2026 staff asked the neighborhood for help keeping it alive.",
+    "source_url": "https://hoodline.com/2026/09/south-park-s-big-kitchen-cafe-seeks-support-as-staff-ask-diners-to-help/",
+    "open_evidence": "Hoodline and SanDiegoVille, Sep 2026: open 8 am-2 pm but at risk of closing",
+    "from": "disc-03-day"
+  },
+  {
+    "name": "Los Reyes",
+    "neighborhood": "Golden Hill",
+    "city": "San Diego",
+    "address": "2496 Broadway",
+    "kind": "Family Mexican and juice counter",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-owned on Broadway since 1993, feeding cab drivers and neighbors al pastor, carnitas and fresh fruit and vegetable juices.",
+    "source_url": "https://sandiegofreepress.org/2013/05/eating-25th-street-in-golden-hill-part-ii-lunch/",
+    "open_evidence": "Listings updated Sep 2026; restaurantji active",
+    "from": "disc-03-day"
+  },
+  {
+    "name": "Turf Supper Club",
+    "neighborhood": "Golden Hill",
+    "city": "San Diego",
+    "address": "1116 25th St",
+    "kind": "Grill-your-own steak bar",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "why": "A red-lit 1950s supper club where you cook your own steak and garlic bread on a communal grill, then slide into a worn booth.",
+    "source_url": "https://bourbonbill.com/2017/06/21/restaurant-review-turf-supper-club/",
+    "open_evidence": "Listing pages updated July 2026",
+    "from": "disc-03-night"
+  },
+  {
+    "name": "Station Tavern",
+    "neighborhood": "South Park",
+    "city": "San Diego",
+    "address": "2204 Fern St",
+    "kind": "Burger tavern in old trolley stop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Burgers and a big patio in a building that served as a trolley stop from 1929 to 1948; families and dogs welcome.",
+    "source_url": "https://mctrealestategroup.com/the-best-restaurants-in-south-park-san-diego-a-locals-guide/",
+    "open_evidence": "Listed in a 2026 South Park dining guide",
+    "from": "disc-03-night"
+  }
+]

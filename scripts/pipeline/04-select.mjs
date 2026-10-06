@@ -27,13 +27,23 @@ const unique = readJson(`${M.reviewDir}/discovered.json`, []).filter((c) => {
   return true;
 });
 
-// 2. coordinates: OSM name match first, then Nominatim address lookup (1 request per second, per its usage policy)
+// 2. coordinates: OSM name match first, then Nominatim address lookup (1 request per second, per its usage policy).
+// Nominatim rate-limits cloud machines (429), so fall back to the US Census geocoder (exact house numbers, CA only:
+// both metros are in California), then Photon (OSM-based, sometimes lands on the wrong block).
+const UA = { 'User-Agent': 'the-unlisted-portfolio/0.1 (hello@icarianforge.com)' };
+const getJson = async (url) => {
+  try { const res = await fetch(url, { headers: UA }); return res.ok ? await res.json() : null; } catch { return null; }
+};
 async function geocode(address) {
-  const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(address)}`;
-  const res = await fetch(url, { headers: { 'User-Agent': 'the-unlisted-portfolio/0.1 (hello@icarianforge.com)' } });
-  const [hit] = res.ok ? await res.json() : [];
+  const [hit] = (await getJson(`https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(address)}`)) ?? [];
   await new Promise((r) => setTimeout(r, 1100));
-  return hit ? [+hit.lat, +hit.lon] : null;
+  if (hit) return [+hit.lat, +hit.lon];
+  const census = await getJson(`https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&format=json&address=${encodeURIComponent(`${address}, CA`)}`);
+  const m = census?.result?.addressMatches?.[0];
+  if (m) return [m.coordinates.y, m.coordinates.x];
+  const photon = await getJson(`https://photon.komoot.io/api/?limit=1&q=${encodeURIComponent(address)}`);
+  const f = photon?.features?.[0];
+  return f?.properties?.housenumber ? [f.geometry.coordinates[1], f.geometry.coordinates[0]] : null;
 }
 
 const cache = readJson(`${M.pipelineDir}/geocode-cache.json`, {});
