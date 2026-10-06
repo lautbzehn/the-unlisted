@@ -64,6 +64,16 @@ import { places } from '../lib/places.js';
       </div>
     </div>
 
+    <div class="whenbar" role="group" aria-label="Time of day">
+      <span class="whenlabel" aria-hidden="true">WHEN</span>
+      <button class="tab" data-time="any" aria-pressed="true">Any time <span class="n"></span></button>
+      <button class="tab" data-time="now" aria-pressed="false">Right now: <span class="now-label"></span> <span class="n"></span></button>
+      <button class="tab" data-time="morning" aria-pressed="false">Morning <span class="n"></span></button>
+      <button class="tab" data-time="midday" aria-pressed="false">Midday <span class="n"></span></button>
+      <button class="tab" data-time="evening" aria-pressed="false">Evening <span class="n"></span></button>
+      <button class="tab" data-time="late" aria-pressed="false">Late <span class="n"></span></button>
+    </div>
+
     <p class="empty" id="empty" role="status"></p>
     <div id="map-wrap" hidden>
       <div id="map" role="region" aria-label="Map of places. Use the pins, or switch to Cards for a list."></div>

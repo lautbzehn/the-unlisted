@@ -18,7 +18,7 @@ const bars = [
 const href = `/place/${place.id}/`;
 const Heading = detail ? 'h1' : 'h3';
 ---
-<article class:list={['card reveal', { detail }]} id={place.id} data-id={place.id} data-status="none" data-url={href}>
+<article class:list={['card reveal', { detail }]} id={place.id} data-id={place.id} data-status="none" data-url={href} data-when={place.when?.join(' ') ?? ''}>
   <div class="stamp" aria-label={`Hidden Gem Score ${place.score} out of 100`}><div>GEM<br /><b>{place.score}</b></div></div>
   {place.sample && <span class="sample-flag">SAMPLE — NOT A REAL PLACE</span>}
   {place.draft && <span class="sample-flag draft-flag">DRAFT — NOT YET REVIEWED</span>}

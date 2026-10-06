@@ -51,11 +51,11 @@ function build() {
 }
 
 function sync(fit = true) {
-  const { state, filter } = last;
+  const { state, filter, time } = last;
   const shown = [];
   for (const [id, { el, p }] of markers) {
     const status = state[id]?.status || 'none';
-    const visible = filter === 'all' || status === filter;
+    const visible = (filter === 'all' || status === filter) && (!time || (p.when ?? []).includes(time));
     el.dataset.status = status;
     el.style.display = visible ? '' : 'none';
     el.setAttribute('aria-label', `${p.name}, ${p.area}, Gem score ${p.score}.${STATUS_TEXT[status]}`);
@@ -74,7 +74,7 @@ export function showMap(detail) {
 }
 
 export function updateMap(detail) {
-  const filterChanged = detail.filter !== last.filter;
+  const filterChanged = detail.filter !== last.filter || detail.time !== last.time;
   last = detail;
   if (map) sync(filterChanged); // don't re-center the map when you just mark a place
 }
