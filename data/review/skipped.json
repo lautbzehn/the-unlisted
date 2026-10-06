@@ -18,5 +18,20 @@
     "id": "suzu-noodle-house",
     "name": "Suzu Noodle House",
     "reason": "Poor fit: small mall ramen shop inside Japan Center with no story or standout dish in any source. Address in discovery (1825 Post St) was also wrong; it's at 1581 Webster St #105."
+  },
+  {
+    "id": "la-calaca-loca-taqueria",
+    "name": "La Calaca Loca Taqueria",
+    "reason": "Poor fit: a solid single-location taqueria with premium-sourced meats but no story or standout dish in any source; nothing sets it apart in Temescal."
+  },
+  {
+    "id": "nem-nuong-nha-trang",
+    "name": "Nem Nuong Nha Trang",
+    "reason": "Poor fit: opened in 2025 and already viral (hour-plus waits, 1,400 rolls a day per the Chronicle). Hype-driven rather than a hole-in-the-wall; revisit later."
+  },
+  {
+    "id": "rice-junky",
+    "name": "Rice Junky",
+    "reason": "Poor fit: a trendy, youth-oriented Korean pocha with tablet ordering and robot servers. No story, not a hole-in-the-wall."
   }
 ]
