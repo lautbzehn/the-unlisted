@@ -38,5 +38,20 @@
     "id": "papasotes",
     "name": "Papasotes",
     "reason": "Poor fit: a taco stand operating in front of the Belching Beaver brewery on 30th St; no history found, and reviews mostly mention long waits."
+  },
+  {
+    "id": "mongolian-hot-pot",
+    "name": "Mongolian Hot Pot",
+    "reason": "Poor fit: an all-you-can-eat hot pot restaurant; one listing ties it to the Little Sheep chain name. No family story found."
+  },
+  {
+    "id": "the-godfather",
+    "name": "The Godfather",
+    "reason": "Poor fit: a 1974 Italian restaurant that now runs as candlelit fine dining with reservations; sold to new owners in 2023."
+  },
+  {
+    "id": "senor-burro",
+    "name": "Señor Burro",
+    "reason": "Poor fit: a 2019 La Mesa burrito shop with fresh tortillas but no story or standout found beyond one list mention."
   }
 ]
