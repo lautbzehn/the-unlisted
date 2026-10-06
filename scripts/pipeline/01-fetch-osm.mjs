@@ -14,7 +14,8 @@ area["boundary"="administrative"]["admin_level"="6"]["name"~"^(${COUNTIES})$"]->
 );
 out center tags;`;
 
-const res = await fetch('https://overpass-api.de/api/interpreter', {
+// If the main server refuses cloud machines, point at a mirror: OVERPASS_URL=https://maps.mail.ru/osm/tools/overpass/api/interpreter
+const res = await fetch(process.env.OVERPASS_URL ?? 'https://overpass-api.de/api/interpreter', {
   method: 'POST',
   headers: { 'User-Agent': 'the-unlisted-portfolio/0.1 (hello@icarianforge.com)', Accept: '*/*', 'Content-Type': 'application/x-www-form-urlencoded' },
   body: new URLSearchParams({ data: query }),
