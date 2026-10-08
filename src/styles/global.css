@@ -617,10 +617,13 @@ body::after {
 .cover .logo .ch { display: inline-block; white-space: pre; }
 .tagline strong .ul { padding-bottom: 2px; background: linear-gradient(var(--accent), var(--accent)) 0 100% / 100% 2px no-repeat; }
 /* "Tonight's doors:" and a word that flips through the kinds of places open around now */
-.flipper { min-height: 1.55em; margin: 12px 0 0; color: var(--mute); font-size: 0.98rem; visibility: hidden; }
+/* Its height is fixed (one line, or two on phones), so filling it in never moves the page */
+.flipper { display: flex; justify-content: center; gap: 0.35em; margin: 12px 0 0; line-height: 1.55; white-space: nowrap; color: var(--mute); font-size: 0.98rem; visibility: hidden; }
 .flipper.on { visibility: visible; }
-.flipper .w { display: inline-grid; vertical-align: bottom; overflow: hidden; height: 1.55em; color: var(--ink); font-weight: 600; }
-.flipper .w span { grid-area: 1 / 1; white-space: nowrap; transition: transform 0.55s var(--spring), opacity 0.4s, filter 0.4s; }
+.flipper [data-flip-label] { flex: none; }
+.flipper .w { display: grid; min-width: 0; overflow: hidden; height: 1.55em; color: var(--ink); font-weight: 600; }
+.flipper .w span { grid-area: 1 / 1; overflow: hidden; text-overflow: ellipsis; transition: transform 0.55s var(--spring), opacity 0.4s, filter 0.4s; }
+@media (max-width: 560px) { .flipper { flex-direction: column; align-items: center; gap: 0; } .flipper .w { max-width: 100%; } }
 .flipper .w span.out { transform: translateY(-110%); opacity: 0; filter: blur(3px); }
 .flipper .w span.in { transform: translateY(110%); opacity: 0; filter: blur(3px); }
 /* "Right now": an emerald dot that breathes, because this row follows the clock */
