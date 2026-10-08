@@ -1,5 +1,5 @@
 // The Unlisted: tiny API for the city board. Everything that isn't /api/* is the static site.
-//   GET  /api/cities           -> { coming: [...], board: [...] }   (cities with status 'live' are open and listed on neither)
+//   GET  /api/cities           -> { coming: [...], board: [...] }   (cities already open are listed on neither)
 //   POST /api/cities/vote      { slug, token }          one vote per city per person
 //   POST /api/cities/suggest   { slug, token }          a city from the fixed list (src/data/city-options.json)
 //   POST /api/contact          { name?, email?, topic, message, token }      saved privately + emailed to Dan
@@ -40,11 +40,15 @@ async function human(request, env, token) {
   return out.success === true;
 }
 
+// Cities the guide already covers. Kept here rather than as a database status, so the board's table stays as it is.
+const OPEN = new Set(['san-diego-ca']);
+
 async function listCities(env) {
   const { results } = await env.DB.prepare(
     "SELECT slug, name, region, status, votes FROM cities WHERE status IN ('approved','coming') ORDER BY votes DESC, name",
   ).all();
-  return { coming: results.filter((c) => c.status === 'coming'), board: results.filter((c) => c.status === 'approved') };
+  const shown = results.filter((c) => !OPEN.has(c.slug));
+  return { coming: shown.filter((c) => c.status === 'coming'), board: shown.filter((c) => c.status === 'approved') };
 }
 
 async function castVote(env, cityId, voter) {
@@ -94,6 +98,7 @@ async function api(request, env, path) {
   if (path === '/api/cities/suggest') {
     const pick = OPTIONS.get(String(body.slug ?? ''));
     if (!pick) return json({ error: 'Please pick a city from the list.' }, 400);
+    if (OPEN.has(pick.slug)) return json({ message: `${pick.name} is already open on The Unlisted.` });
 
     const recent = await env.DB.prepare("SELECT COUNT(*) AS n FROM suggestion_log WHERE voter = ? AND created_at > datetime('now', '-1 day')").bind(voter).first();
     if (recent.n >= 5) return json({ error: 'That’s plenty of suggestions for today. Thank you!' }, 429);
@@ -102,7 +107,6 @@ async function api(request, env, path) {
     const existing = await env.DB.prepare('SELECT id, status FROM cities WHERE slug = ?').bind(pick.slug).first();
     if (existing?.status === 'rejected') return json({ message: `Thanks. ${pick.name} isn’t on the board right now.` });
     if (existing?.status === 'coming') return json({ message: `${pick.name} is already booked. It’s coming soon.` });
-    if (existing?.status === 'live') return json({ message: `${pick.name} is already open on The Unlisted.` });
     // Cities come from a fixed list, so they can go straight onto the board: no free text to review.
     const city = existing ?? await env.DB.prepare("INSERT INTO cities (slug, name, region, status) VALUES (?, ?, ?, 'approved') RETURNING id")
       .bind(pick.slug, pick.name, pick.region).first();
