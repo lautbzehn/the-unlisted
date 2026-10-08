@@ -580,6 +580,16 @@ footer.site-footer p a { color: var(--ink); }
   .panel { padding: 18px 16px; }
 }
 
+/* "An Icarian Forge product": the maker's mark, in the footer of every page, on the welcome gate and in Our Story.
+   The I and Forge are in the Icarian Forge amber, as on icarianforge.com */
+.ifp b { font-weight: inherit; color: #f97343; }
+.maker { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; margin-bottom: 12px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+footer.site-footer .maker a { color: var(--ink); font-weight: 600; letter-spacing: 0.02em; text-decoration: none; }
+footer.site-footer .maker a:hover { text-decoration: underline; text-decoration-color: var(--line-strong); }
+.gate-maker { margin-top: 10px; color: var(--mute); font: 400 0.95rem var(--font-title); letter-spacing: 0.12em; }
+.story-maker { color: var(--mute); }
+.prose .story-maker a { color: var(--ink); text-decoration-color: var(--line-strong); }
+
 /* City switch: Bay Area · San Diego, on each city's front page and Explore page */
 .city-switch { display: inline-flex; gap: 2px; padding: 3px; border: 1px solid var(--line-strong, rgba(238, 226, 200, 0.28)); border-radius: 999px; }
 .city-switch a { min-height: 36px; display: inline-flex; align-items: center; padding: 0 14px; border-radius: 999px; color: var(--mute); font-weight: 600; font-size: 0.9rem; text-decoration: none; }

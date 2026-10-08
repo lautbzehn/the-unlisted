@@ -12,5 +12,6 @@ const { sample = false } = Astro.props;
     {NAV.slice(0, 4).map((it) => <a href={it.href}>{it.label}</a>)}
     {ABOUT.map((it) => <a href={it.href}>{it.label}</a>)}
   </nav>
+  <p class="maker"><a href="https://www.icarianforge.com" rel="noopener">An <span class="ifp"><b>I</b>carian <b>Forge</b></span> product</a><span>© 2026 Icarian Forge. All rights reserved.</span></p>
   <p>Human curated, AI enriched.{sample ? ' Some sample data shown.' : ''} Place and map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>.</p>
 </footer>
