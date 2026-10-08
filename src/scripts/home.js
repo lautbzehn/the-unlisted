@@ -48,6 +48,49 @@ if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
   }
 }
 
+// Under the logo: "Tonight's doors:" and a word that flips through the kinds of places that fit this hour.
+const FLIP_LABEL = { morning: 'This morning’s doors:', midday: 'Today’s lunch doors:', evening: 'Tonight’s doors:', late: 'Late-night doors:' };
+const flipper = document.getElementById('flipper');
+if (flipper) {
+  const all = JSON.parse(document.getElementById('places-data').textContent);
+  const kinds = [...new Set(all.filter((p) => p.when?.includes(now)).map((p) => p.kind.replace(/,?\s*since \d{4}.*$/i, '')))].sort(() => Math.random() - 0.5).slice(0, 8);
+  const word = flipper.querySelector('.w');
+  if (kinds.length) {
+    flipper.querySelector('[data-flip-label]').textContent = FLIP_LABEL[now];
+    word.firstElementChild.textContent = kinds[0];
+    flipper.classList.add('on');
+    if (kinds.length > 1 && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      let k = 0;
+      setInterval(() => {
+        if (document.hidden) return;
+        [...word.children].slice(0, -1).forEach((n) => n.remove());
+        const old = word.firstElementChild, nu = document.createElement('span');
+        k = (k + 1) % kinds.length;
+        nu.textContent = kinds[k]; nu.className = 'in'; word.append(nu);
+        void nu.offsetWidth; old.className = 'out'; nu.className = '';
+        setTimeout(() => old.remove(), 600);
+      }, 2400);
+    }
+  }
+}
+
+// Tickets tilt a little under a warm light that follows the pointer (after 21st.dev's Optimized Tilt Card, gentler)
+if (matchMedia('(hover: hover) and (pointer: fine)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  for (const t of document.querySelectorAll('.ticket')) {
+    let raf = 0;
+    t.addEventListener('pointermove', (e) => {
+      const r = t.getBoundingClientRect(), px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        t.classList.add('tilt');
+        t.style.setProperty('--ry', `${(px - 0.5) * 12}deg`); t.style.setProperty('--rx', `${(0.5 - py) * 10}deg`);
+        t.style.setProperty('--px', `${px * 100}%`); t.style.setProperty('--py', `${py * 100}%`);
+      });
+    });
+    t.addEventListener('pointerleave', () => { cancelAnimationFrame(raf); t.classList.remove('tilt'); t.style.setProperty('--rx', '0deg'); t.style.setProperty('--ry', '0deg'); });
+  }
+}
+
 initSurprise({
   getState,
   getTime: () => ({ chosen: null, now }),

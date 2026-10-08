@@ -64,10 +64,17 @@ const here = (href) => (Astro.url.pathname === href ? 'page' : undefined);
   });
 
   // How many places are in your passport, next to "My Passport". Read straight from this device's storage.
-  const paintCount = () => {
+  // A little bump when you add a place: emerald for a stamp, rust for the Bucket List.
+  const paintCount = (e) => {
     let n = 0;
     try { n = Object.values(JSON.parse(localStorage.getItem('unlisted:v1')) || {}).filter((s) => s.status).length; } catch {}
-    document.querySelectorAll('[data-passport-count]').forEach((el) => { el.hidden = !n; el.textContent = n; });
+    const kind = e?.detail?.kind;
+    document.querySelectorAll('[data-passport-count]').forEach((el) => {
+      el.hidden = !n; el.textContent = n;
+      if (!kind) return;
+      el.classList.remove('bump', 'go'); void el.offsetWidth;
+      el.classList.add('bump'); el.classList.toggle('go', kind === 'ledger');
+    });
   };
   paintCount();
   addEventListener('storage', paintCount);

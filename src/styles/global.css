@@ -1,6 +1,7 @@
 /* The Unlisted — "Passport Noir", sepia edition
    An old passport found in a drawer: warm sepia browns, aged-paper text, letterpress titles, one rust-red stamp
-   used only for actions and "you are here". Calm on purpose: sentence-case text, few boxes, generous space.
+   used only for actions and "you are here", and emerald ink for "been there" (Stamped) and "live right now".
+   Calm on purpose: sentence-case text, few boxes, generous space.
    Every text color checked for contrast. */
 
 :root {
@@ -15,6 +16,11 @@
   --accent-soft: rgba(217, 120, 79, 0.09);
   --on-accent: #1a0d07;
   --brass: #a08a62;     /* engraved ornaments on the welcome gate */
+  --go: #4fc08d;        /* emerald ink: Stamped ("been there"), "live right now" and "done". Never for actions. About 8:1 */
+  --go-soft: rgba(79, 192, 141, 0.1);
+  --on-go: #06140d;
+  --ease: cubic-bezier(0.23, 1, 0.32, 1);
+  --spring: cubic-bezier(0.3, 1.5, 0.5, 1);
   --line: rgba(238, 226, 200, 0.13);
   --line-strong: rgba(238, 226, 200, 0.28);
   --radius: 8px;
@@ -131,17 +137,28 @@ h2.sect { margin: 48px 0 10px; font: 400 1.75rem/1.15 var(--font-head); }
 .browse-sub { color: var(--mute); margin-top: 4px; }
 .strip-wrap { position: relative; }
 .strip {
-  list-style: none; padding: 0 0 10px; display: grid; grid-auto-flow: column; grid-auto-columns: 250px;
-  grid-template-rows: repeat(3, auto); gap: 0 12px;
+  list-style: none; padding: 6px 2px 14px; display: grid; grid-auto-flow: column; grid-auto-columns: 250px;
+  grid-template-rows: repeat(4, auto); gap: 0 14px;
   overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent;
 }
 /* subgrid: every tile's name, one-liner and footer sit on the same lines as its neighbors' */
-.strip > li { scroll-snap-align: start; grid-row: span 3; display: grid; grid-template-rows: subgrid; }
-.ticket {
-  grid-row: span 3; display: grid; grid-template-rows: subgrid; row-gap: 12px; padding: 16px; border-radius: var(--radius);
-  background: var(--raise); text-decoration: none; transition: background 0.15s;
+.strip > li { scroll-snap-align: start; grid-row: span 4; display: grid; grid-template-rows: subgrid; }
+.ticket { /* a ticket stub: two notches where the perforation is, so it looks torn from a roll */
+  grid-row: span 4; display: grid; grid-template-rows: subgrid; row-gap: 12px; position: relative; overflow: hidden;
+  padding: 16px 16px 0; border-radius: var(--radius); background: linear-gradient(170deg, #241d15, var(--raise) 60%); text-decoration: none;
+  -webkit-mask: radial-gradient(circle 9px at 0 calc(100% - 34px), #0000 97%, #000) left / 51% 100% no-repeat, radial-gradient(circle 9px at 100% calc(100% - 34px), #0000 97%, #000) right / 51% 100% no-repeat;
+  mask: radial-gradient(circle 9px at 0 calc(100% - 34px), #0000 97%, #000) left / 51% 100% no-repeat, radial-gradient(circle 9px at 100% calc(100% - 34px), #0000 97%, #000) right / 51% 100% no-repeat;
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(var(--lift, 0px));
+  transition: transform 0.4s var(--ease), background 0.2s, filter 0.3s;
 }
-.ticket:hover { background: var(--raise-2); }
+.ticket:hover { background: linear-gradient(170deg, #2e251b, var(--raise-2) 60%); }
+.ticket.tilt { --lift: -5px; filter: drop-shadow(0 14px 16px rgba(0, 0, 0, 0.6)); }
+.t-stub { display: block; margin: 0 -16px; padding: 9px 16px 10px; border-top: 2px dashed var(--line-strong); font: 500 10px/1.4 var(--font-code); letter-spacing: 0.14em; color: var(--faint); white-space: nowrap; overflow: hidden; transform-origin: 0 0; transition: transform 0.4s var(--spring), color 0.3s; }
+.ticket:hover .t-stub { transform: rotate(1.6deg) translateY(2px); } /* the stub starts to tear */
+.ticket[data-status='knock'] .t-stub { color: var(--accent); }
+.ticket[data-status='ledger'] .t-stub { color: var(--go); }
+.sheen { position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity 0.3s; background: radial-gradient(circle at var(--px, 50%) var(--py, 50%), rgba(255, 214, 160, 0.13), transparent 62%); }
+.ticket.tilt .sheen { opacity: 1; }
 .t-top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; }
 .t-title { display: grid; gap: 4px; }
 .t-name { font: 700 1.08rem/1.25 var(--font-ui); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -152,6 +169,7 @@ h2.sect { margin: 48px 0 10px; font: 400 1.75rem/1.15 var(--font-head); }
 .t-foot .t-status { margin-left: auto; color: var(--accent); font-weight: 600; }
 .ticket[data-status='knock'] .t-status::after { content: 'On your list'; }
 .ticket[data-status='ledger'] .t-status::after { content: 'Stamped ✓'; }
+.ticket[data-status='ledger'] .t-status { color: var(--go); }
 .t-draft { color: var(--accent); font-weight: 600; }
 .strip-nav {
   position: absolute; top: calc(50% - 5px); z-index: 2; transform: translateY(-50%); width: 40px; height: 40px; padding: 0; border-radius: 50%;
@@ -179,6 +197,8 @@ h2.sect { margin: 48px 0 10px; font: 400 1.75rem/1.15 var(--font-head); }
 .gem-door .cap { fill: currentColor; font: 600 5.4px var(--font-ui); letter-spacing: 1.1px; text-anchor: middle; }
 .gem-door .keyhole { fill: currentColor; }
 .gem-door[data-tip] { cursor: help; }
+.ticket .gem-door .keyhole { transition: fill 0.3s; }
+.ticket:hover .gem-door .keyhole { fill: #ffd2a8; filter: drop-shadow(0 0 3px rgba(255, 190, 120, 0.9)); } /* light behind the door */
 
 /* ---------- Explore: search, filters, list + map ---------- */
 main.explore { max-width: 1280px; }
@@ -225,6 +245,7 @@ main.explore { max-width: 1280px; }
 .seg { display: inline-flex; gap: 4px; padding: 4px; margin-bottom: 20px; border-radius: 999px; background: var(--raise); }
 .seg button { min-height: 40px; padding: 0 18px; border: 0; border-radius: 999px; background: none; color: var(--mute); font-weight: 600; }
 .seg button[aria-pressed='true'] { background: var(--ink); color: var(--bg); }
+.seg button[data-tab='ledger'][aria-pressed='true'] { background: var(--go); color: var(--on-go); }
 .seg .n { margin-left: 8px; opacity: 0.75; }
 .passport-page .empty { margin-bottom: 20px; }
 /* Cards stay out of the layout until the script knows which ones you saved, so the page doesn't jump */
@@ -249,6 +270,7 @@ main.explore { max-width: 1280px; }
 .e-meta { grid-area: meta; color: var(--mute); font-size: 0.9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .e-status { grid-area: status; display: flex; gap: 10px; align-items: center; color: var(--accent); font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
 .e-status span:empty { display: none; }
+.card[data-status='ledger'] [data-status-tag] { color: var(--go); }
 .e-status:not(:has(span:not(:empty))) { display: none; }
 .e-chev { grid-area: chev; justify-self: center; width: 8px; height: 8px; margin-top: -4px; border-right: 2px solid var(--mute); border-bottom: 2px solid var(--mute); transform: rotate(45deg); transition: transform 0.2s; }
 .entry details[open] .e-chev { transform: rotate(-135deg); margin-top: 4px; }
@@ -277,8 +299,8 @@ main.explore { max-width: 1280px; }
 .strike { background: none; border: 0; padding: 4px; min-height: 44px; min-width: 42px; color: var(--line-strong); }
 .strike svg { width: 28px; height: 28px; display: block; margin: 0 auto; }
 .strike circle { fill: none; stroke: currentColor; stroke-width: 2.5; stroke-dasharray: 3 2.5; }
-.strike[data-on='true'] { color: var(--accent); }
-.strike[data-on='true'] circle { stroke-dasharray: none; fill: rgba(217, 120, 79, 0.2); }
+.strike[data-on='true'] { color: var(--go); }
+.strike[data-on='true'] circle { stroke-dasharray: none; fill: rgba(79, 192, 141, 0.2); }
 .ledger textarea { min-height: 64px; resize: vertical; }
 
 /* the place's own page */
@@ -296,6 +318,7 @@ main.explore { max-width: 1280px; }
 .practical { margin-top: 18px; padding-left: 20px; color: var(--ink); }
 .practical li + li { margin-top: 4px; }
 .verified { margin-top: 12px; color: var(--mute); font-size: 0.9rem; }
+.verified::before { content: '✓ '; color: var(--go); font-weight: 700; }
 .marks-box { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line); }
 .marks-box h2 { font: 400 1.4rem var(--font-head); margin-bottom: 10px; }
 .mark-row { display: grid; grid-template-columns: 120px 1fr 32px; gap: 12px; align-items: center; padding: 3px 0; color: var(--mute); font-size: 0.92rem; }
@@ -327,11 +350,11 @@ main.explore { max-width: 1280px; }
 .legend li { display: flex; align-items: center; gap: 8px; }
 .swatch { width: 14px; height: 14px; border-radius: 50%; display: inline-block; border: 3px solid var(--ink); background: var(--bg); vertical-align: -2px; }
 .swatch[data-status='knock'] { background: var(--ink); }
-.swatch[data-status='ledger'] { border-color: var(--accent); background: var(--accent); }
+.swatch[data-status='ledger'] { border-color: var(--go); background: var(--go); }
 .pin { position: relative; width: 26px; height: 26px; padding: 0; background: none; border: 0; }
 .pin::before { content: ''; position: absolute; inset: 6px; border-radius: 50%; background: var(--bg); border: 3px solid var(--ink); box-shadow: 0 0 0 3px rgba(21, 17, 12, 0.55); transition: transform 0.15s; }
 .pin[data-status='knock']::before { background: var(--ink); }
-.pin[data-status='ledger']::before { background: var(--accent); border-color: var(--accent); }
+.pin[data-status='ledger']::before { background: var(--go); border-color: var(--go); }
 .pin:hover::before, .pin.hot::before { transform: scale(1.35); }
 .pin.hot { z-index: 3; }
 .pin.hot::before { border-color: var(--accent); }
@@ -364,23 +387,6 @@ main.explore { max-width: 1280px; }
 @media (prefers-reduced-motion: no-preference) {
   .modal[open] .modal-card { animation: rise 0.28s ease-out; }
   @keyframes rise { from { opacity: 0; transform: translateY(18px); } }
-}
-
-/* Surprise me */
-.sp-kicker { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
-.sp-slot { display: none; min-height: 2.6em; margin: 22px 0; align-items: center; justify-content: center; text-align: center; font: 800 clamp(1.6rem, 7vw, 2.2rem)/1.1 var(--font-ui); color: var(--mute); }
-.sp-card.shuffling .sp-slot { display: flex; }
-.sp-card.shuffling .sp-body { display: none; }
-.sp-body { position: relative; margin-top: 10px; }
-.sp-body h2 { margin: 2px 0 4px; padding-right: 96px; font-size: clamp(1.6rem, 7vw, 2.1rem); }
-.sp-body .gem-door { position: absolute; top: 0; right: 0; }
-.sp-body .place-tagline { padding-right: 96px; }
-.sp-body .place-meta { padding-right: 96px; margin-bottom: 14px; }
-.sp-where { margin-top: 12px; color: var(--mute); font-size: 0.95rem; }
-.sp-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
-.sp-actions .btn { flex: 1 1 140px; }
-@media (prefers-reduced-motion: no-preference) {
-  .sp-card.revealed .gem-door { animation: knock 0.45s 0.1s cubic-bezier(0.3, 1.6, 0.5, 1) backwards; transform-origin: 50% 100%; }
 }
 
 /* slide-up map for one place */
@@ -442,7 +448,7 @@ html[data-gate] .gate {
 .gate-pass { margin-top: 12px; font: italic 0.98rem var(--font-read); color: var(--mute); }
 .gate-fine { margin-top: 22px; padding-top: 14px; border-top: 1px solid rgba(160, 138, 98, 0.35); color: var(--brass); font: 400 0.95rem var(--font-title); letter-spacing: 0.14em; }
 .gate-stamp {
-  position: absolute; left: 50%; top: 50%; padding: 8px 20px; border: 3px solid var(--accent); border-radius: 6px; color: var(--accent);
+  position: absolute; left: 50%; top: 50%; padding: 8px 20px; border: 3px solid var(--go); border-radius: 6px; color: var(--go);
   font: 400 2rem var(--font-title); letter-spacing: 0.14em; opacity: 0; transform: translate(-50%, -50%) rotate(-12deg) scale(1.6); pointer-events: none;
   background: rgba(31, 24, 16, 0.6);
 }
@@ -514,6 +520,7 @@ fieldset.slider legend { padding: 0; margin-bottom: 6px; }
 .privacy a { color: var(--ink); }
 .status { min-height: 1.5em; color: var(--ink); font-weight: 600; }
 .status.bad { color: var(--accent); }
+.status.ok { color: var(--go); }
 .bot-check { display: flex; }
 .bot-check iframe { margin: 4px 0; }
 .email-line { color: var(--accent); font-weight: 600; user-select: all; }
@@ -563,13 +570,8 @@ footer.site-footer p a { color: var(--ink); }
   .e-status { margin-top: 2px; }
   .e-body { padding: 4px 14px 18px; }
   .actions .btn { flex: 1 1 140px; }
-  .card.detail .gem-door { width: 64px; }
   .mark-row { grid-template-columns: 104px 1fr 28px; }
   .modal-card { padding: 24px 18px 20px; }
-  .sp-body h2, .sp-body .place-meta, .sp-body .place-tagline { padding-right: 76px; }
-  .sp-body .gem-door { width: 64px; }
-  .sp-actions { display: grid; grid-template-columns: 1fr 1fr; }
-  .sp-actions [data-sp='open'] { grid-column: 1 / -1; }
   .sheet { width: 100%; max-width: 100%; margin: auto 0 0; max-height: 90vh; }
   .sheet .modal-card { border-radius: 14px 14px 0 0; padding: 14px 16px calc(16px + env(safe-area-inset-bottom)); }
   .sheet-map { height: 48vh; }
@@ -581,6 +583,132 @@ footer.site-footer p a { color: var(--ink); }
 .city-switch { display: inline-flex; gap: 2px; padding: 3px; border: 1px solid var(--line-strong, rgba(238, 226, 200, 0.28)); border-radius: 999px; }
 .city-switch a { min-height: 36px; display: inline-flex; align-items: center; padding: 0 14px; border-radius: 999px; color: var(--mute); font-weight: 600; font-size: 0.9rem; text-decoration: none; }
 .city-switch a:hover { color: var(--ink); }
-.city-switch a[aria-current='page'] { background: var(--ink); color: var(--bg); }
+.city-switch a[aria-current='page'] { background: var(--ink); color: var(--bg); view-transition-name: city-pill; } /* slides to the other city as the page changes */
 .cover .city-switch { margin-bottom: 18px; }
 .page-head .city-switch { margin-bottom: 14px; }
+
+/* ---------- Ticket booth (Oct 2026): lamplight, the deck, the rubber stamp, the swinging door ---------- */
+/* Moving between pages: a soft cross-fade, the header holds still, and the city pill slides (Chrome, Edge, Safari) */
+@view-transition { navigation: auto; }
+.site-header { view-transition-name: site-header; }
+::view-transition-group(city-pill) { animation-duration: 0.45s; animation-timing-function: var(--spring); }
+@media (prefers-reduced-motion: reduce) { @view-transition { navigation: none; } }
+
+/* The lantern: a warm pool of light follows the pointer and shows a faint street map in the paper.
+   On phones it drifts slowly by itself. src/scripts/lantern.js moves it. */
+body::after {
+  content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(closest-side, rgba(255, 196, 130, 0.1), transparent) var(--lp, 50% 8%) / 640px 640px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cg fill='none' stroke='%23eee2c8' stroke-opacity='.1'%3E%3Cpath d='M0 40h220M0 112h220M0 180h220M30 0v220M104 0v220M170 0v220'/%3E%3Cpath d='M0 220L220 70' stroke-dasharray='2 5'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask: radial-gradient(closest-side, #000 25%, transparent) var(--lp, 50% 8%) / 640px 640px no-repeat;
+  mask: radial-gradient(closest-side, #000 25%, transparent) var(--lp, 50% 8%) / 640px 640px no-repeat;
+}
+@media (hover: none) and (prefers-reduced-motion: no-preference) {
+  body::after { animation: drift 40s ease-in-out infinite alternate; }
+  @keyframes drift {
+    0% { background-position: 15% 0%, 0 0; -webkit-mask-position: 15% 0%; mask-position: 15% 0%; }
+    50% { background-position: 85% 30%, 0 0; -webkit-mask-position: 85% 30%; mask-position: 85% 30%; }
+    100% { background-position: 30% 70%, 0 0; -webkit-mask-position: 30% 70%; mask-position: 30% 70%; }
+  }
+}
+
+/* Front page: the logo inks in, the line under it gets underlined, the rows deal themselves in */
+.cover .logo .ch { display: inline-block; white-space: pre; }
+.tagline strong .ul { padding-bottom: 2px; background: linear-gradient(var(--accent), var(--accent)) 0 100% / 100% 2px no-repeat; }
+/* "Tonight's doors:" and a word that flips through the kinds of places open around now */
+.flipper { min-height: 1.55em; margin: 12px 0 0; color: var(--mute); font-size: 0.98rem; visibility: hidden; }
+.flipper.on { visibility: visible; }
+.flipper .w { display: inline-grid; vertical-align: bottom; overflow: hidden; height: 1.55em; color: var(--ink); font-weight: 600; }
+.flipper .w span { grid-area: 1 / 1; white-space: nowrap; transition: transform 0.55s var(--spring), opacity 0.4s, filter 0.4s; }
+.flipper .w span.out { transform: translateY(-110%); opacity: 0; filter: blur(3px); }
+.flipper .w span.in { transform: translateY(110%); opacity: 0; filter: blur(3px); }
+/* "Right now": an emerald dot that breathes, because this row follows the clock */
+.browse[data-bucket] [data-kicker]::before { content: ''; display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: var(--go); vertical-align: 1px; }
+@media (prefers-reduced-motion: no-preference) {
+  .cover .logo .ch { animation: ink 0.9s var(--ease) backwards; animation-delay: calc(var(--i) * 45ms + 0.1s); }
+  @keyframes ink { from { opacity: 0; filter: blur(8px); transform: translateY(6px); } }
+  .tagline strong .ul { animation: underline 0.9s var(--ease) 0.9s backwards; }
+  @keyframes underline { from { background-size: 0% 2px; } }
+  .strip > li:nth-child(-n + 6) { animation: deal 0.6s var(--ease) backwards; animation-delay: calc(var(--i) * 70ms + 0.15s); }
+  @keyframes deal { from { opacity: 0; transform: translateY(14px); } }
+  .browse[data-bucket] [data-kicker]::before { animation: live 2.4s ease-out infinite; }
+  @keyframes live { 0% { box-shadow: 0 0 0 0 rgba(79, 192, 141, 0.55); } 70%, 100% { box-shadow: 0 0 0 7px rgba(79, 192, 141, 0); } }
+}
+
+/* My Passport count in the header: a little bump when it changes (emerald for a stamp, rust for the Bucket List) */
+@media (prefers-reduced-motion: no-preference) {
+  .count.bump { animation: bump 0.5s var(--spring); }
+  @keyframes bump { 40% { transform: scale(1.45); background: var(--bump, var(--accent)); color: var(--bump-ink, var(--on-accent)); } }
+}
+.count.bump.go { --bump: var(--go); --bump-ink: var(--on-go); }
+
+/* Stamped: a pressed button turns emerald, and an inked stamp lands on the place */
+.btn[data-action='ledger'][aria-pressed='true'] { background: transparent; border-color: var(--go); color: var(--go); }
+.actions { position: relative; }
+.stamp-mark {
+  position: absolute; right: 4px; bottom: calc(100% + 4px); z-index: 2; display: grid; justify-items: center; padding: 7px 14px 5px;
+  border: 3px double var(--go); border-radius: 6px; color: var(--go); font: 400 1.55rem/1 var(--font-title); letter-spacing: 0.08em;
+  transform: rotate(-11deg); opacity: 0; pointer-events: none; filter: url(#ink-edge); mix-blend-mode: screen; transition: opacity 0.2s;
+}
+.stamp-mark small { margin-top: 4px; font: 600 0.56rem var(--font-code); letter-spacing: 0.16em; }
+.card[data-status='ledger'] .stamp-mark { opacity: 0.88; }
+@media (prefers-reduced-motion: no-preference) {
+  .stamp-mark.slam { animation: slam 0.55s var(--spring); }
+  @keyframes slam { 0% { transform: rotate(-20deg) scale(2.4); opacity: 0; } 55% { transform: rotate(-11deg) scale(0.94); opacity: 0.95; } 100% { transform: rotate(-11deg) scale(1); } }
+  .card.thump { animation: thump 0.3s 0.22s; }
+  @keyframes thump { 30% { transform: translateY(3px); } 60% { transform: translateY(-1px); } }
+}
+
+/* The Gem door on a place's page swings open to show the score, lit from inside */
+.gem-swing { position: relative; display: inline-block; flex: none; width: 84px; height: 112px; perspective: 500px; }
+.gem-swing .in { position: absolute; inset: 0 0 4px; display: grid; place-content: center; text-align: center; border: 2px solid var(--accent); border-bottom: 0; border-radius: 42px 42px 0 0; background: radial-gradient(circle at 50% 70%, rgba(255, 190, 120, 0.28), rgba(217, 120, 79, 0.06) 70%); }
+.gem-swing .in small { color: var(--accent); font: 600 0.6rem var(--font-ui); letter-spacing: 0.2em; }
+.gem-swing .in b { font: 700 1.9rem/1 var(--font-ui); }
+.gem-swing .leaf { position: absolute; inset: 0 0 4px; border: 2px solid var(--accent); border-bottom: 0; border-radius: 42px 42px 0 0; background: linear-gradient(90deg, #3a2c1f, #2a2016); transform-origin: 0 50%; rotate: y -104deg; transition: transform 0.5s var(--spring); }
+.gem-swing .leaf::before { content: ''; position: absolute; left: 50%; top: 58%; width: 7px; height: 7px; margin-left: -3.5px; border-radius: 50%; background: var(--accent); box-shadow: 0 6px 0 -1.5px var(--accent); }
+.gem-swing .leaf::after { content: ''; position: absolute; inset: 14px 12px 10px; border: 1px solid rgba(217, 120, 79, 0.35); border-radius: 30px 30px 0 0; }
+.gem-swing::after { content: ''; position: absolute; left: -8px; right: -8px; bottom: 0; height: 2px; border-radius: 2px; background: var(--accent); }
+.gem-swing:hover .leaf, .gem-swing:focus-visible .leaf { transform: rotateY(28deg); } /* swings back toward you a little */
+.gem-swing .in { box-shadow: 0 0 34px rgba(255, 180, 110, 0.22); }
+.card.detail .gem-swing { grid-column: 2; grid-row: 1 / span 4; align-self: start; margin-top: 6px; }
+@media (max-width: 560px) { .gem-swing { width: 66px; height: 88px; } .gem-swing .in b { font-size: 1.5rem; } }
+@media (prefers-reduced-motion: no-preference) {
+  .gem-swing .leaf { animation: swing 1.1s var(--spring) 0.45s backwards; } /* closed when the page opens, then it swings */
+  @keyframes swing { from { rotate: y 0deg; } }
+}
+
+/* Surprise me: a deck you swipe. Right for your Bucket List, left for not tonight. (After 21st.dev's Card Stack) */
+.modal.deck-modal { width: min(92vw, 400px); }
+.deck-modal .modal-card { overflow: hidden; text-align: center; }
+.deck-modal h2 { padding: 0; }
+.deck { position: relative; height: 372px; margin: 16px auto 12px; width: min(310px, 100%); touch-action: pan-y; }
+.deck:focus-visible { outline: 1px dashed var(--line-strong); outline-offset: 8px; border-radius: 12px; }
+.dc { position: absolute; inset: 0; transition: transform 0.45s var(--spring), opacity 0.3s; }
+.dc .dcard {
+  position: absolute; inset: 0; display: flex; flex-direction: column; gap: 9px; padding: 18px 18px 0; text-align: left; border-radius: 12px;
+  background: linear-gradient(170deg, #2c241a, #1f1913 70%); border: 1px solid var(--line-strong); box-shadow: 0 18px 40px -18px #000;
+  cursor: grab; user-select: none; -webkit-user-select: none; touch-action: none;
+}
+.dc .dcard.drag { cursor: grabbing; transition: none; }
+.dc .dcard.fly { transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.3, 1), opacity 0.25s 0.15s; opacity: 0; }
+.dc .dcard.home { transition: transform 0.5s var(--spring); }
+.dcard .top { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
+.dcard .m { color: var(--mute); font-size: 0.86rem; }
+.dcard h3 { font: 400 1.6rem/1.05 var(--font-title); }
+.dcard .tl { padding-top: 9px; border-top: 1px dashed var(--line-strong); font: italic 1rem/1.4 var(--font-read); }
+.dcard .or { color: var(--mute); font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.dcard .or b { color: var(--ink); }
+.dcard .near { color: var(--mute); font-size: 0.85rem; }
+.dcard .go { display: flex; gap: 14px; margin-top: auto; }
+.dcard .go a, .dcard .go button { min-height: 36px; padding: 0; background: none; border: 0; color: var(--ink); font-weight: 600; font-size: 0.9rem; text-decoration: underline; text-decoration-color: var(--line-strong); text-underline-offset: 4px; }
+.dcard .stub { margin: 0 -18px; padding: 9px 18px 11px; border-top: 2px dashed var(--line-strong); font: 500 10px var(--font-code); letter-spacing: 0.14em; color: var(--faint); white-space: nowrap; overflow: hidden; }
+.dcard .lbl { position: absolute; top: 20px; padding: 4px 10px; border: 3px double; border-radius: 5px; font: 400 1.1rem var(--font-title); letter-spacing: 0.06em; opacity: 0; pointer-events: none; background: rgba(21, 17, 12, 0.85); }
+.dcard .lbl.keep { right: 14px; color: var(--accent); transform: rotate(10deg); }
+.dcard .lbl.pass { left: 14px; color: var(--mute); transform: rotate(-10deg); }
+.deck-ctl { display: flex; justify-content: center; gap: 8px; }
+.deck-ctl .btn { padding: 8px 14px; }
+.deck-hint { margin-top: 8px; color: var(--faint); font-size: 0.82rem; }
+.deck-end { position: absolute; inset: 0; display: grid; place-content: center; gap: 10px; padding: 10px; color: var(--mute); }
+.deck-end b { color: var(--ink); font: 400 1.6rem/1.1 var(--font-title); }
+.deck-end .btn { justify-self: center; }

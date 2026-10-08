@@ -51,9 +51,14 @@ const imageUrl = image ? new URL(image, origin).href : undefined;
     <slot />
     <SignupDialog />
     <div class="toast" role="status" aria-live="polite" id="toast"></div>
+    <!-- roughens the edges of the rubber stamp, like ink on paper -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+      <filter id="ink-edge"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n" /><feDisplacementMap in="SourceGraphic" in2="n" scale="3" /></filter>
+    </svg>
     <script>
       import '../scripts/tips.js';
       import '../scripts/signup.js';
+      import '../scripts/lantern.js';
     </script>
   </body>
 </html>

@@ -4,6 +4,8 @@
 const KEY = 'unlisted:v1';
 const LABELS = ['Not rated', 'Meh', 'Fine', 'Good', 'Great', 'Legendary'];
 const STATUS_TAG = { knock: 'On your list', ledger: 'Stamped ✓' };
+// The date inked on a stamp: 2026-10-08 -> 08 OCT 2026
+const inkDate = (d) => new Date(`${d}T12:00:00`).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).toUpperCase();
 
 const load = () => {
   try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
@@ -35,6 +37,8 @@ function paintCard(card) {
   knock.textContent = status === 'knock' ? '✓ On your Bucket List' : '+ Bucket List';
   ledger.setAttribute('aria-pressed', status === 'ledger');
   ledger.textContent = status === 'ledger' ? '✓ Stamped' : 'Stamp it';
+  const inked = card.querySelector('[data-stamp-date]');
+  if (inked) inked.textContent = s.date ? `The Unlisted · ${inkDate(s.date)}` : 'The Unlisted';
   const tag = card.querySelector('[data-status-tag]');
   if (tag) tag.textContent = STATUS_TAG[status] ?? '';
   const strike = s.strike || 0;
@@ -48,11 +52,12 @@ function paintCard(card) {
   if (document.activeElement !== note) note.value = s.note || '';
 }
 
-function paint() {
+// kind: the list a place was just added to ('knock' or 'ledger'), so the header count can say so
+function paint(kind) {
   document.querySelectorAll('.card[data-id]').forEach(paintCard);
   document.querySelectorAll('.ticket[data-id]').forEach((t) => { t.dataset.status = state[t.dataset.id]?.status || 'none'; });
   listeners.forEach((fn) => fn(state));
-  dispatchEvent(new Event('passport:change')); // the header's My Passport count
+  dispatchEvent(new CustomEvent('passport:change', { detail: { kind } })); // the header's My Passport count
 }
 
 export function update(id, patch) {
@@ -60,7 +65,14 @@ export function update(id, patch) {
   const s = state[id];
   if (!s.status && !s.strike && !s.note) delete state[id];
   save(state);
-  paint();
+  paint(patch.status);
+}
+
+// Stamping a place: the inked stamp lands on it with a little thump
+function slam(card) {
+  const mark = card.querySelector('.stamp-mark');
+  if (!mark) return;
+  for (const [el, cls] of [[mark, 'slam'], [card, 'thump']]) { el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); }
 }
 
 async function share(card) {
@@ -87,6 +99,7 @@ document.addEventListener('click', (e) => {
     update(id, s.status === 'ledger'
       ? { status: undefined }
       : { status: 'ledger', date: new Date().toISOString().slice(0, 10) });
+    if (state[id]?.status === 'ledger') slam(card);
   }
   if (action === 'share') share(card);
   const strike = e.target.closest('.strike');

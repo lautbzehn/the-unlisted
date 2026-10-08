@@ -26,7 +26,7 @@ export function wireForm(form, { done, onDone }) {
   const box = form.querySelector('.bot-check');
   const status = form.querySelector('.status');
   const btn = form.querySelector('button[type=submit]');
-  const say = (msg, bad = false) => { status.textContent = msg; status.classList.toggle('bad', bad); };
+  const say = (msg, bad = false, ok = false) => { status.textContent = msg; status.classList.toggle('bad', bad); status.classList.toggle('ok', ok); };
   let widget = null;
   let waiting = null;
 
@@ -66,7 +66,7 @@ export function wireForm(form, { done, onDone }) {
       const out = await res.json().catch(() => ({}));
       if (!res.ok) { say(out.error ?? 'Something went wrong. Try again in a minute.', true); return; }
       form.reset();
-      say(done);
+      say(done, false, true);
       onDone?.();
     } catch {
       say('Couldn’t reach the server. Check your connection and try again.', true);

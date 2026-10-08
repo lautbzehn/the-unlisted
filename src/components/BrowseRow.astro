@@ -2,6 +2,7 @@
 // A front-page row: a heading, a sideways strip of small tickets, and a link to see the rest on Explore.
 import GemDoor from './GemDoor.astro';
 import { FAME, whereText } from '../lib/places.js';
+import { stubCode } from '../lib/mrz.js';
 interface Props {
   id: string; title: string; kicker?: string; sub?: string; places: any[]; total: number; seeAll: string;
   max?: number; hidden?: boolean; bucket?: string;
@@ -22,8 +23,8 @@ const shown = places.slice(0, max);
   <div class="strip-wrap">
     <button class="strip-nav prev" type="button" aria-label="Scroll back" tabindex="-1" hidden>‹</button>
     <ul class="strip" role="list">
-      {shown.map((p) => (
-        <li>
+      {shown.map((p, i) => (
+        <li style={`--i:${i}`}>
           <a class="ticket" href={`/place/${p.id}/`} data-id={p.id} data-status="none">
             <span class="t-top">
               <span class="t-title">
@@ -38,6 +39,8 @@ const shown = places.slice(0, max);
               {p.draft && <span class="t-draft">Draft</span>}
               <span class="t-status"></span>
             </span>
+            <span class="t-stub" aria-hidden="true">{stubCode(p)}</span>
+            <span class="sheen" aria-hidden="true"></span>
           </a>
         </li>
       ))}

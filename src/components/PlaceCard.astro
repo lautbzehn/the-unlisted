@@ -12,13 +12,13 @@ interface Props {
 import PlaceBody from './PlaceBody.astro';
 import GemDoor from './GemDoor.astro';
 import { FAME, TYPES, whenText, whereText } from '../lib/places.js';
+import { mrzPart } from '../lib/mrz.js';
 import { SCORE_TIP, FAME_TIPS } from '../lib/glossary.js';
 const { place, variant = 'entry' } = Astro.props;
 const where = whereText(place);
 // A Google Maps search link: only a link out, no Google data is stored or shown here.
 const google = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name}, ${place.area}, ${place.city}`)}`;
 // The machine-readable line at the foot of every passport page.
-const mrzPart = (s) => s.toUpperCase().normalize('NFD').replace(/[^A-Z0-9]+/g, '<').replace(/^<|<$/g, '');
 const mrz = `P<UNL<<${mrzPart(place.name)}<<${mrzPart(place.area)}<<${String(place.score).padStart(3, '0')}`.padEnd(64, '<');
 // What the page scripts read: filters, sorting, the map and sharing.
 const data = {
@@ -51,7 +51,7 @@ const when = whenText(place.when);
     {place.draft && <span class="sample-flag">Draft, not yet reviewed</span>}
     <p class="place-meta">{where} · {place.kind}</p>
     <h1>{place.name}</h1>
-    <GemDoor score={place.score} size="lg" tip={SCORE_TIP} />
+    <GemDoor score={place.score} size="lg" tip={SCORE_TIP} swing />
     {place.tagline && <p class="place-tagline">{place.tagline}</p>}
     <p class="labels">
       {place.fame && <span tabindex="0" data-tip={FAME_TIPS[place.fame]}>{FAME[place.fame]}</span>}

@@ -31,8 +31,9 @@ const hoods = topHoods(places, 12);
   <main id="main" class="home" data-metro={M.id} data-short={M.short} data-explore={M.explore}>
     <section class="cover">
       <CitySwitch current={M.id} />
-      <h1 class="logo">The Unlisted</h1>
-      <p class="tagline">Places you only hear about from the cousin who knows a guy. <strong>Now you know a guy.</strong></p>
+      <h1 class="logo" aria-label="The Unlisted">{[...'The Unlisted'].map((ch, i) => <span class="ch" style={`--i:${i}`} aria-hidden="true">{ch}</span>)}</h1>
+      <p class="tagline">Places you only hear about from the cousin who knows a guy. <strong><span class="ul">Now you know a guy.</span></strong></p>
+      <p class="flipper" id="flipper" aria-hidden="true"><span data-flip-label>Tonight’s doors:</span> <span class="w"><span>&nbsp;</span></span></p>
       <div class="cover-cta">
         <button id="surprise-btn" class="btn btn-primary btn-lg" type="button">Surprise me</button>
         <a class="btn btn-lg" href={M.explore}>Explore all {places.length}</a>

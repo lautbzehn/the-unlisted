@@ -1,28 +1,16 @@
----
-import GemDoor from './GemDoor.astro';
----
-<!-- Surprise me: the pop-up that reveals one place. Filled in by src/scripts/surprise.js. -->
-<dialog id="surprise" class="modal" aria-labelledby="sp-title">
-  <div class="modal-card sp-card">
+<!-- Surprise me: a small deck of places to swipe through. Filled in by src/scripts/surprise.js. -->
+<dialog id="surprise" class="modal deck-modal" aria-labelledby="sp-title">
+  <div class="modal-card">
     <button class="modal-x" type="button" data-sp="close" aria-label="Close">×</button>
-    <p class="sp-kicker">Today’s door</p>
-    <div class="sp-slot" data-sp="slot" aria-hidden="true"></div>
-    <div class="sp-body">
-      <GemDoor score="" size="lg" />
-      <span class="sample-flag" data-sp="sample">Sample, not a real place</span>
-      <h2 id="sp-title"></h2>
-      <p class="place-meta" data-sp="meta"></p>
-      <p class="place-tagline" data-sp="tagline"></p>
-      <p class="story" data-sp="story"></p>
-      <p class="order"><b>Order</b><span data-sp="order"></span></p>
-      <p class="sp-where" data-sp="where"></p>
-      <div class="sp-actions">
-        <a class="btn btn-primary" data-sp="open" href="#">Open the full page</a>
-        <a class="btn" data-sp="directions" href="#" target="_blank" rel="noopener">Directions ↗</a>
-        <button class="btn" type="button" data-sp="knock" aria-pressed="false">+ Bucket List</button>
-        <button class="btn" type="button" data-sp="again">Another one</button>
-      </div>
-      <div class="links"><button type="button" data-sp="map">Show it on the map</button></div>
+    <p class="eyebrow" data-sp="kicker">Right now</p>
+    <h2 id="sp-title">Swipe the deck</h2>
+    <div class="deck" data-sp="deck" tabindex="0" role="group" aria-roledescription="card stack" aria-label="Places to try" aria-describedby="sp-hint"></div>
+    <div class="deck-ctl">
+      <button class="btn" type="button" data-sp="pass">✕ <span data-sp="pass-label">Not tonight</span></button>
+      <button class="btn" type="button" data-sp="undo" aria-label="Undo">↺</button>
+      <button class="btn btn-primary" type="button" data-sp="keep">✓ Bucket List</button>
     </div>
+    <p class="deck-hint" id="sp-hint">Drag a card, or use ← and → on the keyboard. Right adds it to your Bucket List.</p>
+    <p class="sr-only" role="status" aria-live="polite" data-sp="msg"></p>
   </div>
 </dialog>

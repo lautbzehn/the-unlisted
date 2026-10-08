@@ -19,6 +19,7 @@ const when = whenText(place.when);
 <div class="actions">
   <button class="btn btn-primary" data-action="ledger" aria-pressed="false" data-tip={detail ? LISTS.stamped.tip : undefined}>Stamp it</button>
   <button class="btn" data-action="knock" aria-pressed="false" data-tip={detail ? LISTS.bucket.tip : undefined}>+ Bucket List</button>
+  <span class="stamp-mark" aria-hidden="true">Stamped<small data-stamp-date>The Unlisted</small></span>
 </div>
 <div class="links">
   <button type="button" data-action="map">Map</button>
