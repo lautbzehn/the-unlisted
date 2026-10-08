@@ -173,5 +173,55 @@
     "id": "panaderia-sevilla",
     "name": "Panadería Sevilla",
     "reason": "Listing sources only; second shop of a San Leandro bakery, and the one detailed write-up (Oaklandside) disallows fetching"
+  },
+  {
+    "id": "delicious-dim-sum",
+    "name": "Delicious Dim Sum",
+    "reason": "Dropped by Dan in the Oct 8 2026 must-check review."
+  },
+  {
+    "id": "progressive-grounds",
+    "name": "Progressive Grounds",
+    "reason": "Dropped by Dan in the Oct 8 2026 must-check review."
+  },
+  {
+    "id": "piedmont-cafe-and-bakery",
+    "name": "Piedmont Cafe & Bakery",
+    "reason": "Dropped by Dan in the Oct 8 2026 must-check review."
+  },
+  {
+    "id": "el-zocalo",
+    "name": "El Zocalo",
+    "reason": "Dropped by Dan in the Oct 8 2026 must-check review."
+  },
+  {
+    "id": "achilles",
+    "name": "Achilles",
+    "reason": "Dropped by Dan in the Oct 8 2026 must-check review."
+  },
+  {
+    "id": "g-and-l-bakery-and-restaurant",
+    "name": "G & L Bakery & Restaurant",
+    "reason": "Dropped by Dan in the Oct 8 2026 must-check review."
+  },
+  {
+    "id": "taqueria-la-morena",
+    "name": "Taqueria La Morena",
+    "reason": "Dropped by Dan in the Oct 8 2026 must-check review."
+  },
+  {
+    "id": "deli-board",
+    "name": "Deli Board",
+    "reason": "Dropped by Dan in the Oct 8 2026 must-check review."
+  },
+  {
+    "id": "taqueria-vallarta",
+    "name": "Taqueria Vallarta",
+    "reason": "Dropped by Dan in the Oct 8 2026 must-check review."
+  },
+  {
+    "id": "good-luck-dim-sum",
+    "name": "Good Luck Dim Sum",
+    "reason": "Dropped by Dan in the Oct 8 2026 must-check review."
   }
 ]

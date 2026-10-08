@@ -39,13 +39,19 @@ export const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u0
 // "Mission District (south)" and "Mission District" are the same neighborhood for browsing.
 export const hoodOf = (area) => area.replace(/\s*\(.*\)\s*$/, '');
 
+// The metro areas the guide covers. Places without a metro are Bay Area (the first city).
+export const METROS = { 'bay-area': 'Bay Area', 'san-diego': 'San Diego' };
+const LIVE_METROS = ['bay-area']; // San Diego is approved and waits here until the city switcher ships
+
 // Sources and review notes stay internal: they never ship to visitors.
 export const places = [...raw.filter((p) => p.status === 'approved' || p.sample), ...drafts]
+  .filter((p) => LIVE_METROS.includes(p.metro ?? 'bay-area'))
   .map(({ sources, flags, status, approved, seed, osm, ...pub }) => {
     const city = pub.city ?? 'San Francisco';
     const hood = hoodOf(pub.area);
     return {
       ...pub,
+      metro: pub.metro ?? 'bay-area',
       city,
       tagline: pub.tagline ?? TAGLINES[pub.id] ?? '',
       type: typeOf(pub.kind),
