@@ -16,8 +16,8 @@ import { LISTS } from '../lib/glossary.js';
       <button type="button" data-tab="knock" aria-pressed="true" data-tip={LISTS.bucket.tip}>{LISTS.bucket.name}<span class="n"></span></button>
       <button type="button" data-tab="ledger" aria-pressed="false" data-tip={LISTS.stamped.tip}>{LISTS.stamped.name}<span class="n"></span></button>
     </div>
-    <p class="empty" id="empty"></p>
-    <div class="entries">
+    <p class="empty show" id="empty">Nothing on your Bucket List yet. Open any place on <a href="/explore/">Explore</a> and tap “+ Bucket List”.</p>
+    <div class="entries" id="pp-entries">
       {places.map((p) => <PlaceCard place={p} />)}
     </div>
     <MapSheet />

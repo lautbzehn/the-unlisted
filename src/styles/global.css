@@ -227,6 +227,8 @@ main.explore { max-width: 1280px; }
 .seg button[aria-pressed='true'] { background: var(--ink); color: var(--bg); }
 .seg .n { margin-left: 8px; opacity: 0.75; }
 .passport-page .empty { margin-bottom: 20px; }
+/* Cards stay out of the layout until the script knows which ones you saved, so the page doesn't jump */
+.passport-page .entries:not(.ready) > * { display: none; }
 .passport-page [data-status-tag] { display: none; } /* the tab already says which list */
 .entries:not(:has(.card:not([hidden]))) { border-top: 0; }
 

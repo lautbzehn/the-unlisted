@@ -28,7 +28,7 @@ const hoods = topHoods(places, 12);
 ---
 <Base title={`The Unlisted — ${M.name} hole-in-the-wall guide`} description={`${M.name} hole-in-the-wall guide. No chains, no algorithm.`} path={M.home} metro={M.id}>
   <Gate />
-  <main id="main" class="home" data-metro={M.id} data-short={M.short}>
+  <main id="main" class="home" data-metro={M.id} data-short={M.short} data-explore={M.explore}>
     <section class="cover">
       <CitySwitch current={M.id} />
       <h1 class="logo">The Unlisted</h1>
@@ -46,6 +46,19 @@ const hoods = topHoods(places, 12);
         places={r.list} total={r.list.length} seeAll={`${M.explore}?time=${r.bucket}`} hidden />
     ))}
     <noscript><style>.browse[data-bucket='midday'] { display: block !important; }</style></noscript>
+    <script is:inline>
+      // Show this hour's row before the first paint, so nothing below it jumps (the same hours as scripts/time.js)
+      (() => {
+        const tz = { timeZone: 'America/Los_Angeles' }, d = new Date();
+        const h = Number(new Intl.DateTimeFormat('en-US', { hour: 'numeric', hourCycle: 'h23', ...tz }).format(d));
+        const b = h >= 5 && h < 11 ? 'morning' : h >= 11 && h < 17 ? 'midday' : h >= 17 && h < 22 ? 'evening' : 'late';
+        const row = document.querySelector('.browse[data-bucket="' + b + '"]');
+        if (!row) return;
+        const clock = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit', ...tz }).format(d);
+        row.querySelector('[data-kicker]').textContent = 'Right now · ' + clock + ' in ' + document.getElementById('main').dataset.short;
+        row.hidden = false;
+      })();
+    </script>
 
     {second.list.length >= MIN && (
       <BrowseRow id={second.id} title={second.title} sub={second.sub} places={second.list} total={second.list.length} seeAll={`${M.explore}?fame=${second.fame}`} />

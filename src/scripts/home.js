@@ -2,9 +2,12 @@ import { getState, update, toast } from './passport.js';
 import { initSurprise } from './surprise.js';
 import { currentBucket } from './time.js';
 
+// This city's Explore page (Bay Area or San Diego)
+const EXPLORE = document.getElementById('main').dataset.explore ?? '/explore/';
+
 // Old links (/?list=…, /?view=map, /?time=…) moved to the Explore page.
 const params = new URLSearchParams(location.search);
-if (['list', 'view', 'time'].some((k) => params.has(k))) location.replace(`/explore/${location.search}`);
+if (['list', 'view', 'time'].some((k) => params.has(k))) location.replace(`${EXPLORE}${location.search}`);
 
 // "Right now": show the row that fits this hour where the places are (both cities are on Pacific time).
 const now = currentBucket();
@@ -50,7 +53,7 @@ initSurprise({
   getTime: () => ({ chosen: null, now }),
   update,
   toast,
-  showOnMap: (id) => { location.href = `/explore/?view=map&focus=${encodeURIComponent(id)}`; },
+  showOnMap: (id) => { location.href = `${EXPLORE}?view=map&focus=${encodeURIComponent(id)}`; },
 });
 // The header's "Surprise me" link (/#surprise) rolls the dice, even when you're already on this page.
 const rollFromLink = () => {

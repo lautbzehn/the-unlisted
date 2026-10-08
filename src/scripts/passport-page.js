@@ -26,6 +26,7 @@ function show() {
     c.hidden = c.dataset.status !== tab;
     if (!c.hidden) n++;
   }
+  document.getElementById('pp-entries').classList.add('ready');
   empty.innerHTML = n ? '' : EMPTY[tab];
   empty.classList.toggle('show', !n);
   history.replaceState(null, '', tab === 'ledger' ? '?tab=stamped' : location.pathname);
