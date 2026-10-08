@@ -10,7 +10,7 @@ const groups = Object.entries(Object.groupBy(CITY_OPTIONS, (c) => c.group));
   <main id="main" class="doc cities-page">
     <header class="page-head">
       <h1 class="page-title">Cities</h1>
-      <p class="page-sub">The Bay Area and San Diego are open. Here’s what comes next, and where you can vote for the city after that.</p>
+      <p class="page-sub">The Bay Area and San Diego are <strong class="go-text">open</strong>. Here’s what comes next, and where you can vote for the city after that.</p>
     </header>
 
     <section class="coming" aria-labelledby="coming">
@@ -19,7 +19,7 @@ const groups = Object.entries(Object.groupBy(CITY_OPTIONS, (c) => c.group));
         <span>Austin</span><span class="vs" aria-hidden="true">·</span>
         <span>New York</span>
       </div>
-      <p>Already booked. <a href="/san-diego/">San Diego is open</a>.</p>
+      <p>Already booked. <a class="go-text" href="/san-diego/">San Diego is open</a>.</p>
     </section>
 
     <h2 class="sect">Vote for the next city</h2>

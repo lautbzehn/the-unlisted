@@ -521,6 +521,7 @@ fieldset.slider legend { padding: 0; margin-bottom: 6px; }
 .status { min-height: 1.5em; color: var(--ink); font-weight: 600; }
 .status.bad { color: var(--accent); }
 .status.ok { color: var(--go); }
+.go-text { color: var(--go); } /* emerald words: open, live, done */
 .bot-check { display: flex; }
 .bot-check iframe { margin: 4px 0; }
 .email-line { color: var(--accent); font-weight: 600; user-select: all; }
