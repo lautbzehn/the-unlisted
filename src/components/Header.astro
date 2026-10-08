@@ -1,14 +1,20 @@
 ---
 import { NAV, ABOUT, sectionFor } from '../lib/nav.js';
+import { METROS } from '../lib/places.js';
+// Pages that belong to a city (its front page, Explore, a place) pass it in; elsewhere the links follow the visitor's last city.
+interface Props { metro?: string }
+const { metro } = Astro.props;
+const M = METROS[metro ?? 'bay-area'];
 const current = sectionFor(Astro.url.pathname);
+const hrefFor = (it) => (it.id === 'explore' ? M.explore : it.href);
 const here = (href) => (Astro.url.pathname === href ? 'page' : undefined);
 ---
-<header class="site-header">
+<header class="site-header" data-metro={metro}>
   <div class="bar">
-    <a class="brand" href="/" aria-label="The Unlisted, home">The Unlisted</a>
+    <a class="brand" href={M.home} data-city-link="home" aria-label="The Unlisted, home">The Unlisted</a>
     <nav class="nav" aria-label="Main">
       {NAV.map((it) => (
-        <a href={it.href} aria-current={it.id === current ? 'page' : undefined}>
+        <a href={hrefFor(it)} data-city-link={it.id === 'explore' ? 'explore' : undefined} aria-current={it.id === current ? 'page' : undefined}>
           {it.label}{it.id === 'passport' && <span class="count" data-passport-count hidden></span>}
         </a>
       ))}
@@ -19,9 +25,9 @@ const here = (href) => (Astro.url.pathname === href ? 'page' : undefined);
 <!-- Outside the header on purpose: the header's blur would otherwise trap this full-screen menu inside it. -->
 <nav class="mobile-menu" id="mobile-menu" aria-label="Menu" hidden>
   <ul class="mm-main">
-    <li><a href="/" aria-current={here('/')}>Home</a></li>
+    <li><a href={M.home} data-city-link="home" aria-current={here(M.home)}>Home</a></li>
     {NAV.map((it) => (
-      <li><a href={it.href} aria-current={it.id === current ? 'page' : undefined}>{it.label}{it.id === 'passport' && <span class="count" data-passport-count hidden></span>}</a></li>
+      <li><a href={hrefFor(it)} data-city-link={it.id === 'explore' ? 'explore' : undefined} aria-current={it.id === current ? 'page' : undefined}>{it.label}{it.id === 'passport' && <span class="count" data-passport-count hidden></span>}</a></li>
     ))}
   </ul>
   <ul class="mm-more">
@@ -31,6 +37,17 @@ const here = (href) => (Astro.url.pathname === href ? 'page' : undefined);
 </nav>
 
 <script>
+  // The city: a city page remembers itself; any other page points Home and Explore at the visitor's last city.
+  const CITY = { 'bay-area': { home: '/', explore: '/explore/' }, 'san-diego': { home: '/san-diego/', explore: '/san-diego/explore/' } };
+  const pageMetro = document.querySelector('.site-header').dataset.metro;
+  try {
+    if (pageMetro) localStorage.setItem('unlisted:metro', pageMetro);
+    else {
+      const last = CITY[localStorage.getItem('unlisted:metro')];
+      if (last) document.querySelectorAll('[data-city-link]').forEach((a) => { a.href = last[a.dataset.cityLink]; });
+    }
+  } catch {}
+
   // Phone menu
   const toggle = document.querySelector('.menu-toggle');
   const sheet = document.getElementById('mobile-menu');

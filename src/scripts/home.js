@@ -6,13 +6,13 @@ import { currentBucket } from './time.js';
 const params = new URLSearchParams(location.search);
 if (['list', 'view', 'time'].some((k) => params.has(k))) location.replace(`/explore/${location.search}`);
 
-// "Right now": show the row that fits this hour in the Bay Area.
+// "Right now": show the row that fits this hour where the places are (both cities are on Pacific time).
 const now = currentBucket();
 const clock = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Los_Angeles' }).format(new Date());
 for (const row of document.querySelectorAll('.browse[data-bucket]')) {
   if (row.dataset.bucket !== now) continue;
   row.hidden = false;
-  row.querySelector('[data-kicker]').textContent = `Right now · ${clock} in the Bay`;
+  row.querySelector('[data-kicker]').textContent = `Right now · ${clock} in ${document.getElementById('main').dataset.short ?? 'the Bay'}`;
 }
 
 // Each row shows different places: skip anything a row above already shows, then keep 10.

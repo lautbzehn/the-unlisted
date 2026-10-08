@@ -1,7 +1,7 @@
 ---
 // A front-page row: a heading, a sideways strip of small tickets, and a link to see the rest on Explore.
 import GemDoor from './GemDoor.astro';
-import { FAME } from '../lib/places.js';
+import { FAME, whereText } from '../lib/places.js';
 interface Props {
   id: string; title: string; kicker?: string; sub?: string; places: any[]; total: number; seeAll: string;
   max?: number; hidden?: boolean; bucket?: string;
@@ -28,7 +28,7 @@ const shown = places.slice(0, max);
             <span class="t-top">
               <span class="t-title">
                 <span class="t-name">{p.name}</span>
-                <span class="t-meta">{p.city === 'San Francisco' ? p.area : `${p.area}, ${p.city}`}</span>
+                <span class="t-meta">{whereText(p)}</span>
               </span>
               <GemDoor score={p.score} />
             </span>

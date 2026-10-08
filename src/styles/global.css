@@ -574,3 +574,11 @@ footer.site-footer p a { color: var(--ink); }
   .form .check { gap: 8px; padding: 6px 10px; font-size: 0.92rem; line-height: 1.25; }
   .panel { padding: 18px 16px; }
 }
+
+/* City switch: Bay Area · San Diego, on each city's front page and Explore page */
+.city-switch { display: inline-flex; gap: 2px; padding: 3px; border: 1px solid var(--line-strong, rgba(238, 226, 200, 0.28)); border-radius: 999px; }
+.city-switch a { min-height: 36px; display: inline-flex; align-items: center; padding: 0 14px; border-radius: 999px; color: var(--mute); font-weight: 600; font-size: 0.9rem; text-decoration: none; }
+.city-switch a:hover { color: var(--ink); }
+.city-switch a[aria-current='page'] { background: var(--ink); color: var(--bg); }
+.cover .city-switch { margin-bottom: 18px; }
+.page-head .city-switch { margin-bottom: 14px; }

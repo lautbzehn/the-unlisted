@@ -2,8 +2,8 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import SignupDialog from '../components/SignupDialog.astro';
-interface Props { title: string; description?: string; image?: string; path?: string }
-const { title, description = 'Bay Area hole-in-the-wall guide. No chains, no algorithm.', image, path = '/' } = Astro.props;
+interface Props { title: string; description?: string; image?: string; path?: string; metro?: string }
+const { title, description = 'Hole-in-the-wall guide to the Bay Area and San Diego. No chains, no algorithm.', image, path = '/', metro } = Astro.props;
 // Absolute URLs are needed for share previews. Set `site` in astro.config.mjs once the domain is known.
 const origin = Astro.site?.origin ?? Astro.url.origin;
 const pageUrl = new URL(path, origin).href;
@@ -47,7 +47,7 @@ const imageUrl = image ? new URL(image, origin).href : undefined;
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
-    <Header />
+    <Header metro={metro} />
     <slot />
     <SignupDialog />
     <div class="toast" role="status" aria-live="polite" id="toast"></div>

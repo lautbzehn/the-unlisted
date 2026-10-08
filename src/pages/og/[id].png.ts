@@ -4,7 +4,7 @@ import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
 import { readFileSync } from 'node:fs';
 import type { APIRoute } from 'astro';
-import { places, FAME, whenText } from '../../lib/places.js';
+import { places, FAME, whenText, METROS, whereText } from '../../lib/places.js';
 
 const font = (pkg: string, file: string) =>
   readFileSync(new URL(`../../../node_modules/@fontsource/${pkg}/files/${file}`, import.meta.url));
@@ -29,7 +29,7 @@ const clip = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1).trim
 export const GET: APIRoute = async ({ props }) => {
   const p = props.place as (typeof places)[number];
   const nameSize = p.name.length > 26 ? 80 : p.name.length > 16 ? 96 : 116;
-  const where = p.city === 'San Francisco' ? p.area : `${p.area}, ${p.city}`;
+  const where = whereText(p);
   const labels = [FAME[p.fame], whenText(p.when)].filter(Boolean).join(' · ');
 
   const tree = el('div', { width: '100%', height: '100%', background: C.bg, padding: 28 }, [
@@ -38,7 +38,7 @@ export const GET: APIRoute = async ({ props }) => {
     el('div', { flex: 1, flexDirection: 'column', border: '1px solid rgba(160,138,98,0.6)', padding: '28px 44px', color: C.ink, fontFamily: 'Sans' }, [
       el('div', { justifyContent: 'space-between', alignItems: 'center' }, [
         el('div', { fontFamily: 'Title', fontSize: 40 }, 'The Unlisted'),
-        el('div', { fontSize: 24, color: C.mute }, p.sample ? 'Sample, not a real place' : 'Bay Area · All hours'),
+        el('div', { fontSize: 24, color: C.mute }, p.sample ? 'Sample, not a real place' : `${METROS[p.metro]?.name ?? 'Bay Area'} · All hours`),
       ]),
       el('div', { flex: 1, alignItems: 'center', justifyContent: 'space-between' }, [
         el('div', { flexDirection: 'column', flex: 1, paddingRight: 48 }, [

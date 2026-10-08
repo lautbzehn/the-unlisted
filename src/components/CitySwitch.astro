@@ -1,0 +1,11 @@
+---
+// Bay Area · San Diego. `to` picks which page of the other city to land on: its front page or its Explore page.
+import { METROS } from '../lib/places.js';
+interface Props { current: string; to?: 'home' | 'explore' }
+const { current, to = 'home' } = Astro.props;
+---
+<nav class="city-switch" aria-label="City">
+  {Object.values(METROS).map((m) => (
+    <a href={m[to]} data-metro={m.id} aria-current={m.id === current ? 'page' : undefined}>{m.name}</a>
+  ))}
+</nav>

@@ -9,7 +9,8 @@ const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const STATUS_TEXT = { none: '', knock: ' On your Bucket List.', ledger: ' Stamped.' };
 const BAY = { center: [-122.35, 37.78], zoom: 9.5 };
 
-function baseMap(container, view = BAY) {
+// A page can centre the big map on its own city: <div id="map" data-center="[lng,lat]" data-zoom="10">
+function baseMap(container, view = container.dataset.center ? { center: JSON.parse(container.dataset.center), zoom: +container.dataset.zoom } : BAY) {
   const map = new maplibregl.Map({ container, style: mapStyle('sepia'), ...view, attributionControl: { compact: true } });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
   return map;

@@ -1,0 +1,79 @@
+---
+// One city's front page (Bay Area at /, San Diego at /san-diego/).
+import Base from '../layouts/Base.astro';
+import Footer from './Footer.astro';
+import BrowseRow from './BrowseRow.astro';
+import SurpriseDialog from './SurpriseDialog.astro';
+import Gate from './Gate.astro';
+import CitySwitch from './CitySwitch.astro';
+import { METROS, placesIn, slim, topHoods } from '../lib/places.js';
+
+interface Props { metro: string }
+const M = METROS[Astro.props.metro];
+const places = placesIn(M.id);
+const MIN = 3; // a row needs at least this many places to be worth showing
+const by = (f) => places.filter(f);
+const NOW_ROWS = [
+  { bucket: 'morning', title: 'Morning doors', sub: 'Coffee, pastries and breakfast counters that open early.' },
+  { bucket: 'midday', title: 'Lunch doors', sub: 'Counters and kitchens worth the detour at lunch.' },
+  { bucket: 'evening', title: 'Dinner doors', sub: 'Where to eat tonight.' },
+  { bucket: 'late', title: 'Late-night doors', sub: 'Usually open past 10. Check before you go.' },
+].map((r) => ({ ...r, list: by((p) => p.when?.includes(r.bucket)) })).filter((r) => r.list.length >= MIN);
+// The second row: deep cuts once there are enough of them, local legends until then.
+const deep = by((p) => p.fame === 'deep-cut');
+const second = deep.length >= MIN
+  ? { id: 'deep', title: 'Deep cuts', sub: 'Barely written about anywhere. You heard it from someone, not a website.', list: deep, fame: 'deep-cut' }
+  : { id: 'legends', title: 'Local legends', sub: 'Decades in, still the real thing.', list: by((p) => p.fame === 'local-legend'), fame: 'local-legend' };
+const hoods = topHoods(places, 12);
+---
+<Base title={`The Unlisted — ${M.name} hole-in-the-wall guide`} description={`${M.name} hole-in-the-wall guide. No chains, no algorithm.`} path={M.home} metro={M.id}>
+  <Gate />
+  <main id="main" class="home" data-metro={M.id} data-short={M.short}>
+    <section class="cover">
+      <CitySwitch current={M.id} />
+      <h1 class="logo">The Unlisted</h1>
+      <p class="tagline">Places you only hear about from the cousin who knows a guy. <strong>Now you know a guy.</strong></p>
+      <div class="cover-cta">
+        <button id="surprise-btn" class="btn btn-primary btn-lg" type="button">Surprise me</button>
+        <a class="btn btn-lg" href={M.explore}>Explore all {places.length}</a>
+      </div>
+    </section>
+
+    <SurpriseDialog />
+
+    {NOW_ROWS.map((r) => (
+      <BrowseRow id={`now-${r.bucket}`} bucket={r.bucket} kicker="Right now" title={r.title} sub={r.sub}
+        places={r.list} total={r.list.length} seeAll={`${M.explore}?time=${r.bucket}`} hidden />
+    ))}
+    <noscript><style>.browse[data-bucket='midday'] { display: block !important; }</style></noscript>
+
+    {second.list.length >= MIN && (
+      <BrowseRow id={second.id} title={second.title} sub={second.sub} places={second.list} total={second.list.length} seeAll={`${M.explore}?fame=${second.fame}`} />
+    )}
+
+    <section class="browse" aria-labelledby="by-hood">
+      <div class="browse-head">
+        <h2 id="by-hood">Pick a neighborhood</h2>
+        <a class="more-link" href={M.explore}>All of them →</a>
+      </div>
+      <ul class="hood-chips" role="list">
+        {hoods.map((h) => (
+          <li><a href={`${M.explore}?where=${h.where}`}>{h.label}{h.city !== M.main && h.city !== h.label && `, ${h.city}`}<span class="n">{h.n}</span></a></li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="next-cities" aria-label="Next cities">
+      <p><strong>Next stamps in the passport:</strong> Austin and New York.</p>
+      <a class="more-link" href="/cities/">Vote for the one after →</a>
+    </section>
+
+    <script type="application/json" id="places-data" set:html={JSON.stringify(slim(places))} />
+  </main>
+  <Footer sample={places.some((p) => p.sample)} />
+
+  <script>
+    import '../scripts/home.js';
+    import '../scripts/gate.js';
+  </script>
+</Base>

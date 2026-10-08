@@ -50,8 +50,9 @@ export function initSurprise({ getState, getTime, update, showOnMap, toast }) {
     $('[data-sp=story]').textContent = p.story;
     $('[data-sp=order]').textContent = p.order;
     let where;
-    if (km === null) where = pos === null ? 'Location is off, so this one is picked from across the Bay.' : '';
-    else if (km > TOO_FAR_KM) where = `You're about ${Math.round(km * KM_TO_MI)} mi away. We're Bay Area only for now (San Diego, Austin and New York are next), so call this one a daydream.`;
+    const across = document.getElementById('main')?.dataset.short ?? 'the Bay';
+    if (km === null) where = pos === null ? `Location is off, so this one is picked from across ${across}.` : '';
+    else if (km > TOO_FAR_KM) where = `You're about ${Math.round(km * KM_TO_MI)} mi away. We cover the Bay Area and San Diego for now (Austin and New York are next), so call this one a daydream.`;
     else where = `About ${(km * KM_TO_MI).toFixed(1)} mi from you.`;
     $('[data-sp=where]').textContent = where;
     $('[data-sp=sample]').hidden = !p.sample;

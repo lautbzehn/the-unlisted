@@ -11,10 +11,10 @@ interface Props {
 }
 import PlaceBody from './PlaceBody.astro';
 import GemDoor from './GemDoor.astro';
-import { FAME, TYPES, whenText } from '../lib/places.js';
+import { FAME, TYPES, whenText, whereText } from '../lib/places.js';
 import { SCORE_TIP, FAME_TIPS } from '../lib/glossary.js';
 const { place, variant = 'entry' } = Astro.props;
-const where = place.city === 'San Francisco' ? place.area : `${place.area}, ${place.city}`;
+const where = whereText(place);
 // A Google Maps search link: only a link out, no Google data is stored or shown here.
 const google = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name}, ${place.area}, ${place.city}`)}`;
 // The machine-readable line at the foot of every passport page.

@@ -27,7 +27,7 @@ const strip = (s) => { const t = s.replace(/^[^:]+:\s*/, ''); return t[0].toUppe
 
     <h2 class="sect">When to go</h2>
     <dl class="gloss">
-      {Object.entries(WHEN_TIPS).map(([k, tip]) => (<><dt>{WHEN[k]}</dt><dd>{strip(tip)} “Right now” picks whichever of these fits the current hour in the Bay Area.</dd></>))}
+      {Object.entries(WHEN_TIPS).map(([k, tip]) => (<><dt>{WHEN[k]}</dt><dd>{strip(tip)} “Right now” picks whichever of these fits the current hour in the Bay Area and San Diego.</dd></>))}
     </dl>
 
     <h2 class="sect">The Gem score</h2>

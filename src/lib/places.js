@@ -25,11 +25,13 @@ export const TYPES = {
   bar: 'Bars',
 };
 const TYPE_RULES = [
-  ['bar', /\b(bar|pub|saloon|drinking)\b/],
+  ['coffee', /\b(coffee|espresso|dessert) bar\b/],
+  ['sitdown', /\b(sushi bar|seafood bar|hot pot|pho house)\b/],
+  ['bar', /\b(bar|pub|saloon|drinking|dive|tavern|speakeasy|cantina)\b/],
   ['breakfast', /\b(diner|breakfast|brunch|waffle|silog)\b/],
   ['counter', /dim sum|b[aá]nh m[iì]|\btorta|sandwich/],
   ['coffee', /\b(coffee|coffeehouse|espresso|bakery|donut|pastry|panader[ií]a|pandesal|manju|cake|ice cream|crepe)\b/],
-  ['counter', /\b(counter|window|truck|trailer|stand|takeout|deli|slice|taqueria|shack|turo-turo|canteen|market)\b/],
+  ['counter', /\b(counter|window|truck|trailer|stand|takeout|deli|slice|taqueria|taco shop|cafeteria|shack|turo-turo|canteen|market)\b/],
   ['sitdown', /\b(noodle|pho|hong kong-style cafe|pork chop house)\b/],
   ['coffee', /\bcafe\b/],
 ];
@@ -39,9 +41,15 @@ export const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u0
 // "Mission District (south)" and "Mission District" are the same neighborhood for browsing.
 export const hoodOf = (area) => area.replace(/\s*\(.*\)\s*$/, '');
 
-// The metro areas the guide covers. Places without a metro are Bay Area (the first city).
-export const METROS = { 'bay-area': 'Bay Area', 'san-diego': 'San Diego' };
-const LIVE_METROS = ['bay-area']; // San Diego is approved and waits here until the city switcher ships
+// The metro areas the guide covers, each with its own front page and Explore page. Places without a metro are
+// Bay Area (the first city). `short` finishes phrases like "in the Bay"; `more` labels the small towns in Where.
+export const METROS = {
+  'bay-area': { id: 'bay-area', name: 'Bay Area', the: 'the Bay Area', short: 'the Bay', home: '/', explore: '/explore/', main: 'San Francisco', more: 'More of the Bay', center: [-122.35, 37.78], zoom: 9.5 },
+  'san-diego': { id: 'san-diego', name: 'San Diego', the: 'San Diego', short: 'San Diego', home: '/san-diego/', explore: '/san-diego/explore/', main: 'San Diego', more: 'More of San Diego County', center: [-117.12, 32.75], zoom: 10.2 },
+};
+const LIVE_METROS = Object.keys(METROS);
+// Which city a page belongs to, from its address
+export const metroOf = (path = '/') => (path.startsWith('/san-diego') ? 'san-diego' : 'bay-area');
 
 // Sources and review notes stay internal: they never ship to visitors.
 export const places = [...raw.filter((p) => p.status === 'approved' || p.sample), ...drafts]
@@ -64,12 +72,18 @@ export const places = [...raw.filter((p) => p.status === 'approved' || p.sample)
   .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
 
 // What the browser scripts need (Surprise me, the map), without the long fields.
-export const slim = (list) => list.map(({ id, name, area, city, kind, tagline, score, story, order, lat, lng, when, sample }) => (
-  { id, name, area, city, kind, tagline, score, story, order, lat, lng, when, sample }
+export const slim = (list) => list.map(({ id, name, metro, area, city, kind, tagline, score, story, order, lat, lng, when, sample }) => (
+  { id, name, metro, area, city, kind, tagline, score, story, order, lat, lng, when, sample }
 ));
 
+// "Mission District" or "Fruitvale, Oakland": a city's own neighborhoods stand alone, and a name never repeats
+export const whereText = (p) => (p.area === p.city || p.city === METROS[p.metro ?? 'bay-area']?.main ? p.area : `${p.area}, ${p.city}`);
+
+// One city's places
+export const placesIn = (metro) => places.filter((p) => p.metro === metro);
+
 // The "Where" choices: big cities get their neighborhoods, small ones are grouped together.
-export function whereGroups(list = places) {
+export function whereGroups(list = places, more = METROS['bay-area'].more) {
   const byCity = new Map();
   for (const p of list) {
     const c = byCity.get(p.city) ?? { city: p.city, n: 0, hoods: new Map() };
@@ -89,7 +103,7 @@ export function whereGroups(list = places) {
   const small = cities.filter((c) => !(c.n >= 4 && c.hoods.size > 1))
     .sort((a, b) => a.city.localeCompare(b.city))
     .map((c) => ({ value: slug(c.city), label: c.city, n: c.n }));
-  return small.length ? [...big, { label: 'More of the Bay', options: small }] : big;
+  return small.length ? [...big, { label: more, options: small }] : big;
 }
 
 // The busiest neighborhoods, for the front page.

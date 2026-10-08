@@ -1,5 +1,5 @@
 // The Unlisted: tiny API for the city board. Everything that isn't /api/* is the static site.
-//   GET  /api/cities           -> { coming: [...], board: [...] }
+//   GET  /api/cities           -> { coming: [...], board: [...] }   (cities with status 'live' are open and listed on neither)
 //   POST /api/cities/vote      { slug, token }          one vote per city per person
 //   POST /api/cities/suggest   { slug, token }          a city from the fixed list (src/data/city-options.json)
 //   POST /api/contact          { name?, email?, topic, message, token }      saved privately + emailed to Dan
@@ -102,6 +102,7 @@ async function api(request, env, path) {
     const existing = await env.DB.prepare('SELECT id, status FROM cities WHERE slug = ?').bind(pick.slug).first();
     if (existing?.status === 'rejected') return json({ message: `Thanks. ${pick.name} isn’t on the board right now.` });
     if (existing?.status === 'coming') return json({ message: `${pick.name} is already booked. It’s coming soon.` });
+    if (existing?.status === 'live') return json({ message: `${pick.name} is already open on The Unlisted.` });
     // Cities come from a fixed list, so they can go straight onto the board: no free text to review.
     const city = existing ?? await env.DB.prepare("INSERT INTO cities (slug, name, region, status) VALUES (?, ?, ?, 'approved') RETURNING id")
       .bind(pick.slug, pick.name, pick.region).first();
