@@ -587,7 +587,7 @@ footer.site-footer p a { color: var(--ink); }
 .if-logo { display: inline-block; width: 1.3em; height: 1.3em; margin-right: 0.4em; vertical-align: -0.3em; overflow: visible; }
 .if-logo .sun { color: #f97343; fill: currentColor; }
 @media (prefers-reduced-motion: no-preference) {
-  .if-logo .sun { animation: sun-pulse 5s ease-in-out infinite; }
+  .if-logo .sun { animation: sun-pulse 6.7s ease-in-out infinite; }
   @keyframes sun-pulse {
     0%, 100% { color: #f97343; filter: drop-shadow(0 0 3.75px currentColor) drop-shadow(0 0 9px color-mix(in srgb, currentColor 65%, transparent)); }
     12.5% { color: color-mix(in oklch, #f97343 75%, #34d399); }
