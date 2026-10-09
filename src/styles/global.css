@@ -583,6 +583,22 @@ footer.site-footer p a { color: var(--ink); }
 /* "An Icarian Forge product": the maker's mark, in the footer of every page, on the welcome gate and in Our Story.
    The I and Forge are in the Icarian Forge amber, as on icarianforge.com */
 .ifp b { font-weight: inherit; color: #f97343; }
+/* The Icarian Forge logo beside the mark. Its light pulses from the Icarian Forge amber to emerald and back, as on icarianforge.com */
+.if-logo { display: inline-block; width: 1.3em; height: 1.3em; margin-right: 0.4em; vertical-align: -0.3em; overflow: visible; }
+.if-logo .sun { color: #f97343; fill: currentColor; }
+@media (prefers-reduced-motion: no-preference) {
+  .if-logo .sun { animation: sun-pulse 5s ease-in-out infinite; }
+  @keyframes sun-pulse {
+    0%, 100% { color: #f97343; filter: drop-shadow(0 0 3.75px currentColor) drop-shadow(0 0 9px color-mix(in srgb, currentColor 65%, transparent)); }
+    12.5% { color: color-mix(in oklch, #f97343 75%, #34d399); }
+    25% { color: color-mix(in oklch, #f97343 50%, #34d399); filter: drop-shadow(0 0 1.2px currentColor) drop-shadow(0 0 3px color-mix(in srgb, currentColor 40%, transparent)); }
+    37.5% { color: color-mix(in oklch, #f97343 25%, #34d399); }
+    50% { color: #34d399; filter: drop-shadow(0 0 3.75px currentColor) drop-shadow(0 0 9px color-mix(in srgb, currentColor 65%, transparent)); }
+    62.5% { color: color-mix(in oklch, #f97343 25%, #34d399); }
+    75% { color: color-mix(in oklch, #f97343 50%, #34d399); filter: drop-shadow(0 0 1.2px currentColor) drop-shadow(0 0 3px color-mix(in srgb, currentColor 40%, transparent)); }
+    87.5% { color: color-mix(in oklch, #f97343 75%, #34d399); }
+  }
+}
 .maker { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; margin-bottom: 12px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
 footer.site-footer .maker a { color: var(--ink); font-weight: 600; letter-spacing: 0.02em; text-decoration: none; }
 footer.site-footer .maker a:hover { text-decoration: underline; text-decoration-color: var(--line-strong); }
