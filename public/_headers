@@ -1,0 +1,7 @@
+# Baseline browser protections for every page and file. Location stays allowed for this site only (the "near me" sort).
+/*
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(self), payment=(), usb=()
