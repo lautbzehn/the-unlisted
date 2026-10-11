@@ -69,7 +69,7 @@ export function initSurprise({ getState, getTime, update, showOnMap, toast }) {
       <div class="tl">${esc(p.tagline)}</div>
       <div class="or"><b>Order:</b> ${esc(p.order)}</div>
       ${near ? `<div class="near">${esc(near)}</div>` : ''}
-      <div class="go"><a href="/place/${p.id}/">Open</a><a href="${directions}" target="_blank" rel="noopener">Directions ↗</a><button type="button" data-sp="map" data-id="${p.id}">Map</button></div>
+      <div class="go"><a href="/place/${esc(p.id)}/">Open</a><a href="${directions}" target="_blank" rel="noopener">Directions ↗</a><button type="button" data-sp="map" data-id="${esc(p.id)}">Map</button></div>
       <div class="stub" aria-hidden="true">${esc(stubCode(p))}</div>
       <span class="lbl keep" aria-hidden="true">Bucket List</span><span class="lbl pass" aria-hidden="true">${esc($('[data-sp=pass-label]').textContent)}</span>
     </div>`;

@@ -47,7 +47,7 @@ export function createMap(container, places, { onShowInList } = {}) {
     show.textContent = 'Show in list';
     show.addEventListener('click', () => onShowInList?.(p.id));
     const a = document.createElement('a');
-    a.href = `/place/${p.id}/`;
+    a.href = `/place/${encodeURIComponent(p.id)}/`;
     a.textContent = 'Open the file →';
     links.append(show, a);
     wrap.append(h, m, links);
