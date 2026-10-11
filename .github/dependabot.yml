@@ -5,9 +5,9 @@ updates:
     schedule:
       interval: weekly
     ignore:
-      # satori 0.36 breaks the build-time share images; upgrade it by hand with a fix.
+      # satori after 0.35.0 fails the build ("__dirname is not defined" in its ESM bundle).
+      # It's pinned; upgrade it by hand once a fixed release is out.
       - dependency-name: satori
-        update-types: [version-update:semver-minor]
     open-pull-requests-limit: 5
     groups:
       minor-and-patch:
