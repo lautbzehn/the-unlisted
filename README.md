@@ -98,7 +98,7 @@ Pages are pre-rendered, so the guide is fast and cheap to run. The only server c
 - **CI:** every pull request and push to `main` installs from the lockfile and runs a full production build.
 - **Forms:** every submission passes a Cloudflare Turnstile bot check, visitors are identified only by an anonymous hash, and each form has a daily cap per visitor.
 - **Privacy:** no accounts, no tracking. Your passport stays on your device. The owner's notification address is a Cloudflare secret, never in the code.
-- **Browser hardening:** HSTS, `nosniff`, same-origin framing, a strict referrer policy, and camera, microphone, and payment access disabled. Location is allowed for this site only, for the "near me" sort.
+- **Browser hardening:** a strict content security policy (only the site's own scripts, the few small ones Astro inlines allowed by hash, Turnstile, and the map tiles), HSTS, `nosniff`, cross-origin window isolation, same-origin framing, a strict referrer policy, and camera, microphone, and payment access disabled. Location is allowed for this site only, for the "near me" sort.
 - See [SECURITY.md](SECURITY.md).
 </details>
 

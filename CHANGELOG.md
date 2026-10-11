@@ -2,6 +2,12 @@
 
 Notable changes to The Unlisted. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Security
+- A strict Content Security Policy: only the site's own scripts run, Astro's few inline scripts are allowed by hash (computed after every build), and the build fails if a page adds an inline event handler. Also adds `Cross-Origin-Opener-Policy` and extends HSTS to subdomains.
+- Wrangler 4.149 (patches a sharp advisory in local tooling) and the share-image renderer's compression library pinned to the patched fflate 0.7.5. `npm audit` is clean.
+
 ## [1.3.0] · 2026-10-10
 
 ### Changed
