@@ -55,7 +55,7 @@
 ## How a place gets in
 
 ```mermaid
-flowchart LR
+flowchart TB
   OSM["OpenStreetMap<br/>17,506 venues"] --> F["Chain and landmark filter<br/>12,630 independents"]
   F --> D["AI discovery<br/>Claude + web search"]
   D --> S["Selection<br/>dedupe · match to map · balance"]
