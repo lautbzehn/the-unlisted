@@ -4,6 +4,10 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    ignore:
+      # satori 0.36 breaks the build-time share images; upgrade it by hand with a fix.
+      - dependency-name: satori
+        update-types: [version-update:semver-minor]
     open-pull-requests-limit: 5
     groups:
       minor-and-patch:
