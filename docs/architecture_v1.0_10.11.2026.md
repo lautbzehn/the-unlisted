@@ -51,4 +51,4 @@ Places come from the [research pipeline](data-pipeline_v1.0_10.11.2026.md). Only
 
 - **CI** builds every pull request and push to `main`.
 - **Release:** `npm run deploy` (build, then `wrangler deploy`) from the owner's release session.
-- **Hardening:** security headers from `public/_headers`.
+- **Hardening:** security headers from `public/_headers`, including a content security policy whose inline-script hashes are filled in by `scripts/csp.mjs` after each build.

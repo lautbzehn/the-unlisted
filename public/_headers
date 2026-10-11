@@ -1,6 +1,12 @@
-# Baseline browser protections for every page and file. Location stays allowed for this site only (the "near me" sort).
+# Browser protections for every page and file: HTTPS only, no MIME sniffing, no framing by other sites, a trimmed
+# referrer, no camera, microphone or payment access (location stays allowed for this site only, for the "near me"
+# sort), and a content policy. The policy runs only this site's own scripts, the few small scripts Astro inlines
+# (allowed by hash, filled in by scripts/csp.mjs after each build), Cloudflare Turnstile and Web Analytics.
+# The map loads tiles and fonts from OpenFreeMap.
 /*
-  Strict-Transport-Security: max-age=31536000
+  Content-Security-Policy: default-src 'self'; script-src 'self' {{INLINE_SCRIPT_HASHES}} https://challenges.cloudflare.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://tiles.openfreemap.org https://challenges.cloudflare.com https://cloudflareinsights.com; worker-src 'self' blob:; frame-src https://challenges.cloudflare.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests
+  Cross-Origin-Opener-Policy: same-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
