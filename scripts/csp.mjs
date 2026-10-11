@@ -22,11 +22,13 @@ const hashes = new Set();
 const handlers = [];
 for (const page of pages) {
   const html = readFileSync(page, 'utf8');
-  for (const [, attrs = '', body] of html.matchAll(/<script(\s[^>]*)?>([\s\S]*?)<\/script>/g)) {
-    if (/\ssrc=/.test(attrs) || /type="application\/(ld\+)?json"/.test(attrs)) continue;
+  for (const [, attrs = '', body] of html.matchAll(/<script(\s[^>]*)?>([\s\S]*?)<\/script[^>]*>/gi)) {
+    if (/\ssrc=/i.test(attrs) || /type="application\/(ld\+)?json"/i.test(attrs)) continue;
     hashes.add(`'sha256-${createHash('sha256').update(body).digest('base64')}'`);
   }
-  if (/<[a-z][^>]*\son[a-z]+=/i.test(html.replace(/<script[\s\S]*?<\/script>/g, ''))) handlers.push(page.slice(dist.length));
+  // Look for handlers in the markup only, outside script bodies.
+  const markup = html.split(/<script\b[\s\S]*?<\/script[^>]*>/i);
+  if (markup.some((part) => /<[a-z][^>]*\son[a-z]+\s*=/i.test(part))) handlers.push(page.slice(dist.length));
 }
 if (handlers.length) {
   console.error(`Inline event handlers are blocked by the content policy. Move them into a script: ${handlers.join(', ')}`);
