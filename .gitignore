@@ -32,3 +32,7 @@ data/pipeline/
 # Cloudflare local state
 .wrangler/
 .dev.vars
+
+# Private working notes and editor settings stay local
+notes/
+.vscode/

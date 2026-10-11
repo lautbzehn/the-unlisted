@@ -1,0 +1,21 @@
+name: Bug report
+description: Something on the site doesn't work the way it should.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      placeholder: https://unlisted.icarianforge.com/...
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Safari on iPhone

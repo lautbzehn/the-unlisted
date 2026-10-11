@@ -13,9 +13,10 @@
   "d1_databases": [
     { "binding": "DB", "database_name": "the-unlisted", "database_id": "7b436fed-18be-482e-9130-3f5aaadad833", "migrations_dir": "migrations" }
   ],
-  // Lets the site email Dan about new messages and place tips. Locked to his verified address only.
-  "send_email": [{ "name": "EMAIL", "destination_address": "hello@icarianforge.com" }],
+  // Lets the site email Dan about new messages and place tips. The address is the NOTIFY_TO secret, so it stays out of the code;
+  // Cloudflare only delivers to addresses verified in Email Routing.
+  "send_email": [{ "name": "EMAIL" }],
   // Serves the site at this address and creates its DNS record on icarianforge.com automatically.
   "routes": [{ "pattern": "unlisted.icarianforge.com", "custom_domain": true }]
-  // Secret (not in this file): TURNSTILE_SECRET, set with `wrangler secret put`.
+  // Secrets (not in this file): TURNSTILE_SECRET and NOTIFY_TO, set with `wrangler secret put`.
 }

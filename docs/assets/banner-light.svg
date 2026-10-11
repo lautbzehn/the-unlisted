@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="The Unlisted: Find the places review apps bury.">
+<defs>
+  <radialGradient id="g" cx="0.12" cy="0.1" r="0.75"><stop offset="0" stop-color="#f97343" stop-opacity="0.12"/><stop offset="1" stop-color="#f97343" stop-opacity="0"/></radialGradient>
+  <pattern id="p" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="rgba(28,25,23,0.04)" stroke-width="1"/></pattern>
+  <linearGradient id="fade" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f7f4ee" stop-opacity="0"/><stop offset="1" stop-color="#f7f4ee" stop-opacity="1"/></linearGradient>
+</defs>
+<style>
+  .sun { animation: pulse 6.7s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { fill: #c2410c; } 50% { fill: #047857; } }
+  .cur { animation: glow 3.4s ease-in-out infinite; }
+  @keyframes glow { 0%,100% { stroke-opacity: 0.55; } 50% { stroke-opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .sun, .cur { animation: none; } }
+</style>
+<rect width="1280" height="420" rx="24" fill="#f7f4ee"/>
+<rect width="1280" height="420" rx="24" fill="url(#p)"/>
+<rect width="1280" height="420" rx="24" fill="url(#fade)" opacity="0.6"/>
+<rect width="1280" height="420" rx="24" fill="url(#g)"/>
+<rect x="0.5" y="0.5" width="1279" height="419" rx="23.5" fill="none" stroke="rgba(28,25,23,0.10)"/>
+<g transform="translate(64 58)">
+  <g fill="none" stroke="#1c1917" stroke-width="2.6" stroke-linecap="round" transform="scale(1.25)"><path d="M3 21c7-.6 12.5-4.6 16-11"/><path d="M6 25.5c7.8-.6 14-4.8 18-12"/><path d="M11 29.5c6.5-.7 11.6-4.2 15-10"/></g>
+  <circle class="sun" cx="31.9" cy="8.1" r="4.6" fill="#c2410c"/>
+  <text x="56" y="27" font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" letter-spacing="2.4" fill="#57534e">AN ICARIAN FORGE PRODUCT · LIVE</text>
+</g>
+<text x="64" y="172" font-family="Inter, ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-1.6" fill="#1c1917"><tspan fill="#c2410c">The</tspan> Unlisted</text>
+<text x="66" y="220" font-family="Inter, ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="25" font-weight="400" fill="#57534e">Find the places review apps bury.</text>
+<rect x="64.0" y="284" width="170.3" height="44" rx="22" fill="rgba(4,120,87,0.10)" stroke="#047857" stroke-width="1"/>
+<text x="149.2" y="312" text-anchor="middle" font-family="Inter, ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#1c1917">Open map data</text>
+<path d="M247.3 300.0 L253.3 306.0 L247.3 312.0 L241.3 306.0 Z" fill="none" stroke="#047857" stroke-width="1.6"/>
+<rect x="260.3" y="284" width="170.3" height="44" rx="22" fill="rgba(4,120,87,0.10)" stroke="#047857" stroke-width="1"/>
+<text x="345.5" y="312" text-anchor="middle" font-family="Inter, ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#1c1917">Chain filter</text>
+<path d="M443.7 300.0 L449.7 306.0 L443.7 312.0 L437.7 306.0 Z" fill="none" stroke="#047857" stroke-width="1.6"/>
+<rect x="456.7" y="284" width="170.3" height="44" rx="22" fill="rgba(4,120,87,0.10)" stroke="#047857" stroke-width="1"/>
+<text x="541.8" y="312" text-anchor="middle" font-family="Inter, ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#1c1917">AI discovery</text>
+<path d="M640.0 300.0 L646.0 306.0 L640.0 312.0 L634.0 306.0 Z" fill="none" stroke="#047857" stroke-width="1.6"/>
+<rect x="653.0" y="284" width="170.3" height="44" rx="22" fill="rgba(4,120,87,0.10)" stroke="#047857" stroke-width="1"/>
+<text x="738.2" y="312" text-anchor="middle" font-family="Inter, ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#1c1917">AI research</text>
+<path d="M836.3 300.0 L842.3 306.0 L836.3 312.0 L830.3 306.0 Z" fill="none" stroke="#047857" stroke-width="1.6"/>
+<rect x="849.3" y="284" width="170.3" height="44" rx="22" fill="rgba(4,120,87,0.10)" stroke="#047857" stroke-width="1"/>
+<text x="934.5" y="312" text-anchor="middle" font-family="Inter, ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#1c1917">Human review</text>
+<path d="M1032.7 300.0 L1038.7 306.0 L1032.7 312.0 L1026.7 306.0 Z" fill="none" stroke="#047857" stroke-width="1.6"/>
+<rect class="cur" x="1045.7" y="284" width="170.3" height="44" rx="22" fill="rgba(194,65,12,0.10)" stroke="#c2410c" stroke-width="1.6"/>
+<text x="1130.8" y="312" text-anchor="middle" font-family="Inter, ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="600" fill="#1c1917">Live guide</text>
+<text x="64" y="386" font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="14" letter-spacing="1.6" fill="#8a847d">UNLISTED.ICARIANFORGE.COM  ·  253 PLACES  ·  2 CITIES  ·  EVERY ONE HUMAN-REVIEWED</text>
+</svg>

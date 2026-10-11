@@ -1,0 +1,8 @@
+The Unlisted uses third-party data and services under their own terms:
+
+- Map and venue data: © OpenStreetMap contributors, available under the
+  Open Database License (ODbL) 1.0. https://www.openstreetmap.org/copyright
+- Address lookups: Nominatim, operated by the OpenStreetMap Foundation, used
+  under its usage policy.
+- Map tiles: OpenFreeMap. https://openfreemap.org
+- Map rendering: MapLibre GL JS (BSD-3-Clause).

@@ -71,8 +71,8 @@ async function overCap(env, voter, kind, max) {
 // Email Dan a copy. The binding can only send to his verified address, so the form can't be used to mail anyone else.
 // A failed email never loses the submission: it's already saved in the database.
 async function notify(env, subject, text) {
-  if (!env.EMAIL) return;
-  try { await env.EMAIL.send({ to: 'hello@icarianforge.com', from: 'noreply@icarianforge.com', subject, text }); }
+  if (!env.EMAIL || !env.NOTIFY_TO) return;
+  try { await env.EMAIL.send({ to: env.NOTIFY_TO, from: 'noreply@icarianforge.com', subject, text }); }
   catch (e) { console.error('email failed', e); }
 }
 
