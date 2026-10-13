@@ -1,5 +1,5 @@
 // Step 6 (free, no AI): keep the "deep cut" label honest.
-// Rule (Dan, Oct 2026): a place covered by 2 or more different press outlets is an "open secret", not a "deep cut".
+// Editorial rule: a place covered by 2 or more different press outlets is an "open secret", not a "deep cut".
 // Rewrites every data/review/batch-*.json in place and adds a review flag to each place it changes.
 //   node scripts/pipeline/06-fix-fame.mjs
 import { readdirSync } from 'node:fs';

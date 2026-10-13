@@ -1,6 +1,6 @@
 name: CI
 
-# Every pull request and push to main installs from the lockfile and runs a full production build.
+# Every pull request and push to main installs from the lockfile, runs the API tests, and runs a full production build.
 on:
   push:
     branches: [main]
@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build
+    name: Test and build
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -26,4 +26,5 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci --no-audit --no-fund
+      - run: npm test
       - run: npm run build

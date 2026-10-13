@@ -1,0 +1,9 @@
+# Local secrets for `wrangler dev`. Copy to .dev.vars (gitignored) and fill in.
+# In production these are Cloudflare secrets: npx wrangler secret put <NAME>
+
+# Cloudflare Turnstile secret. Cloudflare's test secret always passes: 1x0000000000000000000000000000000AA
+# It also keys the anonymous visitor hash used for daily caps.
+TURNSTILE_SECRET=
+
+# Address that receives form notifications. Must be a verified Email Routing destination.
+NOTIFY_TO=
