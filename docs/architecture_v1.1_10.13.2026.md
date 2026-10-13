@@ -1,6 +1,6 @@
 # Architecture
 
-**v1.0 · 10.11.2026** · The Unlisted 1.3
+**v1.1 · 10.13.2026** · The Unlisted 1.3
 
 ## Goals
 
@@ -36,12 +36,22 @@ flowchart LR
 
 ## Server
 
-One Cloudflare Worker handles `/api/*`:
+One Cloudflare Worker handles `/api/*`, split by responsibility:
+
+| Module | Responsibility |
+|---|---|
+| `worker/index.js` | Route table and error boundary. Every POST runs the same guards in order before its handler. |
+| `worker/http.js` | JSON responses, `HttpError`, the same-origin check, and body parsing with a 16 KB limit and a JSON-only rule. |
+| `worker/security.js` | Turnstile verification (including the issuing hostname) and the anonymous keyed visitor hash. |
+| `worker/validate.js` | Pure input validation and normalization for each form. |
+| `worker/store.js` | All D1 queries, with bound parameters. A vote is one transaction, so concurrent votes cannot drift the count. |
+| `worker/routes.js` | Thin handlers: validate, cap, store, notify, reply. |
+| `worker/notify.js` | Best-effort owner email through Cloudflare's email binding, addressed by the `NOTIFY_TO` secret. |
 
 - **Forms:** contact, suggest a place, sign up, and city votes and suggestions.
-- **Protection:** a Turnstile check on every submission, an anonymous keyed visitor hash, and daily caps per visitor and form.
+- **Protection:** same origin, JSON under 16 KB, a Turnstile check issued for this hostname, an anonymous keyed visitor hash, and daily caps per visitor and form.
 - **Storage:** D1, with schema in [`migrations/`](../migrations).
-- **Alerts:** an email to the owner through Cloudflare's email binding, addressed by the `NOTIFY_TO` secret.
+- **Tests:** `npm test` runs 33 unit tests with Node's built-in runner, including the store's SQL against the real migrations in an in-memory SQLite.
 
 ## Data
 
@@ -49,6 +59,6 @@ Places come from the [research pipeline](data-pipeline_v1.0_10.11.2026.md). Only
 
 ## Delivery
 
-- **CI** builds every pull request and push to `main`.
+- **CI** tests and builds every pull request and push to `main`.
 - **Release:** `npm run deploy` (build, then `wrangler deploy`) from the owner's release session.
 - **Hardening:** security headers from `public/_headers`, including a content security policy whose inline-script hashes are filled in by `scripts/csp.mjs` after each build.

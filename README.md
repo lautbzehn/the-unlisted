@@ -16,7 +16,7 @@
 <p align="center">
   <a href="https://unlisted.icarianforge.com"><b>Open the guide</b></a> ·
   <a href="docs/data-pipeline_v1.0_10.11.2026.md">How places are found</a> ·
-  <a href="docs/architecture_v1.0_10.11.2026.md">Architecture</a> ·
+  <a href="docs/architecture_v1.1_10.13.2026.md">Architecture</a> ·
   <a href="docs/adr">Decision records</a> ·
   <a href="CHANGELOG.md">Changelog</a>
 </p>
@@ -89,14 +89,15 @@ flowchart LR
   Browser --> Worker
 ```
 
-Pages are pre-rendered, so the guide is fast and cheap to run. The only server code handles the contact, suggestion, and sign-up forms. Detail: **[docs/architecture](docs/architecture_v1.0_10.11.2026.md)**.
+Pages are pre-rendered, so the guide is fast and cheap to run. The only server code handles the contact, suggestion, and sign-up forms. Detail: **[docs/architecture](docs/architecture_v1.1_10.13.2026.md)**.
 </details>
 
 <details>
 <summary><b>Quality and security</b></summary>
 
-- **CI:** every pull request and push to `main` installs from the lockfile and runs a full production build.
-- **Forms:** every submission passes a Cloudflare Turnstile bot check, visitors are identified only by an anonymous hash, and each form has a daily cap per visitor.
+- **CI:** every pull request and push to `main` installs from the lockfile, runs the API tests, and runs a full production build.
+- **Tests:** 33 unit tests for the forms API: input validation, the request guards, and the SQL itself, run against the real migrations in an in-memory SQLite. They use Node's built-in test runner, with no test dependencies.
+- **Forms:** every submission must come from the site itself, be JSON under 16 KB, and pass a Cloudflare Turnstile check issued for this hostname. Inputs are validated and length-limited before any query, queries use bound parameters, visitors are identified only by a keyed anonymous hash, and each form has a daily cap per visitor.
 - **Privacy:** no accounts, no tracking. Your passport stays on your device. The owner's notification address is a Cloudflare secret, never in the code.
 - **Browser hardening:** a strict content security policy (only the site's own scripts, the few small ones Astro inlines allowed by hash, Turnstile, and the map tiles), HSTS, `nosniff`, cross-origin window isolation, same-origin framing, a strict referrer policy, and camera, microphone, and payment access disabled. Location is allowed for this site only, for the "near me" sort.
 - See [SECURITY.md](SECURITY.md).
@@ -126,7 +127,7 @@ src/pages/              Routes: front page, explore, place pages, passport, stor
 src/components/         The passport, ticket cards, map sheet, Surprise me deck, Gem door, header and footer
 src/lib/                Scoring formula, place helpers, map style, config
 src/data/places.json    The reviewed places that ship
-worker/                 Cloudflare Worker: forms API, D1, email alerts, Turnstile
+worker/                 Cloudflare Worker: router (index), guards (http, security), validation, D1 store, notifications, tests
 migrations/             D1 schema
 scripts/pipeline/       The research pipeline, steps 01 to 07
 prompts/                Research briefs and the enrichment rubric
