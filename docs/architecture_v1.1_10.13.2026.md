@@ -1,6 +1,6 @@
 # Architecture
 
-**v1.1 · 10.13.2026** · The Unlisted 1.3
+**v1.1 · 10.13.2026** · The Unlisted 1.4
 
 ## Goals
 
