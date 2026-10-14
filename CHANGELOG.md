@@ -4,20 +4,20 @@ Notable changes to The Unlisted. The format follows [Keep a Changelog](https://k
 
 ## [Unreleased]
 
+## [1.4.0] · 2026-10-13
+
 ### Security
+- A strict Content Security Policy: only the site's own scripts run, Astro's few inline scripts are allowed by hash (computed after every build), and the build fails if a page adds an inline event handler. Also adds `Cross-Origin-Opener-Policy` and extends HSTS to subdomains.
 - Forms API hardening: requests must come from the site itself, be JSON, and stay under 16 KB. A Turnstile check only counts when it was issued for this hostname, and an outage at Cloudflare now returns a clear 503 instead of a generic error.
 - Place tips only accept known metros as their own keys, never inherited object properties such as `toString`.
 - A vote and its counter update run in one transaction, so simultaneous votes cannot drift the tally.
+- Wrangler 4.149 (patches a sharp advisory in local tooling) and the share-image renderer's compression library pinned to the patched fflate 0.7.5. `npm audit` is clean.
 
 ### Changed
 - The Worker is split by responsibility: router, request guards, verification, validation, data access, handlers, and notifications.
 - 33 unit tests for the API (validation, guards, and SQL against the real migrations), run in CI with Node's built-in test runner.
 - `.dev.vars.example` and `.env.example` document every setting. `AGENTS.md` is now a real working agreement; it had been overwritten through the `CLAUDE.md` link.
 - Architecture doc v1.1.
-
-### Security
-- A strict Content Security Policy: only the site's own scripts run, Astro's few inline scripts are allowed by hash (computed after every build), and the build fails if a page adds an inline event handler. Also adds `Cross-Origin-Opener-Policy` and extends HSTS to subdomains.
-- Wrangler 4.149 (patches a sharp advisory in local tooling) and the share-image renderer's compression library pinned to the patched fflate 0.7.5. `npm audit` is clean.
 
 ## [1.3.0] · 2026-10-10
 
