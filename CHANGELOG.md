@@ -4,6 +4,9 @@ Notable changes to The Unlisted. The format follows [Keep a Changelog](https://k
 
 ## [Unreleased]
 
+### Changed
+- The link out from each place now reads "Business info" instead of "Google Maps". It opens the same Google Maps search as before.
+
 ## [1.4.0] · 2026-10-13
 
 ### Security
