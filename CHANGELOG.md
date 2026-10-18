@@ -4,8 +4,16 @@ Notable changes to The Unlisted. The format follows [Keep a Changelog](https://k
 
 ## [Unreleased]
 
+## [1.5.0] · 2026-10-17
+
+### Security
+- Every form now has a site-wide daily limit on top of the per-visitor one, so a flood from many addresses still stops at a known number. The first time a form reaches its limit in a day, the owner gets one email instead of a flood. City votes have daily limits for the first time.
+- A form's limit check and its log entry are a single SQL statement, so a burst of simultaneous requests cannot slip past either limit.
+
 ### Changed
 - The link out from each place now reads "Business info" instead of "Google Maps". It opens the same Google Maps search as before.
+- City suggestions use the same limit log as every other form. Migration `0005` adds the index the site-wide counts use.
+- 39 unit tests. Architecture doc v1.2.
 
 ## [1.4.0] · 2026-10-13
 

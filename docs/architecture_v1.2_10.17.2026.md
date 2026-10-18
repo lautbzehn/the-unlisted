@@ -1,6 +1,6 @@
 # Architecture
 
-**v1.1 · 10.13.2026** · The Unlisted 1.4
+**v1.2 · 10.17.2026** · The Unlisted 1.5
 
 ## Goals
 
@@ -44,14 +44,14 @@ One Cloudflare Worker handles `/api/*`, split by responsibility:
 | `worker/http.js` | JSON responses, `HttpError`, the same-origin check, and body parsing with a 16 KB limit and a JSON-only rule. |
 | `worker/security.js` | Turnstile verification (including the issuing hostname) and the anonymous keyed visitor hash. |
 | `worker/validate.js` | Pure input validation and normalization for each form. |
-| `worker/store.js` | All D1 queries, with bound parameters. A vote is one transaction, so concurrent votes cannot drift the count. |
-| `worker/routes.js` | Thin handlers: validate, cap, store, notify, reply. |
+| `worker/store.js` | All D1 queries, with bound parameters. A vote is one transaction, so concurrent votes cannot drift the count, and a form's limit check and log entry are one statement, so bursts cannot slip past it. |
+| `worker/routes.js` | Thin handlers: validate, claim a slot under the form's daily limits, store, notify, reply. |
 | `worker/notify.js` | Best-effort owner email through Cloudflare's email binding, addressed by the `NOTIFY_TO` secret. |
 
 - **Forms:** contact, suggest a place, sign up, and city votes and suggestions.
-- **Protection:** same origin, JSON under 16 KB, a Turnstile check issued for this hostname, an anonymous keyed visitor hash, and daily caps per visitor and form.
+- **Protection:** same origin, JSON under 16 KB, a Turnstile check issued for this hostname, an anonymous keyed visitor hash, and two daily limits per form: one per visitor and one site-wide, so a flood from many addresses still stops at a known number. The first time a form reaches its site-wide limit in a day, the owner gets one email. The limits are in `LIMITS` in `worker/routes.js`.
 - **Storage:** D1, with schema in [`migrations/`](../migrations).
-- **Tests:** `npm test` runs 33 unit tests with Node's built-in runner, including the store's SQL against the real migrations in an in-memory SQLite.
+- **Tests:** `npm test` runs 39 unit tests with Node's built-in runner, including the store's SQL against the real migrations in an in-memory SQLite.
 
 ## Data
 
