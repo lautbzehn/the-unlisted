@@ -30,7 +30,11 @@ export async function verifyHuman(request, env, token, fetchImpl = fetch) {
   } catch {
     throw new HttpError(503, 'The "not a bot" check is unavailable. Try again in a minute.');
   }
-  if (verdict?.success !== true) throw fail();
+  if (verdict?.success !== true) {
+    // Cloudflare's reason codes, e.g. "invalid-input-response" (a bad or reused token) or "invalid-input-secret".
+    console.warn('turnstile: rejected', verdict?.['error-codes']);
+    throw fail();
+  }
   // A token minted on another site using the same widget must not count here.
   const expected = new URL(request.url).hostname;
   if (!TEST_SECRET.test(env.TURNSTILE_SECRET) && verdict.hostname !== expected) throw fail();
