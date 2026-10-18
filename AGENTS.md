@@ -39,4 +39,4 @@ npm run subscribers  # read the newsletter list (private)
 
 ## Where things are
 
-The architecture is in [docs/architecture](docs/architecture_v1.1_10.13.2026.md) and the research pipeline in [docs/data-pipeline](docs/data-pipeline_v1.0_10.11.2026.md). The reasoning behind the bigger choices is in [docs/adr](docs/adr).
+The architecture is in [docs/architecture](docs/architecture_v1.2_10.17.2026.md) and the research pipeline in [docs/data-pipeline](docs/data-pipeline_v1.0_10.11.2026.md). The reasoning behind the bigger choices is in [docs/adr](docs/adr).

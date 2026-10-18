@@ -49,24 +49,45 @@ export async function castVote(db, cityId, voter) {
   return { counted: insert.meta.changes > 0, votes: current.results[0]?.votes ?? 0 };
 }
 
+/** Rolling 24-hour window shared by the limits below. */
+const LAST_DAY = "created_at > datetime('now', '-1 day')";
+
 /**
- * A rolling 24-hour cap per visitor and form. Logs this attempt when it is allowed.
+ * Claims one submission for a form: allowed while this visitor is under their own limit and the form as a
+ * whole is under its site-wide limit, both over the last 24 hours. The check and the log entry are a single
+ * SQL statement, so a burst of simultaneous requests cannot slip past either limit.
+ * @param {D1Database} db
+ * @param {string} voter Anonymous visitor id.
  * @param {string} kind A form name, such as "contact".
- * @returns {Promise<boolean>} True when the visitor has reached the cap.
+ * @param {{ perVisitor: number, siteWide: number }} limits
+ * @returns {Promise<'ok' | 'visitor' | 'site'>} 'ok' when allowed (and logged), otherwise which limit was reached.
  */
-export async function overDailyCap(db, voter, kind, max) {
-  const r = await db.prepare("SELECT COUNT(*) AS n FROM form_log WHERE voter = ? AND kind = ? AND created_at > datetime('now', '-1 day')").bind(voter, kind).first();
-  if (r.n >= max) return true;
-  await db.prepare('INSERT INTO form_log (voter, kind) VALUES (?, ?)').bind(voter, kind).run();
-  return false;
+export async function claimSlot(db, voter, kind, { perVisitor, siteWide }) {
+  const { meta } = await db
+    .prepare(
+      `INSERT INTO form_log (voter, kind) SELECT ?1, ?2
+       WHERE (SELECT COUNT(*) FROM form_log WHERE voter = ?1 AND kind = ?2 AND ${LAST_DAY}) < ?3
+         AND (SELECT COUNT(*) FROM form_log WHERE kind = ?2 AND ${LAST_DAY}) < ?4`,
+    )
+    .bind(voter, kind, perVisitor, siteWide)
+    .run();
+  if (meta.changes > 0) return 'ok';
+  const { n } = await db.prepare(`SELECT COUNT(*) AS n FROM form_log WHERE kind = ? AND ${LAST_DAY}`).bind(kind).first();
+  return n >= siteWide ? 'site' : 'visitor';
 }
 
-/** City suggestions keep their own log, so the cap survives independently of other forms. */
-export async function overSuggestionCap(db, voter, max) {
-  const r = await db.prepare("SELECT COUNT(*) AS n FROM suggestion_log WHERE voter = ? AND created_at > datetime('now', '-1 day')").bind(voter).first();
-  if (r.n >= max) return true;
-  await db.prepare('INSERT INTO suggestion_log (voter) VALUES (?)').bind(voter).run();
-  return false;
+/**
+ * Notes that a form reached its site-wide limit. True only the first time in 24 hours, so the owner gets one
+ * heads-up rather than one email per blocked attempt.
+ * @param {D1Database} db
+ * @param {string} kind
+ */
+export async function firstLimitNotice(db, kind) {
+  const { meta } = await db
+    .prepare(`INSERT INTO form_log (voter, kind) SELECT 'site', ?1 WHERE NOT EXISTS (SELECT 1 FROM form_log WHERE kind = ?1 AND ${LAST_DAY})`)
+    .bind(`limit:${kind}`)
+    .run();
+  return meta.changes > 0;
 }
 
 export function saveMessage(db, m) {

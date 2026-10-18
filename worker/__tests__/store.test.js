@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { beforeEach, describe, test } from 'node:test';
-import { castVote, findVotableCity, listCities, overDailyCap, upsertSubscriber } from '../store.js';
+import { castVote, claimSlot, findVotableCity, firstLimitNotice, listCities, upsertSubscriber } from '../store.js';
 import { createD1 } from './d1-sqlite.js';
 
 const MIGRATIONS = new URL('../../migrations/', import.meta.url);
@@ -23,11 +23,32 @@ describe('castVote', () => {
   });
 });
 
-describe('overDailyCap', () => {
-  test('allows up to the cap, then blocks', async () => {
-    for (let i = 0; i < 3; i++) assert.equal(await overDailyCap(db, 'v', 'contact', 3), false);
-    assert.equal(await overDailyCap(db, 'v', 'contact', 3), true);
-    assert.equal(await overDailyCap(db, 'other', 'contact', 3), false);
+describe('claimSlot', () => {
+  const limits = { perVisitor: 3, siteWide: 5 };
+  test('allows each visitor up to their own limit', async () => {
+    for (let i = 0; i < 3; i++) assert.equal(await claimSlot(db, 'v', 'contact', limits), 'ok');
+    assert.equal(await claimSlot(db, 'v', 'contact', limits), 'visitor');
+    assert.equal(await claimSlot(db, 'other', 'contact', limits), 'ok');
+  });
+  test('stops everyone at the site-wide limit, however many addresses send', async () => {
+    for (let i = 0; i < 5; i++) assert.equal(await claimSlot(db, `v${i}`, 'contact', limits), 'ok');
+    assert.equal(await claimSlot(db, 'new-visitor', 'contact', limits), 'site');
+  });
+  test('keeps each form separate', async () => {
+    for (let i = 0; i < 5; i++) await claimSlot(db, `v${i}`, 'contact', limits);
+    assert.equal(await claimSlot(db, 'v0', 'place', limits), 'ok');
+  });
+  test('only counts the last 24 hours', async () => {
+    db.sqlite.exec("INSERT INTO form_log (voter, kind, created_at) VALUES ('v', 'contact', datetime('now', '-2 days')), ('v', 'contact', datetime('now', '-2 days')), ('v', 'contact', datetime('now', '-2 days'))");
+    assert.equal(await claimSlot(db, 'v', 'contact', limits), 'ok');
+  });
+});
+
+describe('firstLimitNotice', () => {
+  test('is true once per form per day', async () => {
+    assert.equal(await firstLimitNotice(db, 'contact'), true);
+    assert.equal(await firstLimitNotice(db, 'contact'), false);
+    assert.equal(await firstLimitNotice(db, 'place'), true);
   });
 });
 
