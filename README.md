@@ -31,7 +31,7 @@
 
 **How it was made.** AI did the heavy lifting and a person made every call. A pipeline screened **17,506 venues** from open map data, filtered out chains, and had Claude (with web search) discover and research candidates. Every published place was reviewed by hand. Total AI research cost: **about $70**.
 
-> Built by **[Dan West](https://www.icarianforge.com)**, an AI strategy and adoption leader with nearly 20 years in IT, by directing Claude Code as the engineering team.
+> Built by **[Dan West](https://www.icarianforge.com)**, an AI strategy and operations leader with nearly 20 years in IT, by directing Claude Code as the engineering team.
 
 <p>
   <img src="docs/screenshots/home.jpg" width="100%" alt="The Unlisted front page: a passport cover, tonight's doors, and Surprise me">
