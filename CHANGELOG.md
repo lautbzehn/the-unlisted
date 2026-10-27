@@ -4,6 +4,9 @@ Notable changes to The Unlisted. The format follows [Keep a Changelog](https://k
 
 ## [Unreleased]
 
+### Added
+- Anonymous visit counts for Dan, the same as on www.icarianforge.com: the pages you open, how long, how far down, links off the site, and the tagged link (?via=) if there was one. Never the Bucket List, stamps, ratings or notes, never buttons, and never anything typed. No cookies, and nothing at all under Global Privacy Control. The privacy page has a new "Visit counts" section. The script is `public/insights.js`, reporting to www.icarianforge.com/api/i.
+
 ## [1.5.0] · 2026-10-17
 
 ### Security

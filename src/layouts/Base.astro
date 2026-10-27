@@ -44,6 +44,9 @@ const imageUrl = image ? new URL(image, origin).href : undefined;
         }
       } catch (e) {}
     </script>
+    <!-- Anonymous visit counts for Dan (pages, time, links off the site; never buttons, lists or anything typed):
+         the same script as www.icarianforge.com, explained on /privacy/ -->
+    <script is:inline src="/insights.js" data-endpoint="https://www.icarianforge.com/api/i" data-clicks="outbound" defer></script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
