@@ -4,6 +4,12 @@ Notable changes to The Unlisted. The format follows [Keep a Changelog](https://k
 
 ## [Unreleased]
 
+### Changed
+- Redesign v2.0 · 10.29.2026, part one: the design system and the front pages. True black, stamp red for actions, a cold light for live states and scores, Instrument Serif headlines, Inter for text and data, Plex Mono for passport lines, body text up to 17px. Fonts are self-hosted (Google Fonts removed from the page and the content policy). The front page has a shutter title over a live film grain, a "right now" grid on hairline rails with a pointer spotlight, scores that fill in as they appear, deep cuts that pin and stack with each name as a neon sign, and a version stamp in the footer. Everything has a still version under reduced motion. Design notes: `docs/design-system_v2.0_10.29.2026.md`. Other pages pick up the new colors and type and get their own redesign next.
+
+### Removed
+- The lantern (the warm light that followed the pointer site-wide). The front page's grain replaces it.
+
 ### Added
 - Anonymous visit counts for Dan, the same as on www.icarianforge.com: the pages you open, how long, how far down, links off the site, and the tagged link (?via=) if there was one. Never the Bucket List, stamps, ratings or notes, never buttons, and never anything typed. No cookies, and nothing at all under Global Privacy Control. The privacy page has a new "Visit counts" section. The script is `public/insights.js`, reporting to www.icarianforge.com/api/i.
 

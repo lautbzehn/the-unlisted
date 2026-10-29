@@ -1,0 +1,19 @@
+---
+// A place's name as a neon sign: its own visual, generated from its id so it never changes between visits.
+// The id picks the tube color (stamp red or cold light), the lettering (script or block) and which letter
+// flickers. Real text, so it reads and selects like any heading. Styles in home.css (.neon).
+interface Props { id: string; name: string; tag?: string }
+const { id, name, tag = 'span' } = Astro.props;
+let h = 2166136261; // FNV-1a
+for (const c of id) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619) >>> 0; }
+const tone = h & 1 ? 'red' : 'cold';
+const face = (h >>> 1) & 1 ? 'script' : 'block';
+const tilt = (((h >>> 2) % 5) - 2) * 0.6; // -1.2deg to 1.2deg, hung by hand
+const letters = [...name].map((ch, i) => ({ ch, i })).filter(({ ch }) => /\p{L}/u.test(ch));
+const at = letters.length ? letters[(h >>> 5) % letters.length].i : -1;
+const chars = [...name];
+const Tag = tag;
+---
+<Tag class="neon" data-tone={tone} data-face={face} style={`--tilt:${tilt}deg;--len:${chars.length}`}>
+  {at < 0 ? name : <>{chars.slice(0, at).join('')}<span class="flick">{chars[at]}</span>{chars.slice(at + 1).join('')}</>}
+</Tag>

@@ -1,6 +1,12 @@
+import { inView, scroll, stagger } from 'motion';
+import { animate } from 'motion/mini'; // the small build: hardware-accelerated (WAAPI) animations only
 import { getState, update, toast } from './passport.js';
 import { initSurprise } from './surprise.js';
 import { currentBucket } from './time.js';
+
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
+const EASE = [0.22, 1, 0.36, 1]; // --ease in tokens.css
 
 // This city's Explore page (Bay Area or San Diego)
 const EXPLORE = document.getElementById('main').dataset.explore ?? '/explore/';
@@ -18,35 +24,101 @@ for (const row of document.querySelectorAll('.browse[data-bucket]')) {
   row.querySelector('[data-kicker]').textContent = `Right now · ${clock} in ${document.getElementById('main').dataset.short ?? 'the Bay'}`;
 }
 
-// Each row shows different places: skip anything a row above already shows, then keep 10.
+// Each row shows different places: skip anything a row above already shows. Rows keep a fixed number
+// (data-keep; home.css hides the rest), so skipping one pulls up a spare and the row never changes height.
 const seen = new Set();
-for (const row of document.querySelectorAll('.browse:not([hidden])')) {
+for (const row of document.querySelectorAll('.browse:not([hidden]) [data-row]')) {
+  const keep = Number(row.dataset.keep) || Infinity;
   let kept = 0;
-  for (const li of row.querySelectorAll('.strip > li')) {
-    const id = li.firstElementChild.dataset.id;
-    if (seen.has(id) || kept >= 10) { li.remove(); continue; }
-    seen.add(id);
-    kept++;
+  for (const li of [...row.children]) {
+    const id = li.querySelector('[data-id]')?.dataset.id;
+    if (seen.has(id)) { li.remove(); continue; }
+    if (kept++ < keep) seen.add(id);
   }
 }
 
-// Arrow buttons on the sideways rows, for mouse users (touch and trackpads just swipe).
-if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
-  for (const wrap of document.querySelectorAll('.strip-wrap')) {
-    const strip = wrap.querySelector('.strip');
-    const [prev, next] = wrap.querySelectorAll('.strip-nav');
-    const sync = () => {
-      prev.hidden = strip.scrollLeft < 8;
-      next.hidden = strip.scrollLeft + strip.clientWidth > strip.scrollWidth - 8;
-    };
-    const go = (dir) => strip.scrollBy({ left: dir * strip.clientWidth * 0.85, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    prev.addEventListener('click', () => go(-1));
-    next.addEventListener('click', () => go(1));
-    strip.addEventListener('scroll', sync, { passive: true });
-    addEventListener('resize', sync);
-    sync();
+// The hero's clock, next to where we are: the local time where the places are
+const heroClock = document.querySelector('[data-hero-clock]');
+if (heroClock) heroClock.textContent = `${clock} PT`;
+
+// The grain starts once the page has settled, so it never competes with the first paint,
+// and not while the welcome gate covers the hero (it waits for the gate to open)
+const grainCanvas = document.querySelector('[data-grain]');
+if (grainCanvas && !reduceMotion) {
+  const go = () => import('./grain.js').then(({ startGrain }) => startGrain(grainCanvas));
+  const idle = () => ('requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 2500 }) : setTimeout(go, 600));
+  const whenOpen = () => {
+    const html = document.documentElement;
+    if (!html.hasAttribute('data-gate')) return idle();
+    const mo = new MutationObserver(() => { if (!html.hasAttribute('data-gate')) { mo.disconnect(); idle(); } });
+    mo.observe(html, { attributes: true, attributeFilter: ['data-gate'] });
+  };
+  if (document.readyState === 'complete') whenOpen(); else addEventListener('load', whenOpen, { once: true });
+}
+
+// Grids on rails: a spotlight follows the pointer and lights the hairlines (the drawing is in home.css)
+if (finePointer && !reduceMotion) {
+  for (const rails of document.querySelectorAll('[data-spotlight]')) {
+    let raf = 0, x = 0, y = 0;
+    const paint = () => { raf = 0; rails.style.setProperty('--mx', `${x}px`); rails.style.setProperty('--my', `${y}px`); };
+    rails.addEventListener('pointermove', (e) => {
+      const r = rails.getBoundingClientRect();
+      x = e.clientX - r.left; y = e.clientY - r.top;
+      rails.classList.add('lit');
+      if (!raf) raf = requestAnimationFrame(paint);
+    }, { passive: true });
+    rails.addEventListener('pointerleave', () => rails.classList.remove('lit'));
   }
 }
+
+// A score's number counts up alongside its bar, on the same curve (cubic-bezier .22,1,.36,1 is close to out-quint)
+const countUp = (num, { duration, delay }) => {
+  const to = Number(num.dataset.score), t0 = performance.now() + delay * 1000;
+  num.textContent = '0';
+  const tick = (now) => {
+    const k = Math.min(1, Math.max(0, (now - t0) / (duration * 1000)));
+    num.textContent = Math.round(to * (1 - (1 - k) ** 5));
+    if (k < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+};
+
+// Scroll-driven motion is set up after the first paint, reading the layout once before changing anything
+const setUpMotion = () => {
+  const groups = [...document.querySelectorAll('[data-row]')].map((group) => {
+    const scores = [...group.querySelectorAll('.score')].filter((sc) => sc.offsetParent);
+    return { group, scores, bars: scores.map((sc) => sc.querySelector('.score-bar i')) };
+  });
+  const heads = [...document.querySelectorAll('.home .row-head, .next-cities')].filter((h) => h.getBoundingClientRect().top >= innerHeight);
+  const items = [...document.querySelectorAll('.stack > li')].filter((li) => li.offsetParent);
+
+  // Scores fill in as they come into view, and the number counts up with the bar
+  for (const { group, scores, bars } of groups) {
+    bars.forEach((b) => { b.style.transform = 'scaleX(0)'; });
+    inView(group, () => {
+      bars.forEach((b, i) => {
+        const opts = { duration: 1.2, delay: 0.1 + i * 0.06, ease: EASE };
+        animate(b, { transform: ['scaleX(0)', `scaleX(${b.style.getPropertyValue('--v')})`] }, opts);
+        countUp(scores[i].querySelector('[data-score]'), opts);
+      });
+    }, { amount: 0.25 });
+  }
+
+  // Section heads rise in as they arrive (ones already on screen are left be)
+  for (const head of heads) {
+    const parts = [...head.children];
+    parts.forEach((p) => { p.style.opacity = '0'; p.style.transform = 'translateY(28px)'; });
+    inView(head, () => { animate(parts, { opacity: 1, transform: 'translateY(0px)' }, { duration: 0.9, delay: stagger(0.07), ease: EASE }); }, { amount: 0.4 });
+  }
+
+  // Deep cuts: as each card lands on the pile, the one beneath it sinks back and dims
+  items.forEach((li, i) => {
+    const next = items[i + 1];
+    if (!next) return;
+    scroll(animate(li.firstElementChild, { transform: ['scale(1)', 'scale(0.93)'], '--shade': [0, 0.55] }, { ease: 'linear', duration: 1 }), { target: next, offset: ['start end', 'start start'] });
+  });
+};
+if (!reduceMotion) requestAnimationFrame(() => setTimeout(setUpMotion));
 
 // Under the logo: "Tonight's doors:" and a word that flips through the kinds of places that fit this hour.
 const FLIP_LABEL = { morning: 'This morning’s doors:', midday: 'Today’s lunch doors:', evening: 'Tonight’s doors:', late: 'Late-night doors:' };
@@ -71,23 +143,6 @@ if (flipper) {
         setTimeout(() => old.remove(), 600);
       }, 2400);
     }
-  }
-}
-
-// Tickets tilt a little under a warm light that follows the pointer (after 21st.dev's Optimized Tilt Card, gentler)
-if (matchMedia('(hover: hover) and (pointer: fine)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  for (const t of document.querySelectorAll('.ticket')) {
-    let raf = 0;
-    t.addEventListener('pointermove', (e) => {
-      const r = t.getBoundingClientRect(), px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        t.classList.add('tilt');
-        t.style.setProperty('--ry', `${(px - 0.5) * 12}deg`); t.style.setProperty('--rx', `${(0.5 - py) * 10}deg`);
-        t.style.setProperty('--px', `${px * 100}%`); t.style.setProperty('--py', `${py * 100}%`);
-      });
-    });
-    t.addEventListener('pointerleave', () => { cancelAnimationFrame(raf); t.classList.remove('tilt'); t.style.setProperty('--rx', '0deg'); t.style.setProperty('--ry', '0deg'); });
   }
 }
 

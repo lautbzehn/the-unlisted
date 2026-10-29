@@ -1,50 +1,48 @@
 ---
-// A front-page row: a heading, a sideways strip of small tickets, and a link to see the rest on Explore.
-import GemDoor from './GemDoor.astro';
+// A front-page row: a heading and a grid of tickets drawn on hairline rails, with a pointer spotlight and corner
+// crosshairs (home.css). Phones get the same tickets as a sideways strip. Each ticket's Gem score is a cold bar
+// that fills in as it scrolls into view (scripts/home.js).
 import { FAME, whereText } from '../lib/places.js';
 import { stubCode } from '../lib/mrz.js';
 interface Props {
   id: string; title: string; kicker?: string; sub?: string; places: any[]; total: number; seeAll: string;
-  max?: number; hidden?: boolean; bucket?: string;
+  max?: number; keep?: number; hidden?: boolean; bucket?: string;
 }
-// A few extra are sent so the page can skip places another row already shows and still fill the strip.
-const { id, title, kicker, sub, places, total, seeAll, max = 18, hidden = false, bucket } = Astro.props;
+// A few extra are sent so the page can skip places another row already shows and still fill the grid.
+// `keep` is how many show (home.css hides the rest), so skipping one never changes the row's height.
+const { id, title, kicker, sub, places, total, seeAll, max = 10, keep = 8, hidden = false, bucket } = Astro.props;
 const shown = places.slice(0, max);
 ---
 <section class="browse" aria-labelledby={`${id}-h`} hidden={hidden} data-bucket={bucket}>
-  <div class="browse-head">
-    <div>
-      {kicker && <p class="eyebrow" data-kicker>{kicker}</p>}
-      <h2 id={`${id}-h`}>{title}</h2>
-      {sub && <p class="browse-sub">{sub}</p>}
-    </div>
-    <a class="more-link" href={seeAll}>See all {total}<span class="sr-only"> {title.toLowerCase()}</span> →</a>
+  <div class="row-head">
+    {kicker && <p class="kicker mono" data-kicker>{kicker}</p>}
+    <h2 id={`${id}-h`}>{title}</h2>
+    {sub && <p class="row-sub">{sub}</p>}
+    <a class="more-link" href={seeAll}>See all {total}<span class="sr-only"> {title.toLowerCase()}</span> <span aria-hidden="true">→</span></a>
   </div>
-  <div class="strip-wrap">
-    <button class="strip-nav prev" type="button" aria-label="Scroll back" tabindex="-1" hidden>‹</button>
-    <ul class="strip" role="list">
-      {shown.map((p, i) => (
-        <li style={`--i:${i}`}>
-          <a class="ticket" href={`/place/${p.id}/`} data-id={p.id} data-status="none">
-            <span class="t-top">
-              <span class="t-title">
-                <span class="t-name">{p.name}</span>
-                <span class="t-meta">{whereText(p)}</span>
-              </span>
-              <GemDoor score={p.score} />
+  <div class="rails" data-spotlight>
+    <ul class="rail-grid" role="list" data-row data-keep={keep} style={`--keep:${keep}`}>
+      {shown.map((p) => (
+        <li>
+          <a class="ticket cell" href={`/place/${p.id}/`} data-id={p.id} data-status="none">
+            <span class="cell-top mono" aria-hidden="true"><span class="cell-n"></span>{p.fame && <span>{FAME[p.fame]}</span>}</span>
+            <span class="cell-name">{p.name}</span>
+            <span class="cell-meta">{whereText(p)}</span>
+            <span class="cell-line">{p.tagline}</span>
+            <span class="score" role="img" aria-label={`Gem score ${p.score} out of 100`}>
+              <span class="score-cap mono" aria-hidden="true">Gem</span>
+              <span class="score-bar" aria-hidden="true"><i style={`--v:${p.score / 100}`}></i></span>
+              <b class="mono" aria-hidden="true" data-score={p.score}>{p.score}</b>
             </span>
-            <span class="t-line">{p.tagline}</span>
             <span class="t-foot">
-              {p.fame && <span>{FAME[p.fame]}</span>}
+              {p.fame && <span class="sr-only">{FAME[p.fame]}</span>}
               {p.draft && <span class="t-draft">Draft</span>}
               <span class="t-status"></span>
             </span>
-            <span class="t-stub" aria-hidden="true">{stubCode(p)}</span>
-            <span class="sheen" aria-hidden="true"></span>
+            <span class="t-stub mono" aria-hidden="true">{stubCode(p)}</span>
           </a>
         </li>
       ))}
     </ul>
-    <button class="strip-nav next" type="button" aria-label="Scroll forward" tabindex="-1" hidden>›</button>
   </div>
 </section>

@@ -1,0 +1,88 @@
+/* The Unlisted design system v2.0 · 10.29.2026 — "After hours"
+   A city at 2 a.m.: true black, one stamp-red for actions and "you are here", one cold light for anything live
+   and every score. Oversized serif for headlines, a grotesk for everything you read or scan, mono for the
+   machine-readable passport lines. Every text color is checked for contrast on --bg (ratios in the comments).
+   The older token names (--go, --font-title, --font-head, --font-read) stay as aliases, so pages that haven't
+   been redesigned yet inherit the new look without breaking. Reference: docs/design-system_v2.0_10.29.2026.md */
+
+@import '@fontsource/instrument-serif/400.css';
+@import '@fontsource/instrument-serif/400-italic.css';
+@import '@fontsource-variable/inter/wght.css';
+@import '@fontsource/ibm-plex-mono/latin-500.css';
+
+/* Close stand-ins while the real fonts load, sized to match, so the headline doesn't jump when they arrive */
+@font-face { font-family: 'Display Fallback'; src: local('Times New Roman'), local('Times'), local('Georgia'); size-adjust: 88%; ascent-override: 98%; descent-override: 26%; }
+@font-face { font-family: 'Grotesk Fallback'; src: local('Arial'), local('Helvetica'); size-adjust: 107%; ascent-override: 90%; descent-override: 22%; }
+
+@property --open { syntax: '<length>'; inherits: false; initial-value: 0px; } /* the shutter's open slats, see home.css */
+@property --shade { syntax: '<number>'; inherits: false; initial-value: 0; } /* how far a stacked card has sunk */
+
+:root {
+  color-scheme: dark;
+
+  /* Surfaces: true black, and two steps of lift */
+  --bg: #000;
+  --raise: #0c0c0d;     /* cards, panels */
+  --raise-2: #161618;   /* hover, pressed */
+  --glass: rgba(10, 10, 11, 0.72);
+
+  /* Ink */
+  --ink: #f4f1ea;       /* warm white, 18.6:1 */
+  --mute: #a6a29a;      /* 8.3:1 */
+  --faint: #7e7a73;     /* passport code lines and fine print, 4.9:1 on black, 4.6:1 on --raise */
+  --line: rgba(244, 241, 234, 0.1);
+  --line-strong: rgba(244, 241, 234, 0.22);
+
+  /* Stamp red: actions and "you are here" only. Text 6.2:1; buttons are a deeper fill with white text, 4.9:1 */
+  --accent: #ff4636;
+  --accent-fill: #d92b1f;
+  --accent-fill-hover: #ec3326;
+  --accent-soft: rgba(255, 70, 54, 0.1);
+  --accent-glow: rgba(255, 70, 54, 0.45);
+  --on-accent: #fff;
+
+  /* Cold light: live states ("right now", open), scores, and "been there". Never for actions. 14.6:1 */
+  --cold: #8fe3ff;
+  --cold-soft: rgba(143, 227, 255, 0.1);
+  --cold-glow: rgba(143, 227, 255, 0.5);
+  --on-cold: #001018;
+
+  /* Icarian Forge brand colors for the maker's mark. Fixed. */
+  --if-ember: #f97343;
+  --if-emerald: #34d399;
+
+  /* Type */
+  --font-display: 'Instrument Serif', 'Display Fallback', Georgia, serif;
+  --font-ui: 'Inter Variable', 'Grotesk Fallback', system-ui, sans-serif;
+  --font-code: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --text: 1.0625rem;    /* body, 17px: scaled up from 16 */
+  --text-lg: 1.25rem;
+  --text-sm: 0.9375rem;
+  --text-xs: 0.8125rem;
+  --display-xl: clamp(4.5rem, 21vw, 19rem);     /* the hero */
+  --display-l: clamp(2.75rem, 8vw, 5.5rem);     /* section heads */
+  --display-m: clamp(2rem, 5vw, 3rem);          /* card titles */
+  --tracking-mono: 0.14em;
+
+  /* Space and shape */
+  --gutter: clamp(16px, 4vw, 40px);
+  --max: 1280px;
+  --radius: 4px;
+  --radius-lg: 14px;
+  --shadow: 0 30px 60px -30px rgba(0, 0, 0, 1);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);       /* out-expo-ish: arrives fast, settles slow */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --spring: cubic-bezier(0.3, 1.5, 0.5, 1);
+  --dur: 0.6s;
+
+  /* Aliases for templates not yet redesigned */
+  --go: var(--cold);
+  --go-soft: var(--cold-soft);
+  --on-go: var(--on-cold);
+  --brass: var(--mute);
+  --font-read: var(--font-ui);
+  --font-title: var(--font-display);
+  --font-head: var(--font-display);
+}
