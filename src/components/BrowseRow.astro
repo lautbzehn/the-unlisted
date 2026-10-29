@@ -4,6 +4,7 @@
 // that fills in as it scrolls into view (scripts/home.js).
 import { FAME, whereText } from '../lib/places.js';
 import { stubCode } from '../lib/mrz.js';
+import Score from './Score.astro';
 interface Props {
   id: string; title: string; kicker?: string; sub?: string; places: any[]; total: number; seeAll: string;
   max?: number; keep?: number; hidden?: boolean; bucket?: string;
@@ -15,7 +16,7 @@ const shown = places.slice(0, max);
 ---
 <section class="browse" aria-labelledby={`${id}-h`} hidden={hidden} data-bucket={bucket}>
   <div class="row-head">
-    {kicker && <p class="kicker mono" data-kicker>{kicker}</p>}
+    {kicker && <p class:list={['kicker mono', { live: bucket }]} data-kicker>{kicker}</p>}
     <h2 id={`${id}-h`}>{title}</h2>
     {sub && <p class="row-sub">{sub}</p>}
     <a class="more-link" href={seeAll}>See all {total}<span class="sr-only"> {title.toLowerCase()}</span> <span aria-hidden="true">→</span></a>
@@ -29,11 +30,7 @@ const shown = places.slice(0, max);
             <span class="cell-name">{p.name}</span>
             <span class="cell-meta">{whereText(p)}</span>
             <span class="cell-line">{p.tagline}</span>
-            <span class="score" role="img" aria-label={`Gem score ${p.score} out of 100`}>
-              <span class="score-cap mono" aria-hidden="true">Gem</span>
-              <span class="score-bar" aria-hidden="true"><i style={`--v:${p.score / 100}`}></i></span>
-              <b class="mono" aria-hidden="true" data-score={p.score}>{p.score}</b>
-            </span>
+            <Score score={p.score} />
             <span class="t-foot">
               {p.fame && <span class="sr-only">{FAME[p.fame]}</span>}
               {p.draft && <span class="t-draft">Draft</span>}

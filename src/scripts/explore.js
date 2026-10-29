@@ -4,6 +4,9 @@ import { getState, onChange, toast } from './passport.js';
 import { openSheet } from './mapsheet.js';
 import { TIME_LABEL, currentBucket, resolveTime } from './time.js';
 import { KM_TO_MI, distanceKm, getPosition } from './geo.js';
+import { initSpotlight } from './rails.js';
+
+initSpotlight(); // the list's rails catch the light under the pointer (components.css)
 
 // Bucket List and Stamped moved to the My Passport page; old links still land there.
 const old = new URLSearchParams(location.search).get('list');

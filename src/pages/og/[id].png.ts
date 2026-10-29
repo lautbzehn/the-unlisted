@@ -1,20 +1,24 @@
-// Builds a 1200x630 share-preview image per place at build time (no per-visitor cost),
-// drawn as an old passport page to match the site: sepia, letterpress title, the Gem door.
+// Builds a 1200x630 share-preview image per place at build time (no per-visitor cost), in the v2.0 look:
+// the place's name hung as its neon sign (lib/neon.js, the same one as on its page) on a black wall,
+// with where it is, the one-line why, and the Gem score as a cold bar.
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
 import { readFileSync } from 'node:fs';
 import type { APIRoute } from 'astro';
-import { places, FAME, whenText, METROS, whereText } from '../../lib/places.js';
+import { places, FAME, METROS, whereText } from '../../lib/places.js';
+import { neonFor } from '../../lib/neon.js';
 
 const font = (pkg: string, file: string) =>
   readFileSync(new URL(`../../../node_modules/@fontsource/${pkg}/files/${file}`, import.meta.url));
-const sans = font('archivo', 'archivo-latin-400-normal.woff');
-const sansBold = font('archivo', 'archivo-latin-800-normal.woff');
-const serif = font('source-serif-4', 'source-serif-4-latin-400-normal.woff');
-const title = font('im-fell-english-sc', 'im-fell-english-sc-latin-400-normal.woff');
+const display = font('instrument-serif', 'instrument-serif-latin-400-normal.woff');
+const displayItalic = font('instrument-serif', 'instrument-serif-latin-400-italic.woff');
+const thin = font('inter', 'inter-latin-200-normal.woff');
+const sans = font('inter', 'inter-latin-400-normal.woff');
+const mono = font('ibm-plex-mono', 'ibm-plex-mono-latin-500-normal.woff');
 
-// The site's colors (src/styles/global.css).
-const C = { bg: '#15110c', ink: '#eee2c8', mute: '#b5a68a', accent: '#d9784f', brass: '#a08a62' };
+// The site's colors (src/styles/tokens.css).
+const C = { bg: '#000000', ink: '#f4f1ea', mute: '#a6a29a', faint: '#7e7a73', line: 'rgba(244,241,234,0.14)', red: '#ff4636', cold: '#8fe3ff' };
+const TUBE = { red: { c: C.red, core: '#ffe4df', wall: 'rgba(255,70,54,0.16)' }, cold: { c: C.cold, core: '#effcff', wall: 'rgba(143,227,255,0.13)' } };
 
 export function getStaticPaths() {
   return places.map((place) => ({ params: { id: place.id }, props: { place } }));
@@ -28,45 +32,47 @@ const clip = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1).trim
 
 export const GET: APIRoute = async ({ props }) => {
   const p = props.place as (typeof places)[number];
-  const nameSize = p.name.length > 26 ? 80 : p.name.length > 16 ? 96 : 116;
-  const where = whereText(p);
-  const labels = [FAME[p.fame], whenText(p.when)].filter(Boolean).join(' · ');
+  const neon = neonFor(p.id, p.name);
+  const tube = TUBE[neon.tone];
+  const len = [...p.name].length;
+  // As big as the line allows: script letters are narrow, block capitals are wide and tracked
+  const size = neon.face === 'script' ? Math.min(150, Math.round(2300 / len)) : Math.min(104, Math.round(1500 / len));
+  const mono14 = { fontFamily: 'Mono', fontSize: 20, letterSpacing: 3, color: C.mute };
 
-  const tree = el('div', { width: '100%', height: '100%', background: C.bg, padding: 28 }, [
-    // an engraved double rule (the image tool can't draw `double` borders, so it's two nested lines)
-    el('div', { flex: 1, border: `2px solid ${C.brass}`, padding: 6 }, [
-    el('div', { flex: 1, flexDirection: 'column', border: '1px solid rgba(160,138,98,0.6)', padding: '28px 44px', color: C.ink, fontFamily: 'Sans' }, [
-      el('div', { justifyContent: 'space-between', alignItems: 'center' }, [
-        el('div', { fontFamily: 'Title', fontSize: 40 }, 'The Unlisted'),
-        el('div', { fontSize: 24, color: C.mute }, p.sample ? 'Sample, not a real place' : `${METROS[p.metro]?.name ?? 'Bay Area'} · All hours`),
+  const tree = el('div', {
+    width: '100%', height: '100%', flexDirection: 'column', padding: '40px 56px', color: C.ink, fontFamily: 'Sans',
+    backgroundColor: C.bg, backgroundImage: `radial-gradient(ellipse 60% 55% at 50% 46%, ${tube.wall}, transparent 70%)`,
+  }, [
+    el('div', { justifyContent: 'space-between', alignItems: 'center' }, [
+      el('div', { alignItems: 'center' }, [
+        el('div', { width: 12, height: 12, borderRadius: 6, backgroundColor: C.red, marginRight: 14, boxShadow: `0 0 14px ${C.red}` }),
+        el('div', { fontFamily: 'Display', fontSize: 40 }, 'The Unlisted'),
       ]),
-      el('div', { flex: 1, alignItems: 'center', justifyContent: 'space-between' }, [
-        el('div', { flexDirection: 'column', flex: 1, paddingRight: 48 }, [
-          el('div', { fontSize: 28, color: C.mute }, clip(`${where} · ${p.kind}`, 52)),
-          el('div', { fontFamily: 'Title', fontSize: nameSize, lineHeight: 1, marginTop: 8 }, p.name),
-          p.tagline ? el('div', { fontFamily: 'Serif', fontSize: 30, color: C.ink, marginTop: 10, opacity: 0.9 }, p.tagline) : null,
-          el('div', { flexDirection: 'column', marginTop: 22, padding: '12px 20px', borderLeft: `5px solid ${C.accent}`, background: 'rgba(217,120,79,0.1)', borderRadius: '0 10px 10px 0' }, [
-            el('div', { fontFamily: 'SansBold', fontSize: 22, color: C.accent }, 'Order'),
-            el('div', { fontFamily: 'Serif', fontSize: 28, lineHeight: 1.3, marginTop: 2 }, clip(p.order, 70)),
-          ]),
-        ]),
-        // the Gem door: the score on a little arched door with a keyhole
-        el('div', { position: 'relative', width: 200, height: 260, flexShrink: 0 }, [
-          { type: 'svg', props: { width: 200, height: 260, viewBox: '0 0 40 52', style: { position: 'absolute', left: 0, top: 0 }, children: [
-            { type: 'path', props: { d: 'M5 50V20a15 15 0 0 1 30 0v30Z', fill: 'rgba(217,120,79,0.1)', stroke: C.accent, strokeWidth: 1.6, strokeLinejoin: 'round' } },
-            { type: 'path', props: { d: 'M1 50.5h38', stroke: C.accent, strokeWidth: 1.6, strokeLinecap: 'round' } },
-            { type: 'circle', props: { cx: 20, cy: 39, r: 2, fill: C.accent } },
-            { type: 'path', props: { d: 'M19 40.5h2l.8 4.2h-3.6Z', fill: C.accent } },
-          ] } },
-          el('div', { position: 'absolute', left: 0, right: 0, top: 58, justifyContent: 'center', fontFamily: 'SansBold', fontSize: 20, letterSpacing: 6, color: C.accent }, 'GEM'),
-          el('div', { position: 'absolute', left: 0, right: 0, top: 86, justifyContent: 'center', fontFamily: 'SansBold', fontSize: 78, lineHeight: 1, color: C.ink }, String(p.score)),
-        ]),
-      ]),
-      el('div', { justifyContent: 'space-between', fontSize: 24, color: C.mute }, [
-        el('div', {}, labels),
-        el('div', {}, 'unlisted.icarianforge.com'),
-      ]),
+      el('div', mono14, (p.sample ? 'SAMPLE, NOT A REAL PLACE' : `${METROS[p.metro]?.name ?? 'Bay Area'} · ${FAME[p.fame] ?? ''}`).toUpperCase()),
     ]),
+    // the sign
+    el('div', { flex: 1, alignItems: 'center', justifyContent: 'center', padding: '0 20px' }, [
+      el('div', {
+        fontFamily: neon.face === 'script' ? 'DisplayItalic' : 'Thin', fontSize: size, lineHeight: 1.05, textAlign: 'center', justifyContent: 'center',
+        letterSpacing: neon.face === 'block' ? size * 0.1 : -1, color: tube.core, transform: `rotate(${neon.tilt}deg)`,
+        // two glows only: each wider blur costs the renderer seconds per image; the wall's gradient makes the wide halo
+        textShadow: `0 0 4px ${tube.c}, 0 0 16px ${tube.c}`,
+      }, neon.face === 'block' ? p.name.toUpperCase() : p.name),
+    ]),
+    el('div', { justifyContent: 'space-between', alignItems: 'flex-end', paddingTop: 22, borderTop: `1px solid ${C.line}` }, [
+      el('div', { flexDirection: 'column', flex: 1, paddingRight: 48 }, [
+        el('div', mono14, clip(`${whereText(p)} · ${p.kind}`, 56).toUpperCase()),
+        p.tagline ? el('div', { fontSize: 32, marginTop: 10, letterSpacing: -0.5 }, clip(p.tagline, 60)) : null,
+      ]),
+      el('div', { flexDirection: 'column', alignItems: 'flex-end', width: 250 }, [
+        el('div', { alignItems: 'flex-end' }, [
+          el('div', { ...mono14, marginRight: 14, marginBottom: 12 }, 'GEM'),
+          el('div', { fontFamily: 'Display', fontSize: 84, lineHeight: 0.9, color: C.cold }, String(p.score)),
+        ]),
+        el('div', { width: 250, height: 3, marginTop: 14, backgroundColor: C.line }, [
+          el('div', { width: `${p.score}%`, height: 3, backgroundColor: C.cold, boxShadow: `0 0 12px ${C.cold}` }),
+        ]),
+      ]),
     ]),
   ]);
 
@@ -74,10 +80,11 @@ export const GET: APIRoute = async ({ props }) => {
     width: 1200,
     height: 630,
     fonts: [
+      { name: 'Display', data: display, weight: 400, style: 'normal' },
+      { name: 'DisplayItalic', data: displayItalic, weight: 400, style: 'normal' },
+      { name: 'Thin', data: thin, weight: 400, style: 'normal' },
       { name: 'Sans', data: sans, weight: 400, style: 'normal' },
-      { name: 'SansBold', data: sansBold, weight: 800, style: 'normal' },
-      { name: 'Serif', data: serif, weight: 400, style: 'normal' },
-      { name: 'Title', data: title, weight: 400, style: 'normal' },
+      { name: 'Mono', data: mono, weight: 400, style: 'normal' },
     ],
   });
   const png = new Resvg(svg).render().asPng();

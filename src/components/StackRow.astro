@@ -5,6 +5,7 @@
 import NeonSign from './NeonSign.astro';
 import { FAME, whereText } from '../lib/places.js';
 import { stubCode } from '../lib/mrz.js';
+import Score from './Score.astro';
 interface Props { id: string; title: string; kicker: string; sub?: string; places: any[]; total: number; seeAll: string; keep?: number; max?: number }
 const { id, title, kicker, sub, places, total, seeAll, keep = 5, max = 13 } = Astro.props;
 // Up to 8 of these can already be in the "right now" grid above; the spares keep the pile at `keep` cards.
@@ -29,11 +30,7 @@ const shown = places.slice(0, max);
             {p.order && <span class="sc-order"><b>Order</b> {p.order}</span>}
           </span>
           <span class="sc-foot">
-            <span class="score" role="img" aria-label={`Gem score ${p.score} out of 100`}>
-              <span class="score-cap mono" aria-hidden="true">Gem</span>
-              <span class="score-bar" aria-hidden="true"><i style={`--v:${p.score / 100}`}></i></span>
-              <b class="mono" aria-hidden="true" data-score={p.score}>{p.score}</b>
-            </span>
+            <Score score={p.score} />
             <span class="t-status"></span>
             <span class="sc-cta" aria-hidden="true">Open the file →</span>
           </span>

@@ -1,6 +1,8 @@
 # The Unlisted design system
 
-**v2.0 · 10.29.2026** · "After hours"
+**v2.1 · 10.29.2026** · "After hours"
+
+v2.1 adds the map, the place page, and the share image to the v2.0 system.
 
 A city at 2 a.m. True black, one red light over the door, one cold light for anything live. The tokens live in [`src/styles/tokens.css`](../src/styles/tokens.css); this page explains them.
 
@@ -42,10 +44,29 @@ Pill buttons, hairline rules (`--line`, `--line-strong`), square grids on rails 
 | Rails spotlight and crosshairs | Grids | Light drawn under the grid shows through translucent rails; red crosshairs on the hovered cell | No spotlight; crosshairs on focus only |
 | Score bars | Every score | Motion (`inView`), number counts up with the bar | Bars at full value |
 | Stacking cards | Deep cuts | `position: sticky`, Motion `scroll()` sinks the card beneath | Plain list |
-| Neon sign | Each place's name | Generated from the place id: tube color (red or cold), lettering (script or block), tilt, the letter that flickers | No flicker |
+| Neon sign | Each place's name: place page, deep cuts, share image | `lib/neon.js` picks from the place id: tube color (red or cold), lettering (script or block), tilt, the letter that flickers | No flicker |
+| Stamp thump | Stamp it, on a place's page | The red stamp drops onto the sign, the wall jolts, a ring of ink spreads, the tube blinks, phones tap once | Stamp appears, no motion |
+| Glowing markers | Explore and place maps | A lit point with a halo: warm white for places, red for your Bucket List, cold for Stamped. The one you point at flares and pings | No ping |
 
 Easing is `--ease` (arrives fast, settles slow) for almost everything. Motion is the small WAAPI build (`motion/mini`) plus `inView`, `scroll` and `stagger`.
 
+## Maps
+
+The night basemap (`lib/mapStyle.js`, theme `night`) draws faint streets on true black from OpenFreeMap tiles, with water a shade colder than land. Maps frame themselves with hairlines and crosshair corners. The map on a place's page downloads only when it's about to scroll into view, and it takes two fingers (or ctrl and scroll) to move, so it never traps the page's scrolling.
+
+## Share images
+
+Each place's share image (`pages/og/[id].png.ts`) is its neon sign on a black wall, with where it is, the one-line why, and the Gem score as a cold bar. The image renderer pays seconds per image for each wide blur, so the sign uses two glows and a wall gradient for the wide halo. That keeps the build under a minute.
+
 ## Budget
 
-Mobile Lighthouse 90 or better on every template. The home page measured 98 (TBT 20 to 90 ms, LCP 2.2 s, CLS 0.03) on 10.29.2026.
+Mobile Lighthouse 90 or better on every template. Measured on 10.29.2026 (local preview, mobile):
+
+| Page | Performance | Accessibility | SEO |
+|---|---|---|---|
+| Home | 97 to 98 | 100 | 100 |
+| Explore, Bay Area | 95 to 96 | 100 | 100 |
+| Explore, San Diego | 97 to 98 | 100 | 100 |
+| A place | 99 | 100 | 100 |
+
+The Explore list is long, so its rows use `content-visibility: auto`: rows off screen skip layout and paint.

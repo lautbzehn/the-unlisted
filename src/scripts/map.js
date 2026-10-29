@@ -11,7 +11,7 @@ const BAY = { center: [-122.35, 37.78], zoom: 9.5 };
 
 // A page can centre the big map on its own city: <div id="map" data-center="[lng,lat]" data-zoom="10">
 function baseMap(container, view = container.dataset.center ? { center: JSON.parse(container.dataset.center), zoom: +container.dataset.zoom } : BAY) {
-  const map = new maplibregl.Map({ container, style: mapStyle('sepia'), ...view, attributionControl: { compact: true } });
+  const map = new maplibregl.Map({ container, style: mapStyle('night'), ...view, attributionControl: { compact: true } });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
   return map;
 }
@@ -53,8 +53,8 @@ export function createMap(container, places, { onShowInList } = {}) {
     wrap.append(h, m, links);
 
     const el = pinEl(p);
-    const popup = new maplibregl.Popup({ offset: 22, closeButton: true, maxWidth: '270px' }).setDOMContent(wrap);
-    const marker = new maplibregl.Marker({ element: el, anchor: 'bottom' }).setLngLat([p.lng, p.lat]).setPopup(popup).addTo(map);
+    const popup = new maplibregl.Popup({ offset: 16, closeButton: true, maxWidth: '270px' }).setDOMContent(wrap);
+    const marker = new maplibregl.Marker({ element: el, anchor: 'center' }).setLngLat([p.lng, p.lat]).setPopup(popup).addTo(map);
     markers.set(p.id, { marker, el, p });
   }
 
@@ -103,7 +103,7 @@ export function showOne(container, p) {
     const el = pinEl(p);
     el.classList.add('hot');
     el.tabIndex = -1;
-    const marker = new maplibregl.Marker({ element: el, anchor: 'bottom' }).setLngLat([p.lng, p.lat]).addTo(map);
+    const marker = new maplibregl.Marker({ element: el, anchor: 'center' }).setLngLat([p.lng, p.lat]).addTo(map);
     sheet = { map, marker, el };
   } else {
     sheet.map.resize();
@@ -111,4 +111,19 @@ export function showOne(container, p) {
     sheet.map.jumpTo({ center: [p.lng, p.lat], zoom: 15 });
   }
   sheet.el.setAttribute('aria-label', `${p.name}, ${p.area}`);
+}
+
+// The map on a place's own page: one glowing pin. Two fingers (or ctrl and scroll) move it, so it never
+// traps the page's own scrolling.
+export function showPlace(container, p) {
+  const map = baseMap(container, { center: [p.lng, p.lat], zoom: 15 });
+  map.scrollZoom.disable();
+  map.setCooperativeGestures?.(true);
+  const el = pinEl(p);
+  el.classList.add('hot');
+  el.tabIndex = -1;
+  el.setAttribute('aria-label', `${p.name}, ${p.area}`);
+  new maplibregl.Marker({ element: el, anchor: 'center' }).setLngLat([p.lng, p.lat]).addTo(map);
+  container.classList.add('ready'); // the real pin replaces the placeholder
+  return map;
 }

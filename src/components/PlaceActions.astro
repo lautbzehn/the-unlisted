@@ -1,0 +1,30 @@
+---
+// Stamp it, Bucket List, the links, and your private rating: the same controls in an Explore entry and on a
+// place's own page (scripts/passport.js runs them). On the place page the inked stamp lands on the sign instead.
+import { LISTS } from '../lib/glossary.js';
+interface Props { place: any; google: string; detail?: boolean }
+const { place, google, detail = false } = Astro.props;
+---
+<div class="actions">
+  <button class="btn btn-primary" data-action="ledger" aria-pressed="false" data-tip={detail ? LISTS.stamped.tip : undefined}>Stamp it</button>
+  <button class="btn" data-action="knock" aria-pressed="false" data-tip={detail ? LISTS.bucket.tip : undefined}>+ Bucket List</button>
+  {!detail && <span class="stamp-mark" aria-hidden="true">Stamped<small data-stamp-date>The Unlisted</small></span>}
+</div>
+<div class="links">
+  <button type="button" data-action="map">Map</button>
+  <button type="button" data-action="share">Share</button>
+  <a href={google} target="_blank" rel="noopener">Business info ↗</a>
+  {!detail && <a href={`/place/${place.id}/`}>Full page →</a>}
+</div>
+<div class="ledger">
+  <div class="cap"><span>Your rating</span><span data-strike-label>Not rated</span></div>
+  <div class="strikes" role="group" aria-label={`Your rating for ${place.name}`}>
+    {[1, 2, 3, 4, 5].map((n) => (
+      <button class="strike" data-strike={n} data-on="false" aria-label={`${n} of 5 stamps`} aria-pressed="false">
+        <svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="12" /></svg>
+      </button>
+    ))}
+  </div>
+  <label class="sr-only" for={`note-${place.id}`}>Private note</label>
+  <textarea id={`note-${place.id}`} data-note placeholder="Private note: what you ordered, who to ask for…" maxlength="400"></textarea>
+</div>

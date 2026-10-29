@@ -7,6 +7,7 @@ import MapSheet from './MapSheet.astro';
 import CitySwitch from './CitySwitch.astro';
 import { METROS, placesIn, slim, TYPES, FAME, WHEN, whereGroups } from '../lib/places.js';
 import { LISTS, PIN_TIPS } from '../lib/glossary.js';
+import '../styles/explore.css';
 
 interface Props { metro: string }
 const M = METROS[Astro.props.metro];
@@ -15,8 +16,11 @@ const FAME_PLURAL = { 'deep-cut': 'Deep cuts', 'open-secret': 'Open secrets', 'l
 ---
 <Base title={M.id === 'bay-area' ? 'Explore — The Unlisted' : `Explore ${M.name} — The Unlisted`} description={`Every door in ${M.the}. Search, filter by time of day, kind of place and neighborhood, or see them all on a map.`} path={M.explore} metro={M.id}>
   <main id="main" class="explore" data-view="cards" data-metro={M.id}>
-    <header class="page-head">
-      <CitySwitch current={M.id} to="explore" />
+    <header class="page-head explore-head">
+      <div class="explore-top">
+        <CitySwitch current={M.id} to="explore" />
+        <p class="mono explore-count" aria-hidden="true">{String(places.length).padStart(3, '0')} doors · {M.name}</p>
+      </div>
       <h1 class="page-title">Explore</h1>
       <p class="page-sub">Every door in {M.the}, {places.length} so far. Open one for the story and what to order.</p>
     </header>
@@ -71,14 +75,16 @@ const FAME_PLURAL = { 'deep-cut': 'Deep cuts', 'open-secret': 'Open secrets', 'l
     <div class="explore-split">
       <div class="list-col">
         <p class="empty" id="empty"></p>
-        <div class="entries" id="entries">
+        <div class="entries rails" id="entries" data-spotlight>
           {places.map((p) => <PlaceCard place={p} />)}
         </div>
         <button class="btn more-btn" type="button" data-more hidden>Show more</button>
         <p class="suggest-cta">Know a place that belongs here? <a href="/suggest/">Suggest it</a></p>
       </div>
       <div class="map-col">
-        <div id="map" data-center={JSON.stringify(M.center)} data-zoom={M.zoom} role="region" aria-label="Map of the places in the list. Use the pins, or the list for the same places."></div>
+        <div class="map-frame">
+          <div id="map" data-center={JSON.stringify(M.center)} data-zoom={M.zoom} role="region" aria-label="Map of the places in the list. Use the pins, or the list for the same places."></div>
+        </div>
         <ul class="legend" aria-hidden="true">
           <li><span class="swatch" data-status="none"></span>{PIN_TIPS.none}</li>
           <li><span class="swatch" data-status="knock"></span>{LISTS.bucket.name}</li>

@@ -1,7 +1,7 @@
 ---
 interface Props {
   place: {
-    id: string; name: string; area: string; kind: string; verified: string; score: number; sample?: boolean;
+    id: string; name: string; area: string; kind: string; verified: string; score: number; sample?: boolean; tagline?: string;
     breakdown: { uniqueness: number; atmosphere: number; story: number; signature: number; radar?: number };
     story: string; order: string; draft?: boolean; reviewFlags?: string[]; fame?: string; when?: string[];
     practical?: string[]; hours?: string | null; city: string; type: string; where: string; lat?: number; lng?: number;
@@ -10,29 +10,40 @@ interface Props {
   variant?: 'entry' | 'detail';
 }
 import PlaceBody from './PlaceBody.astro';
-import GemDoor from './GemDoor.astro';
-import { FAME, TYPES, whenText, whereText } from '../lib/places.js';
+import PlaceActions from './PlaceActions.astro';
+import NeonSign from './NeonSign.astro';
+import Score from './Score.astro';
+import { FAME, TYPES, WHEN, whereText } from '../lib/places.js';
+import { MARKS } from '../lib/scoring.js';
 import { mrzPart } from '../lib/mrz.js';
-import { SCORE_TIP, FAME_TIPS } from '../lib/glossary.js';
+import { SCORE_TIP, FAME_TIPS, MARK_TIPS, WHEN_TIPS } from '../lib/glossary.js';
 const { place, variant = 'entry' } = Astro.props;
 const where = whereText(place);
 // A Google Maps search link: only a link out, no Google data is stored or shown here.
 const google = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name}, ${place.area}, ${place.city}`)}`;
+const directions = `https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lng}`;
 // The machine-readable line at the foot of every passport page.
 const mrz = `P<UNL<<${mrzPart(place.name)}<<${mrzPart(place.area)}<<${String(place.score).padStart(3, '0')}`.padEnd(64, '<');
+const coords = place.lat != null ? `${Math.abs(place.lat).toFixed(4)}° ${place.lat >= 0 ? 'N' : 'S'}  ${Math.abs(place.lng).toFixed(4)}° ${place.lng >= 0 ? 'E' : 'W'}` : '';
 // What the page scripts read: filters, sorting, the map and sharing.
 const data = {
   id: place.id, 'data-id': place.id, 'data-status': 'none', 'data-url': `/place/${place.id}/`, 'data-name': place.name,
   'data-area': where, 'data-when': place.when?.join(' ') ?? '', 'data-fame': place.fame ?? '', 'data-type': place.type,
   'data-where': place.where, 'data-score': place.score, 'data-lat': place.lat, 'data-lng': place.lng,
 };
-const when = whenText(place.when);
+// The file: short facts on rails beside the story
+const file = [
+  { k: 'Known as', v: FAME[place.fame], tip: FAME_TIPS[place.fame] },
+  { k: 'Good for', v: place.when?.map((w) => WHEN[w]).join(', '), tip: place.when?.map((w) => WHEN_TIPS[w]).join(' ') },
+  { k: 'Kind', v: TYPES[place.type] },
+  { k: 'Where', v: where },
+].filter((f) => f.v);
 ---
 {variant === 'entry' ? (
   <article class="card entry" {...data}>
     <details>
       <summary>
-        <span class="e-score"><GemDoor score={place.score} /></span>
+        <span class="e-score" role="img" aria-label={`Gem score ${place.score} out of 100`}><b class="mono" aria-hidden="true">{place.score}</b><span class="score-bar" aria-hidden="true"><i style={`--v:${place.score / 100}`}></i></span></span>
         <span class="e-name">{place.name}</span>
         <span class="e-meta">{[where, TYPES[place.type], FAME[place.fame]].filter(Boolean).join(' · ')}</span>
         <span class="e-status">
@@ -41,22 +52,81 @@ const when = whenText(place.when);
         <span class="e-chev" aria-hidden="true"></span>
       </summary>
       <div class="e-body">
-        <PlaceBody place={place} google={google} mrz={mrz} />
+        <PlaceBody place={place} google={google} />
       </div>
     </details>
   </article>
 ) : (
-  <article class="card detail reveal" {...data}>
-    {place.sample && <span class="sample-flag">Sample, not a real place</span>}
-    {place.draft && <span class="sample-flag">Draft, not yet reviewed</span>}
-    <p class="place-meta">{where} · {place.kind}</p>
-    <h1>{place.name}</h1>
-    <GemDoor score={place.score} size="lg" tip={SCORE_TIP} swing />
-    {place.tagline && <p class="place-tagline">{place.tagline}</p>}
-    <p class="labels">
-      {place.fame && <span tabindex="0" data-tip={FAME_TIPS[place.fame]}>{FAME[place.fame]}</span>}
-      {place.fame && when && ' · '}{when}
-    </p>
-    <PlaceBody place={place} google={google} mrz={mrz} detail />
+  <article class="card detail" {...data}>
+    <header class="place-hero">
+      {place.sample && <span class="sample-flag">Sample, not a real place</span>}
+      {place.draft && <span class="sample-flag">Draft, not yet reviewed</span>}
+      <p class="place-meta mono"><span>{where}</span><span>{place.kind}</span>{coords && <span class="coords">{coords}</span>}</p>
+      <div class="sign-wall">
+        <h1 class="place-name"><NeonSign id={place.id} name={place.name} /></h1>
+        <span class="stamp-mark" aria-hidden="true">Stamped<small data-stamp-date>The Unlisted</small></span>
+      </div>
+      <div class="place-sub">
+        {place.tagline && <p class="place-tagline">{place.tagline}</p>}
+        <Score score={place.score} size="lg" tip={SCORE_TIP} />
+      </div>
+    </header>
+
+    <div class="place-grid">
+      <div class="place-main">
+        <p class="story">{place.story}</p>
+        <p class="order"><b class="mono">Order</b>{place.order}</p>
+        <PlaceActions place={place} google={google} detail />
+        {(place.practical?.length || place.hours) && (
+          <section class="before" aria-labelledby={`before-${place.id}`}>
+            <h2 class="kicker mono" id={`before-${place.id}`}>Before you go</h2>
+            <ul class="practical">
+              {place.practical?.map((x) => <li>{x}</li>)}
+              {place.hours && <li>Hours: {place.hours}</li>}
+            </ul>
+          </section>
+        )}
+        <p class="verified">Last checked {place.verified}. Hours change, so check before you go.</p>
+      </div>
+
+      <aside class="place-aside">
+        <section class="marks-box" aria-labelledby={`marks-${place.id}`} data-scores>
+          <h2 class="kicker mono" id={`marks-${place.id}`}>How it scored</h2>
+          {MARKS.map((m) => (
+            <div class="mark-row" data-tip={MARK_TIPS[m.key]} tabindex="0">
+              <span>{m.label}</span>
+              <span class="score-bar" aria-hidden="true"><i style={`--v:${place.breakdown[m.key] / 100}`}></i></span>
+              <b class="mono" data-score={place.breakdown[m.key]}>{place.breakdown[m.key]}</b>
+            </div>
+          ))}
+          <a class="more-link" href="/how-the-score-works/">How the score works <span aria-hidden="true">→</span></a>
+        </section>
+
+        <section class="rails file" data-spotlight aria-label="At a glance">
+          <dl class="rail-grid file-grid">
+            {file.map((f) => (
+              <div class="cell" tabindex={f.tip ? 0 : undefined} data-tip={f.tip}><dt class="mono">{f.k}</dt><dd>{f.v}</dd></div>
+            ))}
+          </dl>
+        </section>
+
+        {place.lat != null && (
+          <section class="where-box" aria-labelledby={`where-${place.id}`}>
+            <h2 class="kicker mono" id={`where-${place.id}`}>Where it is</h2>
+            <div class="map-frame">
+              <div class="place-map" data-place-map data-lat={place.lat} data-lng={place.lng} data-name={place.name} data-area={where} role="region" aria-label={`Map showing ${place.name}`}>
+                <span class="map-hold" aria-hidden="true"><span class="pin hot"></span><span class="mono">{coords}</span></span>
+              </div>
+            </div>
+            <a class="more-link" href={directions} target="_blank" rel="noopener">Directions <span aria-hidden="true">↗</span></a>
+          </section>
+        )}
+      </aside>
+    </div>
+
+    {place.reviewFlags?.length > 0 && (
+      <div class="review-flags"><strong>Check before approving</strong><ul>{place.reviewFlags.map((f) => <li>{f}</li>)}</ul></div>
+    )}
+    <div class="mrz" aria-hidden="true">{mrz}</div>
   </article>
 )}

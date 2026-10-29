@@ -102,54 +102,17 @@ main.home { max-width: none; padding: 0 0 clamp(96px, 14vw, 180px); overflow-x: 
 .browse { max-width: var(--max); margin: 0 auto; padding: clamp(88px, 12vw, 168px) var(--gutter) 0; }
 .row-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 24px; align-items: end; margin-bottom: clamp(24px, 3.5vw, 44px); }
 .row-head > * { grid-column: 1; }
-.kicker { color: var(--mute); margin-bottom: 18px; }
 .row-head h2 { font: 400 var(--display-l)/0.92 var(--font-display); letter-spacing: -0.025em; text-wrap: balance; }
 .row-sub { margin-top: 14px; max-width: 48ch; color: var(--mute); font-size: var(--text-lg); line-height: 1.45; }
 .row-head .more-link { grid-column: 2; grid-row: 1 / span 4; align-self: end; white-space: nowrap; }
-/* "Right now": a cold dot that breathes, because this row follows the clock */
-.browse[data-bucket] .kicker { color: var(--cold); }
-.browse[data-bucket] .kicker::before { content: ''; display: inline-block; width: 7px; height: 7px; margin-right: 10px; border-radius: 50%; background: var(--cold); box-shadow: 0 0 10px var(--cold-glow); vertical-align: 1px; }
-@media (prefers-reduced-motion: no-preference) {
-  .browse[data-bucket] .kicker::before { animation: live 2.4s ease-out infinite; }
-  @keyframes live { 0% { box-shadow: 0 0 0 0 rgba(143, 227, 255, 0.6); } 70%, 100% { box-shadow: 0 0 0 8px rgba(143, 227, 255, 0); } }
-}
 @media (max-width: 760px) {
   .row-head { grid-template-columns: 1fr; }
   .row-head .more-link { grid-column: 1; grid-row: auto; margin-top: 10px; }
 }
 
-/* ---------- Grids on hairline rails ----------
-   Each cell draws its right and bottom rail; the grid draws the top and left. The rails are translucent and the
-   cells solid black, so a pointer spotlight drawn underneath the grid shows only through the lines.
-   Crosshairs mark the grid's outer corners, and the four corners of the cell you're on, in red. */
-.rails { position: relative; isolation: isolate; --mx: 50%; --my: -400px; --cross: var(--line-strong); }
-.rail-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); counter-reset: cell; }
-.rail-grid > li { display: grid; counter-increment: cell; }
+
+/* Rails, scores and neon signs are shared: components.css */
 .rail-grid[data-keep='8'] > li:nth-child(n + 9) { display: none; }
-.cell { position: relative; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #000; text-decoration: none; }
-/* crosshair: two hairlines, 13px long, centered on a corner. Used on the grid's corners and on a cell's corners */
-.rails::before, .cell::after {
-  content: ''; position: absolute; inset: -6px; pointer-events: none;
-  background:
-    linear-gradient(var(--cross), var(--cross)) 0 6px / 13px 1px no-repeat, linear-gradient(var(--cross), var(--cross)) 6px 0 / 1px 13px no-repeat,
-    linear-gradient(var(--cross), var(--cross)) right 0 top 6px / 13px 1px no-repeat, linear-gradient(var(--cross), var(--cross)) right 6px top 0 / 1px 13px no-repeat,
-    linear-gradient(var(--cross), var(--cross)) 0 calc(100% - 6px) / 13px 1px no-repeat, linear-gradient(var(--cross), var(--cross)) 6px 100% / 1px 13px no-repeat,
-    linear-gradient(var(--cross), var(--cross)) right 0 bottom 6px / 13px 1px no-repeat, linear-gradient(var(--cross), var(--cross)) right 6px bottom 0 / 1px 13px no-repeat;
-}
-.rails::before { z-index: 2; }
-.cell::after { --cross: var(--accent); inset: -7px -6px -6px -7px; z-index: 3; opacity: 0; transition: opacity 0.2s; }
-.cell:focus-visible::after { opacity: 1; }
-@media (hover: hover) { .cell:hover::after { opacity: 1; } } /* a tap on a phone shouldn't leave the marks behind */
-.cell:focus-visible { outline: none; }
-.cell:focus-visible .cell-name, .cell:focus-visible .hood-name { color: var(--accent); }
-@media (hover: hover) and (pointer: fine) {
-  .rails::after {
-    content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0; transition: opacity 0.5s;
-    background: radial-gradient(380px circle at var(--mx) var(--my), rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.12) 50%, transparent 75%);
-  }
-  .rails.lit::after { opacity: 1; }
-  .cell { background-clip: padding-box; } /* the light shows only through the rails */
-}
 
 /* A ticket in the grid */
 .ticket.cell { display: grid; grid-template-rows: auto auto auto 1fr auto auto auto; row-gap: 8px; min-height: 300px; padding: 22px 22px 0; transition: background 0.3s; }
@@ -162,20 +125,11 @@ main.home { max-width: none; padding: 0 0 clamp(96px, 14vw, 180px); overflow-x: 
 .ticket.cell .score { margin-top: 10px; }
 .t-foot { display: flex; align-items: baseline; gap: 10px; min-height: 1.4em; font-size: var(--text-xs); }
 .t-foot .t-status, .sc-foot .t-status { color: var(--accent); font-weight: 600; font-size: var(--text-xs); }
-.ticket[data-status='knock'] .t-status::after { content: 'On your list'; }
-.ticket[data-status='ledger'] .t-status::after { content: 'Stamped ✓'; }
-.ticket[data-status='ledger'] .t-status { color: var(--cold); }
 .t-draft { color: var(--accent); font-weight: 600; }
 .t-stub { display: block; margin: 8px -22px 0; padding: 10px 22px 12px; border-top: 1px dashed var(--line); color: var(--faint); font-size: 10px; white-space: nowrap; overflow: hidden; }
 .ticket[data-status='knock'] .t-stub { color: var(--accent); }
 .ticket[data-status='ledger'] .t-stub { color: var(--cold); }
 
-/* ---------- Scores: a cold bar that fills as it comes into view (scripts/home.js) ---------- */
-.score { display: grid; grid-template-columns: auto minmax(0, 1fr) 3ch; align-items: center; gap: 12px; }
-.score-cap { color: var(--mute); font-size: 10px; }
-.score-bar { position: relative; height: 2px; border-radius: 2px; background: var(--line); }
-.score-bar i { position: absolute; inset: 0; border-radius: inherit; background: var(--cold); box-shadow: 0 0 10px var(--cold-glow); transform-origin: 0 50%; transform: scaleX(var(--v)); }
-.score b { color: var(--cold); font-size: var(--text-xs); font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
 
 /* Phones and small tablets: the grid becomes a sideways strip you swipe */
 @media (max-width: 900px) {
@@ -232,22 +186,6 @@ main.home { max-width: none; padding: 0 0 clamp(96px, 14vw, 180px); overflow-x: 
   .stack-card { min-height: 0; }
 }
 
-/* ---------- Neon: a place's name hung as a sign (components/NeonSign.astro) ---------- */
-.neon {
-  --c: var(--accent); --core: #ffe4df;
-  display: inline-block; max-width: 100%; transform: rotate(var(--tilt, 0deg)); color: var(--core); text-wrap: balance; overflow-wrap: anywhere;
-  text-shadow: 0 0 1px #fff, 0 0 5px var(--c), 0 0 16px var(--c), 0 0 38px color-mix(in srgb, var(--c) 70%, transparent), 0 0 80px color-mix(in srgb, var(--c) 45%, transparent);
-}
-.neon[data-tone='cold'] { --c: var(--cold); --core: #effcff; }
-.neon[data-face='script'] { font: italic 400 min(clamp(2.8rem, 9cqi, 6rem), calc(200cqi / var(--len))) / 1.02 var(--font-display); letter-spacing: -0.01em; }
-.neon[data-face='block'] { font: 200 min(clamp(2rem, 6.5cqi, 4.2rem), calc(130cqi / var(--len))) / 1.1 var(--font-ui); text-transform: uppercase; letter-spacing: 0.1em; }
-@media (prefers-reduced-motion: no-preference) {
-  .neon .flick { animation: flick 9s steps(1, end) infinite; animation-delay: calc(var(--tilt) * 3); }
-  @keyframes flick {
-    0%, 88%, 90.5%, 93%, 100% { opacity: 1; }
-    89%, 92%, 92.6% { opacity: 0.2; text-shadow: none; }
-  }
-}
 
 /* ---------- Neighborhoods ---------- */
 .hood-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }

@@ -4,6 +4,7 @@ import Footer from '../../components/Footer.astro';
 import PlaceCard from '../../components/PlaceCard.astro';
 import MapSheet from '../../components/MapSheet.astro';
 import { places, METROS } from '../../lib/places.js';
+import '../../styles/place.css';
 
 export function getStaticPaths() {
   return places.map((place) => ({ params: { id: place.id }, props: { place } }));
@@ -20,7 +21,7 @@ const M = METROS[place.metro];
   metro={M.id}
 >
   <main id="main" class="place-page">
-    <a class="back" href={M.explore}>← Explore{M.id !== 'bay-area' && ` ${M.name}`}</a>
+    <a class="back" href={M.explore}><span aria-hidden="true">←</span> Explore{M.id !== 'bay-area' && ` ${M.name}`}</a>
     <PlaceCard place={place} variant="detail" />
     <MapSheet />
   </main>
@@ -28,9 +29,25 @@ const M = METROS[place.metro];
   <script>
     import '../../scripts/passport.js';
     import { openSheet } from '../../scripts/mapsheet.js';
+    import { initSpotlight, prepareScores } from '../../scripts/rails.js';
     document.addEventListener('click', (e) => {
       if (!e.target.closest('[data-action=map]')) return;
       openSheet(e.target.closest('.card'));
     });
+    initSpotlight();
+    const startScores = prepareScores([...document.querySelectorAll('[data-scores], .place-sub')]);
+    requestAnimationFrame(() => setTimeout(startScores));
+
+    // The map downloads only when its spot is about to scroll into view (it's the heaviest part of the site)
+    const box = document.querySelector('[data-place-map]');
+    if (box) {
+      const io = new IntersectionObserver(([en]) => {
+        if (!en.isIntersecting) return;
+        io.disconnect();
+        const p = { name: box.dataset.name, area: box.dataset.area, lat: Number(box.dataset.lat), lng: Number(box.dataset.lng) };
+        import('../../scripts/map.js').then(({ showPlace }) => showPlace(box, p)).catch(() => {});
+      }, { rootMargin: '300px 0px' });
+      io.observe(box);
+    }
   </script>
 </Base>

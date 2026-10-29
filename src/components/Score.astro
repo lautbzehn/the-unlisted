@@ -1,0 +1,11 @@
+---
+// A Gem score as a cold bar and a number (styles in components.css; scripts/rails.js fills the bar in as it
+// comes into view). size 'lg' is the big readout on a place's own page; tip adds the "what is this" tooltip.
+interface Props { score: number; size?: 'sm' | 'lg'; tip?: string }
+const { score, size = 'sm', tip } = Astro.props;
+---
+<span class:list={['score', { 'score-lg': size === 'lg' }]} role="img" aria-label={`Gem score ${score} out of 100`} tabindex={tip ? 0 : undefined} data-tip={tip}>
+  <span class="score-cap mono" aria-hidden="true">{size === 'lg' ? 'Gem score' : 'Gem'}</span>
+  <span class="score-bar" aria-hidden="true"><i style={`--v:${score / 100}`}></i></span>
+  <b class="mono" aria-hidden="true" data-score={score}>{score}</b>
+</span>

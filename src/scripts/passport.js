@@ -68,11 +68,12 @@ export function update(id, patch) {
   paint(patch.status);
 }
 
-// Stamping a place: the inked stamp lands on it with a little thump
+// Stamping a place: the inked stamp lands on it with a thump (and a tap you can feel, on phones that do that)
 function slam(card) {
   const mark = card.querySelector('.stamp-mark');
   if (!mark) return;
   for (const [el, cls] of [[mark, 'slam'], [card, 'thump']]) { el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); }
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setTimeout(() => navigator.vibrate?.(14), 320);
 }
 
 async function share(card) {

@@ -1,0 +1,76 @@
+/* Shared pieces of the v2.0 design system (tokens.css has the values): kickers, live dots, grids on hairline
+   rails with a pointer spotlight (scripts/rails.js), score bars, and neon signs. */
+
+.kicker { color: var(--mute); margin-bottom: 18px; }
+/* Live: a cold dot that breathes, for anything that follows the clock */
+.live { color: var(--cold); }
+.live::before { content: ''; display: inline-block; width: 7px; height: 7px; margin-right: 10px; border-radius: 50%; background: var(--cold); box-shadow: 0 0 10px var(--cold-glow); vertical-align: 1px; }
+@media (prefers-reduced-motion: no-preference) {
+  .live::before { animation: live 2.4s ease-out infinite; }
+  @keyframes live { 0% { box-shadow: 0 0 0 0 rgba(143, 227, 255, 0.6); } 70%, 100% { box-shadow: 0 0 0 8px rgba(143, 227, 255, 0); } }
+}
+
+/* ---------- Grids on hairline rails ----------
+   Each cell draws its right and bottom rail; the grid draws the top and left. The rails are translucent and the
+   cells solid black, so a pointer spotlight drawn underneath the grid shows only through the lines.
+   Crosshairs mark the grid's outer corners, and the four corners of the cell you're on, in red. */
+.rails { position: relative; isolation: isolate; --mx: 50%; --my: -400px; --cross: var(--line-strong); }
+.rail-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); counter-reset: cell; }
+.rail-grid > li { display: grid; counter-increment: cell; }
+.cell { position: relative; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #000; text-decoration: none; }
+/* crosshair: two hairlines, 13px long, centered on a corner. Used on the grid's corners and on a cell's corners */
+.rails::before, .cell::after {
+  content: ''; position: absolute; inset: -6px; pointer-events: none;
+  background:
+    linear-gradient(var(--cross), var(--cross)) 0 6px / 13px 1px no-repeat, linear-gradient(var(--cross), var(--cross)) 6px 0 / 1px 13px no-repeat,
+    linear-gradient(var(--cross), var(--cross)) right 0 top 6px / 13px 1px no-repeat, linear-gradient(var(--cross), var(--cross)) right 6px top 0 / 1px 13px no-repeat,
+    linear-gradient(var(--cross), var(--cross)) 0 calc(100% - 6px) / 13px 1px no-repeat, linear-gradient(var(--cross), var(--cross)) 6px 100% / 1px 13px no-repeat,
+    linear-gradient(var(--cross), var(--cross)) right 0 bottom 6px / 13px 1px no-repeat, linear-gradient(var(--cross), var(--cross)) right 6px bottom 0 / 1px 13px no-repeat;
+}
+.rails::before { z-index: 2; }
+.cell::after { --cross: var(--accent); inset: -7px -6px -6px -7px; z-index: 3; opacity: 0; transition: opacity 0.2s; }
+.cell:focus-visible::after { opacity: 1; }
+@media (hover: hover) { .cell:hover::after { opacity: 1; } } /* a tap on a phone shouldn't leave the marks behind */
+.cell:focus-visible { outline: none; }
+.cell:focus-visible .cell-name, .cell:focus-visible .hood-name { color: var(--accent); }
+@media (hover: hover) and (pointer: fine) {
+  .rails::after {
+    content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0; transition: opacity 0.5s;
+    background: radial-gradient(380px circle at var(--mx) var(--my), rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.12) 50%, transparent 75%);
+  }
+  .rails.lit::after { opacity: 1; }
+  .cell { background-clip: padding-box; } /* the light shows only through the rails */
+}
+
+/* ---------- Scores: a cold bar that fills as it comes into view (scripts/rails.js) ---------- */
+.score { display: grid; grid-template-columns: auto minmax(0, 1fr) 3ch; align-items: center; gap: 12px; }
+.score-cap { color: var(--mute); font-size: 10px; }
+.score-bar { position: relative; height: 2px; border-radius: 2px; background: var(--line); }
+.score-bar i { position: absolute; inset: 0; border-radius: inherit; background: var(--cold); box-shadow: 0 0 10px var(--cold-glow); transform-origin: 0 50%; transform: scaleX(var(--v)); }
+.score b { color: var(--cold); font-size: var(--text-xs); font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
+.score-lg { grid-template-columns: minmax(0, 1fr) auto; gap: 8px 16px; }
+.score-lg .score-cap { grid-column: 1 / -1; }
+.score-lg b { font: 400 clamp(3.5rem, 9vw, 5.5rem)/0.85 var(--font-display); letter-spacing: -0.03em; grid-row: 2; grid-column: 2; }
+.score-lg .score-bar { grid-row: 2; align-self: end; margin-bottom: 0.6em; }
+
+/* Ticket and list status, painted by scripts/passport.js */
+.ticket[data-status='knock'] .t-status::after { content: 'On your list'; }
+.ticket[data-status='ledger'] .t-status::after { content: 'Stamped ✓'; }
+.ticket[data-status='ledger'] .t-status { color: var(--cold); }
+
+/* ---------- Neon: a place's name hung as a sign (components/NeonSign.astro) ---------- */
+.neon {
+  --c: var(--accent); --core: #ffe4df;
+  display: inline-block; max-width: 100%; transform: rotate(var(--tilt, 0deg)); color: var(--core); text-wrap: balance; overflow-wrap: anywhere;
+  text-shadow: 0 0 1px #fff, 0 0 5px var(--c), 0 0 16px var(--c), 0 0 38px color-mix(in srgb, var(--c) 70%, transparent), 0 0 80px color-mix(in srgb, var(--c) 45%, transparent);
+}
+.neon[data-tone='cold'] { --c: var(--cold); --core: #effcff; }
+.neon[data-face='script'] { font: italic 400 min(clamp(2.8rem, 9cqi, 6rem), calc(200cqi / var(--len))) / 1.02 var(--font-display); letter-spacing: -0.01em; }
+.neon[data-face='block'] { font: 200 min(clamp(2rem, 6.5cqi, 4.2rem), calc(130cqi / var(--len))) / 1.1 var(--font-ui); text-transform: uppercase; letter-spacing: 0.1em; }
+@media (prefers-reduced-motion: no-preference) {
+  .neon .flick { animation: flick 9s steps(1, end) infinite; animation-delay: calc(var(--tilt) * 3); }
+  @keyframes flick {
+    0%, 88%, 90.5%, 93%, 100% { opacity: 1; }
+    89%, 92%, 92.6% { opacity: 0.2; text-shadow: none; }
+  }
+}

@@ -1,12 +1,11 @@
 import { inView, scroll, stagger } from 'motion';
 import { animate } from 'motion/mini'; // the small build: hardware-accelerated (WAAPI) animations only
+import { EASE, initSpotlight, prepareScores } from './rails.js';
 import { getState, update, toast } from './passport.js';
 import { initSurprise } from './surprise.js';
 import { currentBucket } from './time.js';
 
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-const finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
-const EASE = [0.22, 1, 0.36, 1]; // --ease in tokens.css
 
 // This city's Explore page (Bay Area or San Diego)
 const EXPLORE = document.getElementById('main').dataset.explore ?? '/explore/';
@@ -56,53 +55,17 @@ if (grainCanvas && !reduceMotion) {
   if (document.readyState === 'complete') whenOpen(); else addEventListener('load', whenOpen, { once: true });
 }
 
-// Grids on rails: a spotlight follows the pointer and lights the hairlines (the drawing is in home.css)
-if (finePointer && !reduceMotion) {
-  for (const rails of document.querySelectorAll('[data-spotlight]')) {
-    let raf = 0, x = 0, y = 0;
-    const paint = () => { raf = 0; rails.style.setProperty('--mx', `${x}px`); rails.style.setProperty('--my', `${y}px`); };
-    rails.addEventListener('pointermove', (e) => {
-      const r = rails.getBoundingClientRect();
-      x = e.clientX - r.left; y = e.clientY - r.top;
-      rails.classList.add('lit');
-      if (!raf) raf = requestAnimationFrame(paint);
-    }, { passive: true });
-    rails.addEventListener('pointerleave', () => rails.classList.remove('lit'));
-  }
-}
-
-// A score's number counts up alongside its bar, on the same curve (cubic-bezier .22,1,.36,1 is close to out-quint)
-const countUp = (num, { duration, delay }) => {
-  const to = Number(num.dataset.score), t0 = performance.now() + delay * 1000;
-  num.textContent = '0';
-  const tick = (now) => {
-    const k = Math.min(1, Math.max(0, (now - t0) / (duration * 1000)));
-    num.textContent = Math.round(to * (1 - (1 - k) ** 5));
-    if (k < 1) requestAnimationFrame(tick);
-  };
-  requestAnimationFrame(tick);
-};
+// Grids on rails: a spotlight follows the pointer and lights the hairlines (components.css)
+initSpotlight();
 
 // Scroll-driven motion is set up after the first paint, reading the layout once before changing anything
 const setUpMotion = () => {
-  const groups = [...document.querySelectorAll('[data-row]')].map((group) => {
-    const scores = [...group.querySelectorAll('.score')].filter((sc) => sc.offsetParent);
-    return { group, scores, bars: scores.map((sc) => sc.querySelector('.score-bar i')) };
-  });
+  const startScores = prepareScores([...document.querySelectorAll('[data-row]')]);
   const heads = [...document.querySelectorAll('.home .row-head, .next-cities')].filter((h) => h.getBoundingClientRect().top >= innerHeight);
   const items = [...document.querySelectorAll('.stack > li')].filter((li) => li.offsetParent);
 
   // Scores fill in as they come into view, and the number counts up with the bar
-  for (const { group, scores, bars } of groups) {
-    bars.forEach((b) => { b.style.transform = 'scaleX(0)'; });
-    inView(group, () => {
-      bars.forEach((b, i) => {
-        const opts = { duration: 1.2, delay: 0.1 + i * 0.06, ease: EASE };
-        animate(b, { transform: ['scaleX(0)', `scaleX(${b.style.getPropertyValue('--v')})`] }, opts);
-        countUp(scores[i].querySelector('[data-score]'), opts);
-      });
-    }, { amount: 0.25 });
-  }
+  startScores();
 
   // Section heads rise in as they arrive (ones already on screen are left be)
   for (const head of heads) {

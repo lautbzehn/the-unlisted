@@ -1,0 +1,120 @@
+/* A place's own page, v2.0 · 10.29.2026. Tokens in tokens.css, shared pieces in components.css.
+   The place's name hangs as a neon sign on a dark wall; the story reads on the left, and the score, the file
+   and the map sit on the right. Stamp it lands an inked stamp on the sign with a thump. */
+
+main.place-page { max-width: var(--max); padding: 20px var(--gutter) clamp(80px, 12vw, 140px); overflow-x: clip; }
+.place-page .back { font-size: var(--text-sm); gap: 8px; }
+
+/* ---------- The hero: meta line, the sign, the tagline and the big score ---------- */
+.card.detail { display: block; }
+.place-hero { display: grid; gap: 18px; }
+.place-meta { display: flex; flex-wrap: wrap; gap: 6px 22px; color: var(--mute); white-space: pre; }
+.place-meta .coords { color: var(--faint); }
+.sample-flag { justify-self: start; color: var(--accent); font-size: var(--text-sm); font-weight: 600; }
+
+.sign-wall {
+  --c: var(--accent);
+  position: relative; container-type: inline-size; display: grid; place-items: center; min-height: clamp(280px, 52svh, 520px);
+  padding: clamp(32px, 6vw, 72px) clamp(16px, 4vw, 48px); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden;
+  background:
+    radial-gradient(60% 55% at 50% 50%, color-mix(in srgb, var(--c) 13%, transparent), transparent 72%),
+    radial-gradient(120% 80% at 50% 120%, rgba(255, 255, 255, 0.04), transparent 60%),
+    #040404;
+}
+.sign-wall:has(.neon[data-tone='cold']) { --c: var(--cold); }
+/* the wall: faint brick courses, barely there */
+.sign-wall::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.5;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 27px, rgba(255, 255, 255, 0.025) 27px 28px),
+    repeating-linear-gradient(90deg, transparent 0 63px, rgba(255, 255, 255, 0.018) 63px 64px);
+  -webkit-mask: radial-gradient(70% 70% at 50% 50%, #000, transparent); mask: radial-gradient(70% 70% at 50% 50%, #000, transparent);
+}
+.place-name { position: relative; margin: 0; text-align: center; font-weight: 400; }
+.sign-wall .neon[data-face='script'] { font-size: min(clamp(3.4rem, 13cqi, 9.5rem), calc(210cqi / var(--len))); }
+.sign-wall .neon[data-face='block'] { font-size: min(clamp(2.4rem, 8.5cqi, 6.2rem), calc(140cqi / var(--len))); }
+.place-sub { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 340px); align-items: end; gap: 20px 48px; margin-top: 10px; }
+.place-tagline { margin: 0; max-width: 30ch; font: 400 clamp(1.5rem, 3vw, 2.2rem)/1.2 var(--font-ui); letter-spacing: -0.02em; text-wrap: balance; }
+.place-sub .score-lg { cursor: help; }
+@media (prefers-reduced-motion: no-preference) {
+  .js .place-sub .score-bar i { transform: scaleX(0); } /* filled in by scripts/rails.js, so it doesn't flash full first */
+}
+
+/* ---------- Two columns: the story, and the file ---------- */
+.place-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 40px clamp(32px, 6vw, 96px); margin-top: clamp(40px, 6vw, 72px); align-items: start; }
+.place-main, .place-aside { display: grid; gap: 28px; align-content: start; }
+.place-aside { position: sticky; top: 84px; gap: 40px; }
+.card.detail .story { max-width: 58ch; font: 400 clamp(1.15rem, 1.6vw, 1.3rem)/1.65 var(--font-ui); letter-spacing: -0.01em; }
+.card.detail .order { max-width: 58ch; margin: 0; padding: 18px 20px; border: 1px solid var(--line); border-left: 2px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; background: transparent; font-size: 1.1rem; line-height: 1.5; }
+.card.detail .order b { display: block; margin-bottom: 6px; color: var(--accent); font-size: 11px; font-weight: 500; }
+.card.detail .actions { margin-top: 0; }
+.card.detail .actions .btn { min-height: 52px; padding-inline: 26px; }
+.before .kicker, .place-aside .kicker { margin: 0 0 14px; font: 500 var(--text-xs)/1.4 var(--font-code); letter-spacing: var(--tracking-mono); text-transform: uppercase; color: var(--mute); }
+.card.detail .practical { margin: 0; padding: 0; list-style: none; display: grid; border-top: 1px solid var(--line); }
+.card.detail .practical li { padding: 12px 0; border-bottom: 1px solid var(--line); color: var(--ink); }
+.card.detail .practical li + li { margin: 0; }
+.card.detail .verified { margin: 0; }
+.card.detail .verified::before { color: var(--cold); }
+
+/* How it scored: five cold bars, filling in as they arrive */
+.card.detail .marks-box { margin: 0; padding: 0; border: 0; }
+.card.detail .mark-row { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr) 3ch; gap: 14px; align-items: center; min-height: 40px; padding: 0; border-bottom: 1px solid var(--line); color: var(--mute); font-size: var(--text-sm); cursor: help; }
+.card.detail .mark-row:first-of-type { border-top: 1px solid var(--line); }
+.card.detail .mark-row b { color: var(--cold); font-size: var(--text-xs); font-weight: 500; text-align: right; }
+.card.detail .mark-row:hover, .card.detail .mark-row:focus-visible { color: var(--ink); }
+.card.detail .marks-box .more-link { margin-top: 6px; font-size: var(--text-sm); }
+
+/* The file: a few facts on rails */
+.file-grid { grid-template-columns: 1fr 1fr; margin: 0; }
+.file-grid .cell { display: grid; align-content: start; gap: 6px; min-height: 92px; padding: 16px 18px; }
+.file-grid dt { color: var(--mute); font-size: 10px; }
+.file-grid dd { margin: 0; font-size: 1.05rem; line-height: 1.35; }
+.file-grid .cell[data-tip] { cursor: help; }
+
+/* Where it is: the night map, a pin while it loads */
+.place-map { position: relative; height: clamp(240px, 32vw, 320px); background: radial-gradient(60% 60% at 50% 50%, rgba(255, 70, 54, 0.08), transparent 70%), #000; }
+.map-hold { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 18px; color: var(--faint); font-size: 10px; }
+.map-hold .pin { pointer-events: none; }
+.place-map.ready .map-hold { display: none; }
+.where-box .more-link { margin-top: 6px; font-size: var(--text-sm); }
+
+.card.detail .mrz { margin-top: clamp(48px, 7vw, 88px); }
+.card.detail .review-flags { margin-top: 32px; }
+
+@media (max-width: 900px) {
+  .place-sub { grid-template-columns: 1fr; }
+  .place-grid { grid-template-columns: 1fr; }
+  .place-aside { position: static; }
+}
+@media (max-width: 560px) {
+  .card.detail .actions .btn { flex: 1 1 140px; }
+  .card.detail .mark-row { grid-template-columns: 7.5rem minmax(0, 1fr) 3ch; }
+}
+
+/* ---------- Stamp it: the stamp comes down on the sign, the wall takes the hit, the tube flickers ---------- */
+.sign-wall .stamp-mark {
+  position: absolute; right: clamp(16px, 6%, 64px); bottom: clamp(16px, 9%, 56px); left: auto; z-index: 3;
+  display: grid; justify-items: center; padding: 10px 18px 8px; border: 3px double var(--accent); border-radius: 8px;
+  color: var(--accent); font: 400 clamp(1.8rem, 4.5cqi, 2.8rem)/1 var(--font-display); letter-spacing: 0.04em; text-transform: uppercase;
+  transform: rotate(-12deg); opacity: 0; pointer-events: none; filter: url(#ink-edge); mix-blend-mode: screen; background: none;
+}
+.sign-wall .stamp-mark small { margin-top: 6px; font: 500 0.6rem var(--font-code); letter-spacing: var(--tracking-mono); }
+.card[data-status='ledger'] .sign-wall .stamp-mark { opacity: 0.9; }
+@media (prefers-reduced-motion: no-preference) {
+  .sign-wall .stamp-mark.slam { animation: stamp-down 0.62s cubic-bezier(0.5, 0, 0.75, 0) both, stamp-settle 0.5s 0.32s var(--spring) both; }
+  @keyframes stamp-down { from { transform: translateY(-40px) rotate(-22deg) scale(2.6); opacity: 0; } 52% { transform: rotate(-12deg) scale(0.9); opacity: 1; } to { transform: rotate(-12deg) scale(0.9); opacity: 0.95; } }
+  @keyframes stamp-settle { from { transform: rotate(-12deg) scale(0.9); } to { transform: rotate(-12deg) scale(1); opacity: 0.9; } }
+  .card.detail.thump { animation: none; } /* the wall takes the hit, not the whole page */
+  /* the hit: the wall jolts, a ring of ink spreads, the neon blinks */
+  .card.thump .sign-wall { animation: wall-hit 0.42s 0.3s cubic-bezier(0.3, 1.6, 0.5, 1); }
+  @keyframes wall-hit { 0% { transform: none; } 25% { transform: translateY(4px) scale(0.995); } 55% { transform: translateY(-2px); } 100% { transform: none; } }
+  .card.thump .sign-wall::after {
+    content: ''; position: absolute; right: clamp(16px, 6%, 64px); bottom: clamp(16px, 9%, 56px); width: 160px; height: 90px; margin: 0 -10px -10px 0;
+    border-radius: 50%; border: 2px solid var(--accent); pointer-events: none; animation: ink-ring 0.7s 0.32s var(--ease) both;
+  }
+  @keyframes ink-ring { from { transform: scale(0.4); opacity: 0.9; } to { transform: scale(2.2); opacity: 0; } }
+  .card.thump .neon { animation: tube-blink 0.5s 0.32s steps(1, end); }
+  @keyframes tube-blink { 0%, 40% { opacity: 0.25; text-shadow: none; } 20%, 60%, 100% { opacity: 1; } }
+  .card.thump [data-action='ledger'] { animation: press 0.3s var(--ease); }
+  @keyframes press { 40% { transform: scale(0.94); } }
+}
