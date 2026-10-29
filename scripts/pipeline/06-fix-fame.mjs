@@ -14,6 +14,10 @@ const PRESS = [
   // San Diego
   'sandiegouniontribune.com', 'sandiegoreader.com', 'sdcitybeat.com', 'sandiegomagazine.com', 'sandiegoville.com',
   'kpbs.org', 'nbcsandiego.com', 'voiceofsandiego.org', 'pacificsandiego.com', 'sdvoyager.com', 'timesofsandiego.com',
+  // Portland (pdx.eater.com is covered by eater.com above)
+  'wweek.com', 'pdxmonthly.com', 'oregonlive.com', 'portlandmercury.com', 'opb.org', 'portlandtribune.com', 'pamplinmedia.com',
+  'kgw.com', 'koin.com', 'kptv.com', 'katu.com', 'portlandfoodanddrink.com', 'travelportland.com', 'theskanner.com',
+  'streetroots.org', '1859oregonmagazine.com', 'bizjournals.com',
 ];
 const outlet = (url) => {
   const host = url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0];

@@ -3,7 +3,7 @@
 // falls back to OSM's address search (Nominatim), then picks a balanced shortlist.
 //   node scripts/pipeline/04-select.mjs 180
 import { readJson, writeJson, slug } from './lib/claude.mjs';
-import { M } from './metros.mjs';
+import { M, METROS } from './metros.mjs';
 
 const target = Number(process.argv[2] ?? 180);
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/^the\s+/, '').replace(/[^a-z0-9]/g, '');
@@ -28,8 +28,8 @@ const unique = readJson(`${M.reviewDir}/discovered.json`, []).filter((c) => {
 });
 
 // 2. coordinates: OSM name match first, then Nominatim address lookup (1 request per second, per its usage policy).
-// Nominatim rate-limits cloud machines (429), so fall back to the US Census geocoder (exact house numbers, CA only:
-// both metros are in California), then Photon (OSM-based, sometimes lands on the wrong block).
+// Nominatim rate-limits cloud machines (429), so fall back to the US Census geocoder (exact house numbers, scoped to the
+// metro's state), then Photon (OSM-based, sometimes lands on the wrong block).
 const UA = { 'User-Agent': 'the-unlisted-portfolio/0.1 (hello@icarianforge.com)' };
 const getJson = async (url) => {
   try { const res = await fetch(url, { headers: UA }); return res.ok ? await res.json() : null; } catch { return null; }
@@ -38,7 +38,7 @@ async function geocode(address) {
   const [hit] = (await getJson(`https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(address)}`)) ?? [];
   await new Promise((r) => setTimeout(r, 1100));
   if (hit) return [+hit.lat, +hit.lon];
-  const census = await getJson(`https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&format=json&address=${encodeURIComponent(`${address}, CA`)}`);
+  const census = await getJson(`https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&format=json&address=${encodeURIComponent(`${address}, ${M.state.code}`)}`);
   const m = census?.result?.addressMatches?.[0];
   if (m) return [m.coordinates.y, m.coordinates.x];
   const photon = await getJson(`https://photon.komoot.io/api/?limit=1&q=${encodeURIComponent(address)}`);
@@ -70,7 +70,7 @@ while (picked.length < target && groups.some((g) => g.length)) for (const g of g
 // ids become web addresses (/place/<id>/), so they must be unique across every city and batch
 import { readdirSync, existsSync } from 'node:fs';
 const ids = new Set(readJson('src/data/places.json', []).map((p) => p.id));
-for (const dir of ['data/review', 'data/review/san-diego']) {
+for (const dir of new Set(Object.values(METROS).map((m) => m.reviewDir))) {
   if (!existsSync(dir)) continue;
   for (const f of readdirSync(dir).filter((n) => /^batch-\d+\.json$/.test(n))) for (const d of readJson(`${dir}/${f}`, [])) ids.add(d.id);
 }

@@ -1,10 +1,11 @@
 // Step 5: enrichment. Claude researches each selected place (web search + fetch) and drafts its card,
-// following prompts/enrich-place.md. Drafts land in data/review/<name>.json for human review.
-//   node --env-file=.env scripts/pipeline/05-enrich.mjs --estimate
+// following prompts/enrich-place.md. Drafts land in <reviewDir>/<name>.json for human review.
+//   METRO=portland node --env-file=.env scripts/pipeline/05-enrich.mjs --estimate
 //   node --env-file=.env scripts/pipeline/05-enrich.mjs --submit 10      (next 10 not-yet-drafted places: the pilot)
 //   node --env-file=.env scripts/pipeline/05-enrich.mjs --collect batch-02
 import { readFileSync } from 'node:fs';
 import { MODEL, submitBatch, collectBatch, ledger, extractJson, readJson, writeJson, file, budgetReport } from './lib/claude.mjs';
+import { M, METRO } from './metros.mjs';
 
 const RUBRIC = readFileSync(file('prompts/enrich-place.md'), 'utf8');
 const SYSTEM = `${RUBRIC}
@@ -64,7 +65,7 @@ function check(d) {
 
 const [arg, val] = process.argv.slice(2);
 const done = drafted();
-const todo = readJson('data/review/candidates.json', []).filter((c) => !done.has(c.id));
+const todo = readJson(`${M.reviewDir}/candidates.json`, []).filter((c) => !done.has(c.id));
 
 if (!arg || arg === '--estimate') {
   console.log(`${todo.length} places waiting for research. Worst case $${RESERVE}/place reserved; expect roughly $0.25-0.45.`);
@@ -78,9 +79,9 @@ if (!arg || arg === '--estimate') {
   writeJson('data/review/spend.json', l);
 } else if (arg === '--collect') {
   const name = val ?? `batch-${String(ledger().batches.filter((b) => b.kind === 'enrich' && b.status === 'collected').length + 2).padStart(2, '0')}`;
-  const cands = Object.fromEntries(readJson('data/review/candidates.json', []).map((c) => [c.id, c]));
-  const drafts = readJson(`data/review/${name}.json`, []);
-  const skipped = readJson('data/review/skipped.json', []);
+  const cands = Object.fromEntries(readJson(`${M.reviewDir}/candidates.json`, []).map((c) => [c.id, c]));
+  const drafts = readJson(`${M.reviewDir}/${name}.json`, []);
+  const skipped = readJson(`${M.reviewDir}/skipped.json`, []);
   for (const b of ledger().batches.filter((b) => b.kind === 'enrich' && b.status === 'submitted')) {
     await collectBatch(b.id, (id, msg, err) => {
       const c = cands[id];
@@ -89,13 +90,13 @@ if (!arg || arg === '--estimate') {
       if (d.skip) return skipped.push({ id, name: c?.name, reason: d.reason });
       const problems = check(d);
       drafts.push({
-        id, seed: false, status: 'draft', ...d,
+        id, seed: false, status: 'draft', metro: METRO, ...d,
         lat: c.lat, lng: c.lng, osm: c.osm ?? null, verified: new Date().toISOString().slice(0, 7),
         flags: [...(d.flags ?? []), ...problems.map((p) => `Format problem: ${p}`)],
       });
     });
   }
-  writeJson(`data/review/${name}.json`, drafts);
-  writeJson('data/review/skipped.json', skipped);
-  console.log(`${drafts.length} drafts in data/review/${name}.json, ${skipped.length} skipped so far (see skipped.json).`);
+  writeJson(`${M.reviewDir}/${name}.json`, drafts);
+  writeJson(`${M.reviewDir}/skipped.json`, skipped);
+  console.log(`${drafts.length} drafts in ${M.reviewDir}/${name}.json, ${skipped.length} skipped so far (see skipped.json).`);
 }
