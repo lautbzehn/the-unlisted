@@ -12,27 +12,7 @@ main.place-page { max-width: var(--max); padding: 20px var(--gutter) clamp(80px,
 .place-meta .coords { color: var(--faint); }
 .sample-flag { justify-self: start; color: var(--accent); font-size: var(--text-sm); font-weight: 600; }
 
-.sign-wall {
-  --c: var(--accent);
-  position: relative; container-type: inline-size; display: grid; place-items: center; min-height: clamp(280px, 52svh, 520px);
-  padding: clamp(32px, 6vw, 72px) clamp(16px, 4vw, 48px); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden;
-  background:
-    radial-gradient(60% 55% at 50% 50%, color-mix(in srgb, var(--c) 13%, transparent), transparent 72%),
-    radial-gradient(120% 80% at 50% 120%, rgba(255, 255, 255, 0.04), transparent 60%),
-    #040404;
-}
-.sign-wall:has(.neon[data-tone='cold']) { --c: var(--cold); }
-/* the wall: faint brick courses, barely there */
-.sign-wall::before {
-  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.5;
-  background:
-    repeating-linear-gradient(0deg, transparent 0 27px, rgba(255, 255, 255, 0.025) 27px 28px),
-    repeating-linear-gradient(90deg, transparent 0 63px, rgba(255, 255, 255, 0.018) 63px 64px);
-  -webkit-mask: radial-gradient(70% 70% at 50% 50%, #000, transparent); mask: radial-gradient(70% 70% at 50% 50%, #000, transparent);
-}
-.place-name { position: relative; margin: 0; text-align: center; font-weight: 400; }
-.sign-wall .neon[data-face='script'] { font-size: min(clamp(3.4rem, 13cqi, 9.5rem), calc(210cqi / var(--len))); }
-.sign-wall .neon[data-face='block'] { font-size: min(clamp(2.4rem, 8.5cqi, 6.2rem), calc(140cqi / var(--len))); }
+/* The sign wall itself is shared (components.css) */
 .place-sub { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 340px); align-items: end; gap: 20px 48px; margin-top: 10px; }
 .place-tagline { margin: 0; max-width: 30ch; font: 400 clamp(1.5rem, 3vw, 2.2rem)/1.2 var(--font-ui); letter-spacing: -0.02em; text-wrap: balance; }
 .place-sub .score-lg { cursor: help; }

@@ -146,11 +146,7 @@ main.home { max-width: none; padding: 0 0 clamp(96px, 14vw, 180px); overflow-x: 
 }
 
 /* ---------- Deep cuts: cards that pin and stack ---------- */
-.stack { list-style: none; margin: 0; padding: 0; counter-reset: sc; }
 .stack[data-keep='5'] > li:nth-child(n + 6) { display: none; }
-.stack-item { counter-increment: sc; position: sticky; top: calc(84px + var(--k) * 18px); margin-bottom: 28px; }
-.stack-item:nth-child(1) { --k: 0; } .stack-item:nth-child(2) { --k: 1; } .stack-item:nth-child(3) { --k: 2; }
-.stack-item:nth-child(4) { --k: 3; } .stack-item:nth-child(n + 5) { --k: 4; }
 .stack-card {
   --c: var(--accent); --shade: 0;
   position: relative; display: grid; grid-template-rows: auto minmax(0, 1fr) auto auto; min-height: min(78svh, 640px);
@@ -161,7 +157,6 @@ main.home { max-width: none; padding: 0 0 clamp(96px, 14vw, 180px); overflow-x: 
   box-shadow: 0 -20px 50px -20px #000;
 }
 .stack-card:has(.neon[data-tone='cold']) { --c: var(--cold); }
-.stack-card::after { content: ''; position: absolute; inset: 0; background: #000; opacity: var(--shade); pointer-events: none; } /* sinks as the next card lands */
 .stack-card:hover { border-color: var(--line-strong); }
 .sc-head { display: flex; justify-content: space-between; gap: 12px; padding: 20px 24px; color: var(--mute); font-size: 11px; border-bottom: 1px solid var(--line); }
 .sc-n::before { content: 'No. ' counter(sc, decimal-leading-zero); color: var(--ink); }
@@ -176,15 +171,11 @@ main.home { max-width: none; padding: 0 0 clamp(96px, 14vw, 180px); overflow-x: 
 .stack-card:hover .sc-cta { color: var(--accent); transform: translateX(4px); }
 .stack-card .t-stub { margin: 0; padding: 10px 24px 12px; }
 @media (max-width: 760px) {
-  .stack-item { top: calc(72px + var(--k) * 12px); margin-bottom: 18px; }
   .stack-card { min-height: min(74svh, 560px); }
   .sc-foot { grid-template-columns: 1fr auto; }
   .sc-cta { display: none; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .stack-item { position: static; }
-  .stack-card { min-height: 0; }
-}
+@media (prefers-reduced-motion: reduce) { .stack-card { min-height: 0; } }
 
 
 /* ---------- Neighborhoods ---------- */

@@ -74,3 +74,38 @@
     89%, 92%, 92.6% { opacity: 0.2; text-shadow: none; }
   }
 }
+
+/* ---------- Stacking cards: each card pins near the top as you scroll and the next lands on it ----------
+   CSS does the pinning (sticky, each a little lower than the last); scripts/rails.js (initStack) sinks the card
+   beneath as the next one arrives. A plain list under reduced motion. Used by the deep cuts and Our Story. */
+.stack { list-style: none; margin: 0; padding: 0; counter-reset: sc; }
+.stack-item { counter-increment: sc; position: sticky; top: calc(84px + var(--k) * 18px); margin-bottom: 28px; }
+.stack-item:nth-child(1) { --k: 0; } .stack-item:nth-child(2) { --k: 1; } .stack-item:nth-child(3) { --k: 2; }
+.stack-item:nth-child(4) { --k: 3; } .stack-item:nth-child(n + 5) { --k: 4; }
+.stack-item > :first-child { --shade: 0; position: relative; transform-origin: 50% 0; }
+.stack-item > :first-child::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: #000; opacity: var(--shade); pointer-events: none; }
+@media (max-width: 760px) { .stack-item { top: calc(72px + var(--k) * 12px); margin-bottom: 18px; } }
+@media (prefers-reduced-motion: reduce) { .stack-item { position: static; } }
+
+/* ---------- The sign wall: a dark wall a neon sign hangs on (place pages, the 404) ---------- */
+.sign-wall {
+  --c: var(--accent);
+  position: relative; container-type: inline-size; display: grid; place-items: center; min-height: clamp(280px, 52svh, 520px);
+  padding: clamp(32px, 6vw, 72px) clamp(16px, 4vw, 48px); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden;
+  background:
+    radial-gradient(60% 55% at 50% 50%, color-mix(in srgb, var(--c) 13%, transparent), transparent 72%),
+    radial-gradient(120% 80% at 50% 120%, rgba(255, 255, 255, 0.04), transparent 60%),
+    #040404;
+}
+.sign-wall:has(.neon[data-tone='cold']) { --c: var(--cold); }
+/* the wall: faint brick courses, barely there */
+.sign-wall::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.5;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 27px, rgba(255, 255, 255, 0.025) 27px 28px),
+    repeating-linear-gradient(90deg, transparent 0 63px, rgba(255, 255, 255, 0.018) 63px 64px);
+  -webkit-mask: radial-gradient(70% 70% at 50% 50%, #000, transparent); mask: radial-gradient(70% 70% at 50% 50%, #000, transparent);
+}
+.place-name { position: relative; margin: 0; text-align: center; font-weight: 400; }
+.sign-wall .neon[data-face='script'] { font-size: min(clamp(3.4rem, 13cqi, 9.5rem), calc(210cqi / var(--len))); }
+.sign-wall .neon[data-face='block'] { font-size: min(clamp(2.4rem, 8.5cqi, 6.2rem), calc(140cqi / var(--len))); }

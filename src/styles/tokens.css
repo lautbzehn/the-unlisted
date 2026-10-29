@@ -3,7 +3,7 @@
    and every score. Oversized serif for headlines, a grotesk for everything you read or scan, mono for the
    machine-readable passport lines. Every text color is checked for contrast on --bg (ratios in the comments).
    The older token names (--go, --font-title, --font-head, --font-read) stay as aliases, so pages that haven't
-   been redesigned yet inherit the new look without breaking. Reference: docs/design-system_v2.1_10.29.2026.md */
+   been redesigned yet inherit the new look without breaking. Reference: docs/design-system_v2.2_10.29.2026.md */
 
 @import '@fontsource/instrument-serif/400.css';
 @import '@fontsource/instrument-serif/400-italic.css';

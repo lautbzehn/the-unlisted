@@ -1,6 +1,6 @@
-import { inView, scroll, stagger } from 'motion';
+import { inView, stagger } from 'motion';
 import { animate } from 'motion/mini'; // the small build: hardware-accelerated (WAAPI) animations only
-import { EASE, initSpotlight, prepareScores } from './rails.js';
+import { EASE, initSpotlight, initStack, prepareScores } from './rails.js';
 import { getState, update, toast } from './passport.js';
 import { initSurprise } from './surprise.js';
 import { currentBucket } from './time.js';
@@ -75,11 +75,7 @@ const setUpMotion = () => {
   }
 
   // Deep cuts: as each card lands on the pile, the one beneath it sinks back and dims
-  items.forEach((li, i) => {
-    const next = items[i + 1];
-    if (!next) return;
-    scroll(animate(li.firstElementChild, { transform: ['scale(1)', 'scale(0.93)'], '--shade': [0, 0.55] }, { ease: 'linear', duration: 1 }), { target: next, offset: ['start end', 'start start'] });
-  });
+  initStack(items);
 };
 if (!reduceMotion) requestAnimationFrame(() => setTimeout(setUpMotion));
 

@@ -9,6 +9,7 @@ import { LISTS } from '../lib/glossary.js';
 <Base title="My Passport — The Unlisted" description="Your Bucket List and the places you've stamped. Saved on your device." path="/passport/">
   <main id="main" class="passport-page">
     <header class="page-head">
+      <p class="kicker mono">Saved on this device</p>
       <h1 class="page-title">My Passport</h1>
       <p class="page-sub">Places you want to go, and places you’ve been. Saved on this device only, never sent to us.</p>
     </header>
@@ -17,7 +18,7 @@ import { LISTS } from '../lib/glossary.js';
       <button type="button" data-tab="ledger" aria-pressed="false" data-tip={LISTS.stamped.tip}>{LISTS.stamped.name}<span class="n"></span></button>
     </div>
     <p class="empty show" id="empty">Nothing on your Bucket List yet. Open any place on <a href="/explore/">Explore</a> and tap “+ Bucket List”.</p>
-    <div class="entries" id="pp-entries">
+    <div class="entries rails" id="pp-entries" data-spotlight>
       {places.map((p) => <PlaceCard place={p} />)}
     </div>
     <MapSheet />

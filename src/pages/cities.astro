@@ -3,21 +3,22 @@ import Base from '../layouts/Base.astro';
 import Footer from '../components/Footer.astro';
 import { TURNSTILE_SITE_KEY } from '../lib/config.js';
 import CITY_OPTIONS from '../data/city-options.json';
+import NeonSign from '../components/NeonSign.astro';
 
 const groups = Object.entries(Object.groupBy(CITY_OPTIONS, (c) => c.group));
 ---
 <Base title="Next cities — The Unlisted" description="The Bay Area and San Diego are open. Austin and New York are next. Vote for the city after that." path="/cities/">
   <main id="main" class="doc cities-page">
     <header class="page-head">
+      <p class="kicker mono">The passport</p>
       <h1 class="page-title">Cities</h1>
       <p class="page-sub">The Bay Area and San Diego are <strong class="go-text">open</strong>. Here’s what comes next, and where you can vote for the city after that.</p>
     </header>
 
     <section class="coming" aria-labelledby="coming">
       <h2 id="coming" class="eyebrow">Opening next</h2>
-      <div class="cities">
-        <span>Austin</span><span class="vs" aria-hidden="true">·</span>
-        <span>New York</span>
+      <div class="sign-wall">
+        <p class="signs"><NeonSign id="austin" name="Austin" /><span class="sr-only"> and </span><NeonSign id="new-york" name="New York" /></p>
       </div>
       <p>Already booked. <a class="go-text" href="/san-diego/">San Diego is open</a>.</p>
     </section>

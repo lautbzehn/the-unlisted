@@ -2,7 +2,6 @@
 import Base from '../layouts/Base.astro';
 import Footer from '../components/Footer.astro';
 import AboutNav from '../components/AboutNav.astro';
-import GemDoor from '../components/GemDoor.astro';
 import { MARKS, RADAR } from '../lib/scoring.js';
 import { places } from '../lib/places.js';
 const hasSamples = places.some((p) => p.sample);
@@ -76,7 +75,11 @@ const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92, radar:
           ))}
         </div>
         <div class="calc-result" aria-live="polite">
-          <GemDoor score="0" size="lg" numId="calc-score" />
+          <span class="score score-lg" role="img" aria-label="Gem score out of 100" id="calc-box">
+            <span class="score-cap mono" aria-hidden="true">Gem score</span>
+            <span class="score-bar" aria-hidden="true"><i id="calc-bar" style="transform:scaleX(0)"></i></span>
+            <b class="mono" aria-hidden="true" id="calc-score">0</b>
+          </span>
           <p class="calc-note">Hypothetical place. Not a real score.</p>
         </div>
       </div>
@@ -126,7 +129,8 @@ const start = { uniqueness: 90, atmosphere: 85, story: 95, signature: 92, radar:
       calc.querySelector('[data-pts=radar]').textContent = `= ${(marks.radar * MARKS.find((m) => m.key === "radar").weight).toFixed(1)} pts`;
       const score = gemScore(marks);
       document.getElementById('calc-score').textContent = score;
-      calc.querySelector('.gem-door').setAttribute('aria-label', `Gem score ${score} out of 100`);
+      document.getElementById('calc-bar').style.transform = `scaleX(${score / 100})`;
+      document.getElementById('calc-box').setAttribute('aria-label', `Gem score ${score} out of 100`);
     };
     calc.addEventListener('input', render);
     render();

@@ -1,7 +1,7 @@
 // Shared motion for the v2.0 design system (styles in components.css): the pointer spotlight on grids drawn on
 // hairline rails, and score bars that fill in, number counting up, as they come into view.
 // Both stay still under reduced motion; the spotlight only runs with a mouse or trackpad.
-import { inView } from 'motion';
+import { inView, scroll } from 'motion';
 import { animate } from 'motion/mini'; // the small build: hardware-accelerated (WAAPI) animations only
 
 export const EASE = [0.22, 1, 0.36, 1]; // --ease in tokens.css
@@ -55,4 +55,15 @@ export function prepareScores(groups) {
       }, { amount: 0.25 });
     }
   };
+}
+
+// Stacking cards (.stack > li, components.css): as each card lands on the pile, the one beneath it sinks back
+// and dims. Pass the visible items, found before changing anything.
+export function initStack(items) {
+  if (reduceMotion) return;
+  items.forEach((li, i) => {
+    const next = items[i + 1];
+    if (!next) return;
+    scroll(animate(li.firstElementChild, { transform: ['scale(1)', 'scale(0.93)'], '--shade': [0, 0.55] }, { ease: 'linear', duration: 1 }), { target: next, offset: ['start end', 'start start'] });
+  });
 }

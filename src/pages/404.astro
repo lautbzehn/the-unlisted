@@ -1,15 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
 import Footer from '../components/Footer.astro';
+import NeonSign from '../components/NeonSign.astro';
 ---
 <Base title="Locked door — The Unlisted" description="This page doesn't exist." path="/404">
-  <main id="main" class="doc" style="text-align:center">
-    <section class="cover">
-      <p class="eyebrow">No entry</p>
-      <h1 class="logo" style="margin-top:10px">Locked</h1>
-      <p class="tagline">The page you knocked on isn’t here. Maybe it moved, maybe it never existed. The good doors are this way.</p>
-      <div class="cover-cta"><a class="btn btn-primary btn-lg" href="/explore/">Explore all the doors</a></div>
-    </section>
+  <main id="main" class="doc locked">
+    <p class="kicker mono">No entry · 404</p>
+    <div class="sign-wall">
+      <h1 class="place-name"><NeonSign id="locked" name="Locked" /></h1>
+    </div>
+    <p class="lede">The page you knocked on isn’t here. Maybe it moved, maybe it never existed. The good doors are this way.</p>
+    <div class="cover-cta"><a class="btn btn-primary btn-lg" href="/explore/">Explore all the doors</a></div>
   </main>
   <Footer />
 </Base>

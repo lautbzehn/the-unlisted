@@ -1,6 +1,9 @@
 // My Passport: your Bucket List and the places you've stamped. Everything here lives on this device.
 import { getState, onChange } from './passport.js';
 import { openSheet } from './mapsheet.js';
+import { initSpotlight } from './rails.js';
+
+initSpotlight(); // the list's rails catch the light under the pointer (components.css)
 
 const cards = [...document.querySelectorAll('.card.entry')];
 const tabs = [...document.querySelectorAll('[data-tab]')];

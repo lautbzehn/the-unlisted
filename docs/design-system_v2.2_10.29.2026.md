@@ -1,8 +1,8 @@
 # The Unlisted design system
 
-**v2.1 · 10.29.2026** · "After hours"
+**v2.2 · 10.29.2026** · "After hours"
 
-v2.1 adds the map, the place page, and the share image to the v2.0 system.
+v2.1 added the map, the place page, and the share image. v2.2 covers every remaining page: the deck's throw physics, Our Story, My Passport, Cities, the About pages and the 404. The Gem door is retired; scores are cold bars everywhere.
 
 A city at 2 a.m. True black, one red light over the door, one cold light for anything live. The tokens live in [`src/styles/tokens.css`](../src/styles/tokens.css); this page explains them.
 
@@ -43,12 +43,20 @@ Pill buttons, hairline rules (`--line`, `--line-strong`), square grids on rails 
 | Live film grain | Home hero | WebGL shader, 24 fps, pointer-reactive, pauses off screen, skipped on software GPUs and behind the welcome gate | Still red and cold gradient |
 | Rails spotlight and crosshairs | Grids | Light drawn under the grid shows through translucent rails; red crosshairs on the hovered cell | No spotlight; crosshairs on focus only |
 | Score bars | Every score | Motion (`inView`), number counts up with the bar | Bars at full value |
-| Stacking cards | Deep cuts | `position: sticky`, Motion `scroll()` sinks the card beneath | Plain list |
+| Stacking cards | Deep cuts, Our Story | `.stack` in components.css (sticky), `initStack` in rails.js (Motion `scroll()`) sinks the card beneath | Plain list |
+| Throw physics | Surprise me deck | A thrown card keeps your speed and direction and falls a little as it goes; one let go short springs home with a small overshoot (a damped spring). Undo springs the card back from where it left | Cards move instantly |
 | Neon sign | Each place's name: place page, deep cuts, share image | `lib/neon.js` picks from the place id: tube color (red or cold), lettering (script or block), tilt, the letter that flickers | No flicker |
 | Stamp thump | Stamp it, on a place's page | The red stamp drops onto the sign, the wall jolts, a ring of ink spreads, the tube blinks, phones tap once | Stamp appears, no motion |
 | Glowing markers | Explore and place maps | A lit point with a halo: warm white for places, red for your Bucket List, cold for Stamped. The one you point at flares and pings | No ping |
 
 Easing is `--ease` (arrives fast, settles slow) for almost everything. Motion is the small WAAPI build (`motion/mini`) plus `inView`, `scroll` and `stagger`.
+
+## Pages
+
+- **Page heads:** a mono kicker, an oversized serif title, a larger sub line. Section heads are serif too.
+- **About pages:** a mono tab bar with a red underline for the page you're on; glossaries and steps on hairline rules.
+- **Neon signs** also hang the next cities (Austin, New York) on Cities, and "Locked" on the 404.
+- **Forms:** mono field labels, pill choices, a white focus ring. Errors in red, success in cold.
 
 ## Maps
 
@@ -65,8 +73,10 @@ Mobile Lighthouse 90 or better on every template. Measured on 10.29.2026 (local 
 | Page | Performance | Accessibility | SEO |
 |---|---|---|---|
 | Home | 97 to 98 | 100 | 100 |
-| Explore, Bay Area | 95 to 96 | 100 | 100 |
+| Explore, Bay Area | 94 to 96 | 100 | 100 |
 | Explore, San Diego | 97 to 98 | 100 | 100 |
 | A place | 99 | 100 | 100 |
+| My Passport | 98 | 100 | 100 |
+| Our Story, Cities, Help, How the score works, Suggest, Contact, Privacy | 99 | 100 | 100 |
 
 The Explore list is long, so its rows use `content-visibility: auto`: rows off screen skip layout and paint.
