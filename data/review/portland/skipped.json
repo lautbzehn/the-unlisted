@@ -1,0 +1,27 @@
+[
+  {
+    "id": "taqueria-la-hidalguense",
+    "name": "Taqueria La Hidalguense",
+    "reason": "Nothing to say, and it may be a truck: only directory listings (Atly, MapQuest) turned up, one calls it a food truck and MapQuest marks it closed. No press, owner or menu details, and the newest sign of life is discovery's Feb 2026 Tribune inspection mention, past the 6-month cart window."
+  },
+  {
+    "id": "red-s-bar-and-grill",
+    "name": "Red's Bar & Grill",
+    "reason": "Poor fit, nothing real to say: no press at all, only directory and real-estate listings, and the land, building and business are listed for sale (Corcoran at $3.5M; Berkshire Hathaway listing data dated Apr 2024). No sale or closing reported; discovery's Jul 2026 Tribune inspection mention suggests it is still open."
+  },
+  {
+    "id": "j-vein-caffe",
+    "name": "J Vein Caffè",
+    "reason": "Cart rules not met on what I could confirm: the pod checks out (Rose City Food Park, 5235 NE Sandy Blvd), but no source I could open dates how long it has been there or names it as open since May 2026. The Mercury's summer 2026 Top 20 Food Carts list the lead cites refuses fetching (its snippet mentions an Italian espresso cart), and Portland Monthly's April 2024 piece on the pod hit a bot wall twice."
+  },
+  {
+    "id": "mandarin-house",
+    "name": "Mandarin House",
+    "reason": "Couldn't confirm it is open, and there is little to stand on. The only 2026 mention is an aggregator rewrite, and discovery's lead (Hoodline's Feb 2026 Chinatown report) doesn't mention it. The one press item is a 2020 Hoodline list ranked from Yelp ratings. Worth a phone call if you want it back."
+  },
+  {
+    "id": "kingston-bar-and-grill",
+    "name": "Kingston Bar & Grill",
+    "reason": "Poor fit: a standard sports bar a block from Providence Park, busy before Timbers games. Open as of Aug 2026 (Mercury Burger Week), but no history found, and the only other press is a 2016 Willamette Week drink-deals note."
+  }
+]
