@@ -450,6 +450,501 @@
     "from": "disc-03-night"
   },
   {
+    "name": "Broder Cafe",
+    "neighborhood": "Division-Clinton",
+    "city": "Portland",
+    "address": "2508 SE Clinton St",
+    "kind": "Swedish breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "Small Clinton Street room since 2007 cooking Scandinavian breakfasts: baked eggs in skillets over hash, Swedish meatballs, and aebleskiver with lingonberry. Arrive early.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-brunch-portland",
+    "open_evidence": "Listed in Portland Monthly brunch guide dated Nov 2025",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Ricky's",
+    "neighborhood": "Division-Clinton",
+    "city": "Portland",
+    "address": "2111 SE Division St",
+    "kind": "Family bagel shop",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Spielman's Division bagel shop, renamed this month by the family for the late father who opened the first Spielman on this street. Same boiled bagels.",
+    "source_url": "https://bridgetownbites.com/2026/10/21/rickys-new-bagel-shop-taking-over-the-se-division-spielman-location-portland-oregon/",
+    "open_evidence": "Bridgetown Bites, Oct 2026: shop renamed Ricky's on Oct 26, 2026, menu largely unchanged",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Lauretta Jean's",
+    "neighborhood": "Richmond",
+    "city": "Portland",
+    "address": "3402 SE Division St",
+    "kind": "Pie shop and cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Pie by the slice from a baker who began at farmers markets: flaky butter crust, seasonal fruit fillings, and coffee in a calm Division room.",
+    "source_url": "https://www.pdxmonthly.com/home-and-real-estate/portland-neighborhood-guide-division-and-clinton",
+    "open_evidence": "Portland Tribune county inspection roundup, Mar 2026; Portland Monthly Division/Clinton guide, about Feb 2026",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Pinolo Gelato",
+    "neighborhood": "Richmond",
+    "city": "Portland",
+    "address": "3707 SE Division St",
+    "kind": "Italian gelato shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Small-batch gelato from an Italian-born owner, kept in lidded steel wells the old way. Order the pine nut flavor the shop is named for.",
+    "source_url": "https://www.pdxmonthly.com/home-and-real-estate/portland-neighborhood-guide-division-and-clinton",
+    "open_evidence": "Named in Portland Monthly Division/Clinton neighborhood guide, about Feb 2026",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "DC Vegetarian",
+    "neighborhood": "Richmond",
+    "city": "Portland",
+    "address": "5026 SE Division St",
+    "kind": "Vegetarian sandwich counter",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "A onetime downtown food cart now holding a Division storefront, stacking seitan cheesesteaks and hearty vegan sandwiches that win over meat eaters. Cheap and filling.",
+    "source_url": "https://portlandtribune.com/2026/03/03/multnomah-county-health-inspections/",
+    "open_evidence": "Perfect score in Portland Tribune county inspection roundup, Mar 2026",
+    "from": "disc-04-day"
+  },
+  {
+    "name": "Reel M Inn",
+    "neighborhood": "Division-Clinton",
+    "city": "Portland",
+    "address": "2430 SE Division St",
+    "kind": "Nautical dive, fried chicken",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "why": "Tiny fishing-themed dive where fried chicken and jojos are cooked to order, so you nurse a beer and wait. The wait is the point.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/wine-beer-cocktails-bars/best-portland-bar-crawls/",
+    "open_evidence": "Portland Monthly bar-crawl guide, updated about Mar 2026",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "Dot's Cafe",
+    "neighborhood": "Division-Clinton",
+    "city": "Portland",
+    "address": "2521 SE Clinton St",
+    "kind": "Dive bar and diner",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Clinton Street bar and diner that has fed night owls for decades: dim booths, kitsch on the walls, burgers and fries well past ten.",
+    "source_url": "https://www.pdxmonthly.com/home-and-real-estate/portland-neighborhood-guide-division-and-clinton",
+    "open_evidence": "Portland Monthly Division/Clinton guide, about Feb 2026, and bar-crawl guide, about Mar 2026",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "Scottie's Pizza Parlor",
+    "neighborhood": "Division-Clinton",
+    "city": "Portland",
+    "address": "2128 SE Division St",
+    "kind": "New York slice counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Slice shop on Division where the dough ferments slowly and the pepperoni curls into cups. Order by the slice at the counter, no ceremony.",
+    "source_url": "https://www.pdxmonthly.com/home-and-real-estate/portland-neighborhood-guide-division-and-clinton",
+    "open_evidence": "Named in Portland Monthly Division/Clinton neighborhood guide, about Feb 2026",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "Nuestra Cocina",
+    "neighborhood": "Division-Clinton",
+    "city": "Portland",
+    "address": "2135 SE Division St",
+    "kind": "Family Mexican restaurant",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Family-run Division dining room cooking regional Mexican plates and moles since the early 2000s, long before the street filled with condos and lines.",
+    "source_url": "https://portlandtribune.com/2026/03/03/multnomah-county-health-inspections/",
+    "open_evidence": "Perfect score in Portland Tribune county inspection roundup, Mar 2026",
+    "from": "disc-04-night"
+  },
+  {
+    "name": "Bertie Lou's Cafe",
+    "neighborhood": "Sellwood",
+    "city": "Portland",
+    "address": "8051 SE 17th Ave",
+    "kind": "Tiny breakfast diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "A twenty-odd-seat Sellwood breakfast room known for cinnamon roll French toast and oversized breakfast burritos. Get there early on weekends or wait outside.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-brunch-portland",
+    "open_evidence": "Perfect score in Portland Tribune inspection roundup, Apr 2026; Portland Monthly brunch guide, Nov 2025",
+    "from": "disc-05-day"
+  },
+  {
+    "name": "Sebastiano's",
+    "neighborhood": "Sellwood",
+    "city": "Portland",
+    "address": "8235 SE 13th Ave",
+    "kind": "Sicilian deli",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Sicilian deli that left Montavilla for SE 13th, still known for cannoli and a Northwest take on the muffuletta piled with house-cured meats.",
+    "source_url": "https://portlandtribune.com/2026/06/04/multnomah-county-health-inspections-dutch-bros-coffee-blue-star-donuts-sizzle-pie/",
+    "open_evidence": "Perfect score at the Sellwood address, Portland Tribune inspection roundup, Jun 2026",
+    "from": "disc-05-day"
+  },
+  {
+    "name": "Kay's Bar",
+    "neighborhood": "Westmoreland",
+    "city": "Portland",
+    "address": "6903 SE Milwaukie Ave",
+    "kind": "Neighborhood tavern since 1934",
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Corner tavern at Milwaukie and Bybee since 1934. Weekday happy hour fills the booths with cheap nachos and heaping platters of fries.",
+    "source_url": "https://pdxmonthly.com/eat-and-drink/portland-best-happy-hours",
+    "open_evidence": "Listed in Portland Tribune county inspection roundup, Feb 2026",
+    "from": "disc-05-night"
+  },
+  {
+    "name": "Brooklyn Park Pub",
+    "neighborhood": "Brooklyn",
+    "city": "Portland",
+    "address": "3400 SE Milwaukie Ave",
+    "kind": "Corner pub with tots",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Low-key Brooklyn corner pub with a whiskey club, regulars at the rail and baskets of tots. The neighborhood mostly keeps it to itself.",
+    "source_url": "https://portlandtribune.com/2026/06/04/multnomah-county-health-inspections-dutch-bros-coffee-blue-star-donuts-sizzle-pie/",
+    "open_evidence": "Perfect score in Portland Tribune inspection roundup, Jun 2026",
+    "from": "disc-05-night"
+  },
+  {
+    "name": "Original Hotcake House",
+    "neighborhood": "Brooklyn",
+    "city": "Portland",
+    "address": "1002 SE Powell Blvd",
+    "kind": "Old-school pancake diner",
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "why": "Longtime Powell Boulevard diner with plate-sized hotcakes, a jukebox and gruff charm. No longer open all night, but still flipping until 11 pm.",
+    "source_url": "https://www.wweek.com/culture/2024/05/28/brooklyns-got-your-late-night-hangs-ready/",
+    "open_evidence": "Diner reviews dated Dec 2025 on a listings page; Wikipedia snapshot of Mar 2026 describes it as operating. Weakest evidence in this set",
+    "from": "disc-05-night"
+  },
+  {
+    "name": "Otto's Sausage Kitchen",
+    "neighborhood": "Woodstock",
+    "city": "Portland",
+    "address": "4138 SE Woodstock Blvd",
+    "kind": "Sausage shop and deli",
+    "when": [
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "Family meat market on Woodstock for about a century, making over 40 sausages in house. Get the old-fashioned wiener and work the mustard bar.",
+    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
+    "open_evidence": "Second place, Best Deli, Willamette Week Best of Portland readers' poll, Jul 2026",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "Bar Carlo",
+    "neighborhood": "Foster-Powell",
+    "city": "Portland",
+    "address": "6439 SE Foster Rd",
+    "kind": "Neighborhood breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Foster Road breakfast cafe that has anchored weekend mornings on the strip for years. Hearty egg plates, strong coffee and a neighborhood crowd.",
+    "source_url": "https://portlandtribune.com/2026/03/03/multnomah-county-health-inspections/",
+    "open_evidence": "Perfect score in Portland Tribune inspection roundup, Mar 2026",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "Off the Griddle",
+    "neighborhood": "Foster-Powell",
+    "city": "Portland",
+    "address": "6526 SE Foster Rd",
+    "kind": "Vegan breakfast diner",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "A fully vegan diner run like an old neighborhood breakfast joint, with biscuits and gravy, scrambles and griddle plates. Nobody misses the bacon.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-brunch-portland",
+    "open_evidence": "Listed in Portland Monthly brunch guide dated Nov 2025",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "Rose VL Deli",
+    "neighborhood": "Foster-Powell",
+    "city": "Portland",
+    "address": "6424 SE Powell Blvd",
+    "kind": "Vietnamese soup counter",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Sister shop to Ha VL, running a short daily soup rotation until each pot sells out. The Saturday turmeric noodle soup is the one.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-brunch-portland",
+    "open_evidence": "Listed in Portland Monthly brunch guide dated Nov 2025",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "Taqueria La Hidalguense",
+    "neighborhood": "Foster-Powell",
+    "city": "Portland",
+    "address": "7855 SE Foster Rd",
+    "kind": "Neighborhood taqueria",
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Small outer-Foster taqueria named for Hidalgo, the Mexican state famous for lamb barbacoa. Almost unwritten about, so ask about the weekend special.",
+    "source_url": "https://portlandtribune.com/2026/02/04/multnomah-county-health-inspections-cafe-olli-china-star-speedboat-coffee/",
+    "open_evidence": "Listed in Portland Tribune county inspection roundup, Feb 2026",
+    "from": "disc-06-day"
+  },
+  {
+    "name": "Lutz Tavern",
+    "neighborhood": "Woodstock",
+    "city": "Portland",
+    "address": "4639 SE Woodstock Blvd",
+    "kind": "Old Woodstock tavern",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Woodstock tavern open since 1947, with old booths, cheap pints and pub food. Willamette Week tied it to the early-2000s Pabst revival.",
+    "source_url": "https://www.wweek.com/culture/2018/05/22/in-the-early-2000s-a-woodstock-pub-almost-single-handedly-saved-the-pbr-brand/",
+    "open_evidence": "Bridgetown Bites Dry January 2026 roundup, published Dec 2025",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Red's Bar and Grill",
+    "neighborhood": "Foster-Powell",
+    "city": "Portland",
+    "address": "7025 SE Foster Rd",
+    "kind": "Neighborhood bar and grill",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "Foster-Powell regulars' bar with pub grub and Bloody Marys. No scene, just a burger, a stool and the same faces every week.",
+    "source_url": "https://portlandtribune.com/2026/07/02/multnomah-county-health-inspections-bamboo-sushi-mcmenamins-edgefield-ben-esthers-vegan-jewish-deli/",
+    "open_evidence": "Perfect score in Portland Tribune inspection roundup, Jul 2026",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Pho Saigon Xua",
+    "neighborhood": "Foster-Powell",
+    "city": "Portland",
+    "address": "5253 SE 82nd Ave",
+    "kind": "Vietnamese pho shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Pho shop on the Foster-Powell side of 82nd with no press trail at all. The name nods to old Saigon; start with the beef pho.",
+    "source_url": "https://portlandtribune.com/2026/03/03/multnomah-county-health-inspections/",
+    "open_evidence": "Perfect score in Portland Tribune inspection roundup, Mar 2026",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Woodstock Wine & Deli",
+    "neighborhood": "Woodstock",
+    "city": "Portland",
+    "address": "4030 SE Woodstock Blvd",
+    "kind": "Wine shop and deli",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-run Woodstock wine shop and deli since 1985, whose owner credits his parents. Sandwiches, newer barbecue, and a bottle pulled off the shelf.",
+    "source_url": "https://portlandtribune.com/sb/75-features/244037-111361-woodstock-wine-and-deli-breaks-out-the-bubbly",
+    "open_evidence": "Listed as Woodstock Wine Deli & BBQ in Portland Tribune county inspection roundup, Mar 2026",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Ha VL",
+    "neighborhood": "Jade District",
+    "city": "Portland",
+    "address": "2738 SE 82nd Ave",
+    "kind": "Vietnamese soup cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "Family soup shop where each noodle soup appears on one day of the week. Check the schedule, come early, and expect it to sell out.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-restaurants-portland/",
+    "open_evidence": "Portland Monthly 50 Best Restaurants list, Oct 2026",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "HK Cafe",
+    "neighborhood": "Jade District",
+    "city": "Portland",
+    "address": "4410 SE 82nd Ave",
+    "kind": "Cantonese dim sum hall",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Big strip-mall dim sum hall on 82nd with push carts. Weekend mornings bring a crowd and a long parade of har gow and chicken feet.",
+    "source_url": "https://www.pdxmonthly.com/restaurants/hk-cafe",
+    "open_evidence": "Named in Portland Tribune county inspection roundup headline, Oct 2026",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Master Kong",
+    "neighborhood": "Jade District",
+    "city": "Portland",
+    "address": "8435 SE Division St",
+    "kind": "Tianjin-Cantonese cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Sibling-run cafe since 2018 mixing northern Tianjin and Cantonese home cooking: congee, wonton noodle soup and fried dough sticks for breakfast.",
+    "source_url": "https://pdxmonthly.com/eat-and-drink/best-chinese-food-restaurants-portland",
+    "open_evidence": "Portland Monthly Chinese food guide, updated about Dec 2025",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Fortune BBQ Noodle House",
+    "neighborhood": "Montavilla",
+    "city": "Portland",
+    "address": "18 SE 82nd Ave",
+    "kind": "Cantonese barbecue counter",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Corner Cantonese barbecue shop at Burnside and 82nd, in a former gyro stand. Roast duck and char siu over rice or noodle soup, cheaply.",
+    "source_url": "https://pdxmonthly.com/eat-and-drink/best-chinese-food-restaurants-portland",
+    "open_evidence": "Portland Monthly Chinese food guide, updated about Dec 2025",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Kenny's Noodle House",
+    "neighborhood": "Jade District",
+    "city": "Portland",
+    "address": "8305 SE Powell Blvd",
+    "kind": "Hong Kong noodle shop",
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Powell Boulevard noodle shop with dozens of congee and noodle soup combinations. A regulars' room a few blocks off the 82nd crowds.",
+    "source_url": "https://pdxmonthly.com/eat-and-drink/best-chinese-food-restaurants-portland",
+    "open_evidence": "Portland Monthly Chinese food guide, updated about Dec 2025",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Bipartisan Cafe",
+    "neighborhood": "Montavilla",
+    "city": "Portland",
+    "address": "7901 SE Stark St",
+    "kind": "Pie and coffee house",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Montavilla's long-running coffee and pie house, credited with kick-starting the Stark Street revival. Take a slice to a table under the political portraits.",
+    "source_url": "https://montavilla.net/2026/09/03/2026-montavilla-jazz-fest-this-holiday-weekend/",
+    "open_evidence": "Montavilla News, Sep 2026: jazz festival discount partner",
+    "from": "disc-07-day"
+  },
+  {
+    "name": "Excellent Cuisine",
+    "neighborhood": "Jade District",
+    "city": "Portland",
+    "address": "8220 SE Harrison St",
+    "kind": "Cantonese dim sum hall",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Harrison Street strip-mall hall that runs dim sum by day and a Cantonese dinner menu at night. Two different meals in one modest room.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-restaurants-portland/",
+    "open_evidence": "Portland Monthly 50 Best Restaurants list, Oct 2026",
+    "from": "disc-07-night"
+  },
+  {
+    "name": "Roscoe's",
+    "neighborhood": "Montavilla",
+    "city": "Portland",
+    "address": "8105 SE Stark St",
+    "kind": "Dive bar with sushi",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Montavilla beer bar that shares a kitchen and a back passage with Miyamoto, so fresh sushi lands beside your pint. A dive with a secret.",
+    "source_url": "https://www.wweek.com/culture/2026/07/22/portlands-best-dive-bar-sushi/",
+    "open_evidence": "Willamette Week dive-bar sushi feature, Jul 2026; Montavilla News history piece, Apr 2026",
+    "from": "disc-07-night"
+  },
+  {
     "name": "Roman Russian Market",
     "neighborhood": "Powellhurst-Gilbert",
     "city": "Portland",
