@@ -539,6 +539,26 @@
     "osm": null
   },
   {
+    "name": "Banning's Restaurant & Pie House",
+    "neighborhood": "Pacific Highway",
+    "city": "Tigard",
+    "address": "11477 SW Pacific Hwy",
+    "kind": "Diner and pie house",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Pacific Highway diner and pie house since 1979, once one of the area's rare all-night stops; order a slice of the scratch-made pie.",
+    "source_url": "https://valleytimes.news/2026/08/18/how-did-chuck-e-cheese-bannings-score-in-recent-east-washington-county-health-inspections/",
+    "open_evidence": "Listed with a score of 100 in a Valley Times east Washington County inspection roundup (late-July inspections), Aug 2026",
+    "from": "disc-15-day",
+    "id": "banning-s-restaurant-and-pie-house",
+    "lat": 45.44232,
+    "lng": -122.74654,
+    "osm": null
+  },
+  {
     "name": "Coredam",
     "neighborhood": "Central Beaverton",
     "city": "Beaverton",
@@ -1018,23 +1038,42 @@
     "osm": null
   },
   {
-    "name": "Nak Won",
-    "neighborhood": "Central Beaverton",
-    "city": "Beaverton",
-    "address": "4600 SW Watson Ave",
-    "kind": "Korean family restaurant",
+    "name": "South Store Cafe",
+    "neighborhood": "Scholls",
+    "city": "Hillsboro",
+    "address": "24485 SW Scholls Ferry Rd",
+    "kind": "Farm-country cafe",
     "when": [
-      "midday",
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Farm-country cafe far out on Scholls Ferry Road, a breakfast-sandwich and pastry stop that a 2025 regional brunch roundup ranked ninth.",
+    "source_url": "https://hillsboronewstimes.com/2026/07/16/how-did-in-n-out-burger-alvaros-tacos-score-in-recent-health-inspections/",
+    "open_evidence": "Listed in a Hillsboro News-Times inspection roundup of late-June inspections, Jul 2026",
+    "from": "disc-15-day",
+    "id": "south-store-cafe",
+    "lat": 45.3998,
+    "lng": -122.93043,
+    "osm": null
+  },
+  {
+    "name": "My Place Tavern",
+    "neighborhood": "Downtown Forest Grove",
+    "city": "Forest Grove",
+    "address": "1930 21st Ave",
+    "kind": "Neighborhood tavern",
+    "when": [
       "evening"
     ],
-    "fame": "open-secret",
-    "why": "Old guard of Beaverton's Korean row since 2001; order the peppery, barely sauced tteokbokki or the black-bean jajangmyun.",
-    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-restaurants-food-carts-beaverton",
-    "open_evidence": "Portland Monthly Beaverton guide dated Apr 2026; Downtown Beaverton Association business listing with current hours",
+    "fame": "deep-cut",
+    "why": "Forest Grove neighborhood tavern on 21st Avenue with a working kitchen and a perfect 2026 inspection; no food press at all, just locals.",
+    "source_url": "https://forestgrovenewstimes.com/2026/06/16/how-did-my-place-tavern-jersey-girl-pizza-score-in-recent-health-inspections/",
+    "open_evidence": "Scored 100 in a Forest Grove News-Times inspection roundup of late-May inspections, Jun 2026",
     "from": "disc-15-night",
-    "id": "nak-won",
-    "lat": 45.48621,
-    "lng": -122.80595,
+    "id": "my-place-tavern",
+    "lat": 45.52084,
+    "lng": -123.11264,
     "osm": null
   },
   {
@@ -1399,23 +1438,44 @@
     "osm": null
   },
   {
-    "name": "Helvetia Tavern",
-    "neighborhood": "Helvetia",
+    "name": "Panaderia y Pasteleria La Imperial",
+    "neighborhood": "Southeast Hillsboro",
     "city": "Hillsboro",
-    "address": "10275 NW Helvetia Rd",
-    "kind": "Farm-country burger tavern",
+    "address": "1895 SE Tualatin Valley Hwy",
+    "kind": "Mexican panaderia and pasteleria",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "TV Highway panaderia and pasteleria baking pan dulce, desserts and wedding cakes; Hillsboro picked it for a 2026 small-business stabilization grant.",
+    "source_url": "https://www.hillsboro-oregon.gov/home/showpublisheddocument/32558/639113393506370000",
+    "open_evidence": "On the City of Hillsboro 2026 Small Business Stabilization award list (published about Apr 2026); directory lists 8am to 9pm hours",
+    "from": "disc-15-day",
+    "id": "panaderia-y-pasteleria-la-imperial",
+    "lat": 45.50842,
+    "lng": -122.96365,
+    "osm": null
+  },
+  {
+    "name": "El Rinconcito Mexicano",
+    "neighborhood": "Southeast Hillsboro",
+    "city": "Hillsboro",
+    "address": "1895 SE Tualatin Valley Hwy",
+    "kind": "Strip-mall Mexican kitchen",
     "when": [
       "midday",
       "evening"
     ],
-    "fame": "local-legend",
-    "why": "Farm-country roadhouse under a ceiling of trucker hats; go for a big burger and fries after a drive past the fields.",
-    "source_url": "https://thatoregonlife.com/2026/04/best-mom-pop-restaurants-oregon-2026/",
-    "open_evidence": "That Oregon Life mom-and-pop list, Apr 2026",
+    "fame": "deep-cut",
+    "why": "Mexican kitchen in the same TV Highway strip as La Imperial panaderia, so dinner and pan dulce are one stop; unreviewed by the food press.",
+    "source_url": "https://forestgrovenewstimes.com/2026/06/06/how-did-hillsboro-hops-ballpark-don-asado-mexican-cuisine-score-in-recent-health-inspections/",
+    "open_evidence": "Listed (score 77) in a Forest Grove News-Times inspection roundup, Jun 2026",
     "from": "disc-15-night",
-    "id": "helvetia-tavern",
-    "lat": 45.59659,
-    "lng": -122.91675,
+    "id": "el-rinconcito-mexicano",
+    "lat": 45.50842,
+    "lng": -122.96365,
     "osm": null
   },
   {
@@ -1439,23 +1499,22 @@
     "osm": null
   },
   {
-    "name": "Gubanc's",
-    "neighborhood": "Lake Grove",
-    "city": "Lake Oswego",
-    "address": "16008 Boones Ferry Rd",
-    "kind": "Family neighborhood pub",
+    "name": "B&b Pizza Co.",
+    "neighborhood": "Troutdale",
+    "city": "Troutdale",
+    "address": "2503 SW Cherry Park Rd",
+    "kind": "Old-school pizza parlor",
     "when": [
-      "midday",
       "evening"
     ],
-    "fame": "open-secret",
-    "why": "The Gubanc family's Lake Grove pub since 1976, back in a remodeled room for its 50th year of feeding the neighborhood.",
-    "source_url": "https://www.gubancspub.com/",
-    "open_evidence": "Own site announces reopening in remodeled space and its 50th year (est. 1976, so 2026)",
+    "fame": "deep-cut",
+    "why": "Troutdale pizza parlor built to feel like a 1980s family pizzeria, with a thin house sourdough crust and cornmeal; Outlook readers' best pizza for 2026.",
+    "source_url": "https://theoutlookonline.com/2026/03/07/troutdale-restaurant-honored-for-old-school-pizza/",
+    "open_evidence": "The Outlook 2026 Readers Choice best pizza feature, Mar 2026",
     "from": "disc-16-night",
-    "id": "gubanc-s",
-    "lat": 45.40958,
-    "lng": -122.72021,
+    "id": "bandb-pizza-co",
+    "lat": 45.52853,
+    "lng": -122.41094,
     "osm": null
   },
   {
@@ -1660,6 +1719,46 @@
     "osm": null
   },
   {
+    "name": "Reedville Cafe",
+    "neighborhood": "Reedville",
+    "city": "Hillsboro",
+    "address": "7575 SE Tualatin Valley Hwy",
+    "kind": "Roadside breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Roadside cafe feeding Reedville from TV Highway for about 75 years; new owners since 2025, and readers ranked it Hillsboro's second-best restaurant in 2024.",
+    "source_url": "https://forestgrovenewstimes.com/2025/05/28/75-years-later-hillsboros-reedville-cafe-welcomes-new-ownership/",
+    "open_evidence": "Named in a Hillsboro News-Times health inspection roundup headline, Jul 2026; new-ownership story May 2025",
+    "from": "disc-15-day",
+    "id": "reedville-cafe",
+    "lat": 45.49784,
+    "lng": -122.90258,
+    "osm": null
+  },
+  {
+    "name": "Nak Won",
+    "neighborhood": "Central Beaverton",
+    "city": "Beaverton",
+    "address": "4600 SW Watson Ave",
+    "kind": "Korean family restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Old guard of Beaverton's Korean row since 2001; order the peppery, barely sauced tteokbokki or the black-bean jajangmyun.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-restaurants-food-carts-beaverton",
+    "open_evidence": "Portland Monthly Beaverton guide dated Apr 2026; Downtown Beaverton Association business listing with current hours",
+    "from": "disc-15-night",
+    "id": "nak-won",
+    "lat": 45.48621,
+    "lng": -122.80595,
+    "osm": null
+  },
+  {
     "name": "Taqueria Rico Taco",
     "neighborhood": "Rockwood",
     "city": "Gresham",
@@ -1677,6 +1776,26 @@
     "id": "taqueria-rico-taco",
     "lat": 45.52158,
     "lng": -122.47724,
+    "osm": null
+  },
+  {
+    "name": "Birrias Tamazula",
+    "neighborhood": "Downtown Gresham",
+    "city": "Gresham",
+    "address": "184 NE 2nd St",
+    "kind": "Birria restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "No-frills room just off downtown Gresham's main drag, open since 2022, whose birria Portland Monthly ranked among the metro's best bowls; get the consome.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/2023/11/birrias-tamazula-gresham-mexican-restaurant-review",
+    "open_evidence": "Weak: a map listing shows customer reviews into early 2026; no press since the Nov 2023 review",
+    "from": "disc-16-night",
+    "id": "birrias-tamazula",
+    "lat": 45.49872,
+    "lng": -122.42865,
     "osm": null
   },
   {
@@ -1760,6 +1879,85 @@
     "osm": null
   },
   {
+    "name": "Tom's Pancake House",
+    "neighborhood": "Central Beaverton",
+    "city": "Beaverton",
+    "address": "12925 SW Canyon Rd",
+    "kind": "Old-line pancake house",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Canyon Road pancake house serving Beaverton since 1966, often called the city's longest-running restaurant; a short stack here is suburban history.",
+    "source_url": "https://beavertonvalleytimes.com/2026/07/03/how-did-qdoba-mexican-grill-and-toms-pancake-house-score-on-recent-health-inspections/",
+    "open_evidence": "Named in a Beaverton Valley Times health inspection roundup headline, Jul 2026; 1966 start per Washington County visitors bureau listing",
+    "from": "disc-15-day",
+    "id": "tom-s-pancake-house",
+    "lat": 45.48866,
+    "lng": -122.80949,
+    "osm": null
+  },
+  {
+    "name": "Helvetia Tavern",
+    "neighborhood": "Helvetia",
+    "city": "Hillsboro",
+    "address": "10275 NW Helvetia Rd",
+    "kind": "Farm-country burger tavern",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "Farm-country roadhouse under a ceiling of trucker hats; go for a big burger and fries after a drive past the fields.",
+    "source_url": "https://thatoregonlife.com/2026/04/best-mom-pop-restaurants-oregon-2026/",
+    "open_evidence": "That Oregon Life mom-and-pop list, Apr 2026",
+    "from": "disc-15-night",
+    "id": "helvetia-tavern",
+    "lat": 45.59659,
+    "lng": -122.91675,
+    "osm": null
+  },
+  {
+    "name": "Polar King",
+    "neighborhood": "Powell Boulevard",
+    "city": "Gresham",
+    "address": "1030 E Powell Blvd",
+    "kind": "1950s burger drive-in",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Burger stand opened in 1952 when drive-ins lined Powell Boulevard, and it outlasted most of them; ten burgers on the board, chili cheeseburger first.",
+    "source_url": "https://theoutlookonline.com/2026/09/17/multnomah-county-health-inspections-east-india-co-bar-grill-mayas-taqueria-starbucks/",
+    "open_evidence": "Polar King Restaurant scored 100 in The Outlook's Multnomah County inspection roundup, Sep 2026; KOIN history piece 2024",
+    "from": "disc-16-day",
+    "id": "polar-king",
+    "lat": 45.4978,
+    "lng": -122.4208,
+    "osm": null
+  },
+  {
+    "name": "Gubanc's",
+    "neighborhood": "Lake Grove",
+    "city": "Lake Oswego",
+    "address": "16008 Boones Ferry Rd",
+    "kind": "Family neighborhood pub",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "The Gubanc family's Lake Grove pub since 1976, back in a remodeled room for its 50th year of feeding the neighborhood.",
+    "source_url": "https://www.gubancspub.com/",
+    "open_evidence": "Own site announces reopening in remodeled space and its 50th year (est. 1976, so 2026)",
+    "from": "disc-16-night",
+    "id": "gubanc-s",
+    "lat": 45.40958,
+    "lng": -122.72021,
+    "osm": null
+  },
+  {
     "name": "Huber's Cafe",
     "neighborhood": "Downtown",
     "city": "Portland",
@@ -1797,6 +1995,66 @@
     "id": "ha-vl",
     "lat": 45.50271,
     "lng": -122.57834,
+    "osm": null
+  },
+  {
+    "name": "Oyatsupan Bakers",
+    "neighborhood": "Five Oaks",
+    "city": "Beaverton",
+    "address": "16025 SW Regatta Ln",
+    "kind": "Japanese bakery",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Japanese bakery in a Five Oaks strip since 2016, now with a Tigard shop; melonpan in a run of flavors and soft shokupan draw people.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-bakeries-beaverton",
+    "open_evidence": "Wikipedia records a new SE Portland kitchen opened in 2026; listings post Mon to Sat 8am to 6pm hours (no 2026 press found)",
+    "from": "disc-15-day",
+    "id": "oyatsupan-bakers",
+    "lat": 45.51744,
+    "lng": -122.84266,
+    "osm": null
+  },
+  {
+    "name": "Babica Hen Cafe",
+    "neighborhood": "Lake Grove",
+    "city": "Lake Oswego",
+    "address": "15964 Boones Ferry Rd",
+    "kind": "Neighborhood breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Lake Grove breakfast cafe run by Joe Buck, grandson of Gubanc's founder; specialty waffles, benedicts and sticky buns, Bloody Marys for slow mornings.",
+    "source_url": "https://lakeoswegoreview.com/2026/08/27/gubancs-celebrates-50-years-in-lake-oswego/",
+    "open_evidence": "Lake Oswego Review, Aug 2026, names Joe Buck as its current owner-operator; directory lists 8am to 2pm hours",
+    "from": "disc-16-day",
+    "id": "babica-hen-cafe",
+    "lat": 45.40966,
+    "lng": -122.71989,
+    "osm": null
+  },
+  {
+    "name": "Pine Shed Ribs",
+    "neighborhood": "Southwest Lake Oswego",
+    "city": "Lake Oswego",
+    "address": "17730 Pilkington Rd",
+    "kind": "Barbecue rib joint",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Pilkington Road barbecue joint smoking ribs until they sell out, with a pastry-and-pint sister, Piglet, two doors down for mornings.",
+    "source_url": "https://pineshedribs.com",
+    "open_evidence": "Own site posts Mon to Sat 11am to 8pm hours; customer reviews dated Jan 2026 on a map listing",
+    "from": "disc-16-night",
+    "id": "pine-shed-ribs",
+    "lat": 45.39784,
+    "lng": -122.73301,
     "osm": null
   }
 ]
