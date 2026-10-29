@@ -46,7 +46,7 @@ So the brief asks for a shortlist of 260 and stops at about 220 drafts. Review d
 | `prompts/cloud-research-portland.md` | The run brief, in the shape of the San Diego one. |
 | `data/seeds-portland.json`, `data/review/portland/` | An empty seed list for Dan's picks, and the review folder. |
 
-Checked here: syntax, the free `--estimate` modes (34 discovery requests), the fame fixer on the empty folder, the 39 unit tests, and a full build.
+Checked here: syntax, the free `--estimate` modes (34 discovery requests), the fame fixer on the empty folder, and the 39 unit tests. The full build was not run here: the container's Node is older than Astro requires, so CI runs it on the pull request. None of these changes touch files the build reads.
 
 **Not checked here, and why.** This session's network policy refuses `overpass-api.de` (and its mirrors), `nominatim.openstreetmap.org`, `geocoding.geo.census.gov` and `photon.komoot.io`. So the Portland map fetch and the geocoder fallbacks could not be run, and the new state-scoped Overpass query has not been tried against the live server. The research session needs those four hosts: allow them under Network access in the cloud environment it runs in (or use a broader access level). The brief starts with a network check and stops before research if candidates cannot be placed on the map, because coordinates are never guessed.
 
