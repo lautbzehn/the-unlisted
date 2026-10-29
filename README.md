@@ -34,11 +34,11 @@
 > Built by **[Dan West](https://www.icarianforge.com)**, an AI strategy and operations leader with nearly 20 years in IT, by directing Claude Code as the engineering team.
 
 <p>
-  <img src="docs/screenshots/home.jpg" width="100%" alt="The Unlisted front page: a passport cover, tonight's doors, and Surprise me">
+  <img src="docs/screenshots/v2.0_10.29.2026/desktop-1-hero.jpg" width="100%" alt="The Unlisted front page: an oversized serif title over film grain, tonight's doors, and Surprise me">
 </p>
 <p>
-  <img src="docs/screenshots/place.jpg" width="49%" alt="A place page with its Hidden Gem Score, story, and signature order">
-  <img src="docs/screenshots/deck.jpg" width="49%" alt="Surprise me: a swipeable deck of places">
+  <img src="docs/screenshots/v2.0_10.29.2026/desktop-place-stamp-2-stamped.jpg" width="49%" alt="A place page: its name as a neon sign, stamped, with its Hidden Gem Score">
+  <img src="docs/screenshots/v2.0_10.29.2026/desktop-deck-2-drag.jpg" width="49%" alt="Surprise me: a deck of places you throw left or right">
 </p>
 
 ## Highlights
@@ -124,7 +124,7 @@ node --env-file=.env scripts/pipeline/05-enrich.mjs --estimate
 
 ```
 src/pages/              Routes: front page, explore, place pages, passport, story, how the score works, forms
-src/components/         The passport, ticket cards, map sheet, Surprise me deck, Gem door, header and footer
+src/components/         The passport, ticket cards, neon signs, scores, map sheet, Surprise me deck, header and footer
 src/lib/                Scoring formula, place helpers, map style, config
 src/data/places.json    The reviewed places that ship
 worker/                 Cloudflare Worker: router (index), guards (http, security), validation, D1 store, notifications, tests

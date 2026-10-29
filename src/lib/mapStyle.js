@@ -1,9 +1,11 @@
 // Map styles drawn from free OpenStreetMap-based vector tiles (OpenFreeMap):
-// "paper" (ink streets on newsprint) and "sepia" (aged-paper streets on dark brown, the site's look).
+// "night" (the site's look since v2.0: faint streets on true black, water a shade colder than land),
+// "paper" (ink streets on newsprint) and "sepia" (the v1 look, aged-paper streets on dark brown).
 const TILES = 'https://tiles.openfreemap.org/planet';
 const GLYPHS = 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf';
 
 const THEMES = {
+  night: { bg: '#000000', land: '#050505', park: '#060807', water: '#02070a', building: '#0c0c0d', minor: '#151517', mid: '#222225', major: '#34343a', label: '#8a867f', city: '#d9d5cd', halo: '#000000', waterLabel: '#4a6c7a' },
   paper: { bg: '#ece3d0', land: '#e2d9c3', park: '#d9d5bd', water: '#c6cdc8', building: '#ddd3bd', minor: '#cfc3a9', mid: '#b5a789', major: '#8c7d63', label: '#3b332a', city: '#1b1712', halo: '#ece3d0', waterLabel: '#5f7179' },
   sepia: { bg: '#1a140e', land: '#1d1710', park: '#1f1c11', water: '#0f0b07', building: '#231b13', minor: '#2d241a', mid: '#433526', major: '#634e36', label: '#b5a68a', city: '#eee2c8', halo: '#15110c', waterLabel: '#7d6c55' },
 };
@@ -17,7 +19,7 @@ const road = (id, classes, color, w) => ({
   paint: { 'line-color': color, 'line-width': width(...w) },
 });
 
-export function mapStyle(themeName = 'paper') {
+export function mapStyle(themeName = 'night') {
   const t = THEMES[themeName];
   return {
     version: 8,

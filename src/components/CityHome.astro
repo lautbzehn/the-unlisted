@@ -3,10 +3,13 @@
 import Base from '../layouts/Base.astro';
 import Footer from './Footer.astro';
 import BrowseRow from './BrowseRow.astro';
+import StackRow from './StackRow.astro';
 import SurpriseDialog from './SurpriseDialog.astro';
 import Gate from './Gate.astro';
 import CitySwitch from './CitySwitch.astro';
 import { METROS, placesIn, slim, topHoods } from '../lib/places.js';
+import { mrzPart } from '../lib/mrz.js';
+import '../styles/home.css';
 
 interface Props { metro: string }
 const M = METROS[Astro.props.metro];
@@ -22,22 +25,40 @@ const NOW_ROWS = [
 // The second row: deep cuts once there are enough of them, local legends until then.
 const deep = by((p) => p.fame === 'deep-cut');
 const second = deep.length >= MIN
-  ? { id: 'deep', title: 'Deep cuts', sub: 'Barely written about anywhere. You heard it from someone, not a website.', list: deep, fame: 'deep-cut' }
-  : { id: 'legends', title: 'Local legends', sub: 'Decades in, still the real thing.', list: by((p) => p.fame === 'local-legend'), fame: 'local-legend' };
+  ? { id: 'deep', title: 'Deep cuts', head: 'Barely written about anywhere.', sub: 'You heard it from someone, not a website.', list: deep, fame: 'deep-cut' }
+  : { id: 'legends', title: 'Local legends', head: 'Decades in, still the real thing.', list: by((p) => p.fame === 'local-legend'), fame: 'local-legend' };
 const hoods = topHoods(places, 12);
+// The hero's fine print: where we are, and a passport code line that crawls along the bottom edge.
+const [lng, lat] = M.center;
+const coords = `${Math.abs(lat).toFixed(2)}° ${lat >= 0 ? 'N' : 'S'}  ${Math.abs(lng).toFixed(2)}° ${lng >= 0 ? 'E' : 'W'}`;
+const mrzLine = `P<UNL<<${mrzPart(M.name)}<<${places.length}<DOORS<<NO<CHAINS<<NO<ALGORITHM<<HUMAN<CURATED<<`;
+const TITLE = ['The', 'Unlisted'];
 ---
 <Base title={`The Unlisted — ${M.name} hole-in-the-wall guide`} description={`${M.name} hole-in-the-wall guide. No chains, no algorithm.`} path={M.home} metro={M.id}>
   <Gate />
   <main id="main" class="home" data-metro={M.id} data-short={M.short} data-explore={M.explore}>
-    <section class="cover">
-      <CitySwitch current={M.id} />
-      <h1 class="logo" aria-label="The Unlisted">{[...'The Unlisted'].map((ch, i) => <span class="ch" style={`--i:${i}`} aria-hidden="true">{ch}</span>)}</h1>
-      <p class="tagline">Places you only hear about from the cousin who knows a guy. <strong><span class="ul">Now you know a guy.</span></strong></p>
-      <p class="flipper" id="flipper" aria-hidden="true"><span data-flip-label>Tonight’s doors:</span> <span class="w"><span>&nbsp;</span></span></p>
-      <div class="cover-cta">
-        <button id="surprise-btn" class="btn btn-primary btn-lg" type="button">Surprise me</button>
-        <a class="btn btn-lg" href={M.explore}>Explore all {places.length}</a>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"><canvas class="grain" data-grain></canvas></div>
+      <div class="hero-top">
+        <CitySwitch current={M.id} />
+        <p class="hero-meta mono" aria-hidden="true"><span>{coords}</span><span class="hero-clock" data-hero-clock></span></p>
       </div>
+      <h1 class="hero-title" id="hero-title" aria-label="The Unlisted">
+        {TITLE.map((word, w) => (
+          <span class:list={['word', `w${w}`]} aria-hidden="true">{[...word].map((ch, i) => <span class="ch" style={`--i:${i + w * 3}`}>{ch}</span>)}</span>
+        ))}
+      </h1>
+      <div class="hero-foot">
+        <div class="hero-copy">
+          <p class="tagline">Places you only hear about from the cousin who knows a guy. <strong><span class="ul">Now you know a guy.</span></strong></p>
+          <p class="flipper" id="flipper" aria-hidden="true"><span class="mono" data-flip-label>Tonight’s doors:</span> <span class="w"><span>&nbsp;</span></span></p>
+        </div>
+        <div class="cover-cta">
+          <button id="surprise-btn" class="btn btn-primary btn-lg" type="button">Surprise me</button>
+          <a class="btn btn-lg btn-ghost" href={M.explore}>Explore all {places.length}</a>
+        </div>
+      </div>
+      <div class="hero-mrz mono" aria-hidden="true"><span>{mrzLine.repeat(4)}</span><span>{mrzLine.repeat(4)}</span></div>
     </section>
 
     <SurpriseDialog />
@@ -62,24 +83,28 @@ const hoods = topHoods(places, 12);
     </script>
 
     {second.list.length >= MIN && (
-      <BrowseRow id={second.id} title={second.title} sub={second.sub} places={second.list} total={second.list.length} seeAll={`${M.explore}?fame=${second.fame}`} />
+      <StackRow id={second.id} kicker={second.title} title={second.head} sub={second.sub} places={second.list} total={second.list.length} seeAll={`${M.explore}?fame=${second.fame}`} />
     )}
 
-    <section class="browse" aria-labelledby="by-hood">
-      <div class="browse-head">
+    <section class="browse hoods" aria-labelledby="by-hood">
+      <div class="row-head">
+        <p class="kicker mono">Neighborhoods</p>
         <h2 id="by-hood">Pick a neighborhood</h2>
-        <a class="more-link" href={M.explore}>All of them →</a>
+        <a class="more-link" href={M.explore}>All of them <span aria-hidden="true">→</span></a>
       </div>
-      <ul class="hood-chips" role="list">
-        {hoods.map((h) => (
-          <li><a href={`${M.explore}?where=${h.where}`}>{h.label}{h.city !== M.main && h.city !== h.label && `, ${h.city}`}<span class="n">{h.n}</span></a></li>
-        ))}
-      </ul>
+      <div class="rails" data-spotlight>
+        <ul class="rail-grid hood-grid" role="list">
+          {hoods.map((h) => (
+            <li><a class="cell hood" href={`${M.explore}?where=${h.where}`}><span class="hood-name">{h.label}{h.city !== M.main && h.city !== h.label && `, ${h.city}`}</span><span class="n mono">{String(h.n).padStart(2, '0')}<span class="sr-only"> places</span></span></a></li>
+          ))}
+        </ul>
+      </div>
     </section>
 
     <section class="next-cities" aria-label="Next cities">
-      <p><strong>Next stamps in the passport:</strong> Austin and New York.</p>
-      <a class="more-link" href="/cities/">Vote for the one after →</a>
+      <p class="kicker mono">Coming up</p>
+      <p class="next-line"><strong>Next stamps in the passport:</strong> Austin and New York.</p>
+      <a class="btn btn-lg" href="/cities/">Vote for the one after <span aria-hidden="true">→</span></a>
     </section>
 
     <script type="application/json" id="places-data" set:html={JSON.stringify(slim(places))} />

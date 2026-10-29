@@ -1,0 +1,55 @@
+/* Explore, v2.0 · 10.29.2026. Tokens in tokens.css, the list rows in global.css, rails in components.css.
+   A big title, a search bar and pill filters, the list on rails, and the night map with glowing pins beside it
+   (or instead of it, on phones). */
+
+main.explore { max-width: var(--max); padding: 28px var(--gutter) 120px; }
+.explore-head { margin-bottom: clamp(24px, 4vw, 40px); }
+.explore-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; margin-bottom: clamp(28px, 5vw, 56px); }
+.explore-count { color: var(--mute); }
+.explore .page-title { font: 400 var(--display-l)/0.9 var(--font-display); letter-spacing: -0.03em; }
+.explore .page-sub { margin-top: 14px; max-width: 52ch; font-size: var(--text-lg); line-height: 1.45; }
+
+/* Search and filters */
+.finder { gap: 16px; padding-bottom: 8px; }
+.find-row { gap: 10px; }
+.find-row input {
+  min-height: 56px; padding: 14px 20px 14px 50px; border-radius: 999px; border-color: var(--line-strong); background: #050505; font-size: 1.05rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%23a6a29a' stroke-width='1.6'%3E%3Ccircle cx='7.5' cy='7.5' r='6'/%3E%3Cpath d='M12 12l5 5' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: 20px 50%; transition: border-color 0.2s, box-shadow 0.3s;
+}
+.find-row input:focus { outline: none; border-color: var(--ink); box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.06); }
+.filters-toggle { min-height: 56px; padding-inline: 22px; }
+@media (max-width: 560px) { .find-row input { padding-left: 44px; background-position: 16px 50%; font-size: 1rem; } .filters-toggle { padding-inline: 16px; } }
+.filters { gap: 10px; }
+.filters label { display: grid; gap: 6px; font: 500 10px/1.4 var(--font-code); letter-spacing: var(--tracking-mono); text-transform: uppercase; color: var(--mute); }
+.filters select {
+  margin-top: 0; min-height: 46px; padding: 10px 36px 10px 16px; border-radius: 999px; background-color: #050505; font: 500 var(--text-sm) var(--font-ui);
+  letter-spacing: 0; text-transform: none; color: var(--ink); appearance: none; -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none' stroke='%23a6a29a' stroke-width='1.5'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 16px center; cursor: pointer;
+}
+.filters select:hover { border-color: var(--ink); }
+.result-line { min-height: 44px; font-size: var(--text-sm); }
+.result-line [data-result] { font: 500 var(--text-xs)/1.4 var(--font-code); letter-spacing: var(--tracking-mono); text-transform: uppercase; }
+.fcount { background: var(--accent-fill); color: #fff; }
+
+/* The list on rails */
+.explore-split { margin-top: 8px; }
+.explore .entries { border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+.explore .entries::before { z-index: 2; } /* crosshairs on the list's corners */
+.empty { border: 1px solid var(--line); background: transparent; }
+.more-btn { min-height: 52px; }
+
+/* The night map */
+@media (min-width: 1100px) {
+  .explore-split { grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr); gap: 36px; }
+  .map-col { top: 84px; }
+  .map-col #map { height: calc(100vh - 140px); }
+}
+.legend { justify-content: flex-start; }
+
+/* Phones: the List and Map switch floats over the page as glass */
+@media (max-width: 1099px) {
+  .explore .views { background: var(--glass); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border: 1px solid var(--line-strong); }
+  .views button { font-weight: 500; }
+}

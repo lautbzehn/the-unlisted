@@ -4,6 +4,18 @@ Notable changes to The Unlisted. The format follows [Keep a Changelog](https://k
 
 ## [Unreleased]
 
+## [2.0.0] · 2026-10-29
+
+### Changed
+- Redesign v2.0 · 10.29.2026, part one: the design system and the front pages. True black, stamp red for actions, a cold light for live states and scores, Instrument Serif headlines, Inter for text and data, Plex Mono for passport lines, body text up to 17px. Fonts are self-hosted (Google Fonts removed from the page and the content policy). The front page has a shutter title over a live film grain, a "right now" grid on hairline rails with a pointer spotlight, scores that fill in as they appear, deep cuts that pin and stack with each name as a neon sign, and a version stamp in the footer. Everything has a still version under reduced motion. Design notes: `docs/design-system_v2.2_10.29.2026.md`.
+- Redesign v2.0, part two: Explore and the place pages. A night map (faint streets on true black) with glowing markers on Explore and on every place's page; the place map loads only when it scrolls into view. Each place's page hangs its name as a neon sign on a dark wall, with the Gem score as a big cold number, five score bars that fill in, a file of quick facts on rails, and the map. Stamp it brings a red stamp down on the sign with a thump. Explore gets a bigger search, pill filters, and its list on rails. Share images are now each place's neon sign.
+- Redesign v2.0, part three: every other page. The Surprise me deck throws: a card keeps the speed and direction you threw it with, one let go short springs home, and undo springs it back; each card hangs the place's name as its neon sign. Our Story is five cards that pin and stack as you read. My Passport, Cities (the next cities as neon signs), Help, How the score works (the calculator shows a cold score bar), Suggest, Contact, Privacy and the 404 (a neon "Locked") all use the v2 look. The map legend on Help describes the new glowing markers.
+
+### Removed
+- The Gem door (the score on a little arched door). Scores are cold bars and numbers everywhere.
+- The v1 fonts (Archivo, IM Fell English, Source Serif) from the dependencies. Share images use the v2 fonts.
+- The lantern (the warm light that followed the pointer site-wide). The front page's grain replaces it.
+
 ### Added
 - Portland, Oregon is ready to research: a `portland` metro in the pipeline (Multnomah, Washington and Clackamas counties, 17 areas, Portland press for the fame check), a county lookup scoped to the metro's state, a metro-aware enrich step, the cloud research brief `prompts/cloud-research-portland.md` and the plan `docs/portland-expansion-plan_v1.1_10.29.2026.md`. Nothing on the live site changes yet.
 - Anonymous visit counts for Dan, the same as on www.icarianforge.com: the pages you open, how long, how far down, links off the site, and the tagged link (?via=) if there was one. Never the Bucket List, stamps, ratings or notes, never buttons, and never anything typed. No cookies, and nothing at all under Global Privacy Control. The privacy page has a new "Visit counts" section. The script is `public/insights.js`, reporting to www.icarianforge.com/api/i.

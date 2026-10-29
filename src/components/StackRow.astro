@@ -1,0 +1,42 @@
+---
+// Deep cuts on the front page: big cards that pin and stack as you scroll, each place's name hung as a neon sign.
+// The stacking is CSS (position: sticky); scripts/home.js adds the depth, sinking each card as the next one lands.
+// With reduced motion it's a plain list.
+import NeonSign from './NeonSign.astro';
+import { FAME, whereText } from '../lib/places.js';
+import { stubCode } from '../lib/mrz.js';
+import Score from './Score.astro';
+interface Props { id: string; title: string; kicker: string; sub?: string; places: any[]; total: number; seeAll: string; keep?: number; max?: number }
+const { id, title, kicker, sub, places, total, seeAll, keep = 5, max = 13 } = Astro.props;
+// Up to 8 of these can already be in the "right now" grid above; the spares keep the pile at `keep` cards.
+const shown = places.slice(0, max);
+---
+<section class="browse stack-sec" aria-labelledby={`${id}-h`}>
+  <div class="row-head">
+    <p class="kicker mono">{kicker}</p>
+    <h2 id={`${id}-h`}>{title}</h2>
+    {sub && <p class="row-sub">{sub}</p>}
+    <a class="more-link" href={seeAll}>See all {total}<span class="sr-only"> {kicker.toLowerCase()}</span> <span aria-hidden="true">→</span></a>
+  </div>
+  <ol class="stack" role="list" data-row data-keep={keep} style={`--keep:${keep}`}>
+    {shown.map((p) => (
+      <li class="stack-item">
+        <a class="ticket stack-card" href={`/place/${p.id}/`} data-id={p.id} data-status="none">
+          <span class="sc-head mono" aria-hidden="true"><span class="sc-n"></span><span>{FAME[p.fame] ?? ''}</span></span>
+          <span class="sc-sign"><NeonSign id={p.id} name={p.name} /></span>
+          <span class="sc-body">
+            <span class="sc-meta">{whereText(p)} · {p.kind}</span>
+            <span class="sc-line">{p.tagline}</span>
+            {p.order && <span class="sc-order"><b>Order</b> {p.order}</span>}
+          </span>
+          <span class="sc-foot">
+            <Score score={p.score} />
+            <span class="t-status"></span>
+            <span class="sc-cta" aria-hidden="true">Open the file →</span>
+          </span>
+          <span class="t-stub mono" aria-hidden="true">{stubCode(p)}</span>
+        </a>
+      </li>
+    ))}
+  </ol>
+</section>

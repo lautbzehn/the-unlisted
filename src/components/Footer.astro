@@ -1,17 +1,23 @@
 ---
 import { NAV, ABOUT } from '../lib/nav.js';
+import { SITE_VERSION } from '../lib/config.js';
 interface Props { sample?: boolean }
 const { sample = false } = Astro.props;
 ---
 <footer class="site-footer">
-  <div class="foot-signup">
-    <p>Get the next door first<span>New places and new cities, about once a month.</span></p>
-    <button class="btn" type="button" data-signup="footer">Get email updates</button>
+  <div class="foot-top">
+    <div class="foot-signup">
+      <p>Get the next door first<span>New places and new cities, about once a month.</span></p>
+      <button class="btn" type="button" data-signup="footer">Get email updates</button>
+    </div>
+    <nav aria-label="Footer">
+      <ul role="list">{NAV.slice(0, 4).map((it) => <li><a href={it.href}>{it.label}</a></li>)}</ul>
+      <ul role="list">{ABOUT.map((it) => <li><a href={it.href}>{it.label}</a></li>)}</ul>
+    </nav>
   </div>
-  <nav aria-label="Footer">
-    {NAV.slice(0, 4).map((it) => <a href={it.href}>{it.label}</a>)}
-    {ABOUT.map((it) => <a href={it.href}>{it.label}</a>)}
-  </nav>
-  <p class="maker"><a href="https://www.icarianforge.com" rel="noopener"><svg class="if-logo" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M3 21c7-.6 12.5-4.6 16-11"/><path d="M6 25.5c7.8-.6 14-4.8 18-12"/><path d="M11 29.5c6.5-.7 11.6-4.2 15-10"/></g><circle class="sun" cx="25.5" cy="6.5" r="3.8"/></svg>An <span class="ifp"><b>I</b>carian <b>Forge</b></span> product</a><span>© 2026 Icarian Forge. All rights reserved.</span></p>
-  <p>Human curated, AI enriched.{sample ? ' Some sample data shown.' : ''} Place and map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>.</p>
+  <div class="foot-base">
+    <p class="maker"><a href="https://www.icarianforge.com" rel="noopener"><svg class="if-logo" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M3 21c7-.6 12.5-4.6 16-11"/><path d="M6 25.5c7.8-.6 14-4.8 18-12"/><path d="M11 29.5c6.5-.7 11.6-4.2 15-10"/></g><circle class="sun" cx="25.5" cy="6.5" r="3.8"/></svg>An <span class="ifp"><b>I</b>carian <b>Forge</b></span> product</a><span>© 2026 Icarian Forge. All rights reserved.</span></p>
+    <p>Human curated, AI enriched.{sample ? ' Some sample data shown.' : ''} Place and map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>.</p>
+    <p class="version mono">{SITE_VERSION.v} · {SITE_VERSION.date}</p>
+  </div>
 </footer>

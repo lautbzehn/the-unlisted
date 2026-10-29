@@ -1,10 +1,12 @@
 // "Surprise me": deals a small deck of places you haven't been to, weighted toward ones that fit this hour and are
 // close by. Swipe a card right (or press ✓) to add it to your Bucket List, left to pass; ↺ takes the last one back.
-// The deck is built after 21st.dev's Card Stack, rewritten in plain JavaScript.
+// The deck is built after 21st.dev's Card Stack, rewritten in plain JavaScript. Since v2.0 cards move with
+// throw physics: a card keeps the speed and direction you threw it with, and one let go short springs home.
 // Your location is only requested when you press the button, and it never leaves your device.
 import { KM_TO_MI, distanceKm, getPosition } from './geo.js';
 import { TIME_LABEL } from './time.js';
 import { stubCode } from '../lib/mrz.js';
+import { neonFor } from '../lib/neon.js';
 
 const TOO_FAR_KM = 80; // beyond this we say so honestly instead of pretending it's "near you"
 const HAND = 6; // cards in one deal
@@ -12,7 +14,43 @@ const VIS = 4; // cards drawn in the stack; the last one waits invisibly and fad
 const MOMENT = { morning: ['This morning', 'Not today'], midday: ['This afternoon', 'Not today'], evening: ['Tonight', 'Not tonight'], late: ['Late tonight', 'Not tonight'] };
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const door = (score) => `<span class="gem-door sm" role="img" aria-label="Gem score ${score} out of 100"><svg viewBox="0 0 40 52" aria-hidden="true"><path class="frame" d="M5 50V20a15 15 0 0 1 30 0v30Z"/><path class="step" d="M1 50.5h38"/><text class="num" x="20" y="32">${score}</text><circle class="keyhole" cx="20" cy="39" r="2"/><path class="keyhole" d="M19 40.5h2l.8 4.2h-3.6Z"/></svg></span>`;
+const score = (n) => `<span class="score" role="img" aria-label="Gem score ${n} out of 100"><span class="score-cap mono" aria-hidden="true">Gem</span><span class="score-bar" aria-hidden="true"><i style="--v:${n / 100}"></i></span><b class="mono" aria-hidden="true">${n}</b></span>`;
+// The place's name as its neon sign (lib/neon.js), the same one as on its page
+const sign = (p) => { const n = neonFor(p.id, p.name); return `<h3 class="neon" data-tone="${n.tone}" data-face="${n.face}" style="--tilt:${n.tilt}deg;--len:${[...p.name].length}">${esc(p.name)}</h3>`; };
+
+// ---- Throw physics: a damped spring to bring a card home, and a free flight to throw it away ----
+// Positions in px, velocities in px/s. A card leans with its sideways offset, like a held playing card.
+const lean = (x) => x * 0.065;
+const put = (card, { x, y, r = lean(x) }) => { card.style.transform = `translate(${x}px, ${y}px) rotate(${r}deg)`; };
+const stopMotion = (card) => { cancelAnimationFrame(card._raf); card._raf = 0; };
+function springHome(card, from, vel = { vx: 0, vy: 0 }, onMove) {
+  stopMotion(card);
+  let { x, y } = from, vx = vel.vx, vy = vel.vy, last = performance.now();
+  const K = 420, C = 26; // stiffness and damping: a little overshoot, settles in about half a second
+  const step = (now) => {
+    const dt = Math.min(0.032, (now - last) / 1000); last = now;
+    vx += (-K * x - C * vx) * dt; vy += (-K * y - C * vy) * dt;
+    x += vx * dt; y += vy * dt;
+    const done = Math.abs(x) < 0.4 && Math.abs(y) < 0.4 && Math.hypot(vx, vy) < 8;
+    if (done) { x = 0; y = 0; }
+    card._pos = { x, y }; put(card, card._pos); onMove?.(card._pos);
+    card._raf = done ? 0 : requestAnimationFrame(step);
+  };
+  card._raf = requestAnimationFrame(step);
+}
+function throwAway(card, from, vel, onGone) {
+  stopMotion(card);
+  let { x, y } = from, { vx, vy } = vel, r = lean(x), last = performance.now(), t = 0;
+  const spin = vx * 0.045; // degrees per second, from how hard it was thrown
+  const step = (now) => {
+    const dt = Math.min(0.032, (now - last) / 1000); last = now; t += dt;
+    vy += 900 * dt; // it falls a little as it goes
+    x += vx * dt; y += vy * dt; r += spin * dt;
+    put(card, { x, y, r }); card.style.opacity = String(Math.max(0, 1 - Math.max(0, t - 0.18) * 3));
+    if (t < 0.55) card._raf = requestAnimationFrame(step); else { card._raf = 0; onGone(); }
+  };
+  card._raf = requestAnimationFrame(step);
+}
 
 export function initSurprise({ getState, getTime, update, showOnMap, toast }) {
   const dataEl = document.getElementById('places-data');
@@ -64,7 +102,9 @@ export function initSurprise({ getState, getTime, update, showOnMap, toast }) {
     const near = nearLine(km);
     const directions = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`;
     return `<div class="dcard">
-      <div class="top"><div><div class="m">${esc(p.area)} · ${esc(p.kind)}</div><h3>${esc(p.name)}</h3></div>${door(p.score)}</div>
+      <div class="m mono">${esc(p.area)} · ${esc(p.kind)}</div>
+      <div class="sign">${sign(p)}</div>
+      ${score(p.score)}
       ${p.sample ? '<span class="sample-flag">Sample, not a real place</span>' : ''}
       <div class="tl">${esc(p.tagline)}</div>
       <div class="or"><b>Order:</b> ${esc(p.order)}</div>
@@ -97,7 +137,7 @@ export function initSurprise({ getState, getTime, update, showOnMap, toast }) {
       el.inert = depth > 0;
       if (depth === 0) {
         const card = el.querySelector('.dcard');
-        if (returning && fresh && !reduceMotion) { card.style.transform = returning; void card.offsetWidth; card.classList.add('home'); card.style.transform = ''; }
+        if (returning && fresh && !reduceMotion) { put(card, returning); springHome(card, returning, { vx: -returning.x * 2, vy: -returning.y * 2 }); }
         if (!card.dataset.drag) { card.dataset.drag = '1'; draggable(card); }
       }
     });
@@ -123,56 +163,63 @@ export function initSurprise({ getState, getTime, update, showOnMap, toast }) {
   }
 
   function draggable(card) {
-    let grab = null, x = 0, y = 0, samples = [];
+    let grab = null, samples = [];
     const keep = card.querySelector('.lbl.keep'), pass = card.querySelector('.lbl.pass');
-    const show = () => {
-      card.style.transform = `translate(${x}px, ${y}px) rotate(${x * 0.065}deg)`;
+    card._pos = { x: 0, y: 0 };
+    const show = ({ x, y }) => {
       keep.style.opacity = Math.min(1, Math.max(0, (x - 16) / 80));
       pass.style.opacity = Math.min(1, Math.max(0, (-x - 16) / 80));
       lift(Math.min(1, Math.hypot(x, y * 0.5) / 160));
     };
     card.addEventListener('pointerdown', (e) => {
       if (e.button !== 0 || e.target.closest('a, button')) return;
-      grab = { ox: e.clientX - x, oy: e.clientY - y };
-      samples = [{ t: e.timeStamp, x: e.clientX }];
+      stopMotion(card); // catch it mid-spring, from wherever it is
+      grab = { ox: e.clientX - card._pos.x, oy: e.clientY - card._pos.y };
+      samples = [{ t: e.timeStamp, x: e.clientX, y: e.clientY }];
       card.setPointerCapture(e.pointerId);
-      card.classList.add('drag'); card.classList.remove('home');
+      card.classList.add('drag');
     });
     card.addEventListener('pointermove', (e) => {
       if (!grab) return;
-      x = e.clientX - grab.ox;
-      const ry = e.clientY - grab.oy; // up and down isn't a decision, so it gets stiff past a little play
-      y = Math.sign(ry) * Math.min(Math.abs(ry), 48 + Math.max(0, Math.abs(ry) - 48) * 0.3);
-      samples.push({ t: e.timeStamp, x: e.clientX });
+      const x = e.clientX - grab.ox, ry = e.clientY - grab.oy;
+      const y = Math.sign(ry) * Math.min(Math.abs(ry), 48 + Math.max(0, Math.abs(ry) - 48) * 0.3); // up and down isn't a decision, so it gets stiff past a little play
+      card._pos = { x, y }; put(card, card._pos); show(card._pos);
+      samples.push({ t: e.timeStamp, x: e.clientX, y: e.clientY });
       if (samples.length > 10) samples.shift();
-      show();
     });
     const release = (e) => {
       if (!grab) return;
       grab = null; card.classList.remove('drag');
-      const recent = samples.filter((s) => e.timeStamp - s.t < 90);
-      const speed = recent.length > 1 ? (recent.at(-1).x - recent[0].x) / ((recent.at(-1).t - recent[0].t) / 1000 || 1) : 0;
-      const dir = Math.sign(x);
-      const flick = Math.abs(speed) > 500 && Math.sign(speed) === dir && Math.abs(x) > 12;
+      // How fast it was moving when you let go, from the last tenth of a second
+      const recent = samples.filter((s) => e.timeStamp - s.t < 100);
+      const span = recent.length > 1 ? (recent.at(-1).t - recent[0].t) / 1000 || 1 : 1;
+      const vel = recent.length > 1 ? { vx: (recent.at(-1).x - recent[0].x) / span, vy: (recent.at(-1).y - recent[0].y) / span } : { vx: 0, vy: 0 };
+      const { x, y } = card._pos, dir = Math.sign(x);
+      const flick = Math.abs(vel.vx) > 500 && Math.sign(vel.vx) === dir && Math.abs(x) > 12;
       const far = Math.abs(x) > Math.min(card.offsetWidth * 0.35, 140);
-      if (dir && (flick || far) && e.type !== 'pointercancel') return decide(dir > 0, { x, y });
-      card.classList.add('home'); x = 0; y = 0; show(); lift(0); // not far enough: spring back
+      if (dir && (flick || far) && e.type !== 'pointercancel') return decide(dir > 0, { x, y, ...vel });
+      if (reduceMotion) { card._pos = { x: 0, y: 0 }; put(card, card._pos); show(card._pos); lift(0); return; }
+      springHome(card, { x, y }, vel, show); // not far enough: it springs home, keeping your momentum
     };
     card.addEventListener('pointerup', release);
     card.addEventListener('pointercancel', release);
   }
 
-  function decide(keep, from = { x: 0, y: 0 }) {
+  // keep: right (Bucket List) or left (pass). from: where the card was let go and how fast it was moving;
+  // the buttons and arrow keys throw it with a firm toss of their own.
+  function decide(keep, from = {}) {
     if (!deck || deck.at >= deck.cards.length) return;
     const { p } = deck.cards[deck.at];
     const el = stack.querySelector(`.dc:not(.gone)[data-id="${p.id}"]`), card = el?.querySelector('.dcard');
     const dir = keep ? 1 : -1;
-    const exit = `translate(${from.x + dir * 480}px, ${from.y - 70}px) rotate(${dir * 22}deg)`;
+    const x = from.x ?? 0, y = from.y ?? 0;
+    // At least a firm toss outward, and never back toward the middle
+    const vx = dir * Math.max(1300, Math.abs(from.vx ?? 0)), vy = Math.max(-900, Math.min(600, from.vy ?? -260));
+    const exit = { x: x + vx * 0.3, y: y + vy * 0.3 };
     if (card) {
-      el.classList.add('gone'); el.inert = true; card.classList.remove('drag', 'home');
+      el.classList.add('gone'); el.inert = true; card.classList.remove('drag');
       card.querySelector(keep ? '.lbl.keep' : '.lbl.pass').style.opacity = 1;
-      void card.offsetWidth; card.classList.add('fly'); card.style.transform = exit;
-      setTimeout(() => el.remove(), 600);
+      if (reduceMotion) el.remove(); else throwAway(card, { x, y }, { vx, vy }, () => el.remove());
     }
     const before = getState()[p.id]?.status;
     deck.hist.push({ id: p.id, keep, before, exit });
