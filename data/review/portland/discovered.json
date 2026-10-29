@@ -1088,6 +1088,198 @@
     "from": "disc-11-night"
   },
   {
+    "name": "Tienda Santa Cruz",
+    "neighborhood": "St. Johns",
+    "city": "Portland",
+    "address": "8630 N Lombard St",
+    "kind": "Grocery-back taqueria",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Taqueria tucked behind the aisles of a Mexican grocery and panaderia; huge, cheap tacos and burritos, plus pan dulce from the bakery case for later.",
+    "source_url": "https://www.wweek.com/culture/2026/05/12/althea-grey-potter-loves-the-old-portland-vibe-of-st-johns-as-much-as-you-do/",
+    "open_evidence": "Recommended in Willamette Week, May 2026; in Travel Portland cheap eats guide updated Sept 2026; OpenStreetMap survey with hours Jul 2026",
+    "from": "disc-12-day"
+  },
+  {
+    "name": "Mi Burrito",
+    "neighborhood": "Piedmont",
+    "city": "Portland",
+    "address": "819 N Lombard St",
+    "kind": "Burrito counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Lombard Street burrito shop near Interstate with more than 30 burrito options, still priced at ten dollars or less when that has become rare.",
+    "source_url": "https://www.wweek.com/culture/2026/03/25/yes-you-can-still-find-a-burrito-for-10-or-less-in-2026-portland/",
+    "open_evidence": "Listed in Willamette Week's ten-dollar burrito roundup, Mar 2026",
+    "from": "disc-12-day"
+  },
+  {
+    "name": "John Street Cafe",
+    "neighborhood": "St. Johns",
+    "city": "Portland",
+    "address": "8338 N Lombard St",
+    "kind": "Neighborhood brunch cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Breakfast-and-brunch St. Johns standby with a sunny patio and a whiteboard of specials; order the giant filbert-and-currant pancakes.",
+    "source_url": "https://www.pdxmonthly.com/restaurants/john-street-cafe",
+    "open_evidence": "OpenStreetMap entry re-surveyed with current hours Jun 2026; Portland Monthly listing (undated)",
+    "from": "disc-12-day"
+  },
+  {
+    "name": "Slim's Restaurant & Lounge",
+    "neighborhood": "St. Johns",
+    "city": "Portland",
+    "address": "8635 N Lombard St",
+    "kind": "Century-old dive bar",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "local-legend",
+    "why": "Lombard Street dive pouring for more than a century, with live music, cheap happy-hour beer and real bar food; get the jalapeno poppers.",
+    "source_url": "https://www.portlandmercury.com/feature/slims-a-105-year-history-and-some-of-portlands-best-bar-food-17741649/",
+    "open_evidence": "Named a regular haunt by a St. Johns chef in Willamette Week, May 2026; OpenStreetMap survey Jul 2026",
+    "from": "disc-12-night"
+  },
+  {
+    "name": "Thai Cottage",
+    "neighborhood": "St. Johns",
+    "city": "Portland",
+    "address": "8620 N Lombard St",
+    "kind": "Neighborhood Thai restaurant",
+    "when": [
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Plain Lombard Street Thai room a few doors from Tienda Santa Cruz, named by a St. Johns chef as one of her regular dinner stops.",
+    "source_url": "https://www.wweek.com/culture/2026/05/12/althea-grey-potter-loves-the-old-portland-vibe-of-st-johns-as-much-as-you-do/",
+    "open_evidence": "Recommended in Willamette Week, May 2026; OpenStreetMap survey Jul 2026",
+    "from": "disc-12-night"
+  },
+  {
+    "name": "Kabuki Sushi & Grill",
+    "neighborhood": "St. Johns",
+    "city": "Portland",
+    "address": "8638 N Lombard St",
+    "kind": "Neighborhood sushi grill",
+    "when": [
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Small sushi-and-grill spot on the St. Johns main drag that a neighborhood chef lists among her everyday picks; a quiet alternative to Lombard's bars.",
+    "source_url": "https://www.wweek.com/culture/2026/05/12/althea-grey-potter-loves-the-old-portland-vibe-of-st-johns-as-much-as-you-do/",
+    "open_evidence": "Recommended in Willamette Week, May 2026; OpenStreetMap survey Jul 2026",
+    "from": "disc-12-night"
+  },
+  {
+    "name": "Mikasa Sushi & Ramen",
+    "neighborhood": "St. Johns",
+    "city": "Portland",
+    "address": "8777 N Lombard St",
+    "kind": "Sushi and ramen house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Sushi and ramen house at the far end of the St. Johns strip, open lunch through dinner, that a local chef names among her regulars.",
+    "source_url": "https://www.wweek.com/culture/2026/05/12/althea-grey-potter-loves-the-old-portland-vibe-of-st-johns-as-much-as-you-do/",
+    "open_evidence": "Recommended in Willamette Week, May 2026; OpenStreetMap survey with hours Jul 2026",
+    "from": "disc-12-night"
+  },
+  {
+    "name": "Pip's Original Doughnuts & Chai",
+    "neighborhood": "Cully",
+    "city": "Portland",
+    "address": "4759 NE Fremont St",
+    "kind": "Mini doughnut and chai shop",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "Tiny Fremont Street shop frying small doughnuts to order alongside house-made chai; Portland readers voted it the city's best doughnut in 2026.",
+    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
+    "open_evidence": "Won Best Doughnut in Willamette Week's readers' poll, Jul 2026; OpenStreetMap survey with hours Aug 2026",
+    "from": "disc-13-day"
+  },
+  {
+    "name": "Lily Market",
+    "neighborhood": "Parkrose Heights",
+    "city": "Portland",
+    "address": "11001 NE Halsey St",
+    "kind": "Asian grocery deli",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Halsey Street Asian grocery near Gateway whose deli counter packs salad rolls, steamed buns, egg rolls and teriyaki chicken to eat on the go.",
+    "source_url": "https://hoodline.com/2019/06/explore-the-4-top-spots-in-portland-s-parkrose-heights-neighborhood/",
+    "open_evidence": "OpenStreetMap survey of the market and its deli with current hours, Jul and Aug 2026",
+    "from": "disc-13-day"
+  },
+  {
+    "name": "Rose City Burrito",
+    "neighborhood": "Cully",
+    "city": "Portland",
+    "address": "6205 NE Prescott St",
+    "kind": "Neighborhood burrito shop",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Cully burrito shop on Prescott that Willamette Week named in 2026 as one of the few places still filling a burrito for ten dollars.",
+    "source_url": "https://www.wweek.com/culture/2026/03/25/yes-you-can-still-find-a-burrito-for-10-or-less-in-2026-portland/",
+    "open_evidence": "Listed in Willamette Week's ten-dollar burrito roundup, Mar 2026",
+    "from": "disc-13-night"
+  },
+  {
+    "name": "El Sombrero Tapatio",
+    "neighborhood": "Parkrose",
+    "city": "Portland",
+    "address": "10820 NE Sandy Blvd",
+    "kind": "Family Mexican restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Parkrose fixture since 2002; Mama Elvira, who came from Jalisco in the 1970s, anchors a kitchen run by relatives and old family friends.",
+    "source_url": "https://bridgetownbites.com/2026/06/08/el-sombrero-tapatio-a-family-affair-in-east-portland-reprint-portland-oregon/",
+    "open_evidence": "Hollywood Star News profile reprinted by Bridgetown Bites, Jun 2026",
+    "from": "disc-13-night"
+  },
+  {
+    "name": "Barbur World Foods",
+    "neighborhood": "Multnomah",
+    "city": "Portland",
+    "address": "9845 SW Barbur Blvd",
+    "kind": "Middle Eastern market deli",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Barbur Boulevard grocery with a Middle Eastern deli case and a wood-fired oven baking pita to order; assemble a takeout spread of hummus and salads.",
+    "source_url": "https://www.wweek.com/culture/2026/05/23/explore-the-westsides-specialty-markets-with-pantry-companion/",
+    "open_evidence": "Featured in Willamette Week's Westside specialty markets guide, May 2026",
+    "from": "disc-14-day"
+  },
+  {
     "name": "Nak Won",
     "neighborhood": "Central Beaverton",
     "city": "Beaverton",
