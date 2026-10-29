@@ -5,7 +5,7 @@ Notable changes to The Unlisted. The format follows [Keep a Changelog](https://k
 ## [Unreleased]
 
 ### Added
-- Portland, Oregon is ready to research: a `portland` metro in the pipeline (Multnomah, Washington and Clackamas counties, 17 areas, Portland press for the fame check), a county lookup scoped to the metro's state, a metro-aware enrich step, the cloud research brief `prompts/cloud-research-portland.md` and the plan `docs/portland-expansion-plan_v1.0_10.29.2026.md`. Nothing on the live site changes yet.
+- Portland, Oregon is ready to research: a `portland` metro in the pipeline (Multnomah, Washington and Clackamas counties, 17 areas, Portland press for the fame check), a county lookup scoped to the metro's state, a metro-aware enrich step, the cloud research brief `prompts/cloud-research-portland.md` and the plan `docs/portland-expansion-plan_v1.1_10.29.2026.md`. Nothing on the live site changes yet.
 - Anonymous visit counts for Dan, the same as on www.icarianforge.com: the pages you open, how long, how far down, links off the site, and the tagged link (?via=) if there was one. Never the Bucket List, stamps, ratings or notes, never buttons, and never anything typed. No cookies, and nothing at all under Global Privacy Control. The privacy page has a new "Visit counts" section. The script is `public/insights.js`, reporting to www.icarianforge.com/api/i.
 
 ## [1.5.0] · 2026-10-17

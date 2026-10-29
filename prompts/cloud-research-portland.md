@@ -6,7 +6,7 @@
 > `Follow prompts/cloud-research-portland.md. Start with the Network check, then Setup, then Step 1.`
 >
 > Everything below is the cloud session's own instructions. You don't need to paste it.
-> The plan behind this brief is `docs/portland-expansion-plan_v1.0_10.29.2026.md`.
+> The plan behind this brief is `docs/portland-expansion-plan_v1.1_10.29.2026.md`.
 
 Brief for a Claude Code **cloud session** on this repo. It runs on Dan's cloud credit, then his plan.
 Goal: **about 200 Portland places** that survive Dan's review. That means about **220 drafts**: Dan's picks (if any) plus
@@ -31,8 +31,9 @@ places found by research. The run has two halves with a checkpoint between them,
 - **Food carts count, with care.** Carts are a real part of how Portland eats, and many of the best deep cuts are carts.
   Include a cart only when it has a fixed pod or lot with a street address, has been there (or had a storefront)
   for roughly two years or more by a source, and shows it is open within the last **6 months** (carts move and pods close).
-  Put the pod's name in `practical` (for example "In the Hawthorne Asylum pod"). Keep carts to about **a fifth of the
-  list**: around 40 of 220.
+  Put the pod's name in `practical` (for example "In the Hawthorne Asylum pod"). Dan's call: carts are in, but
+  limited. Keep them to about **a tenth of the list**: around 20 of 220, never more than 25. When two carts compete for
+  a slot, take the one with the longer record and the better story.
 - **Small local groups.** Portland has many two- and three-shop names. The guide's limit is three locations; four or
   more is a chain for our purposes, however local. Say so in `skipped.json` when that's the reason.
 - **Balance.** No more than about a third coffee, bakeries, donuts and ice cream; Portland leans that way on every list.
@@ -68,8 +69,8 @@ r/askportland, r/PortlandFood). If they don't, stop trying Reddit for the rest o
 Don't spend searches on it.
 
 ## Step 1: Dan's picks first (if there are any)
-`data/seeds-portland.json` holds Dan's own picks as `{name, area, lead}`. If the file is an empty list, say so and go
-to Step 2. Otherwise research every place in it. The `lead` field is Dan's description: treat it as a lead to verify,
+`data/seeds-portland.json` holds Dan's own picks as `{name, area, lead}`. For this round Dan has chosen not to add
+picks (he doesn't know Portland first-hand), so expect an empty list: say so and go to Step 2. Otherwise research every place in it. The `lead` field is Dan's description: treat it as a lead to verify,
 not a fact. Only state what sources support.
 Write the drafts to `data/review/portland/batch-01.json` in the exact shape of `data/review/trial-01.json`, with
 `"seed": true`, `"metro": "portland"`, `"status": "draft"`, plus `lat`/`lng` from the address (OpenStreetMap address
@@ -96,7 +97,7 @@ cuts are. Append them to `data/review/portland/discovered.json` in the shape the
 `city` is the municipality the place is in (Portland, Beaverton, Gresham, Milwaukie...), never "Washington County".
 Commit and push after every 4 areas.
 
-Keep the Portland rules above in mind while you go: carts to a fifth, coffee and sweets to a third, a third deep
+Keep the Portland rules above in mind while you go: carts to a tenth, coffee and sweets to a third, a third deep
 cuts, every area covered. Then pick the shortlist (free, no AI):
 ```
 METRO=portland node scripts/pipeline/04-select.mjs 260

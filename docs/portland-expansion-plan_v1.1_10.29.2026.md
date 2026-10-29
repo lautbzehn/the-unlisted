@@ -1,6 +1,8 @@
 # Portland expansion plan
 
-**v1.0 · 10.29.2026** · The Unlisted · Owner: Dan West
+**v1.1 · 10.29.2026** · The Unlisted · Owner: Dan West
+
+*v1.1 records two decisions taken on 10.29.2026: no seed picks this round, and food carts limited to about a tenth of the list. v1.0 was the first draft of the plan.*
 
 ## In one minute
 
@@ -55,7 +57,7 @@ Checked here: syntax, the free `--estimate` modes (34 discovery requests), the f
 The brief carries the full instructions. The parts that are Portland's own:
 
 - **17 areas**, each searched for daytime and evening places: Downtown, Old Town and the Pearl · Northwest, Slabtown and Goose Hollow · Central Eastside, Buckman and Kerns · Hawthorne, Belmont and Sunnyside · Division, Clinton and Richmond · Sellwood-Moreland and Brooklyn · Woodstock, Foster-Powell and Mt. Scott · Montavilla, Mt. Tabor and the Jade District · Lents and outer Southeast · Hollywood, Laurelhurst and Beaumont-Wilshire · Alberta, Concordia, King and Vernon · Mississippi, Williams and Lower Albina · St. Johns, Kenton and North Portland · Cully, Parkrose and Gateway · Multnomah Village, Hillsdale and Southwest · Beaverton, Aloha and Hillsboro · Milwaukie, Oregon City, Clackamas and Gresham.
-- **Food carts are in, with a cap and tighter evidence.** A cart needs a fixed pod with a street address, roughly two years in place by a source, and proof it is open within six months rather than twelve. About a fifth of the list at most. The pod's name goes in the practical notes.
+- **Food carts are in, limited, with tighter evidence.** A cart needs a fixed pod with a street address, roughly two years in place by a source, and proof it is open within six months rather than twelve. About a tenth of the list at most: 20 to 25 places. The pod's name goes in the practical notes.
 - **Small local groups** stop at three locations, the guide's existing rule. Portland has many four-shop names that feel local; they are chains for our purposes.
 - **Balance targets:** coffee, bakeries, donuts and ice cream capped at about a third; at least a third deep cuts; the immigrant corridors (SE 82nd, outer east, Beaverton, Hillsboro, Rockwood, Gresham) covered on purpose; `late` only for doors open past 10 pm.
 - **Checkpoint 1** after batch 02: the first 20 researched places show the per-batch credit burn. Multiply by the eleven batches left to see whether the full run fits.
@@ -84,9 +86,9 @@ The San Diego launch touched 25 files. Portland's launch is the same set, mostly
 
 ## Where I'd push back
 
-1. **Give the run ten to twenty of your own picks.** Your San Diego picks were the best-sourced drafts and set the voice for the rest. `data/seeds-portland.json` is an empty list; add `{name, area, lead}` entries before starting, or leave it empty and the brief skips Step 1. If you don't know Portland first-hand, skipping is the honest choice.
+1. **Seed picks.** Your San Diego picks were the best-sourced drafts and set the voice for the rest. **Decided 10.29.2026: no picks this round.** Dan doesn't know Portland first-hand, so `data/seeds-portland.json` stays an empty list and the brief skips Step 1. The research has to carry the voice on its own; the deep-cut target and the Reddit-first discovery are there for that.
 2. **Treat the 100 checkpoint as a real decision, not a pause.** Two hundred places is more than the Bay Area has today, and 220 drafts is a full weekend of review at a few minutes each. Opening at 100 and growing to 200 in a second round costs nothing in credit and gets Portland live sooner.
-3. **Carts are a deliberate editorial choice.** Leaving them out is simpler and avoids churn; including them with a cap is truer to the city. The brief includes them. Say the word and it becomes an exclusion.
+3. **Carts are a deliberate editorial choice.** Leaving them out is simpler and avoids churn; including them with a cap is truer to the city. **Decided 10.29.2026: carts are in, limited to about a tenth of the list** (20 to 25 places) rather than the fifth first proposed.
 4. **Vancouver, Washington is left out.** It would be an eighteenth area with Clark County in a second state, which the fetch does not support yet. Easy to add later as its own round.
 
 ## Risks
