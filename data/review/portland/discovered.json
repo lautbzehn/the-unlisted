@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Nak Won",
+    "neighborhood": "Central Beaverton",
+    "city": "Beaverton",
+    "address": "4600 SW Watson Ave",
+    "kind": "Korean family restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Old guard of Beaverton's Korean row since 2001; order the peppery, barely sauced tteokbokki or the black-bean jajangmyun.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-restaurants-food-carts-beaverton",
+    "open_evidence": "Portland Monthly Beaverton guide dated Apr 2026; Downtown Beaverton Association business listing with current hours",
+    "from": "disc-15-night"
+  },
+  {
+    "name": "Coredam",
+    "neighborhood": "Central Beaverton",
+    "city": "Beaverton",
+    "address": "12865 SW Canyon Rd",
+    "kind": "Korean raw-crab specialist",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Canyon Road Korean room known for yangnyeom gejang, raw crab in a spicy chile marinade, the dish Korean regulars seek out.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-restaurants-food-carts-beaverton",
+    "open_evidence": "Listed in Portland Monthly Beaverton guide dated Apr 2026; hours not confirmed",
+    "from": "disc-15-night"
+  },
+  {
+    "name": "Helvetia Tavern",
+    "neighborhood": "Helvetia",
+    "city": "Hillsboro",
+    "address": "10275 NW Helvetia Rd",
+    "kind": "Farm-country burger tavern",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "Farm-country roadhouse under a ceiling of trucker hats; go for a big burger and fries after a drive past the fields.",
+    "source_url": "https://thatoregonlife.com/2026/04/best-mom-pop-restaurants-oregon-2026/",
+    "open_evidence": "That Oregon Life mom-and-pop list, Apr 2026",
+    "from": "disc-15-night"
+  },
+  {
+    "name": "Sanguiche",
+    "neighborhood": "Downtown Gresham",
+    "city": "Gresham",
+    "address": "134 NW 3rd St",
+    "kind": "Italian sandwich shop",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "The Spillette family's small downtown shop for Italian sandwiches; on Wednesdays the cannoli are filled fresh until they run out.",
+    "source_url": "https://theoutlookonline.com/2026/03/10/downtown-greshams-sanguiche-serves-decadent-sandwiches-in-intimate-space/",
+    "open_evidence": "Gresham Outlook feature Mar 2026 with hours (9:30 am to 6 pm, Wed to Sun)",
+    "from": "disc-16-day"
+  },
+  {
+    "name": "McCrae's Country Cafe",
+    "neighborhood": "Downtown Gresham",
+    "city": "Gresham",
+    "address": "401 W Powell Blvd",
+    "kind": "Country breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Unfussy country cafe on West Powell, an East County breakfast stop with almost no press, worth a reviewer's visit to name its best plate.",
+    "source_url": "https://theoutlookonline.com/2026/03/03/multnomah-county-health-inspections-nuvrei-good-coffee-mccraes-country-cafe/",
+    "open_evidence": "County health inspection Feb 2026, reported by the Gresham Outlook Mar 2026; hours not confirmed",
+    "from": "disc-16-day"
+  },
+  {
+    "name": "Taqueria Rico Taco",
+    "neighborhood": "Rockwood",
+    "city": "Gresham",
+    "address": "111 SE 181st Ave",
+    "kind": "Rockwood family taqueria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Handmade tacos on SE 181st since 1999; this Rockwood standby gave free meals to SNAP families during the 2025 shutdown.",
+    "source_url": "https://theoutlookonline.com/2025/11/06/taqueria-rico-taco-has-free-meal-snap-recipients/",
+    "open_evidence": "Gresham Outlook feature Nov 2025; hours not confirmed",
+    "from": "disc-16-day"
+  },
+  {
+    "name": "OG Birrieria",
+    "neighborhood": "Lake Grove",
+    "city": "Lake Oswego",
+    "address": "15840 Boones Ferry Rd",
+    "kind": "Birria taqueria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Started as a Hillsboro taco truck; its Lake Grove storefront, open since April 2026, centers on birria tacos with consome for dipping.",
+    "source_url": "https://lakeoswegoreview.com/2026/04/22/long-awaited-mexican-restaurant-to-open-in-lake-oswego-tomorrow/",
+    "open_evidence": "Lake Oswego Review on its soft opening, Apr 2026; hours not confirmed",
+    "from": "disc-16-day"
+  },
+  {
+    "name": "Las Brasas",
+    "neighborhood": "Downtown Gresham",
+    "city": "Gresham",
+    "address": "60 NW Division St",
+    "kind": "Costa Rican rotisserie",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Mom-and-pop Costa Rican rotisserie at Division and Main, opened February 2026; the spit-roasted chicken is the order.",
+    "source_url": "https://theoutlookonline.com/2026/02/16/costa-rican-restaurant-brings-pura-vida-to-gresham/",
+    "open_evidence": "Gresham Outlook feature Feb 2026; county inspection at this address reported Sep 2026",
+    "from": "disc-16-night"
+  },
+  {
+    "name": "Gubanc's",
+    "neighborhood": "Lake Grove",
+    "city": "Lake Oswego",
+    "address": "16008 Boones Ferry Rd",
+    "kind": "Family neighborhood pub",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "The Gubanc family's Lake Grove pub since 1976, back in a remodeled room for its 50th year of feeding the neighborhood.",
+    "source_url": "https://www.gubancspub.com/",
+    "open_evidence": "Own site announces reopening in remodeled space and its 50th year (est. 1976, so 2026)",
+    "from": "disc-16-night"
+  },
+  {
+    "name": "Milwaukie Pizza Co.",
+    "neighborhood": "South Milwaukie",
+    "city": "Milwaukie",
+    "address": "13239 SE McLoughlin Blvd",
+    "kind": "Family pizza counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Family-run pizza shop in a McLoughlin strip mall since 2021; slices and big pies from a stone-deck oven with a honey-kissed crust.",
+    "source_url": "https://thatoregonlife.com/2026/09/honey-crust-milwaukie-pizza-co-oregon/",
+    "open_evidence": "That Oregon Life feature Sep 2026; hours not confirmed",
+    "from": "disc-16-night"
+  }
+]
