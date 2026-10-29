@@ -450,6 +450,149 @@
     "from": "disc-03-night"
   },
   {
+    "name": "Roman Russian Market",
+    "neighborhood": "Powellhurst-Gilbert",
+    "city": "Portland",
+    "address": "10918 SE Division St",
+    "kind": "Russian market with cafe",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "A Russian grocery open two decades, with a deli counter turning out plov and shashlik and a pastry case piled with crepes and slab cakes.",
+    "source_url": "https://traveloregon.com/things-to-do/eat-drink/how-to-enjoy-slavic-food-and-culture-in-oregon",
+    "open_evidence": "Travel Oregon Slavic food guide, Apr 2026, describes the in-store cafe as open daily; also OPB gallery and Portland Monthly listing",
+    "from": "disc-08-day"
+  },
+  {
+    "name": "J Vein Caffè",
+    "neighborhood": "Rose City Park",
+    "city": "Portland",
+    "address": "5235 NE Sandy Blvd",
+    "kind": "Airstream espresso cart",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "One owner, JJ Johnson, pulling Italian-style cappuccinos and affogatos from a converted Airstream in the Rose City Food Park pod since 2019.",
+    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Food Issue Jul 2026; Portland Monthly indie coffee guide notes owner-run since 2019",
+    "from": "disc-09-day"
+  },
+  {
+    "name": "Bollywood Theater",
+    "neighborhood": "Vernon",
+    "city": "Portland",
+    "address": "2039 NE Alberta St",
+    "kind": "Indian street food counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Counter-service Indian street food on Alberta, with thalis and snacks served in a room hung with Bollywood posters; a readers' favorite in 2026.",
+    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
+    "open_evidence": "Second place, Best Indian, Willamette Week Best of Portland readers' poll, Jul 2026 (brand has two shops)",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Kee's #Loaded Kitchen",
+    "neighborhood": "King",
+    "city": "Portland",
+    "address": "3625 NE Martin Luther King Jr Blvd",
+    "kind": "Soul food cart",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Kee Nelson, who grew up in Northeast Portland, serves cornmeal catfish, wings and pork chops from a lot on MLK; get the mac and Kees.",
+    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 3625 NE MLK; Portland Monthly profile placed it in an MLK parking lot, Aug 2023",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Hat Yai",
+    "neighborhood": "Vernon",
+    "city": "Portland",
+    "address": "1605 NE Killingsworth St",
+    "kind": "Southern Thai chicken counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Fried chicken in the style of Hat Yai in southern Thailand, with flaky roti and a cup of curry for dipping.",
+    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
+    "open_evidence": "Second place, Best Thai, Willamette Week Best of Portland readers' poll, Jul 2026 (brand has two shops)",
+    "from": "disc-10-night"
+  },
+  {
+    "name": "Abyssinian Kitchen",
+    "neighborhood": "Concordia",
+    "city": "Portland",
+    "address": "2940 NE Alberta St",
+    "kind": "Ethiopian-Eritrean family kitchen",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Ethiopian and Eritrean cooking that closed in the pandemic and came back on Alberta in 2022; the Oregonian ranked it among Portland's best.",
+    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
+    "open_evidence": "Finalist, Best Ethiopian, Willamette Week Best of Portland readers' poll, Jul 2026",
+    "from": "disc-10-night"
+  },
+  {
+    "name": "Mis Tacones",
+    "neighborhood": "Vernon",
+    "city": "Portland",
+    "address": "1670 NE Killingsworth St",
+    "kind": "Mexican neighborhood kitchen",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "A Mexican kitchen on Killingsworth that started as a pop-up and made a New York Times list of the country's best Mexican restaurants.",
+    "source_url": "https://www.koin.com/news/portland/the-new-york-times-names-2-northeast-portland-spots-among-best-mexican-restaurants-in-u-s/",
+    "open_evidence": "Finalist, Best Mexican, Willamette Week Best of Portland readers' poll, Jul 2026",
+    "from": "disc-10-night"
+  },
+  {
+    "name": "¿Por Qué No?",
+    "neighborhood": "Boise",
+    "city": "Portland",
+    "address": "3524 N Mississippi Ave",
+    "kind": "Mississippi Avenue taqueria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "Portland readers' top Mexican pick in 2026, a bright, packed Mississippi taqueria with a line out the door; get the carnitas taco.",
+    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
+    "open_evidence": "Winner, Best Mexican, Willamette Week Best of Portland readers' poll, Jul 2026 (brand has two shops)",
+    "from": "disc-11-day"
+  },
+  {
+    "name": "Queen of Sheba",
+    "neighborhood": "Eliot",
+    "city": "Portland",
+    "address": "2413 NE Martin Luther King Jr Blvd",
+    "kind": "Ethiopian family restaurant",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Readers picked it as Portland's best Ethiopian in 2026: platters of wots and tibs on injera in a dining room on MLK in Eliot.",
+    "source_url": "https://www.pdxmonthly.com/restaurants/queen-of-sheba/",
+    "open_evidence": "Winner, Best Ethiopian, Willamette Week Best of Portland readers' poll, Jul 2026",
+    "from": "disc-11-night"
+  },
+  {
     "name": "Nak Won",
     "neighborhood": "Central Beaverton",
     "city": "Beaverton",
