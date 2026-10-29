@@ -3,7 +3,7 @@
 // falls back to OSM's address search (Nominatim), then picks a balanced shortlist.
 //   node scripts/pipeline/04-select.mjs 180
 import { readJson, writeJson, slug } from './lib/claude.mjs';
-import { M, METROS } from './metros.mjs';
+import { M, METRO, METROS } from './metros.mjs';
 
 const target = Number(process.argv[2] ?? 180);
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/^the\s+/, '').replace(/[^a-z0-9]/g, '');
@@ -12,8 +12,9 @@ const km = (a, b) => {
   return 12742 * Math.asin(Math.sqrt(h));
 };
 
-// skip what's already in the guide, this city's seed list (researched separately) and earlier batches
-const existing = new Set([...readJson('src/data/places.json', []), ...readJson(M.seeds, [])].map((p) => norm(p.name)));
+// skip what's already in this city's guide and its seed list (researched separately); a namesake in another city stays
+const inMetro = readJson('src/data/places.json', []).filter((p) => (p.metro ?? 'bay-area') === METRO);
+const existing = new Set([...inMetro, ...readJson(M.seeds, [])].map((p) => norm(p.name)));
 const osm = readJson(`${M.pipelineDir}/independents.json`, []);
 const osmByName = new Map();
 for (const p of osm) (osmByName.get(norm(p.name)) ?? osmByName.set(norm(p.name), []).get(norm(p.name))).push(p);
