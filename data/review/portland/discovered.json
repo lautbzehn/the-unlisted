@@ -962,6 +962,23 @@
     "from": "disc-08-day"
   },
   {
+    "name": "Steam Rice Roll King",
+    "neighborhood": "Hazelwood",
+    "city": "Portland",
+    "address": "11003 SE Division St",
+    "kind": "Cantonese rice-roll shop",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "WW's 2026 Cheap Eats crowns it the rice-roll king: cheung fun with shrimp, beef or egg, and free warm soy milk when you dine in.",
+    "source_url": "https://www.wweek.com/food/2026/06/23/portlands-best-cheap-eats/",
+    "open_evidence": "WW Cheap Eats, June 2026, lists current prices and hours (8:30am to 8pm Tue-Sun); also Bridgetown Bites opening story Aug 2024",
+    "from": "disc-08-day"
+  },
+  {
     "name": "J Vein Caffè",
     "neighborhood": "Rose City Park",
     "city": "Portland",
@@ -1231,6 +1248,55 @@
     "from": "disc-13-day"
   },
   {
+    "name": "Cameo Cafe",
+    "neighborhood": "Roseway",
+    "city": "Portland",
+    "address": "8111 NE Sandy Blvd",
+    "kind": "Korean-American breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Portland Monthly's roundup of classic Korean-American restaurants; owner Sue Gee Lehn serves table-sized pancakes beside a rice, kimchi and eggs Korean breakfast.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/classic-korean-american-restuarants-portland",
+    "open_evidence": "Portland Tribune county inspection roundup, Oct 7 2026 (listed as Cameo Coffee Shop, 8111 NE Sandy Blvd)",
+    "from": "disc-13-day"
+  },
+  {
+    "name": "Pho Oregon",
+    "neighborhood": "Madison South",
+    "city": "Portland",
+    "address": "2518 NE 82nd Ave",
+    "kind": "Vietnamese pho hall",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "WW's 2026 Cheap Eats on the #1 bowl: spice-scented broth, a pile of noodles and nearly every cut of beef, still enough for two meals.",
+    "source_url": "https://www.wweek.com/food/2026/06/23/portlands-best-cheap-eats/",
+    "open_evidence": "WW Cheap Eats, June 2026, lists current prices and hours (9am to 7:45pm Mon-Sat); second location in Beaverton only",
+    "from": "disc-13-day"
+  },
+  {
+    "name": "El Yucateco",
+    "neighborhood": "Parkrose",
+    "city": "Portland",
+    "address": "11807 NE Sandy Blvd",
+    "kind": "Yucatecan food cart (Sandy Blvd lot)",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Bridgetown Bites tracked this panucho-making Yucatecan cart from its long-time gravel lot at NE 131st to its current spot beside a Sandy Blvd motorcycle bar.",
+    "source_url": "https://bridgetownbites.com/2023/01/06/four-things-i-learned-this-week-january-6-2023-portland-oregon/",
+    "open_evidence": "Portland Tribune county inspection roundup, Oct 16 2026: score 100 at 11807 NE Sandy Blvd; on this lot since Dec 2022, earlier at NE Sandy and 131st",
+    "from": "disc-13-day"
+  },
+  {
     "name": "Rose City Burrito",
     "neighborhood": "Cully",
     "city": "Portland",
@@ -1260,6 +1326,53 @@
     "why": "Parkrose fixture since 2002; Mama Elvira, who came from Jalisco in the 1970s, anchors a kitchen run by relatives and old family friends.",
     "source_url": "https://bridgetownbites.com/2026/06/08/el-sombrero-tapatio-a-family-affair-in-east-portland-reprint-portland-oregon/",
     "open_evidence": "Hollywood Star News profile reprinted by Bridgetown Bites, Jun 2026",
+    "from": "disc-13-night"
+  },
+  {
+    "name": "Mekong Bistro",
+    "neighborhood": "Madison South",
+    "city": "Portland",
+    "address": "8200 NE Siskiyou St",
+    "kind": "Cambodian restaurant and music room",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "WW's 2026 Cheap Eats praises the family-recipe som-lar maju kreung, a tamarind and prahok soup, at this 14-year-old Cambodian restaurant and music venue.",
+    "source_url": "https://www.wweek.com/food/2026/06/23/portlands-best-cheap-eats/",
+    "open_evidence": "WW Cheap Eats, June 2026, lists hours (4pm to midnight Sun-Thu, 6pm to midnight Fri-Sat)",
+    "from": "disc-13-night"
+  },
+  {
+    "name": "Taipei Noodle Haus",
+    "neighborhood": "Parkrose Heights",
+    "city": "Portland",
+    "address": "11642 NE Halsey St",
+    "kind": "Taiwanese noodle house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Willamette Week reviewed this Halsey noodle house in 2016; a decade on, Bridgetown Bites names it a Halsey classic. Known for black-bean jja jiang mian.",
+    "source_url": "https://www.wweek.com/restaurants/2016/03/22/taipei-noodle-haus",
+    "open_evidence": "Bridgetown Bites, Aug 17 2026, names it as a current Halsey neighbor of the new Two Roosters cafe (weak; confirm hours)",
+    "from": "disc-13-night"
+  },
+  {
+    "name": "Pizza Jerk",
+    "neighborhood": "Cully",
+    "city": "Portland",
+    "address": "5028 NE 42nd Ave",
+    "kind": "Punk-rock pizza parlor",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Portland Monthly called Bunk co-founder Tommy Habetz's Cully spot the city's first punk-rock family pizza joint: old-school parlor pies, soft serve, arcade games.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/2016/03/portland-s-first-punk-rock-family-pizza-joint",
+    "open_evidence": "Portland Tribune county inspection roundups, Mar 25 2026 and Oct 7 2026 (5028 NE 42nd Ave); three locations in all",
     "from": "disc-13-night"
   },
   {
