@@ -75,7 +75,14 @@ for (const dir of new Set(Object.values(METROS).map((m) => m.reviewDir))) {
   if (!existsSync(dir)) continue;
   for (const f of readdirSync(dir).filter((n) => /^batch-\d+\.json$/.test(n))) for (const d of readJson(`${dir}/${f}`, [])) ids.add(d.id);
 }
-for (const p of picked) { let id = p.id, n = 2; while (ids.has(id)) id = `${p.id}-${n++}`; p.id = id; ids.add(id); }
+// a re-run keeps each earlier candidate's id, so places already researched or skipped under it aren't queued again as new
+const keyOf = (c) => norm(c.name) + '|' + norm(c.city ?? '');
+const prior = new Map(readJson(`${M.reviewDir}/candidates.json`, []).map((c) => [keyOf(c), c.id]));
+for (const id of prior.values()) ids.add(id);
+for (const p of picked) {
+  if (prior.has(keyOf(p))) { p.id = prior.get(keyOf(p)); continue; }
+  let id = p.id, n = 2; while (ids.has(id)) id = `${p.id}-${n++}`; p.id = id; ids.add(id);
+}
 writeJson(`${M.reviewDir}/candidates.json`, picked);
 
 const tally = (f) => Object.entries(Object.groupBy(picked, f)).map(([k, v]) => `${k} ${v.length}`).join(' · ');
