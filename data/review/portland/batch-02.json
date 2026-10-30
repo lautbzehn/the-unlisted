@@ -55,7 +55,7 @@
     "name": "Yokai Musubi",
     "area": "Goose Hollow",
     "city": "Portland",
-    "kind": "Onigiri takeout shop",
+    "kind": "Onigiri and musubi shop",
     "lat": 45.52309,
     "lng": -122.69621,
     "osm": null,
@@ -71,23 +71,20 @@
       "signature": 68
     },
     "why": "A shop that does only rice balls, with a small trick for keeping the nori crisp, lifts uniqueness and signature. It is a grab-and-go room and I found no owner or history, so atmosphere and story sit low.",
-    "story": "A small takeout shop on W Burnside that is all about rice balls. The nori is wrapped apart from the rice so it stays crisp, the flavors rotate day to day, and the namesake Spam musubi costs $3.50.",
+    "story": "A shop on W Burnside that is all about rice balls, made for eating on the go. The nori is wrapped apart from the rice so it stays crisp, the flavors rotate day to day, and the namesake Spam musubi costs $3.50.",
     "tagline": "Onigiri with the nori kept crisp, to go",
     "order": "The teri-salmon onigiri, Tuesday through Thursday only. Two or three make a meal.",
     "practical": [
-      "Takeout only",
       "Closed Sundays and Mondays"
     ],
     "hours": "Tue-Sat 9 am-4 pm (Willamette Week, June 2026)",
     "sources": [
-      "https://www.wweek.com/food/2026/06/23/portlands-best-cheap-eats/",
-      "https://www.atly.com/location/YokaiMusubi",
-      "https://price.com/in-store/yokaimusubi"
+      "https://www.wweek.com/food/2026/06/23/portlands-best-cheap-eats/"
     ],
     "flags": [
       "Open status, hours, prices and the nori detail confirmed in Willamette Week's Cheap Eats guide (June 23, 2026), read in full.",
       "Prices are from June 2026: Spam musubi $3.50, teri-salmon onigiri $4.75, ume onigiri $3.99.",
-      "Takeout-only comes from a directory listing (atly); Willamette Week describes it as an on-the-go snack shop but does not say there is no seating.",
+      "Seating unknown: Willamette Week calls it an on-the-go snack shop; a directory said takeout only, which isn't a source we use, so it's left out.",
       "Only press found is that one Willamette Week piece. No owner, opening date or backstory found, so the story mark is low.",
       "Do not confuse with Musubi, a separate rice ball shop that opened on SE Division in 2016 and got Portland Mercury coverage."
     ],
@@ -368,9 +365,8 @@
     "why": "You'd remember the room, so atmosphere is high. Beyond decades on Clinton there is little history to tell, and the food is basic bar fare, so story and signature stay low.",
     "story": "A Clinton Street dive for more than 30 years, across the street from the Clinton Street Theater. Inside it's flocked wallpaper, velvet paintings and red vinyl booths, where groups settle in over cheap beer and big plates of cheese fries.",
     "tagline": "Velvet paintings and red booths on Clinton",
-    "order": "Cheese fries and a cheap beer. You order at the bar.",
+    "order": "Cheese fries and a cheap beer.",
     "practical": [
-      "Order at the bar",
       "Pinball and a photo booth",
       "Across from the Clinton Street Theater"
     ],
@@ -379,7 +375,6 @@
       "https://www.pdxmonthly.com/home-and-real-estate/portland-neighborhood-guide-division-and-clinton",
       "https://www.islands.com/2096714/5-dive-bars-portland-oregon-hidden-gems-old-school-90s-vibes/",
       "https://www.pdxmonthly.com/home-and-real-estate/2017/08/five-places-that-exist-only-in-portland-s-division-clinton-neighborhood",
-      "https://www.atly.com/location/DotsCafe1",
       "https://www.wweek.com/portland/blog-28780-future-drinking.html"
     ],
     "flags": [
@@ -649,7 +644,7 @@
       "story": 50,
       "signature": 62
     },
-    "why": "A well-loved chef-run counter more than a find. The vada pav gives it a signature, but this run turned up little on the room, so atmosphere is a middling placeholder.",
+    "why": "A well-loved chef-run counter more than a find. The vada pav gives it a signature, but this run turned up little on the room, so atmosphere is a middling guess.",
     "story": "Chef Troy MacLarty opened Bollywood Theater on NE Alberta in 2012, cooking Indian street food. A bigger second shop on SE Division, with its own Indian grocery, followed in 2014 and closed in April 2025. The Alberta original is the one left.",
     "tagline": "Indian street food on Alberta since 2012",
     "order": "The vada pav: a spiced potato fritter on a roll with chutney.",

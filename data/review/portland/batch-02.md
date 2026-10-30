@@ -4,7 +4,7 @@
 
 **Fame:** Open secret 13 · Deep cut 1 · Local legend 1  
 **Time of day:** midday+evening 6 · morning+midday 4 · midday+evening+late 2 · evening 1 · morning+midday+evening 1 · morning+midday+evening+late 1  
-**Flags to check:** 81 · **Sources:** 69 (internal only)
+**Flags to check:** 81 · **Sources:** 66 (internal only)
 
 For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
@@ -43,30 +43,28 @@ Uniqueness 64 · Atmosphere 52 · Story 68 · Signature item 48 · Under the rad
 ---
 
 ## Yokai Musubi — Gem 58
-*Onigiri takeout shop · Goose Hollow, Portland · Deep cut · morning, midday*
+*Onigiri and musubi shop · Goose Hollow, Portland · Deep cut · morning, midday*
 
-**Story.** A small takeout shop on W Burnside that is all about rice balls. The nori is wrapped apart from the rice so it stays crisp, the flavors rotate day to day, and the namesake Spam musubi costs $3.50.
+**Story.** A shop on W Burnside that is all about rice balls, made for eating on the go. The nori is wrapped apart from the rice so it stays crisp, the flavors rotate day to day, and the namesake Spam musubi costs $3.50.
 
 **Order this.** The teri-salmon onigiri, Tuesday through Thursday only. Two or three make a meal.
 
 **Why this score.** A shop that does only rice balls, with a small trick for keeping the nori crisp, lifts uniqueness and signature. It is a grab-and-go room and I found no owner or history, so atmosphere and story sit low.  
 Uniqueness 66 · Atmosphere 32 · Story 35 · Signature item 68 · Under the radar 90
 
-**Practical.** Takeout only · Closed Sundays and Mondays  
+**Practical.** Closed Sundays and Mondays  
 **Hours.** Tue-Sat 9 am-4 pm (Willamette Week, June 2026)
 
 **Check before approving:**
 - [ ] Open status, hours, prices and the nori detail confirmed in Willamette Week's Cheap Eats guide (June 23, 2026), read in full.
 - [ ] Prices are from June 2026: Spam musubi $3.50, teri-salmon onigiri $4.75, ume onigiri $3.99.
-- [ ] Takeout-only comes from a directory listing (atly); Willamette Week describes it as an on-the-go snack shop but does not say there is no seating.
+- [ ] Seating unknown: Willamette Week calls it an on-the-go snack shop; a directory said takeout only, which isn't a source we use, so it's left out.
 - [ ] Only press found is that one Willamette Week piece. No owner, opening date or backstory found, so the story mark is low.
 - [ ] Do not confuse with Musubi, a separate rice ball shop that opened on SE Division in 2016 and got Portland Mercury coverage.
 
-<details><summary>Sources (3)</summary>
+<details><summary>Sources (1)</summary>
 
 - https://www.wweek.com/food/2026/06/23/portlands-best-cheap-eats/
-- https://www.atly.com/location/YokaiMusubi
-- https://price.com/in-store/yokaimusubi
 </details>
 
 ---
@@ -237,12 +235,12 @@ Uniqueness 58 · Atmosphere 50 · Story 78 · Signature item 62 · Under the rad
 
 **Story.** A Clinton Street dive for more than 30 years, across the street from the Clinton Street Theater. Inside it's flocked wallpaper, velvet paintings and red vinyl booths, where groups settle in over cheap beer and big plates of cheese fries.
 
-**Order this.** Cheese fries and a cheap beer. You order at the bar.
+**Order this.** Cheese fries and a cheap beer.
 
 **Why this score.** You'd remember the room, so atmosphere is high. Beyond decades on Clinton there is little history to tell, and the food is basic bar fare, so story and signature stay low.  
 Uniqueness 55 · Atmosphere 82 · Story 38 · Signature item 50 · Under the radar 60
 
-**Practical.** Order at the bar · Pinball and a photo booth · Across from the Clinton Street Theater  
+**Practical.** Pinball and a photo booth · Across from the Clinton Street Theater  
 **Hours.** not found
 
 **Check before approving:**
@@ -253,12 +251,11 @@ Uniqueness 55 · Atmosphere 82 · Story 38 · Signature item 50 · Under the rad
 - [ ] Listing-site reviews from 2025 mention a smaller menu and ordering at the counter. Confirm the kitchen still runs as described.
 - [ ] Decor details come from a 2017 Portland Monthly piece and the Islands.com article, seen as search summaries.
 
-<details><summary>Sources (5)</summary>
+<details><summary>Sources (4)</summary>
 
 - https://www.pdxmonthly.com/home-and-real-estate/portland-neighborhood-guide-division-and-clinton
 - https://www.islands.com/2096714/5-dive-bars-portland-oregon-hidden-gems-old-school-90s-vibes/
 - https://www.pdxmonthly.com/home-and-real-estate/2017/08/five-places-that-exist-only-in-portland-s-division-clinton-neighborhood
-- https://www.atly.com/location/DotsCafe1
 - https://www.wweek.com/portland/blog-28780-future-drinking.html
 </details>
 
@@ -419,7 +416,7 @@ Uniqueness 60 · Atmosphere 64 · Story 50 · Signature item 66 · Under the rad
 
 **Order this.** The vada pav: a spiced potato fritter on a roll with chutney.
 
-**Why this score.** A well-loved chef-run counter more than a find. The vada pav gives it a signature, but this run turned up little on the room, so atmosphere is a middling placeholder.  
+**Why this score.** A well-loved chef-run counter more than a find. The vada pav gives it a signature, but this run turned up little on the room, so atmosphere is a middling guess.  
 Uniqueness 55 · Atmosphere 55 · Story 50 · Signature item 62 · Under the radar 60
 
 **Practical.** Open daily · The SE Division location closed in April 2025; Alberta is the only one  
