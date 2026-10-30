@@ -6,7 +6,7 @@ import SignupDialog from '../components/SignupDialog.astro';
 import displayFont from '@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2?url';
 import uiFont from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
 interface Props { title: string; description?: string; image?: string; path?: string; metro?: string }
-const { title, description = 'Hole-in-the-wall guide to the Bay Area and San Diego. No chains, no algorithm.', image, path = '/', metro } = Astro.props;
+const { title, description = 'Hole-in-the-wall guide to the Bay Area, San Diego and Portland. No chains, no algorithm.', image, path = '/', metro } = Astro.props;
 // Absolute URLs are needed for share previews. Set `site` in astro.config.mjs once the domain is known.
 const origin = Astro.site?.origin ?? Astro.url.origin;
 const pageUrl = new URL(path, origin).href;

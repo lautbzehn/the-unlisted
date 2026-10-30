@@ -27,7 +27,7 @@ const strip = (s) => { const t = s.replace(/^[^:]+:\s*/, ''); return t[0].toUppe
 
     <h2 class="sect">When to go</h2>
     <dl class="gloss">
-      {Object.entries(WHEN_TIPS).map(([k, tip]) => (<><dt>{WHEN[k]}</dt><dd>{strip(tip)} “Right now” picks whichever of these fits the current hour in the Bay Area and San Diego.</dd></>))}
+      {Object.entries(WHEN_TIPS).map(([k, tip]) => (<><dt>{WHEN[k]}</dt><dd>{strip(tip)} “Right now” picks whichever of these fits the current hour in the Bay Area, San Diego and Portland.</dd></>))}
     </dl>
 
     <h2 class="sect">The Gem score</h2>
@@ -50,7 +50,7 @@ const strip = (s) => { const t = s.replace(/^[^:]+:\s*/, ''); return t[0].toUppe
       <details><summary>Where are my lists saved?</summary><p>On this device, in your browser. Nothing is sent to us. Clearing your browser data clears your lists, and they don’t sync between your phone and laptop yet.</p></details>
       <details><summary>How do places get in?</summary><p>Candidates come from OpenStreetMap, local press, neighborhood writing and suggestions. AI drafts each place from public sources and flags what it couldn’t confirm; a person checks it before it goes live. <a href="/how-the-score-works/">More on that here.</a></p></details>
       <details><summary>Something’s wrong or a place closed.</summary><p>Tell us on the <a href="/contact/">contact page</a>. Every place shows the date it was last checked.</p></details>
-      <details><summary>Can I suggest a place?</summary><p>Please do. <a href="/suggest/">Suggest a place</a> for the Bay Area or San Diego, or <a href="/cities/">vote for the next city</a>.</p></details>
+      <details><summary>Can I suggest a place?</summary><p>Please do. <a href="/suggest/">Suggest a place</a> for the Bay Area, San Diego or Portland, or <a href="/cities/">vote for the next city</a>.</p></details>
       <details><summary>What does “Surprise me” do?</summary><p>Picks one place you haven’t stamped yet, leaning toward places near you and good for the current hour. It asks for your location only when you tap it, and your location never leaves your device.</p></details>
     </div>
   </main>

@@ -5,7 +5,7 @@
  */
 
 /** Cities the guide already covers. Kept here rather than as a database status, so the board's table stays as it is. */
-export const OPEN_CITIES = new Set(['san-diego-ca']);
+export const OPEN_CITIES = new Set(['san-diego-ca', 'portland-or']);
 
 /**
  * The city board: cities coming soon and cities collecting votes. Open cities appear on neither list.

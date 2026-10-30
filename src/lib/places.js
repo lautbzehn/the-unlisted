@@ -4,7 +4,7 @@ import { gemScore, withRadar } from './scoring.js';
 
 // While developing locally, unreviewed drafts from the research batches show up too (marked DRAFT, flags visible),
 // so they can be reviewed in the real app. The public build only ever contains approved places.
-const draftFiles = import.meta.env.DEV ? import.meta.glob('../../data/review/batch-*.json', { eager: true, import: 'default' }) : {};
+const draftFiles = import.meta.env.DEV ? import.meta.glob('../../data/review/**/batch-*.json', { eager: true, import: 'default' }) : {};
 const drafts = Object.values(draftFiles).flat().map((d) => ({ ...d, draft: true }));
 
 export const FAME = { 'deep-cut': 'Deep cut', 'open-secret': 'Open secret', 'local-legend': 'Local legend' };
@@ -46,10 +46,11 @@ export const hoodOf = (area) => area.replace(/\s*\(.*\)\s*$/, '');
 export const METROS = {
   'bay-area': { id: 'bay-area', name: 'Bay Area', the: 'the Bay Area', short: 'the Bay', home: '/', explore: '/explore/', main: 'San Francisco', more: 'More of the Bay', center: [-122.35, 37.78], zoom: 9.5 },
   'san-diego': { id: 'san-diego', name: 'San Diego', the: 'San Diego', short: 'San Diego', home: '/san-diego/', explore: '/san-diego/explore/', main: 'San Diego', more: 'More of San Diego County', center: [-117.12, 32.75], zoom: 10.2 },
+  portland: { id: 'portland', name: 'Portland', the: 'Portland', short: 'Portland', home: '/portland/', explore: '/portland/explore/', main: 'Portland', more: 'More of the Portland area', center: [-122.65, 45.52], zoom: 10.3 },
 };
 const LIVE_METROS = Object.keys(METROS);
 // Which city a page belongs to, from its address
-export const metroOf = (path = '/') => (path.startsWith('/san-diego') ? 'san-diego' : 'bay-area');
+export const metroOf = (path = '/') => (path.startsWith('/san-diego') ? 'san-diego' : path.startsWith('/portland') ? 'portland' : 'bay-area');
 
 // Sources and review notes stay internal: they never ship to visitors.
 export const places = [...raw.filter((p) => p.status === 'approved' || p.sample), ...drafts]

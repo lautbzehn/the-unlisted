@@ -4,6 +4,16 @@ Notable changes to The Unlisted. The format follows [Keep a Changelog](https://k
 
 ## [Unreleased]
 
+## [2.1.0] · 2026-10-30
+
+### Added
+- **Portland is open:** 82 researched and approved places across the city and its suburbs, with its own front page (/portland/) and Explore page, and Portland in the city switch, the header links, the gate, Cities, Help, Our Story, Suggest and the newsletter areas. Portland leaves the vote board. Passport codes use PDX.
+- Research for Portland: 136 candidates, 103 drafts and 33 skips (each with a reason) in `data/review/portland/`. 21 drafts that might be closed or rest on one source stay hidden until checked; `TRIAGE.md` lists them.
+
+### Changed
+- Pipeline: `04-select` compares names only within a city and keeps candidate ids stable on a re-run; `06-fix-fame` no longer counts health-inspection roundups as press; `07-triage` puts a draft in must-check only for real doubts about whether it's open.
+- In development, drafts from every city's review folder show in the app, so Portland's held drafts can be reviewed there.
+
 ## [2.0.0] · 2026-10-29
 
 ### Changed

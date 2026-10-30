@@ -38,7 +38,7 @@ const here = (href) => (Astro.url.pathname === href ? 'page' : undefined);
 
 <script>
   // The city: a city page remembers itself; any other page points Home and Explore at the visitor's last city.
-  const CITY = { 'bay-area': { home: '/', explore: '/explore/' }, 'san-diego': { home: '/san-diego/', explore: '/san-diego/explore/' } };
+  const CITY = { 'bay-area': { home: '/', explore: '/explore/' }, 'san-diego': { home: '/san-diego/', explore: '/san-diego/explore/' }, portland: { home: '/portland/', explore: '/portland/explore/' } };
   const pageMetro = document.querySelector('.site-header').dataset.metro;
   try {
     if (pageMetro) localStorage.setItem('unlisted:metro', pageMetro);
