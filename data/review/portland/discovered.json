@@ -1280,6 +1280,23 @@
     "from": "disc-14-day"
   },
   {
+    "name": "Marco's Cafe",
+    "neighborhood": "Multnomah Village",
+    "city": "Portland",
+    "address": "7910 SW 35th Ave",
+    "kind": "Neighborhood breakfast café",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Multnomah Village café since 1983 in a 1913 grocery, ceiling hung with donated umbrellas that each fund 10 meals; Thursday means mulligatawny soup.",
+    "source_url": "https://www.marcoscafe.com/history",
+    "open_evidence": "Own site posts Thanksgiving 2026 takeout (pickup 11/25) and current hours, checked Oct 2026",
+    "from": "disc-14-day"
+  },
+  {
     "name": "Banning's Restaurant & Pie House",
     "neighborhood": "Pacific Highway",
     "city": "Tigard",
@@ -1377,6 +1394,70 @@
     "from": "disc-15-day"
   },
   {
+    "name": "SnowMoon K-Pop Cafe",
+    "neighborhood": "Central Beaverton",
+    "city": "Beaverton",
+    "address": "9955 SW Beaverton-Hillsdale Hwy",
+    "kind": "Korean bingsu café",
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "A Korean adoptee's café for Korean culture: the Korean-born manager's bingsu shaved ice and croffles, with K-pop dance lessons in a side studio.",
+    "source_url": "https://beavertonvalleytimes.com/2026/04/22/k-pop-cafe-opens-in-beaverton/",
+    "open_evidence": "Opened spring 2026 (Valley Times feature, Apr 2026); listed in Valley Times county inspection roundup, May 2026",
+    "from": "disc-15-day"
+  },
+  {
+    "name": "Sweet T Bakery",
+    "neighborhood": "Downtown Hillsboro",
+    "city": "Hillsboro",
+    "address": "137 SE Second Ave",
+    "kind": "Cambodian-American bakery",
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Two sisters rebuilt their late Cambodian father's desserts from memory: pandan cake, palm-sugar lotus cookies and a Vietnamese coffee tiramisu.",
+    "source_url": "https://hillsboronewstimes.com/2026/05/27/sweet-t-bakery-dishes-up-southeast-asian-desserts-in-downtown-hillsboro/",
+    "open_evidence": "Opened May 3, 2026; Hillsboro News-Times profile May 2026 lists current hours (10 to 6 Mon-Sat)",
+    "from": "disc-15-day"
+  },
+  {
+    "name": "SoLe's Filipino Store",
+    "neighborhood": "Forest Grove",
+    "city": "Forest Grove",
+    "address": "4403 Pacific Ave",
+    "kind": "Filipino market, lunch plates",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "The first Asian grocer out west in Forest Grove, opened by Filipino sisters, with rotating lunch plates of adobo, lumpia, pancit and musubi.",
+    "source_url": "https://hillsboronewstimes.com/2025/12/24/soles-filipino-store-brings-first-asian-market-to-forest-grove-cornelius-area/",
+    "open_evidence": "Opened Dec 20, 2025 (Hillsboro News-Times, Dec 2025, with hours 7am to 8pm weekdays)",
+    "from": "disc-15-day"
+  },
+  {
+    "name": "Chicatanas",
+    "neighborhood": "Downtown Hillsboro",
+    "city": "Hillsboro",
+    "address": "159 SE Second Ave",
+    "kind": "Mexican-run all-day café",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Mexico-born Roberto Rubio's all-day café: Australian-style brekkie by day, tacos on Three Sisters masa tortillas at Thursday to Saturday dinners.",
+    "source_url": "https://hillsboronewstimes.com/2026/02/17/chicatanas-to-bring-new-cafe-mexican-fusion-restaurant-to-downtown-hillsboro/",
+    "open_evidence": "Chicatanas Coffee Shop inspected by the county, reported in Forest Grove News-Times roundup Oct 2026",
+    "from": "disc-15-day"
+  },
+  {
     "name": "Nak Won",
     "neighborhood": "Central Beaverton",
     "city": "Beaverton",
@@ -1453,6 +1534,54 @@
     "why": "Mexican kitchen in the same TV Highway strip as La Imperial panaderia, so dinner and pan dulce are one stop; unreviewed by the food press.",
     "source_url": "https://forestgrovenewstimes.com/2026/06/06/how-did-hillsboro-hops-ballpark-don-asado-mexican-cuisine-score-in-recent-health-inspections/",
     "open_evidence": "Listed (score 77) in a Forest Grove News-Times inspection roundup, Jun 2026",
+    "from": "disc-15-night"
+  },
+  {
+    "name": "1st Street Pocha",
+    "neighborhood": "Central Beaverton",
+    "city": "Beaverton",
+    "address": "12590 SW 1st St",
+    "kind": "Korean pocha bar",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Korean drinking-snack bar still loud at 11pm: rice-flour fried chicken in soy-garlic or gochujang glaze, mozzarella corn dogs, soju.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/dining-guides/best-restaurants-food-carts-beaverton/",
+    "open_evidence": "Portland Monthly Beaverton guide, Apr 2026, describes it busy at 11pm",
+    "from": "disc-15-night"
+  },
+  {
+    "name": "Kubo",
+    "neighborhood": "Bethany",
+    "city": "Portland",
+    "address": "4708 NW Bethany Blvd",
+    "kind": "Filipino counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Two-table Filipino counter in a Bethany strip mall: sizzling sisig on a cow-shaped plate, pancit palabok, and big cups of halo-halo.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/dining-guides/best-restaurants-food-carts-beaverton/",
+    "open_evidence": "Portland Monthly Beaverton guide, Apr 2026; listed hours 11am to 7pm as of Jul 2026",
+    "from": "disc-15-night"
+  },
+  {
+    "name": "Kove Island Comfort Kitchen",
+    "neighborhood": "Cedar Mill",
+    "city": "Portland",
+    "address": "811 NW Murray Blvd",
+    "kind": "Hawaiian plate-lunch counter",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Hawaiian plate lunch from an O'ahu-raised chef and a cart couple who started in 2017: loco moco under mushroom gravy, kalbi ribs, laulau specials.",
+    "source_url": "https://beavertonvalleytimes.com/2026/04/29/kove-island-comfort-kitchen/",
+    "open_evidence": "Opened Mar 31, 2026 (Valley Times feature, Apr 2026)",
     "from": "disc-15-night"
   },
   {
