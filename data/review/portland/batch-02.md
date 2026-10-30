@@ -4,7 +4,7 @@
 
 **Fame:** Open secret 13 · Deep cut 1 · Local legend 1  
 **Time of day:** midday+evening 6 · morning+midday 4 · midday+evening+late 2 · evening 1 · morning+midday+evening 1 · morning+midday+evening+late 1  
-**Flags to check:** 81 · **Sources:** 66 (internal only)
+**Flags to check:** 82 · **Sources:** 66 (internal only)
 
 For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
@@ -301,6 +301,7 @@ Uniqueness 62 · Atmosphere 56 · Story 58 · Signature item 66 · Under the rad
 **Hours.** Daily noon-2:30 am (undated listing; WWeek in 2019 had weekdays from 2 pm)
 
 **Check before approving:**
+- [ ] Status unclear: no dated evidence it is open since Nov 2025. Confirm before approving.
 - [ ] Open status not confirmed: the most recent dated coverage I found is WWeek, Aug 2019. Discovery cites a perfect score in the Jun 2026 Portland Tribune inspection roundup; I didn't open it.
 - [ ] Whiskey list still unconfirmed after 2019: the PDX Monthly listing I opened is undated and its text matches the 2017 WWeek material (about 80 brands, the 30-whiskey club). It names owner Nathan Dewey; left out of the story in case ownership has changed.
 - [ ] Circa-1900 building date comes from the 2017 WWeek piece (search snippet).

@@ -23,5 +23,45 @@
     "id": "kingston-bar-and-grill",
     "name": "Kingston Bar & Grill",
     "reason": "Poor fit: a standard sports bar a block from Providence Park, busy before Timbers games. Open as of Aug 2026 (Mercury Burger Week), but no history found, and the only other press is a 2016 Willamette Week drink-deals note."
+  },
+  {
+    "id": "thai-cottage",
+    "name": "Thai Cottage",
+    "reason": "Poor fit: a plain neighborhood Thai spot with nothing to build a draft on. The only non-directory mentions are passing ones (a St. Johns restaurateur names it among established nearby spots in Willamette Week, May 2026, less than the regular dinner stop discovery described), and no history, owner, dish or hours turned up outside MapQuest, atly and Airbnb listings."
+  },
+  {
+    "id": "lily-market",
+    "name": "Lily Market",
+    "reason": "Only directories: everything I found is listings and review aggregators (MapQuest, Birdeye, atly, auto-generated Hoodline roundups from 2019 and 2020), with no press, own site or neighborhood blog and no dated sign of life since Nov 2025. A Venture Portland page calling it one of the Northwest's largest Thai markets showed up in search but would not load."
+  },
+  {
+    "id": "pho-saigon-xua",
+    "name": "Pho Saigon Xua",
+    "reason": "Only directories: apart from a one-line perfect score in a Portland Tribune inspection list (Mar 3, 2026), every result was MapQuest, Wanderlog, Atly or similar, with no press, own site or social account. It looks open at 5253 SE 82nd Ave, but there is nothing sourced to say about it."
+  },
+  {
+    "id": "kabuki-sushi-and-grill",
+    "name": "Kabuki Sushi & Grill",
+    "reason": "Poor fit: a sushi spot with no press, history or anything distinctive we could find. Its only mention is one line in a May 2026 Willamette Week St. Johns walk naming it a relative newcomer; everything else was directory listings."
+  },
+  {
+    "id": "my-place-tavern",
+    "name": "My Place Tavern",
+    "reason": "Only directories: two searches found MapQuest, Yellow Pages and a 2023 Discover Forest Grove dining-guide listing, and the only press is a Forest Grove News-Times health-inspection roundup (June 2026). No history, no own site or social account, nothing distinctive: a generic tavern for our purposes."
+  },
+  {
+    "id": "mccrae-s-country-cafe",
+    "name": "McCrae's Country Cafe",
+    "reason": "Poor fit: beyond directory listings, the only coverage is a one-line mention in a 2016 Gresham Patch brunch roundup and a Gresham Outlook inspection roundup (March 2026). It looks open, but there is no history, owner or signature plate to write about."
+  },
+  {
+    "id": "milwaukie-pizza-co",
+    "name": "Milwaukie Pizza Co.",
+    "reason": "Only directories: beyond MapQuest, Atly and an AI-rewritten travel site, I found no press, own site or social account. The That Oregon Life feature (Sep 2026) that discovery cited sits behind a bot check and never surfaced in search, so the honey-crust story and 2021 opening are unverified."
+  },
+  {
+    "id": "rose-city-burrito",
+    "name": "Rose City Burrito",
+    "reason": "Poor fit: one line in Willamette Week's March 2026 cheap-burrito roundup is all there is. No owner, history, own site or social account found, and nothing sets it apart beyond a big salsa bar. Open as of March 2026."
   }
 ]
