@@ -1,0 +1,299 @@
+# Review sheet: batch-08.json
+
+9 drafts · your picks: 0 · found by research: 9
+
+**Fame:** Deep cut 2 · Open secret 5 · Local legend 2  
+**Time of day:** morning+midday+evening 2 · midday 3 · midday+evening 2 · evening 1 · evening+late 1  
+**Flags to check:** 59 · **Sources:** 40 (internal only)
+
+For each place, reply with **approve**, **edit:** (what to change) or **drop**.
+
+---
+
+## Heidi's of Gresham — Gem 74
+*Swiss-themed family restaurant · Central Gresham, Gresham · Deep cut · morning, midday, evening*
+
+**Story.** Don and Marie Eklund quit farming in 1968 to open a cafe on the road to Mount Hood, Swiss-themed for Marie's family roots. It moved to Cleveland and Burnside in 1980. Servers wear flowered dirndls, the family's old sleigh hangs over the lobby, and a longtime manager has owned it since 2008.
+
+**Order this.** Save room for pie. Apple pie a la mode was on the menu the year it opened.
+
+**Why this score.** A Swiss alpine room with dirndl-clad servers and a family sleigh overhead earns the uniqueness and atmosphere marks, and a well-documented 1968 founding earns story. Signature is soft: the only dish we can source is pie, from a 2018 anniversary piece.  
+Uniqueness 72 · Atmosphere 76 · Story 78 · Signature item 46 · Under the radar 90
+
+**Practical.** Big room: about 300 seats, plus a gift shop and banquet rooms (as of 2018) · At NE Cleveland Ave and Burnside Rd  
+**Hours.** Daily 7 am-9 pm (own site, as read by discovery in Oct 2026; not rechecked here)
+
+**Check before approving:**
+- [ ] Status unclear: no dated third-party evidence it is open since Nov 2025. Confirm before approving.
+- [ ] Open evidence is only the restaurant's own site (republished Oct 2026 with hours and online ordering, per discovery). Three searches found no dated press, news or third-party mention since the 2018 Outlook article; everything else was directory listings. Worth a call or visit before publishing.
+- [ ] Hours come from discovery's read of the own site; I did not open the site this pass.
+- [ ] Dirndls, the sleigh, seat count and the 2008 sale all come from the Sept 2018 Gresham Outlook article; confirm the dirndls and sleigh are still there.
+- [ ] Only one press outlet found (Gresham Outlook), so deep-cut. A 58-year-old 300-seat restaurant may well have other press I didn't find; if so, fame should be open-secret.
+- [ ] Big family restaurant with banquet rooms, not a small room: check it fits the guide.
+
+<details><summary>Sources (1)</summary>
+
+- https://theoutlookonline.com/2018/09/07/heidiaes-of-gresham-celebrates-50-years/
+</details>
+
+---
+
+## Bark City BBQ — Gem 60
+*Smokehouse barbecue cart · Woodstock, Portland · Open secret · midday*
+
+**Story.** Michael Keskin opened his barbecue cart in 2017, and Eater Portland named it cart of the year in 2018. He shut it in 2022 and moved to Arizona to be near family. In 2024 he came back and reopened at The Heist in Woodstock.
+
+**Order this.** The brisket. The pod has a full bar, so a beer is easy to add.
+
+**Why this score.** An Eater cart-of-the-year title and a leave-and-come-back story lift story and signature. It is still a barbecue cart in a busy pod, so uniqueness and atmosphere sit in the middle.  
+Uniqueness 56 · Atmosphere 52 · Story 64 · Signature item 74 · Under the radar 60
+
+**Practical.** In The Heist pod, 4727 SE Woodstock Blvd · The pod fills a former U.S. Bank branch, with indoor seating and a full bar  
+**Hours.** not found
+
+**Check before approving:**
+- [ ] Hours unconfirmed; 'when' (midday) is copied from discovery.
+- [ ] Open now: freshest evidence is July 2026 (Mercury Top 20 Food Carts, via Wikipedia's citation and search results, and the Mercury's July 8, 2026 food-issue party at The Heist, which listed Bark City among the carts). The Mercury page itself won't load here.
+- [ ] Time at this pod: Wikipedia, citing The Oregonian (Apr 2024), says it reopened at The Heist in 2024, and a Wikimedia photo shows it there in Oct 2024, so about two to two and a half years. One secondary site placed the 2024 return in the Alberta District; if it started there, its time at The Heist is closer to two years.
+- [ ] The lead says it closed in 2023; Portland Monthly reported the closing in Aug 2022, with Keskin moving to Arizona to be near family.
+- [ ] Opening year 2017 is inferred: Willamette Week reviewed it as a new cart in Dec 2017 and Portland Monthly said he ran it for five years.
+- [ ] Brisket as the order rests on the cart's own press page. The lead calls it Texas-style; I didn't see that in a source, so the kind avoids it.
+- [ ] Wikipedia's coordinates point to an older site; lat/lng kept from the candidate.
+
+<details><summary>Sources (10)</summary>
+
+- https://en.wikipedia.org/wiki/Bark_City_BBQ
+- https://www.pdxmonthly.com/eat-and-drink/2022/08/bark-city-bbq-barbecue-cart-closing-portland
+- https://www.wweek.com/restaurants/reviews/2017/12/12/some-of-the-best-barbecue-in-the-city-comes-from-this-new-cart/
+- https://barkcitybbq.com/
+- https://barkcitybbq.com/press
+- https://www.portlandmercury.com/food/food-issue-2026/portland-mercury-food-issue-launch-party-july-8/
+- https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/
+- https://pdx.eater.com/2023/8/23/23840423/carts-on-foster-new-locations-pdx
+- https://www.wweek.com/culture/2025/02/11/because-we-have-a-bank-robbery-themed-food-cart-pod/
+- https://www.kptv.com/2025/02/19/woodstock-food-truck-pod-inspired-by-decades-old-heist
+</details>
+
+---
+
+## Kim Jong Grillin' — Gem 60
+*Korean food cart · Woodstock, Portland · Local legend · midday, evening*
+
+**Story.** Han Ly Hwang's Korean cart burned down in 2011, two hours after winning the judges' award at Willamette Week's Eat Mobile festival, and came back in 2014. Since then it has worked several pods and a Happy Valley storefront that closed in 2025. Now it parks at The Heist in Woodstock.
+
+**Order this.** The KJG hot dog, a Zenner's sausage loaded with kimchi mayo, spicy daikon and pickled mango.
+
+**Why this score.** A fire-and-comeback history and a hot dog that keeps landing on local and national lists carry story and signature. It is a cart in a pod, so atmosphere is middling, and Korean barbecue is not rare in Portland.  
+Uniqueness 66 · Atmosphere 50 · Story 78 · Signature item 84 · Under the radar 25
+
+**Practical.** In The Heist pod, 4727 SE Woodstock Blvd · The pod fills a former U.S. Bank branch, with indoor seating and a full bar  
+**Hours.** not found
+
+**Check before approving:**
+- [ ] At The Heist only since about 2025 (Wikipedia, citing Eater, plus a 2025 photo); it was downtown at the Cart Blocks from Jan 2024. Drafted under the storefront rule: its Happy Valley brick-and-mortar closed in March 2025 (Eater, via Wikipedia).
+- [ ] Wikipedia had it at both 770 W Burnside and The Heist in 2025; its own site and the Mercury (July 2026) point to The Heist. Confirm the downtown cart is gone.
+- [ ] Open now: rests on the Mercury Top 20 Food Carts list (July 2026), via Wikipedia's citation and the discovery lead. The Mercury page won't load here.
+- [ ] Hours unconfirmed; 'when' is copied from discovery. The own site showed an undated note that something is coming this fall.
+- [ ] The lead says open since 2009; not confirmed. The earliest sourced year is the 2011 fire.
+- [ ] Hot dog toppings come from a 2021 Portland Monthly list, via Wikipedia; check it is still on the menu.
+
+<details><summary>Sources (7)</summary>
+
+- https://en.wikipedia.org/wiki/Kim_Jong_Grillin%27
+- https://www.pdxmonthly.com/eat-and-drink/2015/06/kim-jong-grillin-opens-second-food-cart-in-northeast-portland-june-2015
+- https://kimjonggrillin.com/
+- https://www.portlandmercury.com/food-and-drink/2024/01/27/46996646/update-food-cart-kim-jong-grillin-will-move-to-downtown-cart-blocks-pod
+- https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/
+- https://www.wweek.com/culture/2025/02/11/because-we-have-a-bank-robbery-themed-food-cart-pod/
+- https://www.kptv.com/2025/02/19/woodstock-food-truck-pod-inspired-by-decades-old-heist
+</details>
+
+---
+
+## Bari Food Cart — Gem 62
+*Panzerotti cart · King, Portland · Open secret · midday*
+
+**Story.** Walter Ferrante was born in Bari, and his cart fries panzerotti, the stuffed and fried dough pockets of southern Italian street food. When the Carts on Foster pod shut with little warning in August 2023, he had the cart running again at Piedmont Station within weeks.
+
+**Order this.** The Vegetariano panzerotti.
+
+**Why this score.** Panzerotti are rare in Portland, which carries uniqueness and signature. It is a cart in a pod, so the setting is plain, and the story is modest beyond the owner's hometown and surviving a sudden pod closure.  
+Uniqueness 80 · Atmosphere 38 · Story 55 · Signature item 74 · Under the radar 60
+
+**Practical.** In the Piedmont Station pod, 625 NE Killingsworth St  
+**Hours.** not found
+
+**Check before approving:**
+- [ ] Hours unconfirmed. An older KOIN piece said Wednesday to Sunday, from its Foster days; 'when' (midday) is copied from discovery.
+- [ ] Open now: rests on the Mercury Top 20 Food Carts list (July 2026), seen in search results and the discovery lead but not opened (Mercury won't load here). One search summary said the list calls it Portland's only panzerotti cart; another couldn't confirm that, so the copy doesn't claim it.
+- [ ] At Piedmont Station since Aug 2023 (Eater), so over three years at this pod.
+- [ ] The lead suggests the artichoke; I couldn't source it, so the order uses Eater's go-to pick from 2023.
+- [ ] Bari birthplace from Portland Monthly's best-carts list.
+
+<details><summary>Sources (5)</summary>
+
+- https://pdx.eater.com/2023/8/23/23840423/carts-on-foster-new-locations-pdx
+- https://www.pdxmonthly.com/eat-and-drink/best-food-carts-portland
+- https://www.pdxmonthly.com/eat-and-drink/2022/06/bari-food-cart-portland-italian-panzerotti-pizza-video
+- https://digital-release.koin.com/lifestyle/koins-cart-of-the-week-bari-food-cart/amp/
+- https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/
+</details>
+
+---
+
+## Podnah's Pit Barbecue — Gem 55
+*Texas barbecue restaurant · Vernon, Portland · Local legend · morning, midday, evening*
+
+**Story.** Rodney Muirhead named the place for his grandfather, a butcher and barbecue cook in Waxahachie, Texas. After culinary school in New York he opened it in 2006, and the wood smoker still gets lit at 5 am for that evening's dinner. Willamette Week made it Restaurant of the Year in 2011.
+
+**Order this.** Brisket, sold by the quarter pound, so you can mix in ribs or sausage.
+
+**Why this score.** Twenty years of wood-smoked Texas barbecue, Restaurant of the Year in 2011 and a Food Network nod earn signature, and the grandfather behind the name gives it a story. Texas barbecue is no longer rare here and no source describes the room, so uniqueness is moderate and atmosphere is a middling guess.  
+Uniqueness 58 · Atmosphere 50 · Story 66 · Signature item 80 · Under the radar 25
+
+**Practical.** Sunday brunch 9 am-1 pm · Local beer and margaritas  
+**Hours.** Lunch and dinner daily noon-8 pm; Sunday brunch 9 am-1 pm (own site)
+
+**Check before approving:**
+- [ ] Open now: rests mainly on the own site (current hours, a Thanksgiving turkey offer). Dated third-party mentions: a Feb 2026 That Oregon Life brisket piece (thatoregonlife.com/?p=83228, a lifestyle site, not used for facts) and Eater's 2025 brunch list per Wikipedia. The lead's 2026 Bridgetown Bites Killingsworth article wasn't found.
+- [ ] Grandfather, Waxahachie, culinary school, 2006 opening and the 5 am smoker all come from the own site.
+- [ ] Ribs and sausage alongside brisket, and the quarter-pound pricing, come from search summaries of Wikipedia and a KOIN report; check the current menu.
+- [ ] Morning is Sunday brunch only.
+- [ ] The lead says no reservations; not confirmed.
+- [ ] Fame set to local-legend (Willamette Week Restaurant of the Year, Food Network, Diners, Drive-Ins and Dives per its own site, The Infatuation, Travel Portland's barbecue list). Open-secret is defensible.
+- [ ] Name as the place spells it on its site: Podnah's Pit Barbecue (candidate had 'Pit BBQ').
+
+<details><summary>Sources (4)</summary>
+
+- https://podnahspit.com
+- https://www.wweek.com/portland/article-18080-restaurant_guide_2011_podnahs_pit_restaurant_of_the_year.html
+- https://digital-release.koin.com/news/food/the-best-barbecue-spot-in-oregon-according-to-food-network/
+- https://www.wikiwand.com/en/articles/Podnah%27s_Pit_Barbecue
+</details>
+
+---
+
+## Pizza Jerk — Gem 58
+*Punk-rock pizza parlor · Cully, Portland · Open secret · evening*
+
+**Story.** Tommy Habetz of Bunk Sandwiches opened Pizza Jerk on NE 42nd Avenue in 2015, a punk-rock pizza parlor that also welcomes families. A fire shut it in June 2016 and it was back by September. Bon Appétit put it on its list of 50 best new restaurants, and two more Portland shops followed.
+
+**Order this.** Start with a slice: Eater Portland has listed the 42nd Avenue shop among the city's by-the-slice spots. Stay for a whole pie if the slice lands.
+
+**Why this score.** Good pizza with a punk streak, a back-from-a-fire story and national notice. Portland is crowded with strong pizzerias and I couldn't source a signature pie, so uniqueness and signature sit in the 50s.  
+Uniqueness 54 · Atmosphere 60 · Story 62 · Signature item 52 · Under the radar 60
+
+**Practical.** Family friendly · Sister shops on SE Morrison St and SW 6th Ave  
+**Hours.** not found
+
+**Check before approving:**
+- [ ] Open: listed in the Portland Tribune's Multnomah County inspection roundup of Oct 7, 2026 as Pizza Jerk, 5028 NE 42nd Ave (coordinator read the page).
+- [ ] Chain check: three locations (5028 NE 42nd Ave, 621 SE Morrison St from 2018, 1708 SW 6th Ave), per Wikipedia as fetched today. Under our line of 4. I didn't confirm all three are still open in 2026.
+- [ ] Address: Wikipedia gives 4028 NE 42nd Ave, which looks like a typo. Willamette Week (2025), The Infatuation and the candidate record all use 5028.
+- [ ] Hours unconfirmed: no source with hours surfaced. `when` follows discovery's evening note.
+- [ ] Order is general: I couldn't source a specific pie. The slice claim is from Wikipedia citing Eater Portland's December 2021 slice guide, so check slices are still sold.
+- [ ] Bon Appétit's best-new-restaurants pick and the 2016 fire dates come from Wikipedia (citing Portland Monthly and Eater), not from pages I opened directly. Habetz's Bunk link is from Portland Monthly headlines.
+- [ ] Discovery's lead mentioned soft serve and arcade games. I couldn't verify either, so they're left out.
+- [ ] Fame: covered by Portland Monthly, Willamette Week, Eater Portland, The Infatuation, Thrillist and Bon Appétit. That's well past deep-cut; consider whether it's too well known for the guide.
+
+<details><summary>Sources (7)</summary>
+
+- https://en.wikipedia.org/wiki/Pizza_Jerk
+- https://www.pdxmonthly.com/eat-and-drink/2016/10/portland-best-pizza-spot-that-almost-flamed-out-pizza-jerk
+- https://www.pdxmonthly.com/eat-and-drink/2018/01/a-second-pizza-jerk-to-replace-just-shuttered-bunk-sandwiches-on-se-morrison
+- https://www.wweek.com/restaurants/2018/10/30/reviews-of-the-second-locations-of-three-prominent-portland-pizzerias/
+- https://www.wweek.com/food/2025/09/12/pie-talk-pizza-jerk/
+- https://www.theinfatuation.com/portland/reviews/pizza-jerk
+- https://portlandtribune.com/2026/10/07/multnomah-county-health-inspections-heavenly-donuts-namaste-indian-cuisine-sammys-burgers-and-shakes/
+</details>
+
+---
+
+## Sweet T Bakery — Gem 69
+*Cambodian-American bakery · Downtown Hillsboro, Hillsboro · Deep cut · midday*
+
+**Story.** Sisters Youtheary Sim and Soma Boriboune rebuilt, from memory, the Cambodian-flavored sweets their father baked after fleeing the Khmer Rouge; he died in 2003 without writing recipes down. They went from a garage to farmers markets and pop-ups, then opened this downtown Hillsboro shop, named for him, in May 2026.
+
+**Order this.** The Vietnamese coffee tiramisu, one of their most popular desserts. It got so popular they now sell the Vietnamese coffee as a cold brew on its own.
+
+**Why this score.** Cambodian-flavored desserts are rare around Portland and the family story is real, so uniqueness and story are solid. The shop is under six months old, the room is new, and everything rests on one News-Times profile.  
+Uniqueness 72 · Atmosphere 55 · Story 66 · Signature item 60 · Under the radar 90
+
+**Practical.** Desserts sold by the slice · Makers Mart of local goods in the back  
+**Hours.** Mon-Sat 10 am-6 pm, Sun 10 am-4 pm (Hillsboro News-Times, May 2026)
+
+**Check before approving:**
+- [ ] Brand new: grand opening May 3, 2026, under six months ago. I drafted it under the brand-new exception because the family history is real (a father who fled the Khmer Rouge, recipes rebuilt from memory, the shop named for him) and the sisters have years of garage baking, markets and pop-ups behind it. If that's not enough for you, skip it and look again in 2027.
+- [ ] Single source: every fact comes from one Hillsboro News-Times profile (May 27, 2026), mostly in the owners' own telling. No own site or social account surfaced in my searches.
+- [ ] Name: a gift-card directory lists 'Sweet T Bakery & Cafe' at the same address; the News-Times uses Sweet T Bakery. Check the storefront spelling.
+- [ ] Address confirmed: 137 SE Second Ave (News-Times), matching the candidate.
+- [ ] Hours are from May 2026; reconfirm. Closing at 6 pm puts it in midday only.
+- [ ] Kept out of the story: the owner's remark that she knows few Cambodian bakeries in Oregon. It's her impression, not a sourced fact, though it informs the uniqueness mark.
+- [ ] Discovery's lead checks out: pandan cake, fried lotus blossom cookies dipped in palm sugar, and the Vietnamese coffee tiramisu are all in the article. Sim is the owner and Boriboune the head baker.
+
+<details><summary>Sources (1)</summary>
+
+- https://hillsboronewstimes.com/2026/05/27/sweet-t-bakery-dishes-up-southeast-asian-desserts-in-downtown-hillsboro/
+</details>
+
+---
+
+## 1st Street Pocha — Gem 61
+*Korean late-night soju bar · Central Beaverton, Beaverton · Open secret · evening, late*
+
+**Story.** A pocha is a Korean street stall where soju and beer come with a run of drinking snacks. Beaverton's version is a neon room with K-pop up loud, still packed at 11 pm in a suburb that mostly goes to bed early. In summer the crowd spills onto picnic tables on the closed-off block.
+
+**Order this.** The fried chicken, with a rice-flour and cornstarch coating that stays crunchy under the sticky soy-garlic or gochujang glaze. Get it half and half, plus a mozzarella corn dog dusted with powdered sugar.
+
+**Why this score.** The room and the fried chicken carry it: a loud, neon soju bar still going at 11 pm is rare in Beaverton, and Portland Monthly has singled out the chicken twice. The story is thin, since I found no owner, opening year or history beyond what a pocha is.  
+Uniqueness 62 · Atmosphere 74 · Story 40 · Signature item 74 · Under the radar 60
+
+**Practical.** Picnic tables outside on the closed-off block in warmer months · Loud, with K-pop playing and a crowd past 11 pm  
+**Hours.** Evenings, still busy at 11 pm (Portland Monthly, Apr 2026); days and closing time unconfirmed
+
+**Check before approving:**
+- [ ] late rests on Portland Monthly's Apr 17, 2026 Beaverton guide describing the room at 11 pm, not on posted hours. I found no own site. Directory listings disagree (one says Wed-Sat 4-11 pm, another six nights from 4:30 pm with Mondays closed, a blog says midnight on weekends) and can't be cited. Check days and closing time before publishing.
+- [ ] evening is inferred from the dinner-and-drinks format; no citable source gives an opening time.
+- [ ] Street address (12590 SW 1st St, Ste B) is from directory listings only; it fits the name and Portland Monthly's mention of the 1st Street block.
+- [ ] Most recent dated coverage: Portland Monthly, Apr 17, 2026.
+- [ ] open-secret rests on Portland Monthly (Beaverton guide plus a wings roundup) and a Travel Oregon Korean roundup. The wings roundup (half-and-half tip) and Travel Oregon page were seen in search results only, not opened.
+- [ ] A directory says it opened in late 2018; no citable source for the year or owners, so both are left out.
+
+<details><summary>Sources (3)</summary>
+
+- https://www.pdxmonthly.com/eat-and-drink/dining-guides/best-restaurants-food-carts-beaverton/
+- https://www.pdxmonthly.com/eat-and-drink/portland-best-chicken-wings
+- https://traveloregon.com/things-to-do/eat-drink/restaurants/oregons-top-korean-restaurants-and-markets
+</details>
+
+---
+
+## Kubo — Gem 57
+*Filipino strip-mall counter · Bethany, Portland · Open secret · midday, evening*
+
+**Story.** Kubo is a two-table Filipino counter in a modern Bethany strip mall, warmed up with rough wood paneling and black-and-white family photos. It has been at this address since at least 2021, and today it draws homesick Filipinos and curious first-timers, with friendly staff to steer newcomers through the classics.
+
+**Order this.** The sisig: pork belly and liver arrive hissing on a cast-iron plate shaped like a cow, with a fried egg on top. Add the pancit palabok, and leave with a big halo-halo layered with house-made jellies, leche flan and ube halaya.
+
+**Why this score.** Filipino food is still scarce on the west side, and the sizzling sisig and halo-halo give it real signature dishes. The room is tiny and the story is thin: I could source no owner, opening year or family history, only that it has been at this address since at least 2021.  
+Uniqueness 60 · Atmosphere 56 · Story 40 · Signature item 72 · Under the radar 60
+
+**Practical.** Only two tables · Staff walk first-timers through the menu  
+**Hours.** not found
+
+**Check before approving:**
+- [ ] Hours unconfirmed. Only a directory gives Mon and Wed-Sat 11 am-7 pm, closed Tue (matching discovery's July 2026 note); when is set to midday and evening from that. Check before publishing.
+- [ ] Only dated sign of life is Portland Monthly's Beaverton guide, Apr 17, 2026.
+- [ ] since at least 2021 comes from Daily Hive Portland (Apr 22, 2021), which lists Kubo at 4708 NW Bethany Blvd with Instagram @kubopdx. Owner, opening year and family history not found; a MapQuest blurb credits family recipes, which is uncited and left out.
+- [ ] Not the same place as Magna Kubo, Carlo Lamagna's Beaverton spinoff that closed in 2024.
+- [ ] A Bridgetown Bites Filipino list (search snippet only) seemed to place a Kubo inside another restaurant, Fork and Spoon. That doesn't match the standalone strip-mall room Portland Monthly describes; worth a quick check.
+- [ ] Mailing city is Portland, but it sits in unincorporated Washington County near Bethany. Listings add Suite E8.
+- [ ] open-secret rests on Portland Monthly (2026) and Daily Hive Portland (2021).
+
+<details><summary>Sources (2)</summary>
+
+- https://www.pdxmonthly.com/eat-and-drink/dining-guides/best-restaurants-food-carts-beaverton/
+- https://dailyhive.com/portland/filipino-food-portland
+</details>
+
+---
