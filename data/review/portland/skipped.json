@@ -63,5 +63,40 @@
     "id": "rose-city-burrito",
     "name": "Rose City Burrito",
     "reason": "Poor fit: one line in Willamette Week's March 2026 cheap-burrito roundup is all there is. No owner, history, own site or social account found, and nothing sets it apart beyond a big salsa bar. Open as of March 2026."
+  },
+  {
+    "id": "the-waffle-window",
+    "name": "The Waffle Window",
+    "reason": "Probably a chain: besides the SE Hawthorne original, listings show shops on NE Alberta and at Bridgeport Village in Tigard, and a 2019 Port of Portland release called its PDX airport outlet the fourth local location (a Bethany shop is listed closed). wafflewindow.com blocked my fetch, so I could not confirm which are open now or find dated evidence it is open since Nov 2025; if the airport or Tigard shop has closed it is three locations and could come back as a draft."
+  },
+  {
+    "id": "woodstock-wine-and-deli",
+    "name": "Woodstock Wine & Deli",
+    "reason": "Couldn't source it or confirm it's open: the Bee feature discovery cited now returns Page Not Found, and three searches found only directory listings (MapQuest marks it closed) with nothing on a BBQ menu. I also couldn't find it in the Mar 3, 2026 Tribune inspection roundup on file, so what it has become is still unknown."
+  },
+  {
+    "id": "mikasa-sushi-and-ramen",
+    "name": "Mikasa Sushi & Ramen",
+    "reason": "Poor fit: a straightforward sushi-and-ramen spot with nothing distinctive found. The only press is a one-line Willamette Week mention (May 12, 2026) listing it among newer St. Johns places, and its 2019 opening and ex-Bamboo Sushi chef appear only on directory pages."
+  },
+  {
+    "id": "panaderia-y-pasteleria-la-imperial",
+    "name": "Panaderia y Pasteleria La Imperial",
+    "reason": "Only directories: BBB, Allmenus and Atly list it as La Imperial Bakery at 1895 SE Tualatin Valley Hwy, Suite K (one listing says 1975), and the only other trace is its name on Hillsboro's 2026 Small Business Stabilization grant list (the city PDF refused our fetch). No press, own site, social account or blog turned up."
+  },
+  {
+    "id": "el-rinconcito-mexicano",
+    "name": "El Rinconcito Mexicano",
+    "reason": "Only directories plus an inspection score: a Forest Grove News-Times health-inspection roundup (June 6, 2026) confirms it at 1895 SE Tualatin Valley Hwy with a score of 77, and beyond that there are only delivery listings. No reviews, own site or social account found, so there is nothing to write."
+  },
+  {
+    "id": "og-birrieria",
+    "name": "OG Birrieria",
+    "reason": "Too new for a story yet: the only press is a Lake Oswego Review opening notice (Apr 22, 2026) saying the former Hillsboro taco truck took over the old Giant Drive-In space at 15840 Boones Ferry Rd with a full bar, and nothing describes the food at this location or shows it since. Worth another look once it has some coverage."
+  },
+  {
+    "id": "the-paper-bridge",
+    "name": "The Paper Bridge",
+    "reason": "Poor fit for now: the New York Times put it on its 50 Best list (2025) and gave it Portland's first starred review (May 2026), and it now books out on Resy well ahead. That is the reservation-driven, hype end the guide skips. The cooking is the real thing; worth another look once the rush settles."
   }
 ]
