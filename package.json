@@ -1,8 +1,8 @@
 {
   "name": "the-unlisted",
   "type": "module",
-  "version": "2.0.0",
-  "description": "A hand-picked guide to independent food and drink in the Bay Area and San Diego, researched with AI and reviewed by a person.",
+  "version": "2.1.0",
+  "description": "A hand-picked guide to independent food and drink in the Bay Area, San Diego and Portland, researched with AI and reviewed by a person.",
   "author": "Dan West (https://www.icarianforge.com)",
   "license": "UNLICENSED",
   "homepage": "https://unlisted.icarianforge.com",

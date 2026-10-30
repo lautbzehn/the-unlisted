@@ -5,7 +5,7 @@ import worker from '../index.js';
 const SITE = 'https://unlisted.icarianforge.com';
 const fakeDb = {
   prepare: () => ({
-    all: async () => ({ results: [{ slug: 'austin-tx', name: 'Austin', region: 'TX', status: 'approved', votes: 3 }, { slug: 'san-diego-ca', name: 'San Diego', region: 'CA', status: 'coming', votes: 0 }] }),
+    all: async () => ({ results: [{ slug: 'austin-tx', name: 'Austin', region: 'TX', status: 'approved', votes: 3 }, { slug: 'san-diego-ca', name: 'San Diego', region: 'CA', status: 'coming', votes: 0 }, { slug: 'portland-or', name: 'Portland', region: 'OR', status: 'coming', votes: 0 }] }),
   }),
 };
 const env = { DB: fakeDb, TURNSTILE_SECRET: '0x4AAAAAAAlivesecretvalue', ASSETS: { fetch: async () => new Response('page') } };

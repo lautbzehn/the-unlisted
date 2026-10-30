@@ -1,0 +1,167 @@
+[
+  {
+    "id": "taqueria-la-hidalguense",
+    "name": "Taqueria La Hidalguense",
+    "reason": "Nothing to say, and it may be a truck: only directory listings (Atly, MapQuest) turned up, one calls it a food truck and MapQuest marks it closed. No press, owner or menu details, and the newest sign of life is discovery's Feb 2026 Tribune inspection mention, past the 6-month cart window."
+  },
+  {
+    "id": "red-s-bar-and-grill",
+    "name": "Red's Bar & Grill",
+    "reason": "Poor fit, nothing real to say: no press at all, only directory and real-estate listings, and the land, building and business are listed for sale (Corcoran at $3.5M; Berkshire Hathaway listing data dated Apr 2024). No sale or closing reported; discovery's Jul 2026 Tribune inspection mention suggests it is still open."
+  },
+  {
+    "id": "j-vein-caffe",
+    "name": "J Vein Caffè",
+    "reason": "Cart rules not met on what I could confirm: the pod checks out (Rose City Food Park, 5235 NE Sandy Blvd), but no source I could open dates how long it has been there or names it as open since May 2026. The Mercury's summer 2026 Top 20 Food Carts list the lead cites refuses fetching (its snippet mentions an Italian espresso cart), and Portland Monthly's April 2024 piece on the pod hit a bot wall twice."
+  },
+  {
+    "id": "mandarin-house",
+    "name": "Mandarin House",
+    "reason": "Couldn't confirm it is open, and there is little to stand on. The only 2026 mention is an aggregator rewrite, and discovery's lead (Hoodline's Feb 2026 Chinatown report) doesn't mention it. The one press item is a 2020 Hoodline list ranked from Yelp ratings. Worth a phone call if you want it back."
+  },
+  {
+    "id": "kingston-bar-and-grill",
+    "name": "Kingston Bar & Grill",
+    "reason": "Poor fit: a standard sports bar a block from Providence Park, busy before Timbers games. Open as of Aug 2026 (Mercury Burger Week), but no history found, and the only other press is a 2016 Willamette Week drink-deals note."
+  },
+  {
+    "id": "thai-cottage",
+    "name": "Thai Cottage",
+    "reason": "Poor fit: a plain neighborhood Thai spot with nothing to build a draft on. The only non-directory mentions are passing ones (a St. Johns restaurateur names it among established nearby spots in Willamette Week, May 2026, less than the regular dinner stop discovery described), and no history, owner, dish or hours turned up outside MapQuest, atly and Airbnb listings."
+  },
+  {
+    "id": "lily-market",
+    "name": "Lily Market",
+    "reason": "Only directories: everything I found is listings and review aggregators (MapQuest, Birdeye, atly, auto-generated Hoodline roundups from 2019 and 2020), with no press, own site or neighborhood blog and no dated sign of life since Nov 2025. A Venture Portland page calling it one of the Northwest's largest Thai markets showed up in search but would not load."
+  },
+  {
+    "id": "pho-saigon-xua",
+    "name": "Pho Saigon Xua",
+    "reason": "Only directories: apart from a one-line perfect score in a Portland Tribune inspection list (Mar 3, 2026), every result was MapQuest, Wanderlog, Atly or similar, with no press, own site or social account. It looks open at 5253 SE 82nd Ave, but there is nothing sourced to say about it."
+  },
+  {
+    "id": "kabuki-sushi-and-grill",
+    "name": "Kabuki Sushi & Grill",
+    "reason": "Poor fit: a sushi spot with no press, history or anything distinctive we could find. Its only mention is one line in a May 2026 Willamette Week St. Johns walk naming it a relative newcomer; everything else was directory listings."
+  },
+  {
+    "id": "my-place-tavern",
+    "name": "My Place Tavern",
+    "reason": "Only directories: two searches found MapQuest, Yellow Pages and a 2023 Discover Forest Grove dining-guide listing, and the only press is a Forest Grove News-Times health-inspection roundup (June 2026). No history, no own site or social account, nothing distinctive: a generic tavern for our purposes."
+  },
+  {
+    "id": "mccrae-s-country-cafe",
+    "name": "McCrae's Country Cafe",
+    "reason": "Poor fit: beyond directory listings, the only coverage is a one-line mention in a 2016 Gresham Patch brunch roundup and a Gresham Outlook inspection roundup (March 2026). It looks open, but there is no history, owner or signature plate to write about."
+  },
+  {
+    "id": "milwaukie-pizza-co",
+    "name": "Milwaukie Pizza Co.",
+    "reason": "Only directories: beyond MapQuest, Atly and an AI-rewritten travel site, I found no press, own site or social account. The That Oregon Life feature (Sep 2026) that discovery cited sits behind a bot check and never surfaced in search, so the honey-crust story and 2021 opening are unverified."
+  },
+  {
+    "id": "rose-city-burrito",
+    "name": "Rose City Burrito",
+    "reason": "Poor fit: one line in Willamette Week's March 2026 cheap-burrito roundup is all there is. No owner, history, own site or social account found, and nothing sets it apart beyond a big salsa bar. Open as of March 2026."
+  },
+  {
+    "id": "the-waffle-window",
+    "name": "The Waffle Window",
+    "reason": "Probably a chain: besides the SE Hawthorne original, listings show shops on NE Alberta and at Bridgeport Village in Tigard, and a 2019 Port of Portland release called its PDX airport outlet the fourth local location (a Bethany shop is listed closed). wafflewindow.com blocked my fetch, so I could not confirm which are open now or find dated evidence it is open since Nov 2025; if the airport or Tigard shop has closed it is three locations and could come back as a draft."
+  },
+  {
+    "id": "woodstock-wine-and-deli",
+    "name": "Woodstock Wine & Deli",
+    "reason": "Couldn't source it or confirm it's open: the Bee feature discovery cited now returns Page Not Found, and three searches found only directory listings (MapQuest marks it closed) with nothing on a BBQ menu. I also couldn't find it in the Mar 3, 2026 Tribune inspection roundup on file, so what it has become is still unknown."
+  },
+  {
+    "id": "mikasa-sushi-and-ramen",
+    "name": "Mikasa Sushi & Ramen",
+    "reason": "Poor fit: a straightforward sushi-and-ramen spot with nothing distinctive found. The only press is a one-line Willamette Week mention (May 12, 2026) listing it among newer St. Johns places, and its 2019 opening and ex-Bamboo Sushi chef appear only on directory pages."
+  },
+  {
+    "id": "panaderia-y-pasteleria-la-imperial",
+    "name": "Panaderia y Pasteleria La Imperial",
+    "reason": "Only directories: BBB, Allmenus and Atly list it as La Imperial Bakery at 1895 SE Tualatin Valley Hwy, Suite K (one listing says 1975), and the only other trace is its name on Hillsboro's 2026 Small Business Stabilization grant list (the city PDF refused our fetch). No press, own site, social account or blog turned up."
+  },
+  {
+    "id": "el-rinconcito-mexicano",
+    "name": "El Rinconcito Mexicano",
+    "reason": "Only directories plus an inspection score: a Forest Grove News-Times health-inspection roundup (June 6, 2026) confirms it at 1895 SE Tualatin Valley Hwy with a score of 77, and beyond that there are only delivery listings. No reviews, own site or social account found, so there is nothing to write."
+  },
+  {
+    "id": "og-birrieria",
+    "name": "OG Birrieria",
+    "reason": "Too new for a story yet: the only press is a Lake Oswego Review opening notice (Apr 22, 2026) saying the former Hillsboro taco truck took over the old Giant Drive-In space at 15840 Boones Ferry Rd with a full bar, and nothing describes the food at this location or shows it since. Worth another look once it has some coverage."
+  },
+  {
+    "id": "the-paper-bridge",
+    "name": "The Paper Bridge",
+    "reason": "Poor fit for now: the New York Times put it on its 50 Best list (2025) and gave it Portland's first starred review (May 2026), and it now books out on Resy well ahead. That is the reservation-driven, hype end the guide skips. The cooking is the real thing; worth another look once the rush settles."
+  },
+  {
+    "id": "birrias-tamazula",
+    "name": "Birrias Tamazula",
+    "reason": "No sign of life in 12 months: the newest dated evidence is Portland Monthly's best Mexican food guide from August 26, 2025, and I found no 2026 press, own site or active social account (discovery's newer evidence was map-listing reviews). If it is confirmed open, it is open-secret, not a deep cut: Portland Monthly reviewed it in Nov 2023 and listed it again in 2025."
+  },
+  {
+    "id": "broder-cafe",
+    "name": "Broder Cafe",
+    "reason": "Chain by our rule: Broder's own site (broderpdx.com, Oct 2026) lists four Broder locations open now: Broder Café on SE Clinton, Broder Nord on N Mississippi, Broder Söder on SW Oleson Rd and Broder Øst in Hood River. A fifth, Broder Strand in Astoria, opened in 2023 per Discover Our Coast but is not on the site."
+  },
+  {
+    "id": "tom-s-pancake-house",
+    "name": "Tom's Pancake House",
+    "reason": "Only directories: the 1966 founding and 'longest-running in Beaverton' claims come from an Explore Tualatin Valley listing (now page-not-found) and listicle snippets, and I found no press story, own site or social account. Discovery's July 2026 Beaverton Valley Times inspection headline suggests it is open, so a person with a Beaverton Historical Society or Valley Times archive could revive it."
+  },
+  {
+    "id": "pine-shed-ribs",
+    "name": "Pine Shed Ribs",
+    "reason": "No usable sign of life since Nov 2025: pineshedribs.com now serves an unrelated gambling page (checked Oct 2026), the last cached copy of its own site carried a 2024 copyright, and the newest press I found is from 2014-15. Discovery's Jan 2026 reviews were on a map listing we can't use, so a call to 503-635-7427 would settle whether it is still smoking."
+  },
+  {
+    "id": "babica-hen-cafe",
+    "name": "Babica Hen Cafe",
+    "reason": "Poor fit: a well-liked Lake Grove breakfast cafe whose story is really its owner (Lake Oswego's mayor, Joe Buck). No dedicated press, and the menu and room are barely documented. His family's Gubanc's, a few doors down, is drafted instead. Open per the Lake Oswego Review, Aug 2026."
+  },
+  {
+    "id": "merendero-estela",
+    "name": "Merendero Estela",
+    "reason": "Cart rules not met on what I could verify: the newest source I could open is Portland Monthly's March 2022 cart guide (7107 SE 82nd Ave), and no source names a pod or lot. Discovery cited the Portland Mercury's July 2026 Top 20 carts list, which can't be opened from here; if it's on that list, it's worth re-queuing."
+  },
+  {
+    "id": "taipei-noodle-haus",
+    "name": "Taipei Noodle Haus",
+    "reason": "Couldn't confirm it's open: the newest press I found is Willamette Week's 2016 review and 2017 east county guide, and the Aug 17, 2026 Bridgetown Bites post discovery cited (about the new Two Roosters cafe in Parkrose Heights) only reached me as a newsletter teaser with no mention of the noodle house. Everything else is directory or delivery listings, some showing it closed, so a call to 503-206-5090 or a read of the full bridgetownbites.com post would settle it."
+  },
+  {
+    "id": "snowmoon-k-pop-cafe",
+    "name": "SnowMoon K-Pop Cafe",
+    "reason": "Brand new: it opened in April 2026 (Beaverton Valley Times, Apr 22, 2026), a dessert café with bingsu, croffles and a K-pop dance studio. The owner moving her home K-pop meetups into a café is a sweet start but not a long record yet; worth a look next year."
+  },
+  {
+    "id": "kove-island-comfort-kitchen",
+    "name": "Kove Island Comfort Kitchen",
+    "reason": "Brand new: it opened Mar 31, 2026 at 811 NW Murray (Beaverton Valley Times, Apr 29, 2026), in a space that already held two earlier Hawaiian restaurants. The owners' Let's Roll PDX cart dates to 2017 but sold sushi burritos and poke, so the plate-lunch counter itself has no track record; a close call because the O'ahu-raised chef has 23 years of cooking, so worth a look next year."
+  },
+  {
+    "id": "sole-s-filipino-store",
+    "name": "SoLe's Filipino Store",
+    "reason": "Brand new: it opened December 20, 2025 (Hillsboro News-Times, December 24, 2025), and it's mainly an Asian grocery with rotating lunch plates. There's no long food record or family history behind it yet (the owner, who runs adult care homes, signed the lease at Halloween), so it's worth a look next year."
+  },
+  {
+    "id": "chicatanas",
+    "name": "Chicatanas",
+    "reason": "Brand new: the Hillsboro News-Times (Feb 17, 2026) said it would open in late February or early March 2026, and the city listed it as a new downtown restaurant in June 2026. It is Roberto Rubio's first restaurant after a stint as a kitchen manager in Los Angeles, a promising all-day cafe but with no long record yet; worth a look in spring 2027."
+  },
+  {
+    "id": "sugarpine-drive-in",
+    "name": "Sugarpine Drive-In",
+    "reason": "Poor fit: a polished, heavily covered chef-run destination (Willamette Week, Portland Monthly, KOIN, Axios, a New York Times dish list) with summer lines, more a Gorge stop than a hole in the wall. Also no dated sign of life since July 2025, and it may close for winter."
+  },
+  {
+    "id": "lolo-s-boss-pizza",
+    "name": "LoLo's Boss Pizza",
+    "reason": "Poor fit: a friendly suburban pizzeria and market with a modest story, resting on one 2024 Outlook opening article. No dated sign of life since then that we could confirm."
+  }
+]

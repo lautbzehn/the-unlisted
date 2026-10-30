@@ -18,8 +18,8 @@ export const ABOUT = [
 
 // Which header item a page belongs to, for the "you are here" underline.
 export const sectionFor = (path) =>
-  path === '/' || path === '/san-diego/' ? null
-  : /^\/(san-diego\/)?(explore|place)\b/.test(path) ? 'explore'
+  path === '/' || path === '/san-diego/' || path === '/portland/' ? null
+  : /^\/((san-diego|portland)\/)?(explore|place)\b/.test(path) ? 'explore'
   : path.startsWith('/passport') ? 'passport'
   : path.startsWith('/cities') ? 'cities'
   : path.startsWith('/story') ? 'story'

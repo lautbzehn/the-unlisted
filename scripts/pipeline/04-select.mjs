@@ -3,7 +3,7 @@
 // falls back to OSM's address search (Nominatim), then picks a balanced shortlist.
 //   node scripts/pipeline/04-select.mjs 180
 import { readJson, writeJson, slug } from './lib/claude.mjs';
-import { M, METROS } from './metros.mjs';
+import { M, METRO, METROS } from './metros.mjs';
 
 const target = Number(process.argv[2] ?? 180);
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/^the\s+/, '').replace(/[^a-z0-9]/g, '');
@@ -12,8 +12,9 @@ const km = (a, b) => {
   return 12742 * Math.asin(Math.sqrt(h));
 };
 
-// skip what's already in the guide, this city's seed list (researched separately) and earlier batches
-const existing = new Set([...readJson('src/data/places.json', []), ...readJson(M.seeds, [])].map((p) => norm(p.name)));
+// skip what's already in this city's guide and its seed list (researched separately); a namesake in another city stays
+const inMetro = readJson('src/data/places.json', []).filter((p) => (p.metro ?? 'bay-area') === METRO);
+const existing = new Set([...inMetro, ...readJson(M.seeds, [])].map((p) => norm(p.name)));
 const osm = readJson(`${M.pipelineDir}/independents.json`, []);
 const osmByName = new Map();
 for (const p of osm) (osmByName.get(norm(p.name)) ?? osmByName.set(norm(p.name), []).get(norm(p.name))).push(p);
@@ -74,7 +75,14 @@ for (const dir of new Set(Object.values(METROS).map((m) => m.reviewDir))) {
   if (!existsSync(dir)) continue;
   for (const f of readdirSync(dir).filter((n) => /^batch-\d+\.json$/.test(n))) for (const d of readJson(`${dir}/${f}`, [])) ids.add(d.id);
 }
-for (const p of picked) { let id = p.id, n = 2; while (ids.has(id)) id = `${p.id}-${n++}`; p.id = id; ids.add(id); }
+// a re-run keeps each earlier candidate's id, so places already researched or skipped under it aren't queued again as new
+const keyOf = (c) => norm(c.name) + '|' + norm(c.city ?? '');
+const prior = new Map(readJson(`${M.reviewDir}/candidates.json`, []).map((c) => [keyOf(c), c.id]));
+for (const id of prior.values()) ids.add(id);
+for (const p of picked) {
+  if (prior.has(keyOf(p))) { p.id = prior.get(keyOf(p)); continue; }
+  let id = p.id, n = 2; while (ids.has(id)) id = `${p.id}-${n++}`; p.id = id; ids.add(id);
+}
 writeJson(`${M.reviewDir}/candidates.json`, picked);
 
 const tally = (f) => Object.entries(Object.groupBy(picked, f)).map(([k, v]) => `${k} ${v.length}`).join(' · ');

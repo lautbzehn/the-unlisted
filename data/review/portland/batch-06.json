@@ -1,0 +1,193 @@
+[
+  {
+    "id": "lutz-tavern",
+    "seed": false,
+    "status": "draft",
+    "metro": "portland",
+    "name": "Lutz Tavern",
+    "area": "Woodstock",
+    "city": "Portland",
+    "kind": "Old neighborhood tavern",
+    "lat": 45.47937,
+    "lng": -122.6146,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 72,
+      "story": 82,
+      "signature": 48
+    },
+    "why": "Few Portland bars have a story this long or this odd, from two family eras to a disputed claim on the Pabst revival. The food is ordinary tavern fare, so signature stays low, and recent coverage is thin.",
+    "story": "The Lutz family opened it in 1947, and the Barisich family ran it from 1954 until it closed in 2010. New owners reopened it in 2011 with liquor, Northwest taps and a proper kitchen. In the late 1990s its dollar cans of Pabst helped make the beer cool again, though EJ's disputes the credit.",
+    "tagline": "Woodstock tavern from 1947 with a Pabst legend",
+    "order": "A burger from the kitchen added in 2011, and the pickles, which took top honors in a local pickle contest in 2013.",
+    "practical": [
+      "Deep booths and a diner-style counter",
+      "Two happy hours in 2017: 4-6 pm and 11 pm-2 am"
+    ],
+    "hours": "Daily 11 am-2:30 am (Willamette Week, 2017; not reconfirmed)",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lutz_Tavern",
+      "https://www.wweek.com/bars/2017/05/25/lutz-tavern-is-the-bar-where-pabst-broke/",
+      "https://www.wweek.com/portland/article-22267-bar-guide-2014-lutz-tavern.html",
+      "https://www.wweek.com/portland/article-18201-lutz-tavern-happy-returns.html",
+      "https://wweek.com/portland/article-23764-the-great-pbr-debate.html"
+    ],
+    "flags": [
+      "Status unclear: the newest dated evidence is from 2024. Confirm before approving.",
+      "Open status not confirmed by me: the newest dated items I could verify are a 2024 photo on Wikipedia and Eater's 2022 Woodstock guide. Discovery cited a Bridgetown Bites Dry January 2026 roundup (December 2025) that I could not reach within budget. Please confirm it is open before approving.",
+      "Hours and happy hours are from Willamette Week's 2017 listing, seen in a search snippet. `late` rests on that and on WW's 2014 bar guide, which describes the late Friday crowd. Reconfirm.",
+      "The Pabst claim is disputed by EJ's (Willamette Week, 2015); the story says so. Founding year 1947 per Wikipedia and The Oregonian; one Portland Monthly piece gives 1954, which is when the Barisich family took over.",
+      "The Oregonian named Robert Kowalski as owner in 2014; current ownership unknown, so the story names no owner.",
+      "The 2011 burger praise and 2013 pickle win are older; check the current menu.",
+      "Discovery's lead (old booths, cheap pints, WW's PBR story) holds up, apart from 'cheap pints', which I could not date."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "reedville-cafe",
+    "seed": false,
+    "status": "draft",
+    "metro": "portland",
+    "name": "Reedville Cafe",
+    "area": "Reedville",
+    "city": "Hillsboro",
+    "kind": "Classic roadside diner",
+    "lat": 45.49784,
+    "lng": -122.90258,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 48,
+      "atmosphere": 50,
+      "story": 72,
+      "signature": 38
+    },
+    "why": "Ninety-odd years on TV Highway and 75 under one family carry the story mark. The food is a broad diner menu with no single dish press singles out, I found nothing describing the room, and the only press I could find is one Pamplin story.",
+    "story": "It opened on TV Highway in 1934 as the Shack Tavern. The Van Beveren family took over in 1950, renamed it Reedville Cafe in 1990, and sold it in 2025 to Tim Sapa, who said he would keep the food, the service and the feel of the place.",
+    "tagline": "Shack Tavern in 1934, Reedville Cafe since 1990",
+    "order": "Breakfast: an omelet, pancakes or a Benedict, the morning plates the cafe has long leaned on. Burgers, burritos and pastas take over later in the day.",
+    "practical": [
+      "Classic American diner menu, breakfast plates in the morning and burgers later"
+    ],
+    "hours": null,
+    "sources": [
+      "https://forestgrovenewstimes.com/2025/05/28/75-years-later-hillsboros-reedville-cafe-welcomes-new-ownership/"
+    ],
+    "flags": [
+      "Status unclear: the newest dated evidence is the May 2025 ownership story; a 2026 search found nothing newer. Confirm before approving.",
+      "Open status: the newest dated evidence I found is the News-Times ownership story from May 28, 2025 (17 months ago). Discovery cited a Hillsboro News-Times health inspection roundup headline from July 2026 naming the cafe; I could not find it. Confirm it is open before publishing.",
+      "What the new owner kept: only his stated plan as of May 2025 (keep the food, service and atmosphere, stick to the basics, enhance the menu). I found nothing after the sale saying what actually changed.",
+      "Single source: every fact rests on one Forest Grove News-Times article.",
+      "Hours unconfirmed. 'when' is inferred from the article's description of morning and later-day menus; dinner service unknown.",
+      "Fame set to deep-cut: only Pamplin coverage seen. Discovery's 'readers ranked it Hillsboro's second-best restaurant in 2024' was not verified and is left out; if that Hillsboro's Best result or older Hillsboro Argus/Oregonian coverage exists, bump to open-secret.",
+      "Street number 7575 is from the candidate record and directory listings; the article says only that it is off Southeast Tualatin Valley Highway.",
+      "Nothing found about the room itself, so the atmosphere mark is a middle guess."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "taqueria-rico-taco",
+    "seed": false,
+    "status": "draft",
+    "metro": "portland",
+    "name": "Taqueria Rico Taco",
+    "area": "Rockwood",
+    "city": "Gresham",
+    "kind": "Late-night Rockwood taqueria",
+    "lat": 45.52158,
+    "lng": -122.47724,
+    "osm": null,
+    "when": [
+      "morning",
+      "midday",
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "breakdown": {
+      "uniqueness": 42,
+      "atmosphere": 35,
+      "story": 46,
+      "signature": 50
+    },
+    "why": "A modest story: 26 years on one corner, a kind gesture during the 2025 shutdown, and hours that run past midnight on weekends. It is one taqueria among many, I found nothing on the room, and only one press piece.",
+    "story": "Taqueria Rico Taco has been feeding Gresham from SE 181st since 1999, with handmade tacos at the center of the menu. When SNAP benefits stopped during the November 2025 federal shutdown, it gave two tacos and a fountain drink to anyone who showed a SNAP card at the counter.",
+    "tagline": "Handmade tacos on SE 181st since 1999",
+    "order": "The handmade tacos, the thing it has built its name on. It opens at 8 am and stays open until 11:30 pm most nights, so it covers breakfast through a late dinner.",
+    "practical": [
+      "Opens at 8 am daily",
+      "Open until 12:30 am Friday and Saturday"
+    ],
+    "hours": "Sun-Thu 8 am-11:30 pm, Fri-Sat 8 am-12:30 am (Gresham Outlook, Nov 2025)",
+    "sources": [
+      "https://theoutlookonline.com/2025/11/06/taqueria-rico-taco-has-free-meal-snap-recipients/"
+    ],
+    "flags": [
+      "Single source: every fact comes from one Gresham Outlook article (Nov 6, 2025), which is also the newest open evidence, just inside the 12-month window.",
+      "Hours are from that Nov 2025 article; confirm they still hold, since 'late' depends on them.",
+      "Discovery said free meals to SNAP families; the article says two tacos and a fountain drink for anyone with a SNAP card.",
+      "Fame set to deep-cut: the Outlook is the only press found. Discovery had it as open-secret.",
+      "Nothing found about the room; atmosphere is a low middle guess. Directory listings mention a drive-thru and salsa bar, not used.",
+      "Thin draft overall: a reviewer may judge it a poor fit if a visit shows nothing distinctive."
+    ],
+    "verified": "2026-10"
+  },
+  {
+    "id": "helvetia-tavern",
+    "seed": false,
+    "status": "draft",
+    "metro": "portland",
+    "name": "Helvetia Tavern",
+    "area": "Helvetia",
+    "city": "Hillsboro",
+    "kind": "Country burger tavern",
+    "lat": 45.59659,
+    "lng": -122.91675,
+    "osm": null,
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "breakdown": {
+      "uniqueness": 66,
+      "atmosphere": 78,
+      "story": 56,
+      "signature": 76
+    },
+    "why": "The hat-covered ceiling and the goop-dressed burger give it a real identity, and Chowhound's 2025 nod backs up the burger. The history is muddled, with founding dates from 1922 to 1946 depending on the source, and current hours are unconfirmed.",
+    "story": "Helvetia Tavern dates itself to 1946, and in 2025 Chowhound named it Oregon's best hole-in-the-wall burger. Rows of trucker hats cover the ceiling, a nod to the working crowd, and the burgers come with the house goop, a sauce close to Russian dressing.",
+    "tagline": "Trucker hats overhead, goop on the burger",
+    "order": "A burger with goop, the Jumbo if you're hungry, and fries.",
+    "practical": [
+      "The tavern's own site calls it a regular hangout for families"
+    ],
+    "hours": null,
+    "sources": [
+      "https://digital-release.koin.com/?p=2381409",
+      "https://www.wweek.com/restaurants/2016/03/22/helvetia-tavern/",
+      "https://www.wweek.com/portland/article-19518-helvetia-tavern-hell-of-a-time.html",
+      "https://www.onlyinyourstate.com/food/oregon/classic-burger-joint-portland"
+    ],
+    "flags": [
+      "Status unclear: the newest dated coverage is KOIN, Oct 17, 2025, just outside the 12-month window. Confirm before approving.",
+      "Open status: the latest dated coverage I opened is KOIN, Oct 17, 2025 (Chowhound's best hole-in-the-wall burger list), just outside the 12-month window. Discovery cites a That Oregon Life mom-and-pop list from April 2026. Confirm it is open.",
+      "Founding date conflict: the tavern's own site (quoted by KOIN) says 1946; travel listicles say the building went up in 1922 as a gas station and grocery and the tavern opened when Prohibition ended (1933). The story uses the tavern's own 1946.",
+      "Hours unconfirmed: directory listings give 11 am to about 9-10 pm Sun-Thu and to 10 or 11 pm Fri-Sat, but no solid source, so hours are null and 'late' is left off. 'when' is a best guess.",
+      "Listings say it is cash-preferred, with a card surcharge or an on-site ATM; unconfirmed and left out.",
+      "The Jumbo Burger detail comes from search snippets of Willamette Week and Only In Your State coverage, not a page I opened."
+    ],
+    "verified": "2026-10"
+  }
+]

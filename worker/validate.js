@@ -13,7 +13,7 @@ export const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 const HTTP_URL_RE = /^https?:\/\/\S+$/i;
 
 export const CONTACT_TOPICS = ['feedback', 'hello', 'correction', 'closed', 'owner', 'other'];
-export const METROS = { 'bay-area': 'Bay Area', 'san-diego': 'San Diego' };
+export const METROS = { 'bay-area': 'Bay Area', 'san-diego': 'San Diego', portland: 'Portland' };
 
 /**
  * A single-line field: collapses whitespace and trims to a maximum length.
