@@ -4,7 +4,7 @@
 
 **Fame:** Open secret 10 · Local legend 4 · Deep cut 1  
 **Time of day:** morning+midday 7 · midday+evening+late 2 · midday 2 · evening 1 · morning+midday+evening 1 · midday+evening 2  
-**Flags to check:** 85 · **Sources:** 72 (internal only)
+**Flags to check:** 84 · **Sources:** 73 (internal only)
 
 For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
@@ -122,20 +122,20 @@ Uniqueness 56 · Atmosphere 64 · Story 42 · Signature item 72 · Under the rad
 **Hours.** Daily, dim sum all day (Portland Mercury, 2021); opening and closing times unconfirmed
 
 **Check before approving:**
-- [ ] Status unclear: no dated evidence it is open since Nov 2025. Confirm before approving.
-- [ ] Open evidence is thin: no dated 2026 press I could open. Signs of life are an aggregator review from January 2026 and the online-ordering page noting dishes added in 2026 (neither citable). Discovery said a Portland Tribune inspection headline named HK Cafe in Oct 2026; I could not find it. Check it, including whether the score was low.
+- [ ] Open: listed in the Portland Tribune's Multnomah County inspection roundup of Oct 16, 2026 as HK Cafe, 4410 SE 82nd Ave (coordinator read the page).
 - [ ] Own site (hkcafetogo.com) blocked my fetch, so hours are unconfirmed. 'Morning' rests on directory listings giving a 9:30 am daily opening and on Portland Monthly's 2022 best-breakfasts mention; evening hours are likely but unsourced.
 - [ ] Push carts: discovery and review sites describe carts circulating the room, but no source I could cite says so; left out of the story.
 - [ ] Story facts come from 2015 (Willamette Week) and 2021 (Portland Mercury) coverage; the busiest-on-82nd claim and the visit-timing tip are from 2015.
 - [ ] Area: Wikipedia and listings put it in Lents; discovery said Jade District. Address 4410 SE 82nd Ave matches across sources.
 
-<details><summary>Sources (5)</summary>
+<details><summary>Sources (6)</summary>
 
 - https://www.wweek.com/portland/article-24224-cheap-eats-2015-chinese-food.html
 - https://www.portlandmercury.com/blogtown/2021/02/09/31694953/takeout-club-pure-spice-and-hk-cafe-have-super-solid-to-go-dim-sum
 - https://www.wweek.com/portland/article-23766-dimmer-switch.html
 - https://www.pdxmonthly.com/restaurants/hk-cafe
 - https://en.wikipedia.org/wiki/HK_Cafe
+- https://portlandtribune.com/2026/10/16/multnomah-county-health-inspections-starbucks-hk-cafe-uncle-vinnys-pizza/
 </details>
 
 ---

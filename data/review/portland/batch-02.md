@@ -4,7 +4,7 @@
 
 **Fame:** Open secret 13 · Deep cut 1 · Local legend 1  
 **Time of day:** midday+evening 6 · morning+midday 4 · midday+evening+late 2 · evening 1 · morning+midday+evening 1 · morning+midday+evening+late 1  
-**Flags to check:** 83 · **Sources:** 66 (internal only)
+**Flags to check:** 83 · **Sources:** 68 (internal only)
 
 For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
@@ -57,15 +57,17 @@ Uniqueness 66 · Atmosphere 32 · Story 35 · Signature item 68 · Under the rad
 **Hours.** Tue-Sat 9 am-4 pm (Willamette Week, June 2026)
 
 **Check before approving:**
+- [ ] Open: listed in the Portland Tribune's Multnomah County inspection roundup of June 4, 2026 as Yokai Musubi, 2190 W Burnside St (coordinator read the page).
 - [ ] Open status, hours, prices and the nori detail confirmed in Willamette Week's Cheap Eats guide (June 23, 2026), read in full.
 - [ ] Prices are from June 2026: Spam musubi $3.50, teri-salmon onigiri $4.75, ume onigiri $3.99.
 - [ ] Seating unknown: Willamette Week calls it an on-the-go snack shop; a directory said takeout only, which isn't a source we use, so it's left out.
 - [ ] Only press found is that one Willamette Week piece. No owner, opening date or backstory found, so the story mark is low.
 - [ ] Do not confuse with Musubi, a separate rice ball shop that opened on SE Division in 2016 and got Portland Mercury coverage.
 
-<details><summary>Sources (1)</summary>
+<details><summary>Sources (2)</summary>
 
 - https://www.wweek.com/food/2026/06/23/portlands-best-cheap-eats/
+- https://portlandtribune.com/2026/06/04/multnomah-county-health-inspections-dutch-bros-coffee-blue-star-donuts-sizzle-pie/
 </details>
 
 ---
@@ -302,20 +304,20 @@ Uniqueness 62 · Atmosphere 56 · Story 58 · Signature item 66 · Under the rad
 **Hours.** Daily noon-2:30 am (undated listing; WWeek in 2019 had weekdays from 2 pm)
 
 **Check before approving:**
-- [ ] Status unclear: no dated evidence it is open since Nov 2025. Confirm before approving.
-- [ ] Open status not confirmed: the most recent dated coverage I found is WWeek, Aug 2019. Discovery cites a perfect score in the Jun 2026 Portland Tribune inspection roundup; I didn't open it.
+- [ ] Open: listed in the Portland Tribune's Multnomah County inspection roundup of June 4, 2026 as Brooklyn Park Pub, 3400 SE Milwaukie Ave (coordinator read the page).
 - [ ] Whiskey list still unconfirmed after 2019: the PDX Monthly listing I opened is undated and its text matches the 2017 WWeek material (about 80 brands, the 30-whiskey club). It names owner Nathan Dewey; left out of the story in case ownership has changed.
 - [ ] Circa-1900 building date comes from the 2017 WWeek piece (search snippet).
 - [ ] Hours conflict between the undated listing (daily noon-2:30 am) and WWeek 2019 (weekdays from 2 pm). 'midday' may only apply on weekends.
 - [ ] Fame: WWeek covered it twice, plus a PDX Monthly listing page and the Tribune inspection mention, so open-secret under the two-outlet rule, not discovery's deep-cut. Make it deep-cut if a directory listing doesn't count.
 - [ ] Discovery's 'baskets of tots' detail not found in any source; left out. PDX Monthly calls it a late-night sports bar; WWeek 2019 called it a neighborhood dive.
 
-<details><summary>Sources (4)</summary>
+<details><summary>Sources (5)</summary>
 
 - https://wweek.com/bars/2017/05/23/consider-brooklyn-park-pub-the-least-likely-whiskey-bar-in-town
 - https://www.wweek.com/culture/2019/08/16/brooklyn-park-pub-has-an-expansive-selection-of-whiskey-and-a-hidden-gem-of-a-patio
 - https://pdxmonthly.com/businesses/brooklyn-park
 - https://thebeerchaser.com/tag/whiskey-club/
+- https://portlandtribune.com/2026/06/04/multnomah-county-health-inspections-dutch-bros-coffee-blue-star-donuts-sizzle-pie/
 </details>
 
 ---

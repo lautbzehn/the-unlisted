@@ -19,7 +19,9 @@ const PRESS = [
   'kgw.com', 'koin.com', 'kptv.com', 'katu.com', 'portlandfoodanddrink.com', 'travelportland.com', 'theskanner.com',
   'streetroots.org', '1859oregonmagazine.com', 'bizjournals.com',
 ];
+// A county health-inspection roundup lists hundreds of places; it shows a place is open, not that the press covered it.
 const outlet = (url) => {
+  if (/health-inspections/.test(url)) return undefined;
   const host = url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0];
   return PRESS.find((p) => host === p || host.endsWith(`.${p}`));
 };
