@@ -13,6 +13,7 @@ Notable changes to The Unlisted. The format follows [Keep a Changelog](https://k
 ### Changed
 - Pipeline: `04-select` compares names only within a city and keeps candidate ids stable on a re-run; `06-fix-fame` no longer counts health-inspection roundups as press; `07-triage` puts a draft in must-check only for real doubts about whether it's open.
 - In development, drafts from every city's review folder show in the app, so Portland's held drafts can be reviewed there.
+- The front page's "Unlisted" is now a sign over a speakeasy door: faint colored TV snow moves inside the letters, and every few seconds the tube stutters, once splitting into stamp red and cold blue. It stays under three flashes a second, and none of it runs under reduced motion.
 
 ## [2.0.0] · 2026-10-29
 
