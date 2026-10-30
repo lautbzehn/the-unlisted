@@ -56,6 +56,42 @@ main.home { max-width: none; padding: 0 0 clamp(96px, 14vw, 180px); overflow-x: 
   @keyframes scan { 0% { top: 20%; opacity: 0; } 15% { opacity: 1; } 80% { opacity: 0.8; } 100% { top: 100%; opacity: 0; } }
 }
 
+/* "Unlisted" as the sign over a speakeasy door: faint colored TV snow inside the letters, and a tube that
+   stutters now and then, splitting into stamp red and cold blue for a beat. The flicker comes in after the shutter
+   opens, stays under three flashes a second (WCAG 2.3.1), and none of it runs under reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    .hero-title .w1 .ch {
+      color: transparent; -webkit-text-fill-color: transparent;
+      background:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='2.4 0 0 0 -.3 0 2.4 0 0 -.3 0 0 2.4 0 -.3 0 0 0 0 1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E") 0 0 / 160px 160px,
+        linear-gradient(var(--ink), var(--ink));
+      background-blend-mode: multiply;
+      -webkit-background-clip: text; background-clip: text;
+      animation: shutter 1.25s var(--ease) backwards, settle 1.25s var(--ease) backwards, snow 0.5s infinite;
+      animation-delay: calc(var(--i) * 60ms + 0.12s), calc(var(--i) * 60ms + 0.12s), 0s;
+      animation-timing-function: var(--ease), var(--ease), steps(1, end);
+    }
+    @keyframes snow {
+      0% { background-position: 0 0, 0 0; }
+      20% { background-position: -47px 61px, 0 0; }
+      40% { background-position: 83px -29px, 0 0; }
+      60% { background-position: -13px -97px, 0 0; }
+      80% { background-position: 59px 37px, 0 0; }
+    }
+  }
+  .hero-title .w1 {
+    filter: drop-shadow(0 0 0.06em rgb(255 214 170 / 0.28));
+    animation: tube 7.3s steps(1, end) 2.2s infinite;
+  }
+  @keyframes tube {
+    0%, 31%, 34%, 72.5%, 100% { opacity: 1; filter: drop-shadow(0 0 0.06em rgb(255 214 170 / 0.28)); }
+    30% { opacity: 0.3; filter: none; }
+    32.5% { opacity: 0.75; filter: drop-shadow(0.035em 0 0 var(--accent-glow)) drop-shadow(-0.035em 0 0 var(--cold-glow)); }
+    71% { opacity: 0.22; filter: none; }
+  }
+}
+
 .hero-foot {
   display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 24px 48px;
   margin-top: clamp(20px, 3vw, 36px); padding-bottom: clamp(28px, 5vw, 56px);
