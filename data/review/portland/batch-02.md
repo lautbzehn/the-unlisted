@@ -4,7 +4,7 @@
 
 **Fame:** Open secret 13 · Deep cut 1 · Local legend 1  
 **Time of day:** midday+evening 6 · morning+midday 4 · midday+evening+late 2 · evening 1 · morning+midday+evening 1 · morning+midday+evening+late 1  
-**Flags to check:** 82 · **Sources:** 66 (internal only)
+**Flags to check:** 83 · **Sources:** 66 (internal only)
 
 For each place, reply with **approve**, **edit:** (what to change) or **drop**.
 
@@ -25,6 +25,7 @@ Uniqueness 64 · Atmosphere 52 · Story 68 · Signature item 48 · Under the rad
 
 **Check before approving:**
 - [ ] Hoodline (Feb 18, 2026) read in full. It credits OregonLive for the last-two claim (with Republic Cafe), the ~$70,000 city aid and the ~70% of pre-COVID business figure. The OregonLive original was not opened.
+- [ ] Source quality: Hoodline's 2026 pieces read as rewrites of other outlets' reporting; this one credits OregonLive, whose original couldn't be opened here. Check the last-two claim, the $70,000 and the 70% figure against the OregonLive story before publishing. A secondary report adds that it now closes at 9 pm instead of 11.
 - [ ] Hours unconfirmed. Hoodline says the owners have cut back hours; the when field is a guess at lunch and dinner service.
 - [ ] Owner spelled Sophie Li in a 2018 Portland Chinatown Museum piece and Sophy Li in a 2026 aggregator. Left out of the story until the spelling is confirmed.
 - [ ] Opening year unconfirmed. An aggregator says 1998; left out. Discovery's claim that it is the last Cantonese lunch nearby also traces to that aggregator; left out.

@@ -7,7 +7,8 @@ import { readdirSync, writeFileSync } from 'node:fs';
 import { readJson, file } from './lib/claude.mjs';
 import { M } from './metros.mjs';
 
-const CLOSED = /clos(ed|ing|ure)|still open|may have (closed|moved)|out of business|permanently|status unclear|uncertain whether/;
+// Doubts about a place's status, not mentions of a closed day or an old location ("Closed Tuesdays", "the cart closed in 2018").
+const CLOSED = /status unclear|may (be|have) (closed|moved)|might (be|have) closed|out of business|permanently closed|closed for good|closing for good|uncertain whether/;
 const UNCONFIRMED = /not confirm|unverified|could not verify|couldn.t verify|unconfirmed/;
 const ABOUT_FACTS = /found|owner|founded|year|history/;
 
