@@ -995,6 +995,68 @@
     "from": "disc-09-day"
   },
   {
+    "name": "Javi's Breakfast Cafe",
+    "neighborhood": "Rose City Park",
+    "city": "Portland",
+    "address": "6236 NE Sandy Blvd",
+    "kind": "Breakfast cafe in old A&W",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Javier Tapia turned the tall-roofed old A&W root beer stand on Sandy into a pancakes-and-chilaquiles breakfast cafe after 20-plus years cooking in Vancouver.",
+    "source_url": "https://bridgetownbites.com/2023/05/11/javis-breakfast-cafe-opening-rose-city-park-portland-oregon/",
+    "open_evidence": "Bridgetown Bites tagged it in its Small Bites roundup of Jan 30, 2026, and in its Candlemas pancake list updated Jan 2026",
+    "from": "disc-09-day"
+  },
+  {
+    "name": "Amalfi's Italian Restaurant",
+    "neighborhood": "Beaumont-Wilshire",
+    "city": "Portland",
+    "address": "4703 NE Fremont St",
+    "kind": "Family Italian since 1959",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Opened in 1959 as The Pizza House; the founders' granddaughter, once its dishwasher, now runs it under Grandpa's framed 1959 meatball recipe.",
+    "source_url": "https://wweek.com/food/2024/04/16/a-few-of-old-portlands-most-beloved-restaurants",
+    "open_evidence": "Listed in Portland Tribune county inspection roundup, Aug 2026; diner blog visit Jan 2026",
+    "from": "disc-09-night"
+  },
+  {
+    "name": "Reo's Ribs",
+    "neighborhood": "Hollywood",
+    "city": "Portland",
+    "address": "4211 NE Sandy Blvd",
+    "kind": "Louisiana rib shack",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Reo Varnado's rib shack in the tiny 1923 former Hollywood Burger Bar, revived after a 2017 fire and again after his 2022 death.",
+    "source_url": "https://bridgetownbites.com/2023/09/11/eos-ribs-will-re-open-2023-portland-oregon/",
+    "open_evidence": "Listed in Portland Tribune county inspection roundup, Mar 2026",
+    "from": "disc-09-night"
+  },
+  {
+    "name": "Clyde's Prime Rib",
+    "neighborhood": "Rose City Park",
+    "city": "Portland",
+    "address": "5474 NE Sandy Blvd",
+    "kind": "Old-school prime rib lounge",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Dim, castle-themed prime rib house where one circle of friends has met every Monday for 30-plus years; R&B and jazz in the lounge on weekends.",
+    "source_url": "https://star-news.info/uploads/1/4/3/8/143872840/star_october_2025_for_online.pdf",
+    "open_evidence": "Star News Feb 2026 issue lists it among NE's nostalgic standbys; named in the 2026 We Are Rip City business campaign",
+    "from": "disc-09-night"
+  },
+  {
     "name": "Bollywood Theater",
     "neighborhood": "Vernon",
     "city": "Portland",
@@ -1024,6 +1086,21 @@
     "why": "Kee Nelson, who grew up in Northeast Portland, serves cornmeal catfish, wings and pork chops from a lot on MLK; get the mac and Kees.",
     "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
     "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 3625 NE MLK; Portland Monthly profile placed it in an MLK parking lot, Aug 2023",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Carioca Bowls",
+    "neighborhood": "King",
+    "city": "Portland",
+    "address": "827 NE Alberta St",
+    "kind": "Brazilian açaí counter",
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Eleven years at Alberta and 9th: an ex-Sambazon açaí man's Brazilian counter, known for garlicky pão de queijo and linguiça breakfast sandwiches.",
+    "source_url": "https://bridgetownbites.com/2026/09/03/carioca-bowls-acai-and-more-in-northeast-portland-oregon/",
+    "open_evidence": "Bridgetown Bites sit-down visit published Sept 2026, marking 11 years open",
     "from": "disc-10-day"
   },
   {
@@ -1074,6 +1151,38 @@
     "from": "disc-10-night"
   },
   {
+    "name": "Spare Room Restaurant and Lounge",
+    "neighborhood": "Cully",
+    "city": "Portland",
+    "address": "4830 NE 42nd Ave",
+    "kind": "Old bowling-alley lounge",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Open since 1977 in a former bowling alley: vinyl booths, breakfast plates, karaoke, senior bingo, honky-tonk and hip-hop nights, and no polish at all.",
+    "source_url": "https://wweek.com/bars/2018/06/09/the-spare-room-is-the-antithesis-of-new-portlands-bougie-homogeneity",
+    "open_evidence": "Hosted Honky Tonk Night for the Portland Old Time Music Gathering, Jan 2026; band show listed there Oct 10, 2026",
+    "from": "disc-10-night"
+  },
+  {
+    "name": "Podnah's Pit BBQ",
+    "neighborhood": "Vernon",
+    "city": "Portland",
+    "address": "1625 NE Killingsworth St",
+    "kind": "Texas barbecue pit",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Rodney Muirhead's Texas-style barbecue pit: brisket, ribs and margaritas, a longtime Killingsworth staple that still takes no reservations.",
+    "source_url": "https://www.theinfatuation.com/portland/reviews/podnahs-pit-bbq",
+    "open_evidence": "Bridgetown Bites 2026 coverage of NE Killingsworth calls it a current longtime staple (exact article and month to confirm)",
+    "from": "disc-10-night"
+  },
+  {
     "name": "¿Por Qué No?",
     "neighborhood": "Boise",
     "city": "Portland",
@@ -1102,6 +1211,21 @@
     "why": "Readers picked it as Portland's best Ethiopian in 2026: platters of wots and tibs on injera in a dining room on MLK in Eliot.",
     "source_url": "https://www.pdxmonthly.com/restaurants/queen-of-sheba/",
     "open_evidence": "Winner, Best Ethiopian, Willamette Week Best of Portland readers' poll, Jul 2026",
+    "from": "disc-11-night"
+  },
+  {
+    "name": "Enat Kitchen",
+    "neighborhood": "Humboldt",
+    "city": "Portland",
+    "address": "300 N Killingsworth St",
+    "kind": "Ethiopian family kitchen",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "WW once named it Portland's best Ethiopian yet said it still feels like eating in someone's home; share the veggie combo on injera and sambusas.",
+    "source_url": "https://www.wweek.com/restaurants/2017/11/07/enat-is-portlands-best-ethiopian-food-but-it-still-feels-like-eating-in-someones-home/",
+    "open_evidence": "A 2026 online Portland Ethiopian dining guide lists current Tue-Sat 4-9 pm hours; diner reviews dated Jan 2026 (weak, confirm)",
     "from": "disc-11-night"
   },
   {
