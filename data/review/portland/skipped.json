@@ -123,5 +123,45 @@
     "id": "babica-hen-cafe",
     "name": "Babica Hen Cafe",
     "reason": "Poor fit: a well-liked Lake Grove breakfast cafe whose story is really its owner (Lake Oswego's mayor, Joe Buck). No dedicated press, and the menu and room are barely documented. His family's Gubanc's, a few doors down, is drafted instead. Open per the Lake Oswego Review, Aug 2026."
+  },
+  {
+    "id": "merendero-estela",
+    "name": "Merendero Estela",
+    "reason": "Cart rules not met on what I could verify: the newest source I could open is Portland Monthly's March 2022 cart guide (7107 SE 82nd Ave), and no source names a pod or lot. Discovery cited the Portland Mercury's July 2026 Top 20 carts list, which can't be opened from here; if it's on that list, it's worth re-queuing."
+  },
+  {
+    "id": "taipei-noodle-haus",
+    "name": "Taipei Noodle Haus",
+    "reason": "Couldn't confirm it's open: the newest press I found is Willamette Week's 2016 review and 2017 east county guide, and the Aug 17, 2026 Bridgetown Bites post discovery cited (about the new Two Roosters cafe in Parkrose Heights) only reached me as a newsletter teaser with no mention of the noodle house. Everything else is directory or delivery listings, some showing it closed, so a call to 503-206-5090 or a read of the full bridgetownbites.com post would settle it."
+  },
+  {
+    "id": "snowmoon-k-pop-cafe",
+    "name": "SnowMoon K-Pop Cafe",
+    "reason": "Brand new: it opened in April 2026 (Beaverton Valley Times, Apr 22, 2026), a dessert café with bingsu, croffles and a K-pop dance studio. The owner moving her home K-pop meetups into a café is a sweet start but not a long record yet; worth a look next year."
+  },
+  {
+    "id": "kove-island-comfort-kitchen",
+    "name": "Kove Island Comfort Kitchen",
+    "reason": "Brand new: it opened Mar 31, 2026 at 811 NW Murray (Beaverton Valley Times, Apr 29, 2026), in a space that already held two earlier Hawaiian restaurants. The owners' Let's Roll PDX cart dates to 2017 but sold sushi burritos and poke, so the plate-lunch counter itself has no track record; a close call because the O'ahu-raised chef has 23 years of cooking, so worth a look next year."
+  },
+  {
+    "id": "sole-s-filipino-store",
+    "name": "SoLe's Filipino Store",
+    "reason": "Brand new: it opened December 20, 2025 (Hillsboro News-Times, December 24, 2025), and it's mainly an Asian grocery with rotating lunch plates. There's no long food record or family history behind it yet (the owner, who runs adult care homes, signed the lease at Halloween), so it's worth a look next year."
+  },
+  {
+    "id": "chicatanas",
+    "name": "Chicatanas",
+    "reason": "Brand new: the Hillsboro News-Times (Feb 17, 2026) said it would open in late February or early March 2026, and the city listed it as a new downtown restaurant in June 2026. It is Roberto Rubio's first restaurant after a stint as a kitchen manager in Los Angeles, a promising all-day cafe but with no long record yet; worth a look in spring 2027."
+  },
+  {
+    "id": "sugarpine-drive-in",
+    "name": "Sugarpine Drive-In",
+    "reason": "Poor fit: a polished, heavily covered chef-run destination (Willamette Week, Portland Monthly, KOIN, Axios, a New York Times dish list) with summer lines, more a Gorge stop than a hole in the wall. Also no dated sign of life since July 2025, and it may close for winter."
+  },
+  {
+    "id": "lolo-s-boss-pizza",
+    "name": "LoLo's Boss Pizza",
+    "reason": "Poor fit: a friendly suburban pizzeria and market with a modest story, resting on one 2024 Outlook opening article. No dated sign of life since then that we could confirm."
   }
 ]
