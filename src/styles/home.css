@@ -56,20 +56,21 @@ main.home { max-width: none; padding: 0 0 clamp(96px, 14vw, 180px); overflow-x: 
   @keyframes scan { 0% { top: 20%; opacity: 0; } 15% { opacity: 1; } 80% { opacity: 0.8; } 100% { top: 100%; opacity: 0; } }
 }
 
-/* "Unlisted" as the sign over a speakeasy door: TV snow inside the letters (bright white with dark and colored
-   specks, stepped at about 12 fps), a tube that stutters at uneven moments, and letters that sputter on their own.
-   Each letter's sputter runs on a cycle of a different length, so together they rarely repeat and read as random.
-   Every dip is partial and brief, staying under three flashes a second (WCAG 2.3.1). It starts after the shutter
-   opens, and none of it runs under reduced motion. */
+/* "Unlisted" as the sign over a speakeasy door: TV snow in the letters, a tube that stutters at uneven moments,
+   and letters that sputter on their own. The snow is a 96-pixel tile (public/snow.png) drawn at 4x with square
+   pixels: its gray pixels leave the letters' own cream as it is, so only the white, dark and few colored pixels show,
+   changing about 16 times a second. Each letter's sputter runs on a cycle of a different length, so together they
+   rarely repeat and read as random. Every dip is partial and brief, staying under three flashes a second
+   (WCAG 2.3.1). It starts after the shutter opens, and none of it runs under reduced motion. */
 @media (prefers-reduced-motion: no-preference) {
   @supports ((-webkit-background-clip: text) or (background-clip: text)) {
     .hero-title .w1 .ch {
       color: transparent; -webkit-text-fill-color: transparent;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='2.6 0 0 0 -.8 1.9 .7 0 0 -.8 1.9 0 .7 0 -.8 0 0 0 0 1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E") 0 0 / 240px 240px, linear-gradient(var(--ink), var(--ink));
-      background-blend-mode: hard-light;
+      background: url('/snow.png') 0 0 / 384px 384px, linear-gradient(var(--ink), var(--ink));
+      background-blend-mode: hard-light; image-rendering: pixelated;
       -webkit-background-clip: text; background-clip: text;
       animation-name: shutter, settle, snow, sputter;
-      animation-duration: 1.25s, 1.25s, 0.42s, calc(5.3s + var(--i) * 1.37s);
+      animation-duration: 1.25s, 1.25s, 0.5s, calc(5.3s + var(--i) * 1.37s);
       animation-delay: calc(var(--i) * 60ms + 0.12s), calc(var(--i) * 60ms + 0.12s), 0s, calc(2.4s + var(--i) * 0.83s);
       animation-timing-function: var(--ease), var(--ease), steps(1, end), steps(1, end);
       animation-fill-mode: backwards, backwards, none, none;
@@ -77,10 +78,13 @@ main.home { max-width: none; padding: 0 0 clamp(96px, 14vw, 180px); overflow-x: 
     }
     @keyframes snow {
       0% { background-position: 0 0, 0 0; }
-      20% { background-position: -47px 61px, 0 0; }
-      40% { background-position: 83px -29px, 0 0; }
-      60% { background-position: -13px -97px, 0 0; }
-      80% { background-position: 59px 37px, 0 0; }
+      12.5% { background-position: -48px 64px, 0 0; }
+      25% { background-position: 84px -28px, 0 0; }
+      37.5% { background-position: -12px -96px, 0 0; }
+      50% { background-position: 60px 36px, 0 0; }
+      62.5% { background-position: -100px -16px, 0 0; }
+      75% { background-position: 24px 120px, 0 0; }
+      87.5% { background-position: 132px -76px, 0 0; }
     }
     @keyframes sputter {
       0%, 57%, 61.2%, 100% { opacity: 1; }
