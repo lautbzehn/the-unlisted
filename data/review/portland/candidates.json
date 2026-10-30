@@ -360,23 +360,41 @@
     "osm": null
   },
   {
-    "name": "Bollywood Theater",
-    "neighborhood": "Vernon",
+    "name": "Amalfi's Italian Restaurant",
+    "neighborhood": "Beaumont-Wilshire",
     "city": "Portland",
-    "address": "2039 NE Alberta St",
-    "kind": "Indian street food counter",
+    "address": "4703 NE Fremont St",
+    "kind": "Family Italian since 1959",
     "when": [
-      "midday",
       "evening"
     ],
     "fame": "open-secret",
-    "why": "Counter-service Indian street food on Alberta, with thalis and snacks served in a room hung with Bollywood posters; a readers' favorite in 2026.",
-    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
-    "open_evidence": "Second place, Best Indian, Willamette Week Best of Portland readers' poll, Jul 2026 (brand has two shops)",
+    "why": "Opened in 1959 as The Pizza House; the founders' granddaughter, once its dishwasher, now runs it under Grandpa's framed 1959 meatball recipe.",
+    "source_url": "https://wweek.com/food/2024/04/16/a-few-of-old-portlands-most-beloved-restaurants",
+    "open_evidence": "Listed in Portland Tribune county inspection roundup, Aug 2026; diner blog visit Jan 2026",
+    "from": "disc-09-night",
+    "id": "amalfi-s-italian-restaurant",
+    "lat": 45.54852,
+    "lng": -122.61483,
+    "osm": null
+  },
+  {
+    "name": "Carioca Bowls",
+    "neighborhood": "King",
+    "city": "Portland",
+    "address": "827 NE Alberta St",
+    "kind": "Brazilian açaí counter",
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Eleven years at Alberta and 9th: an ex-Sambazon açaí man's Brazilian counter, known for garlicky pão de queijo and linguiça breakfast sandwiches.",
+    "source_url": "https://bridgetownbites.com/2026/09/03/carioca-bowls-acai-and-more-in-northeast-portland-oregon/",
+    "open_evidence": "Bridgetown Bites sit-down visit published Sept 2026, marking 11 years open",
     "from": "disc-10-day",
-    "id": "bollywood-theater",
-    "lat": 45.55923,
-    "lng": -122.64403,
+    "id": "carioca-bowls",
+    "lat": 45.55936,
+    "lng": -122.65688,
     "osm": null
   },
   {
@@ -918,23 +936,83 @@
     "osm": null
   },
   {
-    "name": "Kee's #Loaded Kitchen",
-    "neighborhood": "King",
+    "name": "Steam Rice Roll King",
+    "neighborhood": "Hazelwood",
     "city": "Portland",
-    "address": "3625 NE Martin Luther King Jr Blvd",
-    "kind": "Soul food cart",
+    "address": "11003 SE Division St",
+    "kind": "Cantonese rice-roll shop",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "WW's 2026 Cheap Eats crowns it the rice-roll king: cheung fun with shrimp, beef or egg, and free warm soy milk when you dine in.",
+    "source_url": "https://www.wweek.com/food/2026/06/23/portlands-best-cheap-eats/",
+    "open_evidence": "WW Cheap Eats, June 2026, lists current prices and hours (8:30am to 8pm Tue-Sun); also Bridgetown Bites opening story Aug 2024",
+    "from": "disc-08-day",
+    "id": "steam-rice-roll-king",
+    "lat": 45.50447,
+    "lng": -122.54994,
+    "osm": null
+  },
+  {
+    "name": "Javi's Breakfast Cafe",
+    "neighborhood": "Rose City Park",
+    "city": "Portland",
+    "address": "6236 NE Sandy Blvd",
+    "kind": "Breakfast cafe in old A&W",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Javier Tapia turned the tall-roofed old A&W root beer stand on Sandy into a pancakes-and-chilaquiles breakfast cafe after 20-plus years cooking in Vancouver.",
+    "source_url": "https://bridgetownbites.com/2023/05/11/javis-breakfast-cafe-opening-rose-city-park-portland-oregon/",
+    "open_evidence": "Bridgetown Bites tagged it in its Small Bites roundup of Jan 30, 2026, and in its Candlemas pancake list updated Jan 2026",
+    "from": "disc-09-day",
+    "id": "javi-s-breakfast-cafe",
+    "lat": 45.54433,
+    "lng": -122.59893,
+    "osm": null
+  },
+  {
+    "name": "Reo's Ribs",
+    "neighborhood": "Hollywood",
+    "city": "Portland",
+    "address": "4211 NE Sandy Blvd",
+    "kind": "Louisiana rib shack",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Reo Varnado's rib shack in the tiny 1923 former Hollywood Burger Bar, revived after a 2017 fire and again after his 2022 death.",
+    "source_url": "https://bridgetownbites.com/2023/09/11/eos-ribs-will-re-open-2023-portland-oregon/",
+    "open_evidence": "Listed in Portland Tribune county inspection roundup, Mar 2026",
+    "from": "disc-09-night",
+    "id": "reo-s-ribs",
+    "lat": 45.53638,
+    "lng": -122.61975,
+    "osm": null
+  },
+  {
+    "name": "Bollywood Theater",
+    "neighborhood": "Vernon",
+    "city": "Portland",
+    "address": "2039 NE Alberta St",
+    "kind": "Indian street food counter",
     "when": [
       "midday",
       "evening"
     ],
     "fame": "open-secret",
-    "why": "Kee Nelson, who grew up in Northeast Portland, serves cornmeal catfish, wings and pork chops from a lot on MLK; get the mac and Kees.",
-    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
-    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 3625 NE MLK; Portland Monthly profile placed it in an MLK parking lot, Aug 2023",
+    "why": "Counter-service Indian street food on Alberta, with thalis and snacks served in a room hung with Bollywood posters; a readers' favorite in 2026.",
+    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
+    "open_evidence": "Second place, Best Indian, Willamette Week Best of Portland readers' poll, Jul 2026 (brand has two shops)",
     "from": "disc-10-day",
-    "id": "kee-s-loaded-kitchen",
-    "lat": 45.54902,
-    "lng": -122.6617,
+    "id": "bollywood-theater",
+    "lat": 45.55923,
+    "lng": -122.64403,
     "osm": null
   },
   {
@@ -955,6 +1033,25 @@
     "id": "abyssinian-kitchen",
     "lat": 45.55889,
     "lng": -122.63503,
+    "osm": null
+  },
+  {
+    "name": "Enat Kitchen",
+    "neighborhood": "Humboldt",
+    "city": "Portland",
+    "address": "300 N Killingsworth St",
+    "kind": "Ethiopian family kitchen",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "WW once named it Portland's best Ethiopian yet said it still feels like eating in someone's home; share the veggie combo on injera and sambusas.",
+    "source_url": "https://www.wweek.com/restaurants/2017/11/07/enat-is-portlands-best-ethiopian-food-but-it-still-feels-like-eating-in-someones-home/",
+    "open_evidence": "A 2026 online Portland Ethiopian dining guide lists current Tue-Sat 4-9 pm hours; diner reviews dated Jan 2026 (weak, confirm)",
+    "from": "disc-11-night",
+    "id": "enat-kitchen",
+    "lat": 45.56257,
+    "lng": -122.66974,
     "osm": null
   },
   {
@@ -998,43 +1095,64 @@
     "osm": null
   },
   {
-    "name": "Pip's Original Doughnuts & Chai",
-    "neighborhood": "Cully",
-    "city": "Portland",
-    "address": "4759 NE Fremont St",
-    "kind": "Mini doughnut and chai shop",
-    "when": [
-      "morning",
-      "midday"
-    ],
-    "fame": "local-legend",
-    "why": "Tiny Fremont Street shop frying small doughnuts to order alongside house-made chai; Portland readers voted it the city's best doughnut in 2026.",
-    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
-    "open_evidence": "Won Best Doughnut in Willamette Week's readers' poll, Jul 2026; OpenStreetMap survey with hours Aug 2026",
-    "from": "disc-13-day",
-    "id": "pip-s-original-doughnuts-and-chai",
-    "lat": 45.54843,
-    "lng": -122.61384,
-    "osm": null
-  },
-  {
-    "name": "El Sombrero Tapatio",
+    "name": "El Yucateco",
     "neighborhood": "Parkrose",
     "city": "Portland",
-    "address": "10820 NE Sandy Blvd",
-    "kind": "Family Mexican restaurant",
+    "address": "11807 NE Sandy Blvd",
+    "kind": "Yucatecan food cart (Sandy Blvd lot)",
     "when": [
       "midday",
       "evening"
     ],
-    "fame": "open-secret",
-    "why": "Parkrose fixture since 2002; Mama Elvira, who came from Jalisco in the 1970s, anchors a kitchen run by relatives and old family friends.",
-    "source_url": "https://bridgetownbites.com/2026/06/08/el-sombrero-tapatio-a-family-affair-in-east-portland-reprint-portland-oregon/",
-    "open_evidence": "Hollywood Star News profile reprinted by Bridgetown Bites, Jun 2026",
+    "fame": "deep-cut",
+    "why": "Bridgetown Bites tracked this panucho-making Yucatecan cart from its long-time gravel lot at NE 131st to its current spot beside a Sandy Blvd motorcycle bar.",
+    "source_url": "https://bridgetownbites.com/2023/01/06/four-things-i-learned-this-week-january-6-2023-portland-oregon/",
+    "open_evidence": "Portland Tribune county inspection roundup, Oct 16 2026: score 100 at 11807 NE Sandy Blvd; on this lot since Dec 2022, earlier at NE Sandy and 131st",
+    "from": "disc-13-day",
+    "id": "el-yucateco",
+    "lat": 45.5578,
+    "lng": -122.54098,
+    "osm": null
+  },
+  {
+    "name": "Mekong Bistro",
+    "neighborhood": "Madison South",
+    "city": "Portland",
+    "address": "8200 NE Siskiyou St",
+    "kind": "Cambodian restaurant and music room",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "deep-cut",
+    "why": "WW's 2026 Cheap Eats praises the family-recipe som-lar maju kreung, a tamarind and prahok soup, at this 14-year-old Cambodian restaurant and music venue.",
+    "source_url": "https://www.wweek.com/food/2026/06/23/portlands-best-cheap-eats/",
+    "open_evidence": "WW Cheap Eats, June 2026, lists hours (4pm to midnight Sun-Thu, 6pm to midnight Fri-Sat)",
     "from": "disc-13-night",
-    "id": "el-sombrero-tapatio",
-    "lat": 45.55837,
-    "lng": -122.55111,
+    "id": "mekong-bistro",
+    "lat": 45.54435,
+    "lng": -122.57847,
+    "osm": null
+  },
+  {
+    "name": "Marco's Cafe",
+    "neighborhood": "Multnomah Village",
+    "city": "Portland",
+    "address": "7910 SW 35th Ave",
+    "kind": "Neighborhood breakfast café",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Multnomah Village café since 1983 in a 1913 grocery, ceiling hung with donated umbrellas that each fund 10 meals; Thursday means mulligatawny soup.",
+    "source_url": "https://www.marcoscafe.com/history",
+    "open_evidence": "Own site posts Thanksgiving 2026 takeout (pickup 11/25) and current hours, checked Oct 2026",
+    "from": "disc-14-day",
+    "id": "marco-s-cafe",
+    "lat": 45.46735,
+    "lng": -122.71266,
     "osm": null
   },
   {
@@ -1379,6 +1497,65 @@
     "osm": null
   },
   {
+    "name": "Merendero Estela",
+    "neighborhood": "Brentwood-Darlington",
+    "city": "Portland",
+    "address": "7107 SE 82nd Ave",
+    "kind": "Honduran baleada cart",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Honduran cart in a lot off SE 82nd since at least 2022: baleadas on thick handmade flour tortillas, plus pollo con tajadas.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-food-carts-portland",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 7107 SE 82nd; Portland Monthly listed the same address in its 2022 cart guide",
+    "from": "disc-08-day",
+    "id": "merendero-estela",
+    "lat": 45.47158,
+    "lng": -122.5794,
+    "osm": null
+  },
+  {
+    "name": "Clyde's Prime Rib",
+    "neighborhood": "Rose City Park",
+    "city": "Portland",
+    "address": "5474 NE Sandy Blvd",
+    "kind": "Old-school prime rib lounge",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Dim, castle-themed prime rib house where one circle of friends has met every Monday for 30-plus years; R&B and jazz in the lounge on weekends.",
+    "source_url": "https://star-news.info/uploads/1/4/3/8/143872840/star_october_2025_for_online.pdf",
+    "open_evidence": "Star News Feb 2026 issue lists it among NE's nostalgic standbys; named in the 2026 We Are Rip City business campaign",
+    "from": "disc-09-night",
+    "id": "clyde-s-prime-rib",
+    "lat": 45.54118,
+    "lng": -122.60634,
+    "osm": null
+  },
+  {
+    "name": "Kee's #Loaded Kitchen",
+    "neighborhood": "King",
+    "city": "Portland",
+    "address": "3625 NE Martin Luther King Jr Blvd",
+    "kind": "Soul food cart",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Kee Nelson, who grew up in Northeast Portland, serves cornmeal catfish, wings and pork chops from a lot on MLK; get the mac and Kees.",
+    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 3625 NE MLK; Portland Monthly profile placed it in an MLK parking lot, Aug 2023",
+    "from": "disc-10-day",
+    "id": "kee-s-loaded-kitchen",
+    "lat": 45.54902,
+    "lng": -122.6617,
+    "osm": null
+  },
+  {
     "name": "Mis Tacones",
     "neighborhood": "Vernon",
     "city": "Portland",
@@ -1435,6 +1612,65 @@
     "id": "mikasa-sushi-and-ramen",
     "lat": 45.59113,
     "lng": -122.7556,
+    "osm": null
+  },
+  {
+    "name": "Cameo Cafe",
+    "neighborhood": "Roseway",
+    "city": "Portland",
+    "address": "8111 NE Sandy Blvd",
+    "kind": "Korean-American breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Portland Monthly's roundup of classic Korean-American restaurants; owner Sue Gee Lehn serves table-sized pancakes beside a rice, kimchi and eggs Korean breakfast.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/classic-korean-american-restuarants-portland",
+    "open_evidence": "Portland Tribune county inspection roundup, Oct 7 2026 (listed as Cameo Coffee Shop, 8111 NE Sandy Blvd)",
+    "from": "disc-13-day",
+    "id": "cameo-cafe",
+    "lat": 45.55227,
+    "lng": -122.57948,
+    "osm": null
+  },
+  {
+    "name": "Taipei Noodle Haus",
+    "neighborhood": "Parkrose Heights",
+    "city": "Portland",
+    "address": "11642 NE Halsey St",
+    "kind": "Taiwanese noodle house",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Willamette Week reviewed this Halsey noodle house in 2016; a decade on, Bridgetown Bites names it a Halsey classic. Known for black-bean jja jiang mian.",
+    "source_url": "https://www.wweek.com/restaurants/2016/03/22/taipei-noodle-haus",
+    "open_evidence": "Bridgetown Bites, Aug 17 2026, names it as a current Halsey neighbor of the new Two Roosters cafe (weak; confirm hours)",
+    "from": "disc-13-night",
+    "id": "taipei-noodle-haus",
+    "lat": 45.53317,
+    "lng": -122.54314,
+    "osm": null
+  },
+  {
+    "name": "Yoshi's Sushi",
+    "neighborhood": "Multnomah Village",
+    "city": "Portland",
+    "address": "3530 SW Multnomah Blvd",
+    "kind": "Sushi cart",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Yoshimasa Ikeda has cut nigiri at the Multnomah Village French Quarter pod since 2019; phone orders only. Get the seared scallop.",
+    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 3530 SW Multnomah; opened in the pod Mar 2019 (Wikipedia, citing The Oregonian)",
+    "from": "disc-14-day",
+    "id": "yoshi-s-sushi",
+    "lat": 45.46696,
+    "lng": -122.71342,
     "osm": null
   },
   {
@@ -1699,6 +1935,65 @@
     "osm": null
   },
   {
+    "name": "Chochu Local",
+    "neighborhood": "Rose City Park",
+    "city": "Portland",
+    "address": "5235 NE Sandy Blvd",
+    "kind": "Chamorro barbecue cart",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Mike and Joy San Nicolas opened this Chamorro barbecue cart in 2018, grilling at Rose City Food Park; get the fiesta plate and kelaguen.",
+    "source_url": "https://portlandtribune.com/?p=1560",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at Rose City Food Park; typhoon relief fundraiser there noted in Rep. King-Hinds' newsletter, May 2026; Tribune profile at the pod May 2025",
+    "from": "disc-09-night",
+    "id": "chochu-local",
+    "lat": 45.5408,
+    "lng": -122.60949,
+    "osm": null
+  },
+  {
+    "name": "Mole Mole",
+    "neighborhood": "Concordia",
+    "city": "Portland",
+    "address": "2231 NE Alberta St",
+    "kind": "Family Mexican mole cart",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Family-run cart in the shared lot at NE 22nd and Alberta since 2021, known for three moles, including a beet-pink mole rosa over salmon.",
+    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 2231 NE Alberta; Portland Monthly listed the same address in 2022; opened Aug 2021",
+    "from": "disc-10-day",
+    "id": "mole-mole",
+    "lat": 45.55918,
+    "lng": -122.64205,
+    "osm": null
+  },
+  {
+    "name": "Spare Room Restaurant and Lounge",
+    "neighborhood": "Cully",
+    "city": "Portland",
+    "address": "4830 NE 42nd Ave",
+    "kind": "Old bowling-alley lounge",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Open since 1977 in a former bowling alley: vinyl booths, breakfast plates, karaoke, senior bingo, honky-tonk and hip-hop nights, and no polish at all.",
+    "source_url": "https://wweek.com/bars/2018/06/09/the-spare-room-is-the-antithesis-of-new-portlands-bougie-homogeneity",
+    "open_evidence": "Hosted Honky Tonk Night for the Portland Old Time Music Gathering, Jan 2026; band show listed there Oct 10, 2026",
+    "from": "disc-10-night",
+    "id": "spare-room-restaurant-and-lounge",
+    "lat": 45.55808,
+    "lng": -122.6202,
+    "osm": null
+  },
+  {
     "name": "Slim's Restaurant & Lounge",
     "neighborhood": "St. Johns",
     "city": "Portland",
@@ -1719,63 +2014,104 @@
     "osm": null
   },
   {
-    "name": "Reedville Cafe",
-    "neighborhood": "Reedville",
-    "city": "Hillsboro",
-    "address": "7575 SE Tualatin Valley Hwy",
-    "kind": "Roadside breakfast cafe",
+    "name": "Pho Oregon",
+    "neighborhood": "Madison South",
+    "city": "Portland",
+    "address": "2518 NE 82nd Ave",
+    "kind": "Vietnamese pho hall",
     "when": [
       "morning",
-      "midday"
+      "midday",
+      "evening"
     ],
     "fame": "open-secret",
-    "why": "Roadside cafe feeding Reedville from TV Highway for about 75 years; new owners since 2025, and readers ranked it Hillsboro's second-best restaurant in 2024.",
-    "source_url": "https://forestgrovenewstimes.com/2025/05/28/75-years-later-hillsboros-reedville-cafe-welcomes-new-ownership/",
-    "open_evidence": "Named in a Hillsboro News-Times health inspection roundup headline, Jul 2026; new-ownership story May 2025",
-    "from": "disc-15-day",
-    "id": "reedville-cafe",
-    "lat": 45.49784,
-    "lng": -122.90258,
+    "why": "WW's 2026 Cheap Eats on the #1 bowl: spice-scented broth, a pile of noodles and nearly every cut of beef, still enough for two meals.",
+    "source_url": "https://www.wweek.com/food/2026/06/23/portlands-best-cheap-eats/",
+    "open_evidence": "WW Cheap Eats, June 2026, lists current prices and hours (9am to 7:45pm Mon-Sat); second location in Beaverton only",
+    "from": "disc-13-day",
+    "id": "pho-oregon",
+    "lat": 45.54036,
+    "lng": -122.57873,
     "osm": null
   },
   {
-    "name": "Nak Won",
+    "name": "El Sombrero Tapatio",
+    "neighborhood": "Parkrose",
+    "city": "Portland",
+    "address": "10820 NE Sandy Blvd",
+    "kind": "Family Mexican restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Parkrose fixture since 2002; Mama Elvira, who came from Jalisco in the 1970s, anchors a kitchen run by relatives and old family friends.",
+    "source_url": "https://bridgetownbites.com/2026/06/08/el-sombrero-tapatio-a-family-affair-in-east-portland-reprint-portland-oregon/",
+    "open_evidence": "Hollywood Star News profile reprinted by Bridgetown Bites, Jun 2026",
+    "from": "disc-13-night",
+    "id": "el-sombrero-tapatio",
+    "lat": 45.55837,
+    "lng": -122.55111,
+    "osm": null
+  },
+  {
+    "name": "SnowMoon K-Pop Cafe",
     "neighborhood": "Central Beaverton",
     "city": "Beaverton",
-    "address": "4600 SW Watson Ave",
-    "kind": "Korean family restaurant",
+    "address": "9955 SW Beaverton-Hillsdale Hwy",
+    "kind": "Korean bingsu café",
     "when": [
-      "midday",
-      "evening"
+      "midday"
     ],
-    "fame": "open-secret",
-    "why": "Old guard of Beaverton's Korean row since 2001; order the peppery, barely sauced tteokbokki or the black-bean jajangmyun.",
-    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-restaurants-food-carts-beaverton",
-    "open_evidence": "Portland Monthly Beaverton guide dated Apr 2026; Downtown Beaverton Association business listing with current hours",
-    "from": "disc-15-night",
-    "id": "nak-won",
-    "lat": 45.48621,
-    "lng": -122.80595,
+    "fame": "deep-cut",
+    "why": "A Korean adoptee's café for Korean culture: the Korean-born manager's bingsu shaved ice and croffles, with K-pop dance lessons in a side studio.",
+    "source_url": "https://beavertonvalleytimes.com/2026/04/22/k-pop-cafe-opens-in-beaverton/",
+    "open_evidence": "Opened spring 2026 (Valley Times feature, Apr 2026); listed in Valley Times county inspection roundup, May 2026",
+    "from": "disc-15-day",
+    "id": "snowmoon-k-pop-cafe",
+    "lat": 45.4869,
+    "lng": -122.77974,
     "osm": null
   },
   {
-    "name": "Taqueria Rico Taco",
-    "neighborhood": "Rockwood",
-    "city": "Gresham",
-    "address": "111 SE 181st Ave",
-    "kind": "Rockwood family taqueria",
+    "name": "Kove Island Comfort Kitchen",
+    "neighborhood": "Cedar Mill",
+    "city": "Portland",
+    "address": "811 NW Murray Blvd",
+    "kind": "Hawaiian plate-lunch counter",
     "when": [
       "midday",
       "evening"
     ],
-    "fame": "open-secret",
-    "why": "Handmade tacos on SE 181st since 1999; this Rockwood standby gave free meals to SNAP families during the 2025 shutdown.",
-    "source_url": "https://theoutlookonline.com/2025/11/06/taqueria-rico-taco-has-free-meal-snap-recipients/",
-    "open_evidence": "Gresham Outlook feature Nov 2025; hours not confirmed",
+    "fame": "deep-cut",
+    "why": "Hawaiian plate lunch from an O'ahu-raised chef and a cart couple who started in 2017: loco moco under mushroom gravy, kalbi ribs, laulau specials.",
+    "source_url": "https://beavertonvalleytimes.com/2026/04/29/kove-island-comfort-kitchen/",
+    "open_evidence": "Opened Mar 31, 2026 (Valley Times feature, Apr 2026)",
+    "from": "disc-15-night",
+    "id": "kove-island-comfort-kitchen",
+    "lat": 45.52567,
+    "lng": -122.81502,
+    "osm": null
+  },
+  {
+    "name": "Heidi's of Gresham",
+    "neighborhood": "Central Gresham",
+    "city": "Gresham",
+    "address": "1230 NE Cleveland Ave",
+    "kind": "Swiss-themed family restaurant",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Don and Marie Eklund's Swiss-themed family restaurant, open since 1968; servers wear dirndls and a longtime manager owns it now. Order pie.",
+    "source_url": "https://theoutlookonline.com/2018/09/07/heidiaes-of-gresham-celebrates-50-years/",
+    "open_evidence": "Own site republished Oct 2026 with daily 7 am to 9 pm hours and live online ordering; no 2026 press found",
     "from": "disc-16-day",
-    "id": "taqueria-rico-taco",
-    "lat": 45.52158,
-    "lng": -122.47724,
+    "id": "heidi-s-of-gresham",
+    "lat": 45.50578,
+    "lng": -122.4205,
     "osm": null
   },
   {
@@ -1840,22 +2176,42 @@
     "osm": null
   },
   {
-    "name": "Otto's Sausage Kitchen",
+    "name": "Bark City BBQ",
     "neighborhood": "Woodstock",
     "city": "Portland",
-    "address": "4138 SE Woodstock Blvd",
-    "kind": "Sausage shop and deli",
+    "address": "4727 SE Woodstock Blvd",
+    "kind": "Texas barbecue cart",
     "when": [
       "midday"
     ],
-    "fame": "local-legend",
-    "why": "Family meat market on Woodstock for about a century, making over 40 sausages in house. Get the old-fashioned wiener and work the mustard bar.",
-    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
-    "open_evidence": "Second place, Best Deli, Willamette Week Best of Portland readers' poll, Jul 2026",
+    "fame": "open-secret",
+    "why": "Michael Keskin's Texas-style barbecue cart, Eater's 2018 cart of the year, closed when he left for Arizona in 2023, then returned at The Heist pod.",
+    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at The Heist; Mercury says Keskin moved back about two years earlier",
     "from": "disc-06-day",
-    "id": "otto-s-sausage-kitchen",
-    "lat": 45.47897,
-    "lng": -122.61976,
+    "id": "bark-city-bbq",
+    "lat": 45.47957,
+    "lng": -122.61365,
+    "osm": null
+  },
+  {
+    "name": "Kim Jong Grillin'",
+    "neighborhood": "Woodstock",
+    "city": "Portland",
+    "address": "4727 SE Woodstock Blvd",
+    "kind": "Korean food cart",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "Han Ly Hwang's Korean cart, open since 2009, has outlived a 2011 fire, several pods and a Happy Valley storefront; now at The Heist pod.",
+    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026 (updated Sep 2026), at The Heist; its Happy Valley brick-and-mortar closed Mar 2025 (Eater, via Wikipedia)",
+    "from": "disc-06-night",
+    "id": "kim-jong-grillin",
+    "lat": 45.47957,
+    "lng": -122.61365,
     "osm": null
   },
   {
@@ -1879,43 +2235,260 @@
     "osm": null
   },
   {
-    "name": "Tom's Pancake House",
-    "neighborhood": "Central Beaverton",
-    "city": "Beaverton",
-    "address": "12925 SW Canyon Rd",
-    "kind": "Old-line pancake house",
+    "name": "Bari Food Cart",
+    "neighborhood": "King",
+    "city": "Portland",
+    "address": "625 NE Killingsworth St",
+    "kind": "Panzerotti cart",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Bari-born Walter Ferrante fries panzerotti; his cart outlived the Carts on Foster pod and moved to Piedmont Station in 2023. Get the artichoke.",
+    "source_url": "https://pdx.eater.com/2023/8/23/23840423/carts-on-foster-new-locations-pdx",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 625 NE Killingsworth (Piedmont Station pod); Eater reported the move there Aug 2023",
+    "from": "disc-10-day",
+    "id": "bari-food-cart",
+    "lat": 45.56295,
+    "lng": -122.65909,
+    "osm": null
+  },
+  {
+    "name": "Podnah's Pit BBQ",
+    "neighborhood": "Vernon",
+    "city": "Portland",
+    "address": "1625 NE Killingsworth St",
+    "kind": "Texas barbecue pit",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Rodney Muirhead's Texas-style barbecue pit: brisket, ribs and margaritas, a longtime Killingsworth staple that still takes no reservations.",
+    "source_url": "https://www.theinfatuation.com/portland/reviews/podnahs-pit-bbq",
+    "open_evidence": "Bridgetown Bites 2026 coverage of NE Killingsworth calls it a current longtime staple (exact article and month to confirm)",
+    "from": "disc-10-night",
+    "id": "podnah-s-pit-bbq",
+    "lat": 45.56286,
+    "lng": -122.6483,
+    "osm": null
+  },
+  {
+    "name": "Pip's Original Doughnuts & Chai",
+    "neighborhood": "Cully",
+    "city": "Portland",
+    "address": "4759 NE Fremont St",
+    "kind": "Mini doughnut and chai shop",
     "when": [
       "morning",
       "midday"
     ],
-    "fame": "open-secret",
-    "why": "Canyon Road pancake house serving Beaverton since 1966, often called the city's longest-running restaurant; a short stack here is suburban history.",
-    "source_url": "https://beavertonvalleytimes.com/2026/07/03/how-did-qdoba-mexican-grill-and-toms-pancake-house-score-on-recent-health-inspections/",
-    "open_evidence": "Named in a Beaverton Valley Times health inspection roundup headline, Jul 2026; 1966 start per Washington County visitors bureau listing",
-    "from": "disc-15-day",
-    "id": "tom-s-pancake-house",
-    "lat": 45.48866,
-    "lng": -122.80949,
+    "fame": "local-legend",
+    "why": "Tiny Fremont Street shop frying small doughnuts to order alongside house-made chai; Portland readers voted it the city's best doughnut in 2026.",
+    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
+    "open_evidence": "Won Best Doughnut in Willamette Week's readers' poll, Jul 2026; OpenStreetMap survey with hours Aug 2026",
+    "from": "disc-13-day",
+    "id": "pip-s-original-doughnuts-and-chai",
+    "lat": 45.54843,
+    "lng": -122.61384,
     "osm": null
   },
   {
-    "name": "Helvetia Tavern",
-    "neighborhood": "Helvetia",
+    "name": "Pizza Jerk",
+    "neighborhood": "Cully",
+    "city": "Portland",
+    "address": "5028 NE 42nd Ave",
+    "kind": "Punk-rock pizza parlor",
+    "when": [
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Portland Monthly called Bunk co-founder Tommy Habetz's Cully spot the city's first punk-rock family pizza joint: old-school parlor pies, soft serve, arcade games.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/2016/03/portland-s-first-punk-rock-family-pizza-joint",
+    "open_evidence": "Portland Tribune county inspection roundups, Mar 25 2026 and Oct 7 2026 (5028 NE 42nd Ave); three locations in all",
+    "from": "disc-13-night",
+    "id": "pizza-jerk",
+    "lat": 45.5594,
+    "lng": -122.62017,
+    "osm": null
+  },
+  {
+    "name": "Sweet T Bakery",
+    "neighborhood": "Downtown Hillsboro",
     "city": "Hillsboro",
-    "address": "10275 NW Helvetia Rd",
-    "kind": "Farm-country burger tavern",
+    "address": "137 SE Second Ave",
+    "kind": "Cambodian-American bakery",
+    "when": [
+      "midday"
+    ],
+    "fame": "deep-cut",
+    "why": "Two sisters rebuilt their late Cambodian father's desserts from memory: pandan cake, palm-sugar lotus cookies and a Vietnamese coffee tiramisu.",
+    "source_url": "https://hillsboronewstimes.com/2026/05/27/sweet-t-bakery-dishes-up-southeast-asian-desserts-in-downtown-hillsboro/",
+    "open_evidence": "Opened May 3, 2026; Hillsboro News-Times profile May 2026 lists current hours (10 to 6 Mon-Sat)",
+    "from": "disc-15-day",
+    "id": "sweet-t-bakery",
+    "lat": 45.52216,
+    "lng": -122.98806,
+    "osm": null
+  },
+  {
+    "name": "Nak Won",
+    "neighborhood": "Central Beaverton",
+    "city": "Beaverton",
+    "address": "4600 SW Watson Ave",
+    "kind": "Korean family restaurant",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Old guard of Beaverton's Korean row since 2001; order the peppery, barely sauced tteokbokki or the black-bean jajangmyun.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-restaurants-food-carts-beaverton",
+    "open_evidence": "Portland Monthly Beaverton guide dated Apr 2026; Downtown Beaverton Association business listing with current hours",
+    "from": "disc-15-night",
+    "id": "nak-won",
+    "lat": 45.48621,
+    "lng": -122.80595,
+    "osm": null
+  },
+  {
+    "name": "Taqueria Rico Taco",
+    "neighborhood": "Rockwood",
+    "city": "Gresham",
+    "address": "111 SE 181st Ave",
+    "kind": "Rockwood family taqueria",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Handmade tacos on SE 181st since 1999; this Rockwood standby gave free meals to SNAP families during the 2025 shutdown.",
+    "source_url": "https://theoutlookonline.com/2025/11/06/taqueria-rico-taco-has-free-meal-snap-recipients/",
+    "open_evidence": "Gresham Outlook feature Nov 2025; hours not confirmed",
+    "from": "disc-16-day",
+    "id": "taqueria-rico-taco",
+    "lat": 45.52158,
+    "lng": -122.47724,
+    "osm": null
+  },
+  {
+    "name": "LoLo's Boss Pizza",
+    "neighborhood": "Fairview",
+    "city": "Fairview",
+    "address": "21817 NE Halsey St",
+    "kind": "Neighborhood pizzeria and market",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Rick Reddaway, a former pepper farmer, and Leslie Henson make Gorge-named farm pizzas; this roomier shop replaced retired Carlino's in 2024.",
+    "source_url": "https://theoutlookonline.com/2024/08/07/lolos-boss-pizza-opens-fairview-location-with-artisanal-market-more-seating/",
+    "open_evidence": "Gresham Outlook, May 2026: co-hosting the 218th and Halsey block party; own site takes orders for Troutdale and Fairview",
+    "from": "disc-16-night",
+    "id": "lolo-s-boss-pizza",
+    "lat": 45.53468,
+    "lng": -122.43756,
+    "osm": null
+  },
+  {
+    "name": "Huber's Cafe",
+    "neighborhood": "Downtown",
+    "city": "Portland",
+    "address": "411 SW 3rd Ave",
+    "kind": "Historic turkey dining room",
     "when": [
       "midday",
       "evening"
     ],
     "fame": "local-legend",
-    "why": "Farm-country roadhouse under a ceiling of trucker hats; go for a big burger and fries after a drive past the fields.",
-    "source_url": "https://thatoregonlife.com/2026/04/best-mom-pop-restaurants-oregon-2026/",
-    "open_evidence": "That Oregon Life mom-and-pop list, Apr 2026",
+    "why": "Oregon's oldest restaurant: roast turkey plates and Spanish coffee set alight at the table, now run by the Louie family's next generation.",
+    "source_url": "https://www.opb.org/article/2025/07/20/hubers-james-kai-louie-spanish-coffee-legacy/",
+    "open_evidence": "Featured in Travel Portland's downtown guide, revised 2026; OPB on the family handover, July 2025",
+    "from": "disc-00-night",
+    "id": "huber-s-cafe",
+    "lat": 45.52003,
+    "lng": -122.67483,
+    "osm": null
+  },
+  {
+    "name": "Otto's Sausage Kitchen",
+    "neighborhood": "Woodstock",
+    "city": "Portland",
+    "address": "4138 SE Woodstock Blvd",
+    "kind": "Sausage shop and deli",
+    "when": [
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "Family meat market on Woodstock for about a century, making over 40 sausages in house. Get the old-fashioned wiener and work the mustard bar.",
+    "source_url": "https://www.wweek.com/promotions/2026/07/22/2026-best-of-portland-readers-poll-food/",
+    "open_evidence": "Second place, Best Deli, Willamette Week Best of Portland readers' poll, Jul 2026",
+    "from": "disc-06-day",
+    "id": "otto-s-sausage-kitchen",
+    "lat": 45.47897,
+    "lng": -122.61976,
+    "osm": null
+  },
+  {
+    "name": "Ha VL",
+    "neighborhood": "Jade District",
+    "city": "Portland",
+    "address": "2738 SE 82nd Ave",
+    "kind": "Vietnamese soup cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "local-legend",
+    "why": "Family soup shop where each noodle soup appears on one day of the week. Check the schedule, come early, and expect it to sell out.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-restaurants-portland/",
+    "open_evidence": "Portland Monthly 50 Best Restaurants list, Oct 2026",
+    "from": "disc-07-day",
+    "id": "ha-vl",
+    "lat": 45.50271,
+    "lng": -122.57834,
+    "osm": null
+  },
+  {
+    "name": "SoLe's Filipino Store",
+    "neighborhood": "Forest Grove",
+    "city": "Forest Grove",
+    "address": "4403 Pacific Ave",
+    "kind": "Filipino market, lunch plates",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "The first Asian grocer out west in Forest Grove, opened by Filipino sisters, with rotating lunch plates of adobo, lumpia, pancit and musubi.",
+    "source_url": "https://hillsboronewstimes.com/2025/12/24/soles-filipino-store-brings-first-asian-market-to-forest-grove-cornelius-area/",
+    "open_evidence": "Opened Dec 20, 2025 (Hillsboro News-Times, Dec 2025, with hours 7am to 8pm weekdays)",
+    "from": "disc-15-day",
+    "id": "sole-s-filipino-store",
+    "lat": 45.52042,
+    "lng": -123.07232,
+    "osm": null
+  },
+  {
+    "name": "1st Street Pocha",
+    "neighborhood": "Central Beaverton",
+    "city": "Beaverton",
+    "address": "12590 SW 1st St",
+    "kind": "Korean pocha bar",
+    "when": [
+      "evening",
+      "late"
+    ],
+    "fame": "open-secret",
+    "why": "Korean drinking-snack bar still loud at 11pm: rice-flour fried chicken in soy-garlic or gochujang glaze, mozzarella corn dogs, soju.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/dining-guides/best-restaurants-food-carts-beaverton/",
+    "open_evidence": "Portland Monthly Beaverton guide, Apr 2026, describes it busy at 11pm",
     "from": "disc-15-night",
-    "id": "helvetia-tavern",
-    "lat": 45.59659,
-    "lng": -122.91675,
+    "id": "1st-street-pocha",
+    "lat": 45.48622,
+    "lng": -122.80592,
     "osm": null
   },
   {
@@ -1958,63 +2531,44 @@
     "osm": null
   },
   {
-    "name": "Huber's Cafe",
-    "neighborhood": "Downtown",
+    "name": "Chicatanas",
+    "neighborhood": "Downtown Hillsboro",
+    "city": "Hillsboro",
+    "address": "159 SE Second Ave",
+    "kind": "Mexican-run all-day café",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Mexico-born Roberto Rubio's all-day café: Australian-style brekkie by day, tacos on Three Sisters masa tortillas at Thursday to Saturday dinners.",
+    "source_url": "https://hillsboronewstimes.com/2026/02/17/chicatanas-to-bring-new-cafe-mexican-fusion-restaurant-to-downtown-hillsboro/",
+    "open_evidence": "Chicatanas Coffee Shop inspected by the county, reported in Forest Grove News-Times roundup Oct 2026",
+    "from": "disc-15-day",
+    "id": "chicatanas",
+    "lat": 45.52191,
+    "lng": -122.98806,
+    "osm": null
+  },
+  {
+    "name": "Kubo",
+    "neighborhood": "Bethany",
     "city": "Portland",
-    "address": "411 SW 3rd Ave",
-    "kind": "Historic turkey dining room",
+    "address": "4708 NW Bethany Blvd",
+    "kind": "Filipino counter",
     "when": [
       "midday",
       "evening"
     ],
-    "fame": "local-legend",
-    "why": "Oregon's oldest restaurant: roast turkey plates and Spanish coffee set alight at the table, now run by the Louie family's next generation.",
-    "source_url": "https://www.opb.org/article/2025/07/20/hubers-james-kai-louie-spanish-coffee-legacy/",
-    "open_evidence": "Featured in Travel Portland's downtown guide, revised 2026; OPB on the family handover, July 2025",
-    "from": "disc-00-night",
-    "id": "huber-s-cafe",
-    "lat": 45.52003,
-    "lng": -122.67483,
-    "osm": null
-  },
-  {
-    "name": "Ha VL",
-    "neighborhood": "Jade District",
-    "city": "Portland",
-    "address": "2738 SE 82nd Ave",
-    "kind": "Vietnamese soup cafe",
-    "when": [
-      "morning",
-      "midday"
-    ],
-    "fame": "local-legend",
-    "why": "Family soup shop where each noodle soup appears on one day of the week. Check the schedule, come early, and expect it to sell out.",
-    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-restaurants-portland/",
-    "open_evidence": "Portland Monthly 50 Best Restaurants list, Oct 2026",
-    "from": "disc-07-day",
-    "id": "ha-vl",
-    "lat": 45.50271,
-    "lng": -122.57834,
-    "osm": null
-  },
-  {
-    "name": "Oyatsupan Bakers",
-    "neighborhood": "Five Oaks",
-    "city": "Beaverton",
-    "address": "16025 SW Regatta Ln",
-    "kind": "Japanese bakery",
-    "when": [
-      "morning",
-      "midday"
-    ],
     "fame": "open-secret",
-    "why": "Japanese bakery in a Five Oaks strip since 2016, now with a Tigard shop; melonpan in a run of flavors and soft shokupan draw people.",
-    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-bakeries-beaverton",
-    "open_evidence": "Wikipedia records a new SE Portland kitchen opened in 2026; listings post Mon to Sat 8am to 6pm hours (no 2026 press found)",
-    "from": "disc-15-day",
-    "id": "oyatsupan-bakers",
-    "lat": 45.51744,
-    "lng": -122.84266,
+    "why": "Two-table Filipino counter in a Bethany strip mall: sizzling sisig on a cow-shaped plate, pancit palabok, and big cups of halo-halo.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/dining-guides/best-restaurants-food-carts-beaverton/",
+    "open_evidence": "Portland Monthly Beaverton guide, Apr 2026; listed hours 11am to 7pm as of Jul 2026",
+    "from": "disc-15-night",
+    "id": "kubo",
+    "lat": 45.55416,
+    "lng": -122.83605,
     "osm": null
   },
   {
@@ -2055,6 +2609,105 @@
     "id": "pine-shed-ribs",
     "lat": 45.39784,
     "lng": -122.73301,
+    "osm": null
+  },
+  {
+    "name": "Reedville Cafe",
+    "neighborhood": "Reedville",
+    "city": "Hillsboro",
+    "address": "7575 SE Tualatin Valley Hwy",
+    "kind": "Roadside breakfast cafe",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Roadside cafe feeding Reedville from TV Highway for about 75 years; new owners since 2025, and readers ranked it Hillsboro's second-best restaurant in 2024.",
+    "source_url": "https://forestgrovenewstimes.com/2025/05/28/75-years-later-hillsboros-reedville-cafe-welcomes-new-ownership/",
+    "open_evidence": "Named in a Hillsboro News-Times health inspection roundup headline, Jul 2026; new-ownership story May 2025",
+    "from": "disc-15-day",
+    "id": "reedville-cafe",
+    "lat": 45.49784,
+    "lng": -122.90258,
+    "osm": null
+  },
+  {
+    "name": "Helvetia Tavern",
+    "neighborhood": "Helvetia",
+    "city": "Hillsboro",
+    "address": "10275 NW Helvetia Rd",
+    "kind": "Farm-country burger tavern",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "Farm-country roadhouse under a ceiling of trucker hats; go for a big burger and fries after a drive past the fields.",
+    "source_url": "https://thatoregonlife.com/2026/04/best-mom-pop-restaurants-oregon-2026/",
+    "open_evidence": "That Oregon Life mom-and-pop list, Apr 2026",
+    "from": "disc-15-night",
+    "id": "helvetia-tavern",
+    "lat": 45.59659,
+    "lng": -122.91675,
+    "osm": null
+  },
+  {
+    "name": "Sugarpine Drive-In",
+    "neighborhood": "Sandy River",
+    "city": "Troutdale",
+    "address": "1208 E Historic Columbia River Hwy",
+    "kind": "Riverside drive-in",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Emily Cafazzo and Ryan Domingo's 2018 drive-in on the Sandy River revives the Historic Highway's old roadside stops; get a soft-serve sundae.",
+    "source_url": "https://www.wweek.com/restaurants/news-restaurants/2021/04/20/the-owners-of-sugarpine-drive-in-have-purchased-the-former-shirleys-tippy-canoe-property/",
+    "open_evidence": "Perfect score in a Multnomah County inspection roundup in The Outlook, Feb 2026",
+    "from": "disc-16-day",
+    "id": "sugarpine-drive-in",
+    "lat": 45.53777,
+    "lng": -122.37794,
+    "osm": null
+  },
+  {
+    "name": "Tom's Pancake House",
+    "neighborhood": "Central Beaverton",
+    "city": "Beaverton",
+    "address": "12925 SW Canyon Rd",
+    "kind": "Old-line pancake house",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Canyon Road pancake house serving Beaverton since 1966, often called the city's longest-running restaurant; a short stack here is suburban history.",
+    "source_url": "https://beavertonvalleytimes.com/2026/07/03/how-did-qdoba-mexican-grill-and-toms-pancake-house-score-on-recent-health-inspections/",
+    "open_evidence": "Named in a Beaverton Valley Times health inspection roundup headline, Jul 2026; 1966 start per Washington County visitors bureau listing",
+    "from": "disc-15-day",
+    "id": "tom-s-pancake-house",
+    "lat": 45.48866,
+    "lng": -122.80949,
+    "osm": null
+  },
+  {
+    "name": "Oyatsupan Bakers",
+    "neighborhood": "Five Oaks",
+    "city": "Beaverton",
+    "address": "16025 SW Regatta Ln",
+    "kind": "Japanese bakery",
+    "when": [
+      "morning",
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Japanese bakery in a Five Oaks strip since 2016, now with a Tigard shop; melonpan in a run of flavors and soft shokupan draw people.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-bakeries-beaverton",
+    "open_evidence": "Wikipedia records a new SE Portland kitchen opened in 2026; listings post Mon to Sat 8am to 6pm hours (no 2026 press found)",
+    "from": "disc-15-day",
+    "id": "oyatsupan-bakers",
+    "lat": 45.51744,
+    "lng": -122.84266,
     "osm": null
   }
 ]
