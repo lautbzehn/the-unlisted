@@ -754,6 +754,21 @@
     "from": "disc-06-day"
   },
   {
+    "name": "Bark City BBQ",
+    "neighborhood": "Woodstock",
+    "city": "Portland",
+    "address": "4727 SE Woodstock Blvd",
+    "kind": "Texas barbecue cart",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Michael Keskin's Texas-style barbecue cart, Eater's 2018 cart of the year, closed when he left for Arizona in 2023, then returned at The Heist pod.",
+    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at The Heist; Mercury says Keskin moved back about two years earlier",
+    "from": "disc-06-day"
+  },
+  {
     "name": "Lutz Tavern",
     "neighborhood": "Woodstock",
     "city": "Portland",
@@ -815,6 +830,22 @@
     "why": "Family-run Woodstock wine shop and deli since 1985, whose owner credits his parents. Sandwiches, newer barbecue, and a bottle pulled off the shelf.",
     "source_url": "https://portlandtribune.com/sb/75-features/244037-111361-woodstock-wine-and-deli-breaks-out-the-bubbly",
     "open_evidence": "Listed as Woodstock Wine Deli & BBQ in Portland Tribune county inspection roundup, Mar 2026",
+    "from": "disc-06-night"
+  },
+  {
+    "name": "Kim Jong Grillin'",
+    "neighborhood": "Woodstock",
+    "city": "Portland",
+    "address": "4727 SE Woodstock Blvd",
+    "kind": "Korean food cart",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "local-legend",
+    "why": "Han Ly Hwang's Korean cart, open since 2009, has outlived a 2011 fire, several pods and a Happy Valley storefront; now at The Heist pod.",
+    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026 (updated Sep 2026), at The Heist; its Happy Valley brick-and-mortar closed Mar 2025 (Eater, via Wikipedia)",
     "from": "disc-06-night"
   },
   {
@@ -979,6 +1010,21 @@
     "from": "disc-08-day"
   },
   {
+    "name": "Merendero Estela",
+    "neighborhood": "Brentwood-Darlington",
+    "city": "Portland",
+    "address": "7107 SE 82nd Ave",
+    "kind": "Honduran baleada cart",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Honduran cart in a lot off SE 82nd since at least 2022: baleadas on thick handmade flour tortillas, plus pollo con tajadas.",
+    "source_url": "https://www.pdxmonthly.com/eat-and-drink/best-food-carts-portland",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 7107 SE 82nd; Portland Monthly listed the same address in its 2022 cart guide",
+    "from": "disc-08-day"
+  },
+  {
     "name": "J Vein Caffè",
     "neighborhood": "Rose City Park",
     "city": "Portland",
@@ -1057,6 +1103,22 @@
     "from": "disc-09-night"
   },
   {
+    "name": "Chochu Local",
+    "neighborhood": "Rose City Park",
+    "city": "Portland",
+    "address": "5235 NE Sandy Blvd",
+    "kind": "Chamorro barbecue cart",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "open-secret",
+    "why": "Mike and Joy San Nicolas opened this Chamorro barbecue cart in 2018, grilling at Rose City Food Park; get the fiesta plate and kelaguen.",
+    "source_url": "https://portlandtribune.com/?p=1560",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at Rose City Food Park; typhoon relief fundraiser there noted in Rep. King-Hinds' newsletter, May 2026; Tribune profile at the pod May 2025",
+    "from": "disc-09-night"
+  },
+  {
     "name": "Bollywood Theater",
     "neighborhood": "Vernon",
     "city": "Portland",
@@ -1101,6 +1163,36 @@
     "why": "Eleven years at Alberta and 9th: an ex-Sambazon açaí man's Brazilian counter, known for garlicky pão de queijo and linguiça breakfast sandwiches.",
     "source_url": "https://bridgetownbites.com/2026/09/03/carioca-bowls-acai-and-more-in-northeast-portland-oregon/",
     "open_evidence": "Bridgetown Bites sit-down visit published Sept 2026, marking 11 years open",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Mole Mole",
+    "neighborhood": "Concordia",
+    "city": "Portland",
+    "address": "2231 NE Alberta St",
+    "kind": "Family Mexican mole cart",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Family-run cart in the shared lot at NE 22nd and Alberta since 2021, known for three moles, including a beet-pink mole rosa over salmon.",
+    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 2231 NE Alberta; Portland Monthly listed the same address in 2022; opened Aug 2021",
+    "from": "disc-10-day"
+  },
+  {
+    "name": "Bari Food Cart",
+    "neighborhood": "King",
+    "city": "Portland",
+    "address": "625 NE Killingsworth St",
+    "kind": "Panzerotti cart",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Bari-born Walter Ferrante fries panzerotti; his cart outlived the Carts on Foster pod and moved to Piedmont Station in 2023. Get the artichoke.",
+    "source_url": "https://pdx.eater.com/2023/8/23/23840423/carts-on-foster-new-locations-pdx",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 625 NE Killingsworth (Piedmont Station pod); Eater reported the move there Aug 2023",
     "from": "disc-10-day"
   },
   {
@@ -1534,6 +1626,21 @@
     "from": "disc-14-day"
   },
   {
+    "name": "Yoshi's Sushi",
+    "neighborhood": "Multnomah Village",
+    "city": "Portland",
+    "address": "3530 SW Multnomah Blvd",
+    "kind": "Sushi cart",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Yoshimasa Ikeda has cut nigiri at the Multnomah Village French Quarter pod since 2019; phone orders only. Get the seared scallop.",
+    "source_url": "https://www.portlandmercury.com/food/food-issue-2026/portlands-top-20-food-carts/",
+    "open_evidence": "Portland Mercury Top 20 Food Carts, Jul 2026, at 3530 SW Multnomah; opened in the pod Mar 2019 (Wikipedia, citing The Oregonian)",
+    "from": "disc-14-day"
+  },
+  {
     "name": "Banning's Restaurant & Pie House",
     "neighborhood": "Pacific Highway",
     "city": "Tigard",
@@ -1917,6 +2024,38 @@
     "from": "disc-16-day"
   },
   {
+    "name": "Heidi's of Gresham",
+    "neighborhood": "Central Gresham",
+    "city": "Gresham",
+    "address": "1230 NE Cleveland Ave",
+    "kind": "Swiss-themed family restaurant",
+    "when": [
+      "morning",
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Don and Marie Eklund's Swiss-themed family restaurant, open since 1968; servers wear dirndls and a longtime manager owns it now. Order pie.",
+    "source_url": "https://theoutlookonline.com/2018/09/07/heidiaes-of-gresham-celebrates-50-years/",
+    "open_evidence": "Own site republished Oct 2026 with daily 7 am to 9 pm hours and live online ordering; no 2026 press found",
+    "from": "disc-16-day"
+  },
+  {
+    "name": "Sugarpine Drive-In",
+    "neighborhood": "Sandy River",
+    "city": "Troutdale",
+    "address": "1208 E Historic Columbia River Hwy",
+    "kind": "Riverside drive-in",
+    "when": [
+      "midday"
+    ],
+    "fame": "open-secret",
+    "why": "Emily Cafazzo and Ryan Domingo's 2018 drive-in on the Sandy River revives the Historic Highway's old roadside stops; get a soft-serve sundae.",
+    "source_url": "https://www.wweek.com/restaurants/news-restaurants/2021/04/20/the-owners-of-sugarpine-drive-in-have-purchased-the-former-shirleys-tippy-canoe-property/",
+    "open_evidence": "Perfect score in a Multnomah County inspection roundup in The Outlook, Feb 2026",
+    "from": "disc-16-day"
+  },
+  {
     "name": "Las Brasas",
     "neighborhood": "Downtown Gresham",
     "city": "Gresham",
@@ -2009,6 +2148,22 @@
     "why": "No-frills room just off downtown Gresham's main drag, open since 2022, whose birria Portland Monthly ranked among the metro's best bowls; get the consome.",
     "source_url": "https://www.pdxmonthly.com/eat-and-drink/2023/11/birrias-tamazula-gresham-mexican-restaurant-review",
     "open_evidence": "Weak: a map listing shows customer reviews into early 2026; no press since the Nov 2023 review",
+    "from": "disc-16-night"
+  },
+  {
+    "name": "LoLo's Boss Pizza",
+    "neighborhood": "Fairview",
+    "city": "Fairview",
+    "address": "21817 NE Halsey St",
+    "kind": "Neighborhood pizzeria and market",
+    "when": [
+      "midday",
+      "evening"
+    ],
+    "fame": "deep-cut",
+    "why": "Rick Reddaway, a former pepper farmer, and Leslie Henson make Gorge-named farm pizzas; this roomier shop replaced retired Carlino's in 2024.",
+    "source_url": "https://theoutlookonline.com/2024/08/07/lolos-boss-pizza-opens-fairview-location-with-artisanal-market-more-seating/",
+    "open_evidence": "Gresham Outlook, May 2026: co-hosting the 218th and Halsey block party; own site takes orders for Troutdale and Fairview",
     "from": "disc-16-night"
   }
 ]
