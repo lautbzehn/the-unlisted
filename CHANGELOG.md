@@ -4,6 +4,9 @@ Notable changes to The Unlisted. The format follows [Keep a Changelog](https://k
 
 ## [Unreleased]
 
+### Changed
+- **The visit-count opt-out now sticks.** Opening a page with `?ignore-me` asks the portfolio for one cookie, `if-insights`, that keeps that browser out of the count on every icarianforge.com site for 13 months; a value saved by the page alone was wiped by some phone browsers after a week. The privacy page says so. `public/insights.js` stays an exact copy of the portfolio's.
+
 ## [2.1.0] · 2026-10-30
 
 ### Added
