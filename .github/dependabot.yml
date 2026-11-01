@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
     ignore:
       # satori after 0.35.0 fails the build ("__dirname is not defined" in its ESM bundle).
       # It's pinned; upgrade it by hand once a fixed release is out.
@@ -11,8 +11,19 @@ updates:
     open-pull-requests-limit: 5
     groups:
       minor-and-patch:
+        applies-to: version-updates
         update-types: [minor, patch]
+      major:
+        applies-to: version-updates
+        update-types: [major]
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
+    groups:
+      minor-and-patch:
+        applies-to: version-updates
+        update-types: [minor, patch]
+      major:
+        applies-to: version-updates
+        update-types: [major]
