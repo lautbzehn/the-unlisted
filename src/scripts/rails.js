@@ -64,6 +64,10 @@ export function initStack(items) {
   items.forEach((li, i) => {
     const next = items[i + 1];
     if (!next) return;
-    scroll(animate(li.firstElementChild, { transform: ['scale(1)', 'scale(0.93)'], '--shade': [0, 0.55] }, { ease: 'linear', duration: 1 }), { target: next, offset: ['start end', 'start start'] });
+    const sink = animate(li.firstElementChild, { transform: ['scale(1)', 'scale(0.93)'], '--shade': [0, 0.55] }, { ease: 'linear', duration: 1 });
+    sink.pause();
+    // Follow where the next card is on screen. It is sticky, and motion 13.4+ tracks scroll targets by their
+    // unstuck layout position, so offsets on the card itself would keep sinking after it has landed.
+    scroll(() => { sink.time = Math.min(1, Math.max(0, 1 - next.getBoundingClientRect().top / innerHeight)); });
   });
 }
